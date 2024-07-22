@@ -5651,7 +5651,7 @@
                             },
                             "enum": [
                               {
-                                "title": "Accredited",
+                                "title": "accredited",
                                 "description": {
                                   "en": "Credited payment.",
                                   "es": "Pago acreditado.",
@@ -5659,7 +5659,7 @@
                                 }
                               },
                               {
-                                "title": "patially_refunded",
+                                "title": "partially_refunded",
                                 "description": {
                                   "en": "The payment has at least one partial refund.",
                                   "es": "El pago se realizó con al menos un reembolso parcial.",
@@ -5671,7 +5671,7 @@
                                 "description": {
                                   "en": "The mediation was favorable to the payer, so the payment was partially refunded to them.",
                                   "es": "La mediación fue favorable al pagador y el pago le fue parcialmente devuelto.",
-                                  "pt": "A mediação foi favorável ao pagador e o pagamento lhe é parcialmente devolvido."
+                                  "pt": "A mediação foi favorável ao pagador e o pagamento parcialmente devolvido."
                                 }
                               },
                               {
@@ -5695,7 +5695,7 @@
                                 "description": {
                                   "en": "If the status is cancelled, the payment has been cancelled by collector.",
                                   "es": "Si el status es cancelled, el pago fue cancelado por el collector.",
-                                  "pt": "Caso o status seja cancelled, o pagamento foi cancelado pelo collector."
+                                  "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado pelo collector."
                                 }
                               },
                               {
@@ -5703,7 +5703,7 @@
                                 "description": {
                                   "en": "If the status is cancelled, the payment has been cancelled by the payer.",
                                   "es": "Si el status es cancelled, el pago fue cancelado por el pagador.",
-                                  "pt": "Caso o status seja cancelled, o pagamento foi cancelado pelo pagador."
+                                  "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado pelo pagador."
                                 }
                               },
                               {
@@ -5719,7 +5719,7 @@
                                 "description": {
                                   "en": "If the status is cancelled, the payment has been cancelled after spending 30 days in a pending status.",
                                   "es": "Si el status es cancelled, el pago fue cancelado luego de haber estado 30 días en un estado pendiente.",
-                                  "pt": "Caso o status seja cancelled, o pagamento foi cancelado após ficar com status pendente por 30 dias."
+                                  "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado após ficar com status pendente por 30 dias."
                                 }
                               },
                               {
@@ -5757,9 +5757,9 @@
                               {
                                 "title": "pending_waiting_transfer",
                                 "description": {
-                                  "en": "In cases of bank transfer, it is obtained by waiting for the user to finish the payment process in their bank.",
-                                  "es": "Para los casos de transferencia bancaria, se obtiene al esperar a que el usuario termine el proceso de pago en su banco.",
-                                  "pt": "Nos casos de transferência bancária, esse status_detail é obtido aguardando que o usuário finalize o processo de pagamento no seu banco."
+                                  "en": "In cases of bank transfer, the status_detail is obtained by waiting for the user to finish the payment process in their bank.",
+                                  "es": "Para los casos de transferencia bancaria, el status_detail se obtiene al esperar a que el usuario termine el proceso de pago en su banco.",
+                                  "pt": "Nos casos de transferência bancária, o status_detail é obtido aguardando que o usuário finalize o processo de pagamento no seu banco."
                                 }
                               },
                               {
@@ -5767,7 +5767,7 @@
                                 "description": {
                                   "en": "In cases of offline payments, it remains pending until the user regularizes the situation.",
                                   "es": "Para los casos de pagos offline, el mismo queda pendiente hasta que el usuario regularice la situación.",
-                                  "pt": "Nos casos de pagamentos offline, fica pendente até que o usuário regularize a situação."
+                                  "pt": "Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário regularize a situação."
                                 }
                               },
                               {
@@ -5775,7 +5775,7 @@
                                 "description": {
                                   "en": "In cases of offline payments, it remains pending until the user finishes the payment.",
                                   "es": "Para los casos de pagos offline, el mismo queda pendiente hasta que el usuario realice el pago.",
-                                  "pt": "Nos casos de pagamentos offline, fica pendente até que o usuário realize o pagamento."
+                                  "pt": "Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário realize o pagamento."
                                 }
                               },
                               {
@@ -5783,7 +5783,7 @@
                                 "description": {
                                   "en": "In cases of credit card payments, there is a pending confirmation due to a challenge.",
                                   "es": "Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a cause de un challenge.",
-                                  "pt": "Nos casos de pagamentos offline, há uma confirmação pendente por causa de um challenge."
+                                  "pt": "Nos casos de pagamentos com cartão de crédito, há uma confirmação pendente por devido a um challenge."
                                 }
                               },
                               {
@@ -5791,7 +5791,7 @@
                                 "description": {
                                   "en": "In payments with status charged_back, the payment is in process due to the payer disowning it.",
                                   "es": "Para los pagos con status charged_back, el pago está en proceso de ser recuperado debido a un desconocimiento por parte del pagador.",
-                                  "pt": "Para pagamentos com o status charged_back, o pagamento está em processo de recuperação devido a um desconhecimento por parte do pagador."
+                                  "pt": "Para pagamentos com o status charged_back, o pagamento está em processo de recuperação pois o pagador desconhece a transação."
                                 }
                               },
                               {
@@ -5815,7 +5815,7 @@
                                 "description": {
                                   "en": "The payment has been refunded by the collector.",
                                   "es": "El pago fue devuelto por el collector.",
-                                  "pt": "O pagamento foi devolvido por el collector."
+                                  "pt": "O pagamento foi devolvido pelo collector."
                                 }
                               },
                               {
