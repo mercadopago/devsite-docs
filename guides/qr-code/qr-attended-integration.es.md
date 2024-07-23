@@ -4,12 +4,19 @@ Para cobrar a través de un código QR modelo atendido, deberás crear una orden
 
 ## Flujo del modelo
 
-Te explicamos cómo funciona el modelo atendido:
+En el diagrama a continuación puedes ver cómo funciona el modelo atendido:
 
-![Flujo de pago en punto de venta QR Mercado Pago](/images/mobile/qr-user-flow.es.png)
+![Flujo de pago en punto de venta QR Mercado Pago](/images/qr/qr-attended-workflow-es.png)
 
 1. El punto de venta registra un pedido (1a) y crea una orden asignada a una caja (1b). En este momento la orden se encuentra disponible para ser escaneada (2).
-2. Cuando el cliente escanea el QR (3) con la orden y realiza el pago (5), se recibe una notificación IPN (4a y 6b) al servidor del vendedor. Con esos datos, se obtiene el estado de la orden (7a), para validar que esté cerrada o siga abierta, pendiente de pago.
+2. Cuando el cliente escanea el QR (3) con la orden y realiza el pago (5), Mercado Pago envía una notificación del tópico `merchant_order` con `status:closed` al servidor del vendedor (5b). Este debe enviar una respuesta `HTTP STATUS 200 (OK)` o `201 (CREATED)` para confirmar su recepción (5c).
+3. Con esos datos, el vendedor debe validar que la orden esté cerrada (6a y 6b), y proceder a la impresión del ticket (7).
+
+> WARNING
+>
+> Importante
+>
+> Es posible que recibas notificaciones del tópico `merchant_order` con `status:opened` en momentos variables del flujo de pago. Por este motivo, no debes tomarlas como un indicador válido. Sólo debes considerar aquellas con `status:closed`.
 
 ## Crear una orden
 
@@ -34,9 +41,11 @@ Para obtener información sobre cómo eliminar la orden asociada a un QR antes d
 
 ## Recibe notificaciones de tus órdenes
 
-Las notificaciones IPN (Instant Payment Notification) son la **forma automática de aviso de la creación de nuevas órdenes y las actualizaciones de sus estados**. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
+Las notificaciones son la **forma automática de aviso de la creación de nuevas órdenes y las actualizaciones de sus estados**. Por ejemplo si fueron aprobados, rechazados o si se encuentran pendientes.
 
-Dirígete a [notificaciones IPN](/developers/es/docs/qr-code/additional-content/your-integrations/notifications/ipn) para saber cómo implementarlas, específicamente las notificaciones de `merchant_order`, que son aquellas asociadas a pedidos. Podrás identificar cada uno de ellos por medio del parámetro `external_reference`.
+Dirígete a [Notificaciones](/developers/es/docs/qr-code/additional-content/your-integrations/notifications) para saber cómo implementarlas. 
+
+Específicamente, deberás activar las notificaciones del tópico `merchant_order`, que son aquellas asociadas a pedidos. Podrás identificar cada uno de ellos por medio del parámetro `external_reference`.
 
 > NOTE
 >

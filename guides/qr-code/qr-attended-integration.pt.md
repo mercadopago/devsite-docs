@@ -6,10 +6,17 @@ Para cobrar através de um código QR Modelo Atendido, você deve criar um pedid
 
 Assim é como o modelo atendido funciona:
 
-![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/mobile/qr-user-flow.pt.png)
+![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/qr/qr-attended-workflow-pt.png)
 
 1. O ponto de venda registra um pedido (1a) e cria um pedido atribuído a um caixa (1b). Neste ponto, o pedido está disponível para escaneamento (2).
-2. Quando o cliente escaneia o QR (3) com o pedido e faz o pagamento (5), uma notificação IPN (4a e 6b) é recebida no servidor do vendedor. Com esses dados é obtido o status do pedido (7a), para validar se está encerrado ou ainda em aberto, aguardando o pagamento.
+2. Quando o cliente escaneia o QR (3) com o pedido e faz o pagamento (5), Mercado Pago envia uma notificação do tópico `merchant_order` com um `status:closed` ao servidor do vendedor (5b). O vendedor deve enviar uma resposta `HTTP STATUS 200 (OK)` ou `201 (CREATED)` para confirmar seu recebemento (5c).
+3. Com esses dados, o vendedor deve validar se o status do pedido está encerrado (6a e 6b), e continuar com a impressão do ticket (7).
+
+> WARNING
+>
+> Importante
+>
+> É possível receber notificações sobre o tópico `merchant_order` com `status:opened` em vários momentos durante o fluxo de pagamento. Por esta razão, você não deve considerá-las um indicador válido. Só deve considerar aquelas com `status:closed`. 
 
 ## Criar um pedido
 
@@ -34,9 +41,11 @@ A resposta será um `HTTP 204 No Content`.
 
 ## Receber notificações de pedidos
 
-As notificações IPN (Instant Payment Notification) são a **forma automática de notificar a criação de novos pedidos e as atualizações de status das mesmas**. Por exemplo, se eles foram aprovados, recusados ou se estão pendentes.
+As notificações são a **forma automática de notificar a criação de novos pedidos e as atualizações de status das mesmas**. Por exemplo, se eles foram aprovados, recusados ou se estão pendentes.
 
-Vá para [notificações IPN](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications/ipn) para aprender como implementá-los, especificamente notificações de `merchant_order`, que são aqueles associados a pedidos. Você poderá identificar cada um deles através do parâmetro `external_reference`.
+Vá para [Notificações](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications) para aprender como implementá-los.
+
+No caso do Código QR especificamente, você deve ativar as notificações de `merchant_order`, que são aquelas associadas a pedidos. Você poderá identificar cada um desses pedidos através do parâmetro `external_reference`.
 
 > NOTE
 >
