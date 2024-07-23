@@ -156,4 +156,3 @@ If you receive this response, we recommend that you contact your Mercado Pago sa
     "message": "This feature is temporarily off"
 }
 ```
-

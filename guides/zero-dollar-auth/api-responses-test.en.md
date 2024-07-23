@@ -69,7 +69,6 @@ In this section, you will find the possible responses related to the Zero Dollar
 }
 ```
 
-
 ### Collector is not Whitelisted
 
 * **Description**: This error occurs when the collector is not found in the Whitelist. Refer to the [Permissions List](/developers/en/docs/zero-dollar-auth/api-responses#bookmark_permissions_list) section for more details.
@@ -81,7 +80,6 @@ In this section, you will find the possible responses related to the Zero Dollar
 }
 ```
 
-t
 ### Internal Error
 
 * **Status code**: 500
@@ -102,4 +100,3 @@ t
       ]
 }
 ```
-

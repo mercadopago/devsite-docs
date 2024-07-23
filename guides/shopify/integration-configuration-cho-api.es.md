@@ -7,7 +7,7 @@
 >
 > Atención
 >
-> Esta nueva aplicación es solo para pagos con tarjetas. Pronto comunicaremos el lanzamiento de la app exclusivamente para Pix e indicaremos la documentación necesaria para la migración o instalación. Mientras tanto, utilice [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) para pagos con **Pix** y **boleto bancario**.
+> Esta nueva aplicación es exclusiva para pagos con tarjetas. Para configurar pagos con Pix, consulta la [documentación correspondiente](/developers/es/docs/shopify/integration-configuration/pix). Para pagos con boleto bancário, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro). 
 
 ------------
 ----[mlm]----
@@ -64,13 +64,31 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
+13. Después de completar la instalación, regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
+14. En "Método de captura de pago", asegúrate de que el campo **De forma automática al pagar** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
+
+![installation cards 7](/images/shopify/installation-cards-7-es.png)
+
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
-> NOTE
+----[mlm]----
+> WARNING
 >
 > Importante
 >
 > Después de finalizar la instalación de Mercado Pago Tarjetas, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
+
+------------
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> Después de finalizar la instalación de Mercado Pago Tarjetas, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> Con Mercado Pago Tarjetas, los campos de "Número da Casa" y "Bairro" no se mostrarán automáticamente en el formulario de datos de entrega del pedido. Para que estos campos se muestren, simplemente contacta al equipo de soporte de la plataforma Shopify y haz la solicitud.
+
+------------
 
 ## Instalar vía Marketplace
 
@@ -116,13 +134,31 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 
 ![installation cards 6](/images/shopify/installation-cards-6-es.png)
 
+9. Después de completar la instalación, regresa al panel administrativo de la tienda y haz clic en **Configuraciones > Pagos**.
+10. En "Método de captura de pago", asegúrate de que el campo **De forma automática al pagar** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
+
+![installation cards 7](/images/shopify/installation-cards-7-es.png)
+
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
-> NOTE
+----[mlm]----
+> WARNING
 >
 > Importante
 >
 > Después de finalizar la instalación de Mercado Pago Tarjetas, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
+
+------------
+----[mlb]----
+> WARNING
+>
+> Importante
+>
+> Después de finalizar la instalación de Mercado Pago Tarjetas, te recomendamos complementar instalando la aplicación **Mercado Pago Antifraude Plus**, que permitirá reforzar la seguridad de tu tienda y aumentar la tasa de aprobación de pagos. Para más información, accede a la documentación de [Cómo prevenir fraudes en los pagos con tarjeta](/developers/es/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> Con Mercado Pago Tarjetas, los campos de "Número da Casa" y "Bairro" no se mostrarán automáticamente en el formulario de datos de entrega del pedido. Para que estos campos se muestren, simplemente contacta al equipo de soporte de la plataforma Shopify y haz la solicitud.
+
+------------
 
 ## Configura meses sin intereses
 

@@ -77,6 +77,15 @@ To **test different payment results**, fill in the desired status in the cardhol
 | `SECU` | Declined for invalid security code | - |
 | `EXPI` | Declined due to due date issue | - |
 | `FORM` | Declined due to form error | - |
+| `CARD` | Rejected for missing card_number | - |
+| `INST` | Rejected for invalid installments | - |
+| `DUPL` | Rejected for duplicate payment | - |
+| `LOCK` | Rejected for disabled card | - |
+| `CTNA` | Rejected for non-permitted card type | - |
+| `ATTE` | Rejected due to exceeded PIN attempts | - |
+| `BLAC` | Rejected for being on the blacklist | - |
+| `UNSU` | Not supported | - |
+| `TEST` | Used to apply amount rules | - |
 
 ------------
 ----[mlb]----
@@ -90,6 +99,15 @@ To **test different payment results**, fill in the desired status in the cardhol
 | `SECU` | Declined for invalid security code | - |
 | `EXPI` | Declined due to due date issue | - |
 | `FORM` | Declined due to form error | - |
+| `CARD` | Rejected for missing card_number | - |
+| `INST` | Rejected for invalid installments | - |
+| `DUPL` | Rejected for duplicate payment | - |
+| `LOCK` | Rejected for disabled card | - |
+| `CTNA` | Rejected for non-permitted card type | - |
+| `ATTE` | Rejected due to exceeded PIN attempts | - |
+| `BLAC` | Rejected for being on the blacklist | - |
+| `UNSU` | Not supported | - |
+| `TEST` | Used to apply amount rules | - |
 
 ------------
 ----[mlc]----
@@ -103,6 +121,15 @@ To **test different payment results**, fill in the desired status in the cardhol
 | `SECU` | Declined for invalid security code | - |
 | `EXPI` | Declined due to due date issue | - |
 | `FORM` | Declined due to form error | - |
+| `CARD` | Rejected for missing card_number | - |
+| `INST` | Rejected for invalid installments | - |
+| `DUPL` | Rejected for duplicate payment | - |
+| `LOCK` | Rejected for disabled card | - |
+| `CTNA` | Rejected for non-permitted card type | - |
+| `ATTE` | Rejected due to exceeded PIN attempts | - |
+| `BLAC` | Rejected for being on the blacklist | - |
+| `UNSU` | Not supported | - |
+| `TEST` | Used to apply amount rules | - |
 
 ------------
 ----[mco]----
@@ -116,6 +143,15 @@ To **test different payment results**, fill in the desired status in the cardhol
 | `SECU` | Declined for invalid security code | - |
 | `EXPI` | Declined due to due date issue | - |
 | `FORM` | Declined due to form error | - |
+| `CARD` | Rejected for missing card_number | - |
+| `INST` | Rejected for invalid installments | - |
+| `DUPL` | Rejected for duplicate payment | - |
+| `LOCK` | Rejected for disabled card | - |
+| `CTNA` | Rejected for non-permitted card type | - |
+| `ATTE` | Rejected due to exceeded PIN attempts | - |
+| `BLAC` | Rejected for being on the blacklist | - |
+| `UNSU` | Not supported | - |
+| `TEST` | Used to apply amount rules | - |
 
 ------------
 ----[mlm]----
@@ -128,7 +164,16 @@ To **test different payment results**, fill in the desired status in the cardhol
 | `FUND` | Declined for insufficient amount |
 | `SECU` | Declined for invalid security code |
 | `EXPI` | Declined due to due date issue |
-| `FORM` | Declined due to form error | 
+| `FORM` | Declined due to form error |
+| `CARD` | Rejected for missing card_number |
+| `INST` | Rejected for invalid installments |
+| `DUPL` | Rejected for duplicate payment |
+| `LOCK` | Rejected for disabled card |
+| `CTNA` | Rejected for non-permitted card type |
+| `ATTE` | Rejected due to exceeded PIN attempts |
+| `BLAC` | Rejected for being on the blacklist |
+| `UNSU` | Not supported |
+| `TEST` | Used to apply amount rules |
 
 ------------
 ----[mlu]----
@@ -142,6 +187,15 @@ To **test different payment results**, fill in the desired status in the cardhol
 | `SECU` | Declined for invalid security code | - |
 | `EXPI` | Declined due to due date issue | - |
 | `FORM` | Declined due to form error | - |
+| `CARD` | Rejected for missing card_number | - |
+| `INST` | Rejected for invalid installments | - |
+| `DUPL` | Rejected for duplicate payment | - |
+| `LOCK` | Rejected for disabled card | - |
+| `CTNA` | Rejected for non-permitted card type | - |
+| `ATTE` | Rejected due to exceeded PIN attempts | - |
+| `BLAC` | Rejected for being on the blacklist | - |
+| `UNSU` | Not supported | - |
+| `TEST` | Used to apply amount rules | - |
 
 ------------
 ----[mpe]----
@@ -155,6 +209,15 @@ To **test different payment results**, fill in the desired status in the cardhol
 | `SECU` | Declined for invalid security code | - |
 | `EXPI` | Declined due to due date issue | - |
 | `FORM` | Declined due to form error | - |
+| `CARD` | Rejected for missing card_number | - |
+| `INST` | Rejected for invalid installments | - |
+| `DUPL` | Rejected for duplicate payment | - |
+| `LOCK` | Rejected for disabled card | - |
+| `CTNA` | Rejected for non-permitted card type | - |
+| `ATTE` | Rejected due to exceeded PIN attempts | - |
+| `BLAC` | Rejected for being on the blacklist | - |
+| `UNSU` | Not supported | - |
+| `TEST` | Used to apply amount rules | - |
 
 ------------
 

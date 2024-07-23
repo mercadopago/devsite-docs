@@ -218,5 +218,3 @@ print(payment)
 ]]]
 
 When making the requests, it is possible to receive different responses and statuses. For more details about the received responses, please refer to the "API Responses" section.
-
-

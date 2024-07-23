@@ -1,4 +1,4 @@
-# Mensajería de Pagos automaticos
+# Mensajería de pagos automaticos
 
 La Mensajería de Pagos automaticos, o **Mensajería de suscripción**, involucra información de los pagos recurrentes (ID de pagos anteriores, ID de la suscripción, número de veces que se generará el pago y POI con `type = SUBSCRIPTIONS`) que se envía a la [API de Pagos](/developers/es/reference/payments/_payments/post) con el objetivo de aumentar la tasa de aprobación para estos tipos de pagos.
 

@@ -8,9 +8,7 @@ See below for how to install the new app (**Mercado Pago Cartões**) and uninsta
 >
 > Attention
 >
-> This new app is only for card payments. Soon, we will communicate the launch exclusively for Pix and indicate the necessary documentation for migration or installation. For now, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro) for payments with **Pix** and **boleto bancário**.
-
-See below how to install the new app, **Mercado Pago Cartões**, and uninstall the old one, **Checkout Transparente MP**, to avoid service interruption on Shopify.
+> This new application is exclusive for card payments. To configure Pix payments, refer to the [corresponding documentation](/developers/en/docs/shopify/integration-configuration/pix). For boleto bancário payments, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 
 ## Install the new app
 
@@ -42,6 +40,8 @@ To install the **Mercado Pago Cartões** checkout on a Shopify store, we offer t
 
 11. Click on **Save credentials**.
 12. Finally, click on the **Verify activation** option of Mercado Pago Cartões, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
+13. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
+14. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
@@ -50,6 +50,8 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 > Important
 >
 > After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> With Mercado Pago Cartões, the "Número da Casa" and "Bairro" fields will not be automatically displayed on the order delivery data form. To have these fields displayed, simply contact the support team of the Shopify platform and make the request.
 
 ### Install via Marketplace
 
@@ -73,14 +75,18 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
 7. Click on **Save credentials**.
 8. Finally, click on the **Verify activation** option of Mercado Pago Cartões, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
+9. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
+10. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
-> NOTE
+> WARNING
 >
 > Important
 >
 > After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> With Mercado Pago Cartões, the "Número da Casa" and "Bairro" fields will not be automatically displayed on the order delivery data form. To have these fields displayed, simply contact the support team of the Shopify platform and make the request.
 
 ## Configure interest-free installments
 

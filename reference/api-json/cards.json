@@ -754,6 +754,7 @@
                       "pt": "Card Token",
                       "en": "Card Token"
                     },
+                    "required": true,
                     "example": "9b2d63e00d66a8c721607214ceda233a"
                   }
                 }
