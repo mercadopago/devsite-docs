@@ -2378,6 +2378,7 @@
                   },
                   "card_token_id_secondary": {
                     "type": "number",
+                    "required": false,
                     "example": 123123123,
                     "description": {
                       "en": "Unique identifier to recover details of the cards used as secondary payment methods. This parameter must be used with payment_method_id_secondary and is mandatory for card payment methods.",
