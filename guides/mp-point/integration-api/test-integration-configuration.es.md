@@ -38,13 +38,13 @@ Previo a iniciar las pruebas con el procesamiento de pagos, recomendamos configu
 
 Para configurar tus notificaciones con Mercado Pago Point, sigue las instrucciones a continuación:
 
-1. Ingresa a [Tus Integraciones](/developers/panel/app) y selecciona la aplicación con la que estás probando tu integración.
-2. En el menú de la izquierda, haz clic en **Webhooks**.
+1. Ingresa a [Tus Integraciones](/developers/panel/app) y selecciona la aplicación con la que estás probando tu integración.<br>
+2. En el menú de la izquierda, haz clic en **Webhooks**.<br>
 3. En la pantalla desplegada, haz clic en **Configurar notificaciones**, y configura la URL que serán utilizadas para recibir las notificaciones de prueba. Recomendamos utilizar dos URLs diferentes para el modo de pruebas y el modo producción:
     * **URL modo pruebas**: proporciona una URL que permita probar el correcto funcionamiento de las notificaciones de la aplicación durante la etapa de desarrollo. 
-    * **URL modo producción**: proporciona una URL para recibir notificaciones con tu integración productiva. Estas notificaciones deberán ser configuradas con las credenciales productivas de tu usuario de Mercado Pago.
+    * **URL modo producción**: proporciona una URL para recibir notificaciones con tu integración productiva. Estas notificaciones deberán ser configuradas con las credenciales productivas de tu usuario de Mercado Pago.<br>
 
-4. Selecciona **Integraciones Point** como el tópico sobre el cual deseas recibir notificaciones. Esto te mantendrá actualizado sobre las intenciones de pago y sus cambios de estado.
+4. Selecciona **Integraciones Point** como el tópico sobre el cual deseas recibir notificaciones. Esto te mantendrá actualizado sobre las intenciones de pago y sus cambios de estado.<br>
 5. Por último, haz clic en **Guardar**. Esto generará una **clave secreta** exclusiva para la aplicación, que permitirá validar la autenticidad de las notificaciones recibidas, garantizando que hayan sido enviadas por Mercado Pago. Si quieres obtener más información sobre cómo validar el origen de una notificación, accede a la [documentación](/developers/es/docs/mp-point/additional-content/your-integrations/notifications/webhooks#configuracinatravsdelpaneldeldesarrollador).
 
 Una vez que hayas realizado todas las configuraciones, puedes comenzar a probar el procesamiento de pagos.

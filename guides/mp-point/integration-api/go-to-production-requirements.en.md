@@ -6,7 +6,7 @@ Once the integration and testing process is complete, the environment will be re
 
 Although the entire integration testing process with Mercado Pago Point is carried out using production credentials of real users, it is important to **confirm that the credentials being used to go live belong to the integrating account**.
 
-To do this, go to [Your Integrations](/developers/panel/app), access your application, and in the side menu, go to **Production > Production Credentials**, where you will find your production Public Key and Access Token. You can compare this information with what you have used during the development and testing stage. If you detect any differences, replace the credentials with those present in the Panel.
+To do this, go to [Your Integrations](/developers/panel/app), access your application, and in the side menu, go to **Production > Production Credentials**, where you will find your production **Public Key** and **Access Token**. You can compare this information with what you have used during the development and testing stage. If you detect any differences, replace the credentials with those present in Your Integrations.
 
 ## Verify the Configuration of Webhooks Notifications
 

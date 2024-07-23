@@ -6,7 +6,7 @@ Para testar o processamento correto de pagamentos com o Mercado Pago Point, voc�
 >
 > Importante
 >
-> Nessas transações, utilize **cartões reais** e realize operações com **valores mínimos**. Este fluxo de teste garante que odinheiro será reembolsado no cartão utilizado para pagamento.
+> Nessas transações, utilize **cartões reais** e realize operações com **valores mínimos**. Este fluxo de teste garante que o dinheiro será reembolsado no cartão utilizado para pagamento.
 
 ## Criar e processar uma intenção de pagamento
 
@@ -20,8 +20,7 @@ Para testar a correta criação e processamento de uma intenção de pagamento, 
 >
 > Recomendamos que, **antes de processar a intenção de pagamento**, valide sua correta criação fazendo uma requisição para [Buscar intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) utilizando o `id` obtido na resposta. Embora não seja obrigatório, isso permitirá verificar se sua integração está funcionando corretamente e comparar as informações da intenção com aquelas recebidas por meio das notificações Webhooks.
 
-
-2. Processe a intenção de pagamento pressionando o botão para iniciar a cobrança no seu dispositivo Point e seguindo os passos indicados na tela.
+2. Processe a intenção de pagamento **pressionando o botão para iniciar a cobrança** no seu dispositivo Point e seguindo os passos indicados na tela.
 
 3. Certifique-se de ter recebido as notificações Webhooks do Mercado Pago para cada um dos eventos ocorridos.
 
@@ -40,16 +39,14 @@ Para isso, siga os passos abaixo.
 
 1. Na tela principal do seu dispositivo Point, deslize até chegar à aba **Mais opções**.
 2. Pressione o botão **Ver mais** dentro da seção "Atividade com este Point". Você acessará os detalhes da operação realizada.
-3. Na tela de **Detalhes da operação**, abaixo dos detalhes, selecione a opção **Devolver dinheiro**. 
+3. Na tela de "Detalhes da operação", abaixo dos detalhes, selecione a opção **Devolver dinheiro**. 
 4. Confirme que deseja devolver o dinheiro daquela operação de teste.
 
 A tela de "Detalhes da operação" agora deverá exibir o valor devolvido e, ao voltar para "Mais opções", você poderá ver essa nova atividade com o dispositivo.
 
-
 ## Criar uma intenção de pagamento e rejeitar o pagamento
 
 Para validar que o fluxo de rejeição de pagamentos funciona corretamente, siga os próximos passos.
-
 
 1. Faça uma requisiçao para o endpoint ----[mlb]----[Criar uma intenção de pagamento](/developers/pt/reference/integrations_api_paymentintent_mlb/_point_integration-api_devices_deviceid_payment-intents/post)------------ ----[mla, mlm]----[Criar uma intenção de pagamento](/developers/en/reference/integrations_api/_point_integration-api_devices_deviceid_payment-intents/post)------------ utilizando suas credenciais de produção. Você deve associá-la ao dispositivo Point previamente configurado, substituindo o valor `deviceId` no *path* da chamada pelo valor correspondente ao seu identificador. Além disso, utilize um valor que permita identificar essa intenção de teste em seu sistema por meio do campo `external_reference`, e lembre-se de ter um valor mínimo no campo `amount`.
 
@@ -63,6 +60,3 @@ Para validar que o fluxo de rejeição de pagamentos funciona corretamente, siga
 |---|---|---|
 | Integraciones Point | Criação da intenção de pagamento | Você identificará a intenção de pagamento pelo campo `external_reference`, que terá o mesmo valor atribuído no momento da criação. |
 | Integraciones Point | Cancelamento da intenção de pagamento | Você identificará a intenção de pagamento pelo campo `external_reference`, que terá o mesmo valor atribuído no momento da criação. |
-
-
-

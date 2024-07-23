@@ -6,7 +6,7 @@ Una vez finalizado el proceso de integración y pruebas, el ambiente estará lis
 
 Si bien todo el proceso de prueba de integración con Mercado Pago Point es llevado adelante utilizando credenciales productivas de usuarios productivos, es importante **corroborar que las credenciales que se están utilizando para salir a producción pertenecen a la cuenta integradora**.
 
-Para eso, ingresa a [Tus Integraciones](/developers/panel/app), accede a tu aplicación y, en el menú lateral, dirígete a **Producción > Credenciales de producción**, donde encontrarás tu Public Key y Access Token productivos. Puedes contrastar esta información con aquella que has usado durante la etapa de desarrollo y pruebas. Si detectas alguna diferencia, reemplaza las credenciales por aquellas presentes en el Panel.
+Para eso, ingresa a [Tus Integraciones](/developers/panel/app), accede a tu aplicación y, en el menú lateral, dirígete a **Producción > Credenciales de producción**, donde encontrarás tu **Public Key** y **Access Token** productivos. Puedes contrastar esta información con aquella que has usado durante la etapa de desarrollo y pruebas. Si detectas alguna diferencia, reemplaza las credenciales por aquellas presentes en Tus Integraciones.
 
 
 ## Verificar la configuración de notificaciones Webhooks

@@ -11,7 +11,6 @@ Para testar a integração com Mercado Pago Point, é importante atender aos req
 | Usuário produtivo do Mercado Pago e suas credenciais de produção | As [credenciais](/developers/pt/docs/mp-point/additional-content/your-integrations/credentials) são chaves únicas que permitem configurar suas integrações. Serão necessárias as **credenciais de produção** para testar o funcionamento de sua integração Point. |
 | Dispositivo Mercado Pago Point | É preciso ter um dispositivo Point para testar se os pagamentos estão sendo processados corretamente. Acesse [nossa documentação](/developers/pt/docs/mp-point/landing) e saiba quais são os dispositivos disponíveis de acordo com a sua localização. |
 
-
 > WARNING
 >
 > Importante
