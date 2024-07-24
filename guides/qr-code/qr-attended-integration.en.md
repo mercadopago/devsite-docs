@@ -6,10 +6,17 @@ To charge with a QR Attended Model, you need to create an order and associate it
 
 This is how the attended model works:
 
-![Payment flow at QR Mercado Pago POS](/images/mobile/qr-user-flow.en.png)
+![Payment flow at QR Mercado Pago POS](/images/qr/qr-attended-workflow-en.png)
 
 1. The store registers a sale (1a) and creates an order assigned to the point of sale (1b). The order is then available for scanning (2).
-2. When the customer scans the order QR (3) and completes the payment (5), Mercado Pago sends an IPN notification (4a and 6b) to the seller's server. This data is processed to obtain the order status (7a), validating whether it is closed or still opened with pending payment.
+2. When the customer scans the QR Code (3) and completes the payment (5a), Mercado Pago sends a notification with the topic `merchant_order` and the `status:closed` to the seller's server (5b). They must respond a `HTTP STATUS 200 (OK)` or `201 (CREATED` to confirm its reception (5c). Otherwise, Mercado Pago will continue to resend the notification according to our retry logic. If you want more information about this retry logic, go to [Notifications](/developers/es/docs/qr-code/additional-content/your-integrations/notifications/ipn).
+3. With this information, the seller must confirm if the order status is closed (6a and 6b) and proceed with the ticket printing (7).
+
+> WARNING
+>
+> Important
+>
+> It is possible to receive notifications with the topic `merchant_order` with a `status:opened` in different stages of the payment flow. For this reason, you must not take them as a valid indicator. Instead, only consider those with`status:closed`.
 
 ## Create an order
 
@@ -34,9 +41,11 @@ For more information on how to delete the order associated with a QR before its 
 
 ## Receive notifications of your orders
 
-An IPN (Instant Payment Notification) notification is an **automatic message that notifies the creation of new orders and their status updates**. I.e.: If an order is approved, rejected, or pending.
+A notification is an **automatic message that notifies the creation of new orders and their status updates**. I.e.: If an order is approved, rejected, or pending.
 
-Go to [IPN notifications](/developers/en/docs/qr-code/additional-content/your-integrations/notifications/ipn) to learn how to implement them, more specifically the `merchant_order` notifications, which are the ones associated with orders. You will be able to identify each one of theses orders by the `external_reference` parameter.
+Go to [Notifications](/developers/en/docs/qr-code/additional-content/your-integrations/notifications) to learn how to implement them.
+
+More specifically for QR Code, you must activate the `merchant_order` notifications, which are the ones associated with orders. You will be able to identify each one of theses orders by the `external_reference` parameter.
 
 > NOTE
 >
