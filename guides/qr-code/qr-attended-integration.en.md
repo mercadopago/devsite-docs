@@ -9,7 +9,7 @@ This is how the attended model works:
 ![Payment flow at QR Mercado Pago POS](/images/qr/qr-attended-workflow-en.png)
 
 1. The store registers a sale (1a) and creates an order assigned to the point of sale (1b). The order is then available for scanning (2).
-2. When the customer scans the QR Code (3) and completes the payment (5), Mercado Pago sends a notification with the topic `merchant_order` and the `status:closed` to the seller's server (5b). He must respond a `HTTP STATUS 200 (OK)` or `201 (CREATED)` to confirm its reception (5c).
+2. When the customer scans the QR Code (3) and completes the payment (5a), Mercado Pago sends a notification with the topic `merchant_order` and the `status:closed` to the seller's server (5b). They must respond a `HTTP STATUS 200 (OK)` or `201 (CREATED` to confirm its reception (5c). Otherwise, Mercado Pago will continue to resend the notification according to our retry logic. If you want more information about this retry logic, go to [Notifications](/developers/es/docs/qr-code/additional-content/your-integrations/notifications/ipn).
 3. With this information, the seller must confirm if the order status is closed (6a and 6b) and proceed with the ticket printing (7).
 
 > WARNING

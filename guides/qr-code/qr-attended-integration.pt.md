@@ -9,7 +9,7 @@ Assim é como o modelo atendido funciona:
 ![Fluxo de pagamento no ponto de venda QR Mercado Pago](/images/qr/qr-attended-workflow-pt.png)
 
 1. O ponto de venda registra um pedido (1a) e cria um pedido atribuído a um caixa (1b). Neste ponto, o pedido está disponível para escaneamento (2).
-2. Quando o cliente escaneia o QR (3) com o pedido e faz o pagamento (5), Mercado Pago envia uma notificação do tópico `merchant_order` com um `status:closed` ao servidor do vendedor (5b). O vendedor deve enviar uma resposta `HTTP STATUS 200 (OK)` ou `201 (CREATED)` para confirmar seu recebemento (5c).
+2. Quando o cliente escaneia o QR (3) com o pedido e faz o pagamento (5a), Mercado Pago envia uma notificação do tópico `merchant_order` com um `status:closed` ao servidor do vendedor (5b). O vendedor deve enviar uma resposta `HTTP STATUS 200 (OK)` ou `201 (CREATED)` para confirmar seu recebemento (5c). Caso contrário, o Mercado Pago continuará reenviando a notificação de acordo com nossa lógica de tentativas. Se você quiser mais informações sobre isso, vá para [Notificações](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications/ipn).
 3. Com esses dados, o vendedor deve validar se o status do pedido está encerrado (6a e 6b), e continuar com a impressão do ticket (7).
 
 > WARNING
