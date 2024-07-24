@@ -11,7 +11,7 @@ Existem duas formas de capturar um pagamento autorizado:
 >
 > Importante
 >
-> O prazo para capturar o pagamento autorizado é de ----[mla, mlm]----7 dias-------- ----[mlb]---- 5 dias ---- -------- ----[mpe]---- 22 dias----------- a partir de sua criação.
+> O prazo para capturar o pagamento autorizado é de ----[mla, mlm]----7 dias-------- ----[mlb]---- 5 dias ------------ ----[mpe]---- 22 dias----------- a partir de sua criação.
 
 Abaixo descrevemos o detalhe de cada uma das opções e como executá-las.
 
