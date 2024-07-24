@@ -4,7 +4,8 @@ When using ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, m
 
 In this section you will find the main ways of managing incoming payments.
 
-----[mla, mlm, mpe, mco, mlb, mlc]----
+----[mla, mlm, mpe, mlb]----
+- [Reserve values](/developers/en/docs/checkout-api/payment-management/make-value-reserve)
 - [Capture authorized payment](/developers/en/docs/checkout-api/payment-management/capture-authorized-payment)
 - [Cancel reserve](/developers/en/docs/checkout-api/payment-management/cancel-reserve)
 - [Refunds and cancellations](/developers/en/docs/checkout-api/payment-management/cancellations-and-refunds)

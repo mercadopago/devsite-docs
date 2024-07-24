@@ -5,6 +5,7 @@ Ao utilizar o ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu
 Nesta seção você encontra as principais formas de gerenciamento dos pagamentos recebidos.
 
 ----[mla, mlm, mpe, mlb]----
+- [Reservar fondos](/developers/es/docs/checkout-api/payment-management/make-value-reserve)
 - [Capturar pagamento autorizado](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment)
 - [Cancelar reserva](/developers/pt/docs/checkout-api/payment-management/cancel-reserve)
 - [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds)

@@ -7,6 +7,12 @@ Existem duas formas de capturar um pagamento autorizado:
 * **Captura do valor total de uma reserva**: na qual se captura o valor integral do pagamento reservado.
 * **Captura de um valor inferior ao reservado**: na qual se captura o valor parcial do pagamento reservado.
 
+> WARNING
+>
+> Importante
+>
+> O prazo para capturar o pagamento autorizado é de ----[mla, mlm]----7 dias-------- ----[mlb]---- 5 dias ---- -------- ----[mpe]---- 22 dias----------- a partir de sua criação.
+
 Abaixo descrevemos o detalhe de cada uma das opções e como executá-las.
 
 ## Capturar valor total 
