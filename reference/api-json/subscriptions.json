@@ -2431,8 +2431,8 @@
                         "title": "cancelled",
                         "description": {
                           "en": "Preapproval terminated. This is an irreversible state.",
-                          "es": "Preapproval terminated. This is an irreversible state.",
-                          "pt": "Preapproval terminated. This is an irreversible state."
+                          "es": "Preaprobación terminada. Este es un estado irreversible.",
+                          "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
                         }
                       }
                     ]
