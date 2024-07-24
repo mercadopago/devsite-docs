@@ -96,16 +96,16 @@
                             "title": "days",
                             "description": {
                               "en": "Indicate a frequency in units of days",
-                              "es": "Indicate a frequency in units of days",
-                              "pt": "Indicate a frequency in units of days"
+                              "es": "Indica una frecuencia en unidades de días.",
+                              "pt": "Indique uma frequência em unidades de dias."
                             }
                           },
                           {
                             "title": "months",
                             "description": {
                               "en": "Indicate a frequency in units of months",
-                              "es": "Indicate a frequency in units of months",
-                              "pt": "Indicate a frequency in units of months"
+                              "es": "Indica una frecuencia en unidades de meses.",
+                              "pt": "Indique uma frequência em unidades de meses."
                             }
                           }
                         ]
@@ -153,56 +153,56 @@
                             "title": "ARS",
                             "description": {
                               "en": "Argentine peso.",
-                              "es": "Argentine peso.",
-                              "pt": "Argentine peso."
+                              "es": "Peso argentino.",
+                              "pt": "Peso argentino."
                             }
                           },
                           {
                             "title": "BRL",
                             "description": {
                               "en": "Brazilian real.",
-                              "es": "Brazilian real.",
-                              "pt": "Brazilian real."
+                              "es": "Real brasilero.",
+                              "pt": "Real brasileiro."
                             }
                           },
                           {
                             "title": "CLP",
                             "description": {
                               "en": "Chilean peso.",
-                              "es": "Chilean peso.",
-                              "pt": "Chilean peso."
+                              "es": "Peso chileno.",
+                              "pt": "Peso chileno."
                             }
                           },
                           {
                             "title": "MXN",
                             "description": {
                               "en": "Mexican peso.",
-                              "es": "Mexican peso.",
-                              "pt": "Mexican peso."
+                              "es": "Peso mexicano.",
+                              "pt": "Peso mexicano."
                             }
                           },
                           {
                             "title": "COP",
                             "description": {
                               "en": "Colombian peso.",
-                              "es": "Colombian peso.",
-                              "pt": "Colombian peso."
+                              "es": "Peso colombiano.",
+                              "pt": "Peso colombiano."
                             }
                           },
                           {
                             "title": "PEN",
                             "description": {
                               "en": "Peruvian sol.",
-                              "es": "Peruvian sol.",
-                              "pt": "Peruvian sol."
+                              "es": "Sol peruano.",
+                              "pt": "Sol peruano."
                             }
                           },
                           {
                             "title": "UYU",
                             "description": {
                               "en": "Uruguayan peso.",
-                              "es": "Uruguayan peso.",
-                              "pt": "Uruguayan peso."
+                              "es": "Peso uruguayo.",
+                              "pt": "Peso uruguaio."
                             }
                           }
                         ]
@@ -374,16 +374,16 @@
                               "title": "days",
                               "description": {
                                 "en": "Indicate a frequency in units of days",
-                                "es": "Indicate a frequency in units of days",
-                                "pt": "Indicate a frequency in units of days"
+                                "es": "Indica una frecuencia en unidades de días.",
+                                "pt": "Indique uma frequência em unidades de dias."
                               }
                             },
                             {
                               "title": "months",
                               "description": {
                                 "en": "Indicate a frequency in units of months",
-                                "es": "Indicate a frequency in units of months",
-                                "pt": "Indicate a frequency in units of months"
+                                "es": "Indica una frecuencia en unidades de meses.",
+                                "pt": "Indique uma frequência em unidades de meses."
                               }
                             }
                           ]
@@ -421,56 +421,56 @@
                               "title": "ARS",
                               "description": {
                                 "en": "Argentine peso.",
-                                "es": "Argentine peso.",
-                                "pt": "Argentine peso."
+                                "es": "Peso argentino.",
+                                "pt": "Peso argentino."
                               }
                             },
                             {
                               "title": "BRL",
                               "description": {
                                 "en": "Brazilian real.",
-                                "es": "Brazilian real.",
-                                "pt": "Brazilian real."
+                                "es": "Real brasilero.",
+                                "pt": "Real brasileiro."
                               }
                             },
                             {
                               "title": "CLP",
                               "description": {
                                 "en": "Chilean peso.",
-                                "es": "Chilean peso.",
-                                "pt": "Chilean peso."
+                                "es": "Peso chileno.",
+                                "pt": "Peso chileno."
                               }
                             },
                             {
                               "title": "MXN",
                               "description": {
                                 "en": "Mexican peso.",
-                                "es": "Mexican peso.",
-                                "pt": "Mexican peso."
+                                "es": "Peso mexicano.",
+                                "pt": "Peso mexicano."
                               }
                             },
                             {
                               "title": "COP",
                               "description": {
                                 "en": "Colombian peso.",
-                                "es": "Colombian peso.",
-                                "pt": "Colombian peso."
+                                "es": "Peso colombiano.",
+                                "pt": "Peso colombiano."
                               }
                             },
                             {
                               "title": "PEN",
                               "description": {
                                 "en": "Peruvian sol.",
-                                "es": "Peruvian sol.",
-                                "pt": "Peruvian sol."
+                                "es": "Sol peruano.",
+                                "pt": "Sol peruano."
                               }
                             },
                             {
                               "title": "UYU",
                               "description": {
                                 "en": "Uruguayan peso.",
-                                "es": "Uruguayan peso.",
-                                "pt": "Uruguayan peso."
+                                "es": "Peso uruguayo.",
+                                "pt": "Peso uruguaio."
                               }
                             }
                           ]
@@ -514,16 +514,16 @@
                                   "title": "days",
                                   "description": {
                                     "en": "Indicate a frequency in units of days",
-                                    "es": "Indicate a frequency in units of days",
-                                    "pt": "Indicate a frequency in units of days"
+                                    "es": "Indica una frecuencia en unidades de días.",
+                                    "pt": "Indique uma frequência em unidades de dias."
                                   }
                                 },
                                 {
                                   "title": "months",
                                   "description": {
                                     "en": "Indicate a frequency in units of months",
-                                    "es": "Indicate a frequency in units of months",
-                                    "pt": "Indicate a frequency in units of months"
+                                    "es": "Indica una frecuencia en unidades de meses.",
+                                    "pt": "Indique uma frequência em unidades de meses."
                                   }
                                 }
                               ]
@@ -800,16 +800,16 @@
                             "title": "days",
                             "description": {
                               "en": "Indicate a frequency in units of days",
-                              "es": "Indicate a frequency in units of days",
-                              "pt": "Indicate a frequency in units of days"
+                              "es": "Indica una frecuencia en unidades de días.",
+                              "pt": "Indique uma frequência em unidades de dias."
                             }
                           },
                           {
                             "title": "months",
                             "description": {
                               "en": "Indicate a frequency in units of months",
-                              "es": "Indicate a frequency in units of months",
-                              "pt": "Indicate a frequency in units of months"
+                              "es": "Indica una frecuencia en unidades de meses.",
+                              "pt": "Indique uma frequência em unidades de meses."
                             }
                           }
                         ]
@@ -889,16 +889,16 @@
                                 "title": "days",
                                 "description": {
                                   "en": "Indicate a frequency in units of days",
-                                  "es": "Indicate a frequency in units of days",
-                                  "pt": "Indicate a frequency in units of days"
+                                  "es": "Indica una frecuencia en unidades de días.",
+                                  "pt": "Indique uma frequência em unidades de dias."
                                 }
                               },
                               {
                                 "title": "months",
                                 "description": {
                                   "en": "Indicate a frequency in units of months",
-                                  "es": "Indicate a frequency in units of months",
-                                  "pt": "Indicate a frequency in units of months"
+                                  "es": "Indica una frecuencia en unidades de meses.",
+                                  "pt": "Indique uma frequência em unidades de meses."
                                 }
                               }
                             ]
@@ -928,56 +928,56 @@
                             "title": "ARS",
                             "description": {
                               "en": "Argentine peso.",
-                              "es": "Argentine peso.",
-                              "pt": "Argentine peso."
+                              "es": "Peso argentino.",
+                              "pt": "Peso argentino."
                             }
                           },
                           {
                             "title": "BRL",
                             "description": {
                               "en": "Brazilian real.",
-                              "es": "Brazilian real.",
-                              "pt": "Brazilian real."
+                              "es": "Real brasilero.",
+                              "pt": "Real brasileiro."
                             }
                           },
                           {
                             "title": "CLP",
                             "description": {
                               "en": "Chilean peso.",
-                              "es": "Chilean peso.",
-                              "pt": "Chilean peso."
+                              "es": "Peso chileno.",
+                              "pt": "Peso chileno."
                             }
                           },
                           {
                             "title": "MXN",
                             "description": {
                               "en": "Mexican peso.",
-                              "es": "Mexican peso.",
-                              "pt": "Mexican peso."
+                              "es": "Peso mexicano.",
+                              "pt": "Peso mexicano."
                             }
                           },
                           {
                             "title": "COP",
                             "description": {
                               "en": "Colombian peso.",
-                              "es": "Colombian peso.",
-                              "pt": "Colombian peso."
+                              "es": "Peso colombiano.",
+                              "pt": "Peso colombiano."
                             }
                           },
                           {
                             "title": "PEN",
                             "description": {
                               "en": "Peruvian sol.",
-                              "es": "Peruvian sol.",
-                              "pt": "Peruvian sol."
+                              "es": "Sol peruano.",
+                              "pt": "Sol peruano."
                             }
                           },
                           {
                             "title": "UYU",
                             "description": {
                               "en": "Uruguayan peso.",
-                              "es": "Uruguayan peso.",
-                              "pt": "Uruguayan peso."
+                              "es": "Peso uruguayo.",
+                              "pt": "Peso uruguaio."
                             }
                           }
                         ]
@@ -1125,16 +1125,16 @@
                               "title": "days",
                               "description": {
                                 "en": "Indicate a frequency in units of days",
-                                "es": "Indicate a frequency in units of days",
-                                "pt": "Indicate a frequency in units of days"
+                                "es": "Indica una frecuencia en unidades de días.",
+                                "pt": "Indique uma frequência em unidades de dias."
                               }
                             },
                             {
                               "title": "months",
                               "description": {
                                 "en": "Indicate a frequency in units of months",
-                                "es": "Indicate a frequency in units of months",
-                                "pt": "Indicate a frequency in units of months"
+                                "es": "Indica una frecuencia en unidades de meses.",
+                                "pt": "Indique uma frequência em unidades de meses."
                               }
                             }
                           ]
@@ -1214,16 +1214,16 @@
                                   "title": "days",
                                   "description": {
                                     "en": "Indicate a frequency in units of days",
-                                    "es": "Indicate a frequency in units of days",
-                                    "pt": "Indicate a frequency in units of days"
+                                    "es": "Indica una frecuencia en unidades de días.",
+                                    "pt": "Indique uma frequência em unidades de dias."
                                   }
                                 },
                                 {
                                   "title": "months",
                                   "description": {
                                     "en": "Indicate a frequency in units of months",
-                                    "es": "Indicate a frequency in units of months",
-                                    "pt": "Indicate a frequency in units of months"
+                                    "es": "Indica una frecuencia en unidades de meses.",
+                                    "pt": "Indique uma frequência em unidades de meses."
                                   }
                                 }
                               ]
@@ -1251,56 +1251,56 @@
                               "title": "ARS",
                               "description": {
                                 "en": "Argentine peso.",
-                                "es": "Argentine peso.",
-                                "pt": "Argentine peso."
+                                "es": "Peso argentino.",
+                                "pt": "Peso argentino."
                               }
                             },
                             {
                               "title": "BRL",
                               "description": {
                                 "en": "Brazilian real.",
-                                "es": "Brazilian real.",
-                                "pt": "Brazilian real."
+                                "es": "Real brasilero.",
+                                "pt": "Real brasileiro."
                               }
                             },
                             {
                               "title": "CLP",
                               "description": {
                                 "en": "Chilean peso.",
-                                "es": "Chilean peso.",
-                                "pt": "Chilean peso."
+                                "es": "Peso chileno.",
+                                "pt": "Peso chileno."
                               }
                             },
                             {
                               "title": "MXN",
                               "description": {
                                 "en": "Mexican peso.",
-                                "es": "Mexican peso.",
-                                "pt": "Mexican peso."
+                                "es": "Peso mexicano.",
+                                "pt": "Peso mexicano."
                               }
                             },
                             {
                               "title": "COP",
                               "description": {
                                 "en": "Colombian peso.",
-                                "es": "Colombian peso.",
-                                "pt": "Colombian peso."
+                                "es": "Peso colombiano.",
+                                "pt": "Peso colombiano."
                               }
                             },
                             {
                               "title": "PEN",
                               "description": {
                                 "en": "Peruvian sol.",
-                                "es": "Peruvian sol.",
-                                "pt": "Peruvian sol."
+                                "es": "Sol peruano.",
+                                "pt": "Sol peruano."
                               }
                             },
                             {
                               "title": "UYU",
                               "description": {
                                 "en": "Uruguayan peso.",
-                                "es": "Uruguayan peso.",
-                                "pt": "Uruguayan peso."
+                                "es": "Peso uruguayo.",
+                                "pt": "Peso uruguaio."
                               }
                             }
                           ],
@@ -1423,16 +1423,16 @@
                           "title": "active",
                           "description": {
                             "en": "Plan available to create subscriptions",
-                            "es": "Plan available to create subscriptions",
-                            "pt": "Plan available to create subscriptions"
+                            "es": "Plan disponible para crear suscripciones.",
+                            "pt": "Plano disponível para criar assinaturas."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
                             "en": "Plan not available to create subscriptions",
-                            "es": "Plan not available to create subscriptions",
-                            "pt": "Plan not available to create subscriptions"
+                            "es": "Plan no disponible para crear suscripciones.",
+                            "pt": "Plano não disponível para criar assinaturas."
                           }
                         }
                       ]
@@ -1715,16 +1715,16 @@
                               "title": "days",
                               "description": {
                                 "en": "Indicate a frequency in units of days",
-                                "es": "Indicate a frequency in units of days",
-                                "pt": "Indicate a frequency in units of days"
+                                "es": "Indica una frecuencia en unidades de días.",
+                                "pt": "Indique uma frequência em unidades de dias."
                               }
                             },
                             {
                               "title": "months",
                               "description": {
                                 "en": "Indicate a frequency in units of months",
-                                "es": "Indicate a frequency in units of months",
-                                "pt": "Indicate a frequency in units of months"
+                                "es": "Indica una frecuencia en unidades de meses.",
+                                "pt": "Indique uma frequência em unidades de meses."
                               }
                             }
                           ]
@@ -1762,56 +1762,56 @@
                               "title": "ARS",
                               "description": {
                                 "en": "Argentine peso.",
-                                "es": "Argentine peso.",
-                                "pt": "Argentine peso."
+                                "es": "Peso argentino.",
+                                "pt": "Peso argentino."
                               }
                             },
                             {
                               "title": "BRL",
                               "description": {
                                 "en": "Brazilian real.",
-                                "es": "Brazilian real.",
-                                "pt": "Brazilian real."
+                                "es": "Real brasilero.",
+                                "pt": "Real brasileiro."
                               }
                             },
                             {
                               "title": "CLP",
                               "description": {
                                 "en": "Chilean peso.",
-                                "es": "Chilean peso.",
-                                "pt": "Chilean peso."
+                                "es": "Peso chileno.",
+                                "pt": "Peso chileno."
                               }
                             },
                             {
                               "title": "MXN",
                               "description": {
                                 "en": "Mexican peso.",
-                                "es": "Mexican peso.",
-                                "pt": "Mexican peso."
+                                "es": "Peso mexicano.",
+                                "pt": "Peso mexicano."
                               }
                             },
                             {
                               "title": "COP",
                               "description": {
                                 "en": "Colombian peso.",
-                                "es": "Colombian peso.",
-                                "pt": "Colombian peso."
+                                "es": "Peso colombiano.",
+                                "pt": "Peso colombiano."
                               }
                             },
                             {
                               "title": "PEN",
                               "description": {
                                 "en": "Peruvian sol.",
-                                "es": "Peruvian sol.",
-                                "pt": "Peruvian sol."
+                                "es": "Sol peruano.",
+                                "pt": "Sol peruano."
                               }
                             },
                             {
                               "title": "UYU",
                               "description": {
                                 "en": "Uruguayan peso.",
-                                "es": "Uruguayan peso.",
-                                "pt": "Uruguayan peso."
+                                "es": "Peso uruguayo.",
+                                "pt": "Peso uruguaio."
                               }
                             }
                           ]
@@ -1855,16 +1855,16 @@
                                   "title": "days",
                                   "description": {
                                     "en": "Indicate a frequency in units of days",
-                                    "es": "Indicate a frequency in units of days",
-                                    "pt": "Indicate a frequency in units of days"
+                                    "es": "Indica una frecuencia en unidades de días.",
+                                    "pt": "Indique uma frequência em unidades de dias."
                                   }
                                 },
                                 {
                                   "title": "months",
                                   "description": {
                                     "en": "Indicate a frequency in units of months",
-                                    "es": "Indicate a frequency in units of months",
-                                    "pt": "Indicate a frequency in units of months"
+                                    "es": "Indica una frecuencia en unidades de meses.",
+                                    "pt": "Indique uma frequência em unidades de meses."
                                   }
                                 }
                               ]
@@ -2020,32 +2020,32 @@
                               "title": "green",
                               "description": {
                                 "en": "All collections made.",
-                                "es": "All collections made.",
-                                "pt": "All collections made."
+                                "es": "Todas las colecciones realizadas.",
+                                "pt": "Todas as coleções feitas."
                               }
                             },
                             {
                               "title": "yellow",
                               "description": {
                                 "en": "With collection problems. We are trying to collect an invoice.",
-                                "es": "With collection problems. We are trying to collect an invoice.",
-                                "pt": "With collection problems. We are trying to collect an invoice."
+                                "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
+                                "pt": "Com problemas de coleções. Estamos tentando cobrar uma fatura."
                               }
                             },
                             {
                               "title": "red",
                               "description": {
                                 "en": "With pending collections. An invoice could not be collected.",
-                                "es": "With pending collections. An invoice could not be collected.",
-                                "pt": "With pending collections. An invoice could not be collected."
+                                "es": "Con colecciones pendientes. No se pudo cobrar una factura.",
+                                "pt": "Com coleções pendentes. Uma fatura não foi cobrada."
                               }
                             },
                             {
                               "title": "blank",
                               "description": {
                                 "en": "Discounted collection.",
-                                "es": "Discounted collection.",
-                                "pt": "Discounted collection."
+                                "es": "Colección descontada.",
+                                "pt": "Coleçao com desconto."
                               }
                             }
                           ]
@@ -2065,32 +2065,32 @@
                           "title": "pending",
                           "description": {
                             "en": "Preapproval without a payment method",
-                            "es": "Preapproval without a payment method",
-                            "pt": "Preapproval without a payment method"
+                            "es": "Preaprobación sin un método de pago.",
+                            "pt": "Pré-aprovação sem um método de pagamento."
                           }
                         },
                         {
                           "title": "authorized",
                           "description": {
                             "en": "Preapproval with a valid payment method",
-                            "es": "Preapproval with a valid payment method",
-                            "pt": "Preapproval with a valid payment method"
+                            "es": "Preaprobación con un método de pago válido.",
+                            "pt": "Pré-aprovação com um método de pagamento válido."
                           }
                         },
                         {
                           "title": "paused",
                           "description": {
                             "en": "Preapproval with temporally discontinued collection of payments",
-                            "es": "Preapproval with temporally discontinued collection of payments",
-                            "pt": "Preapproval with temporally discontinued collection of payments"
+                            "es": "Preaprobación con cobranza de pagos temporalmente descontinuada.",
+                            "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
                             "en": "Preapproval terminated. This is an irreversible state",
-                            "es": "Preapproval terminated. This is an irreversible state",
-                            "pt": "Preapproval terminated. This is an irreversible state"
+                            "es": "Preaprobación terminada. Este es un estado irreversible.",
+                            "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
                           }
                         }
                       ]
@@ -2311,56 +2311,56 @@
                             "title": "ARS",
                             "description": {
                               "en": "Argentine peso.",
-                              "es": "Argentine peso.",
-                              "pt": "Argentine peso."
+                              "es": "Peso argentino.",
+                              "pt": "Peso argentino."
                             }
                           },
                           {
                             "title": "BRL",
                             "description": {
                               "en": "Brazilian real.",
-                              "es": "Brazilian real.",
-                              "pt": "Brazilian real."
+                              "es": "Real brasilero.",
+                              "pt": "Real brasileiro."
                             }
                           },
                           {
                             "title": "CLP",
                             "description": {
                               "en": "Chilean peso.",
-                              "es": "Chilean peso.",
-                              "pt": "Chilean peso."
+                              "es": "Peso chileno.",
+                              "pt": "Peso chileno."
                             }
                           },
                           {
                             "title": "MXN",
                             "description": {
                               "en": "Mexican peso.",
-                              "es": "Mexican peso.",
-                              "pt": "Mexican peso."
+                              "es": "Peso mexicano.",
+                              "pt": "Peso mexicano."
                             }
                           },
                           {
                             "title": "COP",
                             "description": {
                               "en": "Colombian peso.",
-                              "es": "Colombian peso.",
-                              "pt": "Colombian peso."
+                              "es": "Peso colombiano.",
+                              "pt": "Peso colombiano."
                             }
                           },
                           {
                             "title": "PEN",
                             "description": {
                               "en": "Peruvian sol.",
-                              "es": "Peruvian sol.",
-                              "pt": "Peruvian sol."
+                              "es": "Sol peruano.",
+                              "pt": "Sol peruano."
                             }
                           },
                           {
                             "title": "UYU",
                             "description": {
                               "en": "Uruguayan peso.",
-                              "es": "Uruguayan peso.",
-                              "pt": "Uruguayan peso."
+                              "es": "Peso uruguayo.",
+                              "pt": "Peso uruguaio."
                             }
                           }
                         ]
@@ -2407,24 +2407,24 @@
                         "title": "pending",
                         "description": {
                           "en": "Preapproval without a payment method",
-                          "es": "Preapproval without a payment method",
-                          "pt": "Preapproval without a payment method"
+                          "es": "Preaprobación sin un método de pago.",
+                          "pt": "Pré-aprovação sem um método de pagamento."
                         }
                       },
                       {
                         "title": "authorized",
                         "description": {
                           "en": "Preapproval with a valid payment method",
-                          "es": "Preapproval with a valid payment method",
-                          "pt": "Preapproval with a valid payment method"
+                          "es": "Preaprobación con un método de pago válido.",
+                          "pt": "Pré-aprovação com um método de pagamento válido."
                         }
                       },
                       {
                         "title": "paused",
                         "description": {
                           "en": "Preapproval with temporally discontinued collection of payments",
-                          "es": "Preapproval with temporally discontinued collection of payments",
-                          "pt": "Preapproval with temporally discontinued collection of payments"
+                          "es": "Preaprobación con cobranza de pagos temporalmente descontinuada.",
+                          "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
                         }
                       },
                       {
@@ -2565,16 +2565,16 @@
                               "title": "days",
                               "description": {
                                 "en": "Indicate a frequency in units of days",
-                                "es": "Indicate a frequency in units of days",
-                                "pt": "Indicate a frequency in units of days"
+                                "es": "Indica una frecuencia en unidades de días.",
+                                "pt": "Indique uma frequência em unidades de dias."
                               }
                             },
                             {
                               "title": "months",
                               "description": {
                                 "en": "Indicate a frequency in units of months",
-                                "es": "Indicate a frequency in units of months",
-                                "pt": "Indicate a frequency in units of months"
+                                "es": "Indica una frecuencia en unidades de meses.",
+                                "pt": "Indique uma frequência em unidades de meses."
                               }
                             }
                           ]
@@ -2612,56 +2612,56 @@
                               "title": "ARS",
                               "description": {
                                 "en": "Argentine peso.",
-                                "es": "Argentine peso.",
-                                "pt": "Argentine peso."
+                                "es": "Peso argentino.",
+                                "pt": "Peso argentino."
                               }
                             },
                             {
                               "title": "BRL",
                               "description": {
                                 "en": "Brazilian real.",
-                                "es": "Brazilian real.",
-                                "pt": "Brazilian real."
+                                "es": "Real brasilero.",
+                                "pt": "Real brasileiro."
                               }
                             },
                             {
                               "title": "CLP",
                               "description": {
                                 "en": "Chilean peso.",
-                                "es": "Chilean peso.",
-                                "pt": "Chilean peso."
+                                "es": "Peso chileno.",
+                                "pt": "Peso chileno."
                               }
                             },
                             {
                               "title": "MXN",
                               "description": {
                                 "en": "Mexican peso.",
-                                "es": "Mexican peso.",
-                                "pt": "Mexican peso."
+                                "es": "Peso mexicano.",
+                                "pt": "Peso mexicano."
                               }
                             },
                             {
                               "title": "COP",
                               "description": {
                                 "en": "Colombian peso.",
-                                "es": "Colombian peso.",
-                                "pt": "Colombian peso."
+                                "es": "Peso colombiano.",
+                                "pt": "Peso colombiano."
                               }
                             },
                             {
                               "title": "PEN",
                               "description": {
                                 "en": "Peruvian sol.",
-                                "es": "Peruvian sol.",
-                                "pt": "Peruvian sol."
+                                "es": "Sol peruano.",
+                                "pt": "Sol peruano."
                               }
                             },
                             {
                               "title": "UYU",
                               "description": {
                                 "en": "Uruguayan peso.",
-                                "es": "Uruguayan peso.",
-                                "pt": "Uruguayan peso."
+                                "es": "Peso uruguayo.",
+                                "pt": "Peso uruguaio."
                               }
                             }
                           ]
@@ -2705,16 +2705,16 @@
                                   "title": "days",
                                   "description": {
                                     "en": "Indicate a frequency in units of days",
-                                    "es": "Indicate a frequency in units of days",
-                                    "pt": "Indicate a frequency in units of days"
+                                    "es": "Indica una frecuencia en unidades de días.",
+                                    "pt": "Indique uma frequência em unidades de dias."
                                   }
                                 },
                                 {
                                   "title": "months",
                                   "description": {
                                     "en": "Indicate a frequency in units of months",
-                                    "es": "Indicate a frequency in units of months",
-                                    "pt": "Indicate a frequency in units of months"
+                                    "es": "Indica una frecuencia en unidades de meses.",
+                                    "pt": "Indique uma frequência em unidades de meses."
                                   }
                                 }
                               ]
@@ -2888,32 +2888,32 @@
                               "title": "green",
                               "description": {
                                 "en": "All collections made.",
-                                "es": "All collections made.",
-                                "pt": "All collections made."
+                                "es": "Todas las colecciones realizadas.",
+                                "pt": "Todas as coleções feitas."
                               }
                             },
                             {
                               "title": "yellow",
                               "description": {
                                 "en": "With collection problems. We are trying to collect an invoice.",
-                                "es": "With collection problems. We are trying to collect an invoice.",
-                                "pt": "With collection problems. We are trying to collect an invoice."
+                                "es": "Con problemas de cobranza. Estamos tratando de cobrar una factura.",
+                                "pt": "Com problemas de cobrança. Estamos tentando cobrar uma fatura."
                               }
                             },
                             {
                               "title": "red",
                               "description": {
                                 "en": "With pending collections. An invoice could not be collected.",
-                                "es": "With pending collections. An invoice could not be collected.",
-                                "pt": "With pending collections. An invoice could not be collected."
+                                "es": "Con cobranzas pendientes. No se pudo cobrar una factura.",
+                                "pt": "Com cobranças pendentes. Uma fatura não pôde ser cobrada."
                               }
                             },
                             {
                               "title": "blank",
                               "description": {
                                 "en": "Discounted collection.",
-                                "es": "Discounted collection.",
-                                "pt": "Discounted collection."
+                                "es": "Cobranza descontada.",
+                                "pt": "Cobrança com desconto."
                               }
                             }
                           ]
@@ -2932,33 +2932,33 @@
                         {
                           "title": "pending",
                           "description": {
-                            "en": "Preapproval without a payment method",
-                            "es": "Preapproval without a payment method",
-                            "pt": "Preapproval without a payment method"
+                            "en": "Preapproval without a payment method.",
+                            "es": "Preaprobación sin un método de pago.",
+                            "pt": "Pré-aprovação sem um método de pagamento."
                           }
                         },
                         {
                           "title": "authorized",
                           "description": {
-                            "en": "Preapproval with a valid payment method",
-                            "es": "Preapproval with a valid payment method",
-                            "pt": "Preapproval with a valid payment method"
+                            "en": "Preapproval with a valid payment method.",
+                            "es": "Preaprobación con un método de pago válido.",
+                            "pt": "Pré-aprovação com um método de pagamento válido."
                           }
                         },
                         {
                           "title": "paused",
                           "description": {
-                            "en": "Preapproval with temporally discontinued collection of payments",
-                            "es": "Preapproval with temporally discontinued collection of payments",
-                            "pt": "Preapproval with temporally discontinued collection of payments"
+                            "en": "Preapproval with temporally discontinued collection of payments.",
+                            "es": "Preaprobación con cobranza de pagos temporalmente descontinuada.",
+                            "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
-                            "en": "Preapproval terminated. This is an irreversible state",
-                            "es": "Preapproval terminated. This is an irreversible state",
-                            "pt": "Preapproval terminated. This is an irreversible state"
+                            "en": "Preapproval terminated. This is an irreversible state.",
+                            "es": "Preaprobación terminada. Este es un estado irreversible.",
+                            "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
                           }
                         }
                       ]
@@ -3117,32 +3117,32 @@
                   "title": "pending",
                   "description": {
                     "en": "Preapproval without a payment method.",
-                    "es": "Preapproval without a payment method.",
-                    "pt": "Preapproval without a payment method."
+                    "es": "Preaprobación sin un método de pago.",
+                    "pt": "Pré-aprovação sem um método de pagamento."
                   }
                 },
                 {
                   "title": "authorized",
                   "description": {
                     "en": "Preapproval with a valid payment method.",
-                    "es": "Preapproval with a valid payment method.",
-                    "pt": "Preapproval with a valid payment method."
+                    "es": "Preaprobación con un método de pago válido.",
+                    "pt": "Pré-aprovação com um método de pagamento válido."
                   }
                 },
                 {
                   "title": "paused",
                   "description": {
                     "en": "Preapproval with temporally discontinued collection of payments.",
-                    "es": "Preapproval with temporally discontinued collection of payments.",
-                    "pt": "Preapproval with temporally discontinued collection of payments."
+                    "es": "Preaprobación con cobranza de pagos temporalmente descontinuada.",
+                    "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
                   }
                 },
                 {
                   "title": "cancelled",
                   "description": {
                     "en": "Preapproval terminated. This is an irreversible state.",
-                    "es": "Preapproval terminated. This is an irreversible state.",
-                    "pt": "Preapproval terminated. This is an irreversible state."
+                    "es": "Preaprobación terminada. Este es un estado irreversible.",
+                    "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
                   }
                 }
               ]
@@ -3186,8 +3186,8 @@
                 },
                 "description": {
                   "es": "the format is `attachment; filename=\"preapprovals.zip\"`",
-                  "pt": "the format is `attachment; filename=\"preapprovals.zip\"`",
-                  "en": "the format is `attachment; filename=\"preapprovals.zip\"`"
+                  "pt": "o formato é `attachment; filename=\"preapprovals.zip\"`",
+                  "en": "el formato es `attachment; filename=\"preapprovals.zip\"`"
                 }
               }
             },
@@ -3247,32 +3247,32 @@
                           "title": "pending",
                           "description": {
                             "en": "Preapproval without a payment method.",
-                            "es": "Preapproval without a payment method.",
-                            "pt": "Preapproval without a payment method."
+                            "es": "Preaprobación sin un método de pago.",
+                            "pt": "Pré-aprovação sem um método de pagamento."
                           }
                         },
                         {
                           "title": "authorized",
                           "description": {
                             "en": "Preapproval with a valid payment method.",
-                            "es": "Preapproval with a valid payment method.",
-                            "pt": "Preapproval with a valid payment method."
+                            "es": "Preaprobación con un método de pago válido.",
+                            "pt": "Pré-aprovação com um método de pagamento válido."
                           }
                         },
                         {
                           "title": "paused",
                           "description": {
                             "en": "Preapproval with temporally discontinued collection of payments.",
-                            "es": "Preapproval with temporally discontinued collection of payments.",
-                            "pt": "Preapproval with temporally discontinued collection of payments."
+                            "es": "Preaprobación con cobranza de pagos temporalmente descontinuada",
+                            "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
                             "en": "Preapproval terminated. This is an irreversible state.",
-                            "es": "Preapproval terminated. This is an irreversible state.",
-                            "pt": "Preapproval terminated. This is an irreversible state."
+                            "es": "Preaprobación terminada. Este es un estado irreversible.",
+                            "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
                           }
                         }
                       ]
@@ -3382,56 +3382,56 @@
                           "title": "ARS",
                           "description": {
                             "en": "Argentine peso.",
-                            "es": "Argentine peso.",
-                            "pt": "Argentine peso."
+                            "es": "Peso argentino.",
+                            "pt": "Peso argentino."
                           }
                         },
                         {
                           "title": "BRL",
                           "description": {
                             "en": "Brazilian real.",
-                            "es": "Brazilian real.",
-                            "pt": "Brazilian real."
+                            "es": "Real brasilero.",
+                            "pt": "Real brasileiro."
                           }
                         },
                         {
                           "title": "CLP",
                           "description": {
                             "en": "Chilean peso.",
-                            "es": "Chilean peso.",
-                            "pt": "Chilean peso."
+                            "es": "Peso chileno.",
+                            "pt": "Peso chileno."
                           }
                         },
                         {
                           "title": "MXN",
                           "description": {
                             "en": "Mexican peso.",
-                            "es": "Mexican peso.",
-                            "pt": "Mexican peso."
+                            "es": "Peso mexicano.",
+                            "pt": "Peso mexicano."
                           }
                         },
                         {
                           "title": "COP",
                           "description": {
                             "en": "Colombian peso.",
-                            "es": "Colombian peso.",
-                            "pt": "Colombian peso."
+                            "es": "Peso colombiano.",
+                            "pt": "Peso colombiano."
                           }
                         },
                         {
                           "title": "PEN",
                           "description": {
                             "en": "Peruvian sol.",
-                            "es": "Peruvian sol.",
-                            "pt": "Peruvian sol."
+                            "es": "Sol peruano.",
+                            "pt": "Sol peruano."
                           }
                         },
                         {
                           "title": "UYU",
                           "description": {
                             "en": "Uruguayan peso.",
-                            "es": "Uruguayan peso.",
-                            "pt": "Uruguayan peso."
+                            "es": "Peso uruguayo.",
+                            "pt": "Peso uruguaio."
                           }
                         }
                       ]
@@ -3549,9 +3549,9 @@
                     "semaphore": {
                       "type": "number",
                       "description": {
-                        "es": "Preapproval collection status summary.",
-                        "pt": "Preapproval collection status summary.",
-                        "en": "Preapproval collection status summary."
+                        "en": "Preapproval collection status summary.",
+                        "pt": "Resumo do status de coleta de pré-aprovação.",
+                        "es": "Resumen del estado de la colección de preaprobación."
                       },
                       "example": "green",
                       "enum": [
@@ -3559,32 +3559,32 @@
                           "title": "green",
                           "description": {
                             "en": "All collections made.",
-                            "es": "All collections made.",
-                            "pt": "All collections made."
+                            "es": "Todas las colecciones realizadas.",
+                            "pt": "Todas as coleções realizadas."
                           }
                         },
                         {
                           "title": "yellow",
                           "description": {
                             "en": "With collection problems. We are trying to collect an invoice.",
-                            "es": "With collection problems. We are trying to collect an invoice.",
-                            "pt": "With collection problems. We are trying to collect an invoice."
+                            "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
+                            "pt": "Com problemas de coleções. Estamos tentando cobrar uma fatura."
                           }
                         },
                         {
                           "title": "red",
                           "description": {
                             "en": "With pending collections. An invoice could not be collected.",
-                            "es": "With pending collections. An invoice could not be collected.",
-                            "pt": "With pending collections. An invoice could not be collected."
+                            "es": "Con colecciones pendientes. No se pudo cobrar una factura.",
+                            "pt": "Com coleções pendentes. Uma fatura não foi cobrada."
                           }
                         },
                         {
                           "title": "blank",
                           "description": {
                             "en": "Discounted collection.",
-                            "es": "Discounted collection.",
-                            "pt": "Discounted collection."
+                            "es": "Colección descontada.",
+                            "pt": "Coleçao com desconto."
                           }
                         }
                       ]
@@ -3592,9 +3592,9 @@
                     "last_charge_date": {
                       "type": "number",
                       "description": {
-                        "es": "Date of last time a payment of this subscription.was made.",
-                        "pt": "Date of last time a payment of this subscription.was made.",
-                        "en": "Date of last time a payment of this subscription.was made."
+                        "en": "Date of last time a payment of this subscription was made.",
+                        "pt": "Data da última vez que um pagamento desta assinatura foi feito.",
+                        "es": "Fecha de la última vez que se realizó un pago de esta suscripción"
                       },
                       "example": "24-2-2021"
                     },
@@ -3637,9 +3637,9 @@
                     "version": {
                       "type": "number",
                       "description": {
-                        "es": "How many times preapproval was modified.",
-                        "pt": "How many times preapproval was modified.",
-                        "en": "How many times preapproval was modified."
+                        "en": "How many times preapproval was modified.",
+                        "pt": "Quantas vezes a pré-aprovação foi modificada.",
+                        "es": "Cuántas veces se modificó la preaprobación."
                       },
                       "example": 4
                     },
@@ -3792,8 +3792,8 @@
                           "title": "scheduled",
                           "description": {
                             "en": "Automatically generated and scheduled by the recurrence engine",
-                            "es": "Automatically generated and scheduled by the recurrence engine",
-                            "pt": "Automatically generated and scheduled by the recurrence engine"
+                            "pt": "Gerado e agendado automaticamente pelo mecanismo de recorrência.",
+                            "es": "Generado y programado automáticamente por el motor de recurrencia."
                           }
                         }
                       ]
@@ -3856,56 +3856,56 @@
                           "title": "ARS",
                           "description": {
                             "en": "Argentine peso.",
-                            "es": "Argentine peso.",
-                            "pt": "Argentine peso."
+                            "es": "Peso argentino.",
+                            "pt": "Peso argentino."
                           }
                         },
                         {
                           "title": "BRL",
                           "description": {
                             "en": "Brazilian real.",
-                            "es": "Brazilian real.",
-                            "pt": "Brazilian real."
+                            "es": "Real brasilero.",
+                            "pt": "Real brasileiro."
                           }
                         },
                         {
                           "title": "CLP",
                           "description": {
                             "en": "Chilean peso.",
-                            "es": "Chilean peso.",
-                            "pt": "Chilean peso."
+                            "es": "Peso chileno.",
+                            "pt": "Peso chileno."
                           }
                         },
                         {
                           "title": "MXN",
                           "description": {
                             "en": "Mexican peso.",
-                            "es": "Mexican peso.",
-                            "pt": "Mexican peso."
+                            "es": "Peso mexicano.",
+                            "pt": "Peso mexicano."
                           }
                         },
                         {
                           "title": "COP",
                           "description": {
                             "en": "Colombian peso.",
-                            "es": "Colombian peso.",
-                            "pt": "Colombian peso."
+                            "es": "Peso colombiano.",
+                            "pt": "Peso colombiano."
                           }
                         },
                         {
                           "title": "PEN",
                           "description": {
                             "en": "Peruvian sol.",
-                            "es": "Peruvian sol.",
-                            "pt": "Peruvian sol."
+                            "es": "Sol peruano.",
+                            "pt": "Sol peruano."
                           }
                         },
                         {
                           "title": "UYU",
                           "description": {
                             "en": "Uruguayan peso.",
-                            "es": "Uruguayan peso.",
-                            "pt": "Uruguayan peso."
+                            "es": "Peso uruguayo.",
+                            "pt": "Peso uruguaio."
                           }
                         }
                       ]
@@ -3949,33 +3949,33 @@
                         {
                           "title": "scheduled",
                           "description": {
-                            "en": "Authorized payment scheduled to collect",
-                            "es": "Authorized payment scheduled to collect",
-                            "pt": "Authorized payment scheduled to collect"
+                            "en": "Authorized payment scheduled to collect.",
+                            "pt": "Pagamento autorizado agendado para cobrança.",
+                            "es": "Pago autorizado programado para cobrar."
                           }
                         },
                         {
                           "title": "processed",
                           "description": {
-                            "en": "Authorized payment collected or exceeded retries",
-                            "es": "Authorized payment collected or exceeded retries",
-                            "pt": "Authorized payment collected or exceeded retries"
+                            "en": "Authorized payment collected or exceeded retries.",
+                            "pt": "Pagamento autorizado coletado ou que excedeu as tentativas.",
+                            "es": "Pago autorizado recolectado o que excedió los reintentos."
                           }
                         },
                         {
                           "title": "recycling",
                           "description": {
-                            "en": "Authorized payment in attempt to collect",
-                            "es": "Authorized payment in attempt to collect",
-                            "pt": "Authorized payment in attempt to collect"
+                            "en": "Authorized payment in attempt to collect.",
+                            "pt": "Pagamento autorizado em tentativa de cobrança.",
+                            "es": "Pago autorizado en intento de cobrar."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
-                            "en": "Authorized payment canceled",
-                            "es": "Authorized payment canceled",
-                            "pt": "Authorized payment canceled"
+                            "en": "Authorized payment canceled.",
+                            "pt": "Pagamento autorizado cancelado.",
+                            "es": "Pago autorizado cancelado."
                           }
                         }
                       ]
@@ -3984,7 +3984,7 @@
                       "type": "string",
                       "description": {
                         "en": "Summarization status of the invoice result in the subscription.",
-                        "pt": "Resumo do status da fatura na assinatura",
+                        "pt": "Resumo do status da fatura na assinatura.",
                         "es": "Estado de resumen del resultado de la factura en la suscripción."
                       },
                       "example": "pending",
@@ -4036,73 +4036,73 @@
                             {
                               "title": "pending",
                               "description": {
-                                "en": "The user has not yet completed the payment process",
-                                "es": "The user has not yet completed the payment process",
-                                "pt": "The user has not yet completed the payment process"
+                                "en": "The user has not yet completed the payment process.",
+                                "es": "El usuario aún no ha completado el proceso de pago.",
+                                "pt": "O usuário ainda não completou o processo de pagamento."
                               }
                             },
                             {
                               "title": "approved",
                               "description": {
-                                "en": "The payment has been approved and accredited",
-                                "es": "The payment has been approved and accredited",
-                                "pt": "The payment has been approved and accredited"
+                                "en": "The payment has been approved and accredited.",
+                                "es": "El pago ha sido aprobado y acreditado.",
+                                "pt": "O pagamento foi aprovado e creditado."
                               }
                             },
                             {
                               "title": "authorized",
                               "description": {
-                                "en": "The payment has been authorized but not captured yet",
-                                "es": "The payment has been authorized but not captured yet",
-                                "pt": "The payment has been authorized but not captured yet"
+                                "en": "The payment has been authorized but not captured yet.",
+                                "es": "El pago ha sido autorizado pero aún no ha sido capturado.",
+                                "pt": "O pagamento foi autorizado, mas ainda não foi capturado."
                               }
                             },
                             {
                               "title": "in_process",
                               "description": {
-                                "en": "Payment is being reviewed",
-                                "es": "Payment is being reviewed",
-                                "pt": "Payment is being reviewed"
+                                "en": "Payment is being reviewed.",
+                                "es": "El pago está siendo revisado.",
+                                "pt": "O pagamento está sendo revisado."
                               }
                             },
                             {
                               "title": "in_mediation",
                               "description": {
-                                "en": "Users have initiated a dispute",
-                                "es": "Users have initiated a dispute",
-                                "pt": "Users have initiated a dispute"
+                                "en": "Users have initiated a dispute.",
+                                "es": "Los usuarios han iniciado una disputa.",
+                                "pt": "Os usuários iniciaram uma disputa."
                               }
                             },
                             {
                               "title": "rejected",
                               "description": {
-                                "en": "Payment was rejected. The user may retry payment",
-                                "es": "Payment was rejected. The user may retry payment",
-                                "pt": "Payment was rejected. The user may retry payment"
+                                "en": "Payment was rejected. The user may retry payment.",
+                                "es": "El pago fue rechazado. El usuario puede intentar el pago de nuevo.",
+                                "pt": "O pagamento foi rejeitado. O usuário pode tentar novamente."
                               }
                             },
                             {
                               "title": "cancelled",
                               "description": {
-                                "en": "Payment was cancelled by one of the parties or because time for payment has expired",
-                                "es": "Payment was cancelled by one of the parties or because time for payment has expired",
-                                "pt": "Payment was cancelled by one of the parties or because time for payment has expired"
+                                "en": "Payment was cancelled by one of the parties or because time for payment has expired.",
+                                "es": "El pago fue cancelado por una de las partes o porque el tiempo para el pago ha expirado.",
+                                "pt": "O pagamento foi cancelado por uma das partes ou porque o tempo para pagamento expirou."
                               }
                             },
                             {
                               "title": "refunded",
                               "description": {
-                                "en": "Payment was refunded to the user",
-                                "es": "Payment was refunded to the user",
-                                "pt": "Payment was refunded to the user"
+                                "en": "Payment was refunded to the user.",
+                                "es": "El pago fue reembolsado al usuario.",
+                                "pt": "O pagamento foi reembolsado ao usuário."
                               }
                             },
                             {
                               "title": "charged_back",
                               "description": {
-                                "en": "Was made a chargeback in the buyer’s credit card",
-                                "es": "Was made a chargeback in the buyer’s credit card",
-                                "pt": "Was made a chargeback in the buyer’s credit card"
+                                "en": "Was made a chargeback in the buyer’s credit card.",
+                                "es": "Se realizó un contracargo en la tarjeta de crédito del comprador.",
+                                "pt": "Foi feito um estorno no cartão de crédito do comprador."
                               }
                             }
                           ]
@@ -4353,9 +4353,9 @@
                         "total": {
                           "type": "number",
                           "description": {
-                            "es": "The total number of items in the collection.",
-                            "pt": "The total number of items in the collection.",
-                            "en": "The total number of items in the collection."
+                            "en": "The total number of items in the collection.",
+                            "pt": "O número total de itens na coleção.",
+                            "es": "El número total de elementos en la colección."
                           },
                           "example": 100
                         }
@@ -4393,8 +4393,8 @@
                                 "title": "scheduled",
                                 "description": {
                                   "en": "Automatically generated and scheduled by the recurrence engine",
-                                  "es": "Automatically generated and scheduled by the recurrence engine",
-                                  "pt": "Automatically generated and scheduled by the recurrence engine"
+                                  "es": "Gerado e agendado automaticamente pelo mecanismo de recorrência.",
+                                  "pt": "Automáticamente generado y programado por el motor de recurrencia."
                                 }
                               }
                             ]
@@ -4457,56 +4457,56 @@
                                 "title": "ARS",
                                 "description": {
                                   "en": "Argentine peso.",
-                                  "es": "Argentine peso.",
-                                  "pt": "Argentine peso."
+                                  "es": "Peso argentino.",
+                                  "pt": "Peso argentino."
                                 }
                               },
                               {
                                 "title": "BRL",
                                 "description": {
                                   "en": "Brazilian real.",
-                                  "es": "Brazilian real.",
-                                  "pt": "Brazilian real."
+                                  "es": "Real brasilero.",
+                                  "pt": "Real brasileiro."
                                 }
                               },
                               {
                                 "title": "CLP",
                                 "description": {
                                   "en": "Chilean peso.",
-                                  "es": "Chilean peso.",
-                                  "pt": "Chilean peso."
+                                  "es": "Peso chileno.",
+                                  "pt": "Peso chileno."
                                 }
                               },
                               {
                                 "title": "MXN",
                                 "description": {
                                   "en": "Mexican peso.",
-                                  "es": "Mexican peso.",
-                                  "pt": "Mexican peso."
+                                  "es": "Peso mexicano.",
+                                  "pt": "Peso mexicano."
                                 }
                               },
                               {
                                 "title": "COP",
                                 "description": {
                                   "en": "Colombian peso.",
-                                  "es": "Colombian peso.",
-                                  "pt": "Colombian peso."
+                                  "es": "Peso colombiano.",
+                                  "pt": "Peso colombiano."
                                 }
                               },
                               {
                                 "title": "PEN",
                                 "description": {
                                   "en": "Peruvian sol.",
-                                  "es": "Peruvian sol.",
-                                  "pt": "Peruvian sol."
+                                  "es": "Sol peruano.",
+                                  "pt": "Sol peruano."
                                 }
                               },
                               {
                                 "title": "UYU",
                                 "description": {
                                   "en": "Uruguayan peso.",
-                                  "es": "Uruguayan peso.",
-                                  "pt": "Uruguayan peso."
+                                  "es": "Peso uruguayo.",
+                                  "pt": "Peso uruguaio."
                                 }
                               }
                             ]
@@ -4551,32 +4551,32 @@
                                 "title": "scheduled",
                                 "description": {
                                   "en": "Authorized payment scheduled to collect",
-                                  "es": "Authorized payment scheduled to collect",
-                                  "pt": "Authorized payment scheduled to collect"
+                                  "es": "Pago autorizado programado para cobrar.",
+                                  "pt": "Pagamento autorizado agendado para cobrança."
                                 }
                               },
                               {
                                 "title": "processed",
                                 "description": {
                                   "en": "Authorized payment collected or exceeded retries",
-                                  "es": "Authorized payment collected or exceeded retries",
-                                  "pt": "Authorized payment collected or exceeded retries"
+                                  "es": "Pago autorizado recolectado o que excedió los reintentos.",
+                                  "pt": "Pagamento autorizado coletado ou que excedeu as tentativas."
                                 }
                               },
                               {
                                 "title": "recycling",
                                 "description": {
                                   "en": "Authorized payment in attempt to collect",
-                                  "es": "Authorized payment in attempt to collect",
-                                  "pt": "Authorized payment in attempt to collect"
+                                  "es": "Pago autorizado en intento de cobrar.",
+                                  "pt": "Pagamento autorizado em tentativa de cobrança."
                                 }
                               },
                               {
                                 "title": "cancelled",
                                 "description": {
                                   "en": "Authorized payment canceled",
-                                  "es": "Authorized payment canceled",
-                                  "pt": "Authorized payment canceled"
+                                  "es": "Pago autorizado cancelado.",
+                                  "pt": "Pagamento autorizado cancelado."
                                 }
                               }
                             ]
@@ -4594,16 +4594,16 @@
                                 "title": "pending",
                                 "description": {
                                   "en": "Pending summary in the subscription.",
-                                  "es": "Pending summary in the subscription.",
-                                  "pt": "Pending summary in the subscription."
+                                  "es": "Resumen pendiente de la suscripción.",
+                                  "pt": "Resumo pendente na assinatura."
                                 }
                               },
                               {
                                 "title": "done",
                                 "description": {
                                   "en": "Summarized result in the subscription.",
-                                  "es": "Summarized result in the subscription.",
-                                  "pt": "Summarized result in the subscription."
+                                  "es": "Resultado resumido de la suscripción.",
+                                  "pt": "Resultado resumido na assinatura."
                                 }
                               }
                             ]
@@ -4611,9 +4611,9 @@
                           "payment": {
                             "type": "object",
                             "description": {
-                              "es": "Payment status related to the authorized payment.",
-                              "pt": "Payment status related to the authorized payment.",
-                              "en": "Payment status related to the authorized payment."
+                              "en": "Payment status related to the authorized payment.",
+                              "pt": "Estado de pagamento relacionado ao pagamento autorizado.",
+                              "es": "Estado de pago relacionado con el pago autorizado."
                             },
                             "properties": {
                               "id": {
@@ -4637,73 +4637,73 @@
                                   {
                                     "title": "pending",
                                     "description": {
-                                      "en": "The user has not yet completed the payment process",
-                                      "es": "The user has not yet completed the payment process",
-                                      "pt": "The user has not yet completed the payment process"
+                                      "en": "The user has not yet completed the payment process.",
+                                      "es": "El usuario aún no ha completado el proceso de pago.",
+                                      "pt": "O usuário ainda não completou o processo de pagamento."
                                     }
                                   },
                                   {
                                     "title": "approved",
                                     "description": {
-                                      "en": "The payment has been approved and accredited",
-                                      "es": "The payment has been approved and accredited",
-                                      "pt": "The payment has been approved and accredited"
+                                      "en": "The payment has been approved and accredited.",
+                                      "es": "El pago fue aprobado y acreditado.",
+                                      "pt": "O pagamento foi aprovado e acreditado."
                                     }
                                   },
                                   {
                                     "title": "authorized",
                                     "description": {
-                                      "en": "The payment has been authorized but not captured yet",
-                                      "es": "The payment has been authorized but not captured yet",
-                                      "pt": "The payment has been authorized but not captured yet"
+                                      "en": "The payment has been authorized but not captured yet.",
+                                      "es": "El pago fue autorizado pero aún no fue capturado.",
+                                      "pt": "O pagamento foi autorizado, mas ainda não foi capturado."
                                     }
                                   },
                                   {
                                     "title": "in_process",
                                     "description": {
                                       "en": "Payment is being reviewed",
-                                      "es": "Payment is being reviewed",
-                                      "pt": "Payment is being reviewed"
+                                      "es": "El pago está siendo revisado.",
+                                      "pt": "O pagamento está sendo revisado."
                                     }
                                   },
                                   {
                                     "title": "in_mediation",
                                     "description": {
-                                      "en": "Users have initiated a dispute",
-                                      "es": "Users have initiated a dispute",
-                                      "pt": "Users have initiated a dispute"
+                                      "en": "Users have initiated a dispute.",
+                                      "es": "Los usuarios han iniciado una disputa.",
+                                      "pt": "Os usuários iniciaram uma disputa."
                                     }
                                   },
                                   {
                                     "title": "rejected",
                                     "description": {
-                                      "en": "Payment was rejected. The user may retry payment",
-                                      "es": "Payment was rejected. The user may retry payment",
-                                      "pt": "Payment was rejected. The user may retry payment"
+                                      "en": "Payment was rejected. The user may retry payment.",
+                                      "es": "El pago fue rechazado. El usuario puede intentar el pago de nuevo.",
+                                      "pt": "O pagamento foi rejeitado. O usuário pode tentar novamente."
                                     }
                                   },
                                   {
                                     "title": "cancelled",
                                     "description": {
-                                      "en": "Payment was cancelled by one of the parties or because time for payment has expired",
-                                      "es": "Payment was cancelled by one of the parties or because time for payment has expired",
-                                      "pt": "Payment was cancelled by one of the parties or because time for payment has expired"
+                                      "en": "Payment was cancelled by one of the parties or because time for payment has expired.",
+                                      "es": "El pago fue cancelado por una de las partes o porque el tiempo para el pago ha expirado.",
+                                      "pt": "O pagamento foi cancelado por uma das partes ou porque o tempo para pagamento expirou."
                                     }
                                   },
                                   {
                                     "title": "refunded",
                                     "description": {
-                                      "en": "Payment was refunded to the user",
-                                      "es": "Payment was refunded to the user",
-                                      "pt": "Payment was refunded to the user"
+                                      "en": "Payment was refunded to the user.",
+                                      "es": "El pago fue reembolsado al usuario.",
+                                      "pt": "O pagamento foi reembolsado ao usuário."
                                     }
                                   },
                                   {
                                     "title": "charged_back",
                                     "description": {
-                                      "en": "Was made a chargeback in the buyer’s credit card",
-                                      "es": "Was made a chargeback in the buyer’s credit card",
-                                      "pt": "Was made a chargeback in the buyer’s credit card"
+                                      "en": "Was made a chargeback in the buyer’s credit card.",
+                                      "es": "Se realizó un contracargo en la tarjeta de crédito del comprador.",
+                                      "pt": "Foi feito um estorno no cartão de crédito do comprador."
                                     }
                                   }
                                 ]
@@ -4925,17 +4925,17 @@
                             {
                               "title": "days",
                               "description": {
-                                "en": "Indicate a frequency in units of days",
-                                "es": "Indicate a frequency in units of days",
-                                "pt": "Indicate a frequency in units of days"
+                                "en": "Indicate a frequency in units of days.",
+                                "es": "Indica una frecuencia en unidades de días.",
+                                "pt": "Indique uma frequência em unidades de dias."
                               }
                             },
                             {
                               "title": "months",
                               "description": {
-                                "en": "Indicate a frequency in units of months",
-                                "es": "Indicate a frequency in units of months",
-                                "pt": "Indicate a frequency in units of months"
+                                "en": "Indicate a frequency in units of months.",
+                                "es": "Indica una frecuencia en unidades de meses.",
+                                "pt": "Indique uma frequência em unidades de meses."
                               }
                             }
                           ]
@@ -4971,16 +4971,16 @@
                               "title": "true",
                               "description": {
                                 "en": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                                "es": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                                "pt": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis."
+                                "es": "Cobrar un monto proporcional basado en los días restantes en el próximo ciclo de facturación. Los ciclos de facturación siempre se calculan sobre una base de 30 días.",
+                                "pt": "Cobrar um valor proporcional com base nos dias restantes no próximo ciclo de cobrança. Os ciclos de cobrança são sempre calculados com base em 30 dias."
                               }
                             },
                             {
                               "title": "false",
                               "description": {
                                 "en": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
-                                "es": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
-                                "pt": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                                "es": "Cobrar el monto de la suscripción independientemente de cuándo se suscriba el cliente en el ciclo de facturación.",
+                                "pt": "Cobrar o valor da assinatura independentemente de quando o cliente se inscreve no ciclo de cobrança."
                               }
                             }
                           ]
@@ -5014,17 +5014,17 @@
                                 {
                                   "title": "days",
                                   "description": {
-                                    "en": "Indicate a frequency in units of days",
-                                    "es": "Indicate a frequency in units of days",
-                                    "pt": "Indicate a frequency in units of days"
+                                    "en": "Indicate a frequency in units of days.",
+                                    "es": "Indica una frecuencia en unidades de días.",
+                                    "pt": "Indique uma frequência em unidades de dias."
                                   }
                                 },
                                 {
                                   "title": "months",
                                   "description": {
-                                    "en": "Indicate a frequency in units of months",
-                                    "es": "Indicate a frequency in units of months",
-                                    "pt": "Indicate a frequency in units of months"
+                                    "en": "Indicate a frequency in units of months.",
+                                    "es": "Indica una frecuencia en unidades de meses.",
+                                    "pt": "Indique uma frequência em unidades de meses."
                                   }
                                 }
                               ]
@@ -5062,56 +5062,56 @@
                               "title": "ARS",
                               "description": {
                                 "en": "Argentine peso.",
-                                "es": "Argentine peso.",
-                                "pt": "Argentine peso."
+                                "es": "Peso argentino.",
+                                "pt": "Peso argentino."
                               }
                             },
                             {
                               "title": "BRL",
                               "description": {
                                 "en": "Brazilian real.",
-                                "es": "Brazilian real.",
-                                "pt": "Brazilian real."
+                                "es": "Real brasilero.",
+                                "pt": "Real brasileiro."
                               }
                             },
                             {
                               "title": "CLP",
                               "description": {
                                 "en": "Chilean peso.",
-                                "es": "Chilean peso.",
-                                "pt": "Chilean peso."
+                                "es": "Peso chileno.",
+                                "pt": "Peso chileno."
                               }
                             },
                             {
                               "title": "MXN",
                               "description": {
                                 "en": "Mexican peso.",
-                                "es": "Mexican peso.",
-                                "pt": "Mexican peso."
+                                "es": "Peso mexicano.",
+                                "pt": "Peso mexicano."
                               }
                             },
                             {
                               "title": "COP",
                               "description": {
                                 "en": "Colombian peso.",
-                                "es": "Colombian peso.",
-                                "pt": "Colombian peso."
+                                "es": "Peso colombiano.",
+                                "pt": "Peso colombiano."
                               }
                             },
                             {
                               "title": "PEN",
                               "description": {
                                 "en": "Peruvian sol.",
-                                "es": "Peruvian sol.",
-                                "pt": "Peruvian sol."
+                                "es": "Sol peruano.",
+                                "pt": "Sol peruano."
                               }
                             },
                             {
                               "title": "UYU",
                               "description": {
                                 "en": "Uruguayan peso.",
-                                "es": "Uruguayan peso.",
-                                "pt": "Uruguayan peso."
+                                "es": "Peso uruguayo.",
+                                "pt": "Peso uruguaio."
                               }
                             }
                           ]
@@ -5232,17 +5232,17 @@
                         {
                           "title": "active",
                           "description": {
-                            "en": "Plan available to create subscriptions",
-                            "es": "Plan available to create subscriptions",
-                            "pt": "Plan available to create subscriptions"
+                            "en": "Plan available to create subscriptions.",
+                            "es": "Plan disponible para crear suscripciones.",
+                            "pt": "Plano disponível para criar assinaturas."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
-                            "en": "Plan not available to create subscriptions",
-                            "es": "Plan not available to create subscriptions",
-                            "pt": "Plan not available to create subscriptions"
+                            "en": "Plan not available to create subscriptions.",
+                            "es": "Plan no disponible para crear suscripciones.",
+                            "pt": "Plano não disponível para criar assinaturas."
                           }
                         }
                       ]
@@ -5416,17 +5416,17 @@
                           {
                             "title": "days",
                             "description": {
-                              "en": "Indicate a frequency in units of days",
-                              "es": "Indicate a frequency in units of days",
-                              "pt": "Indicate a frequency in units of days"
+                              "en": "Indicate a frequency in units of days.",
+                              "es": "Indica una frecuencia en unidades de días.",
+                              "pt": "Indique uma frequência em unidades de dias."
                             }
                           },
                           {
                             "title": "months",
                             "description": {
-                              "en": "Indicate a frequency in units of months",
-                              "es": "Indicate a frequency in units of months",
-                              "pt": "Indicate a frequency in units of months"
+                              "en": "Indicate a frequency in units of months.",
+                              "es": "Indica una frecuencia en unidades de meses.",
+                              "pt": "Indique uma frequência em unidades de meses."
                             }
                           }
                         ]
@@ -5462,16 +5462,16 @@
                             "title": "true",
                             "description": {
                               "en": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                              "es": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                              "pt": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis."
+                              "es": "Cobrar un monto proporcional basado en los días restantes en el próximo ciclo de facturación. Los ciclos de facturación siempre se calculan sobre una base de 30 días.",
+                              "pt": "Cobrar um valor proporcional com base nos dias restantes no próximo ciclo de cobrança. Os ciclos de cobrança são sempre calculados com base em 30 dias."
                             }
                           },
                           {
                             "title": "false",
                             "description": {
                               "en": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
-                              "es": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
-                              "pt": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                              "es": "Cobrar el monto de la suscripción independientemente de cuándo se suscriba el cliente en el ciclo de facturación.",
+                              "pt": "Cobrar o valor da assinatura independentemente de quando o cliente se inscreve no ciclo de cobrança."
                             }
                           }
                         ]
@@ -5506,17 +5506,17 @@
                               {
                                 "title": "days",
                                 "description": {
-                                  "en": "Indicate a frequency in units of days",
-                                  "es": "Indicate a frequency in units of days",
-                                  "pt": "Indicate a frequency in units of days"
+                                  "en": "Indicate a frequency in units of days.",
+                                  "es": "Indica una frecuencia en unidades de días.",
+                                  "pt": "Indique uma frequência em unidades de dias."
                                 }
                               },
                               {
                                 "title": "months",
                                 "description": {
-                                  "en": "Indicate a frequency in units of months",
-                                  "es": "Indicate a frequency in units of months",
-                                  "pt": "Indicate a frequency in units of months"
+                                  "en": "Indicate a frequency in units of month.",
+                                  "es": "Indica una frecuencia en unidades de meses.",
+                                  "pt": "Indique uma frequência em unidades de meses."
                                 }
                               }
                             ]
@@ -5545,56 +5545,56 @@
                             "title": "ARS",
                             "description": {
                               "en": "Argentine peso.",
-                              "es": "Argentine peso.",
-                              "pt": "Argentine peso."
+                              "es": "Peso argentino.",
+                              "pt": "Peso argentino."
                             }
                           },
                           {
                             "title": "BRL",
                             "description": {
                               "en": "Brazilian real.",
-                              "es": "Brazilian real.",
-                              "pt": "Brazilian real."
+                              "es": "Real brasilero.",
+                              "pt": "Real brasileiro."
                             }
                           },
                           {
                             "title": "CLP",
                             "description": {
                               "en": "Chilean peso.",
-                              "es": "Chilean peso.",
-                              "pt": "Chilean peso."
+                              "es": "Peso chileno.",
+                              "pt": "Peso chileno."
                             }
                           },
                           {
                             "title": "MXN",
                             "description": {
                               "en": "Mexican peso.",
-                              "es": "Mexican peso.",
-                              "pt": "Mexican peso."
+                              "es": "Peso mexicano.",
+                              "pt": "Peso mexicano."
                             }
                           },
                           {
                             "title": "COP",
                             "description": {
                               "en": "Colombian peso.",
-                              "es": "Colombian peso.",
-                              "pt": "Colombian peso."
+                              "es": "Peso colombiano.",
+                              "pt": "Peso colombiano."
                             }
                           },
                           {
                             "title": "PEN",
                             "description": {
                               "en": "Peruvian sol.",
-                              "es": "Peruvian sol.",
-                              "pt": "Peruvian sol."
+                              "es": "Sol peruano.",
+                              "pt": "Sol peruano."
                             }
                           },
                           {
                             "title": "UYU",
                             "description": {
                               "en": "Uruguayan peso.",
-                              "es": "Uruguayan peso.",
-                              "pt": "Uruguayan peso."
+                              "es": "Peso uruguayo.",
+                              "pt": "Peso uruguaio."
                             }
                           }
                         ]
@@ -5741,16 +5741,16 @@
                               "title": "days",
                               "description": {
                                 "en": "Indicate a frequency in units of days",
-                                "es": "Indicate a frequency in units of days",
-                                "pt": "Indicate a frequency in units of days"
+                                "es": "Indica una frecuencia en unidades de días.",
+                                "pt": "Indique uma frequência em unidades de dias."
                               }
                             },
                             {
                               "title": "months",
                               "description": {
                                 "en": "Indicate a frequency in units of months",
-                                "es": "Indicate a frequency in units of months",
-                                "pt": "Indicate a frequency in units of months"
+                                "es": "Indica una frecuencia en unidades de meses.",
+                                "pt": "Indique uma frequência em unidades de meses."
                               }
                             }
                           ]
@@ -5830,16 +5830,16 @@
                                   "title": "days",
                                   "description": {
                                     "en": "Indicate a frequency in units of days",
-                                    "es": "Indicate a frequency in units of days",
-                                    "pt": "Indicate a frequency in units of days"
+                                    "es": "Indica una frecuencia en unidades de días.",
+                                    "pt": "Indique uma frequência em unidades de dias."
                                   }
                                 },
                                 {
                                   "title": "months",
                                   "description": {
                                     "en": "Indicate a frequency in units of months",
-                                    "es": "Indicate a frequency in units of months",
-                                    "pt": "Indicate a frequency in units of months"
+                                    "es": "Indica una frecuencia en unidades de meses.",
+                                    "pt": "Indique uma frequência em unidades de meses."
                                   }
                                 }
                               ]
@@ -5877,56 +5877,56 @@
                               "title": "ARS",
                               "description": {
                                 "en": "Argentine peso.",
-                                "es": "Argentine peso.",
-                                "pt": "Argentine peso."
+                                "es": "Peso argentino.",
+                                "pt": "Peso argentino."
                               }
                             },
                             {
                               "title": "BRL",
                               "description": {
                                 "en": "Brazilian real.",
-                                "es": "Brazilian real.",
-                                "pt": "Brazilian real."
+                                "es": "Real brasilero.",
+                                "pt": "Real brasileiro."
                               }
                             },
                             {
                               "title": "CLP",
                               "description": {
                                 "en": "Chilean peso.",
-                                "es": "Chilean peso.",
-                                "pt": "Chilean peso."
+                                "es": "Peso chileno.",
+                                "pt": "Peso chileno."
                               }
                             },
                             {
                               "title": "MXN",
                               "description": {
                                 "en": "Mexican peso.",
-                                "es": "Mexican peso.",
-                                "pt": "Mexican peso."
+                                "es": "Peso mexicano.",
+                                "pt": "Peso mexicano."
                               }
                             },
                             {
                               "title": "COP",
                               "description": {
                                 "en": "Colombian peso.",
-                                "es": "Colombian peso.",
-                                "pt": "Colombian peso."
+                                "es": "Peso colombiano.",
+                                "pt": "Peso colombiano."
                               }
                             },
                             {
                               "title": "PEN",
                               "description": {
                                 "en": "Peruvian sol.",
-                                "es": "Peruvian sol.",
-                                "pt": "Peruvian sol."
+                                "es": "Sol peruano.",
+                                "pt": "Sol peruano."
                               }
                             },
                             {
                               "title": "UYU",
                               "description": {
                                 "en": "Uruguayan peso.",
-                                "es": "Uruguayan peso.",
-                                "pt": "Uruguayan peso."
+                                "es": "Peso uruguayo.",
+                                "pt": "Peso uruguaio."
                               }
                             }
                           ]
@@ -6048,16 +6048,16 @@
                           "title": "active",
                           "description": {
                             "en": "Plan available to create subscriptions",
-                            "es": "Plan available to create subscriptions",
-                            "pt": "Plan available to create subscriptions"
+                            "es": "Plan disponible para crear suscripciones.",
+                            "pt": "Plano disponível para criar assinaturas."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
                             "en": "Plan not available to create subscriptions",
-                            "es": "Plan not available to create subscriptions",
-                            "pt": "Plan not available to create subscriptions"
+                            "es": "Plan no disponible para crear suscripciones.",
+                            "pt": "Plano não disponível para criar assinaturas."
                           }
                         }
                       ]
@@ -6340,9 +6340,9 @@
                         "total": {
                           "type": "number",
                           "description": {
-                            "es": "The total number of items in the collection.",
-                            "pt": "The total number of items in the collection.",
-                            "en": "The total number of items in the collection."
+                            "en": "The total number of items in the collection.",
+                            "pt": "O número total de itens na coleção.",
+                            "es": "The total number of items in the collection."
                           },
                           "example": 100
                         }
@@ -6429,16 +6429,16 @@
                                     "title": "days",
                                     "description": {
                                       "en": "Indicate a frequency in units of days",
-                                      "es": "Indicate a frequency in units of days",
-                                      "pt": "Indicate a frequency in units of days"
+                                      "es": "Indica una frecuencia en unidades de días.",
+                                      "pt": "Indique uma frequência em unidades de dias."
                                     }
                                   },
                                   {
                                     "title": "months",
                                     "description": {
                                       "en": "Indicate a frequency in units of months",
-                                      "es": "Indicate a frequency in units of months",
-                                      "pt": "Indicate a frequency in units of months"
+                                      "es": "Indica una frecuencia en unidades de meses.",
+                                      "pt": "Indique uma frequência em unidades de meses."
                                     }
                                   }
                                 ]
@@ -6518,16 +6518,16 @@
                                         "title": "days",
                                         "description": {
                                           "en": "Indicate a frequency in units of days",
-                                          "es": "Indicate a frequency in units of days",
-                                          "pt": "Indicate a frequency in units of days"
+                                          "es": "Indica una frecuencia en unidades de días.",
+                                          "pt": "Indique uma frequência em unidades de dias."
                                         }
                                       },
                                       {
                                         "title": "months",
                                         "description": {
                                           "en": "Indicate a frequency in units of months",
-                                          "es": "Indicate a frequency in units of months",
-                                          "pt": "Indicate a frequency in units of months"
+                                          "es": "Indica una frecuencia en unidades de meses.",
+                                          "pt": "Indique uma frequência em unidades de meses."
                                         }
                                       }
                                     ]
@@ -6565,56 +6565,56 @@
                                     "title": "ARS",
                                     "description": {
                                       "en": "Argentine peso.",
-                                      "es": "Argentine peso.",
-                                      "pt": "Argentine peso."
+                                      "es": "Peso argentino.",
+                                      "pt": "Peso argentino."
                                     }
                                   },
                                   {
                                     "title": "BRL",
                                     "description": {
                                       "en": "Brazilian real.",
-                                      "es": "Brazilian real.",
-                                      "pt": "Brazilian real."
+                                      "es": "Real brasilero.",
+                                      "pt": "Real brasileiro."
                                     }
                                   },
                                   {
                                     "title": "CLP",
                                     "description": {
                                       "en": "Chilean peso.",
-                                      "es": "Chilean peso.",
-                                      "pt": "Chilean peso."
+                                      "es": "Peso chileno.",
+                                      "pt": "Peso chileno."
                                     }
                                   },
                                   {
                                     "title": "MXN",
                                     "description": {
                                       "en": "Mexican peso.",
-                                      "es": "Mexican peso.",
-                                      "pt": "Mexican peso."
+                                      "es": "Peso mexicano.",
+                                      "pt": "Peso mexicano."
                                     }
                                   },
                                   {
                                     "title": "COP",
                                     "description": {
                                       "en": "Colombian peso.",
-                                      "es": "Colombian peso.",
-                                      "pt": "Colombian peso."
+                                      "es": "Peso colombiano.",
+                                      "pt": "Peso colombiano."
                                     }
                                   },
                                   {
                                     "title": "PEN",
                                     "description": {
                                       "en": "Peruvian sol.",
-                                      "es": "Peruvian sol.",
-                                      "pt": "Peruvian sol."
+                                      "es": "Sol peruano.",
+                                      "pt": "Sol peruano."
                                     }
                                   },
                                   {
                                     "title": "UYU",
                                     "description": {
                                       "en": "Uruguayan peso.",
-                                      "es": "Uruguayan peso.",
-                                      "pt": "Uruguayan peso."
+                                      "es": "Peso uruguayo.",
+                                      "pt": "Peso uruguaio."
                                     }
                                   }
                                 ]
@@ -6745,16 +6745,16 @@
                                 "title": "active",
                                 "description": {
                                   "en": "Plan available to create subscriptions",
-                                  "es": "Plan available to create subscriptions",
-                                  "pt": "Plan available to create subscriptions"
+                                  "es": "Plan disponible para crear suscripciones.",
+                                  "pt": "Plano disponível para criar assinaturas."
                                 }
                               },
                               {
                                 "title": "cancelled",
                                 "description": {
                                   "en": "Plan not available to create subscriptions",
-                                  "es": "Plan not available to create subscriptions",
-                                  "pt": "Plan not available to create subscriptions"
+                                  "es": "Plan no disponible para crear suscripciones.",
+                                  "pt": "Plano não disponível para criar assinaturas."
                                 }
                               }
                             ]
@@ -6954,32 +6954,32 @@
                   "title": "green",
                   "description": {
                     "en": "All collections made.",
-                    "es": "All collections made.",
-                    "pt": "All collections made."
+                    "es": "Todas las colecciones realizadas.",
+                    "pt": "Todas as coleções feitas."
                   }
                 },
                 {
                   "title": "yellow",
                   "description": {
                     "en": "With collection problems. We are trying to collect an invoice.",
-                    "es": "With collection problems. We are trying to collect an invoice.",
-                    "pt": "With collection problems. We are trying to collect an invoice."
+                    "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
+                    "pt": "Com problemas de coleções. Estamos tentando cobrar uma fatura."
                   }
                 },
                 {
                   "title": "red",
                   "description": {
                     "en": "With pending collections. An invoice could not be collected.",
-                    "es": "With pending collections. An invoice could not be collected.",
-                    "pt": "With pending collections. An invoice could not be collected."
+                    "es": "Con colecciones pendientes. No se pudo cobrar una factura.",
+                    "pt": "Com coleções pendentes. Uma fatura não foi cobrada."
                   }
                 },
                 {
                   "title": "blank",
                   "description": {
                     "en": "Discounted collection.",
-                    "es": "Discounted collection.",
-                    "pt": "Discounted collection."
+                    "es": "Colección descontada.",
+                    "pt": "Coleçao com desconto."
                   }
                 }
               ]
@@ -7001,32 +7001,32 @@
                   "title": "pending",
                   "description": {
                     "en": "Preapproval without a payment method.",
-                    "es": "Preapproval without a payment method.",
-                    "pt": "Preapproval without a payment method."
+                    "es": "Preaprobación sin un método de pago.",
+                    "pt": "Pré-aprovação sem um método de pagamento."
                   }
                 },
                 {
                   "title": "authorized",
                   "description": {
                     "en": "Preapproval with a valid payment method.",
-                    "es": "Preapproval with a valid payment method.",
-                    "pt": "Preapproval with a valid payment method."
+                    "es": "Preaprobación con un método de pago válido.",
+                    "pt": "Pré-aprovação com um método de pagamento válido."
                   }
                 },
                 {
                   "title": "paused",
                   "description": {
                     "en": "Preapproval with temporally discontinued collection of payments.",
-                    "es": "Preapproval with temporally discontinued collection of payments.",
-                    "pt": "Preapproval with temporally discontinued collection of payments."
+                    "es": "Preaprobación con cobranza de pagos temporalmente descontinuada.",
+                    "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
                   }
                 },
                 {
                   "title": "cancelled",
                   "description": {
                     "en": "Preapproval terminated. This is an irreversible state.",
-                    "es": "Preapproval terminated. This is an irreversible state.",
-                    "pt": "Preapproval terminated. This is an irreversible state."
+                    "es": "Preaprobación terminada. Este es un estado irreversible.",
+                    "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
                   }
                 }
               ]
@@ -7131,9 +7131,9 @@
                         "total": {
                           "type": "number",
                           "description": {
-                            "es": "The total number of items in the collection.",
-                            "pt": "The total number of items in the collection.",
-                            "en": "The total number of items in the collection."
+                            "en": "The total number of items in the collection.",
+                            "pt": "O número total de itens na coleção.",
+                            "es": "El número total de elementos en la colección."
                           },
                           "example": 100
                         }
@@ -7149,9 +7149,9 @@
                       "items": {
                         "type": "object",
                         "description": {
-                          "es": "Subscription result item.",
-                          "pt": "Subscription result item.",
-                          "en": "Subscription result item."
+                          "en": "Subscription result item.",
+                          "pt": "Item do resultado da assinatura.",
+                          "es": "Elemento del resultado de la suscripción."
                         },
                         "properties": {
                           "id": {
@@ -7265,16 +7265,16 @@
                                     "title": "days",
                                     "description": {
                                       "en": "Indicate a frequency in units of days",
-                                      "es": "Indicate a frequency in units of days",
-                                      "pt": "Indicate a frequency in units of days"
+                                      "es": "Indica una frecuencia en unidades de días.",
+                                      "pt": "Indique uma frequência em unidades de dias."
                                     }
                                   },
                                   {
                                     "title": "months",
                                     "description": {
                                       "en": "Indicate a frequency in units of months",
-                                      "es": "Indicate a frequency in units of months",
-                                      "pt": "Indicate a frequency in units of months"
+                                      "es": "Indica una frecuencia en unidades de meses.",
+                                      "pt": "Indique uma frequência em unidades de meses."
                                     }
                                   }
                                 ]
@@ -7312,56 +7312,56 @@
                                     "title": "ARS",
                                     "description": {
                                       "en": "Argentine peso.",
-                                      "es": "Argentine peso.",
-                                      "pt": "Argentine peso."
+                                      "es": "Peso argentino.",
+                                      "pt": "Peso argentino."
                                     }
                                   },
                                   {
                                     "title": "BRL",
                                     "description": {
                                       "en": "Brazilian real.",
-                                      "es": "Brazilian real.",
-                                      "pt": "Brazilian real."
+                                      "es": "Real brasilero.",
+                                      "pt": "Real brasileiro."
                                     }
                                   },
                                   {
                                     "title": "CLP",
                                     "description": {
                                       "en": "Chilean peso.",
-                                      "es": "Chilean peso.",
-                                      "pt": "Chilean peso."
+                                      "es": "Peso chileno.",
+                                      "pt": "Peso chileno."
                                     }
                                   },
                                   {
                                     "title": "MXN",
                                     "description": {
                                       "en": "Mexican peso.",
-                                      "es": "Mexican peso.",
-                                      "pt": "Mexican peso."
+                                      "es": "Peso mexicano.",
+                                      "pt": "Peso mexicano."
                                     }
                                   },
                                   {
                                     "title": "COP",
                                     "description": {
                                       "en": "Colombian peso.",
-                                      "es": "Colombian peso.",
-                                      "pt": "Colombian peso."
+                                      "es": "Peso colombiano.",
+                                      "pt": "Peso colombiano."
                                     }
                                   },
                                   {
                                     "title": "PEN",
                                     "description": {
                                       "en": "Peruvian sol.",
-                                      "es": "Peruvian sol.",
-                                      "pt": "Peruvian sol."
+                                      "es": "Sol peruano.",
+                                      "pt": "Sol peruano."
                                     }
                                   },
                                   {
                                     "title": "UYU",
                                     "description": {
                                       "en": "Uruguayan peso.",
-                                      "es": "Uruguayan peso.",
-                                      "pt": "Uruguayan peso."
+                                      "es": "Peso uruguayo.",
+                                      "pt": "Peso uruguaio."
                                     }
                                   }
                                 ]
@@ -7405,16 +7405,16 @@
                                         "title": "days",
                                         "description": {
                                           "en": "Indicate a frequency in units of days",
-                                          "es": "Indicate a frequency in units of days",
-                                          "pt": "Indicate a frequency in units of days"
+                                          "es": "Indica una frecuencia en unidades de días.",
+                                          "pt": "Indique uma frequência em unidades de dias."
                                         }
                                       },
                                       {
                                         "title": "months",
                                         "description": {
                                           "en": "Indicate a frequency in units of months",
-                                          "es": "Indicate a frequency in units of months",
-                                          "pt": "Indicate a frequency in units of months"
+                                          "es": "Indica una frecuencia en unidades de meses.",
+                                          "pt": "Indique uma frequência em unidades de meses."
                                         }
                                       }
                                     ]
@@ -7588,32 +7588,32 @@
                                     "title": "green",
                                     "description": {
                                       "en": "All collections made.",
-                                      "es": "All collections made.",
-                                      "pt": "All collections made."
+                                      "es": "Todas las colecciones realizadas.",
+                                      "pt": "Todas as coleções feitas."
                                     }
                                   },
                                   {
                                     "title": "yellow",
                                     "description": {
                                       "en": "With collection problems. We are trying to collect an invoice.",
-                                      "es": "With collection problems. We are trying to collect an invoice.",
-                                      "pt": "With collection problems. We are trying to collect an invoice."
+                                      "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
+                                      "pt": "Com problemas de coleções. Estamos tentando cobrar uma fatura."
                                     }
                                   },
                                   {
                                     "title": "red",
                                     "description": {
                                       "en": "With pending collections. An invoice could not be collected.",
-                                      "es": "With pending collections. An invoice could not be collected.",
-                                      "pt": "With pending collections. An invoice could not be collected."
+                                      "es": "Con colecciones pendientes. No se pudo cobrar una factura.",
+                                      "pt": "Com coleções pendentes. Uma fatura não foi cobrada."
                                     }
                                   },
                                   {
                                     "title": "blank",
                                     "description": {
                                       "en": "Discounted collection.",
-                                      "es": "Discounted collection.",
-                                      "pt": "Discounted collection."
+                                      "es": "Colección descontada.",
+                                      "pt": "Coleçao com desconto."
                                     }
                                   }
                                 ]
@@ -7633,32 +7633,32 @@
                                 "title": "pending",
                                 "description": {
                                   "en": "Preapproval without a payment method.",
-                                  "es": "Preapproval without a payment method.",
-                                  "pt": "Preapproval without a payment method."
+                                  "es": "Preaprobación sin un método de pago.",
+                                  "pt": "Pré-aprovação sem um método de pagamento."
                                 }
                               },
                               {
                                 "title": "authorized",
                                 "description": {
                                   "en": "Preapproval with a valid payment method.",
-                                  "es": "Preapproval with a valid payment method.",
-                                  "pt": "Preapproval with a valid payment method."
+                                  "es": "Preaprobación con un método de pago válido.",
+                                  "pt": "Pré-aprovação com um método de pagamento válido."
                                 }
                               },
                               {
                                 "title": "paused",
                                 "description": {
                                   "en": "Preapproval with temporally discontinued collection of payments.",
-                                  "es": "Preapproval with temporally discontinued collection of payments.",
-                                  "pt": "Preapproval with temporally discontinued collection of payments."
+                                  "es": "Preaprobación con cobranza de pagos temporalmente descontinuada.",
+                                  "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
                                 }
                               },
                               {
                                 "title": "cancelled",
                                 "description": {
                                   "en": "Preapproval terminated. This is an irreversible state.",
-                                  "es": "Preapproval terminated. This is an irreversible state.",
-                                  "pt": "Preapproval terminated. This is an irreversible state."
+                                  "es": "Preaprobación terminada. Este es un estado irreversible.",
+                                  "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
                                 }
                               }
                             ]
