@@ -18,17 +18,17 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --data-raw '{
     "transaction_amount": 100,
     "installments": 1,
-    "statement_descriptor": "LOJA DO SELLER",
+    "statement_descriptor": "Loja do vendedor",
     "capture": true,
     "binary_mode": false,
-    "sponsor_id": {{ADICIONE O ID DE SUA CONTA MERCADO PAGO REFERENTE A SUA PLATAFORMA}},
+    "sponsor_id": {{ID de sua conta Mercado Pago referente à sua plataforma}},
     "payment_method_id": "bolbradesco",
     "date_of_expiration": "2023-02-28T22:59:59.000-04:00",
-    "external_reference": "IDENTIFICADOR DA PLATAFORMA",
+    "external_reference": "Identificador da plataforma",
     "notification_url": "{{notification_url}}",
-    "description": "Descrição Produto do seller",
+    "description": "Descrição do produto do vendedor",
     "payer": {
-        "first_name": "Compra",
+        "first_name": "João",
         "last_name": "Silva",
         "email": "test_user_{{$timestamp}}@testuser.com",
         "identification": {
@@ -52,8 +52,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
         "items": [
             {
                 "id": "1941",
-                "title": "Produto do seller",
-                "description": "Descrição Produto do seller",
+                "title": "Produto do vendedor",
+                "description": "Descrição do produto do seller",
                 "picture_url": null,
                 "category_id": "electronics",
                 "quantity": 1,
@@ -82,7 +82,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "pick_up_on_seller": "1",
             "receiver_address": {
                 "zip_code": "95630000",
-                "street_name": "são Luiz",
+                "street_name": "São Luiz",
                 "street_number": "15",
                 "floor": "",
                 "apartment": ""

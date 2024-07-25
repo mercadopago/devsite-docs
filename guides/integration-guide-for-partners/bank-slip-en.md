@@ -1,26 +1,36 @@
-# Modelo de pagamento Cartão de Crédito - General
+# Payment model - Bank Slip
+
+By default, the due date for payments via bank slip is 3 days. However, it is possible to change this setting at the time of creation by using the `date_of_expiration` field in the payment creation request, defining a period between 1 and 30 days from the issue date of the bank slip.
+
+To use this field, it is necessary to follow the ISO 8601 date format: yyyy-MM-dd'T'HH:mm:ssz.
+
+Example:
+
+```curl
+"date_of_expiration": "2023-01-28T22:59:59.000-04:00"
+```
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
---header 'x-platform-id: {{PLATFORM_ID fornecido pelo time de Partners}}' \
+--header 'x-platform-id: {{PLATFORM_ID provided by the Partners team}}' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "transaction_amount": 100,
     "installments": 1,
-    "statement_descriptor": "Loja do vendedor",
+    "statement_descriptor": "Seller's store",
     "capture": true,
     "binary_mode": false,
-    "sponsor_id": {{ID de sua conta Mercado Pago referente à sua plataforma}},
-    "payment_method_id": "{{payment_method_id}}",
-    "token": "{{card_token_id}}",
-    "external_reference": "Identificador da plataforma",
+    "sponsor_id": {{ID of your Mercado Pago account related to your platform}},
+    "payment_method_id": "bolbradesco",
+    "date_of_expiration": "2023-02-28T22:59:59.000-04:00",
+    "external_reference": "Platform identifier",
     "notification_url": "{{notification_url}}",
-    "description": "Descrição do produto do vendedor",
+    "description": "Seller's product description",
     "payer": {
-        "first_name": "Nome",
-        "last_name": "Sobrenome",
-        "email": "test_user_1677281619@testuser.com",
+        "first_name": "Name",
+        "last_name": "Last name",
+        "email": "test_user_{{$timestamp}}@testuser.com",
         "identification": {
             "type": "CPF",
             "number": "19119119100"
@@ -42,8 +52,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
         "items": [
             {
                 "id": "1941",
-                "title": "Produto do vendedor",
-                "description": "Descrição do produto do vendedor",
+                "title": "Seller's product",
+                "description": "Description of the seller's product",
                 "picture_url": null,
                 "category_id": "electronics",
                 "quantity": 1,
@@ -51,8 +61,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             }
         ],
         "payer": {
-            "first_name": "Nome",
-            "last_name": "Sobrenome",
+            "first_name": "Name",
+            "last_name": "Last name",
             "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",

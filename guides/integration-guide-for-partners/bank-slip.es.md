@@ -1,4 +1,14 @@
-# Modelo de pagamento Cartão de Crédito - General
+# Modelo de pago - Boleto Bancario
+
+Por defecto, el período de vencimiento para pagos mediante boleto bancario es de 3 días. Sin embargo, es posible cambiar la configuración en el momento de la creación, utilizando el campo `date_of_expiration` en la solicitud de creación del pago, definiendo un período entre 1 y 30 días a partir de la fecha de emisión del boleto.
+
+Para utilizar este campo, es necesario seguir el formato de fecha ISO 8601: yyyy-MM-dd'T'HH:mm:ssz.
+
+Ejemplo:
+
+```curl
+"date_of_expiration": "2023-01-28T22:59:59.000-04:00"
+```
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
@@ -8,19 +18,19 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --data-raw '{
     "transaction_amount": 100,
     "installments": 1,
-    "statement_descriptor": "Loja do vendedor",
+    "statement_descriptor": "Tienda del vendedor",
     "capture": true,
     "binary_mode": false,
-    "sponsor_id": {{ID de sua conta Mercado Pago referente à sua plataforma}},
-    "payment_method_id": "{{payment_method_id}}",
-    "token": "{{card_token_id}}",
-    "external_reference": "Identificador da plataforma",
+    "sponsor_id": {{ID de su cuenta Mercado Pago referente a su plataforma}},
+    "payment_method_id": "bolbradesco",
+    "date_of_expiration": "2023-02-28T22:59:59.000-04:00",
+    "external_reference": "Identificador de la plataforma",
     "notification_url": "{{notification_url}}",
-    "description": "Descrição do produto do vendedor",
+    "description": "Descripción del producto del vendedor",
     "payer": {
-        "first_name": "Nome",
-        "last_name": "Sobrenome",
-        "email": "test_user_1677281619@testuser.com",
+        "first_name": "Nombre",
+        "last_name": "Apellido",
+        "email": "test_user_{{$timestamp}}@testuser.com",
         "identification": {
             "type": "CPF",
             "number": "19119119100"
@@ -42,8 +52,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
         "items": [
             {
                 "id": "1941",
-                "title": "Produto do vendedor",
-                "description": "Descrição do produto do vendedor",
+                "title": "Producto del vendedor",
+                "description": "Descripción del producto del vendedor",
                 "picture_url": null,
                 "category_id": "electronics",
                 "quantity": 1,
@@ -51,8 +61,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             }
         ],
         "payer": {
-            "first_name": "Nome",
-            "last_name": "Sobrenome",
+            "first_name": "Nombre",
+            "last_name": "Apellido",
             "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",

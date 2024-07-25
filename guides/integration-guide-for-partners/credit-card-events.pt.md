@@ -1,4 +1,4 @@
-# Modelo de pagamento Cartão de Crédito - Eventos/Tickets
+# Modelo de pagamento com cartão de crédito - Eventos/Tickets
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
@@ -8,18 +8,18 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --data-raw '{
     "transaction_amount": 120.34,
     "installments": 1,
-    "statement_descriptor": "LOJA DO SELLER",
+    "statement_descriptor": "Loja do vendedor",
     "capture": true,
     "binary_mode": false,
-    "sponsor_id": {{ADICIONE O ID DE SUA CONTA MERCADO PAGO REFERENTE A SUA PLATAFORMA}},
+    "sponsor_id": {{ID de sua conta Mercado Pago referente à sua plataforma}},
     "payment_method_id": "{{payment_method_id}}",
     "token":  "{{card_token_id}}",
-    "external_reference": "IDENTIFICADOR DA PLATAFORMA",
+    "external_reference": "Identificador da plataforma",
     "notification_url": "{{notification_url}}",
-    "description": "DD/MM/AAAA | NOME DO EVENTO",
+    "description": "Data (no formato dd/mm/aaaa) | Nome do evento",
     "payer": {
-        "first_name": "Compra",
-        "last_name": "Teste",
+        "first_name": "Nome",
+        "last_name": "Sobrenome",
         "email": "test_user_1677281849@testuser.com",
         "identification": {
             "type": "CPF",
@@ -42,8 +42,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
         "items": [
             {
                 "id": "1941",
-                "title": "DD/MM/AAAA | NOME DO EVENTO",
-                "description": "DD/MM/AAAA | NOME DO EVENTO",
+                "title": "Data (no formato dd/mm/aaaa) | Nome do evento",
+                "description": "Data (no formato dd/mm/aaaa) | Nome do evento",
                 "picture_url": null,
                 "category_id": "tickets",
                 "quantity": 1,
@@ -73,7 +73,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "pick_up_on_seller": "1",
             "receiver_address": {
                 "zip_code": "95630000",
-                "street_name": "são Luiz",
+                "street_name": "São Luiz",
                 "street_number": "15",
                 "floor": "",
                 "apartment": ""
