@@ -2467,9 +2467,9 @@
                       "type": "number",
                       "example": 0,
                       "description": {
-                        "es": "How many times the subscription was modified",
-                        "pt": "How many times the subscription was modified",
-                        "en": "How many times the subscription was modified"
+                        "en": "Indicates how many times the subscription was modified.",
+                        "pt": "Indica quantas vezes a assinatura foi modificada.",
+                        "es": "Indica cuántas veces fue modificada la suscripción."
                       }
                     },
                     "application_id": {
