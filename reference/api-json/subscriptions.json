@@ -3186,7 +3186,7 @@
                 },
                 "description": {
                   "es": "the format is `attachment; filename=\"preapprovals.zip\"`",
-                  "pt": "o formato é `attachment; filename=\"preapprovals.zip\"`",
+                  "pt": "O formato é `attachment; filename=\"preapprovals.zip\"`",
                   "en": "el formato es `attachment; filename=\"preapprovals.zip\"`"
                 }
               }
@@ -3594,7 +3594,7 @@
                       "description": {
                         "en": "Date of last time a payment of this subscription was made.",
                         "pt": "Data da última vez que um pagamento desta assinatura foi feito.",
-                        "es": "Fecha de la última vez que se realizó un pago de esta suscripción"
+                        "es": "Fecha de la última vez que se realizó un pago de esta suscripción."
                       },
                       "example": "24-2-2021"
                     },
@@ -3950,7 +3950,7 @@
                           "title": "scheduled",
                           "description": {
                             "en": "Authorized payment scheduled to collect.",
-                            "pt": "Pagamento autorizado agendado para cobrança.",
+                            "pt": "Agendada a cobrança para um pagamento autorizado.",
                             "es": "Pago autorizado programado para cobrar."
                           }
                         },
