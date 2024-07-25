@@ -4576,7 +4576,7 @@
                                 "description": {
                                   "en": "Authorized payment canceled",
                                   "es": "Pago autorizado cancelado.",
-                                  "pt": "Pagamento autorizado cancelado."
+                                  "pt": "Pagamento autorizado foi cancelado."
                                 }
                               }
                             ]
