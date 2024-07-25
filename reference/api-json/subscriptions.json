@@ -2390,8 +2390,8 @@
                     "example": "visa",
                     "description": {
                       "en": "Identifier of the secondary payment method.",
-                      "pt": "Identificador do método de pagamento do meio secundário.",
-                      "es": "Identificador del método de pago del medio secundario."
+                      "pt": "Identificador do meio de pagamento secundário.",
+                      "es": "Identificador del medio de pago del medio secundario."
                     }
                   },
                   "status": {
