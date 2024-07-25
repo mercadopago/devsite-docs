@@ -2065,7 +2065,7 @@
                           "title": "pending",
                           "description": {
                             "en": "Preapproval without a payment method",
-                            "es": "Preaprobación sin un método de pago.",
+                            "es": "Preaprobación sin un medio de pago.",
                             "pt": "Pré-aprovação sem um meio de pagamento."
                           }
                         },
@@ -2407,7 +2407,7 @@
                         "title": "pending",
                         "description": {
                           "en": "Preapproval without a payment method",
-                          "es": "Preaprobación sin un método de pago.",
+                          "es": "Preaprobación sin un medio de pago.",
                           "pt": "Pré-aprovação sem um meio de pagamento."
                         }
                       },
@@ -2933,7 +2933,7 @@
                           "title": "pending",
                           "description": {
                             "en": "Preapproval without a payment method.",
-                            "es": "Preaprobación sin un método de pago.",
+                            "es": "Preaprobación sin un medio de pago.",
                             "pt": "Pré-aprovação sem um meio de pagamento."
                           }
                         },
@@ -3117,7 +3117,7 @@
                   "title": "pending",
                   "description": {
                     "en": "Preapproval without a payment method.",
-                    "es": "Preaprobación sin un método de pago.",
+                    "es": "Preaprobación sin un medio de pago.",
                     "pt": "Pré-aprovação sem um meio de pagamento."
                   }
                 },
@@ -3247,7 +3247,7 @@
                           "title": "pending",
                           "description": {
                             "en": "Preapproval without a payment method.",
-                            "es": "Preaprobación sin un método de pago.",
+                            "es": "Preaprobación sin un medio de pago.",
                             "pt": "Pré-aprovação sem um meio de pagamento."
                           }
                         },
@@ -7001,7 +7001,7 @@
                   "title": "pending",
                   "description": {
                     "en": "Preapproval without a payment method.",
-                    "es": "Preaprobación sin un método de pago.",
+                    "es": "Preaprobación sin un medio de pago.",
                     "pt": "Pré-aprovação sem um meio de pagamento."
                   }
                 },
@@ -7633,7 +7633,7 @@
                                 "title": "pending",
                                 "description": {
                                   "en": "Preapproval without a payment method.",
-                                  "es": "Preaprobación sin un método de pago.",
+                                  "es": "Preaprobación sin un medio de pago.",
                                   "pt": "Pré-aprovação sem um meio de pagamento."
                                 }
                               },
