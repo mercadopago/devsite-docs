@@ -2912,7 +2912,7 @@
                               "title": "blank",
                               "description": {
                                 "en": "Discounted collection.",
-                                "es": "Cobranza descontada.",
+                                "es": "Cobro con descuento.",
                                 "pt": "Cobrança com desconto."
                               }
                             }
@@ -3583,8 +3583,8 @@
                           "title": "blank",
                           "description": {
                             "en": "Discounted collection.",
-                            "es": "Colección descontada.",
-                            "pt": "Coleçao com desconto."
+                            "es": "Cobro con descuento.",
+                            "pt": "Cobrança com desconto."
                           }
                         }
                       ]
@@ -6978,8 +6978,8 @@
                   "title": "blank",
                   "description": {
                     "en": "Discounted collection.",
-                    "es": "Colección descontada.",
-                    "pt": "Coleçao com desconto."
+                    "es": "Cobro con descuento.",
+                    "pt": "Cobrança com desconto."
                   }
                 }
               ]
@@ -7612,8 +7612,8 @@
                                     "title": "blank",
                                     "description": {
                                       "en": "Discounted collection.",
-                                      "es": "Colección descontada.",
-                                      "pt": "Coleçao com desconto."
+                                      "es": "Cobro con descuento.",
+                                      "pt": "Cobrança com desconto."
                                     }
                                   }
                                 ]
