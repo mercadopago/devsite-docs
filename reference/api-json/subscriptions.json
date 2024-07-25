@@ -3967,7 +3967,7 @@
                           "description": {
                             "en": "Authorized payment in attempt to collect.",
                             "pt": "Pagamento autorizado em tentativa de cobrança.",
-                            "es": "Pago autorizado en intento de cobrar."
+                            "es": "Pago autorizado en proceso de cobro."
                           }
                         },
                         {
@@ -4567,7 +4567,7 @@
                                 "title": "recycling",
                                 "description": {
                                   "en": "Authorized payment in attempt to collect",
-                                  "es": "Pago autorizado en intento de cobrar.",
+                                  "es": "Pago autorizado en proceso de cobro.",
                                   "pt": "Pagamento autorizado em tentativa de cobrança."
                                 }
                               },
