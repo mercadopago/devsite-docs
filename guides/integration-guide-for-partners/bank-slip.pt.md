@@ -21,7 +21,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "statement_descriptor": "Loja do vendedor",
     "capture": true,
     "binary_mode": false,
-    "sponsor_id": {{ID de sua conta Mercado Pago referente à sua plataforma}},
+    "sponsor_id": {{ID da sua conta Mercado Pago referente à sua plataforma}},
     "payment_method_id": "bolbradesco",
     "date_of_expiration": "2023-02-28T22:59:59.000-04:00",
     "external_reference": "Identificador da plataforma",

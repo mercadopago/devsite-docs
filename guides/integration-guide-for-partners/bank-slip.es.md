@@ -12,7 +12,7 @@ Ejemplo:
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
---header 'x-platform-id: {{PLATFORM_ID fornecido pelo time de Partners}}' \
+--header 'x-platform-id: {{PLATFORM_ID proporcionado por el equipo de Partners}}' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{

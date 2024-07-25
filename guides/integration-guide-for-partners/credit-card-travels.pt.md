@@ -8,18 +8,18 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --data-raw '{
     "transaction_amount": 150.34,
     "installments": 1,
-    "statement_descriptor": "LOJA DO SELLER",
+    "statement_descriptor": "Loja do vendedor",
     "capture": true,
     "binary_mode": false,
-    "sponsor_id": {{ADICIONE O ID DE SUA CONTA MERCADO PAGO REFERENTE A SUA PLATAFORMA}},
+    "sponsor_id": {{ID da sua conta Mercado Pago referente à sua plataforma}},
     "payment_method_id": "{{payment_method_id}}",
     "token":  "{{card_token_id}}",
-    "external_reference": "IDENTIFICADOR DA PLATAFORMA",
+    "external_reference": "Identificador da plataforma",
     "notification_url": "{{notification_url}}",
-    "description": "DD/MM/AAAA | Descrição da Passagem",
+    "description": "Data (no formato dd/mm/aaaa) | Descrição da passagem",
     "payer": {
-        "first_name": "Compra",
-        "last_name": "Teste",
+        "first_name": "Nome",
+        "last_name": "Sobrenome",
         "email": "test_user_1677282147@testuser.com",
         "identification": {
             "type": "CPF",
@@ -42,21 +42,21 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
         "items": [
             {
                 "id": "1234",
-                "title": "DD/MM/AAAA | Descrição da Passagem",
-                "description": "DD/MM/AAAA | Descrição da Passagem",
+                "title": "Data (no formato dd/mm/aaaa) | Descrição da passagem",
+                "description": "Data (no formato dd/mm/aaaa) | Descrição da passagem",
                 "picture_url": "www.google.com",
                 "category_id": "travels",
                 "category_descriptor": {
                     "passenger": {
-                        "first_name": "Maria",
-                        "last_name": "Silva"
+                        "first_name": "Nome",
+                        "last_name": "Sobrenome"
                     },
                     "route": {
                         "departure": "Osasco",
                         "destination": "Londres",
                         "departure_date_time": "2023-03-12T12:58:41.425-04:00",
                         "arrival_date_time": "2023-03-14T12:58:41.425-04:00",
-                        "company": "Compañía"
+                        "company": "Companhia"
                     }
                 },
                 "quantity": 1,
