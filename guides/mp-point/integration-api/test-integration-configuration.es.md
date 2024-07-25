@@ -12,7 +12,7 @@ Para poder probar tu integración con Mercado Pago Point y el procesamiento de p
 
 1. Crea una sucursal realizando un llamado al endpoint [Crear sucursal](/developers/es/reference/stores/_users_user_id_stores/post). Deberás enviar tu **Access Token productivo**, y reemplazar el valor `user_id` por la **identificación de usuario** que te fue asignada al crear tu aplicación. Si tienes dudas sobre cómo identificar este valor, accede a la documentación sobre [Detalles de aplicación](/developers/es/docs/mp-point/additional-content/your-integrations/application-details).<br>  
 
-2. Crea una caja realizando un llamado al endpoint [Crear caja](/developers/es/reference/pos/_pos/post), y asóciala a la sucursal creada en el paso anterior. Esto se logra reemplazando los parámetros `external_store_id` por el `external_id` que le asignaste a la sucursal, y `store_id` por el valor obtenido para el campo `id` en la respuesta a la creación de la sucursal.<br>
+2. Crea una caja realizando un llamado al endpoint [Crear caja](/developers/es/reference/pos/_pos/post), y asóciala a la sucursal creada en el paso anterior. Esto se logra reemplazando los parámetros `external_store_id` por el `external_id` que le asignaste a la sucursal, o `store_id` por el valor obtenido para el campo `id` en la respuesta a la creación de la sucursal.<br>
 
 3. Por último, asocia el dispositivo Point a tu cuenta de Mercado Pago. Para eso, descarga e instala la app de Mercado Pago en tu dispositivo móvil, inicia sesión con tu cuenta, y oprime el ícono QR para escanear el código que aparece al encender el dispositivo Point.<br>
 
@@ -27,7 +27,7 @@ La activación del modo operativo Punto de Venta (PDV) en tu dispositivo es un *
 >
 > Nota
 >
-> Recomendamos enviar en esta solicitud los parámetros `store_id` y `pos_id` para verificar que la configuración sea correcta. Los mismos permitirán obtener no sólo los dispositivos asociados a una cuenta de Mercado Pago, sino también aquellos vinculados específicamente a una sucursal y una caja dentro de esa cuenta, respectivamente. Los valores de estos parámetros serán aquellos recibidos en las respuestas a la creación de cada una.
+> Recomendamos enviar en esta solicitud los *query params* `store_id` y `pos_id` para verificar que la configuración sea correcta. Los mismos permitirán obtener no sólo los dispositivos asociados a una cuenta de Mercado Pago, sino también aquellos vinculados específicamente a una sucursal y una caja dentro de esa cuenta, respectivamente. Los valores de estos parámetros serán aquellos recibidos en las respuestas a la creación de cada una.
 
 2. Por último, realiza una solicitud **PATCH** al endpoint [Cambiar el modo de operación](/developers/es/reference/integrations_api/_point_integration-api_devices_device-id/patch), reemplazando el valor `device-id` del *path* por el `id` del dispositivo obtenido en el paso anterior.  Además, deberás completar el campo `operating_mode` con el valor `PDV`, que habilita el funcionamiento del dispositivo en el modo integrado con la API.
 

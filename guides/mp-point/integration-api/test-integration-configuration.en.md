@@ -12,7 +12,7 @@ To test your integration with Mercado Pago Point and payment processing, you fir
 
 1. Create a store by sending a request to the [Create store](/developers/en/reference/stores/_users_user_id_stores/post) endpoint. You must send your **production Access Token** and replace the value `user_id` with the **user identification** assigned to you when creating your application. If you are unsure how to identify this value, access the [Application details documentation](/developers/en/docs/mp-point/additional-content/your-integrations/application-details).<br>
 
-2. Create a POS by sending a request to the [Create POS](/developers/en/reference/pos/_pos/post) endpoint, and associate it with the store created in the previous step. This is achieved by replacing the `external_store_id` parameters with the `external_id` you assigned to the store, and `store_id` with the value obtained for the `id` field in the response to the store creation.<br>
+2. Create a POS by sending a request to the [Create POS](/developers/en/reference/pos/_pos/post) endpoint, and associate it with the store created in the previous step. This is achieved by replacing the `external_store_id` parameters with the `external_id` you assigned to the store, or `store_id` with the value obtained for the `id` field in the response to the store creation.<br>
 
 3. Finally, associate the Point device with your Mercado Pago account. To do this, download and install the Mercado Pago app on your mobile device, log in with your account, and press the QR icon to scan the code that appears when turning on the Point device.<br>
 
@@ -26,7 +26,7 @@ Activating the Point of Sale (PDV) operational mode on your device is a **mandat
 >
 > Note
 >
-> We recommend sending the `store_id` and `pos_id` parameters in this request to verify that the configuration is correct. These parameters will allow you to obtain not only the devices associated with a Mercado Pago account, but also those specifically linked to a store and POS within that account, respectively. The values of these parameters will be those received in the responses to the creation of each.
+> We recommend sending the query params `store_id` and `pos_id` in this request to verify that the configuration is correct. These parameters will allow you to obtain not only the devices associated with a Mercado Pago account, but also those specifically linked to a store and POS within that account, respectively. The values of these parameters will be those received in the responses to the creation of each.
 
 2. Lastly, make a **PATCH** request to the [Change operation mode](/developers/en/reference/integrations_api/_point_integration-api_devices_device-id/patch) endpoint, replacing the `device-id` value in the path with the `id` of the device obtained in the previous step. Additionally, you must complete the `operating_mode` field with the value `PDV`, which enables the device to operate in the integrated mode with the API.
 
