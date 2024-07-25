@@ -2391,7 +2391,7 @@
                     "description": {
                       "en": "Identifier of the secondary payment method.",
                       "pt": "Identificador do meio de pagamento secundário.",
-                      "es": "Identificador del método de pago del medio secundario."
+                      "es": "Identificador del medio de pago del medio secundario."
                     }
                   },
                   "status": {
