@@ -3974,7 +3974,7 @@
                           "title": "cancelled",
                           "description": {
                             "en": "Authorized payment canceled.",
-                            "pt": "Pagamento autorizado cancelado.",
+                            "pt": "Pagamento autorizado foi cancelado.",
                             "es": "Pago autorizado cancelado."
                           }
                         }
