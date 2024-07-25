@@ -2380,7 +2380,7 @@
                     "type": "number",
                     "example": 123123123,
                     "description": {
-                      "en": "Unique identifier to recover details of the cards used as secondary payment methods. This parameter must be used with payment_method_id_secondary and is mandatory for card payment methods.",
+                      "en": "Unique identifier to recover details of the card used as secondary payment method. This parameter must be used with payment_method_id_secondary and is mandatory for card payment method.",
                       "pt": "Identificador único para recuperar dados do cartão utilizado como meio de pagamento secundário. Este parâmetro deve ser utilizado em conjunto com payment_method_id_secondary e é obrigatório para meios de pagamento com cartão.",
                       "es": "Identificador único para recuperar datos de la tarjeta usada como medio de pago secundario. Este parámetro se debe usar en conjunto con payment_method_id_secondary y es obligatorio para medios de pago con tarjeta."
                     }
