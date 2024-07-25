@@ -1432,7 +1432,7 @@
                           "description": {
                             "en": "Plan not available to create subscriptions",
                             "es": "Plan no disponible para crear suscripciones.",
-                            "pt": "Plano não disponível para criar assinaturas."
+                            "pt": "Plano indisponível para criar assinaturas."
                           }
                         }
                       ]
@@ -5242,7 +5242,7 @@
                           "description": {
                             "en": "Plan not available to create subscriptions.",
                             "es": "Plan no disponible para crear suscripciones.",
-                            "pt": "Plano não disponível para criar assinaturas."
+                            "pt": "Plano indisponível para criar assinaturas."
                           }
                         }
                       ]
@@ -6057,7 +6057,7 @@
                           "description": {
                             "en": "Plan not available to create subscriptions",
                             "es": "Plan no disponible para crear suscripciones.",
-                            "pt": "Plano não disponível para criar assinaturas."
+                            "pt": "Plano indisponível para criar assinaturas."
                           }
                         }
                       ]
@@ -6754,7 +6754,7 @@
                                 "description": {
                                   "en": "Plan not available to create subscriptions",
                                   "es": "Plan no disponible para crear suscripciones.",
-                                  "pt": "Plano não disponível para criar assinaturas."
+                                  "pt": "Plano indisponível para criar assinaturas."
                                 }
                               }
                             ]
