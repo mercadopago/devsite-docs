@@ -37,9 +37,7 @@ Antes de iniciar os testes com o processamento de pagamentos, configureas notifi
 Para configurar as notificações com o Mercado Pago Point, siga as instruções abaixo:
 1. Acesse [Suas integrações](/developers/panel/app) e selecione o aplicativo com o qual está testando sua integração.<br>
 2. No menu à esquerda, clique em **Webhooks**.<br>
-3. Na tela exibida, clique em **Configurar notificações** e configure a URL que será utilizada para receber as notificações de teste. Recomendamos utilizar umas URLs diferentes para o modo de teste e o modo produção:
-    * **URL modo teste**: URL que permite testar o correto funcionamento das notificações dessa aplicação durante a fase de teste ou desenvolvimento. 
-    * **URL modo produção**: URL para receber notificações com sua integração produtiva. Essas notificações deverão ser configuradas com credenciais produtivas.<br>
+3. Na tela exibida, clique em **Configurar notificações** e configure a URL que será utilizada para receber as notificações de teste. Recomendamos utilizar uma **URL modo produção** para receber notificações de sua integração, seja de teste ou produtiva.<br>
 4. Selecione **Integrações Point** como o tópico sobre o qual deseja receber notificações. Isso manterá você informado sobre as intenções de pagamento e as mudanças de status.<br>
 5. Por fim, clique em **Salvar**. Isso irá gerar uma **assinatura secreta** exclusiva para o aplicativo, que permitirá validar a autenticidade das notificações recebidas, garantindo que tenham sido enviadas pelo Mercado Pago. Se desejar obter mais informações sobre como validar a origem de uma notificação, consulte a [documentação correspondente](/developers/pt/docs/mp-point/additional-content/your-integrations/notifications/webhooks#configuracinatravsdelpaneldeldesarrollador).
 

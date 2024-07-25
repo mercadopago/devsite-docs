@@ -38,10 +38,7 @@ To configure your notifications with Mercado Pago Point, follow the instructions
 
 1. Access [Your Integrations](/developers/panel/app) and select the application you are testing your integration with.<br>
 2. In the left menu, click on **Webhooks**.<br>
-3. On the displayed screen, click on **Configure notifications**, and set the URLs that will be used to receive test notifications. We recommend using two different URLs for test mode and production mode:
-    * **Test mode URL**: provide a URL to test the correct functioning of the application notifications during the development stage.
-    * **Production mode URL**: provide a URL to receive notifications with your production integration. These notifications must be configured with the production credentials of your Mercado Pago user.<br>
-
+3. On the displayed screen, click on **Configure notifications**, and set the URLs that will be used to receive test notifications. We recommend providing a **Production mode URL** to receive notifications with both your test and production integrations.
 4. Select **Point Integrations** as the topic you want to receive notifications on. This will keep you updated on payment intents and their state changes.<br>
 5. Finally, click on **Save**. This will generate a unique **secret key** for the application, allowing you to validate the authenticity of the received notifications, ensuring they were sent by Mercado Pago. If you want more information on how to validate the origin of a notification, access the [documentation](/developers/en/docs/mp-point/additional-content/your-integrations/notifications/webhooks#configuringthroughthedeveloperpanel).
 
