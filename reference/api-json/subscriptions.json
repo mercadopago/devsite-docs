@@ -2090,7 +2090,7 @@
                           "description": {
                             "en": "Preapproval terminated. This is an irreversible state",
                             "es": "Preaprobación terminada. Este es un estado irreversible.",
-                            "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
+                            "pt": "Pré-aprovação finalizada. Este status é irreversível."
                           }
                         }
                       ]
@@ -2432,7 +2432,7 @@
                         "description": {
                           "en": "Preapproval terminated. This is an irreversible state.",
                           "es": "Preaprobación terminada. Este es un estado irreversible.",
-                          "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
+                          "pt": "Pré-aprovação finalizada. Este status é irreversível."
                         }
                       }
                     ]
@@ -2958,7 +2958,7 @@
                           "description": {
                             "en": "Preapproval terminated. This is an irreversible state.",
                             "es": "Preaprobación terminada. Este es un estado irreversible.",
-                            "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
+                            "pt": "Pré-aprovação finalizada. Este status é irreversível."
                           }
                         }
                       ]
@@ -3142,7 +3142,7 @@
                   "description": {
                     "en": "Preapproval terminated. This is an irreversible state.",
                     "es": "Preaprobación terminada. Este es un estado irreversible.",
-                    "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
+                    "pt": "Pré-aprovação finalizada. Este status é irreversível."
                   }
                 }
               ]
@@ -3272,7 +3272,7 @@
                           "description": {
                             "en": "Preapproval terminated. This is an irreversible state.",
                             "es": "Preaprobación terminada. Este es un estado irreversible.",
-                            "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
+                            "pt": "Pré-aprovação finalizada. Este status é irreversível."
                           }
                         }
                       ]
@@ -7026,7 +7026,7 @@
                   "description": {
                     "en": "Preapproval terminated. This is an irreversible state.",
                     "es": "Preaprobación terminada. Este es un estado irreversible.",
-                    "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
+                    "pt": "Pré-aprovação finalizada. Este status é irreversível."
                   }
                 }
               ]
@@ -7658,7 +7658,7 @@
                                 "description": {
                                   "en": "Preapproval terminated. This is an irreversible state.",
                                   "es": "Preaprobación terminada. Este es un estado irreversible.",
-                                  "pt": "Pré-aprovação encerrada. Este é um estado irreversível."
+                                  "pt": "Pré-aprovação finalizada. Este status é irreversível."
                                 }
                               }
                             ]
