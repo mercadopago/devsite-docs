@@ -2020,8 +2020,8 @@
                               "title": "green",
                               "description": {
                                 "en": "All collections made.",
-                                "es": "Todas las colecciones realizadas.",
-                                "pt": "Todas as coleções feitas."
+                                "es": "Todas los cobros realizados.",
+                                "pt": "Todas as cobranças feitas."
                               }
                             },
                             {
@@ -2029,15 +2029,15 @@
                               "description": {
                                 "en": "With collection problems. We are trying to collect an invoice.",
                                 "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
-                                "pt": "Com problemas de coleções. Estamos tentando cobrar uma fatura."
+                                "pt": "Com problemas de cobranças. Estamos tentando cobrar uma fatura."
                               }
                             },
                             {
                               "title": "red",
                               "description": {
                                 "en": "With pending collections. An invoice could not be collected.",
-                                "es": "Con colecciones pendientes. No se pudo cobrar una factura.",
-                                "pt": "Com coleções pendentes. Uma fatura não foi cobrada."
+                                "es": "Con cobros pendientes. No se pudo cobrar una factura.",
+                                "pt": "Com cobranças pendentes. Uma fatura não foi cobrada."
                               }
                             },
                             {
@@ -2888,8 +2888,8 @@
                               "title": "green",
                               "description": {
                                 "en": "All collections made.",
-                                "es": "Todas las colecciones realizadas.",
-                                "pt": "Todas as coleções feitas."
+                                "es": "Todas los cobros realizados.",
+                                "pt": "Todas as cobranças feitas."
                               }
                             },
                             {
@@ -3559,8 +3559,8 @@
                           "title": "green",
                           "description": {
                             "en": "All collections made.",
-                            "es": "Todas las colecciones realizadas.",
-                            "pt": "Todas as coleções realizadas."
+                            "es": "Todas los cobros realizados.",
+                            "pt": "Todas as cobranças realizadas."
                           }
                         },
                         {
@@ -3568,15 +3568,15 @@
                           "description": {
                             "en": "With collection problems. We are trying to collect an invoice.",
                             "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
-                            "pt": "Com problemas de coleções. Estamos tentando cobrar uma fatura."
+                            "pt": "Com problemas de cobranças. Estamos tentando cobrar uma fatura."
                           }
                         },
                         {
                           "title": "red",
                           "description": {
                             "en": "With pending collections. An invoice could not be collected.",
-                            "es": "Con colecciones pendientes. No se pudo cobrar una factura.",
-                            "pt": "Com coleções pendentes. Uma fatura não foi cobrada."
+                            "es": "Con cobros pendientes. No se pudo cobrar una factura.",
+                            "pt": "Com cobranças pendentes. Uma fatura não foi cobrada."
                           }
                         },
                         {
@@ -6954,8 +6954,8 @@
                   "title": "green",
                   "description": {
                     "en": "All collections made.",
-                    "es": "Todas las colecciones realizadas.",
-                    "pt": "Todas as coleções feitas."
+                    "es": "Todas los cobros realizados.",
+                    "pt": "Todas as cobranças feitas."
                   }
                 },
                 {
@@ -6963,15 +6963,15 @@
                   "description": {
                     "en": "With collection problems. We are trying to collect an invoice.",
                     "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
-                    "pt": "Com problemas de coleções. Estamos tentando cobrar uma fatura."
+                    "pt": "Com problemas de cobranças. Estamos tentando cobrar uma fatura."
                   }
                 },
                 {
                   "title": "red",
                   "description": {
                     "en": "With pending collections. An invoice could not be collected.",
-                    "es": "Con colecciones pendientes. No se pudo cobrar una factura.",
-                    "pt": "Com coleções pendentes. Uma fatura não foi cobrada."
+                    "es": "Con cobros pendientes. No se pudo cobrar una factura.",
+                    "pt": "Com cobranças pendentes. Uma fatura não foi cobrada."
                   }
                 },
                 {
@@ -7588,8 +7588,8 @@
                                     "title": "green",
                                     "description": {
                                       "en": "All collections made.",
-                                      "es": "Todas las colecciones realizadas.",
-                                      "pt": "Todas as coleções feitas."
+                                      "es": "Todas los cobros realizados.",
+                                      "pt": "Todas as cobranças feitas."
                                     }
                                   },
                                   {
@@ -7597,15 +7597,15 @@
                                     "description": {
                                       "en": "With collection problems. We are trying to collect an invoice.",
                                       "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
-                                      "pt": "Com problemas de coleções. Estamos tentando cobrar uma fatura."
+                                      "pt": "Com problemas de cobranças. Estamos tentando cobrar uma fatura."
                                     }
                                   },
                                   {
                                     "title": "red",
                                     "description": {
                                       "en": "With pending collections. An invoice could not be collected.",
-                                      "es": "Con colecciones pendientes. No se pudo cobrar una factura.",
-                                      "pt": "Com coleções pendentes. Uma fatura não foi cobrada."
+                                      "es": "Con cobros pendientes. No se pudo cobrar una factura.",
+                                      "pt": "Com cobranças pendentes. Uma fatura não foi cobrada."
                                     }
                                   },
                                   {
