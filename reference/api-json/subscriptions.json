@@ -4686,7 +4686,7 @@
                                     "title": "cancelled",
                                     "description": {
                                       "en": "Payment was cancelled by one of the parties or because time for payment has expired.",
-                                      "es": "El pago fue cancelado por una de las partes o porque el tiempo para el pago ha expirado.",
+                                      "es": "El pago fue cancelado por una de las partes o porque el tiempo para realizarlo ha expirado.",
                                       "pt": "O pagamento foi cancelado por uma das partes ou porque o tempo para pagamento expirou."
                                     }
                                   },
