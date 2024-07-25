@@ -11,7 +11,7 @@ Hay dos formas de capturar un pago autorizado:
 >
 > Importante
 >
-> El tiempo límite para realizar la captura del pago autorizado es de ----[mla, mlm]----7 días------------ ----[mlb]---- 5 días------------ ----[mpe]---- 22 días------------ desde su creación.
+> El tiempo límite para realizar la captura del pago autorizado es de ----[mla, mlm, mlc]----7 días------------ ----[mlb]---- 5 días------------ ----[mpe]---- 22 días------------ desde su creación.
 
 A continuación describimos en detalle cada una de las opciones y cómo ejecutarlas.
 

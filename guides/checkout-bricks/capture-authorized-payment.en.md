@@ -11,7 +11,7 @@ There are two ways to capture an authorized payment:
 >
 > Important
 >
-> The time limit to capture the authorized payment is ----[mla, mlm]----7 days------------ ----[mlb]---- 5 days------------ ----[mpe]---- 22 days------------ from its creation.
+> The time limit to capture the authorized payment is ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------ ----[mpe]---- 22 days------------ from its creation.
 
 Below we describe in detail each of the options and how to execute them.
 
