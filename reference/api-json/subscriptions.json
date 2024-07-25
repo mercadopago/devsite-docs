@@ -2773,7 +2773,7 @@
                       "example": "visa",
                       "description": {
                         "en": "Secondary payment method configured.",
-                        "pt": "Meio de pagamento secundário configurado.",
+                        "pt": "Configurado um meio de pagamento secundário.",
                         "es": "Medio de pago secundario configurado."
                       }
                     },
