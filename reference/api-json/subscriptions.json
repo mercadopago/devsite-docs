@@ -3186,7 +3186,7 @@
                 },
                 "description": {
                   "es": "the format is `attachment; filename=\"preapprovals.zip\"`",
-                  "pt": "o formato é `attachment; filename=\"preapprovals.zip\"`",
+                  "pt": "O formato é `attachment; filename=\"preapprovals.zip\"`",
                   "en": "el formato es `attachment; filename=\"preapprovals.zip\"`"
                 }
               }
