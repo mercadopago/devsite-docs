@@ -2073,7 +2073,7 @@
                           "title": "authorized",
                           "description": {
                             "en": "Preapproval with a valid payment method",
-                            "es": "Preaprobación con un método de pago válido.",
+                            "es": "Preaprobación con un medio de pago válido.",
                             "pt": "Pré-aprovação com um meio de pagamento válido."
                           }
                         },
@@ -2415,7 +2415,7 @@
                         "title": "authorized",
                         "description": {
                           "en": "Preapproval with a valid payment method",
-                          "es": "Preaprobación con un método de pago válido.",
+                          "es": "Preaprobación con un medio de pago válido.",
                           "pt": "Pré-aprovação com um meio de pagamento válido."
                         }
                       },
@@ -2941,7 +2941,7 @@
                           "title": "authorized",
                           "description": {
                             "en": "Preapproval with a valid payment method.",
-                            "es": "Preaprobación con un método de pago válido.",
+                            "es": "Preaprobación con un medio de pago válido.",
                             "pt": "Pré-aprovação com um meio de pagamento válido."
                           }
                         },
@@ -3125,7 +3125,7 @@
                   "title": "authorized",
                   "description": {
                     "en": "Preapproval with a valid payment method.",
-                    "es": "Preaprobación con un método de pago válido.",
+                    "es": "Preaprobación con un medio de pago válido.",
                     "pt": "Pré-aprovação com um meio de pagamento válido."
                   }
                 },
@@ -3255,7 +3255,7 @@
                           "title": "authorized",
                           "description": {
                             "en": "Preapproval with a valid payment method.",
-                            "es": "Preaprobación con un método de pago válido.",
+                            "es": "Preaprobación con un medio de pago válido.",
                             "pt": "Pré-aprovação com um meio de pagamento válido."
                           }
                         },
@@ -7009,7 +7009,7 @@
                   "title": "authorized",
                   "description": {
                     "en": "Preapproval with a valid payment method.",
-                    "es": "Preaprobación con un método de pago válido.",
+                    "es": "Preaprobación con un medio de pago válido.",
                     "pt": "Pré-aprovação com um meio de pagamento válido."
                   }
                 },
@@ -7641,7 +7641,7 @@
                                 "title": "authorized",
                                 "description": {
                                   "en": "Preapproval with a valid payment method.",
-                                  "es": "Preaprobación con un método de pago válido.",
+                                  "es": "Preaprobación con un medio de pago válido.",
                                   "pt": "Pré-aprovação com um meio de pagamento válido."
                                 }
                               },
