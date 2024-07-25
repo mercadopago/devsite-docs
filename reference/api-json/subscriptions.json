@@ -3950,7 +3950,7 @@
                           "title": "scheduled",
                           "description": {
                             "en": "Authorized payment scheduled to collect.",
-                            "pt": "Pagamento autorizado agendado para cobrança.",
+                            "pt": "Agendada a cobrança para um pagamento autorizado.",
                             "es": "Pago autorizado programado para cobrar."
                           }
                         },
