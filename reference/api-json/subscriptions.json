@@ -3594,7 +3594,7 @@
                       "description": {
                         "en": "Date of last time a payment of this subscription was made.",
                         "pt": "Data da última vez que um pagamento desta assinatura foi feito.",
-                        "es": "Fecha de la última vez que se realizó un pago de esta suscripción"
+                        "es": "Fecha de la última vez que se realizó un pago de esta suscripción."
                       },
                       "example": "24-2-2021"
                     },
