@@ -366,11 +366,11 @@
                   },
                   "additional_info": {
                     "type": "object",
-                    "required": true,
+                    "required": false,
                     "description": {
-                      "en": "Payment intent additional info",
-                      "es": "Información adicional sobre la intención de pago",
-                      "pt": "Informações adicionais da intenção de pagamento"
+                      "en": "Payment intent additional info.",
+                      "es": "Información adicional sobre la intención de pago.",
+                      "pt": "Informações adicionais da intenção de pagamento."
                     },
                     "properties": {
                       "external_reference": {
@@ -386,14 +386,13 @@
                         "type": "boolean",
                         "example": true,
                         "description": {
-                          "en": "A boolean value that determines if you want to print the ticket on the device",
-                          "pt": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo",
-                          "es": "Un valor booleano que determina si deseas imprimir el ticket en el dispositivo"
+                          "en": "A boolean value that determines if you want to print the ticket on the device.",
+                          "pt": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo.",
+                          "es": "Un valor booleano que determina si deseas imprimir el ticket en el dispositivo."
                         }
                       },
                       "ticket_number": {
                         "type": "string",
-                        "required": true,
                         "example": "S0392JED",
                         "description": {
                           "en": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket",
@@ -424,18 +423,18 @@
                       "type": "string",
                       "example": "7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1",
                       "description": {
-                        "en": "Payment intent identifier",
-                        "pt": "Identificador de intenção de pagamento",
-                        "es": "Identificador de intención de pago"
+                        "en": "Payment intent identifier.",
+                        "pt": "Identificador de intenção de pagamento.",
+                        "es": "Identificador de intención de pag.o"
                       }
                     },
                     "device_id": {
                       "type": "string",
                       "example": "PAX_A910__SMARTPOS1234345545",
                       "description": {
-                        "en": "Identifier of the device to which the payment intent was assigned",
-                        "pt": "Identificador do dispositivo ao qual a intenção de pagamento foi atribuída",
-                        "es": "Identificador del dispositivo al que se asignó la intención de pago"
+                        "en": "Identifier of the device to which the payment intent was assigned.",
+                        "pt": "Identificador do dispositivo ao qual a intenção de pagamento foi atribuída.",
+                        "es": "Identificador del dispositivo al que se asignó la intención de pago."
                       }
                     },
                     "amount": {
@@ -443,19 +442,24 @@
                       "format": "int64",
                       "example": 1500,
                       "description": {
-                        "en": "Payment intent amount",
-                        "pt": "Valor da intenção de pagamento",
-                        "es": "Importe de la intención de pago"
+                        "en": "Payment intent amount.",
+                        "pt": "Valor da intenção de pagamento.",
+                        "es": "Importe de la intención de pago."
                       }
                     },
                     "additional_info": {
                       "type": "object",
+                      "description": {
+                        "en": "Payment intent additional info.",
+                        "es": "Información adicional sobre la intención de pago.",
+                        "pt": "Informações adicionais da intenção de pagamento."
+                      },
                       "properties": {
                         "external_reference": {
                           "type": "string",
                           "example": "someone-reference-from-your-application",
                           "description": {
-                            "en":"Alphanumeric value that functions as a transaction identificator in your application. It will be returned in the Webhook notification.",
+                            "en": "Alphanumeric value that functions as a transaction identificator in your application. It will be returned in the Webhook notification.",
                             "es": "Valor alfanumérico que funciona como un identificador de la transacción en tu aplicación. Será devolvuelto en la notificación de Webhook.",
                             "pt": "Valor alfanumérico que funciona como um identificador da transação em seu aplicativo. Ele será retornado na notificação do Webhook."
                           }
@@ -464,9 +468,9 @@
                           "type": "boolean",
                           "example": true,
                           "description": {
-                            "en": "A boolean value that determines if you want to print the ticket on the device",
-                            "pt": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo",
-                            "es": "Un valor booleano que determina si deseas imprimir el ticket en el dispositivo"
+                            "en": "A boolean value that determines if you want to print the ticket on the device.",
+                            "pt": "Um valor booleano que determina se você deseja imprimir o ticket no dispositivo.",
+                            "es": "Un valor booleano que determina si deseas imprimir el ticket en el dispositivo."
                           }
                         },
                         "ticket_number": {

@@ -59,6 +59,11 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 ![installation cards 6](/images/shopify/installation-cards-6-pt.png)
 
+13. Após concluir a instalação, retorne ao painel administrativo da loja e clique em **Configurações > Pagamentos**.
+14. Em "Forma de captura de pagamento", garanta que o campo **Automaticamente no checkout** está habilitado para garantir que os pagamentos serão capturados quando o pedido for realizado.
+
+![installation cards 7](/images/shopify/installation-cards-7-pt.png)
+
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
 > WARNING
@@ -66,6 +71,8 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 > Importante
 >
 > Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança do site e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> Com o Mercado Pago Cartões, os campos de "Número da Casa" e "Bairro" não serão exibidos automaticamente no formulário dos dados de entrega do pedido. Para que esses campos sejam exibidos, basta entrar em contato com a equipe de suporte da plataforma Shopify e fazer a solicitação. 
 
 ### Instalar via Marketplace
 
@@ -105,6 +112,11 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 ![installation cards 6](/images/shopify/installation-cards-6-pt.png)
 
+9. Após concluir a instalação, retorne ao painel administrativo da loja e clique em **Configurações > Pagamentos**.
+10. Em "Forma de captura de pagamento", garanta que o campo **Automaticamente no checkout** está habilitado para garantir que os pagamentos serão capturados quando o pedido for realizado.
+
+![installation cards 7](/images/shopify/installation-cards-7-pt.png)
+
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
 > WARNING
@@ -112,6 +124,8 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 > Importante
 >
 > Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança do site e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> Com o Mercado Pago Cartões, os campos de "Número da Casa" e "Bairro" não serão exibidos automaticamente no formulário dos dados de entrega do pedido. Para que esses campos sejam exibidos, basta entrar em contato com a equipe de suporte da plataforma Shopify e fazer a solicitação. 
 
 ## Configure parcelas sem acréscimo
 

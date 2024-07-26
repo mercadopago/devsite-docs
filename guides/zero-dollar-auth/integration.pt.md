@@ -219,6 +219,3 @@ print(payment)
 ]]]
 
 Ao realizar as requisições é possível que diferentes respostas e status retornem. Para mais detalhes sobre as respostas recebidas, veja a seção Retornos da API.
-
-
-
