@@ -63,3 +63,9 @@ Para realizar a integração você precisará seguir o fluxo de integração usu
 ```
 
 Ao finalizar essas etapas, a integração do checkout com o _marketplace_ estará concluída e pronta para processar os pagamentos.
+
+> WARNING
+>
+> Importante
+>
+> Em caso de reembolso, o valor devido ao cliente final será dividido e subtraído da conta do vendedor e da conta do Marketplace, sendo **proporcional** para as partes envolvidas. Além disso, em modelos 1:1, o Marketplace não poderá realizar o reembolso total se o vendedor não tiver dinheiro na conta. Nesse caso, cabe à conta do Marketplace reembolsar o equivalente à sua parte e decidir se devolverá o restante, que é responsabilidade do vendedor, por outro meio.
