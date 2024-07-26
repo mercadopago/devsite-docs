@@ -63,3 +63,9 @@ Para realizar a integração você precisará seguir o fluxo de integração usu
 ```
 
 Ao finalizar essas etapas, a integração do checkout com o _marketplace_ estará concluída e pronta para processar os pagamentos.
+
+> NOTE
+>
+> Importante
+>
+> A comissão do Mercado Pago é descontada do valor recebido pelo vendedor. Ou seja, primeiro, a comissão do Mercado Pago é descontada e, em seguida, a comissão do Marketplace é descontada sobre o valor restante.

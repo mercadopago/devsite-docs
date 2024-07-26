@@ -63,3 +63,9 @@ To perform the integration, you will need to follow the usual integration flow o
 ```
 
 Upon completing these steps, the checkout will have been integrated into the marketplace and will be ready to process payments.
+
+> WARNING
+>
+> Important
+>
+> In case of a refund, the amount due to the final customer will be divided and subtracted from the seller's account and the Marketplace's account, being **proportional** to the parties involved. Additionally, in 1:1 models, the Marketplace cannot issue a full refund if the seller does not have funds in their account. In this case, the Marketplace's account must refund the equivalent of its share and decide whether to return the remaining amount, which is the seller's responsibility, by other means.
