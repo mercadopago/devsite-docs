@@ -22,8 +22,8 @@
                     "type": "string",
                     "description": {
                       "en": "Name of the POS.",
-                      "pt": "Nome da caixa",
-                      "es": "Nombre de la caja"
+                      "pt": "Nome do ponto de venda.",
+                      "es": "Nombre del punto de venta."
                     },
                     "example": "First POS"
                   },
@@ -40,8 +40,8 @@
                     "type": "string",
                     "description": {
                       "en": "Store identifier to which the point of sale belongs.",
-                      "pt": "Identificador da loja à qual o caixa pertence.",
-                      "es": "Identificador de la sucursal a la que pertenece el Punto de Venta."
+                      "pt": "Identificador da loja à qual o ponto de venda pertence.",
+                      "es": "Identificador de la sucursal a la que pertenece el punto de venta."
                     },
                     "example": 1234567
                   },
@@ -1079,8 +1079,8 @@
                     "type": "boolean",
                     "description": {
                       "en": "Define if the customer can insert the amount to be paid.",
-                      "pt": "Determine se o cliente pode inserir o valor a ser pago",
-                      "es": "Determina si el cliente puede insertar el monto a pagar"
+                      "pt": "Determine se o cliente pode inserir o valor a ser pago.",
+                      "es": "Determina si el cliente puede insertar el monto a pagar."
                     },
                     "example": false
                   },
@@ -1307,136 +1307,136 @@
                           "title": "MISSING_BODY",
                           "description": {
                             "en": "HTTP body is required to modify pos.",
-                            "es": "HTTP body is required to modify pos.",
-                            "pt": "HTTP body is required to modify pos."
+                            "es": "El cuerpo del HTTP es requerido para modificar el punto de venta.",
+                            "pt": "O corpo do HTTP é necessário para modificar o ponto de venda."
                           }
                         },
                         {
                           "title": "UNKNOWN_FIELD_EXCEPTION",
                           "description": {
                             "en": "The indicated field is not allowed for this operation or is unknown.",
-                            "es": "The indicated field is not allowed for this operation or is unknown.",
-                            "pt": "The indicated field is not allowed for this operation or is unknown."
+                            "es": "El campo indicado no está permitido para esta operación o es desconocido.",
+                            "pt": "O campo indicado não é permitido para esta operação ou é desconhecido."
                           }
                         },
                         {
                           "title": "INVALID_POS_ID",
                           "description": {
                             "en": "The ID of the pos is invalid, it must be numeric.",
-                            "es": "The ID of the pos is invalid, it must be numeric.",
-                            "pt": "The ID of the pos is invalid, it must be numeric."
+                            "es": "El ID del punto de venta es inválida, debe ser numérica.",
+                            "pt": "O ID do ponto de venda é inválida, deve ser numérica."
                           }
                         },
                         {
                           "title": "INVALID_NAME",
                           "description": {
                             "en": "NAME must be string.",
-                            "es": "NAME must be string.",
-                            "pt": "NAME must be string."
+                            "es": "NOMBRE debe ser string.",
+                            "pt": "NAME deve ser string."
                           }
                         },
                         {
                           "title": "NAME_TOO_LONG",
                           "description": {
                             "en": "The NAME must be less than 45 characters.",
-                            "es": "The NAME must be less than 45 characters.",
-                            "pt": "The NAME must be less than 45 characters."
+                            "es": "NAME debe ser menor de 45 caracteres.",
+                            "pt": "NAME deve ter menos de 45 caracteres."
                           }
                         },
                         {
                           "title": "INVALID_FIXED_AMOUNT",
                           "description": {
                             "en": "FIXED_AMOUNT must be boolean.",
-                            "es": "FIXED_AMOUNT must be boolean.",
-                            "pt": "FIXED_AMOUNT must be boolean."
+                            "es": "FIXED_AMOUNT debe ser boolean.",
+                            "pt": "FIXED_AMOUNT deve ser boolean."
                           }
                         },
                         {
                           "title": "INVALID_CATEGORY",
                           "description": {
                             "en": "CATEGORY must be numeric.",
-                            "es": "CATEGORY must be numeric.",
-                            "pt": "CATEGORY must be numeric."
+                            "es": "CATEGORY debe ser numérico.",
+                            "pt": "CATEGORY deve ser numérico."
                           }
                         },
                         {
                           "title": "POS_UNKNOWN_MCC",
                           "description": {
-                            "en": "The CATEGORY must be valid for the user's site.",
-                            "es": "The CATEGORY must be valid for the user's site.",
-                            "pt": "The CATEGORY must be valid for the user's site."
+                            "en": "CATEGORY must be valid for the user's site.",
+                            "es": "CATEGORY debe ser válida para el sitio del usuario.",
+                            "pt": "CATEGORY deve ser válida para o site do usuário."
                           }
                         },
                         {
                           "title": "POS_INVALID_STORE_ID",
                           "description": {
                             "en": "STORE_ID must be numeric.",
-                            "es": "STORE_ID must be numeric.",
-                            "pt": "STORE_ID must be numeric."
+                            "es": "STORE_ID debe ser numérico.",
+                            "pt": "STORE_ID deve ser numérico."
                           }
                         },
                         {
                           "title": "INVALID_EXTERNAL_STORE_ID",
                           "description": {
-                            "en": "EXTERNAL_STORE_ID muste be string.",
-                            "es": "EXTERNAL_STORE_ID muste be string.",
-                            "pt": "EXTERNAL_STORE_ID muste be string."
+                            "en": "EXTERNAL_STORE_ID must be string.",
+                            "es": "EXTERNAL_STORE_ID debe ser string.",
+                            "pt": "EXTERNAL_STORE_ID deve ser string."
                           }
                         },
                         {
                           "title": "EXTERNAL_STORE_ID_NOT_MATCH",
                           "description": {
                             "en": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.",
-                            "es": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.",
-                            "pt": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID."
+                            "es": "El EXTERNAL_STORE_ID no hace referencia al STORE_ID indicado.",
+                            "pt": "O EXTERNAL_STORE_ID não se refere ao STORE_ID indicado."
                           }
                         },
                         {
                           "title": "INEXISTENT_EXTERNAL_STORE_ID",
                           "description": {
                             "en": "The EXTERNAL STORE_ID does not refer to an existing Store.",
-                            "es": "The EXTERNAL STORE_ID does not refer to an existing Store.",
-                            "pt": "The EXTERNAL STORE_ID does not refer to an existing Store."
+                            "es": "El EXTERNAL_STORE_ID no hace referencia a una tienda existente.",
+                            "pt": "O EXTERNAL_STORE_ID não se refere a uma loja existente."
                           }
                         },
                         {
                           "title": "INVALID_EXTERNAL_ID",
                           "description": {
-                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
-                            "es": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
-                            "pt": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters."
+                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces, hyphens or special characters.",
+                            "es": "El campo EXTERNAL_ID debe ser alfanumérico, solo letras y números. Sin espacios, guiones o caracteres especiales.",
+                            "pt": "O campo EXTERNAL_ID deve ser alfanumérico, apenas letras e números. Sem espaços, hífens ou caracteres especiais."
                           }
                         },
                         {
                           "title": "EXTERNAL_ID_TOO_LONG",
                           "description": {
                             "en": "The EXTERNAL_ID must be less than 40 characters.",
-                            "es": "The EXTERNAL_ID must be less than 40 characters.",
-                            "pt": "The EXTERNAL_ID must be less than 40 characters."
+                            "es": "El EXTERNAL_ID debe ser menor de 40 caracteres.",
+                            "pt": "O EXTERNAL_ID deve ter menos de 40 caracteres."
                           }
                         },
                         {
                           "title": "INVALID_URL",
                           "description": {
                             "en": "The URL must be string and muste have the format of a valid url",
-                            "es": "The URL must be string and muste have the format of a valid url",
-                            "pt": "The URL must be string and muste have the format of a valid url"
+                            "es": "La URL debe ser una cadena y debe tener el formato de una URL válida.",
+                            "pt": "A URL deve ser uma string e deve ter o formato de uma URL válida."
                           }
                         },
                         {
                           "title": "URL_TOO_LONG",
                           "description": {
                             "en": "The URL must be less than 300 characters.",
-                            "es": "The URL must be less than 300 characters.",
-                            "pt": "The URL must be less than 300 characters."
+                            "es": "La URL debe ser menor de 300 caracteres.",
+                            "pt": "A URL deve ter menos de 300 caracteres."
                           }
                         },
                         {
                           "title": "FIXED_AMOUNT_FALSE",
                           "description": {
                             "en": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.",
-                            "es": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.",
-                            "pt": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case."
+                            "es": "Si se indica el campo URL, el campo FIXED_AMOUNT debe ser verdadero. No soportamos la modalidad de monto abierto en este caso.",
+                            "pt": "Se o campo URL estiver indicado, o campo FIXED_AMOUNT deve ser verdadeiro. Não suportamos a modalidade de valor aberto nesse caso."
                           }
                         }
                       ]
@@ -1464,8 +1464,8 @@
                           "title": "1",
                           "description": {
                             "en": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.",
-                            "es": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.",
-                            "pt": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor."
+                            "es": "Si está utilizando el campo URL, el host debe estar habilitado por Mercado Pago. Si no lo está, recibirá este error. Por favor, comuníquese con su asesor técnico asignado.",
+                            "pt": "Se você estiver usando o campo URL, o host deve ser habilitado pelo Mercado Pago. Se não for, você receberá este erro. Por favor, entre em contato com seu assessor técnico designado."
                           }
                         }
                       ]
@@ -1492,9 +1492,9 @@
                         {
                           "title": "1",
                           "description": {
-                            "en": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
-                            "es": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
-                            "pt": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user."
+                            "en": "If the POS does not exist for an indicated ID or EXTERNAL_ID and to the user.",
+                            "es": "Si el punto de venta no existe para un ID o EXTERNAL_ID indicado y para el usuario.",
+                            "pt": "Se o ponto de venda não existir para um ID ou EXTERNAL_ID indicado e para o usuário."
                           }
                         }
                       ]
@@ -1521,9 +1521,9 @@
                         {
                           "title": "1",
                           "description": {
-                            "en": "A pos with the same EXTERNAL_ID already exists.",
-                            "es": "A pos with the same EXTERNAL_ID already exists.",
-                            "pt": "A pos with the same EXTERNAL_ID already exists."
+                            "en": "A pont of sale with the same EXTERNAL_ID already exists.",
+                            "es": "Ya existe un punto de venta con el mismo EXTERNAL_ID.",
+                            "pt": "Já existe um ponto de venda com o mesmo EXTERNAL_ID."
                           }
                         }
                       ]
@@ -1546,7 +1546,7 @@
           "mp-point"
         ],
         "description": {
-          "en": "Delete a Point of Sale whenever you need it with the ID of the POS",
+          "en": "Delete a point of sale whenever you need it with the ID of the POS",
           "pt": "Exclua um ponto de venda sempre que for necessário com o ID da caixa",
           "es": "Elimina un punto de venta siempre que lo necesites con el ID de la caja"
         },
@@ -1585,8 +1585,8 @@
                           "title": "INVALID_POS_ID",
                           "description": {
                             "en": "The ID of the pos is invalid, it must be numeric.",
-                            "es": "The ID of the pos is invalid, it must be numeric.",
-                            "pt": "The ID of the pos is invalid, it must be numeric."
+                            "es": "El ID del punto de venta es inválida, debe ser numérica.",
+                            "pt": "O ID do ponto de venda é inválida, deve ser numérica."
                           }
                         }
                       ]
@@ -1640,17 +1640,17 @@
         "type": "number",
         "example": 621102,
         "description": {
-          "en": "MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.",
-          "pt": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica",
-          "es": "Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoría genérica"
+          "en": "MCC code that indicates the category of the point of sale. If not specified, it remains as a generic category.",
+          "pt": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica.",
+          "es": "Código MCC que indica el rubro del punto de venta. Si no se especifica, queda como categoría genérica."
         },
         "enum": [
           {
             "title": "Gastronomy",
             "description": {
-              "en": "",
-              "es": "",
-              "pt": ""
+              "en": "Gastronomy",
+              "es": "Gastronomía",
+              "pt": "Gastronomia"
             }
           },
           {
@@ -1665,16 +1665,16 @@
             "title": "5611203",
             "description": {
               "en": "Brazil",
-              "es": "Brazil",
-              "pt": "Brazil"
+              "es": "Brasil",
+              "pt": "Brasil"
             }
           },
           {
             "title": "5812",
             "description": {
               "en": "Mexico",
-              "es": "Mexico",
-              "pt": "Mexico"
+              "es": "México",
+              "pt": "México"
             }
           },
           {
@@ -1682,14 +1682,14 @@
             "description": {
               "en": "Colombia",
               "es": "Colombia",
-              "pt": "Colombia"
+              "pt": "Colômbia"
             }
           },
           {
             "title": "5520",
             "description": {
               "en": "Peru",
-              "es": "Peru",
+              "es": "Perú",
               "pt": "Peru"
             }
           },
@@ -1698,7 +1698,7 @@
             "description": {
               "en": "Uruguay",
               "es": "Uruguay",
-              "pt": "Uruguay"
+              "pt": "Uruguai"
             }
           },
           {
@@ -1712,9 +1712,9 @@
           {
             "title": "Gas station",
             "description": {
-              "en": "",
-              "es": "",
-              "pt": ""
+              "en": "Gas station",
+              "es": "Estación de servicio",
+              "pt": "posto de gasolina"
             }
           },
           {

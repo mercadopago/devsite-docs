@@ -1,5 +1,7 @@
 # Default rendering
 
+See below the necessary information for you to configure and render the Payment Brick.
+
 > WARNING
 >
 > Important

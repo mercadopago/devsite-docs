@@ -1,11 +1,12 @@
 # Renderizado por defecto
 
+Ve a continuación la información necesaria para configurar y renderizar el Card Payment Brick.
+
 > NOTE
 >
 > Importante
 >
 > Para realizar el renderizado del Card Payment Brick, primero realice los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. Una vez hecho esto, realice la configuración a continuación.
-
 
 ## Configurar el Brick
 
