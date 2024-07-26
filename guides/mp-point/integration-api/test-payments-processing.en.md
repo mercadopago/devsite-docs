@@ -29,7 +29,11 @@ To test the correct creation and processing of a payment intent, follow the step
 | Point Integrations | Payment intent creation | You will identify the payment intent through the `external_reference` field, which will have the same value you assigned at the time of creation. |
 | Point Integrations | Payment intent completion | You will identify the payment intent through the `external_reference` field, which will have the same value you assigned at the time of creation. Additionally, the `payment.id` field will allow you to identify the payment and compare that information with the one received in the Payments notification. |
 
-4. Validate that the payment processing was successful by sending a **GET** request to the [v1/payments](/developers/en/reference/payments/_payments_id/get) API, using the payment `id` obtained in your notifications.
+> NOTE
+>
+> Note
+>
+> We recommend validating that the payment processing was successful by sending a **GET** request to the [v1/payments](/developers/en/reference/payments/_payments_id/get) API, using the payment `id` obtained in your notifications.
 
 ## Refund a payment
 

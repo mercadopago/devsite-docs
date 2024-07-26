@@ -29,7 +29,11 @@ Para testar a correta criação e processamento de uma intenção de pagamento, 
 | Integrações Point | Criação da intenção de pagamento | Você identificará a intenção de pagamento pelo campo `external_reference`, que terá o mesmo valor atribuído no momento da criação. |
 | Integrações Point | Finalização da intenção de pagamento | Você identificará a intenção de pagamento pelo campo `external_reference`, que terá o mesmo valor atribuído no momento da criação. Além disso, o campo `payment.id` permitirá identificar o pagamento e comparar essa informação com o valor recebido na notificação de Pagamentos. |
 
-4. Valide o sucesso do processamento do pagamento enviando um **GET** para a API [v1/payments](/developers/pt/reference/payments/_payments_id/get), utilizando o `id` do pagamento obtido em suas notificações.
+> NOTE
+>
+> Nota
+>
+> Recomendamos validar o sucesso do processamento do pagamento enviando um **GET** para a API [v1/payments](/developers/pt/reference/payments/_payments_id/get), utilizando o `id` do pagamento obtido em suas notificações.
 
 ## Reembolsar um pagamento
 
