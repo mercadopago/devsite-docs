@@ -6148,34 +6148,6 @@
             "type": "string",
             "example": 58930090
           }
-        },
-        {
-          "name": "collector.id",
-          "in": "query",
-          "description": {
-            "en": "Parameter used to filter payment searches by the identification of the person who receives the payment (collector).",
-            "pt": "Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador da pessoa que recebe o pagamento (collector).",
-            "es": "Parámetro utilizado para filtrar la búsqueda de pagos por el identificador de la persona que recibe el pago (collector)."
-          },
-          "required": false,
-          "schema": {
-            "type": "string",
-            "example": 448876418
-          }
-        },
-        {
-          "name": "payer.id",
-          "in": "query",
-          "description": {
-            "en": "Parameter used to filter searches by the identification of the person who makes the payment (payer).",
-            "pt": "Parâmetro utilizado para filtrar a busca pelo identificador da pessoa que efetua o pagamento (payer).",
-            "es": "Parámetro utilizado para filtrar la búsqueda por el identificador de la persona que realiza el pago (payer)."
-          },
-          "required": false,
-          "schema": {
-            "type": "string",
-            "example": 1162600213
-          }
         }
       ],
       "responses": {
