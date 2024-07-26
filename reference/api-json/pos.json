@@ -59,7 +59,7 @@
                     "description": {
                       "en": "Unique identifier of the pos defined by integrator system.",
                       "pt": "Identificador único da caixa definido pelo sistema integrador.",
-                      "es": "Identificador único de la caja definido por el integrado.r"
+                      "es": "Identificador único de la caja definido por el integrador."
                     },
                     "example": "SUC001POS001"
                   },
