@@ -16,7 +16,7 @@ As **credenciais de produção** são um conjunto de chaves de acesso que permit
 
 Você poderá obter as suas credenciais de produção de duas maneiras:
 
-1. Accesando [**Suas integrações > "Sua aplicação" > Produção > Credenciais de produção**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) a partir do [Panel do desenvolvedor](/developers/pt/docs/checkout-bricks/additional-content/your-integrations/dashboard).
+1. Accesando [**Suas integrações > "Sua aplicação" > Produção > Credenciais de produção**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) a partir do [Painel do desenvolvedor](/developers/pt/docs/checkout-bricks/additional-content/your-integrations/dashboard).
 
 ![Como acessar as credenciais através das Suas Integrações](/images/credentials/credentials-prod-panel-pt.gif)
 

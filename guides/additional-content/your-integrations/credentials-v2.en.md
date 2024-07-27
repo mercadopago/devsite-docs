@@ -6,7 +6,7 @@ Each application will have **two pairs of production credentials** and, when app
 
 ## Obtaining credentials 
 
-To obtain the credentials, whether for production or testing, you must first **create an application** within Mercado Pago. If you have not created any yet, access the [Developer Panel](/developers/en/docs/your-integrations/dashboard#bookmark_create_a_new_application) documentation for more information.
+To obtain the credentials, whether for production or testing, you must first **create an application** within Mercado Pago. If you have not created any yet, access the [Developer panel](/developers/en/docs/your-integrations/dashboard#bookmark_create_a_new_application) documentation for more information.
 
 Next, learn how to obtain your credentials and in which situations they should be used.
 
