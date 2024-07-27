@@ -1,6 +1,6 @@
 # Credenciales
 
-Las credenciales son **contraseñas exclusivas** utilizadas para identificar una integración en tu cuenta. Son necesarias para capturar de forma segura los pagos en tiendas online y otras plataformas. 
+Las credenciales son **claves de acceso exclusivas** utilizadas para identificar una integración en tu cuenta. Son necesarias para capturar de forma segura los pagos en tiendas online y otras plataformas. 
 
 Cada aplicación contará con **dos pares de credenciales de producción** y, cuando sea aplicable al producto, **un par de credenciales de prueba**.
 
@@ -12,11 +12,11 @@ A continuación, conoce cómo obtener las credenciales y en qué situaciones deb
 
 ### Credenciales de producción
 
-Las **credenciales de producción** son un conjunto de claves que te permiten recibir pagos reales en tiendas en línea y en otras aplicaciones.
+Las **credenciales de producción** son un conjunto de claves que permiten recibir pagos reales en tiendas y en otras aplicaciones.
 
 Puedes obtener tus credenciales de producción de dos maneras:
 
-1. Ingresando a [**Tus integraciones > "Tu aplicación" > Producción > Credenciales de producción**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app).
+1. Ingresando a [**Tus integraciones > "Tu aplicación" > Producción > Credenciales de producción**](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) a través del [Panel del desarrollador](/developers/es/docs/checkout-bricks/additional-content/your-integrations/dashboard).
 
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-prod-panel-es.gif)
 
@@ -30,18 +30,18 @@ Al acceder a las credenciales de producción, se mostrarán los siguientes pares
 
 La **Public Key** y el **Access Token** son credenciales que serán utilizadas, no necesariamente juntas, en las integraciones realizadas con las soluciones de pago de Mercado Pago, incluyendo:
 
-- Checkout Pro
-- Checkout Bricks
-- ----[mlb]---- Checkout Transparente----------------[mla, mlu, mlc, mlm, mco, mpe]---- Checkout API------------
-- Suscripciones
+- [Checkout Pro](/developers/es/docs/checkout-pro/landing)
+- [Checkout Bricks](/developers/es/docs/checkout-bricks/landing)
+- ----[mlb]---- [Checkout Transparente](/developers/es/docs/checkout-api/landing)----------------[mla, mlu, mlc, mlm, mco, mpe]---- [Checkout API](/developers/es/docs/checkout-api/landing)------------
+- [Assinaturas](/developers/es/docs/subscriptions/landing)
 ----[mla, mlb, mlm]----
-- Mercado Pago Point
+- [Mercado Pago Point](/developers/es/docs/mp-point/landing)
 ------------
 ----[mla, mlb, mlc, mlu]----
-- Código QR
+- [Código QR](/developers/es/docs/qr-code/landing)
 ------------
 
-Estas credenciales también se utilizan en las integraciones del plugin de Mercado Pago con plataformas de e-commerce como, por ejemplo, Shopify, WooCommerce y ----[mla, mlu, mlc, mlm, mco, mpe]----Tiendanube----------------[mlb]----Nuvemshop------------.
+Estas credenciales también se utilizan en las integraciones del plugin de Mercado Pago con [plataformas de e-commerce](/developers/es/docs#platform-list).
 
 > WARNING
 >
@@ -54,7 +54,7 @@ Estas credenciales también se utilizan en las integraciones del plugin de Merca
 | Public Key | La clave pública de la aplicación se utiliza generalmente en el frontend. Permite, por ejemplo, acceder a información sobre los medios de pago y cifrar los datos de la tarjeta. |
 | Access Token | Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. |
 
-Para obtener más información sobre qué credenciales serán necesarias para tu integración, [consulta la documentación específica](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs) de la solución que se está integrando.
+Para obtener más información sobre qué credenciales serán necesarias para tu integración, consulta la [documentación específica](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/docs) de la solución que se está integrando.
 
 ### Client ID y Client Secret
 
@@ -62,7 +62,7 @@ El **Client ID** y el **Client Secret** son credenciales utilizadas en algunas i
 
 | Tipo | Descripción |
 | :--- | :--- |
-| Client ID | El Client ID es un identificador único que representa tu integración. |
+| Client ID | Identificador único que representa tu integración. |
 | Client Secret | Clave privada utilizada en algunos complementos para generar pagos. Es extremadamente importante mantener esta información segura en tus servidores y no permitir el acceso a ningún usuario del sistema o intruso. |
 
 ### Credenciales de prueba
@@ -79,7 +79,7 @@ Podrás obtener tus credenciales de prueba, **siempre y cuando estén disponible
 
 ![Cómo acceder a las credenciales a través de Tus Integraciones](/images/credentials/credentials-test-panel-es.gif)
 
-Si al crear una aplicación seleccionaste un producto de Mercado Pago **que no requiere credenciales de prueba**, no podrás utilizarlas. En su lugar, deberás utilizar [cuentas de prueba](/developers/es/docs/your-integrations/test/accounts). 
+Si al crear una aplicación seleccionaste un producto de Mercado Pago **que no requiere credenciales de prueba**, no podrás utilizarlas. En su lugar, deberás utilizar [cuentas de prueba](/developers/es/docs/your-integrations/test/accounts) para probar tu integración correctamente. 
 
 > Las **cuentas de prueba** no tienen habilitadas las credenciales de prueba. Si utilizas una cuenta de prueba, deberás usar sus credenciales de producción.
 
@@ -91,9 +91,10 @@ Cuando estés integrando un producto que no utiliza credenciales de prueba, ver�
 
 Cuando recibas ayuda en la integración o configuración de tus canales de pago, puedes compartir tus credenciales de forma segura con otra cuenta de Mercado Pago. Para hacerlo, puedes hacerlo de dos maneras:
 
-**A través de Tus Integraciones en Mercado Pago Developers:**
-1. Accede a [Tus integraciones](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y accede a una aplicación.
-2. Ve a la sección Pruebas o Producción, según el tipo de credencial que desees compartir.
+**A través de Tus integraciones en Mercado Pago Developers:**
+
+1. Accede a [Tus integraciones](https://mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) y accede a la aplicación deseada
+2. Ve a la sección **Pruebas** o **Producción**, según el tipo de credencial que desees compartir.
 3. Una vez seleccionas las credenciales, dirígete a la sección *Comparte las credenciales con un desarrollador* y haz clic en el botón **Compartir Credenciales**.
 4. Ingresa el correo electrónico de la persona a la que deseas concederle acceso. Recuerda que es obligatorio que el correo electrónico esté asociado a una cuenta de Mercado Pago.
 
@@ -104,20 +105,27 @@ Cuando recibas ayuda en la integración o configuración de tus canales de pago,
 1. Accede a tu cuenta de Mercado Pago.
 2. Ve a [Tu negocio > Configuración > Gestión y Administración > Credenciales](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials).
 3. En esa página, selecciona las credenciales de producción o las credenciales de prueba, según lo que desees compartir.
-4. Una vez seleccionas las credenciales, dirígete a la sección *Comparte las credenciales con un desarrollador* y haz clic en el botón **Compartir Credenciales**.
-5. Selecciona la aplicación de la que quieres compartir tus credenciales e Ingresa el correo electrónicode la persona a la que deseas concederle acceso. Recuerda que es obligatorio que el correo electrónico esté asociado a una cuenta de Mercado Pago.
+4. Una vez seleccionas las credenciales, dirígete a la sección *Comparte las credenciales con un desarrollador* y haz clic en el botón **Compartir credenciales**.
+5. Selecciona la aplicación de la que quieres compartir tus credenciales e Ingresa el correo electrónico de la persona a la que deseas concederle acceso. Recuerda que es obligatorio que el correo electrónico esté asociado a una cuenta de Mercado Pago.
 
 ![Compartir credenciales en Mercado Pago](/images/credentials/share-credentials-mp-es.gif)
-
 
 > WARNING
 >
 > Importante
 >
-> Puedes compartir las credenciales **hasta un máximo de 10 veces** con otras cuentas de Mercado Pago. Si alcanzas este límite, deberás eliminar permisos antiguos, sin impacto en las integraciones ya configuradas.<br><br>Además, si por cuestiones de seguridad no deseas seguir compartiendo tus credenciales, puedes cancelar el acceso.
+> Puedes compartir las credenciales **hasta un máximo de 10 veces** con otras cuentas de Mercado Pago. Si alcanzas este límite, deberás eliminar permisos antiguos, sin impacto en las integraciones ya configuradas.
+> <br><br>
+> Además, si por cuestiones de seguridad no deseas seguir compartiendo tus credenciales, puedes cancelar el acceso.
 
 ## Renovar credenciales
 
-Si por motivos de seguridad o cualquier otra razón relevante necesitas renovar tus credenciales, haz clic en **Más opciones** (tres puntos al final de la tarjeta) > **Renovar**. Ten en cuenta que tu integración puede verse afectada por el cambio.
+Si por motivos de seguridad o cualquier otra razón relevante necesitas renovar tus credenciales, haz clic en **Más opciones** (tres puntos al final de la tarjeta) > **Renovar**. 
+
+> WARNING
+> 
+> Atención
+>
+> Ten en cuenta que si las credenciales que vas a renovar están siendo usadas en alguna de tus integraciones, estás se verán afectadas y deberás reemplazarlas por las nuevas credenciales que obtengas tras la renovación.
 
 ![Cómo renovar tus credenciales](/images/credentials/renew-credentials-es.gif)
