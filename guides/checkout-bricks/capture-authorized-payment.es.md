@@ -1,4 +1,4 @@
-# Captura pago autorizado
+# Capturar pago autorizado
 
 La finalización de un pago sucede después de la captura del pago autorizado, lo que significa que se puede debitar de la tarjeta el importe reservado para la compra.
 
@@ -6,6 +6,12 @@ Hay dos formas de capturar un pago autorizado:
 
 * **Captura del monto total de una reserva**: en el que se captura el monto total del pago reservado.
 * **Captura del monto inferior al reservado**: en la que se captura el monto parcial del pago reservado.
+
+> WARNING
+>
+> Importante
+>
+> El tiempo límite para realizar la captura del pago autorizado es de ----[mla, mlm, mlc]----7 días------------ ----[mlb]---- 5 días------------ ----[mpe]---- 22 días------------ desde su creación.
 
 A continuación describimos en detalle cada una de las opciones y cómo ejecutarlas.
 
@@ -209,6 +215,7 @@ curl -X PUT \
   'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
   -d '{
           "transaction_amount": 75,
           "capture": true
@@ -237,4 +244,4 @@ La respuesta va a devolver que el pago se encuentra aprobado y acreditado.
 >
 > Importante
 >
-> No es posible captar un monto mayor al monto reservado, para ello deberá cancelar la reserva y generar una nueva.
+> No es posible captar un monto mayor al monto reservado, para ello deberás cancelar la reserva y generar una nueva.
