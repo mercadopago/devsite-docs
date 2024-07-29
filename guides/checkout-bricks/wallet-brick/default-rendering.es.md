@@ -1,10 +1,12 @@
 # Renderizado por defecto
 
+Antes de realizar la renderización del Wallet Brick, primero ejecute los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. A partir de esto, a continuación se presentan las informaciones necesarias para que configures y renderices el Wallet Brick.
+
 > WARNING
 >
 > Importante
 >
-> Para realizar el renderizado de Wallet Brick, primero ejecuta los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
+> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/wallet.md).
 
 ## Configurar el Brick
 

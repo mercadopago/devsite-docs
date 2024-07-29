@@ -1,12 +1,12 @@
 # Renderizado por defecto
 
-Ve a continuación la información necesaria para configurar y renderizar el Card Payment Brick.
+Antes de realizar la renderización del Card Payment Brick, primero ejecute los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. A partir de esto, a continuación se presentan las informaciones necesarias para que configures y renderices el Card Payment Brick.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
-> Para realizar el renderizado del Card Payment Brick, primero realice los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. Una vez hecho esto, realice la configuración a continuación.
+> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/card-payment.md).
 
 ## Configurar el Brick
 
