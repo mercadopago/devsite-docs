@@ -2065,32 +2065,32 @@
                           "title": "pending",
                           "description": {
                             "en": "Preapproval without a payment method",
-                            "es": "Preaprobación sin un medio de pago.",
-                            "pt": "Pré-aprovação sem um meio de pagamento."
+                            "es": "Suscripción sin un medio de pago.",
+                            "pt": "Assinatura sem um meio de pagamento."
                           }
                         },
                         {
                           "title": "authorized",
                           "description": {
                             "en": "Preapproval with a valid payment method",
-                            "es": "Preaprobación con un medio de pago válido.",
-                            "pt": "Pré-aprovação com um meio de pagamento válido."
+                            "es": "Suscripción con un medio de pago válido.",
+                            "pt": "Assinatura com um meio de pagamento válido."
                           }
                         },
                         {
                           "title": "paused",
                           "description": {
                             "en": "Preapproval with temporally discontinued collection of payments",
-                            "es": "Preaprobación con cobro de pagos temporalmente descontinuado.",
-                            "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
+                            "es": "Suscripción con cobro de pagos temporalmente descontinuado.",
+                            "pt": "Assinatura com cobrança de pagamentos temporariamente descontinuada."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
                             "en": "Preapproval terminated. This is an irreversible state",
-                            "es": "Preaprobación terminada. Este es un estado irreversible.",
-                            "pt": "Pré-aprovação finalizada. Este status é irreversível."
+                            "es": "Suscripción terminada. Este es un estado irreversible.",
+                            "pt": "Assinatura finalizada. Este status é irreversível."
                           }
                         }
                       ]
@@ -2407,32 +2407,32 @@
                         "title": "pending",
                         "description": {
                           "en": "Preapproval without a payment method",
-                          "es": "Preaprobación sin un medio de pago.",
-                          "pt": "Pré-aprovação sem um meio de pagamento."
+                          "es": "Suscripción sin un medio de pago.",
+                          "pt": "Assinatura sem um meio de pagamento."
                         }
                       },
                       {
                         "title": "authorized",
                         "description": {
                           "en": "Preapproval with a valid payment method",
-                          "es": "Preaprobación con un medio de pago válido.",
-                          "pt": "Pré-aprovação com um meio de pagamento válido."
+                          "es": "Suscripción con un medio de pago válido.",
+                          "pt": "Assinatura com um meio de pagamento válido."
                         }
                       },
                       {
                         "title": "paused",
                         "description": {
                           "en": "Preapproval with temporally discontinued collection of payments",
-                          "es": "Preaprobación con cobro de pagos temporalmente descontinuado.",
-                          "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
+                          "es": "Suscripción con cobro de pagos temporalmente descontinuado.",
+                          "pt": "Assinatura com cobrança de pagamentos temporariamente descontinuada."
                         }
                       },
                       {
                         "title": "cancelled",
                         "description": {
                           "en": "Preapproval terminated. This is an irreversible state.",
-                          "es": "Preaprobación terminada. Este es un estado irreversible.",
-                          "pt": "Pré-aprovação finalizada. Este status é irreversível."
+                          "es": "Suscripción terminada. Este es un estado irreversible.",
+                          "pt": "Assinatura finalizada. Este status é irreversível."
                         }
                       }
                     ]
@@ -2933,32 +2933,32 @@
                           "title": "pending",
                           "description": {
                             "en": "Preapproval without a payment method.",
-                            "es": "Preaprobación sin un medio de pago.",
-                            "pt": "Pré-aprovação sem um meio de pagamento."
+                            "es": "Suscripción sin un medio de pago.",
+                            "pt": "Assinatura sem um meio de pagamento."
                           }
                         },
                         {
                           "title": "authorized",
                           "description": {
                             "en": "Preapproval with a valid payment method.",
-                            "es": "Preaprobación con un medio de pago válido.",
-                            "pt": "Pré-aprovação com um meio de pagamento válido."
+                            "es": "Suscripción con un medio de pago válido.",
+                            "pt": "Assinatura com um meio de pagamento válido."
                           }
                         },
                         {
                           "title": "paused",
                           "description": {
                             "en": "Preapproval with temporally discontinued collection of payments.",
-                            "es": "Preaprobación con cobro de pagos temporalmente descontinuado.",
-                            "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
+                            "es": "Suscripción con cobro de pagos temporalmente descontinuado.",
+                            "pt": "Assinatura com cobrança de pagamentos temporariamente descontinuada."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
                             "en": "Preapproval terminated. This is an irreversible state.",
-                            "es": "Preaprobación terminada. Este es un estado irreversible.",
-                            "pt": "Pré-aprovação finalizada. Este status é irreversível."
+                            "es": "Suscripción terminada. Este es un estado irreversible.",
+                            "pt": "Assinatura finalizada. Este status é irreversível."
                           }
                         }
                       ]
@@ -3117,32 +3117,32 @@
                   "title": "pending",
                   "description": {
                     "en": "Preapproval without a payment method.",
-                    "es": "Preaprobación sin un medio de pago.",
-                    "pt": "Pré-aprovação sem um meio de pagamento."
+                    "es": "Suscripción sin un medio de pago.",
+                    "pt": "Assinatura sem um meio de pagamento."
                   }
                 },
                 {
                   "title": "authorized",
                   "description": {
                     "en": "Preapproval with a valid payment method.",
-                    "es": "Preaprobación con un medio de pago válido.",
-                    "pt": "Pré-aprovação com um meio de pagamento válido."
+                    "es": "Suscripción con un medio de pago válido.",
+                    "pt": "Assinatura com um meio de pagamento válido."
                   }
                 },
                 {
                   "title": "paused",
                   "description": {
                     "en": "Preapproval with temporally discontinued collection of payments.",
-                    "es": "Preaprobación con cobro de pagos temporalmente descontinuado.",
-                    "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
+                    "es": "Suscripción con cobro de pagos temporalmente descontinuado.",
+                    "pt": "Assinatura com cobrança de pagamentos temporariamente descontinuada."
                   }
                 },
                 {
                   "title": "cancelled",
                   "description": {
                     "en": "Preapproval terminated. This is an irreversible state.",
-                    "es": "Preaprobación terminada. Este es un estado irreversible.",
-                    "pt": "Pré-aprovação finalizada. Este status é irreversível."
+                    "es": "Suscripción terminada. Este es un estado irreversible.",
+                    "pt": "Assinatura finalizada. Este status é irreversível."
                   }
                 }
               ]
@@ -3247,16 +3247,16 @@
                           "title": "pending",
                           "description": {
                             "en": "Preapproval without a payment method.",
-                            "es": "Preaprobación sin un medio de pago.",
-                            "pt": "Pré-aprovação sem um meio de pagamento."
+                            "es": "Suscripción sin un medio de pago.",
+                            "pt": "Assinatura sem um meio de pagamento."
                           }
                         },
                         {
                           "title": "authorized",
                           "description": {
                             "en": "Preapproval with a valid payment method.",
-                            "es": "Preaprobación con un medio de pago válido.",
-                            "pt": "Pré-aprovação com um meio de pagamento válido."
+                            "es": "Suscripción con un medio de pago válido.",
+                            "pt": "Assinatura com um meio de pagamento válido."
                           }
                         },
                         {
@@ -3264,15 +3264,15 @@
                           "description": {
                             "en": "Preapproval with temporally discontinued collection of payments.",
                             "es": "Preaprobación con cobro de pagos temporalmente descontinuado",
-                            "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
+                            "pt": "Assinatura com cobrança de pagamentos temporariamente descontinuada."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
                             "en": "Preapproval terminated. This is an irreversible state.",
-                            "es": "Preaprobación terminada. Este es un estado irreversible.",
-                            "pt": "Pré-aprovação finalizada. Este status é irreversível."
+                            "es": "Suscripción terminada. Este es un estado irreversible.",
+                            "pt": "Assinatura finalizada. Este status é irreversível."
                           }
                         }
                       ]
@@ -3550,8 +3550,8 @@
                       "type": "number",
                       "description": {
                         "en": "Preapproval collection status summary.",
-                        "pt": "Resumo do status de coleta de pré-aprovação.",
-                        "es": "Resumen del estado de la colección de preaprobación."
+                        "pt": "Resumo do status de coleta de assinatura.",
+                        "es": "Resumen del estado de la colección de suscripción."
                       },
                       "example": "green",
                       "enum": [
@@ -3638,8 +3638,8 @@
                       "type": "number",
                       "description": {
                         "en": "How many times preapproval was modified.",
-                        "pt": "Quantas vezes a pré-aprovação foi modificada.",
-                        "es": "Cuántas veces se modificó la preaprobación."
+                        "pt": "Quantas vezes a assinatura foi modificada.",
+                        "es": "Cuántas veces se modificó la suscripción."
                       },
                       "example": 4
                     },
@@ -7001,32 +7001,32 @@
                   "title": "pending",
                   "description": {
                     "en": "Preapproval without a payment method.",
-                    "es": "Preaprobación sin un medio de pago.",
-                    "pt": "Pré-aprovação sem um meio de pagamento."
+                    "es": "Suscripción sin un medio de pago.",
+                    "pt": "Assinatura sem um meio de pagamento."
                   }
                 },
                 {
                   "title": "authorized",
                   "description": {
                     "en": "Preapproval with a valid payment method.",
-                    "es": "Preaprobación con un medio de pago válido.",
-                    "pt": "Pré-aprovação com um meio de pagamento válido."
+                    "es": "Suscripción con un medio de pago válido.",
+                    "pt": "Assinatura com um meio de pagamento válido."
                   }
                 },
                 {
                   "title": "paused",
                   "description": {
                     "en": "Preapproval with temporally discontinued collection of payments.",
-                    "es": "Preaprobación con cobro de pagos temporalmente descontinuado.",
-                    "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
+                    "es": "Suscripción con cobro de pagos temporalmente descontinuado.",
+                    "pt": "Assinatura com cobrança de pagamentos temporariamente descontinuada."
                   }
                 },
                 {
                   "title": "cancelled",
                   "description": {
                     "en": "Preapproval terminated. This is an irreversible state.",
-                    "es": "Preaprobación terminada. Este es un estado irreversible.",
-                    "pt": "Pré-aprovação finalizada. Este status é irreversível."
+                    "es": "Suscripción terminada. Este es un estado irreversible.",
+                    "pt": "Assinatura finalizada. Este status é irreversível."
                   }
                 }
               ]
@@ -7633,32 +7633,32 @@
                                 "title": "pending",
                                 "description": {
                                   "en": "Preapproval without a payment method.",
-                                  "es": "Preaprobación sin un medio de pago.",
-                                  "pt": "Pré-aprovação sem um meio de pagamento."
+                                  "es": "Suscripción sin un medio de pago.",
+                                  "pt": "Assinatura sem um meio de pagamento."
                                 }
                               },
                               {
                                 "title": "authorized",
                                 "description": {
                                   "en": "Preapproval with a valid payment method.",
-                                  "es": "Preaprobación con un medio de pago válido.",
-                                  "pt": "Pré-aprovação com um meio de pagamento válido."
+                                  "es": "Suscripción con un medio de pago válido.",
+                                  "pt": "Assinatura com um meio de pagamento válido."
                                 }
                               },
                               {
                                 "title": "paused",
                                 "description": {
                                   "en": "Preapproval with temporally discontinued collection of payments.",
-                                  "es": "Preaprobación con cobro de pagos temporalmente descontinuado.",
-                                  "pt": "Pré-aprovação com cobrança de pagamentos temporariamente descontinuada."
+                                  "es": "Suscripción con cobro de pagos temporalmente descontinuado.",
+                                  "pt": "Assinatura com cobrança de pagamentos temporariamente descontinuada."
                                 }
                               },
                               {
                                 "title": "cancelled",
                                 "description": {
                                   "en": "Preapproval terminated. This is an irreversible state.",
-                                  "es": "Preaprobación terminada. Este es un estado irreversible.",
-                                  "pt": "Pré-aprovação finalizada. Este status é irreversível."
+                                  "es": "Suscripción terminada. Este es un estado irreversible.",
+                                  "pt": "Assinatura finalizada. Este status é irreversível."
                                 }
                               }
                             ]
