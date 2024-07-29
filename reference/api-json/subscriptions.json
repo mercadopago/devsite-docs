@@ -2028,7 +2028,7 @@
                               "title": "yellow",
                               "description": {
                                 "en": "With collection problems. We are trying to collect an invoice.",
-                                "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
+                                "es": "Con problemas de cobranza. Estamos tratando de cobrar una factura.",
                                 "pt": "Com problemas de cobranças. Estamos tentando cobrar uma fatura."
                               }
                             },
@@ -3550,8 +3550,8 @@
                       "type": "number",
                       "description": {
                         "en": "Preapproval collection status summary.",
-                        "pt": "Resumo do status de coleta de assinatura.",
-                        "es": "Resumen del estado de la colección de suscripción."
+                        "pt": "Resumo do status de cobrança de assinatura.",
+                        "es": "Resumen del estado de la cobranza de suscripción."
                       },
                       "example": "green",
                       "enum": [
@@ -3567,7 +3567,7 @@
                           "title": "yellow",
                           "description": {
                             "en": "With collection problems. We are trying to collect an invoice.",
-                            "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
+                            "es": "Con problemas de cobranza. Estamos tratando de cobrar una factura.",
                             "pt": "Com problemas de cobranças. Estamos tentando cobrar uma fatura."
                           }
                         },
@@ -3958,8 +3958,8 @@
                           "title": "processed",
                           "description": {
                             "en": "Authorized payment collected or exceeded retries.",
-                            "pt": "Pagamento autorizado, coletado ou que excedeu o número de tentativas.",
-                            "es": "Pago autorizado recolectado o que excedió los reintentos."
+                            "pt": "Pagamento autorizado, cobrado ou que excedeu o número de tentativas.",
+                            "es": "Pago autorizado cobrado o que excedió los reintentos."
                           }
                         },
                         {
@@ -4354,8 +4354,8 @@
                           "type": "number",
                           "description": {
                             "en": "The total number of items in the collection.",
-                            "pt": "Número total de itens na coleção.",
-                            "es": "El número total de elementos en la colección."
+                            "pt": "Número total de itens na cobrança.",
+                            "es": "El número total de elementos en la cobranza."
                           },
                           "example": 100
                         }
@@ -4559,8 +4559,8 @@
                                 "title": "processed",
                                 "description": {
                                   "en": "Authorized payment collected or exceeded retries",
-                                  "es": "Pago autorizado recolectado o que excedió los reintentos.",
-                                  "pt": "Pagamento autorizado coletado ou que excedeu as tentativas."
+                                  "es": "Pago autorizado cobrado o que excedió los reintentos.",
+                                  "pt": "Pagamento autorizado cobrado ou que excedeu as tentativas."
                                 }
                               },
                               {
@@ -6341,8 +6341,8 @@
                           "type": "number",
                           "description": {
                             "en": "The total number of items in the collection.",
-                            "pt": "O número total de itens na coleção.",
-                            "es": "The total number of items in the collection."
+                            "pt": "O número total de itens na cobrança.",
+                            "es": "El número total de ítems en la cobranza."
                           },
                           "example": 100
                         }
@@ -6962,7 +6962,7 @@
                   "title": "yellow",
                   "description": {
                     "en": "With collection problems. We are trying to collect an invoice.",
-                    "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
+                    "es": "Con problemas de cobranza. Estamos tratando de cobrar una factura.",
                     "pt": "Com problemas de cobranças. Estamos tentando cobrar uma fatura."
                   }
                 },
@@ -7132,8 +7132,8 @@
                           "type": "number",
                           "description": {
                             "en": "The total number of items in the collection.",
-                            "pt": "O número total de itens na coleção.",
-                            "es": "El número total de elementos en la colección."
+                            "pt": "O número total de itens na cobrança.",
+                            "es": "El número total de elementos en la cobranza."
                           },
                           "example": 100
                         }
@@ -7596,7 +7596,7 @@
                                     "title": "yellow",
                                     "description": {
                                       "en": "With collection problems. We are trying to collect an invoice.",
-                                      "es": "Con problemas de colección. Estamos tratando de cobrar una factura.",
+                                      "es": "Con problemas de cobranza. Estamos tratando de cobrar una factura.",
                                       "pt": "Com problemas de cobranças. Estamos tentando cobrar uma fatura."
                                     }
                                   },
