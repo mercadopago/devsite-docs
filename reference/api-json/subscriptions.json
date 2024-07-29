@@ -3593,7 +3593,7 @@
                       "type": "number",
                       "description": {
                         "en": "Date of last time a payment of this subscription was made.",
-                        "pt": "Data da última vez em que um pagamento desta assinatura foi realizado.",
+                        "pt": "Data do último pagamento realizado para esta assinatura.",
                         "es": "Fecha de la última vez que se realizó un pago de esta suscripción."
                       },
                       "example": "24-2-2021"
@@ -3637,7 +3637,7 @@
                     "version": {
                       "type": "number",
                       "description": {
-                        "en": "How many times preapproval was modified.",
+                        "en": "Number of times the subscription was modified.",
                         "pt": "Quantas vezes a assinatura foi modificada.",
                         "es": "Cuántas veces se modificó la suscripción."
                       },
@@ -3950,7 +3950,7 @@
                           "title": "scheduled",
                           "description": {
                             "en": "Authorized payment scheduled to collect.",
-                            "pt": "Agendada a cobrança para um pagamento autorizado.",
+                            "pt": "Cobrança agendada para um pagamento autorizado.",
                             "es": "Pago autorizado programado para cobrar."
                           }
                         },
@@ -3958,7 +3958,7 @@
                           "title": "processed",
                           "description": {
                             "en": "Authorized payment collected or exceeded retries.",
-                            "pt": "Pagamento autorizado coletado ou que excedeu as tentativas.",
+                            "pt": "Pagamento autorizado, coletado ou que excedeu o número de tentativas.",
                             "es": "Pago autorizado recolectado o que excedió los reintentos."
                           }
                         },
@@ -4354,7 +4354,7 @@
                           "type": "number",
                           "description": {
                             "en": "The total number of items in the collection.",
-                            "pt": "O número total de itens na coleção.",
+                            "pt": "Número total de itens na coleção.",
                             "es": "El número total de elementos en la colección."
                           },
                           "example": 100
