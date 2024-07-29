@@ -12,7 +12,7 @@ Once the request –with all the collected information– is in your backend, it
 >
 > Note
 >
-> To consult the types and specifications that can be sent and received by the Brick in the onSubmit callback, check the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/card-payment.md).
+> To consult the types and specifications that can be sent and received by the Brick in the onSubmit callback, check the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/payment.md).
 
 For this to work, you should configure your [private key](/developers/en/guides/additional-content/your-integrations/credentials). Also, to interact with our APIs, you should use [Mercado Pago official SDK](/developers/en/docs/sdks-library/landing).
 

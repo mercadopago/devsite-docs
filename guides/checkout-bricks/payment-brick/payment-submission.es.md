@@ -12,7 +12,7 @@ Ya estando en tu backend con toda la información recolectada, es momento de env
 >
 > Nota
 >
-> Para consultar los tipos y especificaciones que podrán ser enviados y recibidos por el Brick en el _callback_ de _onSubmit_, consulta la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/card-payment.md).
+> Para consultar los tipos y especificaciones que podrán ser enviados y recibidos por el Brick en el _callback_ de _onSubmit_, consulta la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/payment.md).
 
 Ten en cuenta que para que este paso funcione es necesario que configures tu [clave privada](/developers/es/guides/additional-content/your-integrations/credentials) y que para interactuar con nuestras APIs recomendamos utilizar la [SDK oficial de Mercado Pago](/developers/es/docs/sdks-library/landing).
 
