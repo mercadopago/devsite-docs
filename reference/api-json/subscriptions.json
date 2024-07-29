@@ -3791,9 +3791,9 @@
                         {
                           "title": "scheduled",
                           "description": {
-                            "en": "Automatically generated and scheduled by the recurrence engine",
-                            "pt": "Gerado e agendado automaticamente pelo mecanismo de recorrência.",
-                            "es": "Generado y programado automáticamente por el motor de recurrencia."
+                            "en": "Payment automatically generated and scheduled by the recurrence engine",
+                            "pt": "Pagamento gerado e agendado automaticamente pelo mecanismo de recorrência.",
+                            "es": "Pago generado y programado automáticamente por el motor de recurrencia."
                           }
                         }
                       ]
@@ -4392,9 +4392,9 @@
                               {
                                 "title": "scheduled",
                                 "description": {
-                                  "en": "Automatically generated and scheduled by the recurrence engine",
-                                  "es": "Gerado e agendado automaticamente pelo mecanismo de recorrência.",
-                                  "pt": "Automaticamente gerado e programado pelo mecanismo de recorrência."
+                                  "en": "Payment automatically generated and scheduled by the recurrence engine",
+                                  "es": "Pagamento gerado e agendado automaticamente pelo mecanismo de recorrência.",
+                                  "pt": "Pago automaticamente gerado e programado pelo mecanismo de recorrência."
                                 }
                               }
                             ]
