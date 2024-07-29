@@ -2,15 +2,21 @@
 >
 > h1
 >
-> Envie pagamento ao Mercado Pago
+> Envie pagamento ao Mercado Pago 
 
 Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu backend possa receber a informação do formulário com o token gerado e os dados completos. O seu backend deverá disponibilizar um endpoint `/process_payment` para receber ali todos os dados depois de realizar a ação submit.
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs. Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`.
 
+> NOTE
+>
+> Nota
+>
+> Para consultar tipagens e especificações que poderão ser enviados e recebidos pelo Brick no _callback_ de _onSubmit_, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/card-payment.md).
+
 Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada](/developers/pt/guides/additional-content/your-integrations/credentials) e que para interagir com nossas APIs, recomendamos utilizar o [SDK oficial do Mercado Pago](/developers/pt/docs/sdks-library/landing).
 
-> NOTE
+> WARNING
 > 
 > Importante
 >

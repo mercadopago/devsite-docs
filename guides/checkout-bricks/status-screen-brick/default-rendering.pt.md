@@ -2,12 +2,11 @@
 
 Antes de realizar a renderização do Status Screen Brick, primeiro execute os [passos de inicialização](/developers/pt/docs/checkout-bricks/common-initialization) compartilhados entre todos os Bricks. A partir disso, veja abaixo as informações necessárias para você configurar e renderizar o Status Screen Brick.
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
 > Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/status-screen.md).
-
 
 ## Configurar o Brick
 
@@ -70,7 +69,7 @@ O `paymentId` que deve ser enviado ao Brick para a sua inicialização é o ID r
 
 Uma vez criadas as configurações, insira o código abaixo para renderizar o Brick. 
 
-> NOTE
+> WARNING
 > 
 > Importante
 >
