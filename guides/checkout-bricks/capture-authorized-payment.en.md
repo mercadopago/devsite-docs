@@ -7,6 +7,12 @@ There are two ways to capture an authorized payment:
 * **Capture the total amount of a reserve**: in which the full amount of the reserved payment is captured.
 * **Capture of an amount lower than the reserved amount**: in which the partial amount of the reserved payment is captured.
 
+> WARNING
+>
+> Important
+>
+> The time limit to capture the authorized payment is ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------ ----[mpe]---- 22 days------------ from its creation.
+
 Below we describe in detail each of the options and how to execute them.
 
 ## Capture total amount
@@ -209,6 +215,7 @@ curl -X PUT \
 'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+-H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
 -d '{
 "transaction_amount": 75,
 "capture": true

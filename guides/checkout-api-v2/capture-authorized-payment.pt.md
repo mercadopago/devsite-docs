@@ -7,6 +7,12 @@ Existem duas formas de capturar um pagamento autorizado:
 * **Captura do valor total de uma reserva**: na qual se captura o valor integral do pagamento reservado.
 * **Captura de um valor inferior ao reservado:** na qual se captura o valor parcial do pagamento reservado.
 
+> WARNING
+>
+> Importante
+>
+> O prazo para capturar o pagamento autorizado é de ----[mla, mlm, mlc]----7 dias------------ ----[mlb]---- 5 dias ------------ ----[mpe]---- 22 dias------------ a partir da sua criação.
+
 Abaixo descrevemos o detalhe de cada uma das opções e como executá-las.
 
 ## Capturar valor total 
@@ -134,6 +140,7 @@ curl -X PUT \
   'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
   -d '{"capture": true}'
 ```
 ]]]
@@ -290,6 +297,7 @@ curl -X PUT \
   'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
   -d '{
           "transaction_amount": 75,
           "capture": true
@@ -450,6 +458,7 @@ curl -X PUT \
   'https://api.mercadopago.com/v1/payments/PAYMENT_ID' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
+  -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
   -d '{
           "transaction_amount": 75,
           "capture": true
