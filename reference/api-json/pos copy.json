@@ -8,7 +8,7 @@
           "mp-point"
         ],
         "description": {
-          "en": "Generate a Point of Sale in a store. Each POS will have a unique QR Code linked to it",
+          "en": "Generate a point of sale in a store. Each POS will have a unique QR Code linked to it",
           "pt": "Gerar um ponto de venda em uma loja. Cada caixa registradora terá um código QR exclusivo vinculado a ela",
           "es": "Genera un punto de venta en una sucursal. Cada caja tendrá vinculado un código QR unívoco"
         },
@@ -21,7 +21,7 @@
                   "name": {
                     "type": "string",
                     "description": {
-                      "en": "Name of the POS.",
+                      "en": "Name of the point of sale.",
                       "pt": "Nome do ponto de venda.",
                       "es": "Nombre del punto de venta."
                     },
@@ -481,7 +481,7 @@
           }
         },
         "title": {
-          "en": "Create POS",
+          "en": "Create point of sale",
           "pt": "Criar caixa",
           "es": "Crear caja"
         }
@@ -847,9 +847,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "en": "POS Id",
-              "pt": "POS Id",
-              "es": "POS Id"
+              "en": "Creation ID of the point of sale. When you register a point of sale, you will receive a corresponding ID. This ID can be used for various operations, including retrieving the point of sale data.",
+              "pt": "ID de criação do ponto de venda. Ao registrar um ponto de venda, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo consultar os dados do ponto de venda.",
+              "es": "ID de creación del punto de venta. Al registrar un punto de venta, recibirás un ID correspondiente. Este ID puede ser utilizado para varias operaciones, incluida la consulta de los datos del punto de venta."
             },
             "required": true,
             "schema": {
@@ -1040,18 +1040,18 @@
           "mp-point"
         ],
         "description": {
-          "en": "Renew the data of a Point of Sale. Indicate the ID of the POS and send the parameters with the information you want to update",
-          "pt": "Atualizar os dados de um ponto de venda. Indicar a identificação da caixa registradora e enviar os parâmetros com as informações que você deseja atualizar",
-          "es": "Renueva los datos de un punto de venta. Indica el ID de la caja y envía los parámetros con la información que quieras actualizar"
+          "en": "This endpoint allows you to update the data of a point of sale. To use it, you need to provide the identification of the point of sale and send the parameters with the information to be updated.",
+          "pt": "Este endpoint permite atualizar os dados de um ponto de venda (caixa). Para utilizá-lo, é necessário fornecer a identificação do ponto de venda e enviar os parâmetros com as informações a serem atualizadas.",
+          "es": "Este endpoint permite actualizar los datos de un punto de venta (caja). Para utilizarlo, es necesario proporcionar la identificación del punto de venta y enviar los parámetros con la información que se debe actualizar."
         },
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "description": {
-              "en": "POS Id",
-              "pt": "POS Id",
-              "es": "POS Id"
+              "en": "Creation ID of the point of sale. When you register a point of sale, you will receive a corresponding ID. This ID can be used for various operations, including updating the point of sale data.",
+              "pt": "ID de criação do ponto de venda. Ao registrar um ponto de venda, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo a atualização de dados do ponto de venda.",
+              "es": "ID de creación del punto de venta. Al registrar un punto de venta, recibirás un ID correspondiente. Este ID puede ser utilizado para varias operaciones, incluida la actualización de los datos del punto de venta."
             },
             "required": true,
             "schema": {
@@ -1069,9 +1069,9 @@
                   "name": {
                     "type": "string",
                     "description": {
-                      "en": "Name of the POS.",
-                      "pt": "Nome da caixa",
-                      "es": "Nombre de la caja"
+                      "en": "Name of the point of sale.",
+                      "pt": "Nome do caixa.",
+                      "es": "Nombre de la caja."
                     },
                     "example": "First POS"
                   },
@@ -1091,8 +1091,8 @@
                     "type": "string",
                     "description": {
                       "en": "Store identifier to which the point of sale belongs.",
-                      "pt": "Identificador da loja à qual o caixa pertence",
-                      "es": "Identificador de la sucursal a la que pertenece el Punto de Venta"
+                      "pt": "Identificador da loja à qual o ponto de venda pertence.",
+                      "es": "Identificador de la sucursal a la que pertenece el punto de venta."
                     },
                     "example": 1234567
                   },
@@ -1555,9 +1555,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "en": "POS Id",
-              "pt": "POS Id",
-              "es": "POS Id"
+              "en": "Creation ID of the point of sale. When you register a point of sale, you will receive a corresponding ID. This ID can be used for various operations, including deleting a point of sale.",
+              "pt": "ID de criação do ponto de venda. Ao registrar um ponto de venda, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo consultar os dados do ponto de venda.",
+              "es": "ID de creación del punto de venta. Al registrar un punto de venta, recibirás un ID correspondiente. Este ID puede ser utilizado para varias operaciones, incluida la eliminación de un punto de venta."
             },
             "required": true,
             "schema": {
@@ -1729,16 +1729,16 @@
             "title": "4731300",
             "description": {
               "en": "Brazil",
-              "es": "Brazil",
-              "pt": "Brazil"
+              "es": "Brasil",
+              "pt": "Brasil"
             }
           },
           {
             "title": "468419",
             "description": {
               "en": "Mexico",
-              "es": "Mexico",
-              "pt": "Mexico"
+              "es": "México",
+              "pt": "México"
             }
           },
           {
@@ -1746,14 +1746,14 @@
             "description": {
               "en": "Colombia",
               "es": "Colombia",
-              "pt": "Colombia"
+              "pt": "Colômbia"
             }
           },
           {
             "title": "5050",
             "description": {
               "en": "Peru",
-              "es": "Peru",
+              "es": "Perú",
               "pt": "Peru"
             }
           },
@@ -1762,7 +1762,7 @@
             "description": {
               "en": "Uruguay",
               "es": "Uruguay",
-              "pt": "Uruguay"
+              "pt": "Uruguai"
             }
           },
           {
