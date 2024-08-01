@@ -62,7 +62,7 @@ Access Token is the code used in different requests of public origin to access a
 >
 > It is recommended to carry out this procedure all at once together with the user, since the code received by the "Redirect URL" after authorization is valid for 10 minutes and the Access Token received through the endpoint is valid for 180 days (6 months).
 
-1. Edit your application so that it contains your Redirect URL. See [Edit Application](/developers/en/guides/additional-content/your-integrations/application-details).
+1. Edit your application so that it contains your Redirect URL. See [Edit application](/developers/en/docs/your-integrations/application-details).
 2. Send the **authentication URL** to the seller whose account you want to link to yours with the following fields:
 
    ```Authentication_URL
