@@ -1,13 +1,13 @@
-# Parceiros
+# Partners
 
-## Parceiros com certificação PCI
+## PCI certified partners
 
-Para parceiros certificados PCI, será necessário o envio da AOC para que a equipe de Riscos Mercado Pago possa avaliar a autorização para seguir com a tokenização via *backend*.
+For PCI certified partners, it will be necessary to submit the AOC so that the Mercado Pago Risk team can assess the authorization to proceed with backend tokenization.
 
-## Parceiro sem certificação PCI
+## Partners without PCI certification
 
-A tokenização dos pagamentos via cartão de crédito deve ser feita utilizando a nossa [SDK JS V2](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform), por meio do cardform.
-O MercadoPago.js é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento.
+Credit card payment tokenization should be done using our [SDK JS V2](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-cardform) through the cardform.
+MercadoPago.js is responsible for the necessary flows to obtain the required information for creating a payment.
 
 ```html
 <body>
@@ -15,7 +15,7 @@ O MercadoPago.js é responsável pelos fluxos necessários para obtenção das i
 </body>
 ```
 
-### Adicionar formulário de pagamento
+### Add payment form
 
 ```html
 <style>
@@ -76,17 +76,17 @@ O MercadoPago.js é responsável pelos fluxos necessários para obtenção das i
         <select name="installments" id="form-checkout__installments"></select>
       </li>
       <li>
-        <button type="submit" id="form-checkout__submit">Pagar</button>
+        <button type="submit" id="form-checkout__submit">Pay</button>
       </li>
       <li>
-        <progress value="0" class="progress-bar">Carregando...</progress>
+        <progress value="0" class="progress-bar">Loading...</progress>
       </li>
     </ul>
   </fieldset>   
 </form>
 ```
 
-### Inicializar formulário de pagamento
+### Initialize payment form
 
 ```javascript
 const cardForm = mp.cardForm({
@@ -96,43 +96,43 @@ const cardForm = mp.cardForm({
     id: "form-checkout",
     cardholderName: {
       id: "form-checkout__cardholderName",
-      placeholder: "Titular do cartão",
+      placeholder: "Cardholder Name",
     },
     cardholderEmail: {
       id: "form-checkout__cardholderEmail",
-      placeholder: "E-mail",
+      placeholder: "Email",
     },
     cardNumber: {
       id: "form-checkout__cardNumber",
-      placeholder: "Número do cartão",
+      placeholder: "Card Number",
     },
     cardExpirationMonth: {
       id: "form-checkout__cardExpirationMonth",
-      placeholder: "Mês de vencimento",
+      placeholder: "Expiration Month",
     },
     cardExpirationYear: {
       id: "form-checkout__cardExpirationYear",
-      placeholder: "Ano de vencimento",
+      placeholder: "Expiration Year",
     },
     securityCode: {
       id: "form-checkout__securityCode",
-      placeholder: "Código de segurança",
+      placeholder: "Security Code",
     },
     installments: {
       id: "form-checkout__installments",
-      placeholder: "Parcelas",
+      placeholder: "Installments",
     },
     identificationType: {
       id: "form-checkout__identificationType",
-      placeholder: "Tipo de documento",
+      placeholder: "Identification Type",
     },
     identificationNumber: {
       id: "form-checkout__identificationNumber",
-      placeholder: "Número do documento",
+      placeholder: "Identification Number",
     },
     issuer: {
       id: "form-checkout__issuer",
-      placeholder: "Banco emissor",
+      placeholder: "Issuer Bank",
     },
   },
   callbacks: {
@@ -165,7 +165,7 @@ const cardForm = mp.cardForm({
           payment_method_id,
           transaction_amount: Number(amount),
           installments: Number(installments),
-          description: "Descrição do produto",
+          description: "Product Description",
           payer: {
             email,
             identification: {
@@ -175,7 +175,7 @@ const cardForm = mp.cardForm({
           },
         }),
       });*/
-      alert("generated card token: " + token);
+      alert("Generated card token: " + token);
     },
     onFetching: resource => {
       console.log("Fetching resource: ", resource);
@@ -196,5 +196,5 @@ const cardForm = mp.cardForm({
 >
 > Considerações
 >
-> Caso esteja utilizando o SDK JS V1, será necessário a migração para o [SDK JS V2](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
-**Exemplo prático para tokenização com JS V2**: [Tokenização - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).
+> If you are using SDK JS V1, you will need to migrate to [SDK JS V2](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
+**Practical example for tokenization with JS V2**: [Tokenization - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).

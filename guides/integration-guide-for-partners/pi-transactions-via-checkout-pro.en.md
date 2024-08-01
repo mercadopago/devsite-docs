@@ -1,14 +1,14 @@
-# Transações via Checkout Pro
+# Transactions via Checkout Pro
 
-Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poderá adicioná-lo ao cabeçalho da requisição de pagamento (`/checkout/preferences`) ao criar uma preferência de pagamento junto ao Mercado Pago.
+After receiving your ID related to the `PLATFORM_ID` of your platform, you can add it to the header of the payment request (`/checkout/preferences`) when creating a payment preference with Mercado Pago.
 
-Exemplo:
+Example:
 
 ```curl
 curl --location --request POST 'https://api.mercadolibre.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
---header 'x-platform-id: {{PLATFORM_ID fornecido pelo time de Partners}}' \
+--header 'x-platform-id: {{PLATFORM_ID provided by the Partners team}}' \
 --data-raw '{
     "auto_return": "all",
     "back_urls": {
@@ -23,7 +23,7 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     },
     "notification_url": "https://webhook.site/d69d1102-b677-44f6-ae6d-104a7e813b93",
     "expires": false,
-    "external_reference": "Pedido - Teste",
+    "external_reference": "Order - Test",
     "date_of_expiration": "2022-04-01T22:59:00.000-04:00",
     "sponsor_id": <CUST_ID>,
     "items": [
@@ -53,8 +53,8 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     "shipments": {
         "receiver_address": {
             "zip_code": "95630000",
-            "street_name": "Nome da rua",
-            "street_number": "Número da rua"
+            "street_name": "Street name",
+            "street_number": "Street number"
         }
     }
 }'

@@ -1,14 +1,14 @@
-# Transações via Checkout Pro
+# Transacciones a través de Checkout Pro
 
-Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poderá adicioná-lo ao cabeçalho da requisição de pagamento (`/checkout/preferences`) ao criar uma preferência de pagamento junto ao Mercado Pago.
+Después de recibir tu ID correspondiente al `PLATFORM_ID` de tu plataforma, podrás añadirlo al encabezado de la solicitud de pago (`/checkout/preferences`) al crear una preferencia de pago con Mercado Pago.
 
-Exemplo:
+Ejemplo:
 
 ```curl
 curl --location --request POST 'https://api.mercadolibre.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
---header 'x-platform-id: {{PLATFORM_ID fornecido pelo time de Partners}}' \
+--header 'x-platform-id: {{PLATFORM_ID proporcionado por el equipo de Partners}}' \
 --data-raw '{
     "auto_return": "all",
     "back_urls": {
@@ -23,14 +23,14 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     },
     "notification_url": "https://webhook.site/d69d1102-b677-44f6-ae6d-104a7e813b93",
     "expires": false,
-    "external_reference": "Pedido - Teste",
+    "external_reference": "Pedido - Prueba",
     "date_of_expiration": "2022-04-01T22:59:00.000-04:00",
     "sponsor_id": <CUST_ID>,
     "items": [
         {
             "id": "1234",
             "currency_id": "BRL",
-            "title": "Produto",
+            "title": "Producto",
             "category_id": "entertainment",
             "quantity": 1,
             "unit_price": 4
@@ -53,8 +53,8 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     "shipments": {
         "receiver_address": {
             "zip_code": "95630000",
-            "street_name": "Nome da rua",
-            "street_number": "Número da rua"
+            "street_name": "Nombre de la calle",
+            "street_number": "Número de la calle"
         }
     }
 }'
