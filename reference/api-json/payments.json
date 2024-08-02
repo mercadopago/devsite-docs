@@ -1060,7 +1060,7 @@
                         {
                           "title": "cc_rejected_duplicated_payment",
                           "description": {
-                            "en": "Transacción duplicada.",
+                            "en": "Duplicate transaction.",
                             "es": "Transacción duplicada.",
                             "pt": "Transação duplicada."
                           }
@@ -1068,7 +1068,7 @@
                         {
                           "title": "cc_rejected_high_risk",
                           "description": {
-                            "en": "Rechazo por Prevención de Fraude.",
+                            "en": "Rejection due to Fraud Prevention.",
                             "es": "Rechazo por Prevención de Fraude.",
                             "pt": "Rejeição por Prevenção de Fraude."
                           }

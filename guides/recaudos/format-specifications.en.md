@@ -45,7 +45,7 @@ ext2024030614313,521998672,1002,20250312,549.57,20250315,778.87,20250318,801.87,
 Below is an example of an uploaded file with only the mandatory data entered correctly:
 
 ```csv
-ext2024030614313,,,,,20250312,549.57,,,,,,,,,,,,,,,,,,,
+ext2024030614313,,,20250312,549.57,,,,,,,,,,,,,,,,,,,
 ```
 
 To identify the examples according to the mandatory fields and the order in the file, refer to the table below:
