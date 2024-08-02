@@ -8,11 +8,24 @@ Para a primeira transação, sempre será necessário solicitar os dados do cart
 
 Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email`. Lembrando que quanto mais informações adicionais forem transmitidas, maior será a chance do pagamento ser aprovado porque a avaliação de risco terá mais dados para avaliar.
 
+----[mla, mlm, mpe, mco, mlu, mlb]----
 > WARNING
 >
 > Importante
 >
 > Para mais informações sobre como enviar as informações dos pagamentos recorrentes ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) com o intuito de aumentar a taxa de aprovação para pagamentos deste tipo, acesse a documentação [Mensageria de pagamentos automáticos](/developers/pt/docs/automatic-payments/recurring-charges/subscription-messaging).
+
+------------
+----[mlc]----
+> WARNING
+>
+> Importante
+>
+> Para mais informações sobre como enviar as informações dos pagamentos recorrentes ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) com o intuito de aumentar a taxa de aprovação para pagamentos deste tipo, acesse a documentação [Mensageria de pagamentos automáticos](/developers/pt/docs/automatic-payments/recurring-charges/subscription-messaging).
+> <br><br>
+> Para transações no Chile (MLC), os valores dos itens deverão ser inteiros. Ou seja, não poderão ser utilizadas casas decimais.
+
+------------
 
 Deve-se levar em consideração dois fluxos para salvar os dados do cartão do cliente:
 
