@@ -45,7 +45,7 @@ ext2024030614313,521998672,1002,20250312,549.57,20250315,778.87,20250318,801.87,
 A seguir, um exemplo de arquivo carregado apenas com os dados obrigatórios inseridos corretamente:
 
 ```csv
-ext2024030614313,,,,,20250312,549.57,,,,,,,,,,,,,,,,,,,
+ext2024030614313,,,20250312,549.57,,,,,,,,,,,,,,,,,,,
 ```
 
 Para identificar os exemplos de acordo com a obrigatoriedade e a ordem no arquivo, consulte a tabela abaixo:
