@@ -28,8 +28,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "notification_url": "{{notification_url}}",
     "description": "Descrição do produto do vendedor",
     "payer": {
-        "first_name": "João",
-        "last_name": "Silva",
+        "first_name": "Nome",
+        "last_name": "Sobrenome",
         "email": "test_user_{{$timestamp}}@testuser.com",
         "identification": {
             "type": "CPF",
@@ -37,11 +37,11 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
         },
         "address": {
             "zip_code": "06233-200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
+            "street_name": "Nome da rua",
+            "street_number": "Número da rua",
+            "neighborhood": "Bairro",
+            "city": "Cidade",
+            "federal_unit": "UF"
         }
     },
     "additional_info": {
@@ -53,7 +53,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             {
                 "id": "1941",
                 "title": "Produto do vendedor",
-                "description": "Descrição do produto do seller",
+                "description": "Descrição do produto do vendedor",
                 "picture_url": null,
                 "category_id": "electronics",
                 "quantity": 1,

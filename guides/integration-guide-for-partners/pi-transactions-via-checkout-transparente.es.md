@@ -1,41 +1,41 @@
-# Transações via Checkout Transparente
+# Transacciones a través del Checkout Transparente
 
-Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poderá adicioná-lo ao `header` da requisição de pagamento (`/v1/payments`) ao criar uma transação junto ao Mercado Pago.
+Después de recibir tu ID correspondiente al `PLATFORM_ID` de tu plataforma, podrás añadirlo al `header` de la solicitud de pago (`/v1/payments`) al crear una transacción con Mercado Pago.
 
-Exemplo:
+Ejemplo:
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
---header 'x-platform-id: {{PLATFORM_ID fornecido pelo time de Partners}}' \
+--header 'x-platform-id: {{PLATFORM_ID proporcionado por el equipo de Partners}}' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "transaction_amount": 100,
     "installments": 1,
-    "statement_descriptor": "Loja do vendedor",
+    "statement_descriptor": "Tienda del vendedor",
     "capture": true,
     "binary_mode": false,
     "sponsor_id": {{ID da sua conta Mercado Pago referente à sua plataforma}},
     "payment_method_id": "{{payment_method_id}}",
     "token": {{card_token_id}},
-    "external_reference": "Identificador da plataforma",
+    "external_reference": "Identificador de la plataforma",
     "notification_url": "{{notification_url}}",
-    "description": "Descrição do produto do vendedor",
+    "description": "Descripción del producto del vendedor",
     "payer": {
-        "first_name": "Nome. Exemplo: João",
-        "last_name": "Sobrenome. Exemplo: Silva",
+        "first_name": "Nombre. Ejemplo: John",
+        "last_name": "Apellido. Ejemplo: Jones",
         "email": "test_user_1677272335@testuser.com",
         "identification": {
-            "type": "Tipo. Exemplo: CPF",
-            "number": "Número do documento. Exemplo: 19119119100"
+            "type": "Tipo de documento",
+            "number": "Número del documento. Ejemplo: 19119119100"
         },
         "address": {
-            "zip_code": "CEP. Exemplo: 06233-200",
-            "street_name": "Rua. Exemplo: Av. das Nações Unidas",
-            "street_number": "Número. Exemplo: 3003",
-            "neighborhood": "Bairro. Exemplo: Bonfim",
-            "city": "Cidade. Exemplo: Osasco",
-            "federal_unit": "UF. Exemplo: SP"
+            "zip_code": "Código postal",
+            "street_name": "Calle. Ejemplo: Av. das Naciones",
+            "street_number": "Número. Ejemplo: 3003",
+            "neighborhood": "Barrio. Ejemplo: Bonfim",
+            "city": "Ciudad. Ejemplo: Rio",
+            "federal_unit": "Estado. Ejemplo: RJ"
         }
     },
     "additional_info": {

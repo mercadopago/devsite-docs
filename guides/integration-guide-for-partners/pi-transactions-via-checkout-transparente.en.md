@@ -1,26 +1,26 @@
-# Transações via Checkout Transparente
+# Transacciones a través del Checkout Transparente
 
-Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poderá adicioná-lo ao `header` da requisição de pagamento (`/v1/payments`) ao criar uma transação junto ao Mercado Pago.
+Después de recibir tu ID correspondiente al `PLATFORM_ID` de tu plataforma, podrás añadirlo al `header` de la solicitud de pago (`/v1/payments`) al crear una transacción con Mercado Pago.
 
-Exemplo:
+Ejemplo:
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
---header 'x-platform-id: {{PLATFORM_ID fornecido pelo time de Partners}}' \
+--header 'x-platform-id: {{PLATFORM_ID provided by the Partners team}}' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "transaction_amount": 100,
     "installments": 1,
-    "statement_descriptor": "Loja do vendedor",
+    "statement_descriptor": "Seller's store",
     "capture": true,
     "binary_mode": false,
-    "sponsor_id": {{ID da sua conta Mercado Pago referente à sua plataforma}},
+    "sponsor_id": {{ID of your Mercado Pago account related to your platform.}},
     "payment_method_id": "{{payment_method_id}}",
     "token": {{card_token_id}},
-    "external_reference": "Identificador da plataforma",
+    "external_reference": "Platform identifier",
     "notification_url": "{{notification_url}}",
-    "description": "Descrição do produto do vendedor",
+    "description": "Seller's product description",
     "payer": {
         "first_name": "Nome. Exemplo: João",
         "last_name": "Sobrenome. Exemplo: Silva",
