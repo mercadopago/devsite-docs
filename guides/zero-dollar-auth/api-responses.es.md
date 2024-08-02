@@ -2,11 +2,9 @@
 
 En esta sección encontrarás las posibles respuestas relacionadas con la creación de la validación Zero Dollar Auth, con detalles sobre cada tipo de respuesta, incluyendo casos de éxito y error.
 
-
 ## Respuestas 200 
 
 Al recibir el `Return 200`, que confirma la autorización Zero Dollar Auth para la tarjeta, y si el estado indica **"approved"**, se concluye que la validación de la tarjeta se realizó correctamente. Por otro lado, si el estado es **"rejected"**, significa que la validación de la tarjeta no fue posible. Este resultado negativo puede ser causado por diversos factores, como una tarjeta bloqueada o vencida.
-
 
 > NOTE
 >
@@ -158,4 +156,3 @@ Si recibes esta respuesta, te recomendamos que te pongas en contacto con tu repr
     "message": "This feature is temporarily off"
 }
 ```
-

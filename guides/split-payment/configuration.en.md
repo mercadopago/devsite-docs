@@ -7,7 +7,7 @@ To configure the integration with the Split payments solution, you will need to 
 >
 > Important
 >
-> Please note that the Split payments solution can only be integrated with [Checkout Pro](/developers/en/docs/split-payments/landing) and [Checkout API](/developers/en/docs/checkout-api/landing), and is not available for use with other products.
+> Please note that the Split payments solution can only be integrated with [Checkout Pro](/developers/en/docs/split-payments/landing), [Checkout API](/developers/en/docs/checkout-api/landing) and [Checkout Bricks](/developers/en/docs/checkout-bricks/landing), and is not available for use with other products.
 
 ------------ 
 ----[mlb]----
@@ -15,7 +15,7 @@ To configure the integration with the Split payments solution, you will need to 
 >
 > Important
 >
-> Please note that the Split payments solution can only be integrated with [Checkout Pro](/developers/en/docs/split-payments/landing) and [Checkout Transparente](/developers/en/docs/checkout-api/landing), and is not available for use with other products.
+> Please note that the Split payments solution can only be integrated with [Checkout Pro](/developers/en/docs/split-payments/landing), [Checkout Transparente](/developers/en/docs/checkout-api/landing) and [Checkout Bricks](/developers/en/docs/checkout-bricks/landing), and is not available for use with other products.
 
 ------------
 ## Create application

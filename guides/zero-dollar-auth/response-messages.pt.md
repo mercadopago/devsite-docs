@@ -10,4 +10,3 @@ Veja a tabela abaixo com as mensagens sugeridas de acordo com o status de cada o
 |---|---|---|
 | APPROVED | Cenários em que o cartão está válido | Seu cartão foi validado. |
 | REJECTED | Cenários em que o cartão não está válido | Não foi possível validar seu cartão. |
-

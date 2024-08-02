@@ -155,5 +155,3 @@ Se você receber esta resposta, entre em contato com o seu representante comerci
     "message": "This feature is temporarily off"
 }
 ```
-
-

@@ -1,12 +1,12 @@
 # Renderização padrão
 
-Veja abaixo as informações necessárias para você configurar e renderizar o Payment Brick.
+Antes de realizar a renderização do Payment Brick, primeiro execute os [passos de inicialização](/developers/pt/docs/checkout-bricks/common-initialization) compartilhados entre todos os Bricks. A partir disso, veja abaixo as informações necessárias para você configurar e renderizar o Payment Brick.
 
 > WARNING
 >
 > Importante
 >
-> Para realizar a renderização do Payment Brick, primeiro execute os [passos de inicialização](/developers/pt/docs/checkout-bricks/common-initialization) compartilhados entre todos os Brick. 
+> Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/payment.md).
 
 ## Configurar o Brick
 

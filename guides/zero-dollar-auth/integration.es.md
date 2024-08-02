@@ -2,7 +2,6 @@
 
 En tu frontend, utiliza nuestra [biblioteca Mercado Pago SDK JS](/developers/es/docs/sdks-library/landing) para capturar los datos de la tarjeta y generar el token. Este token reemplaza las información sensible de la tarjeta por un código único generado aleatoriamente, garantizando la seguridad de los datos durante la transacción.
 
-
 > NOTE
 >
 > Importante
@@ -219,5 +218,3 @@ print(payment)
 ]]]
 
 Al realizar las solicitudes, es posible que se devuelvan diferentes respuestas y estados. Para obtener más detalles, consulta la sección [Respuestas de la API](/developers/es/docs/zero-dollar-auth/api-responses).
-
-

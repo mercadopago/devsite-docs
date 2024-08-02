@@ -1,12 +1,12 @@
 # Renderização padrão
 
-Veja abaixo as informações necessárias para você configurar e renderizar o Brand Brick.
+Antes de realizar a renderização do Brand Brick, primeiro execute os [passos de inicialização](/developers/pt/docs/checkout-bricks/common-initialization) compartilhados entre todos os Bricks. A partir disso, veja abaixo as informações necessárias para você configurar e renderizar o Brand Brick.
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
-> Para realizar a renderização do Brand Brick, primeiro execute os [passos de inicialização](/developers/pt/docs/checkout-bricks/common-initialization) compartilhados entre todos os Brick. 
+> Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/brand.md).
 
 ## Configurar o Brick
 
@@ -24,7 +24,7 @@ bricksBuilder.create(
 
 Uma vez criadas as configurações, insira o código abaixo para renderizar o Brick. 
 
-> NOTE
+> WARNING
 > 
 > Importante
 >
