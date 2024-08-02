@@ -2,9 +2,9 @@
 
 Before rendering the Payment Brick, first execute the [initialization steps](/developers/en/docs/checkout-bricks/common-initialization) shared among all Bricks. From there, see below the necessary information to configure and render the Payment Brick.
 
-> WARNING
+> NOTE
 >
-> Important
+> Note
 >
 > To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/payment.md).
 
