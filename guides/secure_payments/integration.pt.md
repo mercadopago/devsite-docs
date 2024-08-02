@@ -1,12 +1,13 @@
+
+# Integrar Secure Payments
+
+Para utilizar Secure Payments, é necessário fazer chamadas para as seguintes APIs. Lembre-se de adicionar no corpo da solicitação tanto os dados do cartão quanto as informações necessárias para realizar o pagamento.
+
 > WARNING
 >
 > Importante
 >
 > Esta documentação é apenas para uso interno da equipe porque é um produto exclusivo ou que foi desativado. Para mais detalhes, entre em contato com a equipe comercial ou de integrações.
-
-# Integrar Secure Payments
-
-Para utilizar Secure Payments, é necessário fazer chamadas para as seguintes APIs. Lembre-se de adicionar no corpo da solicitação tanto os dados do cartão quanto as informações necessárias para realizar o pagamento.
 
 | Ambiente | URL |
 |---|---|

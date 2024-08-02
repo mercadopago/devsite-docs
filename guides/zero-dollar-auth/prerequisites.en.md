@@ -6,7 +6,7 @@ To use the Zero Dollar Auth validation, you must meet the following requirements
 >
 > Important
 >
-> The Zero Dollar Auth validation is only available for **Mastercard** and **Visa** credit card brands.
+> The Zero Dollar Auth validation is only available for credit and debit cards from the **Visa** and **Mastercard** brands.
 
 | Requirement | Description |
 |---|---|

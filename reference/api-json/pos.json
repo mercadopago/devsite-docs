@@ -8,9 +8,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "Generate a Point of Sale in a store. Each POS will have a unique QR Code linked to it",
-          "pt": "Gerar um ponto de venda em uma loja. Cada caixa registradora terá um código QR exclusivo vinculado a ela",
-          "es": "Genera un punto de venta en una sucursal. Cada caja tendrá vinculado un código QR unívoco"
+          "en": "This endpoint allows for the creation of a point of sale in a store to receive payments for products or services. Each point of sale will have a unique QR code linked to it",
+          "pt": "Este endpoint possibilita a criação de uma caixa (ponto de venda) em uma loja para o recebimento das vendas de produtos ou serviços. Cada caixa terá um código QR exclusivo vinculado a ela",
+          "es": "Este endpoint permite la creación de una caja (punto de venta) en una tienda para recibir las ventas de productos o servicios. Cada caja tendrá un código QR exclusivo vinculado a ella"
         },
         "requestBody": {
           "content": {
@@ -21,9 +21,9 @@
                   "name": {
                     "type": "string",
                     "description": {
-                      "en": "Name of the POS.",
-                      "pt": "Nome da caixa",
-                      "es": "Nombre de la caja"
+                      "en": "Name of the point of sale.",
+                      "pt": "Nome do ponto de venda.",
+                      "es": "Nombre del punto de venta."
                     },
                     "example": "First POS"
                   },
@@ -31,8 +31,8 @@
                     "type": "boolean",
                     "description": {
                       "en": "Define if the customer can insert the amount to be paid.",
-                      "pt": "Determine se o cliente pode inserir o valor a ser pago",
-                      "es": "Determina si el cliente puede insertar el monto a pagar"
+                      "pt": "Determine se o cliente pode inserir o valor a ser pago.",
+                      "es": "Determina si el cliente puede insertar el monto a pagar."
                     },
                     "example": false
                   },
@@ -40,26 +40,26 @@
                     "type": "string",
                     "description": {
                       "en": "Store identifier to which the point of sale belongs.",
-                      "pt": "Identificador da loja à qual o caixa pertence",
-                      "es": "Identificador de la sucursal a la que pertenece el Punto de Venta"
+                      "pt": "Identificador da loja à qual o ponto de venda pertence.",
+                      "es": "Identificador de la sucursal a la que pertenece el punto de venta."
                     },
                     "example": 1234567
                   },
                   "external_store_id": {
                     "type": "string",
                     "description": {
-                      "en": "External_id of the store to which the pos belongs defined by integrator system.",
-                      "pt": "External_id of the store to which the pos belongs defined by integrator system.",
-                      "es": "External_id of the store to which the pos belongs defined by integrator system."
+                      "en": "The unique store identifier, set by the integrated system and can contain up to 60 characters.",
+                      "pt": "Identificador único da loja, definido pelo sistema integrador e pode conter até 60 caracteres.",
+                      "es": "El identificador único de la tienda, establecido por el sistema integrador y puede contener hasta 60 caracteres."
                     },
                     "example": "SUC001"
                   },
                   "external_id": {
                     "type": "string",
                     "description": {
-                      "en": "Unique identifier of the pos defined by integrator system.",
-                      "pt": "Identificador único da caixa definido pelo sistema integrador",
-                      "es": "Identificador único de la caja definido por el integrador"
+                      "en": "Unique identifier of the point of sale defined by integrator system.",
+                      "pt": "Identificador único da caixa definido pelo sistema integrador.",
+                      "es": "Identificador único de la caja definido por el integrador."
                     },
                     "example": "SUC001POS001"
                   },
@@ -82,9 +82,9 @@
         "responses": {
           "200": {
             "description": {
-              "es": "Success",
-              "pt": "Success",
-              "en": "Success"
+              "en": "Success",
+              "pt": "Sucesso",
+              "es": "Éxito"
             },
             "content": {
               "application/json": {
@@ -95,9 +95,9 @@
                       "type": "number",
                       "example": 2711382,
                       "description": {
-                        "es": "id",
-                        "pt": "id",
-                        "en": "id"
+                        "en": "Creation ID of the point of sale. When you register a point of sale, you will receive a corresponding ID. This ID can be used for various operations, including retrieving the point of sale data.",
+                        "pt": "ID de criação do ponto de venda. Ao registrar um ponto de venda, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo consultar os dados do ponto de venda.",
+                        "es": "ID de creación del punto de venta. Al registrar un punto de venta, recibirás un ID correspondiente. Este ID puede ser utilizado para varias operaciones, incluida la consulta de los datos del punto de venta."
                       }
                     },
                     "qr": {
@@ -107,97 +107,97 @@
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
                           "description": {
-                            "es": "image",
-                            "pt": "image",
-                            "en": "image"
+                            "en": "URL of the image of the QR code to be used for receiving payments.",
+                            "pt": "URL da imagem do código QR a ser utilizado para receber pagamentos.",
+                            "es": "URL de la imagen del código QR que se utilizará para recibir pagos."
                           }
                         },
                         "template_document": {
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf",
                           "description": {
-                            "es": "template_document",
-                            "pt": "template_document",
-                            "en": "template_document"
+                            "en": "URL of the file (in PDF format) of the template containing the QR code to be used for receiving payments.",
+                            "pt": "URL do arquivo (em formato PDF) do template com o código QR a ser utilizado para receber pagamentos.",
+                            "es": "URL del archivo (en formato PDF) de la plantilla con el código QR que se utilizará para recibir pagos."
                           }
                         },
                         "template_image": {
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
-                          "description": {
-                            "es": "template_image",
-                            "pt": "template_image",
-                            "en": "template_image"
+                         "description": {
+                           "en": "URL of the file (in image format) of the template containing the QR code to be used for receiving payments.",
+                           "pt": "URL do arquivo (em formato de imagem) do template com o código QR a ser utilizado para receber pagamentos.",
+                           "es": "URL del archivo (en formato de imagen) de la plantilla con el código QR que se utilizará para recibir pagos."
                           }
                         }
                       },
                       "description": {
-                        "es": "qr",
-                        "pt": "qr",
-                        "en": "qr"
+                        "en": "QR code automatically created to receive payments from the point of sale.",
+                        "pt": "Código QR criado automaticamente para receber os pagamentos do ponto de venda.",
+                        "es": "Código QR creado automáticamente para recibir los pagos del punto de venta."
                       }
                     },
                     "status": {
                       "type": "string",
                       "example": "active",
                       "description": {
-                        "es": "status",
-                        "pt": "status",
-                        "en": "status"
+                        "en": "Status of the point of sale creation.",
+                        "pt": "Status de criação do ponto de venda.",
+                        "es": "Status de creación del punto de venta."
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2019-08-22T14:11:12.000Z",
                       "description": {
-                        "es": "date_created",
-                        "pt": "date_created",
-                        "en": "date_created"
+                        "en": "Point of sale creation date. This field displays the date and time in ISO 8601 format, such as 2024-08-08T19:29:45.019Z.",
+                        "pt": "Data de criação da caixa. Este campo exibe a data e hora no formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                        "es": "Fecha de creación de la caja. Este campo muestra la fecha y hora en el formato ISO 8601, como 2024-08-08T19:29:45.019Z."
                       }
                     },
                     "date_last_updated": {
                       "type": "string",
-                      "example": "2019-08-22T14:11:12.000Z",
+                      "example": "2019-08-25T15:16:12.000Z",
                       "description": {
-                        "es": "date_last_updated",
-                        "pt": "date_last_updated",
-                        "en": "date_last_updated"
+                        "en": "Date of last modification of the cash register data. This field displays the date and time in ISO 8601 format, such as 2024-08-08T19:29:45.019Z.",
+                        "pt": "Data de ultima alteração nos dados da caixa. Este campo exibe a data e hora no formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                        "es": "Fecha de última modificación en los datos de la caja. Este campo muestra la fecha y hora en el formato ISO 8601, como 2024-08-08T19:29:45.019Z."
                       }
                     },
                     "uuid": {
                       "type": "string",
                       "example": "0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1",
                       "description": {
-                        "es": "uuid",
-                        "pt": "uuid",
-                        "en": "uuid"
+                        "en": "The UUID (Universally Unique Identifier) is a 128-bit number used to identify information. In this case, it is the identification number of the QR Code in question.",
+                        "pt": "O UUID (Identificador Único Universal) é um número de 128 bits usado para identificar informações. Neste caso, trata-se do número de identificação do Código QR em questão.",
+                        "es": "El UUID (Identificador Único Universal) es un número de 128 bits utilizado para identificar información. En este caso, se trata del número de identificación del Código QR en cuestión."
                       }
                     },
                     "user_id": {
                       "type": "number",
                       "example": 446566691,
                       "description": {
-                        "es": "user_id",
-                        "pt": "user_id",
-                        "en": "user_id"
+                        "en": "The user_id corresponds to the collector_id. It refers to the user_id of the Mercado Pago account that receives the money from sales, that is, the account responsible for collecting the funds.",
+                        "pt": "O user_id corresponde ao collector_id. Trata-se do user_id da conta do Mercado Pago que recebe o dinheiro das vendas, ou seja, a conta responsável pela arrecadação dos valores.",
+                        "es": "El user_id corresponde al collector_id. Se trata del user_id de la cuenta de Mercado Pago que recibe el dinero de las ventas, es decir, la cuenta encargada de recaudar los fondos."
                       }
                     },
                     "name": {
                       "type": "string",
                       "example": "First POS",
                       "description": {
-                        "es": "name",
-                        "pt": "name",
-                        "en": "name"
+                        "en": "Name of the point of sale.",
+                        "pt": "Nome do ponto de venda.",
+                        "es": "Nombre del punto de venta."
                       }
                     },
                     "fixed_amount": {
                       "type": "boolean",
                       "example": false,
                       "description": {
-                        "es": "fixed_amount",
-                        "pt": "fixed_amount",
-                        "en": "fixed_amount"
+                        "en": "Define if the customer can insert the amount to be paid.",
+                        "pt": "Determine se o cliente pode inserir o valor a ser pago.",
+                        "es": "Determina si el cliente puede insertar el monto a pagar."
                       }
                     },
                     "category": {
@@ -207,35 +207,35 @@
                       "type": "string",
                       "example": 1234567,
                       "description": {
-                        "es": "store_id",
-                        "pt": "store_id",
-                        "en": "store_id"
+                        "en": "Store identifier to which the point of sale belongs.",
+                        "pt": "Identificador da loja à qual o ponto de venda pertence.",
+                        "es": "Identificador de la sucursal a la que pertenece el punto de venta."
                       }
                     },
                     "external_store_id": {
                       "type": "string",
                       "example": "SUC001",
                       "description": {
-                        "es": "external_store_id",
-                        "pt": "external_store_id",
-                        "en": "external_store_id"
+                        "en": "The unique store identifier, set by the integrated system and can contain up to 60 characters.",
+                        "pt": "Identificador único da loja, definido pelo sistema integrador e pode conter até 60 caracteres.",
+                        "es": "El identificador único de la tienda, establecido por el sistema integrador y puede contener hasta 60 caracteres."
                       }
                     },
                     "url": {
                       "type": "string",
                       "description": {
-                        "es": "url",
-                        "pt": "url",
-                        "en": "url"
+                        "en": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model.",
+                        "pt": "URL para obter a ordem do sistema integrador. É opcional e é usado apenas no modelo de integração desatendido.",
+                        "es": "URL para obtener la orden del sistema integrador. Es opcional y se utiliza solo en el modelo de integración desatendido."
                       }
                     },
                     "external_id": {
                       "type": "string",
                       "example": "SUC001POS001",
                       "description": {
-                        "es": "external_id",
-                        "pt": "external_id",
-                        "en": "external_id"
+                        "en": "Unique identifier of the point of sale defined by integrator system.",
+                        "pt": "Identificador único da caixa definido pelo sistema integrador.",
+                        "es": "Identificador único de la caja definido por el integrador."
                       }
                     }
                   }
@@ -260,129 +260,137 @@
                         {
                           "title": "MISSING_BODY",
                           "description": {
-                            "en": "HTTP body is required to create pos.",
-                            "es": "HTTP body is required to create pos.",
-                            "pt": "HTTP body is required to create pos."
+                            "en": "HTTP body is required to modify point of sale.",
+                            "es": "El cuerpo del HTTP es requerido para modificar el punto de venta.",
+                            "pt": "O corpo do HTTP é necessário para modificar o ponto de venda."
                           }
                         },
                         {
                           "title": "UNKNOWN_FIELD_EXCEPTION",
                           "description": {
                             "en": "The indicated field is not allowed for this operation or is unknown.",
-                            "es": "The indicated field is not allowed for this operation or is unknown.",
-                            "pt": "The indicated field is not allowed for this operation or is unknown."
+                            "es": "El campo indicado no está permitido para esta operación o es desconocido.",
+                            "pt": "O campo indicado não é permitido para esta operação ou é desconhecido."
+                          }
+                        },
+                        {
+                          "title": "INVALID_POS_ID",
+                          "description": {
+                            "en": "The ID of the point of sale is invalid, it must be numeric.",
+                            "es": "El ID del punto de venta es inválida, debe ser numérica.",
+                            "pt": "O ID do ponto de venda é inválida, deve ser numérica."
                           }
                         },
                         {
                           "title": "INVALID_NAME",
                           "description": {
                             "en": "NAME must be string.",
-                            "es": "NAME must be string.",
-                            "pt": "NAME must be string."
+                            "es": "NOMBRE debe ser string.",
+                            "pt": "NAME deve ser string."
                           }
                         },
                         {
                           "title": "NAME_TOO_LONG",
                           "description": {
                             "en": "The NAME must be less than 45 characters.",
-                            "es": "The NAME must be less than 45 characters.",
-                            "pt": "The NAME must be less than 45 characters."
+                            "es": "NAME debe ser menor de 45 caracteres.",
+                            "pt": "NAME deve ter menos de 45 caracteres."
                           }
                         },
                         {
                           "title": "INVALID_FIXED_AMOUNT",
                           "description": {
                             "en": "FIXED_AMOUNT must be boolean.",
-                            "es": "FIXED_AMOUNT must be boolean.",
-                            "pt": "FIXED_AMOUNT must be boolean."
+                            "es": "FIXED_AMOUNT debe ser boolean.",
+                            "pt": "FIXED_AMOUNT deve ser boolean."
                           }
                         },
                         {
                           "title": "INVALID_CATEGORY",
                           "description": {
                             "en": "CATEGORY must be numeric.",
-                            "es": "CATEGORY must be numeric.",
-                            "pt": "CATEGORY must be numeric."
+                            "es": "CATEGORY debe ser numérico.",
+                            "pt": "CATEGORY deve ser numérico."
                           }
                         },
                         {
-                          "title": "UNKNOWN_MCC",
+                          "title": "POS_UNKNOWN_MCC",
                           "description": {
-                            "en": "The CATEGORY must be valid for the user's site.",
-                            "es": "The CATEGORY must be valid for the user's site.",
-                            "pt": "The CATEGORY must be valid for the user's site."
+                            "en": "CATEGORY must be valid for the user's site.",
+                            "es": "CATEGORY debe ser válida para el sitio del usuario.",
+                            "pt": "CATEGORY deve ser válida para o site do usuário."
                           }
                         },
                         {
-                          "title": "INVALID_STORE_ID",
+                          "title": "POS_INVALID_STORE_ID",
                           "description": {
                             "en": "STORE_ID must be numeric.",
-                            "es": "STORE_ID must be numeric.",
-                            "pt": "STORE_ID must be numeric."
+                            "es": "STORE_ID debe ser numérico.",
+                            "pt": "STORE_ID deve ser numérico."
                           }
                         },
                         {
                           "title": "INVALID_EXTERNAL_STORE_ID",
                           "description": {
-                            "en": "EXTERNAL_STORE_ID muste be string.",
-                            "es": "EXTERNAL_STORE_ID muste be string.",
-                            "pt": "EXTERNAL_STORE_ID muste be string."
+                            "en": "EXTERNAL_STORE_ID must be string.",
+                            "es": "EXTERNAL_STORE_ID debe ser string.",
+                            "pt": "EXTERNAL_STORE_ID deve ser string."
                           }
                         },
                         {
                           "title": "EXTERNAL_STORE_ID_NOT_MATCH",
                           "description": {
                             "en": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.",
-                            "es": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.",
-                            "pt": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID."
+                            "es": "El EXTERNAL_STORE_ID no hace referencia al STORE_ID indicado.",
+                            "pt": "O EXTERNAL_STORE_ID não se refere ao STORE_ID indicado."
                           }
                         },
                         {
                           "title": "INEXISTENT_EXTERNAL_STORE_ID",
                           "description": {
-                            "en": "The EXTERNAL_STORE_ID does not refer to any existing store.",
-                            "es": "The EXTERNAL_STORE_ID does not refer to any existing store.",
-                            "pt": "The EXTERNAL_STORE_ID does not refer to any existing store."
+                            "en": "The EXTERNAL STORE_ID does not refer to an existing Store.",
+                            "es": "El EXTERNAL_STORE_ID no hace referencia a una tienda existente.",
+                            "pt": "O EXTERNAL_STORE_ID não se refere a uma loja existente."
                           }
                         },
                         {
                           "title": "INVALID_EXTERNAL_ID",
                           "description": {
-                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
-                            "es": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
-                            "pt": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters."
+                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces, hyphens or special characters.",
+                            "es": "El campo EXTERNAL_ID debe ser alfanumérico, solo letras y números. Sin espacios, guiones o caracteres especiales.",
+                            "pt": "O campo EXTERNAL_ID deve ser alfanumérico, apenas letras e números. Sem espaços, hífens ou caracteres especiais."
                           }
                         },
                         {
                           "title": "EXTERNAL_ID_TOO_LONG",
                           "description": {
                             "en": "The EXTERNAL_ID must be less than 40 characters.",
-                            "es": "The EXTERNAL_ID must be less than 40 characters.",
-                            "pt": "The EXTERNAL_ID must be less than 40 characters."
+                            "es": "El EXTERNAL_ID debe ser menor de 40 caracteres.",
+                            "pt": "O EXTERNAL_ID deve ter menos de 40 caracteres."
                           }
                         },
                         {
                           "title": "INVALID_URL",
                           "description": {
                             "en": "The URL must be string and muste have the format of a valid url",
-                            "es": "The URL must be string and muste have the format of a valid url",
-                            "pt": "The URL must be string and muste have the format of a valid url"
+                            "es": "La URL debe ser una cadena y debe tener el formato de una URL válida.",
+                            "pt": "A URL deve ser uma string e deve ter o formato de uma URL válida."
                           }
                         },
                         {
                           "title": "URL_TOO_LONG",
                           "description": {
                             "en": "The URL must be less than 300 characters.",
-                            "es": "The URL must be less than 300 characters.",
-                            "pt": "The URL must be less than 300 characters."
+                            "es": "La URL debe ser menor de 300 caracteres.",
+                            "pt": "A URL deve ter menos de 300 caracteres."
                           }
                         },
                         {
                           "title": "FIXED_AMOUNT_FALSE",
                           "description": {
                             "en": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.",
-                            "es": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.",
-                            "pt": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case."
+                            "es": "Si se indica el campo URL, el campo FIXED_AMOUNT debe ser verdadero. No soportamos la modalidad de monto abierto en este caso.",
+                            "pt": "Se o campo URL estiver indicado, o campo FIXED_AMOUNT deve ser verdadeiro. Não suportamos a modalidade de valor aberto nesse caso."
                           }
                         }
                       ]
@@ -438,9 +446,9 @@
                         {
                           "title": "1",
                           "description": {
-                            "en": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
-                            "es": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
-                            "pt": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user."
+                            "en": "If the point of sale does not exist for an indicated ID or EXTERNAL_ID and user.",
+                            "pt": "Se o ponto de venda não existir para o ID ou EXTERNAL_ID indicado e para o usuário.",
+                            "es": "Si el punto de venta no existe para el ID o EXTERNAL_ID indicado y para el usuario."
                           }
                         }
                       ]
@@ -467,9 +475,9 @@
                         {
                           "title": "1",
                           "description": {
-                            "en": "A pos with the same EXTERNAL_ID already exists.",
-                            "es": "A pos with the same EXTERNAL_ID already exists.",
-                            "pt": "A pos with the same EXTERNAL_ID already exists."
+                            "en": "A point of sale with the same EXTERNAL_ID already exists.",
+                            "pt": "Já existe um ponto de venda com o mesmo EXTERNAL_ID.",
+                            "es": "Ya existe un punto de venta con el mismo EXTERNAL_ID."
                           }
                         }
                       ]
@@ -481,7 +489,7 @@
           }
         },
         "title": {
-          "en": "Create POS",
+          "en": "Create point of sale",
           "pt": "Criar caixa",
           "es": "Crear caja"
         }
@@ -492,18 +500,18 @@
           "mp-point"
         ],
         "description": {
-          "en": "Get the information about all of your stores",
-          "pt": "Encontre todas as informações dos pontos de venda através de filtros específicos",
-          "es": "Encuentra toda la información de los puntos de venta a través de filtros específicos"
+          "en": "This endpoint allows you to find all the information about the point of sale created using specific filters",
+          "pt": "Este endpoint permite encontrar todas as informações das caixas (pontos de venda) criadas utilizando filtros específicos",
+          "es": "Este endpoint permite encontrar toda la información de las cajas (puntos de venta) creadas utilizando filtros específicos"
         },
         "parameters": [
           {
             "name": "external_id",
             "in": "query",
             "description": {
-              "es": "External ID",
-              "pt": "External ID",
-              "en": "External ID"
+              "en": "Unique identifier of the point of sale defined by integrator system.",
+              "pt": "Identificador único da caixa definido pelo sistema integrador.",
+              "es": "Identificador único de la caja definido por el integrador."
             },
             "required": false,
             "schema": {
@@ -515,9 +523,9 @@
             "name": "external_store_id",
             "in": "query",
             "description": {
-              "es": "External Store ID",
-              "pt": "External Store ID",
-              "en": "External Store ID"
+              "en": "The unique store identifier, set by the integrated system and can contain up to 60 characters.",
+              "pt": "Identificador único da loja, definido pelo sistema integrador e pode conter até 60 caracteres.",
+              "es": "El identificador único de la tienda, establecido por el sistema integrador y puede contener hasta 60 caracteres."
             },
             "required": false,
             "schema": {
@@ -528,9 +536,9 @@
             "name": "store_id",
             "in": "query",
             "description": {
-              "es": "Store ID",
-              "pt": "Store ID",
-              "en": "Store ID"
+              "en": "Store identifier to which the point of sale belongs.",
+              "pt": "Identificador da loja à qual o ponto de venda pertence.",
+              "es": "Identificador de la sucursal a la que pertenece el punto de venta."
             },
             "required": false,
             "schema": {
@@ -541,9 +549,9 @@
             "name": "category",
             "in": "query",
             "description": {
-              "es": "Category",
-              "pt": "Category",
-              "en": "Category"
+              "en": "MCC code that indicates the category of the point of sale. If not specified, it remains as a generic category.",
+              "pt": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica.",
+              "es": "Código MCC que indica el rubro del punto de venta. Si no se especifica, queda como categoría genérica."
             },
             "required": false,
             "schema": {
@@ -554,9 +562,9 @@
         "responses": {
           "200": {
             "description": {
-              "es": "Success",
-              "pt": "Success",
-              "en": "Success"
+              "en": "Success",
+              "pt": "Sucesso",
+              "es": "Éxito"
             },
             "content": {
               "application/json": {
@@ -570,34 +578,34 @@
                           "type": "number",
                           "example": 1,
                           "description": {
-                            "es": "total",
-                            "pt": "total",
-                            "en": "total"
+                            "en": "Number of point of sales found in the search.",
+                            "pt": "Quantidade de pontos de venda encontrados na busca.",
+                            "es": "Cantidad de puntos de venta encontrados en la búsqueda."
                           }
                         },
                         "offset": {
                           "type": "number",
                           "example": 0,
                           "description": {
-                            "es": "offset",
-                            "pt": "offset",
-                            "en": "offset"
+                            "en": "Offset over the total set of data gathered by the search.",
+                            "pt": "Deslocamento sobre o conjunto total de dados levantados pela busca.",
+                            "es": "Desplazamiento sobre el conjunto total de datos levantados por la búsqueda."
                           }
                         },
                         "limit": {
                           "type": "number",
                           "example": 0,
                           "description": {
-                            "es": "limit",
-                            "pt": "limit",
-                            "en": "limit"
+                            "en": "Limit of point of sales returned in the search.",
+                            "pt": "Quantidade limite de pontos de venda que serão retornadas na busca.",
+                            "es": "Cantidad límite de puntos de venta que se devolverán en la búsqueda."
                           }
                         }
                       },
                       "description": {
-                        "es": "paging",
-                        "pt": "paging",
-                        "en": "paging"
+                        "en": "Information for pagination of search results.",
+                        "pt": "Informações para paginação dos resultados da pesquisa.",
+                        "es": "Información para paginación de resultados de búsqueda."
                       }
                     },
                     "results": {
@@ -609,26 +617,26 @@
                             "type": "number",
                             "example": 446566691,
                             "description": {
-                              "es": "user_id",
-                              "pt": "user_id",
-                              "en": "user_id"
+                              "en": "The user_id corresponds to the collector_id. It refers to the user_id of the Mercado Pago account that receives the money from sales, that is, the account responsible for collecting the funds.",
+                              "pt": "O user_id corresponde ao collector_id. Trata-se do user_id da conta do Mercado Pago que recebe o dinheiro das vendas, ou seja, a conta responsável pela arrecadação dos valores.",
+                              "es": "El user_id corresponde al collector_id. Se trata del user_id de la cuenta de Mercado Pago que recibe el dinero de las ventas, es decir, la cuenta encargada de recaudar los fondos."
                             }
                           },
                           "name": {
                             "type": "string",
                             "example": "Caja Principal",
                             "description": {
-                              "es": "name",
-                              "pt": "name",
-                              "en": "name"
+                              "en": "Name of the point of sale.",
+                              "pt": "Nome do ponto de venda.",
+                              "es": "Nombre del punto de venta."
                             }
                           },
                           "fixed_amount": {
                             "type": "boolean",
                             "description": {
-                              "es": "fixed_amount",
-                              "pt": "fixed_amount",
-                              "en": "fixed_amount"
+                              "en": "Define if the customer can insert the amount to be paid.",
+                              "pt": "Determine se o cliente pode inserir o valor a ser pago.",
+                              "es": "Determina si el cliente puede insertar el monto a pagar."
                             }
                           },
                           "category": {
@@ -638,27 +646,27 @@
                             "type": "string",
                             "example": 1234567,
                             "description": {
-                              "es": "store_id",
-                              "pt": "store_id",
-                              "en": "store_id"
+                              "en": "Store identifier to which the point of sale belongs.",
+                              "pt": "Identificador da loja à qual o ponto de venda pertence.",
+                              "es": "Identificador de la sucursal a la que pertenece el punto de venta."
                             }
                           },
                           "external_id": {
                             "type": "string",
                             "example": "SUC001POS001",
                             "description": {
-                              "es": "external_id",
-                              "pt": "external_id",
-                              "en": "external_id"
+                              "en": "Unique identifier of the point of sale defined by integrator system.",
+                              "pt": "Identificador único da caixa definido pelo sistema integrador.",
+                              "es": "Identificador único de la caja definido por el integrador."
                             }
                           },
                           "id": {
                             "type": "number",
                             "example": 1988157,
                             "description": {
-                              "es": "id",
-                              "pt": "id",
-                              "en": "id"
+                              "en": "Creation ID of the point of sale. When you register a point of sale, you will receive a corresponding ID. This ID can be used for various operations, including retrieving the point of sale data.",
+                              "pt": "ID de criação do ponto de venda. Ao registrar um ponto de venda, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo consultar os dados do ponto de venda.",
+                              "es": "ID de creación del punto de venta. Al registrar un punto de venta, recibirás un ID correspondiente. Este ID puede ser utilizado para varias operaciones, incluida la consulta de los datos del punto de venta."
                             }
                           },
                           "qr": {
@@ -668,69 +676,69 @@
                                 "type": "string",
                                 "example": "https://www.mercadopago.com/instore/merchant/qr/1988157/1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png",
                                 "description": {
-                                  "es": "image",
-                                  "pt": "image",
-                                  "en": "image"
+                                  "en": "URL of the image of the QR code to be used for receiving payments.",
+                                  "pt": "URL da imagem do código QR a ser utilizado para receber pagamentos.",
+                                  "es": "URL de la imagen del código QR que se utilizará para recibir pagos."
                                 }
                               },
                               "template_document": {
                                 "type": "string",
                                 "example": "https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.pdf",
                                 "description": {
-                                  "es": "template_document",
-                                  "pt": "template_document",
-                                  "en": "template_document"
+                                  "en": "URL of the file (in PDF format) of the template containing the QR code to be used for receiving payments.",
+                                  "pt": "URL do arquivo (em formato PDF) do template com o código QR a ser utilizado para receber pagamentos.",
+                                  "es": "URL del archivo (en formato PDF) de la plantilla con el código QR que se utilizará para recibir pagos."
                                 }
                               },
                               "template_image": {
                                 "type": "string",
                                 "example": "https://www.mercadopago.com/instore/merchant/qr/1988157/template_1f1da6401a4645e99fa21d3f4ffe0e702c4eab2209784fce9d45c83fa93bd5a7.png",
                                 "description": {
-                                  "es": "template_image",
-                                  "pt": "template_image",
-                                  "en": "template_image"
+                                  "en": "URL of the file (in image format) of the template containing the QR code to be used for receiving payments.",
+                                  "pt": "URL do arquivo (em formato de imagem) do template com o código QR a ser utilizado para receber pagamentos.",
+                                  "es": "URL del archivo (en formato de imagen) de la plantilla con el código QR que se utilizará para recibir pagos."
                                 }
                               }
                             },
                             "description": {
-                              "es": "qr",
-                              "pt": "qr",
-                              "en": "qr"
+                              "en": "QR code automatically created to receive payments from the point of sale.",
+                              "pt": "Código QR criado automaticamente para receber os pagamentos do ponto de venda.",
+                              "es": "Código QR creado automáticamente para recibir los pagos del punto de venta."
                             }
                           },
                           "date_created": {
                             "type": "string",
                             "example": "2019-06-24T13:31:56.000Z",
                             "description": {
-                              "es": "date_created",
-                              "pt": "date_created",
-                              "en": "date_created"
+                              "en": "Point of sale creation date. This field displays the date and time in ISO 8601 format, such as 2024-08-08T19:29:45.019Z.",
+                              "pt": "Data de criação da caixa. Este campo exibe a data e hora no formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                              "es": "Fecha de creación de la caja. Este campo muestra la fecha y hora en el formato ISO 8601, como 2024-08-08T19:29:45.019Z."
                             }
                           },
                           "date_last_updated": {
                             "type": "string",
-                            "example": "2019-08-07T21:07:26.000Z",
+                            "example": "2019-08-25T15:16:12.000Z",
                             "description": {
-                              "es": "date_last_updated",
-                              "pt": "date_last_updated",
-                              "en": "date_last_updated"
+                              "en": "Date of last modification of the cash register data. This field displays the date and time in ISO 8601 format, such as 2024-08-08T19:29:45.019Z.",
+                              "pt": "Data de ultima alteração nos dados da caixa. Este campo exibe a data e hora no formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                              "es": "Fecha de última modificación en los datos de la caja. Este campo muestra la fecha y hora en el formato ISO 8601, como 2024-08-08T19:29:45.019Z."
                             }
                           },
                           "external_store_id": {
                             "type": "string",
                             "example": "SUC001",
                             "description": {
-                              "es": "external_store_id",
-                              "pt": "external_store_id",
-                              "en": "external_store_id"
+                              "en": "The unique store identifier, set by the integrated system and can contain up to 60 characters.",
+                              "pt": "Identificador único da loja, definido pelo sistema integrador e pode conter até 60 caracteres.",
+                              "es": "El identificador único de la tienda, establecido por el sistema integrador y puede contener hasta 60 caracteres."
                             }
                           }
                         }
                       },
                       "description": {
-                        "es": "results",
-                        "pt": "results",
-                        "en": "results"
+                        "en": "Results found based on the filters used for the search.",
+                        "pt": "Resultados encontrados a partir dos filtros utilizados para busca.",
+                        "es": "Resultados encontrados a partir de los filtros utilizados para la búsqueda."
                       }
                     }
                   }
@@ -755,65 +763,65 @@
                         {
                           "title": "INVALID_CATEGORY",
                           "description": {
-                            "en": "The CATEGORY must be numeric.",
-                            "es": "The CATEGORY must be numeric.",
-                            "pt": "The CATEGORY must be numeric."
+                            "en": "CATEGORY must be numeric.",
+                            "es": "CATEGORY debe ser numérico.",
+                            "pt": "CATEGORY deve ser numérico."
                           }
                         },
                         {
                           "title": "INVALID_STORE_ID",
                           "description": {
-                            "en": "The STORE_ID must be numeric.",
-                            "es": "The STORE_ID must be numeric.",
-                            "pt": "The STORE_ID must be numeric."
+                            "en": "STORE_ID must be numeric.",
+                            "es": "STORE_ID debe ser numérico.",
+                            "pt": "STORE_ID deve ser numérico."
                           }
                         },
                         {
                           "title": "INVALID_EXTERNAL_STORE_ID",
                           "description": {
-                            "en": "The EXTERNAL_STORE_ID must be string.",
-                            "es": "The EXTERNAL_STORE_ID must be string.",
-                            "pt": "The EXTERNAL_STORE_ID must be string."
+                            "en": "EXTERNAL_STORE_ID must be string.",
+                            "es": "EXTERNAL_STORE_ID debe ser string.",
+                            "pt": "EXTERNAL_STORE_ID deve ser string."
                           }
                         },
                         {
                           "title": "INEXISTENT_EXTERNAL_STORE_ID",
                           "description": {
                             "en": "The EXTERNAL STORE_ID does not refer to an existing Store.",
-                            "es": "The EXTERNAL STORE_ID does not refer to an existing Store.",
-                            "pt": "The EXTERNAL STORE_ID does not refer to an existing Store."
+                            "es": "El EXTERNAL_STORE_ID no hace referencia a una tienda existente.",
+                            "pt": "O EXTERNAL_STORE_ID não se refere a uma loja existente."
                           }
                         },
                         {
                           "title": "INVALID_EXTERNAL_ID",
                           "description": {
-                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
-                            "es": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
-                            "pt": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters."
+                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces, hyphens or special characters.",
+                            "es": "El campo EXTERNAL_ID debe ser alfanumérico, solo letras y números. Sin espacios, guiones o caracteres especiales.",
+                            "pt": "O campo EXTERNAL_ID deve ser alfanumérico, apenas letras e números. Sem espaços, hífens ou caracteres especiais."
                           }
                         },
                         {
                           "title": "EXTERNAL_ID_TOO_LONG",
                           "description": {
                             "en": "The EXTERNAL_ID must be less than 40 characters.",
-                            "es": "The EXTERNAL_ID must be less than 40 characters.",
-                            "pt": "The EXTERNAL_ID must be less than 40 characters."
+                            "es": "El EXTERNAL_ID debe ser menor de 40 caracteres.",
+                            "pt": "O EXTERNAL_ID deve ter menos de 40 caracteres."
                           }
                         },
                         {
                           "title": "INVALID_LIMIT",
                           "description": {
-                            "en": "The LIMIT must be numeric.",
-                            "es": "The LIMIT must be numeric.",
-                            "pt": "The LIMIT must be numeric."
+                            "en": "LIMIT must be numeric.",
+                            "es": "LIMIT debe ser numérico.",
+                            "pt": "LIMIT deve ser numérico."
                           }
                         },
                         {
                           "title": "INVALID_OFFSET",
                           "description": {
-                            "en": "The OFFSET must be numeric.",
-                            "es": "The OFFSET must be numeric.",
-                            "pt": "The OFFSET must be numeric."
+                            "en": "OFFSET must be numeric.",
+                            "es": "OFFSET debe ser numérico.",
+                            "pt": "OFFSET deve ser numérico."
                           }
                         }
                       ]
@@ -825,7 +833,7 @@
           }
         },
         "title": {
-          "en": "Search POS",
+          "en": "Search point of sale",
           "pt": "Buscar em caixas",
           "es": "Buscar en cajas"
         }
@@ -838,18 +846,18 @@
           "mp-point"
         ],
         "description": {
-          "en": "Check all the information of a Point of Sale with the ID of the POS you want",
-          "pt": "Veja toda a informação de um ponto de venda a partir do ID da caixa que você deseja",
-          "es": "Consulta toda la información de un punto de venta con el ID de la caja que quieras"
+          "en": "This endpoint allows you to find all the information about the points of sale created using specific filters",
+          "pt": "Este endpoint permite encontrar todas as informações das caixas (ponto de venda) criadas utilizando filtros específicos",
+          "es": "Este endpoint permite encontrar toda la información de las cajas (puntos de venta) creadas utilizando filtros específicos"
         },
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "description": {
-              "en": "POS Id",
-              "pt": "POS Id",
-              "es": "POS Id"
+              "en": "Creation ID of the point of sale. When you register a point of sale, you will receive a corresponding ID. This ID can be used for various operations, including retrieving the point of sale data.",
+              "pt": "ID de criação do ponto de venda. Ao registrar um ponto de venda, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo consultar os dados do ponto de venda.",
+              "es": "ID de creación del punto de venta. Al registrar un punto de venta, recibirás un ID correspondiente. Este ID puede ser utilizado para varias operaciones, incluida la consulta de los datos del punto de venta."
             },
             "required": true,
             "schema": {
@@ -861,9 +869,9 @@
         "responses": {
           "200": {
             "description": {
-              "es": "Success",
-              "pt": "Success",
-              "en": "Success"
+              "en": "Success",
+              "pt": "Sucesso",
+              "es": "Éxito"
             },
             "content": {
               "application/json": {
@@ -874,43 +882,83 @@
                       "type": "string",
                       "example": 1988157,
                       "description": {
-                        "en": "POS identifier, numerical and self-generated.",
-                        "pt": "Identificador exclusivo da caixa, numérico e gerado automaticamente",
-                        "es": "Identificador único de la caja, numérico y autogenerado"
+                        "en": "Creation ID of the point of sale. When you register a point of sale, you will receive a corresponding ID. This ID can be used for various operations, including retrieving the point of sale data.",
+                        "pt": "ID de criação do ponto de venda. Ao registrar um ponto de venda, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo consultar os dados do ponto de venda.",
+                        "es": "ID de creación del punto de venta. Al registrar un punto de venta, recibirás un ID correspondiente. Este ID puede ser utilizado para varias operaciones, incluida la consulta de los datos del punto de venta."
                       }
                     },
                     "qr": {
                       "type": "object",
+                      "description": {
+                        "en": "QR code automatically created to receive payments from the point of sale.",
+                        "pt": "Código QR criado automaticamente para receber os pagamentos do ponto de venda.",
+                        "es": "Código QR creado automáticamente para recibir los pagos del punto de venta."
+                      },
                       "properties": {
                         "image": {
                           "type": "string",
-                          "example": "https://www.mercadopago.com/instore/merchant/qr/2852128/c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.png"
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2852128/c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.png",
+                          "description": {
+                            "en": "URL of the image of the QR code to be used for receiving payments.",
+                            "pt": "URL da imagem do código QR a ser utilizado para receber pagamentos.",
+                            "es": "URL de la imagen del código QR que se utilizará para recibir pagos."
+                          }
                         },
                         "template_document": {
                           "type": "string",
-                          "example": "https://www.mercadopago.com/instore/merchant/qr/2852128/template_c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.pdf"
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2852128/template_c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.pdf",
+                          "description": {
+                            "en": "URL of the file (in PDF format) of the template containing the QR code to be used for receiving payments.",
+                            "pt": "URL do arquivo (em formato PDF) do template com o código QR a ser utilizado para receber pagamentos.",
+                            "es": "URL del archivo (en formato PDF) de la plantilla con el código QR que se utilizará para recibir pagos."
+                          }
                         },
                         "template_image": {
                           "type": "string",
-                          "example": "https://www.mercadopago.com/instore/merchant/qr/2852128/template_c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.png"
+                          "example": "https://www.mercadopago.com/instore/merchant/qr/2852128/template_c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68.png",
+                          "description": {
+                            "en": "URL of the file (in image format) of the template containing the QR code to be used for receiving payments.",
+                            "pt": "URL do arquivo (em formato de imagem) do template com o código QR a ser utilizado para receber pagamentos.",
+                            "es": "URL del archivo (en formato de imagen) de la plantilla con el código QR que se utilizará para recibir pagos."
+                          }
                         }
                       }
                     },
                     "status": {
                       "type": "string",
-                      "example": "active"
+                      "example": "active",
+                      "description": {
+                        "en": "Status of the search.",
+                        "pt": "Status da busca.",
+                        "es": "Estado de la búsqueda."
+                      }
                     },
                     "date_created": {
                       "type": "string",
-                      "example": "2019-09-03T13:13:54.000-04:00"
+                      "example": "2019-09-03T13:13:54.000-04:00",
+                      "description": {
+                        "en": "Point of sale creation date. This field displays the date and time in ISO 8601 format, such as 2024-08-08T19:29:45.019Z.",
+                        "pt": "Data de criação da caixa. Este campo exibe a data e hora no formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                        "es": "Fecha de creación de la caja. Este campo muestra la fecha y hora en el formato ISO 8601, como 2024-08-08T19:29:45.019Z."
+                      }
                     },
                     "date_last_updated": {
                       "type": "string",
-                      "example": "2020-09-30T08:38:58.000-04:00"
+                      "example": "2019-10-25T15:16:12.000Z",
+                      "description": {
+                        "en": "Date of last modification of the cash register data. This field displays the date and time in ISO 8601 format, such as 2024-08-08T19:29:45.019Z.",
+                        "pt": "Data de ultima alteração nos dados da caixa. Este campo exibe a data e hora no formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                        "es": "Fecha de última modificación en los datos de la caja. Este campo muestra la fecha y hora en el formato ISO 8601, como 2024-08-08T19:29:45.019Z."
+                      }
                     },
                     "uuid": {
                       "type": "string",
-                      "example": "c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68"
+                      "example": "c955a5618d874e998c8399e3515fed3a00b8cc0ca401448ca56e2f2e18f4ba68",
+                      "description": {
+                        "en": "The UUID (Universally Unique Identifier) is a 128-bit number used to identify information. In this case, it is the identification number of the QR Code in question.",
+                        "pt": "O UUID (Identificador Único Universal) é um número de 128 bits usado para identificar informações. Neste caso, trata-se do número de identificação do Código QR em questão.",
+                        "es": "El UUID (Identificador Único Universal) es un número de 128 bits utilizado para identificar información. En este caso, se trata del número de identificación del Código QR en cuestión."
+                      }
                     },
                     "compatible_id": {
                       "type": "string",
@@ -918,27 +966,57 @@
                     },
                     "user_id": {
                       "type": "number",
-                      "example": 329653108
+                      "example": 329653108,
+                      "description": {
+                        "en": "The user_id corresponds to the collector_id. It refers to the user_id of the Mercado Pago account that receives the money from sales, that is, the account responsible for collecting the funds.",
+                        "pt": "O user_id corresponde ao collector_id. Trata-se do user_id da conta do Mercado Pago que recebe o dinheiro das vendas, ou seja, a conta responsável pela arrecadação dos valores.",
+                        "es": "El user_id corresponde al collector_id. Se trata del user_id de la cuenta de Mercado Pago que recibe el dinero de las ventas, es decir, la cuenta encargada de recaudar los fondos."
+                      }
                     },
                     "name": {
                       "type": "string",
-                      "example": "POS001"
+                      "example": "POS001",
+                      "description": {
+                        "en": "Name of the point of sale.",
+                        "pt": "Nome do ponto de venda.",
+                        "es": "Nombre del punto de venta."
+                      }
                     },
                     "fixed_amount": {
                       "type": "boolean",
-                      "example": false
+                      "example": false,
+                      "description": {
+                        "en": "Define if the customer can insert the amount to be paid.",
+                        "pt": "Determine se o cliente pode inserir o valor a ser pago.",
+                        "es": "Determina si el cliente puede insertar el monto a pagar."
+                      }
                     },
                     "store_id": {
                       "type": "string",
-                      "example": 56807753
+                      "example": 56807753,
+                      "description": {
+                        "en": "Store identifier to which the point of sale belongs.",
+                        "pt": "Identificador da loja à qual o ponto de venda pertence.",
+                        "es": "Identificador de la sucursal a la que pertenece el punto de venta."
+                      }
                     },
                     "external_store_id": {
                       "type": "string",
-                      "example": "SUC01"
+                      "example": "SUC01",
+                      "description": {
+                        "en": "The unique store identifier, set by the integrated system and can contain up to 60 characters.",
+                        "pt": "Identificador único da loja, definido pelo sistema integrador e pode conter até 60 caracteres.",
+                        "es": "El identificador único de la tienda, establecido por el sistema integrador y puede contener hasta 60 caracteres."
+                      }
                     },
                     "external_id": {
                       "type": "string",
-                      "example": "SUC001POS002"
+                      "example": "SUC001POS002",
+                      "description": {
+                        "en": "Unique identifier of the point of sale defined by integrator system.",
+                        "pt": "Identificador único da caixa definido pelo sistema integrador.",
+                        "es": "Identificador único de la caja definido por el integrador."
+                      }
                     },
                     "site": {
                       "type": "string",
@@ -970,25 +1048,25 @@
                         {
                           "title": "INVALID_POS_ID",
                           "description": {
-                            "en": "The ID of the pos is invalid, it must be numeric.",
-                            "es": "The ID of the pos is invalid, it must be numeric.",
-                            "pt": "The ID of the pos is invalid, it must be numeric."
+                            "en": "The ID of the poin of sale is invalid, it must be numeric.",
+                            "es": "El ID del punto de venta es inválida, debe ser numérica.",
+                            "pt": "O ID do ponto de venda é inválida, deve ser numérica."
                           }
                         },
                         {
                           "title": "INVALID_EXTERNAL_ID",
                           "description": {
-                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
-                            "es": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
-                            "pt": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters."
+                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces, hyphens or special characters.",
+                            "es": "El campo EXTERNAL_ID debe ser alfanumérico, solo letras y números. Sin espacios, guiones o caracteres especiales.",
+                            "pt": "O campo EXTERNAL_ID deve ser alfanumérico, apenas letras e números. Sem espaços, hífens ou caracteres especiais."
                           }
                         },
                         {
                           "title": "EXTERNAL_ID_TOO_LONG",
                           "description": {
                             "en": "The EXTERNAL_ID must be less than 40 characters.",
-                            "es": "The EXTERNAL_ID must be less than 40 characters.",
-                            "pt": "The EXTERNAL_ID must be less than 40 characters."
+                            "es": "El EXTERNAL_ID debe ser menor de 40 caracteres.",
+                            "pt": "O EXTERNAL_ID deve ter menos de 40 caracteres."
                           }
                         }
                       ]
@@ -1015,9 +1093,9 @@
                         {
                           "title": "1",
                           "description": {
-                            "en": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
-                            "es": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
-                            "pt": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user."
+                            "en": "If the point of sale does not exist for an indicated ID or EXTERNAL_ID and user.",
+                            "pt": "Se o ponto de venda não existir para o ID ou EXTERNAL_ID indicado e para o usuário.",
+                            "es": "Si el punto de venta no existe para el ID o EXTERNAL_ID indicado y para el usuario."
                           }
                         }
                       ]
@@ -1029,7 +1107,7 @@
           }
         },
         "title": {
-          "en": "Get POS",
+          "en": "Get point of sale",
           "pt": "Obter caixa",
           "es": "Obtener caja"
         }
@@ -1040,18 +1118,18 @@
           "mp-point"
         ],
         "description": {
-          "en": "Renew the data of a Point of Sale. Indicate the ID of the POS and send the parameters with the information you want to update",
-          "pt": "Atualizar os dados de um ponto de venda. Indicar a identificação da caixa registradora e enviar os parâmetros com as informações que você deseja atualizar",
-          "es": "Renueva los datos de un punto de venta. Indica el ID de la caja y envía los parámetros con la información que quieras actualizar"
+          "en": "This endpoint allows you to update the data of a point of sale. To use it, you need to provide the identification of the point of sale and send the parameters with the information to be updated",
+          "pt": "Este endpoint permite atualizar os dados de uma caixa (ponto de venda). Para utilizá-lo, é necessário fornecer a identificação do ponto de venda e enviar os parâmetros com as informações a serem atualizadas",
+          "es": "Este endpoint permite actualizar los datos de una caja (punto de venta). Para utilizarlo, es necesario proporcionar la identificación del punto de venta y enviar los parámetros con la información que se debe actualizar"
         },
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "description": {
-              "en": "POS Id",
-              "pt": "POS Id",
-              "es": "POS Id"
+              "en": "Creation ID of the point of sale. When you register a point of sale, you will receive a corresponding ID. This ID can be used for various operations, including updating the point of sale data.",
+              "pt": "ID de criação do ponto de venda. Ao registrar um ponto de venda, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo a atualização de dados do ponto de venda.",
+              "es": "ID de creación del punto de venta. Al registrar un punto de venta, recibirás un ID correspondiente. Este ID puede ser utilizado para varias operaciones, incluida la actualización de los datos del punto de venta."
             },
             "required": true,
             "schema": {
@@ -1069,9 +1147,9 @@
                   "name": {
                     "type": "string",
                     "description": {
-                      "en": "Name of the POS.",
-                      "pt": "Nome da caixa",
-                      "es": "Nombre de la caja"
+                      "en": "Name of the point of sale.",
+                      "pt": "Nome da caixa (ponto de venda).",
+                      "es": "Nombre de la caja (punto de venta)."
                     },
                     "example": "First POS"
                   },
@@ -1079,8 +1157,8 @@
                     "type": "boolean",
                     "description": {
                       "en": "Define if the customer can insert the amount to be paid.",
-                      "pt": "Determine se o cliente pode inserir o valor a ser pago",
-                      "es": "Determina si el cliente puede insertar el monto a pagar"
+                      "pt": "Determine se o cliente pode inserir o valor a ser pago.",
+                      "es": "Determina si el cliente puede insertar el monto a pagar."
                     },
                     "example": false
                   },
@@ -1091,25 +1169,35 @@
                     "type": "string",
                     "description": {
                       "en": "Store identifier to which the point of sale belongs.",
-                      "pt": "Identificador da loja à qual o caixa pertence",
-                      "es": "Identificador de la sucursal a la que pertenece el Punto de Venta"
+                      "pt": "Identificador da loja à qual o ponto de venda pertence.",
+                      "es": "Identificador de la sucursal a la que pertenece el punto de venta."
                     },
                     "example": 1234567
                   },
+                  "external_id": {
+                    "type": "string",
+                    "example": "SUC001POS001",
+                    "description": {
+                      "en": "Unique identifier of the point of sale defined by integrator system.",
+                      "pt": "Identificador único da caixa definido pelo sistema integrador.",
+                      "es": "Identificador único de la caja definido por el integrador."
+                    }
+                  },
                   "external_store_id": {
                     "type": "string",
+                    "example": "SUC001",
                     "description": {
-                      "es": "External_id of the store to which the pos belongs defined by integrator system.",
-                      "pt": "External_id of the store to which the pos belongs defined by integrator system.",
-                      "en": "External_id of the store to which the pos belongs defined by integrator system."
+                      "en": "The unique store identifier, set by the integrated system and can contain up to 60 characters.",
+                      "pt": "Identificador único da loja, definido pelo sistema integrador e pode conter até 60 caracteres.",
+                      "es": "El identificador único de la tienda, establecido por el sistema integrador y puede contener hasta 60 caracteres."
                     }
                   },
                   "url": {
                     "type": "string",
                     "description": {
-                      "es": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model.",
-                      "pt": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model.",
-                      "en": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model."
+                      "en": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model.",
+                      "pt": "URL para obter a ordem do sistema integrador. É opcional e é usado apenas no modelo de integração desatendido.",
+                      "es": "URL para obtener la orden del sistema integrador. Es opcional y se utiliza solo en el modelo de integración desatendido."
                     }
                   }
                 }
@@ -1120,9 +1208,9 @@
         "responses": {
           "200": {
             "description": {
-              "es": "success",
-              "pt": "success",
-              "en": "success"
+              "en": "Success",
+              "pt": "Sucesso",
+              "es": "Éxito"
             },
             "content": {
               "application/json": {
@@ -1133,9 +1221,9 @@
                       "type": "number",
                       "example": 2711382,
                       "description": {
-                        "es": "id",
-                        "pt": "id",
-                        "en": "id"
+                        "en": "Creation ID of the point of sale. When you register a point of sale, you will receive a corresponding ID. This ID can be used for various operations, including retrieving the point of sale data.",
+                        "pt": "ID de criação do ponto de venda. Ao registrar um ponto de venda, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo consultar os dados do ponto de venda.",
+                        "es": "ID de creación del punto de venta. Al registrar un punto de venta, recibirás un ID correspondiente. Este ID puede ser utilizado para varias operaciones, incluida la consulta de los datos del punto de venta."
                       }
                     },
                     "qr": {
@@ -1145,97 +1233,97 @@
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
                           "description": {
-                            "es": "image",
-                            "pt": "image",
-                            "en": "image"
+                            "en": "URL of the image of the QR code to be used for receiving payments.",
+                            "pt": "URL da imagem do código QR a ser utilizado para receber pagamentos.",
+                            "es": "URL de la imagen del código QR que se utilizará para recibir pagos."
                           }
                         },
                         "template_document": {
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.pdf",
                           "description": {
-                            "es": "template_document",
-                            "pt": "template_document",
-                            "en": "template_document"
+                            "en": "URL of the file (in PDF format) of the template containing the QR code to be used for receiving payments.",
+                            "pt": "URL do arquivo (em formato PDF) do template com o código QR a ser utilizado para receber pagamentos.",
+                            "es": "URL del archivo (en formato PDF) de la plantilla con el código QR que se utilizará para recibir pagos."
                           }
                         },
                         "template_image": {
                           "type": "string",
                           "example": "https://www.mercadopago.com/instore/merchant/qr/2711382/template_0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1.png",
                           "description": {
-                            "es": "template_image",
-                            "pt": "template_image",
-                            "en": "template_image"
+                            "en": "URL of the file (in image format) of the template containing the QR code to be used for receiving payments.",
+                            "pt": "URL do arquivo (em formato de imagem) do template com o código QR a ser utilizado para receber pagamentos.",
+                            "es": "URL del archivo (en formato de imagen) de la plantilla con el código QR que se utilizará para recibir pagos."
                           }
                         }
                       },
                       "description": {
-                        "es": "qr",
-                        "pt": "qr",
-                        "en": "qr"
+                        "en": "QR code automatically created to receive payments from the point of sale.",
+                        "pt": "Código QR criado automaticamente para receber os pagamentos do ponto de venda.",
+                        "es": "Código QR creado automáticamente para recibir los pagos del punto de venta."
                       }
                     },
                     "status": {
                       "type": "string",
                       "example": "active",
                       "description": {
-                        "es": "status",
-                        "pt": "status",
-                        "en": "status"
+                        "en": "Status of the point of sale data update.",
+                        "pt": "Status da atualização dos dados do ponto de venda.",
+                        "es": "Estado de la actualización de los datos del punto de venta."
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2019-08-22T14:11:12.000Z",
                       "description": {
-                        "es": "date_created",
-                        "pt": "date_created",
-                        "en": "date_created"
+                        "en": "Point of sale creation date. This field displays the date and time in ISO 8601 format, such as 2024-08-08T19:29:45.019Z.",
+                        "pt": "Data de criação da caixa. Este campo exibe a data e hora no formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                        "es": "Fecha de creación de la caja. Este campo muestra la fecha y hora en el formato ISO 8601, como 2024-08-08T19:29:45.019Z."
                       }
                     },
                     "date_last_updated": {
                       "type": "string",
-                      "example": "2019-08-22T14:11:12.000Z",
+                      "example": "2019-08-25T15:16:12.000Z",
                       "description": {
-                        "es": "date_last_updated",
-                        "pt": "date_last_updated",
-                        "en": "date_last_updated"
+                        "en": "Date of last modification of the cash register data. This field displays the date and time in ISO 8601 format, such as 2024-08-08T19:29:45.019Z.",
+                        "pt": "Data de ultima alteração nos dados da caixa. Este campo exibe a data e hora no formato ISO 8601, como 2024-08-08T19:29:45.019Z.",
+                        "es": "Fecha de última modificación en los datos de la caja. Este campo muestra la fecha y hora en el formato ISO 8601, como 2024-08-08T19:29:45.019Z."
                       }
                     },
                     "uuid": {
                       "type": "string",
                       "example": "0977011a027c4b4387e52069da4264deae2946af4dcc44ee98a8f1dbb376c8a1",
                       "description": {
-                        "es": "uuid",
-                        "pt": "uuid",
-                        "en": "uuid"
+                        "en": "The UUID (Universally Unique Identifier) is a 128-bit number used to identify information. In this case, it is the identification number of the QR Code in question.",
+                        "pt": "O UUID (Identificador Único Universal) é um número de 128 bits usado para identificar informações. Neste caso, trata-se do número de identificação do Código QR em questão.",
+                        "es": "El UUID (Identificador Único Universal) es un número de 128 bits utilizado para identificar información. En este caso, se trata del número de identificación del Código QR en cuestión."
                       }
                     },
                     "user_id": {
                       "type": "number",
                       "example": 446566691,
                       "description": {
-                        "es": "user_id",
-                        "pt": "user_id",
-                        "en": "user_id"
+                        "en": "The user_id corresponds to the collector_id. It refers to the user_id of the Mercado Pago account that receives the money from sales, that is, the account responsible for collecting the funds.",
+                        "pt": "O user_id corresponde ao collector_id. Trata-se do user_id da conta do Mercado Pago que recebe o dinheiro das vendas, ou seja, a conta responsável pela arrecadação dos valores.",
+                        "es": "El user_id corresponde al collector_id. Se trata del user_id de la cuenta de Mercado Pago que recibe el dinero de las ventas, es decir, la cuenta encargada de recaudar los fondos."
                       }
                     },
                     "name": {
                       "type": "string",
                       "example": "First POS",
                       "description": {
-                        "es": "name",
-                        "pt": "name",
-                        "en": "name"
+                        "en": "Name of the point of sale.",
+                        "pt": "Nome do ponto de venda.",
+                        "es": "Nombre del punto de venta."
                       }
                     },
                     "fixed_amount": {
                       "type": "boolean",
                       "example": false,
                       "description": {
-                        "es": "fixed_amount",
-                        "pt": "fixed_amount",
-                        "en": "fixed_amount"
+                        "en": "Define if the customer can insert the amount to be paid.",
+                        "pt": "Determine se o cliente pode inserir o valor a ser pago.",
+                        "es": "Determina si el cliente puede insertar el monto a pagar."
                       }
                     },
                     "category": {
@@ -1245,35 +1333,35 @@
                       "type": "string",
                       "example": 1234567,
                       "description": {
-                        "es": "store_id",
-                        "pt": "store_id",
-                        "en": "store_id"
+                        "en": "Store identifier to which the point of sale belongs.",
+                        "pt": "Identificador da loja à qual o ponto de venda pertence.",
+                        "es": "Identificador de la sucursal a la que pertenece el punto de venta."
                       }
                     },
                     "external_store_id": {
                       "type": "string",
                       "example": "SUC001",
                       "description": {
-                        "es": "external_store_id",
-                        "pt": "external_store_id",
-                        "en": "external_store_id"
+                        "en": "The unique store identifier, set by the integrated system and can contain up to 60 characters.",
+                        "pt": "Identificador único da loja, definido pelo sistema integrador e pode conter até 60 caracteres.",
+                        "es": "El identificador único de la tienda, establecido por el sistema integrador y puede contener hasta 60 caracteres."
                       }
                     },
                     "url": {
                       "type": "string",
                       "description": {
-                        "es": "url",
-                        "pt": "url",
-                        "en": "url"
+                        "en": "URL to get the order of the integrator system. It is optional and is used only in the unattended integration model.",
+                        "pt": "URL para obter a ordem do sistema integrador. É opcional e é usado apenas no modelo de integração desatendido.",
+                        "es": "URL para obtener la orden del sistema integrador. Es opcional y se utiliza solo en el modelo de integración desatendido."
                       }
                     },
                     "external_id": {
                       "type": "string",
                       "example": "SUC001POS002",
                       "description": {
-                        "es": "external_id",
-                        "pt": "external_id",
-                        "en": "external_id"
+                        "en": "Unique identifier of the point of sale defined by integrator system.",
+                        "pt": "Identificador único da caixa definido pelo sistema integrador.",
+                        "es": "Identificador único de la caja definido por el integrador."
                       }
                     },
                     "site": {
@@ -1306,137 +1394,137 @@
                         {
                           "title": "MISSING_BODY",
                           "description": {
-                            "en": "HTTP body is required to modify pos.",
-                            "es": "HTTP body is required to modify pos.",
-                            "pt": "HTTP body is required to modify pos."
+                            "en": "HTTP body is required to modify point of sale.",
+                            "es": "El cuerpo del HTTP es requerido para modificar el punto de venta.",
+                            "pt": "O corpo do HTTP é necessário para modificar o ponto de venda."
                           }
                         },
                         {
                           "title": "UNKNOWN_FIELD_EXCEPTION",
                           "description": {
                             "en": "The indicated field is not allowed for this operation or is unknown.",
-                            "es": "The indicated field is not allowed for this operation or is unknown.",
-                            "pt": "The indicated field is not allowed for this operation or is unknown."
+                            "es": "El campo indicado no está permitido para esta operación o es desconocido.",
+                            "pt": "O campo indicado não é permitido para esta operação ou é desconhecido."
                           }
                         },
                         {
                           "title": "INVALID_POS_ID",
                           "description": {
-                            "en": "The ID of the pos is invalid, it must be numeric.",
-                            "es": "The ID of the pos is invalid, it must be numeric.",
-                            "pt": "The ID of the pos is invalid, it must be numeric."
+                            "en": "The ID of the point of sale is invalid, it must be numeric.",
+                            "es": "El ID del punto de venta es inválida, debe ser numérica.",
+                            "pt": "O ID do ponto de venda é inválida, deve ser numérica."
                           }
                         },
                         {
                           "title": "INVALID_NAME",
                           "description": {
                             "en": "NAME must be string.",
-                            "es": "NAME must be string.",
-                            "pt": "NAME must be string."
+                            "es": "NOMBRE debe ser string.",
+                            "pt": "NAME deve ser string."
                           }
                         },
                         {
                           "title": "NAME_TOO_LONG",
                           "description": {
                             "en": "The NAME must be less than 45 characters.",
-                            "es": "The NAME must be less than 45 characters.",
-                            "pt": "The NAME must be less than 45 characters."
+                            "es": "NAME debe ser menor de 45 caracteres.",
+                            "pt": "NAME deve ter menos de 45 caracteres."
                           }
                         },
                         {
                           "title": "INVALID_FIXED_AMOUNT",
                           "description": {
                             "en": "FIXED_AMOUNT must be boolean.",
-                            "es": "FIXED_AMOUNT must be boolean.",
-                            "pt": "FIXED_AMOUNT must be boolean."
+                            "es": "FIXED_AMOUNT debe ser boolean.",
+                            "pt": "FIXED_AMOUNT deve ser boolean."
                           }
                         },
                         {
                           "title": "INVALID_CATEGORY",
                           "description": {
                             "en": "CATEGORY must be numeric.",
-                            "es": "CATEGORY must be numeric.",
-                            "pt": "CATEGORY must be numeric."
+                            "es": "CATEGORY debe ser numérico.",
+                            "pt": "CATEGORY deve ser numérico."
                           }
                         },
                         {
                           "title": "POS_UNKNOWN_MCC",
                           "description": {
-                            "en": "The CATEGORY must be valid for the user's site.",
-                            "es": "The CATEGORY must be valid for the user's site.",
-                            "pt": "The CATEGORY must be valid for the user's site."
+                            "en": "CATEGORY must be valid for the user's site.",
+                            "es": "CATEGORY debe ser válida para el sitio del usuario.",
+                            "pt": "CATEGORY deve ser válida para o site do usuário."
                           }
                         },
                         {
                           "title": "POS_INVALID_STORE_ID",
                           "description": {
                             "en": "STORE_ID must be numeric.",
-                            "es": "STORE_ID must be numeric.",
-                            "pt": "STORE_ID must be numeric."
+                            "es": "STORE_ID debe ser numérico.",
+                            "pt": "STORE_ID deve ser numérico."
                           }
                         },
                         {
                           "title": "INVALID_EXTERNAL_STORE_ID",
                           "description": {
-                            "en": "EXTERNAL_STORE_ID muste be string.",
-                            "es": "EXTERNAL_STORE_ID muste be string.",
-                            "pt": "EXTERNAL_STORE_ID muste be string."
+                            "en": "EXTERNAL_STORE_ID must be string.",
+                            "es": "EXTERNAL_STORE_ID debe ser string.",
+                            "pt": "EXTERNAL_STORE_ID deve ser string."
                           }
                         },
                         {
                           "title": "EXTERNAL_STORE_ID_NOT_MATCH",
                           "description": {
                             "en": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.",
-                            "es": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID.",
-                            "pt": "The EXTERNAL_STORE_ID does not refer to the indicated STORE_ID."
+                            "es": "El EXTERNAL_STORE_ID no hace referencia al STORE_ID indicado.",
+                            "pt": "O EXTERNAL_STORE_ID não se refere ao STORE_ID indicado."
                           }
                         },
                         {
                           "title": "INEXISTENT_EXTERNAL_STORE_ID",
                           "description": {
                             "en": "The EXTERNAL STORE_ID does not refer to an existing Store.",
-                            "es": "The EXTERNAL STORE_ID does not refer to an existing Store.",
-                            "pt": "The EXTERNAL STORE_ID does not refer to an existing Store."
+                            "es": "El EXTERNAL_STORE_ID no hace referencia a una tienda existente.",
+                            "pt": "O EXTERNAL_STORE_ID não se refere a uma loja existente."
                           }
                         },
                         {
                           "title": "INVALID_EXTERNAL_ID",
                           "description": {
-                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
-                            "es": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters.",
-                            "pt": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces or hyphens, or special characters."
+                            "en": "The EXTERNAL_ID field must be alphanumeric, only letters and numbers. No spaces, hyphens or special characters.",
+                            "es": "El campo EXTERNAL_ID debe ser alfanumérico, solo letras y números. Sin espacios, guiones o caracteres especiales.",
+                            "pt": "O campo EXTERNAL_ID deve ser alfanumérico, apenas letras e números. Sem espaços, hífens ou caracteres especiais."
                           }
                         },
                         {
                           "title": "EXTERNAL_ID_TOO_LONG",
                           "description": {
                             "en": "The EXTERNAL_ID must be less than 40 characters.",
-                            "es": "The EXTERNAL_ID must be less than 40 characters.",
-                            "pt": "The EXTERNAL_ID must be less than 40 characters."
+                            "es": "El EXTERNAL_ID debe ser menor de 40 caracteres.",
+                            "pt": "O EXTERNAL_ID deve ter menos de 40 caracteres."
                           }
                         },
                         {
                           "title": "INVALID_URL",
                           "description": {
                             "en": "The URL must be string and muste have the format of a valid url",
-                            "es": "The URL must be string and muste have the format of a valid url",
-                            "pt": "The URL must be string and muste have the format of a valid url"
+                            "es": "La URL debe ser una cadena y debe tener el formato de una URL válida.",
+                            "pt": "A URL deve ser uma string e deve ter o formato de uma URL válida."
                           }
                         },
                         {
                           "title": "URL_TOO_LONG",
                           "description": {
                             "en": "The URL must be less than 300 characters.",
-                            "es": "The URL must be less than 300 characters.",
-                            "pt": "The URL must be less than 300 characters."
+                            "es": "La URL debe ser menor de 300 caracteres.",
+                            "pt": "A URL deve ter menos de 300 caracteres."
                           }
                         },
                         {
                           "title": "FIXED_AMOUNT_FALSE",
                           "description": {
                             "en": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.",
-                            "es": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case.",
-                            "pt": "If the URL field is indicated, the FIXED_AMOUNT field must be true. We do not support the open amount modality in this case."
+                            "es": "Si se indica el campo URL, el campo FIXED_AMOUNT debe ser verdadero. No soportamos la modalidad de monto abierto en este caso.",
+                            "pt": "Se o campo URL estiver indicado, o campo FIXED_AMOUNT deve ser verdadeiro. Não suportamos a modalidade de valor aberto nesse caso."
                           }
                         }
                       ]
@@ -1464,8 +1552,8 @@
                           "title": "1",
                           "description": {
                             "en": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.",
-                            "es": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.",
-                            "pt": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor."
+                            "es": "Si está utilizando el campo URL, el host debe estar habilitado por Mercado Pago. Si no lo está, recibirá este error. Por favor, comuníquese con su asesor técnico asignado.",
+                            "pt": "Se você estiver usando o campo URL, o host deve ser habilitado pelo Mercado Pago. Se não for, você receberá este erro. Por favor, entre em contato com seu assessor técnico designado."
                           }
                         }
                       ]
@@ -1492,9 +1580,9 @@
                         {
                           "title": "1",
                           "description": {
-                            "en": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
-                            "es": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user.",
-                            "pt": "If the POS does not exist for an indicated ID or EXTERNAL_ID and user."
+                            "en": "If the point of sale does not exist for an indicated ID or EXTERNAL_ID and to the user.",
+                            "es": "Si el punto de venta no existe para un ID o EXTERNAL_ID indicado y para el usuario.",
+                            "pt": "Se o ponto de venda não existir para um ID ou EXTERNAL_ID indicado e para o usuário."
                           }
                         }
                       ]
@@ -1521,9 +1609,9 @@
                         {
                           "title": "1",
                           "description": {
-                            "en": "A pos with the same EXTERNAL_ID already exists.",
-                            "es": "A pos with the same EXTERNAL_ID already exists.",
-                            "pt": "A pos with the same EXTERNAL_ID already exists."
+                            "en": "A pont of sale with the same EXTERNAL_ID already exists.",
+                            "es": "Ya existe un punto de venta con el mismo EXTERNAL_ID.",
+                            "pt": "Já existe um ponto de venda com o mesmo EXTERNAL_ID."
                           }
                         }
                       ]
@@ -1535,7 +1623,7 @@
           }
         },
         "title": {
-          "en": "Update POS",
+          "en": "Update point of sale",
           "pt": "Atualizar caixa",
           "es": "Actualizar caja"
         }
@@ -1546,18 +1634,18 @@
           "mp-point"
         ],
         "description": {
-          "en": "Delete a Point of Sale whenever you need it with the ID of the POS",
-          "pt": "Exclua um ponto de venda sempre que for necessário com o ID da caixa",
-          "es": "Elimina un punto de venta siempre que lo necesites con el ID de la caja"
+          "en": "This endpoint allows the deletion of a specific point of sale, identified by its ID",
+          "pt": "Este endpoint permite a exclusão de uma caixa (ponto de venda) específica, identificada pelo seu ID",
+          "es": "Este endpoint permite la eliminación de una caja (punto de venta) específica, identificada por su ID"
         },
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "description": {
-              "en": "POS Id",
-              "pt": "POS Id",
-              "es": "POS Id"
+              "en": "Creation ID of the point of sale. When you register a point of sale, you will receive a corresponding ID. This ID can be used for various operations, including deleting a point of sale.",
+              "pt": "ID de criação do ponto de venda. Ao registrar um ponto de venda, você receberá um ID correspondente. Esse ID pode ser utilizado para várias operações, incluindo consultar os dados do ponto de venda.",
+              "es": "ID de creación del punto de venta. Al registrar un punto de venta, recibirás un ID correspondiente. Este ID puede ser utilizado para varias operaciones, incluida la eliminación de un punto de venta."
             },
             "required": true,
             "schema": {
@@ -1584,9 +1672,9 @@
                         {
                           "title": "INVALID_POS_ID",
                           "description": {
-                            "en": "The ID of the pos is invalid, it must be numeric.",
-                            "es": "The ID of the pos is invalid, it must be numeric.",
-                            "pt": "The ID of the pos is invalid, it must be numeric."
+                            "en": "The ID of the point of sale is invalid, it must be numeric.",
+                            "es": "El ID del punto de venta es inválida, debe ser numérica.",
+                            "pt": "O ID do ponto de venda é inválido, deve ser numérica."
                           }
                         }
                       ]
@@ -1613,9 +1701,9 @@
                         {
                           "title": "1",
                           "description": {
-                            "en": "If there is no pos for the indicated ID and user.",
-                            "es": "If there is no pos for the indicated ID and user.",
-                            "pt": "If there is no pos for the indicated ID and user."
+                            "en": "If there is no point of sale for the indicated ID and user.",
+                            "es": "Si no hay punto de venta para el ID y el usuario indicados.",
+                            "pt": "Se não houver ponto de venda para o ID e o usuário indicados."
                           }
                         }
                       ]
@@ -1627,7 +1715,7 @@
           }
         },
         "title": {
-          "en": "Delete POS",
+          "en": "Delete point of sale",
           "pt": "Excluir caixa",
           "es": "Eliminar caja"
         }
@@ -1640,17 +1728,17 @@
         "type": "number",
         "example": 621102,
         "description": {
-          "en": "MCC code that indicates the category of the Point of Sale. If not specified, it remains as a generic category.",
+          "en": "MCC code that indicates the category of the point of sale. If not specified, it remains as a generic category",
           "pt": "Código MCC que indica a categoria do ponto de venda. Se não especificado, ele permanece como uma categoria genérica",
-          "es": "Código MCC que indica el rubro del Punto de Venta. Si no se especifica, queda como categoría genérica"
+          "es": "Código MCC que indica el rubro del punto de venta. Si no se especifica, queda como categoría genérica"
         },
         "enum": [
           {
             "title": "Gastronomy",
             "description": {
-              "en": "",
-              "es": "",
-              "pt": ""
+              "en": "Gastronomy",
+              "es": "Gastronomía",
+              "pt": "Gastronomia"
             }
           },
           {
@@ -1665,16 +1753,16 @@
             "title": "5611203",
             "description": {
               "en": "Brazil",
-              "es": "Brazil",
-              "pt": "Brazil"
+              "es": "Brasil",
+              "pt": "Brasil"
             }
           },
           {
             "title": "5812",
             "description": {
               "en": "Mexico",
-              "es": "Mexico",
-              "pt": "Mexico"
+              "es": "México",
+              "pt": "México"
             }
           },
           {
@@ -1682,14 +1770,14 @@
             "description": {
               "en": "Colombia",
               "es": "Colombia",
-              "pt": "Colombia"
+              "pt": "Colômbia"
             }
           },
           {
             "title": "5520",
             "description": {
               "en": "Peru",
-              "es": "Peru",
+              "es": "Perú",
               "pt": "Peru"
             }
           },
@@ -1698,7 +1786,7 @@
             "description": {
               "en": "Uruguay",
               "es": "Uruguay",
-              "pt": "Uruguay"
+              "pt": "Uruguai"
             }
           },
           {
@@ -1712,9 +1800,9 @@
           {
             "title": "Gas station",
             "description": {
-              "en": "",
-              "es": "",
-              "pt": ""
+              "en": "Gas station",
+              "es": "Estación de servicio",
+              "pt": "posto de gasolina"
             }
           },
           {
@@ -1729,16 +1817,16 @@
             "title": "4731300",
             "description": {
               "en": "Brazil",
-              "es": "Brazil",
-              "pt": "Brazil"
+              "es": "Brasil",
+              "pt": "Brasil"
             }
           },
           {
             "title": "468419",
             "description": {
               "en": "Mexico",
-              "es": "Mexico",
-              "pt": "Mexico"
+              "es": "México",
+              "pt": "México"
             }
           },
           {
@@ -1746,14 +1834,14 @@
             "description": {
               "en": "Colombia",
               "es": "Colombia",
-              "pt": "Colombia"
+              "pt": "Colômbia"
             }
           },
           {
             "title": "5050",
             "description": {
               "en": "Peru",
-              "es": "Peru",
+              "es": "Perú",
               "pt": "Peru"
             }
           },
@@ -1762,7 +1850,7 @@
             "description": {
               "en": "Uruguay",
               "es": "Uruguay",
-              "pt": "Uruguay"
+              "pt": "Uruguai"
             }
           },
           {
