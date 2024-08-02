@@ -248,7 +248,7 @@ const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
      /*
-      "amount" is the total amount to be paid by all means of payment with the exception of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId"
+      "amount" is the total amount to be paid by all means of payment with the exception of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId". It must be an integer.
      */
      amount: 100,
      preferenceId: "<PREFERENCE_ID>",
@@ -306,6 +306,9 @@ renderPaymentBrick(bricksBuilder);
 
 const initialization = {
  amount: 100,
+     /*
+      "amount" is the total amount to be paid by all means of payment with the exception of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId". It must be an integer.
+     */
  preferenceId: "<PREFERENCE_ID>",
 };
 const customization = {

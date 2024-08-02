@@ -105,6 +105,99 @@ const onReady = async () => {
 ```
 ]]]
 
+----[mlc]----
+[[[
+```Javascript
+const renderCardPaymentBrick = async (bricksBuilder) => {
+ const settings = {
+   initialization: {
+     amount: 100, // Total amount to be paid. It must be an integer.
+   },
+   callbacks: {
+     onReady: () => {
+       /*
+         Callback called when Brick is ready.
+         Here you can hide loadings from your site, for example.
+       */
+     },
+     onSubmit: (formData) => {
+       // callback called when clicking on the submit data button
+       return new Promise((resolve, reject) => {
+         fetch('/process_payment', {
+           method: 'POST',
+           headers: {
+             'Content-Type': 'application/json',
+           },
+           body: JSON.stringify(formData),
+         })
+           .then((response) => response.json())
+           .then((response) => {
+             // receive payment result
+             resolve();
+           })
+           .catch((error) => {
+             // handle error response when trying to create payment
+             reject();
+           });
+       });
+     },
+     onError: (error) => {
+       // callback called for all Brick error cases
+       console.error(error);
+     },
+   },
+  };
+  window.cardPaymentBrickController = await bricksBuilder.create(
+   'cardPayment',
+   'cardPaymentBrick_container',
+   settings,
+  );  
+};
+renderCardPaymentBrick(bricksBuilder);
+```
+```react-jsx
+const initialization = {
+ amount: 100, // Total amount to be paid. It must be an integer.
+};
+
+const onSubmit = async (formData) => {
+ // callback called when clicking on the submit data button
+ return new Promise((resolve, reject) => {
+   fetch('/process_payment', {
+     method: 'POST',
+     headers: {
+       'Content-Type': 'application/json',
+     },
+     body: JSON.stringify(formData),
+   })
+     .then((response) => response.json())
+     .then((response) => {
+       // receive payment result
+       resolve();
+     })
+     .catch((error) => {
+       // handle error response when trying to create payment
+       reject();
+     });
+ });
+};
+
+const onError = async (error) => {
+ // callback called for all Brick error cases
+ console.log(error);
+};
+
+const onReady = async () => {
+ /*
+   Callback called when Brick is ready.
+   Here you can hide loadings from your site, for example.
+ */
+};
+```
+]]]
+
+------------
+
 > WARNING
 > 
 > Attention
