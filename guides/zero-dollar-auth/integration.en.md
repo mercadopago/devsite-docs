@@ -95,7 +95,7 @@ payment.create({
         token: req.token,
         payment_method_id: req.payment_method_id,
         payer: {
-            id: req.email,
+            email: req.email,
             type: req.type
         },
         description: req.description,
