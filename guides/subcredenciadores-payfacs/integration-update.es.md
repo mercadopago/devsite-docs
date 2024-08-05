@@ -244,20 +244,20 @@ func main() {
 		},
 		ForwardData: &payment.ForwardDataRequest{
 			SubMerchant: &payment.SubMerchantRequest{
-				SubMerchantId:   "1234",
-				MCC:             "123",
-				Country:         "BRA",
+				SubMerchantId:     "1234",
+				MCC:               "123",
+				Country:           "BRA",
 				AddressDoorNumber: "1",
-				ZIP:             "22222222",
-				DocumentNumber:  "22222222222222",
-				City:            "Sao Paulo",
-				AddressStreet:   "Rua A",
-				LegalName:       "Legal Name",
-				RegionCodeIso:   "BR",
-				RegionCode:      "BR-SC",
-				DocumentType:    "CNPJ",
-				Phone:           "123456789",
-				URL:             "www.rappi.com.br",
+				ZIP:               "22222222",
+				DocumentNumber:    "22222222222222",
+				City:              "Sao Paulo",
+				AddressStreet:     "Rua A",
+				LegalName:         "Legal Name",
+				RegionCodeIso:     "BR",
+				RegionCode:        "BR-SC",
+				DocumentType:      "CNPJ",
+				Phone:             "123456789",
+				URL:               "www.rappi.com.br",
 			},
 		},
 		Token:        "879a958bbed52608607ae70bed919e13",
@@ -274,10 +274,116 @@ func main() {
 }
 ```
 ```csharp
+using System;
+using MercadoPago.Config;
+using MercadoPago.Client.Common;
+using MercadoPago.Client.Payment;
+using MercadoPago.Resource.Payment;
 
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN";
+var request = new PaymentCreateRequest
+{
+    TransactionAmount = 105,
+    Description = "Título do produto",
+    PaymentMethodId = "visa",
+    Token = "879a958bbed52608607ae70bed919e13",
+    Installments = 3,
+    Payer = new PaymentPayerRequest
+    {
+        Email = "test_user_24634097@testuser.com",
+    },
+    PaymentForwardDataRequest = new PaymentForwardDataRequest
+    {
+        SubMerchant = new SubMerchant
+        {
+            SubMerchantId = "1234",
+            MCC = "123",
+            Country = "BRA",
+            AddressDoorNumber = "1",
+            Zip = "22222222",
+            DocumentNumber = "22222222222222",
+            City = "Sao Paulo",
+            AddressStreet = "Rua A",
+            LegalName = "Legal Name",
+            RegionCodeIso = "BR",
+            RegionCode = "BR-SC",
+            DocumentType = "CNPJ",
+            Phone = "123456789",
+            Url = "www.rappi.com.br",
+        },
+    },
+};
+
+var client = new PaymentClient();
+Payment payment = await client.CreateAsync(request);
+Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(payment));
 ```
+```java
+package com.mercadopago;
 
+import com.mercadopago.client.MercadoPagoClient;
+import com.mercadopago.client.common.IdentificationRequest;
+import com.mercadopago.client.common.SubMerchant;
+import com.mercadopago.client.payment.*;
+import com.mercadopago.core.MPRequestOptions;
+import com.mercadopago.exceptions.MPApiException;
+import com.mercadopago.exceptions.MPException;
+import com.mercadopago.net.Headers;
+import com.mercadopago.resources.payment.Payment;
 
+import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.UUID;
+
+public class Main {
+    public static void main(String[] args) {
+        HashMap<String, String> headers = new HashMap<>();
+        headers.put(Headers.IDEMPOTENCY_KEY, UUID.randomUUID().toString());
+        MPRequestOptions requestOptions = MPRequestOptions
+                .builder()
+                .customHeaders(headers)
+                .accessToken("YOUR_ACCESS_TOKEN").build();
+
+        PaymentClient client = new PaymentClient();
+        PaymentCreateRequest createRequest =
+                PaymentCreateRequest.builder()
+                        .transactionAmount(new BigDecimal(100))
+                        .description("test_boleto")
+                        .paymentMethodId("master")
+                        .token("89494b4cec3c5d7d4cf3782d80a5aa54")
+                        .forwardData(PaymentForwardDataRequest.builder()
+                                .subMerchant(SubMerchant.builder()
+                                        .subMerchantId("345678")
+                                        .mcc("1234")
+                                        .country("BR")
+                                        .addressDoorNumber("123")
+                                        .zip("12345678")
+                                        .documentNumber("12345678901")
+                                        .city("Sao Paulo")
+                                        .addressStreet("Street")
+                                        .legalName("Business")
+                                        .regionCodeIso("SP")
+                                        .regionCode("SP")
+                                        .documentType("CPF")
+                                        .phone("1234567890")
+                                        .url("https://www.mercadopago.com").build()).build())
+                        .payer(PaymentPayerRequest.builder()
+                                .email("test_user_61213998@testuser.com").build())
+                        .build();
+
+        try {
+            Payment payment = client.create(createRequest, requestOptions);
+            System.out.println(payment.getId());
+        } catch (MPApiException ex) {
+            System.out.printf(
+                    "MercadoPago Error. Status: %s, Content: %s%n",
+                    ex.getApiResponse().getStatusCode(), ex.getApiResponse().getContent());
+        } catch (MPException ex) {
+            ex.printStackTrace();
+        }
+    }
+}
+```
 ]]]
 
 
