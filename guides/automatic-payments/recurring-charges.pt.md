@@ -23,7 +23,7 @@ Os campos mínimos requeridos para enviar são: `token`, `transaction_amount`, `
 >
 > Para mais informações sobre como enviar as informações dos pagamentos recorrentes ao endpoint [v1/payments](/developers/pt/reference/payments/_payments/post) com o intuito de aumentar a taxa de aprovação para pagamentos deste tipo, acesse a documentação [Mensageria de pagamentos automáticos](/developers/pt/docs/automatic-payments/recurring-charges/subscription-messaging).
 > <br><br>
-> Para transações no Chile (MLC), os valores dos itens deverão ser inteiros. Ou seja, não poderão ser utilizadas casas decimais.
+> Para transações no **Chile (MLC)**, os valores dos itens deverão ser inteiros. Ou seja, **não poderão ser utilizadas casas decimais**.
 
 ------------
 
