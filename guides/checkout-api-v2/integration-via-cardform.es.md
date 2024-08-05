@@ -161,7 +161,7 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 >
 > Al enviar el formulario, se genera un token que representa de manera segura los datos de la tarjeta, también llamado **cardtoken**. Es posible acceder a él mediante la función `cardForm.getCardFormData()`, como se muestra a continuación en el callback `onSubmit`. Además, este token también se almacena en un campo oculto dentro del formulario, donde se puede encontrar con la nomenclatura `MPHiddenInputToken`. Ten en cuenta que puede ser utilizado **solo una vez** y caduca en un plazo de **7 días**.
 
-----[mla, mlu, mpe, mco, mlb, mlc]----
+----[mla, mlu, mpe, mco, mlb]----
 [[[
 ```javascript
 

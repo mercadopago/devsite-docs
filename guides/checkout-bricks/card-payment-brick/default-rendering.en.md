@@ -12,6 +12,7 @@ Before rendering the Card Payment Brick, first execute the [initialization steps
 
 Create Brick's startup configuration.
 
+----[mla, mlu, mpe, mco, mlb, mlm]----
 [[[
 ```Javascript
 const renderCardPaymentBrick = async (bricksBuilder) => {
@@ -105,6 +106,7 @@ const onReady = async () => {
 ```
 ]]]
 
+------------
 ----[mlc]----
 [[[
 ```Javascript

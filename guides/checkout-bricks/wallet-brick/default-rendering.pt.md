@@ -164,7 +164,7 @@ Em seguida, configure a preferência de acordo com o seu produto ou serviço.
 Os exemplos de código abaixo configuram o **purpose da preferência** como `wallet_purchase`, onde o usuário deverá fazer login quando for redirecionado para sua conta do Mercado Pago.
 
 ------------
-
+----[mla, mlu, mpe, mco, mlb, mlm]----
 [[[
 ```php
 <?php
@@ -306,6 +306,7 @@ curl -X POST \
 ```
 ]]]
 
+------------
 ----[mlc]----
 [[[
 ```php

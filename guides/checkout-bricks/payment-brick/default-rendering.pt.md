@@ -250,7 +250,9 @@ const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
      /*
-      "amount" é o valor total a ser pago por todos os meios de pagamento com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId". Deve ser um número inteiro.
+      "amount" é o valor total a ser pago por todos os meios de pagamento com exceção 
+      da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId". 
+      Deve ser um número inteiro.
      */
      amount: 100,
      preferenceId: "<PREFERENCE_ID>",
@@ -309,7 +311,9 @@ renderPaymentBrick(bricksBuilder);
 const initialization = {
  amount: 100,
      /*
-      "amount" é o valor total a ser pago por todos os meios de pagamento com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId". Deve ser um número inteiro.
+      "amount" é o valor total a ser pago por todos os meios de pagamento com exceção 
+      da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId". 
+      Deve ser um número inteiro.
      */
  preferenceId: "<PREFERENCE_ID>",
 };

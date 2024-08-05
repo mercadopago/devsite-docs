@@ -162,7 +162,7 @@ After adding the payment form, you will need to initialize it. This step consist
 >
 > When submitting the form, a token, also known as **cardtoken**, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the cardtoken can **only be used once** and expires within **7 days**.
 
-----[mla, mlu, mpe, mco, mlb, mlc]----
+----[mla, mlu, mpe, mco, mlb]----
 [[[
 ```javascript
 

@@ -248,7 +248,8 @@ const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
      /*
-      "amount" es el monto total a pagar por todos los medios de pago con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId". Debe ser un número entero.
+      "amount" es el monto total a pagar por todos los medios de pago con excepción 
+      de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId". Debe ser un número entero.
      */
      amount: 100,
      preferenceId: "<PREFERENCE_ID>",
@@ -307,7 +308,8 @@ renderPaymentBrick(bricksBuilder);
 const initialization = {
  amount: 100,
      /*
-      "amount" es el monto total a pagar por todos los medios de pago con excepción de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId". Debe ser un número entero.
+      "amount" es el monto total a pagar por todos los medios de pago con excepción 
+      de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId". Debe ser un número entero.
      */
  preferenceId: "<PREFERENCE_ID>",
 };
