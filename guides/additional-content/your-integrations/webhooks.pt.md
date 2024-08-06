@@ -723,7 +723,7 @@ Na notificação, você receberá um `JSON` com as seguintes informações conte
 
 > NOTE
 >
-> Importante
+> Nota
 >
 > É possível obter mais detalhes sobre o pedido utilizando a API [Obter pedido](/developers/pt/reference/merchant_orders/_merchant_orders_id/get).
 
