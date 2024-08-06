@@ -871,7 +871,7 @@ Utiliza el token generado anteriormente para registrar el pago, indicando el ID 
 >
 > Importante
 >
-> Los valores de los elementos deben ser enteros. Es decir, **no se pueden utilizar decimales**.
+> El valor del cobro debe ser un número entero. Es decir, **no se pueden utilizar decimales**.
 
 [[[
 ```php

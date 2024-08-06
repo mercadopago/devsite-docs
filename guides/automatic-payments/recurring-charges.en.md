@@ -873,7 +873,7 @@ Use the previously generated token to register the payment, indicating the custo
 >
 > Important
 >
-> The item values must be whole numbers. In other words, **decimal places cannot be used**.
+> The charge value must be an integer. In other words, **decimal places cannot be used**.
 
 ------------
 

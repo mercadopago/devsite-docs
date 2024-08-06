@@ -871,7 +871,7 @@ Utilize o token gerado anteriormente para registrar o pagamento, indicando o ID 
 >
 > Importante
 >
-> Os valores dos itens deverão ser inteiros. Ou seja, **não poderão ser utilizadas casas decimais**.
+> O valor da cobrança deverá será ser com um número inteiro. Ou seja, **não poderão ser utilizadas casas decimais**.
 
 ------------
 
