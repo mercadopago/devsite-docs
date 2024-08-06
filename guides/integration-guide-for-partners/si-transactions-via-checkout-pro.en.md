@@ -1,6 +1,6 @@
 # Transactions via Checkout Pro
 
-After receiving your ID related to the `PLATFORM_ID` of your platform, you can add it to the header of the payment request (`/checkout/preferences`) when creating a payment preference with Mercado Pago.
+When making a payment request (`/checkout/preferences`), simply assign your Mercado Pago account ID to the `sponsor_id` field in the request body.
 
 Example:
 
@@ -8,7 +8,6 @@ Example:
 curl --location --request POST 'https://api.mercadolibre.com/checkout/preferences' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
---header 'x-platform-id: {{PLATFORM_ID provided by the Partners team}}' \
 --data-raw '{
     "auto_return": "all",
     "back_urls": {
@@ -23,14 +22,14 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     },
     "notification_url": "https://webhook.site/d69d1102-b677-44f6-ae6d-104a7e813b93",
     "expires": false,
-    "external_reference": "Order - Test",
+    "external_reference": "Order - Test ",
     "date_of_expiration": "2022-04-01T22:59:00.000-04:00",
-    "sponsor_id": <CUST_ID>,
+    "sponsor_id": "{{ID of your Mercado Pago account related to your platform.}}",
     "items": [
         {
             "id": "1234",
             "currency_id": "BRL",
-            "title": "Produto",
+            "title": "Product",
             "category_id": "entertainment",
             "quantity": 1,
             "unit_price": 4
@@ -38,24 +37,42 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
         {
             "id": "1234",
             "currency_id": "BRL",
-            "title": "Freight",
+            "title": "frete",
             "category_id": "entertainment",
             "quantity": 1,
             "unit_price": 1
         }
     ],
+  
     "payment_methods": {
         "default_installments": null,
         "default_payment_method_id": null,
-        "excluded_payment_types": [],
-        "installments": null
+        "excluded_payment_types": []
     },
+    "installments": null,
     "shipments": {
         "receiver_address": {
-            "zip_code": "95630000",
-            "street_name": "Street name. Example: Av. das Nações Unidas",
-            "street_number": "Street number. Example: 3003"
+	         "zip_code": "95630000",
+	         "street_name": "Avenida Shipments",
+	         "street_number": "15"
         }
     }
 }'
 ```
+
+> WARNING
+>
+> Attention!
+>
+> The information in the `collector_id` field is not the same as the `sponsor_id`.
+> * The `collector-id` is the seller;
+> * The `sponsor-id` is the platform (where the seller is), such as Vtex, LI, Adobe Commerce, etc.
+
+> NOTE
+>
+> Note
+>
+> Both the `collector` and the `sponsor-id` can be obtained in the step [How to Get the Sponsor ID](/developers/en/guides/integration-guide-for-partners/how-to-get-sponsor-id). However, they are distinct Mercado Pago accounts.
+If you send the same information in both fields, the API will return an error: "Invalid users involved".
+
+> Still have questions about credentials? Access the content [Where Can I Find the Credentials](https://www.mercadopago.com.br/developers/pt/support/20214).

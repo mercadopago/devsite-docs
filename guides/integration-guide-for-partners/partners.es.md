@@ -175,10 +175,10 @@ const cardForm = mp.cardForm({
           },
         }),
       });*/
-      alert("Token de tarjeta generado: " + token);
+      alert("Generated card token: " + token);
     },
     onFetching: resource => {
-      console.log("Recurso en obtención: ", resource);
+      console.log("Fetching resource: ", resource);
 
       // Animar barra de progreso
       const progressBar = document.querySelector(".progress-bar");
@@ -197,4 +197,4 @@ const cardForm = mp.cardForm({
 > Consideraciones
 >
 > Si estás utilizando el SDK JS V1, será necesario migrar al [SDK JS V2](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
-**Ejemplo práctico para tokenización con JS V2**: [Tokenización - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).
+> **Ejemplo práctico para tokenización con JS V2**: [Tokenización - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).

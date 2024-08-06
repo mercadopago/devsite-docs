@@ -1,6 +1,6 @@
 # Transações via Checkout Pro
 
-Ao realizar uma requisição de pagamento (`/checkout/preferences`), basta atribuir o ID da sua conta Mercado Pago ao campo `sponsor_id` no corpo (body) da requisição.
+Ao realizar uma requisição de pagamento (`/checkout/preferences`), basta atribuir o ID da sua conta Mercado Pago ao campo `sponsor_id` no corpo (_body_) da requisição.
 
 Exemplo:
 
@@ -24,7 +24,7 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     "expires": false,
     "external_reference": "Pedido - Teste ",
     "date_of_expiration": "2022-04-01T22:59:00.000-04:00",
-    "sponsor_id": "{{ADICIONE O ID DE SUA CONTA MERCADO PAGO REFERENTE A SUA PLATAFORMA}}",
+    "sponsor_id": "{{ID da sua conta Mercado Pago referente à sua plataforma}}",
     "items": [
         {
             "id": "1234",
@@ -60,19 +60,19 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
 }'
 ```
 
-> NOTE
+> WARNING
 >
 > Atenção!
 >
 > A informação do campo `collector_id` não é a mesma do `sponsor_id`.
-> * O `collector-id`: é o vendedor;
-> * O `sponsor-id`: é a plataforma (onde está o vendedor), como Vtex, LI, Magento, etc.
+> * O `collector-id` é o vendedor;
+> * O `sponsor-id` é a plataforma (onde está o vendedor), como Vtex, LI, Adobe Commerce, etc.
 
 > NOTE
 >
-> Observação
+> Nota
 >
 > Tanto o `collector` quanto o `sponsor-id` podem ser obtidos no passo [Como obter o Sponsor ID](/developers/pt/guides/integration-guide-for-partners/how-to-get-sponsor-id). No entanto, são contas do Mercado Pago distintas.
 Se você enviar a mesma informação nos dois campos, a API retornará um erro: "Invalid users involved".
 
-> Ainda tem dúvidas sobre credenciais? Acesse o material a seguir: [Onde posso encontrar as credenciais](https://www.mercadopago.com.br/developers/pt/support/20214).
+> Ainda tem dúvidas sobre credenciais? Acesse o conteúdo [Onde posso encontrar as credenciais](https://www.mercadopago.com.br/developers/pt/support/20214).

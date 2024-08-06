@@ -38,7 +38,7 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
         {
             "id": "1234",
             "currency_id": "BRL",
-            "title": "frete",
+            "title": "Envío",
             "category_id": "entertainment",
             "quantity": 1,
             "unit_price": 1
@@ -53,8 +53,8 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     "shipments": {
         "receiver_address": {
             "zip_code": "95630000",
-            "street_name": "Nombre de la calle",
-            "street_number": "Número de la calle"
+            "street_name": "Nombre de la calle. Ejemplo: Av. das Nações Unidas",
+            "street_number": "Número de la calle. Ejemplo: 3003"
         }
     }
 }'

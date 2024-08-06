@@ -36,19 +36,19 @@ O MercadoPago.js é responsável pelos fluxos necessários para obtenção das i
   <fieldset>
     <ul>
       <li>
-        <label for="cardNumber">Card Number:</label>
+        <label for="cardNumber">Número do cartão:</label>
         <input type="text" name="cardNumber" id="form-checkout__cardNumber" />
       </li>
       <li>
-        <label for="cardExpirationMonth">Expiration Month:</label>
+        <label for="cardExpirationMonth">Mês de vencimento:</label>
         <input type="text" name="cardExpirationMonth" id="form-checkout__cardExpirationMonth" value="12" />
       </li>
       <li>
-        <label for="cardExpirationYear">Expiration Year:</label>
+        <label for="cardExpirationYear">Ano de vencimento:</label>
         <input type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear" value="24" />
       </li>
       <li>
-        <label for="cardholderName">Cardholder Name:</label>
+        <label for="cardholderName">Nome do titular:</label>
         <input type="text" name="cardholderName" id="form-checkout__cardholderName" value="APRO" />
       </li>
       <li>
@@ -56,23 +56,23 @@ O MercadoPago.js é responsável pelos fluxos necessários para obtenção das i
         <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" value="test_user_60077763@testuser.com" />
       </li>
       <li>
-        <label for="securityCode">Security Code:</label>
+        <label for="securityCode">Código de segurança:</label>
         <input type="text" name="securityCode" id="form-checkout__securityCode" value="123" />
       </li>
       <li>
-        <label for="issuer">Issuer:</label>
+        <label for="issuer">Emissor:</label>
         <select name="issuer" id="form-checkout__issuer"></select>
       </li>
       <li>
-        <label for="identificationType">Identification Type:</label>
+        <label for="identificationType">Tipo do documento:</label>
         <select name="identificationType" id="form-checkout__identificationType"></select>
       </li>
       <li>
-        <label for="identificationNumber">Identification Number:</label>
+        <label for="identificationNumber">Número do documento:</label>
         <input type="text" name="identificationNumber" id="form-checkout__identificationNumber" value="12345678909" />
       </li>
       <li>
-        <label for="installments">Installments:</label>
+        <label for="installments">Parcelas:</label>
         <select name="installments" id="form-checkout__installments"></select>
       </li>
       <li>
@@ -175,7 +175,7 @@ const cardForm = mp.cardForm({
           },
         }),
       });*/
-      alert("generated card token: " + token);
+      alert("Generated card token: " + token);
     },
     onFetching: resource => {
       console.log("Fetching resource: ", resource);
@@ -197,4 +197,4 @@ const cardForm = mp.cardForm({
 > Considerações
 >
 > Caso esteja utilizando o SDK JS V1, será necessário a migração para o [SDK JS V2](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
-**Exemplo prático para tokenização com JS V2**: [Tokenização - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).
+> **Exemplo prático para tokenização com JS V2**: [Tokenização - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).

@@ -1,6 +1,6 @@
 # Transações via Checkout Pro
 
-Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poderá adicioná-lo ao cabeçalho da requisição de pagamento (`/checkout/preferences`) ao criar uma preferência de pagamento junto ao Mercado Pago.
+Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poderá adicioná-lo ao _header_ da requisição de pagamento (`/checkout/preferences`) ao criar uma preferência de pagamento junto ao Mercado Pago.
 
 Exemplo:
 
@@ -38,7 +38,7 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
         {
             "id": "1234",
             "currency_id": "BRL",
-            "title": "frete",
+            "title": "Frete",
             "category_id": "entertainment",
             "quantity": 1,
             "unit_price": 1
@@ -52,9 +52,9 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     },
     "shipments": {
         "receiver_address": {
-            "zip_code": "95630000",
-            "street_name": "Nome da rua",
-            "street_number": "Número da rua"
+            "zip_code": "CEP. Exemplo: 95630000",
+            "street_name": "Nome da rua. Exemplo: Av. das Nações Unidas",
+            "street_number": "Número da rua. Exemplo: 3003"
         }
     }
 }'

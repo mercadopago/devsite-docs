@@ -1,6 +1,6 @@
 # Transações via Checkout Transparente
 
-Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poderá adicioná-lo ao `header` da requisição de pagamento (`/v1/payments`) ao criar uma transação junto ao Mercado Pago.
+Após receber o seu ID referente ao `PLATFORM_ID` de sua plataforma, você poderá adicioná-lo ao _header_ da requisição de pagamento (`/v1/payments`) ao criar uma transação junto ao Mercado Pago.
 
 Exemplo:
 
@@ -78,8 +78,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "zip_code": "CEP. Exemplo: 95630000",
                 "street_name": "Nome da rua. Exemplo: São Luiz",
                 "street_number": "Número. Exemplo: 15",
-                "floor": "",
-                "apartment": ""
+                "floor": "Andar (caso seja apartamento). Exemplo: Segundo",
+                "apartment": "Número do apartamento (caso seja apartamento). Exemplo: 93"
             }
         }
     }

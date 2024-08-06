@@ -1,10 +1,10 @@
-# Modelo de pago - Boleto Bancario
+# Modelo de pagamento - Pix
 
-Por defecto, el período de vencimiento para pagos mediante boleto bancario es de 3 días. Sin embargo, es posible cambiar la configuración en el momento de la creación, utilizando el campo `date_of_expiration` en la solicitud de creación del pago, definiendo un período entre 1 y 30 días a partir de la fecha de emisión del boleto.
+Por padrão, a data de vencimento para pagamentos via Pix é de 24 horas, mas você pode alterá-lo enviando o campo `date_of_expiration` na solicitação de criação de pagamento. É recomendado que você defina um período mínimo de 30 minutos para expiração.
 
-Para utilizar este campo, es necesario seguir el formato de fecha ISO 8601: yyyy-MM-dd'T'HH:mm:ssz.
+Para utilizar esse campo, é necessário seguir o formato de data ISO 8601: yyyy-MM-dd'T'HH:mm:ssz.
 
-Ejemplo:
+Exemplo:
 
 ```curl
 "date_of_expiration": "2023-01-28T22:59:59.000-04:00"
@@ -22,26 +22,26 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "capture": true,
     "binary_mode": false,
     "sponsor_id": {{ID de su cuenta Mercado Pago referente a su plataforma}},
-    "payment_method_id": "bolbradesco",
+    "payment_method_id": "pix",
     "date_of_expiration": "2023-02-28T22:59:59.000-04:00",
     "external_reference": "Identificador de la plataforma",
     "notification_url": "{{notification_url}}",
     "description": "Descripción del producto del vendedor",
     "payer": {
-        "first_name": "Nombre. Ejemplo: John",
-        "last_name": "Apellido. Ejemplo: Jones",
+        "first_name": "Nombre",
+        "last_name": "Apellido",
         "email": "test_user_{{$timestamp}}@testuser.com",
         "identification": {
             "type": "CPF",
             "number": "19119119100"
         },
         "address": {
-            "zip_code": "Código postal. Ejemplo: 06233-200",
-            "street_name": "Nombre de la calle. Ejemplo: Av. das Nações Unidas",
-            "street_number": "Número de la calle. Ejemplo: 3003",
-            "neighborhood": "Barrio. Ejemplo: Bonfim",
-            "city": "Ciudad. Ejemplo: Osasco",
-            "federal_unit": "UF. Ejemplo: SP"
+            "zip_code": "06233-200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
         }
     },
     "additional_info": {
@@ -71,9 +71,9 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "number": "987654321"
             },
             "address": {
-                "zip_code": "Código postal. Ejemplo: 06233-200",
-                "street_name": "Nombre de la calle. Ejemplo: Av. das Nações Unidas",
-                "street_number": "Número. Ejemplo: 3003"
+                "zip_code": "06233-200",
+                "street_name": "Av. das Nações Unidas",
+                "street_number": "3003"
             },
             "registration_date": "2013-08-06T09:25:04.000-03:00"
         },
@@ -81,9 +81,9 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "express_shipment": "0",
             "pick_up_on_seller": "1",
             "receiver_address": {
-                "zip_code": "Código postal. Ejemplo: 95630000",
-                "street_name": "Nombre de la calle. Ejemplo: São Luiz",
-                "street_number": "Número. Ejemplo: 15",
+                "zip_code": "95630000",
+                "street_name": "São Luiz",
+                "street_number": "15",
                 "floor": "",
                 "apartment": ""
             }

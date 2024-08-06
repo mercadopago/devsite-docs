@@ -1,8 +1,8 @@
-# Payment model - Bank Slip
+# Modelo de pagamento - Pix
 
-By default, the due date for payments via bank slip is 3 days. However, it is possible to change this setting at the time of creation by using the `date_of_expiration` field in the payment creation request, defining a period between 1 and 30 days from the issue date of the bank slip.
+By default, the expiration date for payments via Pix is 24 hours, but you can change it by sending the `date_of_expiration` field in the payment creation request. It is recommended that you set a minimum expiration period of 30 minutes.
 
-To use this field, it is necessary to follow the ISO 8601 date format: yyyy-MM-dd'T'HH:mm:ssz.
+To use this field, you need to follow the ISO 8601 date format: yyyy-MM-dd'T'HH:mm:ssz.
 
 Example:
 
@@ -22,26 +22,26 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "capture": true,
     "binary_mode": false,
     "sponsor_id": {{ID of your Mercado Pago account related to your platform}},
-    "payment_method_id": "bolbradesco",
+    "payment_method_id": "pix",
     "date_of_expiration": "2023-02-28T22:59:59.000-04:00",
     "external_reference": "Platform identifier",
     "notification_url": "{{notification_url}}",
     "description": "Seller's product description",
     "payer": {
-        "first_name": "Name. Example: John",
-        "last_name": "Last name. Example: Jones",
+        "first_name": "Name",
+        "last_name": "Last name",
         "email": "test_user_{{$timestamp}}@testuser.com",
         "identification": {
             "type": "CPF",
             "number": "19119119100"
         },
         "address": {
-            "zip_code": "Zip code. Example: 06233-200",
-            "street_name": "Street name. Example: Av. das Nações Unidas",
-            "street_number": "Number. Example: 3003",
-            "neighborhood": "Neighborhood. Example: Bonfim",
-            "city": "City. Example: Osasco",
-            "federal_unit": "UF. Example: SP"
+            "zip_code": "06233-200",
+            "street_name": "Av. das Nações Unidas",
+            "street_number": "3003",
+            "neighborhood": "Bonfim",
+            "city": "Osasco",
+            "federal_unit": "SP"
         }
     },
     "additional_info": {
@@ -61,8 +61,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             }
         ],
         "payer": {
-            "first_name": "Name. Example: John",
-            "last_name": "Last name. Example: Jones",
+            "first_name": "Name",
+            "last_name": "Last name",
             "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
@@ -71,9 +71,9 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "number": "987654321"
             },
             "address": {
-                "zip_code": "Zip code. Example: 06233-200",
-                "street_name": "Street name. Example: Av. das Nações Unidas",
-                "street_number": "Number. Example: 3003"
+                "zip_code": "06233-200",
+                "street_name": "Av. das Nações Unidas",
+                "street_number": "3003"
             },
             "registration_date": "2013-08-06T09:25:04.000-03:00"
         },
@@ -81,9 +81,9 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "express_shipment": "0",
             "pick_up_on_seller": "1",
             "receiver_address": {
-                "zip_code": "Zip code. Example: 95630000",
-                "street_name": "Street name. Example: São Luiz",
-                "street_number": "Number. Example: 15",
+                "zip_code": "95630000",
+                "street_name": "São Luiz",
+                "street_number": "15",
                 "floor": "",
                 "apartment": ""
             }

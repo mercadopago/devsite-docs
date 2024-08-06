@@ -1,36 +1,29 @@
-# Modelo de pago - Boleto Bancario
+# Transações via Checkout Transparente
 
-Por defecto, el período de vencimiento para pagos mediante boleto bancario es de 3 días. Sin embargo, es posible cambiar la configuración en el momento de la creación, utilizando el campo `date_of_expiration` en la solicitud de creación del pago, definiendo un período entre 1 y 30 días a partir de la fecha de emisión del boleto.
+Ao realizar uma requisição de pagamento (`/v1/payments`), basta atribuir o ID da sua conta Mercado Pago ao campo `sponsor_id` no corpo (_body_) da requisição.
 
-Para utilizar este campo, es necesario seguir el formato de fecha ISO 8601: yyyy-MM-dd'T'HH:mm:ssz.
-
-Ejemplo:
-
-```curl
-"date_of_expiration": "2023-01-28T22:59:59.000-04:00"
-```
+Exemplo:
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
---header 'x-platform-id: {{PLATFORM_ID proporcionado por el equipo de Partners}}' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "transaction_amount": 100,
     "installments": 1,
-    "statement_descriptor": "Tienda del vendedor",
+    "statement_descriptor": "Loja do seller",
     "capture": true,
     "binary_mode": false,
-    "sponsor_id": {{ID de su cuenta Mercado Pago referente a su plataforma}},
-    "payment_method_id": "bolbradesco",
-    "date_of_expiration": "2023-02-28T22:59:59.000-04:00",
+    "sponsor_id": "{{ID de su cuenta Mercado Pago referente a su plataforma}}",
+    "payment_method_id": "master",
+    "token": "{{CARD_TOKEN_ID}}",
     "external_reference": "Identificador de la plataforma",
     "notification_url": "{{notification_url}}",
     "description": "Descripción del producto del vendedor",
     "payer": {
         "first_name": "Nombre. Ejemplo: John",
         "last_name": "Apellido. Ejemplo: Jones",
-        "email": "test_user_{{$timestamp}}@testuser.com",
+        "email": "test_user_1677270314@testuser.com",
         "identification": {
             "type": "CPF",
             "number": "19119119100"
@@ -61,8 +54,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             }
         ],
         "payer": {
-            "first_name": "Nombre",
-            "last_name": "Apellido",
+            "first_name": "Nome. Exemplo: John",
+            "last_name": "Sobrenome. Exemplo: John",
             "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
@@ -89,5 +82,5 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             }
         }
     }
-}'
+ }'
 ```

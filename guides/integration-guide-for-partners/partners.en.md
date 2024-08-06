@@ -36,19 +36,19 @@ MercadoPago.js is responsible for the necessary flows to obtain the required inf
   <fieldset>
     <ul>
       <li>
-        <label for="cardNumber">Card Number:</label>
+        <label for="cardNumber">Card number:</label>
         <input type="text" name="cardNumber" id="form-checkout__cardNumber" />
       </li>
       <li>
-        <label for="cardExpirationMonth">Expiration Month:</label>
+        <label for="cardExpirationMonth">Expiration month:</label>
         <input type="text" name="cardExpirationMonth" id="form-checkout__cardExpirationMonth" value="12" />
       </li>
       <li>
-        <label for="cardExpirationYear">Expiration Year:</label>
+        <label for="cardExpirationYear">Expiration year:</label>
         <input type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear" value="24" />
       </li>
       <li>
-        <label for="cardholderName">Cardholder Name:</label>
+        <label for="cardholderName">Cardholder name:</label>
         <input type="text" name="cardholderName" id="form-checkout__cardholderName" value="APRO" />
       </li>
       <li>
@@ -56,7 +56,7 @@ MercadoPago.js is responsible for the necessary flows to obtain the required inf
         <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" value="test_user_60077763@testuser.com" />
       </li>
       <li>
-        <label for="securityCode">Security Code:</label>
+        <label for="securityCode">Security code:</label>
         <input type="text" name="securityCode" id="form-checkout__securityCode" value="123" />
       </li>
       <li>
@@ -64,11 +64,11 @@ MercadoPago.js is responsible for the necessary flows to obtain the required inf
         <select name="issuer" id="form-checkout__issuer"></select>
       </li>
       <li>
-        <label for="identificationType">Identification Type:</label>
+        <label for="identificationType">Identification type:</label>
         <select name="identificationType" id="form-checkout__identificationType"></select>
       </li>
       <li>
-        <label for="identificationNumber">Identification Number:</label>
+        <label for="identificationNumber">Identification number:</label>
         <input type="text" name="identificationNumber" id="form-checkout__identificationNumber" value="12345678909" />
       </li>
       <li>
@@ -96,7 +96,7 @@ const cardForm = mp.cardForm({
     id: "form-checkout",
     cardholderName: {
       id: "form-checkout__cardholderName",
-      placeholder: "Cardholder Name",
+      placeholder: "Cardholder name",
     },
     cardholderEmail: {
       id: "form-checkout__cardholderEmail",
@@ -104,19 +104,19 @@ const cardForm = mp.cardForm({
     },
     cardNumber: {
       id: "form-checkout__cardNumber",
-      placeholder: "Card Number",
+      placeholder: "Card number",
     },
     cardExpirationMonth: {
       id: "form-checkout__cardExpirationMonth",
-      placeholder: "Expiration Month",
+      placeholder: "Expiration month",
     },
     cardExpirationYear: {
       id: "form-checkout__cardExpirationYear",
-      placeholder: "Expiration Year",
+      placeholder: "Expiration year",
     },
     securityCode: {
       id: "form-checkout__securityCode",
-      placeholder: "Security Code",
+      placeholder: "Security code",
     },
     installments: {
       id: "form-checkout__installments",
@@ -124,20 +124,20 @@ const cardForm = mp.cardForm({
     },
     identificationType: {
       id: "form-checkout__identificationType",
-      placeholder: "Identification Type",
+      placeholder: "Identification type",
     },
     identificationNumber: {
       id: "form-checkout__identificationNumber",
-      placeholder: "Identification Number",
+      placeholder: "Identification number",
     },
     issuer: {
       id: "form-checkout__issuer",
-      placeholder: "Issuer Bank",
+      placeholder: "Issuer bank",
     },
   },
   callbacks: {
     onFormMounted: error => {
-      if (error) return console.warn("Form Mounted handling error: ", error);
+      if (error) return console.warn("Form mounted handling error: ", error);
       console.log("Form mounted");
     },
     onSubmit: event => {
@@ -164,8 +164,8 @@ const cardForm = mp.cardForm({
           issuer_id,
           payment_method_id,
           transaction_amount: Number(amount),
-          installments: Number(installments),
-          description: "Product Description",
+          installments: Number (installments),
+          description: "Product description",
           payer: {
             email,
             identification: {
@@ -197,4 +197,4 @@ const cardForm = mp.cardForm({
 > Considerações
 >
 > If you are using SDK JS V1, you will need to migrate to [SDK JS V2](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
-**Practical example for tokenization with JS V2**: [Tokenization - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).
+> **Practical example for tokenization with JS V2**: [Tokenization - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).

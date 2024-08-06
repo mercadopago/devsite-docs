@@ -1,12 +1,11 @@
-# Transacciones a través del Checkout Transparente
+# Transações via Checkout Transparente
 
-Después de recibir tu ID correspondiente al `PLATFORM_ID` de tu plataforma, podrás añadirlo al `header` de la solicitud de pago (`/v1/payments`) al crear una transacción con Mercado Pago.
+Ao realizar uma requisição de pagamento (`/v1/payments`), basta atribuir o ID da sua conta Mercado Pago ao campo `sponsor_id` no corpo (_body_) da requisição.
 
-Ejemplo:
+Exemplo:
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
---header 'x-platform-id: {{PLATFORM_ID provided by the Partners team}}' \
 --header 'Authorization: Bearer {{ACCESS_TOKEN}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -15,31 +14,31 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "statement_descriptor": "Seller's store",
     "capture": true,
     "binary_mode": false,
-    "sponsor_id": {{ID of your Mercado Pago account related to your platform.}},
-    "payment_method_id": "{{payment_method_id}}",
-    "token": {{card_token_id}},
+    "sponsor_id": "{{ID of your Mercado Pago account related to your platform}}",
+    "payment_method_id": "master",
+    "token": "{{CARD_TOKEN_ID}}",
     "external_reference": "Platform identifier",
     "notification_url": "{{notification_url}}",
     "description": "Seller's product description",
     "payer": {
         "first_name": "Name. Example: John",
         "last_name": "Last name. Example: Jones",
-        "email": "test_user_1677272335@testuser.com",
+        "email": "test_user_1677270314@testuser.com",
         "identification": {
-            "type": "Type. Example: CPF",
-            "number": "Document number. Example: 19119119100"
+            "type": "CPF",
+            "number": "19119119100"
         },
         "address": {
             "zip_code": "Zip code. Example: 06233-200",
             "street_name": "Street name. Example: Av. das Nações Unidas",
-            "street_number": "Street number. Example: 3003",
+            "street_number": "Number. Example: 3003",
             "neighborhood": "Neighborhood. Example: Bonfim",
             "city": "City. Example: Osasco",
             "federal_unit": "UF. Example: SP"
         }
     },
     "additional_info": {
-        "referral_url": "Referral URL. Example: www.sellertest123.com",
+        "referral_url": "www.sellertest123.com",
         "drop_shipping": true,
         "delivery_promise": "2022-11-20",
         "contrated_plan": "premium",
@@ -49,7 +48,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "title": "Seller's product",
                 "description": "Description of the seller's product",
                 "picture_url": null,
-                "category_id": "Example: electronics",
+                "category_id": "electronics",
                 "quantity": 1,
                 "unit_price": 100.00
             }
@@ -61,8 +60,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
             "phone": {
-                "area_code": "Area code. Example: 11",
-                "number": "Phone number. Example: 987654321"
+                "area_code": "11",
+                "number": "987654321"
             },
             "address": {
                 "zip_code": "Zip code. Example: 06233-200",
@@ -75,13 +74,13 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "express_shipment": "0",
             "pick_up_on_seller": "1",
             "receiver_address": {
-                "zip_code": "Zip code. Example: 95630000",
-                "street_name": "Street name. Example: São Luiz",
-                "street_number": "Street number. Example: 15",
-                "floor": "Floor (if it's an apartment). Example: Second",
-                "apartment": "Apartment number (if it's an apartment). Example: 93"
+                "zip_code": "95630000",
+                "street_name": "São Luiz",
+                "street_number": "15",
+                "floor": "",
+                "apartment": ""
             }
         }
     }
-}'
+ }'
 ```
