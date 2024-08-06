@@ -14,19 +14,6 @@ The minimum required fields to send are: `token`, `transaction_amount`, `install
 >
 > For more information on how to send recurring payment information to the [v1/payments](/developers/en/reference/payments/_payments/post) endpoint with the aim of increasing the approval rate for these types of payments, visit the [Automatic payments messaging](/developers/en/docs/automatic-payments/recurring-charges/subscription-messaging) documentation.
 
-------------
-----[mlc]----
-
-> WARNING
->
-> Important
->
-> For more information on how to send recurring payment information to the [v1/payments](/developers/en/reference/payments/_payments/post) endpoint with the aim of increasing the approval rate for these types of payments, visit the [Automatic payments messaging](/developers/en/docs/automatic-payments/recurring-charges/subscription-messaging) documentation.
-> <br><br>
-> For transactions in **Chile (MLC)**, item values must be whole numbers. That is, **decimal places cannot be used**.
-
-------------
-
 Two flows should be considered for saving the customer's card data:
 
 ----[mlb]----
@@ -879,6 +866,16 @@ curl --location --request POST 'https://api.mercadopago.com/v1/card_tokens' \
 ## Create charges
 
 Use the previously generated token to register the payment, indicating the customer ID associated with the card.
+
+----[mlc]----
+
+> WARNING
+>
+> Important
+>
+> The item values must be whole numbers. In other words, **decimal places cannot be used**.
+
+------------
 
 [[[
 ```php
