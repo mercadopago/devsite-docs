@@ -52,7 +52,7 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec, mercadocredito
+available_payments: credit, debit, mercadopago, boleto, pix, pec, cuotas_sin_tarjeta
 
 ---
 ------------
@@ -60,7 +60,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec, mercadocredito
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm, mercadocredito
+available_payments: credit, debit, mercadopago, efectivo, atm, cuotas_sin_tarjeta
 
 ----
 ------------
@@ -68,7 +68,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm, mercadocredito
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm, mercadocredito
+available_payments: credit, debit, mercadopago, efectivo, atm, cuotas_sin_tarjeta_mlm
 
 ----
 ------------
@@ -76,7 +76,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm, mercadocredito
 ----[mlu]---- 
 
 ---
-available_payments: credit, efectivo, mercadocredito
+available_payments: credit, efectivo, cuotas_sin_tarjeta
 
 ----
 ------------
@@ -84,7 +84,7 @@ available_payments: credit, efectivo, mercadocredito
 ----[mco]---- 
 
 ---
-available_payments: mercadopago, pse, credit, debit, efectivo, mercadocredito
+available_payments: mercadopago, pse, credit, debit, efectivo, cuotas_sin_tarjeta
 
 ----
 ------------
@@ -92,7 +92,7 @@ available_payments: mercadopago, pse, credit, debit, efectivo, mercadocredito
 ----[mlc]---- 
 
 ---
-available_payments: mercadopago, credit, debit, mercadocredito
+available_payments: mercadopago, credit, debit, cuotas_sin_tarjeta
 
 ----
 ------------
@@ -100,7 +100,7 @@ available_payments: mercadopago, credit, debit, mercadocredito
 ----[mpe]---- 
 
 ---
-available_payments: mercadopago, atm, credit, debit, mercadocredito
+available_payments: mercadopago, atm, credit, debit, cuotas_sin_tarjeta
 
 ----
 ------------
