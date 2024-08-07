@@ -71,7 +71,7 @@ Para hacerlo, sigue el paso a paso a continuación:
 | Alertas de fraude luego del procesamiento de un pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout PRO |
 | Creación de reclamos y reembolsos | Reclamos | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----MP Point------------<br>Código QR<br>Wallet Connect |
 | Recuperación y actualización información de tarjetas dentro de Mercado Pago. | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
-| Creación de pedidos, su cierre o su expiración. |  Órdenes comerciales | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
+| Creación, actualización o cierre de órdenes comerciales |  Órdenes comerciales | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
 | Apertura de contracargos, cambios de status y modificaciones referentes a las liberaciones de dinero.   |   Contracargos | `topic_chargebacks_wh`  | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------ <br>Checkout Bricks |
 
 
@@ -778,23 +778,31 @@ Luego de responder la notificación, confirmando su recibimiento, puedes obtener
 
 ------------
 
-En el caso de las alertas de fraude, específicamente, no entregues el pedido, y utiliza la [API de Cancelaciones](/developers/es/reference/chargebacks/_payments_payment_id/put) para realizar su cancelación.
-
-En la notificación recibirás un `JSON` con la siguiente información que contiene el payment id para realizar la cancelación.
-
-```json
-
-
- "description": ".....",
- "merchant_order": 4945357007,
- "payment_id": 23064274473
-
-```
-
-> NOTE
->
-> Importante
->
-> También puedes obtener más información sobre la orden utilizando la API [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get).
-
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado.
+
+## Panel de notificaciones
+
+El panel de notificaciones es una herramienta que permite visualizar los eventos disparados sobre una determinada integración, verificar el estado de las notificaciones, y obtener información detallada sobre esos eventos. 
+
+Este Panel será exhibido una vez que hayas configurado tus notificaciones Webhooks, y puedes acceder a él cuando desees, haciendo clic en **Webhooks** dentro de Tus integraciones.
+
+Entre la información disponible en este panel, encontrarás el porcentaje de notificaciones entregadas, así como una visión rápida de cuáles son las URLs y eventos configurados. 
+
+Además, encontrarás una lista completa de las últimas notificaciones enviadas y sus detalles, como **estado de la entrega** (exitoso o fallido), **acción** (acción asociada al evento disparado), **evento** (tipo de evento disparado), y **fecha y hora**.  Si lo deseas, es posible filtrar estos resultados exhibidos por **estado de la entrega** y por **período**.
+
+![panel de notificaciones webhooks](/images/dashboard/notification-dashboard-es.png)
+
+### Detalles del evento
+
+Al hacer clic en una de las notificaciones listadas, podrás acceder a los detalles del evento. Esta sección proporciona mayor información y permite recuperar datos perdidos en caso de fallas en la entrega de la notificación para mantener tu sistema actualizado.
+ * **Status:** Estado del evento junto con el código de éxito o error correspondiente.
+ * **Evento:** Tipo de evento disparado, en función de los tópicos seleccionados durante la configuración de las notificaciones.
+ * **Tipo:** Tópico al que pertenece el evento disparado, en función de la selección hecha durante la configuración.
+ * **Fecha y hora del disparo:** Fecha y hora en la que fue disparado el evento.
+ * **Descripción:** Descripción detallada del evento.
+ * **ID del disparo:** Identificador único de la notificación enviada.
+ * **Requisición:** JSON del llamado enviado como notificación. 
+
+![detalles de notificaciones enviadas](/images/dashboard/notification-details-dashboard-es.png)
+
+En caso de una falla en la entrega de la notificación, podrás conocer cuáles fueron los motivos y rectificar la información necesaria para evitar futuros problemas.

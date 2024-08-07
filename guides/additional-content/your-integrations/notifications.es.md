@@ -17,7 +17,7 @@ La activación de estos tópicos dependerá de la solución de Mercado Pago que 
 | Alertas de fraude luego del procesamiento de un pedido | Alertas de fraude | `stop_delivery_op_wh` / `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout PRO |
 | Creación de reclamos y reembolsos | Reclamos | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----MP Point------------<br>Código QR<br>Wallet Connect |
 | Recuperación y actualización información de tarjetas dentro de Mercado Pago. | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
-| Creación de pedidos, su cierre o su expiración. |  Órdenes comerciales | `topic_merchant_order_wh` / `merchant_order` | Checkout Pro<br>Código QR  |
+| Creación, actualización o cierre de órdenes comerciales |  Órdenes comerciales | `topic_merchant_order_wh` / `merchant_order` | Checkout Pro<br>Código QR  |
 | Apertura de contracargos, cambios de status y modificaciones referentes a las liberaciones de dinero.   |   Contracargos | `topic_chargebacks_wh` / `chargebacks`  | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------ <br>Checkout Bricks |
 
 
