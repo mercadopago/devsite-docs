@@ -2039,9 +2039,9 @@
                         {
                           "title": "2034",
                           "description": {
-                            "en": "Invalid users involved 2041 – GET to API APPLICATION fail. - If this error appears, verify the users involved and try again.",
-                            "es": "Invalid users involved 2041 – GET to API APPLICATION fail. - Si aparece este error, verifique los usuarios involucrados y vuelva a intentarlo.",
-                            "pt": "Invalid users involved 2041 – GET to API APPLICATION fail. - Caso esse erro apareça, verifique os usuários envolvidos e tente novamente."
+                            "en": "Invalid users involved. – If this error appears, ensure that all involved users are either productive or test users. Additionally, verify that the sponsor_id (if applicable) is correct and try again.",
+                            "es": "Invalid users involved. – Si aparece este error, asegúrese de que todos los usuarios involucrados sean productivos o de prueba. Además, verifique que el sponsor_id (si corresponde) sea correcto e intente nuevamente.",
+                            "pt": "Invalid users involved. – Se esse erro aparecer, certifique-se de que os usuários envolvidos são todos produtivos ou todos de teste. Além disso, verifique se o sponsor_id (se aplicável) está correto e tente novamente."
                           }
                         },
                         {
@@ -2101,6 +2101,14 @@
                           }
                         },
                         {
+                          "title": "2198",
+                          "description": {
+                            "en": "Invalid test user email. - This error occurs when the payer.email attribute is sent using a non-test email while you are in a testing environment (e.g., using an email @testuser.com). If you encounter this error, check that you are indeed in a testing environment and, if so, use an email as specified.",
+                            "es": "Invalid test user email. -  Este error ocurre cuando el atributo payer.email se envía utilizando un correo electrónico que no es de prueba mientras se encuentra en un entorno de prueba (por ejemplo, utilizando un correo electrónico @testuser.com). Si encuentra este error, verifique que realmente se encuentre en un entorno de prueba y, de ser así, utilice un correo electrónico como se especifica.",
+                            "pt": "Invalid test user email. - esse erro ocorre quando o atributo payer.email é enviado usando um e-mail que não é de teste enquanto você está em um ambiente de teste (por exemplo, usando um e-mail @testuser.com). Se você encontrar esse erro, verifique se você está realmente em um ambiente de teste e, se estiver, use um e-mail conforme especificado."
+                          }
+                        },
+                        {
                           "title": "3000",
                           "description": {
                             "en": "You must provide your cardholder_name with your card data. - If this error occurs, include the cardholder_name in your request.",
@@ -2119,9 +2127,9 @@
                         {
                           "title": "3003",
                           "description": {
-                            "en": "Invalid card_token_id. - Verify the card_token_id and try again if this error appears.",
-                            "es": "Invalid card_token_id. - Verifique el card_token_id e intente nuevamente si aparece este error.",
-                            "pt": "Invalid card_token_id. - Verifique o card_token_id e tente novamente se esse erro aparecer."
+                            "en": "Invalid card_token_id. - Ensure that the card_token_id is correct and has not been previously used. Try again.",
+                            "es": "Invalid card_token_id. - Asegúrese de que el card_token_id sea correcto y no haya sido utilizado anteriormente. Intente nuevamente.",
+                            "pt": "Invalid card_token_id. - Certifique-se de que o card_token_id está correto e não foi utilizado anteriormente. Tente novamente."
                           }
                         },
                         {
@@ -2410,14 +2418,6 @@
                             "en": "Payer attribute is malformed. - Verify the payer attribute is correctly formatted if this error appears.",
                             "es": "Payer attribute is malformed. - Verifique que el atributo payer esté correctamente formateado si aparece este error.",
                             "pt": "Payer attribute is malformed. - Verifique se o atributo payer está corretamente formatado se esse erro aparecer."
-                          }
-                        },
-                        {
-                          "title": "4007",
-                          "description": {
-                            "en": "Site_id attribute can't be null. - Provide the site_id attribute if this error occurs.",
-                            "es": "Site_id attribute can't be null. - Proporcione el atributo site_id si ocurre este error.",
-                            "pt": "Site_id attribute can't be null. - Forneça o atributo site_id se esse erro ocorrer."
                           }
                         },
                         {
