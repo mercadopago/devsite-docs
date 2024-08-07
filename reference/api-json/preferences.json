@@ -285,8 +285,8 @@
                             "example": "Example Street",
                             "description": {
                               "en": "Street name.",
-                              "pt": "Rua.",
-                              "es": "Calle."
+                              "pt": "Nome da rua.",
+                              "es": "Nombre de la calle."
                             }
                           },
                           "street_number": {
