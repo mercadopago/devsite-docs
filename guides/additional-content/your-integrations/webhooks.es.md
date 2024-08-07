@@ -10,8 +10,8 @@ Para configurar notificaciones Webhooks, puedes elegir una de las opciones a con
 
 | Tipo de configuración | Descripción |
 |---|---|
-| [Configuración a través de Tus integraciones]() | Permite configurar notificaciones para varios tópicos, identificar cuentas distintas en caso de ser necesario, y validar el origen de la notificación utilizando una firma secreta (excepto en notificaciones para integraciones con Código QR). |
-| [Configuración durante la creación de pagos]() | Permite la configuración específica de notificaciones para cada pago. No está permitida para integraciones con Mercado Pago Point ni MP Delivery. |
+| [Configuración a través de Tus integraciones](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones) | Permite configurar notificaciones para varios tópicos, identificar cuentas distintas en caso de ser necesario, y validar el origen de la notificación utilizando una firma secreta (excepto en notificaciones para integraciones con Código QR). |
+| [Configuración durante la creación de pagos](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/webhooks#configuracinalcrearpagos) | Permite la configuración específica de notificaciones para cada pago. No está permitida para integraciones con Mercado Pago Point ni MP Delivery. |
 
 > WARNING
 >
@@ -19,7 +19,7 @@ Para configurar notificaciones Webhooks, puedes elegir una de las opciones a con
 >
 > Las URLs configuradas durante la creación de un pago tendrán prioridad por sobre aquellas configuradas a través de Tus integraciones.
 
-Una vez que las notificaciones sean configuradas, consulta las [acciones necesarias luego de recibir una notificación]() para validar que las mismas fueron debidamente recibidas.
+Una vez que las notificaciones sean configuradas, consulta las [acciones necesarias después de recibir una notificación](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/webhooks#accionesnecesariasdespusderecibirlanotificacin) para validar que las mismas fueron debidamente recibidas.
 
 
 ## Configuración a través de Tus integraciones
@@ -33,7 +33,7 @@ Puedes configurar notificaciones para cada una de tus aplicaciones directamente 
 >
 > Importante
 >
-> Este método de configuración no está disponible para integraciones con Código QR ni Suscripciones. Para configurar notificaciones con alguna de estas dos integraciones, utiliza el método [Configuración durante la creación de un pago]().
+> Este método de configuración no está disponible para integraciones con Código QR ni Suscripciones. Para configurar notificaciones con alguna de estas dos integraciones, utiliza el método [Configuración durante la creación de un pago](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/webhooks#configuracinalcrearpagos).
 
 
 ### 1. Indicar URLs de notificación y configurar eventos
@@ -79,7 +79,7 @@ Para hacerlo, sigue el paso a paso a continuación:
 >
 > Importante
 >
-> En caso de dudas sobre los tópicos a activar o los eventos que serán notificados, consulta la documentación [Información adicional sobre notificaciones](). 
+> En caso de dudas sobre los tópicos a activar o los eventos que serán notificados, consulta la documentación [Información adicional sobre notificaciones](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/additional-info). 
 
 5. Por último, haz clic en **Guardar**. Esto generará una **clave secreta** exclusiva para la aplicación, que permitirá validar la autenticidad de las notificaciones recibidas, garantizando que hayan sido enviadas por Mercado Pago. Ten en cuenta que esta clave generada no tiene plazo de caducidad y su renovación periódica no es obligatoria, aunque sí recomendada. Para hacerlo, basta con cliquear en el botón **Restablecer**. 
 
@@ -116,13 +116,10 @@ Mercado Pago siempre incluirá la clave secreta en las notificaciones Webhooks q
 Esta clave será enviada en el _header_ `x-signature`, que será similar al ejemplo debajo.
 
 ```x-signature
-c
+
 `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
 
 ```
-
-
-
 
 Para confirmar la validación, es necesario extraer la clave contenida en el *header* y compararla con la clave otorgada para tu aplicación en Tus integraciones. Esto podrá ser hecho siguiendo el paso a paso a continuación. Además, al final, disponibilizamos nuestros SDKs con ejemplos de códigos completos para facilitar el proceso.
 
@@ -695,7 +692,7 @@ Luego de realizar la configuración  necesaria, la notificación Webhooks será 
 >
 > Importante
 >
-> Los pagos de prueba, creados con credenciales de prueba, no enviarán notificaciones. La única vía para probar la recepción de notificaciones es mediante la [Configuración a través de Tus integraciones]().
+> Los pagos de prueba, creados con credenciales de prueba, no enviarán notificaciones. La única vía para probar la recepción de notificaciones es mediante la [Configuración a través de Tus integraciones](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
 
 ```json
 {
@@ -727,7 +724,7 @@ Luego de realizar la configuración  necesaria, la notificación Webhooks será 
 >
 > Importante
 >
-> Para conocer el formato de notificaciones para tópicos distintos a `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` y `topic_card_id_wh`, consulta [Información adicional sobre notificaciones]( ).
+> Para conocer el formato de notificaciones para tópicos distintos a `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` y `topic_card_id_wh`, consulta [Información adicional sobre notificaciones](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/additional-info).
 
 ## Acciones necesarias después de recibir la notificación
 
