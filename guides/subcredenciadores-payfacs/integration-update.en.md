@@ -81,7 +81,7 @@ payment.create({
         region_code_iso: 'BR',
         document_type: 'CNPJ',
         phone: '123456789',
-        url: 'www.rappi.com.br'
+        url: 'www.nomedofacilitador.com.br'
       }
     }
   },
@@ -126,7 +126,7 @@ $request = [
             "region_code" => "BR",
             "document_type" => "CNPJ",
             "phone" => "123123123",
-            "url" => "www.rappi.com.br"
+            "url" => "www.nomedofacilitador.com.br"
         ]
     ]
 ];
@@ -198,7 +198,7 @@ public class Main {
                     .regionCode("SP")
                     .documentType("CPF")
                     .phone("1234567890")
-                    .url("https://www.mercadopago.com").build()).build())
+                    .url("www.nomedofacilitador.com.br").build()).build())
             .payer(PaymentPayerRequest.builder()
                 .email("test_user_61213998@testuser.com").build()).build();
 
@@ -257,7 +257,7 @@ func main() {
 				RegionCode:        "BR-SC",
 				DocumentType:      "CNPJ",
 				Phone:             "123456789",
-				URL:               "www.rappi.com.br",
+				URL:               "www.nomedofacilitador.com.br",
 			},
 		},
 		Token:        "879a958bbed52608607ae70bed919e13",
@@ -309,7 +309,7 @@ var request = new PaymentCreateRequest
             RegionCode = "BR-SC",
             DocumentType = "CNPJ",
             Phone = "123456789",
-            Url = "www.rappi.com.br",
+            Url = "www.nomedofacilitador.com.br",
         },
     },
 };
@@ -317,72 +317,6 @@ var request = new PaymentCreateRequest
 var client = new PaymentClient();
 Payment payment = await client.CreateAsync(request);
 Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(payment));
-```
-```java
-package com.mercadopago;
-
-import com.mercadopago.client.MercadoPagoClient;
-import com.mercadopago.client.common.IdentificationRequest;
-import com.mercadopago.client.common.SubMerchant;
-import com.mercadopago.client.payment.*;
-import com.mercadopago.core.MPRequestOptions;
-import com.mercadopago.exceptions.MPApiException;
-import com.mercadopago.exceptions.MPException;
-import com.mercadopago.net.Headers;
-import com.mercadopago.resources.payment.Payment;
-
-import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.UUID;
-
-public class Main {
-    public static void main(String[] args) {
-        HashMap<String, String> headers = new HashMap<>();
-        headers.put(Headers.IDEMPOTENCY_KEY, UUID.randomUUID().toString());
-        MPRequestOptions requestOptions = MPRequestOptions
-                .builder()
-                .customHeaders(headers)
-                .accessToken("YOUR_ACCESS_TOKEN").build();
-
-        PaymentClient client = new PaymentClient();
-        PaymentCreateRequest createRequest =
-                PaymentCreateRequest.builder()
-                        .transactionAmount(new BigDecimal(100))
-                        .description("test_boleto")
-                        .paymentMethodId("master")
-                        .token("89494b4cec3c5d7d4cf3782d80a5aa54")
-                        .forwardData(PaymentForwardDataRequest.builder()
-                                .subMerchant(SubMerchant.builder()
-                                        .subMerchantId("345678")
-                                        .mcc("1234")
-                                        .country("BR")
-                                        .addressDoorNumber("123")
-                                        .zip("12345678")
-                                        .documentNumber("12345678901")
-                                        .city("Sao Paulo")
-                                        .addressStreet("Street")
-                                        .legalName("Business")
-                                        .regionCodeIso("SP")
-                                        .regionCode("SP")
-                                        .documentType("CPF")
-                                        .phone("1234567890")
-                                        .url("https://www.mercadopago.com").build()).build())
-                        .payer(PaymentPayerRequest.builder()
-                                .email("test_user_61213998@testuser.com").build())
-                        .build();
-
-        try {
-            Payment payment = client.create(createRequest, requestOptions);
-            System.out.println(payment.getId());
-        } catch (MPApiException ex) {
-            System.out.printf(
-                    "MercadoPago Error. Status: %s, Content: %s%n",
-                    ex.getApiResponse().getStatusCode(), ex.getApiResponse().getContent());
-        } catch (MPException ex) {
-            ex.printStackTrace();
-        }
-    }
-}
 ```
 ]]]
 
