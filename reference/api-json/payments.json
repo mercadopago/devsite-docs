@@ -2095,9 +2095,9 @@
                         {
                           "title": "2131",
                           "description": {
-                            "en": "Cannot infer Payment Method. - Ensure that the payment method information is complete and accurate if this error appears.",
-                            "es": "Cannot infer Payment Method. - Asegúrese de que la información del método de pago esté completa y sea precisa si aparece este error.",
-                            "pt": "Cannot infer Payment Method. - Certifique-se de que as informações do método de pagamento estão completas e precisas se esse erro aparecer."
+                            "en": "Cannot infer Payment Method. - Verify that the `payment_method` field is correctly filled out and matches the payment method used, as well as the number of installments (`installments`).",
+                            "es": "Cannot infer Payment Method. - Verifique que el campo `payment_method` esté correctamente completado y coincida con el medio de pago utilizado, así como el número de cuotas (`installments`).",
+                            "pt": "Cannot infer Payment Method. - Verifique se o campo `payment_method` está preenchido corretamente e está de acordo com o meio de pagamento utilizado, assim como o número de parcelas (`installments`)."
                           }
                         },
                         {
@@ -2479,9 +2479,9 @@
                         {
                           "title": "4020",
                           "description": {
-                            "en": "Notification_url attribute must be a valid URL. - If this error occurs, provide a valid URL for the notification_url attribute.",
-                            "es": "Notification_url attribute must be a valid URL. - Si ocurre este error, proporcione una URL válida para el atributo notification_url.",
-                            "pt": "Notification_url attribute must be a valid URL. - Se esse erro ocorrer, forneça uma URL válida para o atributo notification_url."
+                            "en": "Notification_url attribute must be a valid URL. - If this error occurs, provide a valid URL for the `notification_url` attribute that starts with `https://`.",
+                            "es": "Notification_url attribute must be a valid URL. - Si ocurre este error, proporcione una URL válida para el atributo `notification_url` que comience con `https://`.",
+                            "pt": "Notification_url attribute must be a valid URL. - Se esse erro ocorrer, forneça uma URL válida para o atributo `notification_url` que comece com `https://`."
                           }
                         },
                         {
