@@ -30,10 +30,10 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "payer": {
         "first_name": "Name. Example: John",
         "last_name": "Last name. Example: Jones",
-        "email": "test_user_{{$timestamp}}@testuser.com",
+        "email": "Example: test_user_{{$timestamp}}@testuser.com",
         "identification": {
-            "type": "CPF",
-            "number": "19119119100"
+            "type": "Document type. Example: CPF",
+            "number": "Document number. Example: 19119119100"
         },
         "address": {
             "zip_code": "Zip code. Example: 06233-200",
@@ -41,11 +41,11 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "street_number": "Number. Example: 3003",
             "neighborhood": "Neighborhood. Example: Bonfim",
             "city": "City. Example: Osasco",
-            "federal_unit": "UF. Example: SP"
+            "federal_unit": "Federal unit. Example: SP"
         }
     },
     "additional_info": {
-        "referral_url": "www.sellertest123.com",
+        "referral_url": "Referral USP. Example: www.sellertest123.com",
         "drop_shipping": true,
         "delivery_promise": "2022-11-20",
         "contrated_plan": "premium",
@@ -67,8 +67,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
             "phone": {
-                "area_code": "11",
-                "number": "987654321"
+                "area_code": "Area code. Example: 11",
+                "number": "Number. Example: 987654321"
             },
             "address": {
                 "zip_code": "Zip code. Example: 06233-200",
@@ -84,8 +84,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "zip_code": "Zip code. Example: 95630000",
                 "street_name": "Street name. Example: São Luiz",
                 "street_number": "Number. Example: 15",
-                "floor": "",
-                "apartment": ""
+                "floor": "Floor (if it's an apartment). Example: Second",
+                "apartment": "Apartment number (if it's an apartment). Example: 93"
             }
         }
     }

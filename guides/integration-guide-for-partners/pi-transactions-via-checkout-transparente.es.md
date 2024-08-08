@@ -39,7 +39,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
         }
     },
     "additional_info": {
-        "referral_url": "www.sellertest123.com",
+        "referral_url": "URL de referencia. Ejemplo: www.sellertest123.com",
         "drop_shipping": true,
         "delivery_promise": "2022-11-20",
         "contrated_plan": "premium",
@@ -49,7 +49,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "title": "Produto do seller",
                 "description": "Descripción del producto del vendedor",
                 "picture_url": null,
-                "category_id": "electronics",
+                "category_id": "Categoría. Ejemplo: electronics",
                 "quantity": 1,
                 "unit_price": 100.00
             }
@@ -62,7 +62,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
             "phone": {
                 "area_code": "Código de área. Ejemplo: 11",
-                "number": "Telefone. Ejemplo: 987654321"
+                "number": "Teléfono. Ejemplo: 987654321"
             },
             "address": {
                 "zip_code": "CEP. Ejemplo: 06233-200",

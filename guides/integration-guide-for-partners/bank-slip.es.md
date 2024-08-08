@@ -30,10 +30,10 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "payer": {
         "first_name": "Nombre. Ejemplo: John",
         "last_name": "Apellido. Ejemplo: Jones",
-        "email": "test_user_{{$timestamp}}@testuser.com",
+        "email": "Ejemplo: test_user_{{$timestamp}}@testuser.com",
         "identification": {
-            "type": "CPF",
-            "number": "19119119100"
+            "type": "Tipo de documento.",
+            "number": "Número del documento. Ejemplo: 19119119100"
         },
         "address": {
             "zip_code": "Código postal. Ejemplo: 06233-200",
@@ -45,7 +45,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
         }
     },
     "additional_info": {
-        "referral_url": "www.sellertest123.com",
+        "referral_url": "URL de referencia. Ejemplo: www.sellertest123.com",
         "drop_shipping": true,
         "delivery_promise": "2022-11-20",
         "contrated_plan": "premium",
@@ -55,20 +55,20 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "title": "Producto del vendedor",
                 "description": "Descripción del producto del vendedor",
                 "picture_url": null,
-                "category_id": "electronics",
+                "category_id": "Categoría. Ejemplo: electronics",
                 "quantity": 1,
                 "unit_price": 100.00
             }
         ],
         "payer": {
-            "first_name": "Nombre",
-            "last_name": "Apellido",
+            "first_name": "Nombre. Ejemplo: John",
+            "last_name": "Apellido. Ejemplo: Jones",
             "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
             "phone": {
-                "area_code": "11",
-                "number": "987654321"
+                "area_code": "Código de área. Ejemplo: 11",
+                "number": "Número del teléfono. Ejemplo: 987654321"
             },
             "address": {
                 "zip_code": "Código postal. Ejemplo: 06233-200",
@@ -84,8 +84,8 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "zip_code": "Código postal. Ejemplo: 95630000",
                 "street_name": "Nombre de la calle. Ejemplo: São Luiz",
                 "street_number": "Número. Ejemplo: 15",
-                "floor": "",
-                "apartment": ""
+                "floor": "Piso (si es un apartamento). Ejemplo: Segundo",
+                "apartment": "Número del apartamento (si es un apartamento). Ejemplo: 93"
             }
         }
     }

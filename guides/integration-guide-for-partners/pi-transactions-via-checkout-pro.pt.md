@@ -29,17 +29,17 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     "items": [
         {
             "id": "1234",
-            "currency_id": "BRL",
+            "currency_id": "Moeda. Exemplo: BRL",
             "title": "Produto",
-            "category_id": "entertainment",
+            "category_id": "Categoria. Exemplo: entertainment",
             "quantity": 1,
             "unit_price": 4
         },
         {
             "id": "1234",
-            "currency_id": "BRL",
+            "currency_id": "Moeda. Exemplo: BRL",
             "title": "Frete",
-            "category_id": "entertainment",
+            "category_id": "Categoria: entertainment",
             "quantity": 1,
             "unit_price": 1
         }

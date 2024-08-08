@@ -1,10 +1,10 @@
-# Modelo de pagamento - Pix
+# Modelo de pago - Pix
 
-Por padrão, a data de vencimento para pagamentos via Pix é de 24 horas, mas você pode alterá-lo enviando o campo `date_of_expiration` na solicitação de criação de pagamento. É recomendado que você defina um período mínimo de 30 minutos para expiração.
+Por defecto, la fecha de vencimiento para pagos a través de Pix es de 24 horas, pero puedes cambiarlo enviando el campo `date_of_expiration` en la solicitud de creación de pago. Se recomienda que definas un período mínimo de 30 minutos para la expiración.
 
-Para utilizar esse campo, é necessário seguir o formato de data ISO 8601: yyyy-MM-dd'T'HH:mm:ssz.
+Para utilizar este campo, es necesario seguir el formato de fecha ISO 8601: yyyy-MM-dd'T'HH:mm:ssz.
 
-Exemplo:
+Ejemplo:
 
 ```curl
 "date_of_expiration": "2023-01-28T22:59:59.000-04:00"
@@ -28,24 +28,24 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "notification_url": "{{notification_url}}",
     "description": "Descripción del producto del vendedor",
     "payer": {
-        "first_name": "Nombre",
-        "last_name": "Apellido",
+        "first_name": "Nombre. Ejemplo: John",
+        "last_name": "Apellido. Ejemplo: Jones",
         "email": "test_user_{{$timestamp}}@testuser.com",
         "identification": {
-            "type": "CPF",
-            "number": "19119119100"
+            "type": "Tipo de documento. Ejemplo: CPF",
+            "number": "Número del documento. Ejemplo: 19119119100"
         },
         "address": {
-            "zip_code": "06233-200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
+            "zip_code": "Código de área. CEP: 06233-200",
+            "street_name": "Nombre de la calle. Ejemplo: Av. das Nações Unidas",
+            "street_number": "Número. Ejemplo: 3003",
+            "neighborhood": "Barrio. Ejemplo: Bonfim",
+            "city": "Ciudad. Ejemplo: Osasco",
+            "federal_unit": "UF. Ejemplo: SP"
         }
     },
     "additional_info": {
-        "referral_url": "www.sellertest123.com",
+        "referral_url": "URL de referencia. Ejemplo: www.sellertest123.com",
         "drop_shipping": true,
         "delivery_promise": "2022-11-20",
         "contrated_plan": "premium",
@@ -55,25 +55,25 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "title": "Producto del vendedor",
                 "description": "Descripción del producto del vendedor",
                 "picture_url": null,
-                "category_id": "electronics",
+                "category_id": "Categoría. Ejemplo: electronics",
                 "quantity": 1,
                 "unit_price": 100.00
             }
         ],
         "payer": {
-            "first_name": "Nombre",
-            "last_name": "Apellido",
+            "first_name": "Nombre. Ejemplo: John",
+            "last_name": "Apellido. Ejemplo: Jones",
             "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
             "phone": {
-                "area_code": "11",
-                "number": "987654321"
+                "area_code": "Código de área. Ejemplo: 11",
+                "number": "Número de teléfono. Ejemplo: 987654321"
             },
             "address": {
-                "zip_code": "06233-200",
-                "street_name": "Av. das Nações Unidas",
-                "street_number": "3003"
+                "zip_code": "Código postal. Ejemplo: 06233-200",
+                "street_name": "Nombre de la calle. Ejemplo: Av. das Nações Unidas",
+                "street_number": "Número. Ejemplo: 3003"
             },
             "registration_date": "2013-08-06T09:25:04.000-03:00"
         },
@@ -81,11 +81,11 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "express_shipment": "0",
             "pick_up_on_seller": "1",
             "receiver_address": {
-                "zip_code": "95630000",
-                "street_name": "São Luiz",
-                "street_number": "15",
-                "floor": "",
-                "apartment": ""
+                "zip_code": "Código postal. Ejemplo: 95630000",
+                "street_name": "Nombre de la calle. Ejemplo: São Luiz",
+                "street_number": "Número. Ejemplo: 15",
+                "floor": "Piso (en caso de que sea un apartamento). Ejemplo: Segundo",
+                "apartment": "Número del apartamento (en caso de que sea un apartamento). Ejemplo: 93"
             }
         }
     }

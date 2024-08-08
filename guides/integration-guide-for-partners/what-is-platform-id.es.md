@@ -1,6 +1,6 @@
-### O que é o Platform ID?
+# ¿Qué es el Platform ID?
 
-O `platform_id` es una información utilizada para identificar las plataformas asociadas oficiales de Mercado Pago.
+El `platform_id` es una información utilizada para identificar las plataformas asociadas oficiales de Mercado Pago.
 
 Su aplicación consiste en asignar el ID proporcionado por el equipo de Partners en el _header_ de las solicitudes de pago, utilizando el campo `x-platform-id`.
 

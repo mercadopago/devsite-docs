@@ -1,4 +1,4 @@
-## What is the Platform ID?
+# What is the Platform ID?
 
 The `platform_id` is information used to identify the official partner platforms of Mercado Pago.
 

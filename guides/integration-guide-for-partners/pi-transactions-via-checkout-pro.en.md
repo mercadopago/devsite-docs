@@ -29,17 +29,17 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     "items": [
         {
             "id": "1234",
-            "currency_id": "BRL",
+            "currency_id": "Currency. Example: BRL",
             "title": "Produto",
-            "category_id": "entertainment",
+            "category_id": "Category. Example: entertainment",
             "quantity": 1,
             "unit_price": 4
         },
         {
             "id": "1234",
-            "currency_id": "BRL",
+            "currency_id": "Currency. Example: BRL",
             "title": "Freight",
-            "category_id": "entertainment",
+            "category_id": "Category. Example: entertainment",
             "quantity": 1,
             "unit_price": 1
         }
@@ -52,7 +52,7 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     },
     "shipments": {
         "receiver_address": {
-            "zip_code": "95630000",
+            "zip_code": "Zip code. Example: 95630000",
             "street_name": "Street name. Example: Av. das Nações Unidas",
             "street_number": "Street number. Example: 3003"
         }

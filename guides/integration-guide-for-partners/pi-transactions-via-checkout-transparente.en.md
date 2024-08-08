@@ -35,7 +35,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "street_number": "Street number. Example: 3003",
             "neighborhood": "Neighborhood. Example: Bonfim",
             "city": "City. Example: Osasco",
-            "federal_unit": "UF. Example: SP"
+            "federal_unit": "Federal unit. Example: SP"
         }
     },
     "additional_info": {
@@ -49,7 +49,7 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "title": "Seller's product",
                 "description": "Description of the seller's product",
                 "picture_url": null,
-                "category_id": "Example: electronics",
+                "category_id": "Category. Example: electronics",
                 "quantity": 1,
                 "unit_price": 100.00
             }

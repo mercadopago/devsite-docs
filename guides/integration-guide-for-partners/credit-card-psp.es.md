@@ -1,4 +1,4 @@
-# Modelo de pagamento Cartão de Crédito - PSP/Mensageria
+# Modelo de pago con tarjeta de crédito - PSP/Mensajería
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
@@ -18,24 +18,24 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "notification_url": "{{notification_url}}",
     "description": "[Tipo de producto][Código del producto][Descripción del producto][Código del productor][URL]",
     "payer": {
-        "first_name": "Nombre",
-        "last_name": "Apellido",
-        "email": "test_user_1677282230@testuser.com",
+        "first_name": "Nombre. Ejemplo: John",
+        "last_name": "Apellido. Ejemplo: Jones",
+        "email": "Ejemplo: test_user_1677282230@testuser.com",
         "identification": {
-            "type": "CPF",
-            "number": "19119119100"
+            "type": "Tipo de documento.",
+            "number": "Número. Ejemplo: 19119119100"
         },
         "address": {
-            "zip_code": "06233-200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
+            "zip_code": "Código postal. Ejemplo: 06233-200",
+            "street_name": "Nombre de la calle. Ejemplo: Av. das Nações Unidas",
+            "street_number": "Número. Ejemplo: 3003",
+            "neighborhood": "Barrio. Ejemplo: Bonfim",
+            "city": "Ciudad. Ejemplo: Osasco",
+            "federal_unit": "UF. Ejemplo: SP"
         }
     },
     "additional_info": {
-        "referral_url": "www.sellertest123.com",
+        "referral_url": "URL de referencia. Ejemplo: www.sellertest123.com",
         "drop_shipping": true,
         "delivery_promise": "2023-11-20",
         "contrated_plan": "premium",
@@ -45,25 +45,25 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "title": "Producto del vendedor",
                 "description": "Descripción del producto del vendedor",
                 "picture_url": null,
-                "category_id": "electronics",
+                "category_id": "Categoría. Ejemplo: electronics",
                 "quantity": 1,
                 "unit_price": 100.00
             }
         ],
         "payer": {
-            "first_name": "Nombre",
-            "last_name": "Apellido",
+            "first_name": "Nombre. Ejemplo: John",
+            "last_name": "Apellido. Ejemplo: Jones",
             "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
             "phone": {
-                "area_code": "11",
-                "number": "987654321"
+                "area_code": "Código da área. Ejemplo: 11",
+                "number": "Número. Ejemplo: 987654321"
             },
             "address": {
-                "zip_code": "06233-200",
-                "street_name": "Av. das Nações Unidas",
-                "street_number": "3003"
+                "zip_code": "Código postal. Ejemplo: 06233-200",
+                "street_name": "Nombre de la calle. Ejemplo: Av. das Nações Unidas",
+                "street_number": "Número. Ejemplo: 3003"
             },
             "registration_date": "2013-08-06T09:25:04.000-03:00"
         },
@@ -71,11 +71,11 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "express_shipment": "0",
             "pick_up_on_seller": "1",
             "receiver_address": {
-                "zip_code": "95630000",
-                "street_name": "São Luiz",
-                "street_number": "15",
-                "floor": "",
-                "apartment": ""
+                "zip_code": "Código postal. Ejemplo: 95630000",
+                "street_name": "Nombre de la calle. Ejemplo: São Luiz",
+                "street_number": "Número. Ejemplo: 15",
+                "floor": "Piso (si es un apartamento). Ejemplo: Segundo",
+                "apartment": "Número del apartamento (si es un apartamento). Ejemplo: 93"
             }
         }
     }

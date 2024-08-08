@@ -1,4 +1,4 @@
-# Modelo de pagamento Cartão de Crédito - Turismo/Travels
+# Payment model Credit Card - Tourism/Travels
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
@@ -18,24 +18,24 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
     "notification_url": "{{notification_url}}",
     "description": "Date (in the format dd/mm/yyyy) | Description of the passage",
     "payer": {
-        "first_name": "Name",
-        "last_name": "Last name",
-        "email": "test_user_1677282147@testuser.com",
+        "first_name": "Name. Example: John",
+        "last_name": "Last name. Example: Jones",
+        "email": "Example: test_user_1677282147@testuser.com",
         "identification": {
-            "type": "CPF",
-            "number": "19119119100"
+            "type": "Document type. Example: CPF",
+            "number": "Number. Example: 19119119100"
         },
         "address": {
-            "zip_code": "06233-200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
+            "zip_code": "Zip code. Example: 06233-200",
+            "street_name": "Nombre de la calle. Example: Av. das Nações Unidas",
+            "street_number": "Street number. Example: 3003",
+            "neighborhood": "Neighborhood. Example: Bonfim",
+            "city": "City. Example: Osasco",
+            "federal_unit": "Federal unit. Example: SP"
         }
     },
     "additional_info": {
-        "referral_url": "www.sellertest123.com",
+        "referral_url": "Example: www.sellertest123.com",
         "drop_shipping": false,
         "delivery_promise": "2022-11-20",
         "contrated_plan": "premium",
@@ -44,16 +44,16 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
                 "id": "1234",
                 "title": "Date (in the format dd/mm/yyyy) | Description of the passage",
                 "description": "Date (in the format dd/mm/yyyy) | Description of the passage",
-                "picture_url": "www.google.com",
+                "picture_url": "Example: www.google.com",
                 "category_id": "travels",
                 "category_descriptor": {
                     "passenger": {
-                        "first_name": "Name",
-                        "last_name": "Last name"
+                        "first_name": "Name. Example: John",
+                        "last_name": "Last name. Example: Jones"
                     },
                     "route": {
-                        "departure": "Osasco",
-                        "destination": "London",
+                        "departure": "Example: Osasco",
+                        "destination": "Example: Buenos Aires",
                         "departure_date_time": "2023-03-12T12:58:41.425-04:00",
                         "arrival_date_time": "2023-03-14T12:58:41.425-04:00",
                         "company": "Companhia"
@@ -64,19 +64,19 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             }
         ],
         "payer": {
-            "first_name": "Name",
-            "last_name": "Last name",
+            "first_name": "Name. Example: John",
+            "last_name": "Last name. Example: Jones",
             "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2019-10-25T19:30:00.000-03:00",
             "phone": {
-                "area_code": "11",
-                "number": "987654321"
+                "area_code": "Area code. Example: 11",
+                "number": "Number. Example: 987654321"
             },
             "address": {
-                "zip_code": "06233-200",
-                "street_name": "Av. das Nações Unidas",
-                "street_number": "3003"
+                "zip_code": "Zip code. Example: 06233-200",
+                "street_name": "Street name. Example: Av. das Nações Unidas",
+                "street_number": "Number. Example: 3003"
             },
             "registration_date": "2020-08-06T09:25:04.000-03:00"
         },
@@ -84,11 +84,11 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "express_shipment": "0",
             "pick_up_on_seller": "1",
             "receiver_address": {
-                "zip_code": "06233-200",
-                "street_name": "Av. das Nações Unidas",
-                "street_number": "3003",
-                "floor": "",
-                "apartment": ""
+                "zip_code": "Zip code. Example: 06233-200",
+                "street_name": "Street name. Example: Av. das Nações Unidas",
+                "street_number": "Number. Example: 3003",
+                "floor": "Floor (if it's an apartment). Example: Second",
+                "apartment": "Apartment number (if it's an apartment). Example: 93"
             }
         }
      }

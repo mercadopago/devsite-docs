@@ -22,13 +22,13 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     },
     "notification_url": "https://webhook.site/d69d1102-b677-44f6-ae6d-104a7e813b93",
     "expires": false,
-    "external_reference": "Order - Test ",
+    "external_reference": "Order - Test",
     "date_of_expiration": "2022-04-01T22:59:00.000-04:00",
     "sponsor_id": "{{ID of your Mercado Pago account related to your platform.}}",
     "items": [
         {
             "id": "1234",
-            "currency_id": "BRL",
+            "currency_id": "Currency. Example: BRL",
             "title": "Product",
             "category_id": "entertainment",
             "quantity": 1,
@@ -36,7 +36,7 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
         },
         {
             "id": "1234",
-            "currency_id": "BRL",
+            "currency_id": "Currency. Example: BRL",
             "title": "frete",
             "category_id": "entertainment",
             "quantity": 1,
@@ -52,9 +52,9 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     "installments": null,
     "shipments": {
         "receiver_address": {
-	         "zip_code": "95630000",
-	         "street_name": "Avenida Shipments",
-	         "street_number": "15"
+	         "zip_code": "Zip code. Example: 95630000",
+	         "street_name": "Street name. Example: Av. St. Luiz",
+	         "street_number": "Número. Example: 15"
         }
     }
 }'
@@ -72,7 +72,7 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
 >
 > Note
 >
-> Both the `collector` and the `sponsor-id` can be obtained in the step [How to Get the Sponsor ID](/developers/en/guides/integration-guide-for-partners/how-to-get-sponsor-id). However, they are distinct Mercado Pago accounts.
+> Both the `collector` and the `sponsor-id` can be obtained in the step [How to get the sponsor ID](/developers/en/guides/integration-guide-for-partners/how-to-get-sponsor-id). However, they are distinct Mercado Pago accounts.
 If you send the same information in both fields, the API will return an error: "Invalid users involved".
 
-> Still have questions about credentials? Access the content [Where Can I Find the Credentials](https://www.mercadopago.com.br/developers/pt/support/20214).
+> Still have questions about credentials? Access the content [Where can i find the credentials](/developers/es/support/20214).

@@ -22,13 +22,13 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     },
     "notification_url": "https://webhook.site/d69d1102-b677-44f6-ae6d-104a7e813b93",
     "expires": false,
-    "external_reference": "Pedido - Teste ",
+    "external_reference": "Pedido - Teste",
     "date_of_expiration": "2022-04-01T22:59:00.000-04:00",
     "sponsor_id": "{{ID da sua conta Mercado Pago referente à sua plataforma}}",
     "items": [
         {
             "id": "1234",
-            "currency_id": "BRL",
+            "currency_id": "Moeda. Exemplo: BRL",
             "title": "Produto",
             "category_id": "entertainment",
             "quantity": 1,
@@ -36,7 +36,7 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
         },
         {
             "id": "1234",
-            "currency_id": "BRL",
+            "currency_id": "Moeda. Exemplo: BRL",
             "title": "frete",
             "category_id": "entertainment",
             "quantity": 1,
@@ -52,9 +52,9 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     "installments": null,
     "shipments": {
         "receiver_address": {
-	         "zip_code": "95630000",
-	         "street_name": "Avenida Shipments",
-	         "street_number": "15"
+	         "zip_code": "CEP. Exemplo: 95630000",
+	         "street_name": "Nome da rua. Exemplo: Avenida S. Luiz",
+	         "street_number": "Número. Exemplo: 15"
         }
     }
 }'
@@ -75,4 +75,4 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
 > Tanto o `collector` quanto o `sponsor-id` podem ser obtidos no passo [Como obter o Sponsor ID](/developers/pt/guides/integration-guide-for-partners/how-to-get-sponsor-id). No entanto, são contas do Mercado Pago distintas.
 Se você enviar a mesma informação nos dois campos, a API retornará um erro: "Invalid users involved".
 
-> Ainda tem dúvidas sobre credenciais? Acesse o conteúdo [Onde posso encontrar as credenciais](https://www.mercadopago.com.br/developers/pt/support/20214).
+> Ainda tem dúvidas sobre credenciais? Acesse o conteúdo [Onde posso encontrar as credenciais](/developers/pt/support/20214).

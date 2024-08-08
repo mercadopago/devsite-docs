@@ -194,7 +194,7 @@ const cardForm = mp.cardForm({
 
 > NOTE
 >
-> Considerações
+> Note
 >
 > If you are using SDK JS V1, you will need to migrate to [SDK JS V2](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
 > **Practical example for tokenization with JS V2**: [Tokenization - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).
