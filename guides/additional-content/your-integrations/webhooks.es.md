@@ -10,8 +10,8 @@ Para configurar notificaciones Webhooks, puedes elegir una de las opciones a con
 
 | Tipo de configuración | Descripción |
 |---|---|
-| [Configuración a través de Tus integraciones](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones) | Permite configurar notificaciones para varios tópicos, identificar cuentas distintas en caso de ser necesario, y validar el origen de la notificación utilizando una firma secreta (excepto en notificaciones para integraciones con Código QR). |
-| [Configuración durante la creación de pagos](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/webhooks#configuracinalcrearpagos) | Permite la configuración específica de notificaciones para cada pago. No está permitida para integraciones con Mercado Pago Point ni MP Delivery. |
+| [Configuración a través de Tus integraciones](/developers/es/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones) | Permite configurar notificaciones para varios tópicos, identificar cuentas distintas en caso de ser necesario, y validar el origen de la notificación utilizando una firma secreta (excepto en notificaciones para integraciones con Código QR). |
+| [Configuración durante la creación de pagos](/developers/es/docs/your-integrations/notifications/webhooks#configuracinalcrearpagos) | Permite la configuración específica de notificaciones para cada pago. No está permitida para integraciones con Mercado Pago Point ni MP Delivery. |
 
 > WARNING
 >
@@ -19,7 +19,7 @@ Para configurar notificaciones Webhooks, puedes elegir una de las opciones a con
 >
 > Las URLs configuradas durante la creación de un pago tendrán prioridad por sobre aquellas configuradas a través de Tus integraciones.
 
-Una vez que las notificaciones sean configuradas, consulta las [acciones necesarias después de recibir una notificación](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/webhooks#accionesnecesariasdespusderecibirlanotificacin) para validar que las mismas fueron debidamente recibidas.
+Una vez que las notificaciones sean configuradas, consulta las [acciones necesarias después de recibir una notificación](/developers/es/docs/your-integrations/notifications/webhooks#accionesnecesariasdespusderecibirlanotificacin) para validar que las mismas fueron debidamente recibidas.
 
 
 ## Configuración a través de Tus integraciones
@@ -33,7 +33,7 @@ Puedes configurar notificaciones para cada una de tus aplicaciones directamente 
 >
 > Importante
 >
-> Este método de configuración no está disponible para integraciones con Código QR ni Suscripciones. Para configurar notificaciones con alguna de estas dos integraciones, utiliza el método [Configuración durante la creación de un pago](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/webhooks#configuracinalcrearpagos).
+> Este método de configuración no está disponible para integraciones con Código QR ni Suscripciones. Para configurar notificaciones con alguna de estas dos integraciones, utiliza el método [Configuración durante la creación de un pago](/developers/es/docs/your-integrations/notifications/webhooks#configuracinalcrearpagos).
 
 
 ### 1. Indicar URLs de notificación y configurar eventos
@@ -42,7 +42,7 @@ Para configurar notificaciones Webhooks mediante Tus integraciones, es necesario
 
 Para hacerlo, sigue el paso a paso a continuación:
 
-1. Ingresa a [Tus Integraciones](/developers/panel/app) y selecciona la aplicación para la que deseas activar las notificaciones. En caso de que aún no hayas creado una aplicación, accede a la [documentación sobre el Panel del Desarrollador](/developers/es/docs/woocommerce/additional-content/your-integrations/dashboard) y sigue las instrucciones para poder hacerlo.
+1. Ingresa a [Tus Integraciones](/developers/panel/app) y selecciona la aplicación para la que deseas activar las notificaciones. En caso de que aún no hayas creado una aplicación, accede a la [documentación sobre el Panel del Desarrollador](/developers/es/docs/your-integrations/dashboard) y sigue las instrucciones para poder hacerlo.
 2. En el menú de la izquierda, selecciona **Webhooks > Configurar notificaciones**, y configura las URLs que serán utilizadas para recibirlas. Recomendamos utilizar dos URLs diferentes para el modo de pruebas y el modo producción:
     * **URL modo pruebas:** proporciona una URL que permita probar el correcto funcionamiento de las notificaciones de la aplicación durante la etapa de desarrollo. La prueba de estas notificaciones deberá ser realizada exclusivamente con **credenciales de prueba del usuario productivo** con el que creaste la aplicación.
     * **URL modo producción:** proporciona una URL para recibir notificaciones con tu integración productiva. Estas notificaciones deberán ser configuradas con tus **credenciales productivas**.
@@ -53,7 +53,7 @@ Para hacerlo, sigue el paso a paso a continuación:
 >
 > Nota
 > 
-> En caso de ser necesario identificar múltiples cuentas, agrega el parámetro `?cliente=(nombredelvendedor) endpoint` al final de la URL indicada, y así identificar a los vendedores.
+> En caso de ser necesario identificar múltiples cuentas, agrega el parámetro `?cliente=(nombredelvendedor) endpoint` al final de la URL indicada para identificar a los vendedores.
 
 3. Selecciona los **eventos** de los que recibirás notificaciones, que serán enviadas en formato `json` a través de un `HTTP POST` a la URL especificada anteriormente. Un evento puede ser cualquier actualización sobre el tópico reportado, incluyendo cambios de status o atributos. Consulta la tabla a continuación para ver qué eventos pueden ser configurados teniendo en cuenta la solución de Mercado Pago integrada y las particularidades de negocio.
 
@@ -79,7 +79,7 @@ Para hacerlo, sigue el paso a paso a continuación:
 >
 > Importante
 >
-> En caso de dudas sobre los tópicos a activar o los eventos que serán notificados, consulta la documentación [Información adicional sobre notificaciones](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/additional-info). 
+> En caso de dudas sobre los tópicos a activar o los eventos que serán notificados, consulta la documentación [Información adicional sobre notificaciones](/developers/es/docs/your-integrations/notifications/additional-info). 
 
 5. Por último, haz clic en **Guardar**. Esto generará una **clave secreta** exclusiva para la aplicación, que permitirá validar la autenticidad de las notificaciones recibidas, garantizando que hayan sido enviadas por Mercado Pago. Ten en cuenta que esta clave generada no tiene plazo de caducidad y su renovación periódica no es obligatoria, aunque sí recomendada. Para hacerlo, basta con cliquear en el botón **Restablecer**. 
 
@@ -412,7 +412,7 @@ Durante el proceso de creación de pagos, es posible configurar la URL de notifi
 >
 > Importante
 > 
-> No es posible configurar notificaciones para los tópicos `point_integration_wh` y `delivery` utilizando este método. Para activar estos tópicos, utiliza la configuración mediante Tus integraciones.
+> No es posible configurar notificaciones para los tópicos `point_integration_wh` y `delivery` utilizando este método. Para activar estos tópicos, utiliza la [configuración a través de Tus integraciones](/developers/es/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
 
 A continuación, explicamos cómo configurar notificaciones al crear un pago utilizando nuestros SDKs.
 
@@ -686,13 +686,13 @@ curl -X POST \
 ?>
 ```
 
-Luego de realizar la configuración  necesaria, la notificación Webhooks será enviada con formato JSON. Puedes ver a continuación un ejemplo de notificación del tópico `payment`, y las descripciones de la información enviada en la tabla debajo.
+Luego de realizar la configuración  necesaria, la notificación Webhook será enviada con formato `JSON`. Puedes ver a continuación un ejemplo de notificación del tópico `payment`, y las descripciones de la información enviada en la tabla debajo.
 
 > WARNING
 >
 > Importante
 >
-> Los pagos de prueba, creados con credenciales de prueba, no enviarán notificaciones. La única vía para probar la recepción de notificaciones es mediante la [Configuración a través de Tus integraciones](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
+> Los pagos de prueba, creados con credenciales de prueba, no enviarán notificaciones. La única vía para probar la recepción de notificaciones es mediante la [Configuración a través de Tus integraciones](/developers/es/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
 
 ```json
 {
@@ -724,7 +724,7 @@ Luego de realizar la configuración  necesaria, la notificación Webhooks será 
 >
 > Importante
 >
-> Para conocer el formato de notificaciones para tópicos distintos a `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` y `topic_card_id_wh`, consulta [Información adicional sobre notificaciones](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/additional-info).
+> Para conocer el formato de notificaciones para tópicos distintos a `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` y `topic_card_id_wh`, consulta [Información adicional sobre notificaciones](/developers/es/docs/your-integrations/notifications/additional-info).
 
 ## Acciones necesarias después de recibir la notificación
 
@@ -739,11 +739,11 @@ Luego de responder la notificación, confirmando su recibimiento, puedes obtener
 | Tipo | URL | Documentación |
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Obtener pago](/developers/es/reference/payments/_payments_id/get)  |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Obtener suscripción](developers/es/reference/subscriptions/_preapproval_search/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Obtener suscripción](/developers/es/reference/subscriptions/_preapproval_search/get) |
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Obtener plan de suscripción](/developers/es/reference/subscriptions/_preapproval_plan_search/get)  |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Obtener información de facturas](/developers/es/reference/subscriptions/_authorized_payments_id/get)  |
 | topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Obtener detalles del reclamo](/developers/es/reference/claims/get-claim-details/get) |
-| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obtener pedido](/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
+| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
 | topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Obtener contracargo](/developers/es/reference/chargebacks/_chargebacks_id/get) |
 
 ------------
@@ -751,12 +751,12 @@ Luego de responder la notificación, confirmando su recibimiento, puedes obtener
 | Tipo | URL | Documentación |
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Obtener pago](/developers/es/reference/payments/_payments_id/get)  |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Obtener suscripción](developers/es/reference/subscriptions/_preapproval_search/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Obtener suscripción](/developers/es/reference/subscriptions/_preapproval_search/get) |
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Obtener plan de suscripción](/developers/es/reference/subscriptions/_preapproval_plan_search/get)  |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Obtener información de facturas](/developers/es/reference/subscriptions/_authorized_payments_id/get)  |
 | point_integration_wh| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Obtener intención de pago](/developers/es/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
 | topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Obtener detalles del reclamo](/developers/es/reference/claims/get-claim-details/get) |
-| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obtener pedido](/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
+| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
 | topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Obtener contracargo](/developers/es/reference/chargebacks/_chargebacks_id/get) |
 
 ------------
@@ -764,13 +764,13 @@ Luego de responder la notificación, confirmando su recibimiento, puedes obtener
 | Tipo | URL | Documentación |
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Obtener pago](/developers/es/reference/payments/_payments_id/get)  |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Obtener suscripción](developers/es/reference/subscriptions/_preapproval_search/get) |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Obtener suscripción](/developers/es/reference/subscriptions/_preapproval_search/get) |
 | subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Obtener plan de suscripción](/developers/es/reference/subscriptions/_preapproval_plan_search/get)  |
 | subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Obtener información de facturas](/developers/es/reference/subscriptions/_authorized_payments_id/get)  |
 | point_integration_wh| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Obtener intención de pago](/developers/es/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
 | delivery | `https://api.mercadopago.com/proximity-integration/v1/orders/{shipment_id}` | [Obtener pedido](/developers/es/reference/mp_delivery/_proximity-integrationorders_shipment_id/get) |
 | topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Obtener detalles del reclamo](/developers/es/reference/claims/get-claim-details/get) |
-| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obtener pedido](/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
+| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
 | topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Obtener contracargo](/developers/es/reference/chargebacks/_chargebacks_id/get) |
 
 ------------

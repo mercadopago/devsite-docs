@@ -1,20 +1,20 @@
 # IPN
 
-IPN (Instant Payment Notification) es un mecanismo que permite que tu aplicación reciba notificaciones de Mercado Pago, informando el estado de un determinado pago, contracargo y `merchant_order`, a través de una llamada HTTP POST para informar sobre sus transacciones.
+IPN (Instant Payment Notification) es un mecanismo que permite que tu aplicación reciba notificaciones de Mercado Pago, informando el estado de un determinado pago, contracargo y *merchant order*, a través de una llamada HTTP POST para informar sobre sus transacciones.
 
 > WARNING
 >
 > Importante
 >
-> Las notificaciones IPN van a ser descontinuadas. Además, a pesar de recibir el *header* `x-Signature`, no permiten la validación mediante la clave secreta para confirmar que las mismas fueron enviadas por Mercado Pago. Si deseas realizar esta validación, recomendamos migrar a [notificaciones Webhooks](/developers/es/docs/mp-point/additional-content/your-integrations/notifications/webhooks).   
+> Las notificaciones IPN van a ser descontinuadas. Además, a pesar de recibir el *header* `x-Signature`, no permiten la validación mediante la clave secreta para confirmar que las mismas fueron enviadas por Mercado Pago. Si deseas realizar esta validación, recomendamos migrar a [notificaciones Webhooks](/developers/es/docs/your-integrations/notifications/webhooks).   
 
 
 Las notificaciones IPN pueden ser configuradas de dos maneras:
 
 | Tipo de configuración | Descripción |
 |---|---|
-| [Configuración a través de Tus integraciones]() | Podrá ser configurada solo una URL de notificación por cuenta (dependiendo de la aplicación, más de una de ellas podrá usar la URL). |
-| [Configuración durante la creación de pagos]() | Puede ser realizada a partir del campo `notification_url`. La URL podrá ser diferente para cada objeto o aplicación. |
+| [Configuración a través de Tus integraciones](/developers/es/docs/your-integrations/notifications/ipn#configuracinatravsdetusintegraciones) | Podrá ser configurada solo una URL de notificación por cuenta (dependiendo de la aplicación, más de una de ellas podrá usar la URL). |
+| [Configuración durante la creación de un pago](/developers/es/docs/your-integrations/notifications/ipn#configuracindurantelacreacindeunpago) | Puede ser realizada a partir del campo `notification_url`. La URL podrá ser diferente para cada objeto o aplicación. |
 
 En esta documentación explicaremos cómo realizar la configuración necesaria para recibir notificaciones IPN a través de Tus integraciones o al momento de crear pagos, y te mostraremos las acciones necesarias para que Mercado Pago valide que los mensajes fueron recibidos correctamente.
 
@@ -35,7 +35,7 @@ Para configurar notificaciones IPN mediante Tus integraciones, es necesario indi
 
 Para confiruar URLs y eventos, sigue el paso a paso a continuación:
 
-1. Ingresa a [Tus Integraciones](/developers/panel/app) y selecciona la aplicación para la que deseas activar las notificaciones. En caso de que aún no hayas creado una aplicación, accede a la [documentación sobre el Panel del Desarrollador](/developers/es/docs/woocommerce/additional-content/your-integrations/dashboard) y sigue las instrucciones para poder hacerlo.
+1. Ingresa a [Tus Integraciones](/developers/panel/app) y selecciona la aplicación para la que deseas activar las notificaciones. En caso de que aún no hayas creado una aplicación, accede a la [documentación sobre el Panel del Desarrollador](/developers/es/docs/your-integrations/dashboard) y sigue las instrucciones para poder hacerlo.
 2. En el menú de la izquierda, selecciona **IPN**, y configura la **URLs de producción** que será utilizada para recibir las notificaciones. También podrás probar si la URL indicada está recibiendo notificaciones correctamente, verificando la solicitud, la respuesta dada por el servidor y la descripción del evento.
 
 ![ipn](/images/dashboard/ipn_es_.png)
@@ -60,7 +60,7 @@ Para confiruar URLs y eventos, sigue el paso a paso a continuación:
 >
 > Importante
 >
-> En caso de dudas sobre los tópicos a activar o los eventos que serán notificados, consulta la documentación [Información adicional sobre notificaciones](/developers/es/docs/adobe-commerce/additional-content/your-integrations/notifications/additional-info). 
+> En caso de dudas sobre los tópicos a activar o los eventos que serán notificados, consulta la documentación [Información adicional sobre notificaciones](/developers/es/docs/your-integrations/notifications/additional-info). 
 
 ## Configuración durante la creación de un pago
 
@@ -342,8 +342,6 @@ curl -X POST \
 | `id` | Es un identificador único del recurso notificado. |
 
 
-# Después de recibir la notificación
-
 ## Acciones necesarias después de recibir la notificación
 
 Cuando recibes una notificación en tu plataforma, Mercado Pago espera una respuesta para validar que esa recepción fue correcta. Para eso, debes devolver un `HTTP STATUS 200 (OK)` o `201 (CREATED)`. 
@@ -356,7 +354,7 @@ Luego de responder la notificación, confirmando su recibimiento, puedes obtener
 | --- | --- | --- |
 | payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Obtener pago](/developers/es/reference/payments/_payments_id/get)  |
 | point_integration_ipn| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Obtener intención de pago](/developers/es/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
-| merchant_orders | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obtener pedido](/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
+| merchant_orders | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obtener orden](/developers/es/reference/merchant_orders/_merchant_orders_id/get) |
 | chargebacks | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Obtener contracargo](/developers/es/reference/chargebacks/_chargebacks_id/get) |
 
 Con esta información podrás realizar las actualizaciones necesarias a tu plataforma, como actualizar un pago aprobado.
