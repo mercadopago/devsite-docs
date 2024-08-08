@@ -2039,9 +2039,17 @@
                         {
                           "title": "2034",
                           "description": {
-                            "en": "Invalid users involved. – If this error appears, ensure that all involved users are either productive or test users. Additionally, verify that the sponsor_id (if applicable) is correct and try again.",
-                            "es": "Invalid users involved. – Si aparece este error, asegúrese de que todos los usuarios involucrados sean productivos o de prueba. Además, verifique que el sponsor_id (si corresponde) sea correcto e intente nuevamente.",
-                            "pt": "Invalid users involved. – Se esse erro aparecer, certifique-se de que os usuários envolvidos são todos produtivos ou todos de teste. Além disso, verifique se o sponsor_id (se aplicável) está correto e tente novamente."
+                            "en": "Invalid users involved. - If this error appears, ensure that all involved users are either productive or test users. Additionally, verify that the sponsor_id (if applicable) is correct and try again.",
+                            "es": "Invalid users involved. - Si aparece este error, asegúrese de que todos los usuarios involucrados sean productivos o de prueba. Además, verifique que el sponsor_id (si corresponde) sea correcto e intente nuevamente.",
+                            "pt": "Invalid users involved. - Se esse erro aparecer, certifique-se de que os usuários envolvidos são todos produtivos ou todos de teste. Além disso, verifique se o sponsor_id (se aplicável) está correto e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "2059",
+                          "description": {
+                            "en": "You cannot use `application_fee` with this payment. - This error occurs because the Access Token being used was not obtained via OAuth. Make sure to use an Access Token generated through OAuth.",
+                            "es": "You cannot use `application_fee` with this payment. - Este error ocurre porque el Access Token en uso no fue obtenido mediante OAuth. Asegúrese de utilizar un Access Token generado a través de OAuth.",
+                            "pt": "You cannot use `application_fee` with this payment. - Este erro ocorre porque o Access Token que está sendo utilizado não foi obtido através do OAuth. Certifique-se de utilizar um Access Token gerado via OAuth."
                           }
                         },
                         {
