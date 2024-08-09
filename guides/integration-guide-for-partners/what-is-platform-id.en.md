@@ -12,4 +12,4 @@ Example via header:
 
 ## Prerequisite
 
-Before obtaining your `platform_id`, you need to request it from the Partners team and wait for the approval of your solution. Once approved, the `platform_id` will be created and provided so you can include the corresponding ID in your integration.
+Before obtaining your `PLATFORM_ID`, you need to request it from the Partners team and wait for the approval of your solution. Once approved, the `PLATFORM_ID` will be created and provided so you can include the corresponding ID in your integration.
