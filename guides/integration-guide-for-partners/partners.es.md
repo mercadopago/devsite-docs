@@ -1,13 +1,13 @@
-# Parceiros
+# Partners
 
-## Parceiros com certificação PCI
+## Partners con certificación PCI
 
-Para parceiros certificados PCI, será necessário o envio da AOC para que a equipe de Riscos Mercado Pago possa avaliar a autorização para seguir com a tokenização via backend.
+Para los partners certificados PCI, será necesario enviar el AOC para que el equipo de Riesgos de Mercado Pago pueda evaluar la autorización, y así proceder con la tokenización a través del backend.
 
-## Parceiro sem certificação PCI
+## Partner sin certificación PCI
 
-A tokenização dos pagamentos via cartão de crédito deve ser feita utilizando a nossa [SDK JS V2](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform), por meio do _cardform_.
-O MercadoPago.js é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento.
+La tokenización de los pagos con tarjeta de crédito debe realizarse utilizando nuestro [SDK JS V2](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-cardform), a través del _cardform_.
+`MercadoPago.js` es responsable de los flujos necesarios para obtener la información obligatoria para la creación de un pago.
 
 ```html
 <body>
@@ -15,7 +15,7 @@ O MercadoPago.js é responsável pelos fluxos necessários para obtenção das i
 </body>
 ```
 
-### Adicionar formulário de pagamento
+### Añadir formulario de pago
 
 ```html
 <style>
@@ -36,57 +36,57 @@ O MercadoPago.js é responsável pelos fluxos necessários para obtenção das i
   <fieldset>
     <ul>
       <li>
-        <label for="cardNumber">Número do cartão:</label>
+        <label for="cardNumber">Número de tarjeta:</label>
         <input type="text" name="cardNumber" id="form-checkout__cardNumber" />
       </li>
       <li>
-        <label for="cardExpirationMonth">Mês de vencimento:</label>
+        <label for="cardExpirationMonth">Mes de vencimiento:</label>
         <input type="text" name="cardExpirationMonth" id="form-checkout__cardExpirationMonth" value="12" />
       </li>
       <li>
-        <label for="cardExpirationYear">Ano de vencimento:</label>
+        <label for="cardExpirationYear">Año de vencimiento:</label>
         <input type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear" value="24" />
       </li>
       <li>
-        <label for="cardholderName">Nome do titular:</label>
+        <label for="cardholderName">Nombre del titular:</label>
         <input type="text" name="cardholderName" id="form-checkout__cardholderName" value="APRO" />
       </li>
       <li>
-        <label for="cardholderEmail">Email:</label>
+        <label for="cardholderEmail">Correo electrónico:</label>
         <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" value="test_user_60077763@testuser.com" />
       </li>
       <li>
-        <label for="securityCode">Código de segurança:</label>
+        <label for="securityCode">Código de seguridad:</label>
         <input type="text" name="securityCode" id="form-checkout__securityCode" value="123" />
       </li>
       <li>
-        <label for="issuer">Emissor:</label>
+        <label for="issuer">Emisor:</label>
         <select name="issuer" id="form-checkout__issuer"></select>
       </li>
       <li>
-        <label for="identificationType">Tipo do documento:</label>
+        <label for="identificationType">Tipo de documento:</label>
         <select name="identificationType" id="form-checkout__identificationType"></select>
       </li>
       <li>
-        <label for="identificationNumber">Número do documento:</label>
+        <label for="identificationNumber">Número de documento:</label>
         <input type="text" name="identificationNumber" id="form-checkout__identificationNumber" value="12345678909" />
       </li>
       <li>
-        <label for="installments">Parcelas:</label>
+        <label for="installments">Cuotas:</label>
         <select name="installments" id="form-checkout__installments"></select>
       </li>
       <li>
         <button type="submit" id="form-checkout__submit">Pagar</button>
       </li>
       <li>
-        <progress value="0" class="progress-bar">Carregando...</progress>
+        <progress value="0" class="progress-bar">Cargando...</progress>
       </li>
     </ul>
   </fieldset>   
 </form>
 ```
 
-### Inicializar formulário de pagamento
+### Inicializar formulario de pago
 
 ```javascript
 const cardForm = mp.cardForm({
@@ -96,31 +96,31 @@ const cardForm = mp.cardForm({
     id: "form-checkout",
     cardholderName: {
       id: "form-checkout__cardholderName",
-      placeholder: "Titular do cartão",
+      placeholder: "Nombre del titular",
     },
     cardholderEmail: {
       id: "form-checkout__cardholderEmail",
-      placeholder: "E-mail",
+      placeholder: "Correo electrónico",
     },
     cardNumber: {
       id: "form-checkout__cardNumber",
-      placeholder: "Número do cartão",
+      placeholder: "Número de tarjeta",
     },
     cardExpirationMonth: {
       id: "form-checkout__cardExpirationMonth",
-      placeholder: "Mês de vencimento",
+      placeholder: "Mes de vencimiento",
     },
     cardExpirationYear: {
       id: "form-checkout__cardExpirationYear",
-      placeholder: "Ano de vencimento",
+      placeholder: "Año de vencimiento",
     },
     securityCode: {
       id: "form-checkout__securityCode",
-      placeholder: "Código de segurança",
+      placeholder: "Código de seguridad",
     },
     installments: {
       id: "form-checkout__installments",
-      placeholder: "Parcelas",
+      placeholder: "Cuotas",
     },
     identificationType: {
       id: "form-checkout__identificationType",
@@ -128,17 +128,17 @@ const cardForm = mp.cardForm({
     },
     identificationNumber: {
       id: "form-checkout__identificationNumber",
-      placeholder: "Número do documento",
+      placeholder: "Número de documento",
     },
     issuer: {
       id: "form-checkout__issuer",
-      placeholder: "Banco emissor",
+      placeholder: "Banco emisor",
     },
   },
   callbacks: {
     onFormMounted: error => {
-      if (error) return console.warn("Form Mounted handling error: ", error);
-      console.log("Form mounted");
+      if (error) return console.warn("Error al montar el formulario: ", error);
+      console.log("Formulario montado");
     },
     onSubmit: event => {
       event.preventDefault();
@@ -165,7 +165,7 @@ const cardForm = mp.cardForm({
           payment_method_id,
           transaction_amount: Number(amount),
           installments: Number(installments),
-          description: "Descrição do produto",
+          description: "Descripción del producto",
           payer: {
             email,
             identification: {
@@ -180,7 +180,7 @@ const cardForm = mp.cardForm({
     onFetching: resource => {
       console.log("Fetching resource: ", resource);
 
-      // Animate progress bar
+      // Animar barra de progreso
       const progressBar = document.querySelector(".progress-bar");
       progressBar.removeAttribute("value");
 
@@ -196,5 +196,5 @@ const cardForm = mp.cardForm({
 >
 > Nota
 >
-> Caso esteja utilizando o SDK JS V1, será necessário a migração para o [SDK JS V2](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform).
-> **Exemplo prático para tokenização com JS V2**: [Tokenização - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).
+> Si estás utilizando el SDK JS V1, será necesario migrar al [SDK JS V2](https://www.mercadopago.com.br/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-cardform)<br><br>.
+> **Ejemplo práctico para tokenización con JS V2**: [Tokenización - V2 - JSFiddle](https://jsfiddle.net/douglascruz/og85yL34/).

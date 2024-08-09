@@ -1,8 +1,8 @@
-# Transações via Checkout Pro
+# Transacciones vía Checkout Pro
 
-Ao realizar uma requisição de pagamento (`/checkout/preferences`), basta atribuir o ID da sua conta Mercado Pago ao campo `sponsor_id` no corpo (_body_) da requisição.
+Al realizar una solicitud de pago (`/checkout/preferences`), solo necesitas asignar el ID de tu cuenta de Mercado Pago al campo `sponsor_id` en el cuerpo de la solicitud.
 
-Exemplo:
+Ejemplo:
 
 ```curl
 curl --location --request POST 'https://api.mercadolibre.com/checkout/preferences' \
@@ -24,20 +24,20 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     "expires": false,
     "external_reference": "Pedido - Teste",
     "date_of_expiration": "2022-04-01T22:59:00.000-04:00",
-    "sponsor_id": "{{ID da sua conta Mercado Pago referente à sua plataforma}}",
+    "sponsor_id": "{{ID de su cuenta Mercado Pago referente a su plataforma}}",
     "items": [
         {
             "id": "1234",
-            "currency_id": "Moeda. Exemplo: BRL",
-            "title": "Produto",
+            "currency_id": "Moneda. Ejemplo: BRL",
+            "title": "Producto",
             "category_id": "entertainment",
             "quantity": 1,
             "unit_price": 4
         },
         {
             "id": "1234",
-            "currency_id": "Moeda. Exemplo: BRL",
-            "title": "frete",
+            "currency_id": "Moneda. Ejemplo: BRL",
+            "title": "Envío",
             "category_id": "entertainment",
             "quantity": 1,
             "unit_price": 1
@@ -52,9 +52,9 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
     "installments": null,
     "shipments": {
         "receiver_address": {
-	         "zip_code": "CEP. Exemplo: 95630000",
-	         "street_name": "Nome da rua. Exemplo: Avenida S. Luiz",
-	         "street_number": "Número. Exemplo: 15"
+	         "zip_code": "Código de área. Ejemplo: 95630000",
+	         "street_name": "Nombre de la calle. Ejemplo: Av. S. Luiz",
+	         "street_number": "Número. Ejemplo: 15"
         }
     }
 }'
@@ -64,11 +64,11 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
 >
 > Importante
 >
-> A informação do campo `collector_id` não é a mesma do `sponsor_id`.
-> * O `collector-id` é o vendedor;
-> * O `sponsor-id` é a plataforma (onde está o vendedor), como Vtex, LI, Adobe Commerce, etc.
+> La información del campo `collector_id` no es la misma que la del `sponsor_id`.
+> * El `collector-id` es el vendedor;
+> * El `sponsor-id` es la plataforma (donde está el vendedor), como Vtex, LI, Adobe Commerce, etc.
 >
-> Tanto o `collector` quanto o `sponsor-id` podem ser obtidos no passo [Como obter o Sponsor ID](/developers/pt/guides/integration-guide-for-partners/how-to-get-sponsor-id). No entanto, são contas do Mercado Pago distintas.
-Se você enviar a mesma informação nos dois campos, a API retornará um erro: "Invalid users involved".
+> Tanto el `collector` como el `sponsor-id` se pueden obtener en el paso [Cómo obtener el Sponsor ID](/developers/es/guides/integration-guide-for-partners/how-to-get-sponsor-id). Sin embargo, son cuentas de Mercado Pago diferentes.
+Si envías la misma información en ambos campos, la API devolverá un error: "Invalid users involved".
 
-Ainda tem dúvidas sobre credenciais? Acesse o conteúdo [Onde posso encontrar as credenciais](/developers/pt/support/20214).
+¿Todavía tienes dudas sobre las credenciales? Accede al contenido [¿Dónde puedo encontrar las credenciales?](/developers/es/support/20214).
