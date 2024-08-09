@@ -62,17 +62,13 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
 
 > WARNING
 >
-> Attention!
+> Important
 >
 > The information in the `collector_id` field is not the same as the `sponsor_id`.
 > * The `collector-id` is the seller;
 > * The `sponsor-id` is the platform (where the seller is), such as Vtex, LI, Adobe Commerce, etc.
-
-> NOTE
->
-> Note
 >
 > Both the `collector` and the `sponsor-id` can be obtained in the step [How to get the sponsor ID](/developers/en/guides/integration-guide-for-partners/how-to-get-sponsor-id). However, they are distinct Mercado Pago accounts.
 If you send the same information in both fields, the API will return an error: "Invalid users involved".
 
-> Still have questions about credentials? Access the content [Where can i find the credentials](/developers/es/support/20214).
+Still have questions about credentials? Access the content [Where can i find the credentials](/developers/es/support/20214).

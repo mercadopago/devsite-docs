@@ -1,8 +1,13 @@
-# Transacciones a través del Checkout Transparente
+----[mlb]----
+# Transactions via Checkout Transparente
+------------
+----[mla, mlm, mlc, mco, mpe, mlu]----
+# Transactions via Checkout API
+------------
 
-Después de recibir tu ID correspondiente al `PLATFORM_ID` de tu plataforma, podrás añadirlo al `header` de la solicitud de pago (`/v1/payments`) al crear una transacción con Mercado Pago.
+After receiving your corresponding `PLATFORM_ID` for your platform, you can add it to the request `header` for payment (`/v1/payments`) when creating a transaction with Mercado Pago.
 
-Ejemplo:
+Example:
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \

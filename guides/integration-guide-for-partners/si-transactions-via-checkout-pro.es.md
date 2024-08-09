@@ -67,10 +67,6 @@ curl --location --request POST 'https://api.mercadolibre.com/checkout/preference
 > La información del campo `collector_id` no es la misma que la del `sponsor_id`.
 > * El `collector-id` es el vendedor;
 > * El `sponsor-id` es la plataforma (donde está el vendedor), como Vtex, LI, Adobe Commerce, etc.
-
-> NOTE
->
-> Nota
 >
 > Tanto el `collector` como el `sponsor-id` se pueden obtener en el paso [Cómo obtener el Sponsor ID](/developers/es/guides/integration-guide-for-partners/how-to-get-sponsor-id). Sin embargo, son cuentas de Mercado Pago diferentes.
 Si envías la misma información en ambos campos, la API devolverá un error: "Invalid users involved".
