@@ -2,7 +2,7 @@
 
 ## Partners con certificación PCI
 
-Para los partners certificados PCI, será necesario enviar el AOC para que el equipo de Riesgos de Mercado Pago pueda evaluar la autorización para proceder con la tokenización a través del backend.
+Para los partners certificados PCI, será necesario enviar el AOC para que el equipo de Riesgos de Mercado Pago pueda evaluar la autorización, y así proceder con la tokenización a través del backend.
 
 ## Partner sin certificación PCI
 
