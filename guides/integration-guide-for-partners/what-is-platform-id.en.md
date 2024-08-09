@@ -1,6 +1,6 @@
 # What is the Platform ID?
 
-The `platform_id` is information used to identify the official partner platforms of Mercado Pago.
+The `PLATFORM_ID` is information used to identify the official partner platforms of Mercado Pago.
 
 Its application involves including the ID provided by the Partners team in the header of payment requests, using the `x-platform-id` field.
 
