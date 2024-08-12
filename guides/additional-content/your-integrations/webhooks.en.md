@@ -1,86 +1,142 @@
 # Webhooks
 
-**Webhooks** (also known as web callback) is a simple method that makes it easy for an app or system to provide real-time information whenever an event happens, that is, it is a way to passively receive data between two systems through of an `HTTP POST`.
+Webhooks (also known as web callbacks) are a simple method that allows an application or system to provide real-time information whenever an event occurs. It's a passive way of receiving data between two systems via an `HTTP POST` request.
 
-Webhook notifications can be configured for one or more applications created in your [developer Dashboard](/developers/panel/app).
+Webhooks notifications can be configured for each application created in [Your integrations](/developers/panel/app). You can also configure a test URL that, along with your test credentials, allows you to test the correct operation of your notifications before going live.
 
-Once configured, the Webhook will be sent whenever one or more registered events occur, avoiding a search job every minute in search of an answer and, consequently, a system overload and data loss whenever there is some situation. After receiving a notification on your platform, Mercado Pago will wait for a response to validate that you received it correctly
+Once configured, the Webhook will be sent whenever one or more registered events occur, eliminating the need for constant checks and thus preventing system overload and data loss in critical situations.
 
-In this documentation, we will explain the necessary settings to receive messages (through the Dashboard or when creating payments), in addition to showing the necessary actions that you must take for Mercado Pago to validate that the notifications were properly received.
+To configure your Webhooks notifications, choose one of the options below:
 
-## Configuration via Dashboard
-
-Below, we will explain how to: specify the URLs that will be notified, configure the events from which notifications will be received, validate that the notifications you receive are sent by Mercado Pago and simulate the receipt of various types of notifications.
-
-![webhooks](/images/dashboard/webhooks-es.png)
-
-### Configure URLs and Events 
-
-1. If you haven't done so already, create an application in the [Developer Dashboard](/developers/panel/app).
-2. Once the application is created, navigate to the Webhooks section in the "Application details" page and configure the **production** and **test** URLs where notifications will be received.
-3. If you need to identify multiple accounts, at the end of the indicated URL you can indicate the parameter `?customer=(sellername) endpoint` to identify the sellers.
-4. Next, select the **events** from which you will receive notifications in `json` format via an `HTTP POST` to the URL specified above. An event is any type of update to the reported object, including status or attribute changes. See the events that can be configured in the table below.
-
-| Notification Type | Action | Description |
-| :--- | :--- | :--- |
-| `payment` | `payment.created` | Payment creation |
-| `payment` | `payment.updated` | Payment update |
-| `mp-connect` | `application.deauthorized` | Account unbinding |
-| `mp-connect` | `application.authorized` | Account linking |
-| `subscription_preapproval` | `created - updated` | Subscription |
-| `subscription_preapproval_plan` | `created - updated` | Subscription plan |
-| `subscription_authorized_payment` | `created - updated` | Recurring payment for a subscription |
-| `point_integration_wh` | `state_FINISHED` | Payment process completed |
-| `point_integration_wh` | `state_CANCELED` | Payment process canceled |
-| `point_integration_wh` | `state_ERROR` | An error occurred while processing the payment attempt |
-| `topic_instore_integration_wh` | - | Notifications of in-person integrations |
-| `shipments` | - | Shipment notifications |
-| `delivery` | `delivery.updated`| Shipping data and order update |
-| `delivery_cancellation` | `case_created`| Shipment cancellation request |
-| `wallet_connect` | - | Transaction notifications with [Wallet Connect](/developers/en/docs/wallet-connect/landing) |
-| `stop_delivery_op_wh` | - | Fraud alerts |
-| `topic_claims_integration_wh` | `updated`| Claims made by sales |
-| `topic_card_id_wh` | `card.updated`| Card Updater. The buyer's user card has been updated* |
-
-> *The Card Updater retrieves card information and updates this data within Mercado Pago. Cards recoverable with this feature include: cards with incorrect information (such as expiration date, card number, CVV, name, etc.) and cards that have been replaced by the financial institution (due to expiration, card upgrade, etc.).
-
-5. Finally, click **Save** to generate a secret signature for the application. The signature is a validation method to ensure that the notifications received were sent by Mercado Pago, therefore, it is important to check the authenticity information to avoid fraud.
+| Configuration type | Description |
+|---|---|
+| [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#configurationthroughyourintegrations) | Allows configuring notifications for various topics, identifying different accounts if necessary, and validating the notification origin using the secret signature (except notifications for QR Code integrations). |
+| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#configurationduringpaymentcreation) | Allows specific configuration of notifications for each payment. This configuration is not allowed for Mercado Pago Point or Delivery integrations. |
 
 > WARNING
 >
 > Important
-> 
-> Mercado Pago will always send this signature in Webhook notifications. Always verify this authenticity information to prevent fraud.
-> <br/>
-> The generated signature has no expiration date, and while not mandatory, we recommend periodically renewing the **secret signature**. To do this, simply click the reset button next to the signature.
-### Validate notification origin
+>
+> The URLs configured during payment creation will take precedence over those configured through Your integrations.
 
-At the moment the registered URL receives a notification, you can validate whether the content sent in the `x-signature` header was sent by Mercado Pago, in order to enhance the security of receiving your notifications.
+Once notifications are configured, refer to the necessary [actions after receiving a notification](/developers/en/docs/your-integrations/notifications/webhooks#accionesnecesariasdespusderecibirlanotificacin) to validate that the notifications were properly received.
+
+## Configuration through Your integrations
+
+Efficiently and securely configure notifications for each application directly in [Your integrations](/developers/panel/app). In this documentation, we will explain how to: 
+1. Specify URLs and configure events
+2. Validate the notification source
+3. Simulate receiving the notification
+
+> WARNING
+>
+> Important
+>
+> This configuration method is not available for QR Code or Subscriptions integrations. To set up notifications for either of these integrations, use the [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#configurationduringpaymentcreation) method.
+
+
+### 1. Specify URLs and configure events
+
+To configure Webhooks notifications via Your integrations, it is necessary to specify the URLs where they will be received and the events for which you wish to receive notifications.
+
+To do this, follow these steps:
+
+1. Access [Your integrations](/developers/panel/app) and select the application for which you want to enable notifications. If you haven't created an application yet, access the [Developer Dashboard documentation](/developers/en/docs/your-integrations/dashboard) and follow the instructions to do so.
+2. In the left menu, click on **Webhooks > Configure notifications** and configure the URLs that will be used to receive notifications. We recommend using different URLs for testing mode and production mode:
+    * **Test mode URL:** provide a URL that allows testing the correct operation of notifications for this application during the testing or development phase. Testing these notifications should be done exclusively with the **test credentials of productive users**.
+    * **Production mode URL:** provide a URL to receive notifications with your productive integration. These notifications should be configured with **productive credentials**.
+
+![webhooks](/images/dashboard/webhooks-es.png)
 
 > NOTE
 >
-> Example of the content sent in the header x-signature
+> Note
+> 
+> If it is necessary to identify multiple accounts, you can add the parameter `?cliente=(sellersname) endpoint` to the endpoint URL to identify the sellers.
+
+3. Select the **events** from which you want to receive notifications in `JSON` format via an `HTTP POST` to the URL specified earlier. An event can be any type of update on the reported object, including status changes or attributes. Refer to the table below to see the events that can be configured, considering the integrated Mercado Pago solution and its business specifics.
+
+| Events | Name in Your Integrations | Topic | Associated products |
+|---|---|---|---|
+| Creation and update of payments | Payments | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----MP Point------------<br>Wallet Connect |
+| Recurring payment of a subscription (creation - update) | Plans and Subscriptions | `subscription_authorized_payment` | Subscriptions |
+| Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
+| Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
+| Linking and unlinking of mp-connect accounts | Application linking | `mp-connect` | All products that have implemented OAuth |
+----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` / `point_integration_ipn` | Mercado Pago Point |------------
+----[mla]----| Creation, update, or cancellation of orders. | Delivery (proximity marketplace) | `delivery` | MP Delivery |------------
+| Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
+| Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` / `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
+| Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----MP Point------------<br>QR Code<br>Wallet Connect |
+| Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` / `merchant_order` | Checkout Pro<br>QR Code  |
+| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` / `chargebacks` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+
+> WARNING
 >
-> `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
+> Important
+>
+> If you have any questions about the topics to de activated or the events that will be notified, check the [Additional information about Notifications documentation](/developers/en/docs/your-integrations/notifications/additional-info). 
 
-See below the step-by-step to configure this validation and at the end, we provide some SDKs with a **complete code example** to make your configuration process easier.
+5. Finally, click on **Save**. This will generate a unique **secret signature** for your application, allowing you to validate the authenticity of received notifications, ensuring they were sent by Mercado Pago. Note that the generated signature does not have an expiration date, and its periodic renewal is not mandatory but highly recommended. Simply click the **Reset** button next to the signature to renew it.
 
-1. Extract the timestamp (`ts`) and the signature from the `x-signature` header. To do this, split the content of the header by the `,` character, resulting in a list of elements. The value for the prefix `ts` is the timestamp (in milliseconds) of the notification, and `v1` is the encrypted signature. Example: `ts=1704908010` and `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
-2. Using the template below, replace the parameters with the data received in your notification.
+> WARNING
+> 
+> Important
+> 
+> QR Code notifications cannot be verified using the secret signature. Therefore, you should proceed directly to the Simulate receiving notifications step. If you have a QR Code integration and still want to verify the origin of your notifications, please contact [Mercado Pago Support](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/support/center).
+
+
+### 2. Validate notification origin
+
+Notifications sent by Mercado Pago will be similar to the following example for a `payment` topic alert:
+
+```json
+{
+ "id": 12345,
+ "live_mode": true,
+ "type": "payment",
+ "date_created": "2015-03-25T10:04:58.396-04:00",
+ "user_id": 44444,
+ "api_version": "v1",
+ "action": "payment.created",
+ "data": {
+     "id": "999999999"
+ }
+}
+```
+
+Mercado Pago will always include the secret signature in the Webhooks notifications received at the registered URL, which will allow you to validate their authenticity to provide greater security and prevent potential fraud.
+
+This signature will be sent in the `x-signature` header, as shown in the example below.
+
+```x-signature
+
+`ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
+
+```
+
+To configure this validation, you need to extract the key contained in the header and compare it with the key provided for your application in Your integrations. You can do this by following the steps below. At the end, we provide some SDKs with a **complete code example** to facilitate the process:
+
+1. To extract the timestamp (`ts`) and the signature from the `x-signature` header, split the content of the header by the "," character, which will result in a list of 2 elements. The value for the `ts` prefix is the timestamp (in milliseconds) of the notification, and "v1" is the encrypted signature. Following the example presented above, `ts=1704908010` and `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
+2. Using the template and descriptions below, replace the parameters with the data received in your notification.
 
 ```template
 id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
-In the template, values enclosed in `[]` should be replaced with the notification data, such as:
+ * Parameters with the `_url` suffix come from query params. Example: [data.id_url] will be replaced by the corresponding event ID value (`data.id`). This query param can be found in the received notification.
+ * `[ts_header]` will represent the `ts` value extracted from the `x-signature` header.
+ * `[x-request-id_header]` should be replaced with the value received in the `x-request-id` header.
 
-- Parameters with the `_url` suffix come from query params. For example, `[data.id_url]` will be replaced by the value corresponding to the event ID (`data.id`).
-- `[ts_header]` will be the value of ts extracted from the x-signature header.
+> WARNING
+>
+> Important
+> 
+> If any of the values shown in the above template are not present in your notification, you should remove them.
 
-> If any of the values presented in the template above are not present in your notification, you should remove them from the template.
-
-3. In the Developer [Dashboard](/developers/panel/app), select the integrated application, navigate to the Webhooks section, and reveal the generated secret signature.
-4. Generate the counter key for validation. To do this, calculate an [HMAC](https://en.wikipedia.org/wiki/HMAC) with the `SHA256 hash` function in hexadecimal, using the **secret signature** as the key and the populated template with the values as the message. For example:
+3. In the [Your integrations](/developers/panel/app), select the integrated application and navigate to the Webhooks section to reveal the generated secret signature.
+4. Generate the validation key. To do this, calculate an HMAC (Hash-based Message Authentication Code) using the `SHA256 hash` function in hexadecimal base. Use the **secret signature** as the key and the template filled with the respective values as the message.
 
 [[[
 ```php
@@ -103,9 +159,9 @@ cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.e
 ```
 ]]]
 
-5. Finally, compare the generated key with the key extracted from the header, ensuring they have an exact match. Additionally, you can use the timestamp extracted from the header for comparison with a timestamp generated at the time of receiving the notification to establish a tolerance for message reception delays.
+5. Finally, compare the generated key with the key extracted from the header, ensuring they match exactly. Additionally, you can use the timestamp extracted from the header to compare it with a timestamp generated at the time of receiving the notification. This allows establishing a tolerance margin for delays in receiving the message.
 
-- Complete code example:
+See examples of complete code below:
 
 [[[
 ```php
@@ -332,18 +388,29 @@ if sha == hash {
 ```
 ]]]
 
-### Simulate notification receipt
+### 3. Simulate receiving the notification
 
-1. After configuring the URLs and Events, click **Simulate** to experiment and test if the indicated URL is receiving notifications correctly.
-2. On the relevant screen, select the URL to be tested, which can be **either the test or production URL**.
-3. Next, choose the **event type** and enter the **identification** that will be sent in the notification body.
-4. Finally, click **Send test** to check the request, the server's response and the event description.
+Simulating receiving notifications is necessary to verify if they are configured correctly. To do so, follow these steps:
 
-## Setup while creating payments
+1. After configuring the URLs and desired events, click **Save** to save the configuration.
+2. Afterward, click **Simulate** to test if the specified URL is receiving notifications correctly.
+3. On the simulation screen, select the URL to be tested, which can be a **test** or **production** URL.
+4. Next, select the desired **event type** and enter the identification that will be sent in the body of the notification.
+5. Finally, click **Send test** to verify the request, the server response, and the event description.
 
-It is possible to configure the notification URL more specifically for each payment using the `notification_url` field. See below how to do this using the SDKs.
+## Configuration during payment creation
 
-1. In the `notification_url` field, indicate the URL from which notifications will be received, as shown below.
+During the payment creation process, it's possible to configure the notification URL more specifically for each payment using the `notification_url` field and implementing the necessary notification receiver.
+
+> WARNING
+>
+> Important
+> 
+> It's not possible to configure notifications for the point_integration_wh and delivery topics using this method. To activate these topics, use the [Your integrations settings](/developers/en/docs/your-integrations/notifications/webhooks#yourintegrationssettings).
+
+Next, we explain how to do this with the help of the SDKs.
+
+1. In the `notification_url` field, specify the URL where notifications will be received, as shown in the example below. To receive notifications exclusively via Webhooks and not via IPN, you can add the parameter `source_news=webhooks` to the `notification_url`. For example: "https://www.yourserver.com/notifications?source_news=webhooks".
 
 [[[
 ```php
@@ -587,7 +654,7 @@ curl -X POST \
 ```
 ]]]
 
-2. Implement the notifications receiver using the following code as an example:
+2. Implement the notification receiver using the following code as an example:
 
 ```php
 <?php
@@ -605,22 +672,20 @@ curl -X POST \
      case "invoice":
          $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
          break;
-     case "point_integrartion_wh":
-         // $_POST contains the information related to the notification.
-         break;   
+     case "point_integration_wh":
+         // $_POST contiene la informaciòn relacionada a la notificaciòn.
+         break;
  }
 ?>
 ```
 
-3. Once the necessary settings have been made, the notification via Webhook will have the following format:
+After making the necessary configurations, the Webhooks notification will be delivered in `JSON` format. See the example of a notification for the `payments` topic and the descriptions of the information sent in the table below.
 
-> NOTE
+> WARNING
 >
 > Important
 >
-> For the event type `point_integration_wh` the notification format changes. [Click here](/developers/en/docs/mp-point/introduction) to consult the documentation of **Mercado Pago Point**. </br></br>
-> </br></br>
-> In the case of the `delivery`, `topic_claims_integration_wh` and `card updater` events, we will also have some different attributes in the response. Check the table below for these features.
+> Test payments, created with test credentials, will not send notifications. The only way to test notification reception is through the [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
 
 ```json
 {
@@ -637,87 +702,96 @@ curl -X POST \
 }
 ```
 
-This indicates that payment **999999999** was created for user **44444** in production mode with API version V1 and that this event occurred on date **2016-03-25T10:04:58.396-04 :00**.
-
-| Attribute | Description |
-| --- | --- |
-| **id** | Notification ID |
-| **live_mode** | Indicates if the URL entered is valid. |
-| **type** | Type of notification received (payments, mp-connect, subscription, claim, automatic-payments, etc) |
-| **date_created** | Resorce creation date |
-| **user_id** | Vendor UserID |
-| **api_version** | Indicates if it is a duplicate notification or not |
-| **action** | Type of notification received, indicating whether it is the update of a resource or the creation of a new |
-| **data - id** | ID of the payment, merchant_order or claim|
-| **data - customer_id** (card updater)| Customer ID with updated card |
-| **data - new_card_id** (card updater)| Updated card number |
-| **data - old_card_id** (card updater)| Old card number |
-| **attempts** (delivery) | Number of times a notification was sent |
-| **received** (delivery) | Resource Creation Date |
-| **resource** (delivery) | Type of notification received, indicating whether this is an update to a feature or the creation of a new one |
-| **sent** (delivery) | Notification sent date |
-| **topic** (delivery) | Type of notification received |
-| **resource** (claims) | Type of notification received, indicating notifications related to claims made by sales |
-
-4. If you want to receive notifications only from Webhook and not from IPN, you can add in the `notification_url` the parameter `source_news=webhooks`. For example: https://www.yourserver.com/notifications?source_news=webhooks
-
-## Actions required after receiving notification
-
-[TXTSNIPPET][/guides/snippets/test-integration/notification-response]
-
-After returning the notification and confirming its receipt, you will obtain the full information of the notified resource by accessing the corresponding API endpoint:
-
-----[mpe, mco, mlu, mlc]---- 
-| Type | URL | Documentation |
+| Attribute | Description | Example in JSON |
 | --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
-| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [check documentation](/developers/en/reference/subscriptions/_preapproval_plan/post) |
-| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
-| topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
+| **id** | Notification ID | `12345` |
+| **live_mode** | Indicates if the URL provided is valid. | `true` |
+| **type** | Type of notification received according to the previously selected topic (payments, mp-connect, subscription, claim, automatic-payments, etc.) | `payment` |
+| **date_created** | Date the notified resource was created. | `2015-03-25T10:04:58.396-04:00` |
+| **user_id**| Seller identifier. | `44444` |
+| **api_version** | Value indicating the API version sending the notification. | `v1` |
+| **action** | Notified event, indicating if it's a resource update or a new creation. | `payment.created` |
+| **data.id**  | ID of the payment, `merchant_order`, or claim. | `999999999` |
 
-------------
-----[mlm, mlb]---- 
-| Type | URL | Documentation |
-| --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
-| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [check documentation](/developers/en/reference/subscriptions/_preapproval_plan/post) |
-| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
-| point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
-| topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
-
-------------
-----[mla]----
-| Type | URL | Documentation |
-| --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/subscriptions/_preapproval/post) |
-| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [check documentation](/developers/en/reference/subscriptions/_preapproval_plan/post) |
-| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [check documentation](/developers/en/reference/subscriptions/_authorized_payments_id/get) |
-| point_integration_wh | - | [check documentation](/developers/en/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
-| delivery | - | [check documentation](/developers/en/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put)
-| topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [check documentation](/developers/en/developers/pt/reference/claims/_data_resource/get) |
-
-------------
-
-Also, specifically in fraud alerts, you must not deliver the order and you will need to do the cancellation through the [cancellations API](/developers/en/reference/chargebacks/_payments_payment_id/put).
-
-In the notification, you will receive a `JSON` with the following information containing the payment id to cancel.
-
-```json
-
-
- "description": ".....",
- "merchant_order": 4945357007,
- "payment_id": 23064274473
-
-
-```
-
-> NOTE
+> WARNING
 >
 > Important
 >
-> You can also get more order information using the [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) API.
-With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment.
+> To obtain the notification format for topics other than `payment`, such as `point_integration_wh`, `delivery`, `topic_claims_integration_wh`, and `topic_card_id_wh`, consult [Additional information about notifications](/developers/en/docs/your-integrations/notifications/additional-info).
+
+## Necessary actions after receiving a notification
+
+When you receive a notification on your platform, Mercado Pago expects a response to validate that you received it correctly. To do this, you need to return an `HTTP STATUS 200 (OK)` or `201 (CREATED)` status.
+
+The **waiting time** for confirmation of receipt of notifications is **22 seconds**. If this confirmation is not sent, the system will understand that the notification was not received and will **retry sending every 15 minutes** until a response is received. After the third attempt, the interval will be extended, but the attempts will continue.
+
+After responding to the notification and confirming its receipt, you can obtain the complete information of the notified resource by making a request to the corresponding API endpoint. To identify which endpoint to use, check the table below:
+
+----[mpe, mco, mlu, mlc]---- 
+| Topic | URL | Documentation |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Get payment](/developers/en/reference/payments/_payments_id/get)  |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Search subscriptions](/developers/en/reference/subscriptions/_preapproval_search/get) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Search subscriptions plans](/developers/en/reference/subscriptions/_preapproval_plan_search/get)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Get invoice data](/developers/en/reference/subscriptions/_authorized_payments_id/get)  |
+| topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Get claim details](/developers/en/reference/claims/get-claim-details/get) |
+| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) |
+| topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Get chargeback](/developers/en/reference/chargebacks/_chargebacks_id/get) |
+
+------------
+----[mlm, mlb]---- 
+| Tipo | URL | Documentação |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Get payment](/developers/en/reference/payments/_payments_id/get)  |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Search subscriptions](/developers/en/reference/subscriptions/_preapproval_search/get) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Search subscription plans](/developers/en/reference/subscriptions/_preapproval_plan_search/get)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Get invoices data](/developers/en/reference/subscriptions/_authorized_payments_id/get)  |
+| point_integration_wh| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Search payment intent](/developers/en/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
+| topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Get claim details](/developers/en/reference/claims/get-claim-details/get) |
+| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) |
+| topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Get chargeback](/developers/en/reference/chargebacks/_chargebacks_id/get) |
+
+------------
+----[mla]---- 
+| Tipo | URL | Documentação |
+| --- | --- | --- |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Get payment](/developers/en/reference/payments/_payments_id/get)  |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Search subscriptions](/developers/en/reference/subscriptions/_preapproval_search/get) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Search subscription plans](/developers/en/reference/subscriptions/_preapproval_plan_search/get)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Get invoices data](/developers/en/reference/subscriptions/_authorized_payments_id/get)  |
+| point_integration_wh| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Search payment intent](/developers/en/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
+| delivery | `https://api.mercadopago.com/proximity-integration/v1/orders/{shipment_id}` | [Get order](/developers/en/reference/mp_delivery/_proximity-integrationorders_shipment_id/get) |
+| topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Get claim details](/developers/en/reference/claims/get-claim-details/get) |
+| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) |
+| topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Get chargeback](/developers/en/reference/chargebacks/_chargebacks_id/get) |
+
+------------
+
+With this information, you will be able to make the necessary updates to your platform, such as updating an approved payment.
+
+## Notifications dashboard
+
+The notification dashboard allows the user to view the events triggered on a specific integration, check the status, and obtain detailed information about these events.
+
+This dashboard will be displayed once you configure your Webhooks notifications, and you can access it anytime by clicking on **Webhooks** within the [Your integrations](/developers/panel/app).
+
+Among the available information, you will find the percentage of notifications delivered, as well as a quick view of which URLs and events are configured.
+
+Additionally, you will find a complete list of the latest notifications sent and their details, such as **delivery status** (success or failure), **action** (action associated with the triggered event), **event** (type of triggered event), and **date and time**. If desired, you can filter these displayed results by **delivery status** and by period (**date and time**).
+
+![notifications dashboard](/images/dashboard/notification-dashboard-es.png)
+
+### Evet details
+
+When you click on one of the listed notifications, you can access the event details. This section provides additional information, allowing you to retrieve lost data in case of notification delivery failure, thereby keeping your system up to date.
+ * **Status:** Event status along with the corresponding success or error code.
+ * **Event:** Type of event triggered as selected in the notification configuration.
+ * **Type:** Topic to which the triggered event belongs as selected during configuration.
+ * **Trigger date and time:** Date and time when the event was triggered.
+ * **Description:** Detailed description of the event as documented.
+ * **Trigger ID:** Unique identifier of the sent notification.
+ * **Request:** JSON of the request corresponding to the triggered notification.
+
+![notifications details](/images/dashboard/notification-details-dashboard-es.png)
+
+In case of notification delivery failure, you can view the reasons and correct the necessary information to prevent future issues.
