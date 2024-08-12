@@ -12,8 +12,8 @@ IPN notifications can be configured in two ways:
 
 | Configuration mode | Description |
 |---|---|
-| [Description configuration through Your integrations](/developers/en/docs/your-integrations/notifications/ipn#descriptionconfigurationthroughyourintegrations) | Only **one notification URL** can be configured per account (depending on the application, more than one application can use this URL). |
-| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/ipn#configurationduringpaymentcreation) | This can be done using the `notification_url` field. The URL can be different for each object or application.  |
+| [Description configuration through Your integrations](/developers/en/docs/your-integrations/notifications/ipn#bookmark_configuration_through_your_integrations) | Only **one notification URL** can be configured per account (depending on the application, more than one application can use this URL). |
+| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/ipn#bookmark_configuration_during_payment_creation) | This can be done using the `notification_url` field. The URL can be different for each object or application.  |
 
 In this documentation, we will explain the necessary configurations for receiving IPN notifications, as well as the required actions to ensure that Mercado Pago validates that the messages were properly received.
 
@@ -33,7 +33,7 @@ To configure IPN notifications via Your integrations, it is necessary to specify
 
 To configure URLs and events, follow these steps:
 
-1. Access [Your integrations](/developers/panel/app) and select the application for which you want to enable notifications. If you haven't created an application yet, access the [ Developer Dashboard documentation](/developers/en/docs/your-integrations/dashboard) and follow the instructions to do so.
+1. Access [Your integrations](/developers/panel/app) and select the application for which you want to enable notifications. If you haven't created an application yet, access the [Developer Dashboard documentation](/developers/en/docs/your-integrations/dashboard) and follow the instructions to do so.
 2. In the left menu, click on **IPN** and configure the **production URL** that will be used to receive notifications. Keep in mind that you can also experiment and test whether the indicated URL is correctly receiving notifications, allowing you to verify the request, server response, and event description.
 
 ![ipn](/images/dashboard/ipn_es_.png)
@@ -50,10 +50,10 @@ To configure URLs and events, follow these steps:
 | Events | Name in Your Integrations | Topic | Associated products |
 |---|---|---|---|
 | Creation and update of payments | Payments | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----MP Point------------<br>Wallet Connect |
-----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` / `point_integration_ipn` | Mercado Pago Point |------------
-| Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` / `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
-| Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` / `merchant_order` | Checkout Pro<br>QR Code  |
-| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` / `chargebacks` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_ipn` | Mercado Pago Point |------------
+| Fraud alerts after order processing | Fraud alerts | `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
+| Creation, closure, or expiration of commercial orders | Commercial orders | `merchant_order` | Checkout Pro<br>QR Code  |
+| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `chargebacks` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
 
 > WARNING
 >
@@ -71,7 +71,7 @@ During the payment creation process, it's possible to configure the notification
 >
 > Important
 >
-> It's not possible to configure notifications for the `point_integration_wh` and `delivery` topics using this method. To activate these topics, use [Your integrations settings](/developers/en/docs/your-integrations/notifications/additional-info).
+> It's not possible to configure notifications for the `point_integration_wh` and `delivery` topics using this method. To activate these topics, use [Your integrations settings](/developers/en/docs/your-integrations/notifications/ipn#bookmark_configuration_through_your_integrations).
  
 Next, we explain how to do this with the help of the SDKs.
 

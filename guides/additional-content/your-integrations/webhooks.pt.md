@@ -10,8 +10,8 @@ Para configurar as notificações Webhooks, escolha entre uma das opções abaix
 
 | Tipo de configuração | Descrição |
 |---|---|
-| [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraçãoviasuasintegrações) | Permite configurar notificações para diversos tópicos, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta (exceto para notificações de integrações com Código QR). |
-| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraçãoduranteacriaçãodepagamentos) | Permite a configuração específica das notificações para cada pagamento. Não é permitido configurar para integrações com Mercado Pago Point nem para integrações com Delivery. |
+| [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes) | Permite configurar notificações para diversos tópicos, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta (exceto para notificações de integrações com Código QR). |
+| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento. Não é permitido configurar para integrações com Mercado Pago Point nem para integrações com Delivery. |
 
 > WARNING
 >
@@ -19,7 +19,7 @@ Para configurar as notificações Webhooks, escolha entre uma das opções abaix
 >
 > As URLs configuradas durante a criação do pagamento terão prioridade sobre aquelas configuradas através de Suas integrações. 
 
-Uma vez que as notificações estiverem configuradas, consulte as [ações necessárias após receber uma notificação](/developers/pt/docs/your-integrations/notifications/webhooks#accionesnecesariasdespusderecibirlanotificacin) para validar se foram devidamente recebidas.
+Uma vez que as notificações estiverem configuradas, consulte as [ações necessárias após receber uma notificação](/developers/pt/docs/your-integrations/notifications/webhooks#aesnecessriasapsreceberumanotificao) para validar se foram devidamente recebidas.
 
 
 ## Configuração via Suas integrações 
@@ -34,7 +34,7 @@ Configure notificações para cada aplicação diretamente em [Suas integraçõe
 >
 > Importante
 >
-> Este método de configuração não está disponível para integrações com Código QR nem Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#Configuraçãoduranteacriaçãodepagamentos).
+> Este método de configuração não está disponível para integrações com Código QR nem Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
 
 
 ### 1. Indicar URLs e configurar eventos
@@ -66,14 +66,14 @@ Para isso, siga as etapas descritas abaixo.
 | Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
 | Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |
 | Vinculação e desvinculação de contas mp-connect | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham  OAuth implementado |
-----[mla, mlm, mlb]----| Finalização, cancelamento ou erros ao processar intenções de pagamento de dispositivos Mercado Pago Point. | Integrações Point | `point_integration_wh` / `point_integration_ipn` | Mercado Pago Point |------------
+----[mla, mlm, mlb]----| Finalização, cancelamento ou erros ao processar intenções de pagamento de dispositivos Mercado Pago Point. | Integrações Point | `point_integration_wh` | Mercado Pago Point |------------
 ----[mla]----| Criação, atualização ou cancelamento de pedidos. | Delivery (proximity marketplace) | `delivery` | MP Delivery |------------
 | Transações com Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
-| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` / `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
+| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
 | Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----MP Point------------<br>Código QR<br>Wallet Connect |
 | Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
-| Criação, fechamento ou expiração de ordens comerciais. | Ordens comerciais | `topic_merchant_order_wh` / `merchant_order` | Checkout Pro<br>Código QR  |
-| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` / `chargebacks` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Criação, fechamento ou expiração de ordens comerciais. | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
+| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
 
 
 > WARNING
@@ -163,7 +163,7 @@ cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.e
 ```
 ]]]
 
-5. Por fim, compare a chave gerada com a chave extraída do _header_, assegurando que correspondam exatamente. Além disso, é possível usar o timestamp extraído do _header_ para compará-lo com um _timestamp_ gerado no momento do recebimento da notificação. Isso permite estabelecer uma margem de tolerância para atrasos no recebimento da mensagem.
+5. Por fim, compare a chave gerada com a chave extraída do _header_, assegurando que correspondam exatamente. Além disso, é possível usar o _timestamp_ extraído do _header_ para compará-lo com um _timestamp_ gerado no momento do recebimento da notificação. Isso permite estabelecer uma margem de tolerância para atrasos no recebimento da mensagem.
 
 Veja exemplos de códigos completos abaixo:
 
@@ -411,11 +411,11 @@ Durante o processo de criação de pagamentos, é possível configurar a URL de 
 >
 > Importante
 > 
-> Este método não permite configurar notificações para os tópicos `point_integration_wh` e `delivery` utilizando este método. Para ativá-los, utilize as [configurações de Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
+> Este método não permite configurar notificações para os tópicos `point_integration_wh` e `delivery` utilizando este método. Para ativá-los, utilize as [configurações de Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes).
 
 A seguir, explicamos como realizar esta configuração utilizando nossos SDKs.
 
-1. No campo `notification_url`, , informe a URL que receberá as notificações, conforme o exemplo abaixo. Para receber notificações exclusivamente via Webhooks e não via IPN, adicione o parâmetro `source_news=webhooks` à `notification_url`. Por exemplo: "https://www.yourserver.com/notifications?source_news=webhooks".
+1. No campo `notification_url`, informe a URL que receberá as notificações, conforme o exemplo abaixo. Para receber notificações exclusivamente via Webhooks e não via IPN, adicione o parâmetro `source_news=webhooks` à `notification_url`. Por exemplo: "https://www.yourserver.com/notifications?source_news=webhooks".
 
 
 [[[
@@ -691,7 +691,7 @@ Após realizar as configurações necessárias, a notificação Webhooks será e
 >
 > Importante
 >
-> Os pagamentos de teste, criados com credenciais de teste, não enviarão notificações. A única maneira de testar o recebimento de notificações é por meio da [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
+> Os pagamentos de teste, criados com credenciais de teste, não enviarão notificações. A única maneira de testar o recebimento de notificações é por meio da [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes).
 
 ```json
 {
@@ -711,12 +711,12 @@ Após realizar as configurações necessárias, a notificação Webhooks será e
 | Atributo | Descrição | Exemplo no JSON |
 | --- | --- | --- |
 | **id** | ID de notificação | `12345` |
-| **live_mode** | Indica se a URL informada é válida.| `true` |
+| **live_mode** | Indica se a URL informada é válida| `true` |
 | **type** | Tipo de notificação recebida de acordo com o tópico previamente selecionado (payments, mp-connect, subscription, claim, automatic-payments, etc.) | `payment` |
 | **date_created** | Data de criação do recurso notificado | `2015-03-25T10:04:58.396-04:00` |
 | **user_id**| Identificador do vendedor | `44444` |
 | **api_version** | Valor que indica a versão da API que envia a notificação. | `v1` |
-| **action** | Evento notificado, indicando se é uma atualização de recurso ou a criação de um novo. | `payment.created` |
+| **action** | Evento notificado, indicando se é uma atualização de recurso ou a criação de um novo | `payment.created` |
 | **data.id**  | ID do pagamento, do `merchant_order` ou da reclamação | `999999999` |
 
 > WARNING

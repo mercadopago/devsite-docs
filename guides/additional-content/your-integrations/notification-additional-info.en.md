@@ -34,8 +34,7 @@ In either case, a Webhooks notification will be sent as shown below:
 |---|---|
 | `action` | `card.updated` is the only possible value and indicates when a customer's card was updated. |
 | `application_id` | Identifier of the application being notified. |
-| `data` | This field contains the update details, such as the `customer_id` (customer identifier), the new `card_id`, and the old `card_id`.
-If a new card_id is not created, the original one is resent.  |
+| `data` | This field contains the update details, such as the `customer_id` (customer identifier), the new `card_id`, and the old `card_id`. If a new `card_id` is not created, the original one is resent.  |
 | `date_created` | Creation date of the notification. |
 | `id` | Exclusive identifier of the event, prevents duplicate messages. |
 | `live_mode` | Indicates if the informed URL is valid. |
@@ -121,14 +120,15 @@ In cases where notifications for the topic `topic_claims_integration_wh` have be
 | `action` | Notification event, indicating whether it is the creation of a resource or its update. |
 | `api_version` | Value indicating the API version sending the notification. |
 | `data.id` | Unique identifier of the claim or chargeback. |
-| `data.resource` | Tipo de notificação recebida. Neste caso, indica notificações relacionadas a reclamações.Type of notification received. In this case, it indicates notifications related to claims. |
+| `data.resource` | Tipo de notificação recebida. Neste caso, indica notificações relacionadas a reclamações.
+Type of notification received. In this case, it indicates notifications related to claims. |
 | `date_created` | Notification creation date. |
 | `id` | Received notification identifier. |
 | `live_mode` | Indicates if the provided URL is valid. |
 | `type` | Type of notification received, according to the previously selected topic. In this case, it will always be `claim`. |
 | `user_id `| User identifier for whom the notification is sent. |
 
-## Meios de pagamento offline
+## Offline payment methods
 
 If you have integrated payments with offline payment methods and configured your notifications with the payments topic, you should know that all changes in payment status will be notified to you.
 

@@ -21,7 +21,6 @@ La activación de estos tópicos dependerá de la solución de Mercado Pago que 
 | Apertura de contracargos, cambios de status y modificaciones referentes a las liberaciones de dinero.   |   Contracargos | `topic_chargebacks_wh` / `chargebacks`  | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------ <br>Checkout Bricks |
 
 
-
 Una vez configuradas, las notificaciones permiten programar el backend de las tiendas para, por ejemplo, actualizar el estado de pedidos cuando un pago es creado, enviar un e-mail de confirmación cuando un pedido es actualizado en Mercado Pago, actualizar el registro de un cliente cuando realice una vinculación de un plan de suscripción, entre otras acciones recurrentes de los eventos detallados en la tabla anterior.
 
 Existen dos tipos de notificaciones para su configuración, como se muestra en la tabla a continuación.

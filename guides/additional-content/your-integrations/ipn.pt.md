@@ -12,8 +12,8 @@ As notificações IPN podem ser configuradas de duas maneiras:
 
 | Modo de configuração | Descrição |
 |---|---|
-| [Configuração através de Suas integrações](/developers/pt/docs/your-integrations/notifications/ipn#configuracinatravsdetusintegraciones) | Poderá ser configurada apenas **uma URL de notificação** por conta (dependendo da aplicação, mais de uma aplicação pode usar essa URL). |
-| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/ipn#configuracindurantelacreacindeunpago) | Isso pode ser realizado a partir do campo `notification_url`. A URL poderá ser diferente para cada objeto ou aplicação.  |
+| [Configuração através de Suas integrações](/developers/pt/docs/your-integrations/notifications/ipn#configuraoviasuasintegraes) | Poderá ser configurada apenas **uma URL de notificação** por conta (dependendo da aplicação, mais de uma aplicação pode usar essa URL). |
+| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/ipn#configuraoduranteacriaodepagamentos) | Isso pode ser realizado a partir do campo `notification_url`. A URL poderá ser diferente para cada objeto ou aplicação.  |
 
 Nesta documentação explicaremos as configurações necessárias para o recebimento das notificações IPN, além de apresentar quais são as ações necessárias para que o Mercado Pago valide o correto recebimento das mensagens.
 
@@ -34,7 +34,7 @@ Para configurar as notificações IPN via Suas integrações, é necessário ind
 
 Para configurar URLS e eventos, siga as etapas descritas abaixo:
 
-1. Acesse [Suas integrações](/developers/panel/app) e selecione a aplicação para a qual deseja ativar as notificações. Caso ainda não tenha criado uma aplicação, acesse a[documentação Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard) e siga as instruções para fazê-lo.
+1. Acesse [Suas integrações](/developers/panel/app) e selecione a aplicação para a qual deseja ativar as notificações. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard) e siga as instruções para fazê-lo.
 2. No menu à esquerda, clique em **IPN** e configure a **URL de produção** que será usada para receber as notificações. Leve em consideração que é possível  testar se a URL indicada está recebendo as notificações corretamente. Isso permite verificar a solicitação, a resposta do servidor e a descrição do evento.
 
 ![ipn](/images/dashboard/ipn_pt_.png)
@@ -50,7 +50,7 @@ Para configurar URLS e eventos, siga as etapas descritas abaixo:
 | Nome em Suas integrações | Eventos | Tópico | Produtos associados |
 |---|---|---|---|
 | Criação e atualização de pagamentos | Pagos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----MP Point------------<br>Wallet Connect |
-----[mla, mlm, mlb]----| Finalização, cancelamento ou erro ao processar tentativas de pagamento nos dispositivos Mercado Pago Point. | `point_integration_ipn` | Mercado Pago Point |------------
+----[mla, mlm, mlb]----| Finalização, cancelamento ou erro ao processar tentativas de pagamento nos dispositivos Mercado Pago Point. | Integrações Point | `point_integration_ipn` | Mercado Pago Point |------------
 | Alertas de fraude após o processamento de um pedido | Alertas de fraude | `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout PRO |
 | Criação, fechamento ou expiração de pedidos. |  Ordens comerciais | `merchant_order` | Checkout Pro<br>Código QR  |
 | Abertura de estornos, alterações de status e modificações relacionadas às liberações de dinheiro.   |   Estornos | `chargebacks`  | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------ <br>Checkout Bricks |
@@ -71,7 +71,7 @@ Durante o processo de criação de pagamentos, é possível configurar a URL de 
 >
 > Importante
 >
-> Este método não permite configurar notificações para o tópico `point_integration_ipn`. Para ativá-lo, utilize as configurações de Suas integrações.
+> Este método não permite configurar notificações para o tópico `point_integration_ipn`. Para ativá-lo, utilize as [configurações através de Suas integrações](/developers/pt/docs/your-integrations/notifications/ipn#configuraoviasuasintegraes).
  
 A seguir, explicamos como realizar esta configuração utilizando nossoss SDKs.
 

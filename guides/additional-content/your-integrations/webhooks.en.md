@@ -10,8 +10,8 @@ To configure your Webhooks notifications, choose one of the options below:
 
 | Configuration type | Description |
 |---|---|
-| [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#configurationthroughyourintegrations) | Allows configuring notifications for various topics, identifying different accounts if necessary, and validating the notification origin using the secret signature (except notifications for QR Code integrations). |
-| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#configurationduringpaymentcreation) | Allows specific configuration of notifications for each payment. This configuration is not allowed for Mercado Pago Point or Delivery integrations. |
+| [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_through_your_integrations) | Allows configuring notifications for various topics, identifying different accounts if necessary, and validating the notification origin using the secret signature (except notifications for QR Code integrations). |
+| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) | Allows specific configuration of notifications for each payment. This configuration is not allowed for Mercado Pago Point or Delivery integrations. |
 
 > WARNING
 >
@@ -19,7 +19,7 @@ To configure your Webhooks notifications, choose one of the options below:
 >
 > The URLs configured during payment creation will take precedence over those configured through Your integrations.
 
-Once notifications are configured, refer to the necessary [actions after receiving a notification](/developers/en/docs/your-integrations/notifications/webhooks#accionesnecesariasdespusderecibirlanotificacin) to validate that the notifications were properly received.
+Once notifications are configured, refer to the necessary [actions after receiving a notification](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_necessary_actions_after_receiving_a_notification) to validate that the notifications were properly received.
 
 ## Configuration through Your integrations
 
@@ -32,7 +32,7 @@ Efficiently and securely configure notifications for each application directly i
 >
 > Important
 >
-> This configuration method is not available for QR Code or Subscriptions integrations. To set up notifications for either of these integrations, use the [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#configurationduringpaymentcreation) method.
+> This configuration method is not available for QR Code or Subscriptions integrations. To set up notifications for either of these integrations, use the [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) method.
 
 
 ### 1. Specify URLs and configure events
@@ -63,14 +63,14 @@ To do this, follow these steps:
 | Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
 | Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
 | Linking and unlinking of mp-connect accounts | Application linking | `mp-connect` | All products that have implemented OAuth |
-----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` / `point_integration_ipn` | Mercado Pago Point |------------
+----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` | Mercado Pago Point |------------
 ----[mla]----| Creation, update, or cancellation of orders. | Delivery (proximity marketplace) | `delivery` | MP Delivery |------------
 | Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
-| Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` / `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
+| Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
 | Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----MP Point------------<br>QR Code<br>Wallet Connect |
 | Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
-| Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` / `merchant_order` | Checkout Pro<br>QR Code  |
-| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` / `chargebacks` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` | Checkout Pro<br>QR Code  |
+| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
 
 > WARNING
 >
@@ -118,7 +118,7 @@ This signature will be sent in the `x-signature` header, as shown in the example
 
 To configure this validation, you need to extract the key contained in the header and compare it with the key provided for your application in Your integrations. You can do this by following the steps below. At the end, we provide some SDKs with a **complete code example** to facilitate the process:
 
-1. To extract the timestamp (`ts`) and the signature from the `x-signature` header, split the content of the header by the "," character, which will result in a list of 2 elements. The value for the `ts` prefix is the timestamp (in milliseconds) of the notification, and "v1" is the encrypted signature. Following the example presented above, `ts=1704908010` and `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
+1. To extract the timestamp (`ts`) and the signature from the `x-signature` header, split the content of the header by the "," character, which will result in a list of 2 elements. The value for the `ts` prefix is the timestamp (in milliseconds) of the notification, and `v1` is the encrypted signature. Following the example presented above, `ts=1704908010` and `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
 2. Using the template and descriptions below, replace the parameters with the data received in your notification.
 
 ```template
@@ -685,7 +685,7 @@ After making the necessary configurations, the Webhooks notification will be del
 >
 > Important
 >
-> Test payments, created with test credentials, will not send notifications. The only way to test notification reception is through the [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#configuracinatravsdetusintegraciones).
+> Test payments, created with test credentials, will not send notifications. The only way to test notification reception is through the [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_through_your_integrations).
 
 ```json
 {
@@ -705,13 +705,13 @@ After making the necessary configurations, the Webhooks notification will be del
 | Attribute | Description | Example in JSON |
 | --- | --- | --- |
 | **id** | Notification ID | `12345` |
-| **live_mode** | Indicates if the URL provided is valid. | `true` |
+| **live_mode** | Indicates if the URL provided is valid | `true` |
 | **type** | Type of notification received according to the previously selected topic (payments, mp-connect, subscription, claim, automatic-payments, etc.) | `payment` |
-| **date_created** | Date the notified resource was created. | `2015-03-25T10:04:58.396-04:00` |
-| **user_id**| Seller identifier. | `44444` |
-| **api_version** | Value indicating the API version sending the notification. | `v1` |
-| **action** | Notified event, indicating if it's a resource update or a new creation. | `payment.created` |
-| **data.id**  | ID of the payment, `merchant_order`, or claim. | `999999999` |
+| **date_created** | Date the notified resource was created | `2015-03-25T10:04:58.396-04:00` |
+| **user_id**| Seller identifier | `44444` |
+| **api_version** | Value indicating the API version sending the notification | `v1` |
+| **action** | Notified event, indicating if it's a resource update or a new creation | `payment.created` |
+| **data.id**  | ID of the payment, `merchant_order`, or claim | `999999999` |
 
 > WARNING
 >
