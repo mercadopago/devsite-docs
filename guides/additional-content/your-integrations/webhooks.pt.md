@@ -723,7 +723,7 @@ Após realizar as configurações necessárias, a notificação Webhooks será e
 >
 > Importante
 >
-> Para obter o formato de notificações para tópicos diferentes de `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` e `topic_card_id_wh`, consulte [Informações adicionais sobre notificações](/developers/es/docs/your-integrations/notifications/additional-info).
+> Para obter o formato de notificações para tópicos diferentes de `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` e `topic_card_id_wh`, consulte [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info).
 
 
 ## Ações necessárias após receber uma notificação
