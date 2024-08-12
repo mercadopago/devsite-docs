@@ -2350,7 +2350,7 @@
                           },
                           "unit_price": {
                             "type": "number",
-                            "example": 14.5,
+                            "example": 14,
                             "description": {
                               "en": "Unit price of the item. This property is used together with the property quantity to determine the order cost. For Chile (MLC), it must be an integer.",
                               "pt": "Preço unitário do item. Essa propriedade é usada em conjunto com a propriedade de quantity para determinar o custo do pedido. Para o Chile (MLC) deve ser um número inteiro.",
