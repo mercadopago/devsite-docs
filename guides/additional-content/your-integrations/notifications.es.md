@@ -12,13 +12,13 @@ La activación de estos tópicos dependerá de la solución de Mercado Pago que 
 | Vinculación de un plan de suscripción (creación y actualización) | Planes y suscripciones | `subscription_preapproval_plan` | Suscripciones |
 | Vinculación y desvinculación de cuentas mp-connect. | Vinculación de aplicaciones | `mp-connect` | Todos los productos que hayan implementado OAuth |
 ----[mla, mlm, mlb]----| Finalización, cancelación o errores al procesar intenciones de pago de dispositivos Mercado Pago Point. | Integraciones Point | `point_integration_wh` / `point_integration_ipn` | Mercado Pago Point |------------
-----[mla]----| Creación, actualización o cancelación de pedidos. | Delivery (proximity marketplace) | `delivery` | MP Delivery |------------
 | Transacciones de Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
 | Alertas de fraude luego del procesamiento de un pedido | Alertas de fraude | `stop_delivery_op_wh` / `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout PRO |
 | Creación de reclamos y reembolsos | Reclamos | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----MP Point------------<br>Código QR<br>Wallet Connect |
 | Recuperación y actualización información de tarjetas dentro de Mercado Pago. | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
 | Creación, actualización o cierre de órdenes comerciales |  Órdenes comerciales | `topic_merchant_order_wh` / `merchant_order` | Checkout Pro<br>Código QR  |
 | Apertura de contracargos, cambios de status y modificaciones referentes a las liberaciones de dinero.   |   Contracargos | `topic_chargebacks_wh` / `chargebacks`  | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------ <br>Checkout Bricks |
+----[mla]----| Creación, actualización o cancelación de pedidos. | Delivery (proximity marketplace) | `delivery` | MP Delivery |------------
 
 
 Una vez configuradas, las notificaciones permiten programar el backend de las tiendas para, por ejemplo, actualizar el estado de pedidos cuando un pago es creado, enviar un e-mail de confirmación cuando un pedido es actualizado en Mercado Pago, actualizar el registro de un cliente cuando realice una vinculación de un plan de suscripción, entre otras acciones recurrentes de los eventos detallados en la tabla anterior.

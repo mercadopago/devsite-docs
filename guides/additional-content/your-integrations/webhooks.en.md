@@ -64,13 +64,13 @@ To do this, follow these steps:
 | Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
 | Linking and unlinking of mp-connect accounts | Application linking | `mp-connect` | All products that have implemented OAuth |
 ----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` | Mercado Pago Point |------------
-----[mla]----| Creation, update, or cancellation of orders. | Delivery (proximity marketplace) | `delivery` | MP Delivery |------------
 | Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
 | Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
 | Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----MP Point------------<br>QR Code<br>Wallet Connect |
 | Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
 | Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` | Checkout Pro<br>QR Code  |
 | Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+----[mla]----| Creation, update, or cancellation of orders. | Delivery (proximity marketplace) | `delivery` | MP Delivery |------------
 
 > WARNING
 >
