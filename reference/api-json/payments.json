@@ -5391,7 +5391,7 @@
             "pt": "É possível filtrar pelo estado atual do pagamento. Podem ser dos seguintes tipos: 'pending': O usuário não concluiu o processo de pagamento (por exemplo, ao gerar um boleto, ele será concluído no momento em que o usuário realizar o pagamento no local selecionado); 'approved': O pagamento foi aprovado e creditado; 'authorized': O pagamento foi autorizado, mas ainda não foi capturado.",
             "es": "Es posible filtrar por el estado actual del pago. Puede ser de los siguientes tipos: 'pending': El usuario no ha concluido el proceso de pago (por ejemplo, al generar un pago por tarjeta, se concluirá en el momento en que el usuario realice el pago en el lugar seleccionado); 'approved': El pago ha sido aprobado y acreditado; 'authorized': El pago ha sido autorizado, pero aún no ha sido capturado."
           },
-          "required": true,
+          "required": false,
           "schema": {
             "type": "string",
             "example": "approved"
