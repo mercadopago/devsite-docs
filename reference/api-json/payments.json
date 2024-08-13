@@ -3988,9 +3988,9 @@
                 "status": {
                   "type": "string",
                   "description": {
-                    "en": "It is the current state of payment. It can be two following types.",
-                    "pt": "É o estado atual do pagamento. Podem ser ser dos seguintes tipos",
-                    "es": "Es el estado actual de pago. Puede ser de dos tipos siguientes."
+                    "en": "It is the current state of payment. It can be two following types:",
+                    "pt": "É o estado atual do pagamento. Podem ser dos seguintes tipos:",
+                    "es": "Es el estado actual de pago. Puede ser de los siguientes tipos:"
                   },
                   "example": "cancelled",
                   "enum": [
