@@ -14,7 +14,7 @@ Las notificaciones IPN pueden ser configuradas de dos maneras:
 | Tipo de configuración | Descripción |
 |---|---|
 | [Configuración a través de Tus integraciones](/developers/es/docs/your-integrations/notifications/ipn#configuracinatravsdetusintegraciones) | Podrá ser configurada solo una URL de notificación por cuenta (dependiendo de la aplicación, más de una de ellas podrá usar la URL). |
-| [Configuración durante la creación de un pago](/developers/es/docs/your-integrations/notifications/ipn#configuracindurantelacreacindeunpago) | Puede ser realizada a partir del campo `notification_url`. La URL podrá ser diferente para cada objeto o aplicación. |
+| [Configuración durante la creación de un pago, preferencia u orden](/developers/es/docs/your-integrations/notifications/ipn#configuracindurantelacreacindeunpago) | Puede ser realizada a partir del campo `notification_url`. La URL podrá ser diferente para cada objeto. |
 
 En esta documentación explicaremos cómo realizar la configuración necesaria para recibir notificaciones IPN a través de Tus integraciones o al momento de crear pagos, y te mostraremos las acciones necesarias para que Mercado Pago valide que los mensajes fueron recibidos correctamente.
 
@@ -33,9 +33,9 @@ Para configurar notificaciones IPN mediante Tus integraciones, es necesario indi
 >
 > Al configurar notificaciones IPN vía Tus integraciones, estarás configurando la URL y los Eventos de **todas las aplicaciones de tu cuenta de Mercado Pago**. 
 
-Para confiruar URLs y eventos, sigue el paso a paso a continuación:
+Para configurar URLs y eventos, sigue el paso a paso a continuación:
 
-1. Ingresa a [Tus Integraciones](/developers/panel/app) y selecciona la aplicación para la que deseas activar las notificaciones. En caso de que aún no hayas creado una aplicación, accede a la [documentación sobre el Panel del Desarrollador](/developers/es/docs/your-integrations/dashboard) y sigue las instrucciones para poder hacerlo.
+1. Ingresa a [Tus Integraciones](/developers/panel/app) y selecciona una de las aplicaciones para activar las notificaciones para toda tu cuenta. En caso de que aún no hayas creado una aplicación, accede a la [documentación sobre el Panel del Desarrollador](/developers/es/docs/your-integrations/dashboard) y sigue las instrucciones para poder hacerlo.
 2. En el menú de la izquierda, selecciona **IPN**, y configura la **URLs de producción** que será utilizada para recibir las notificaciones. También podrás probar si la URL indicada está recibiendo notificaciones correctamente, verificando la solicitud, la respuesta dada por el servidor y la descripción del evento.
 
 ![ipn](/images/dashboard/ipn_es_.png)
@@ -64,7 +64,7 @@ Para confiruar URLs y eventos, sigue el paso a paso a continuación:
 
 ## Configuración durante la creación de un pago
 
-Durante el proceso de creación de pagos, es posible configurar la URL de notificación de forma más específica para cada pago, utilizando el campo `notification_url` e implementando un receptor de notificaciones. 
+Durante el proceso de creación de pagos, preferencias u órdenes presenciales, es posible configurar la URL de notificación de forma más específica para cada pago, utilizando el campo `notification_url` e implementando un receptor de notificaciones. 
 
 ----[mla, mlb, mlm]----
 
@@ -78,7 +78,7 @@ Durante el proceso de creación de pagos, es posible configurar la URL de notifi
  
 A continuación, explicamos cómo configurar notificaciones IPN al crear un pago usando los SDK.
 
-1. En el campo `notification_url`, indica la URL desde la que se recibirán las notificaciones, como se muestra a continuación. Para recibir notificaciones exclusivamente vía IPN y no vía Webhooks, es posible agregar el parámetro `source_news=webhooks` a la `notification_url`. Por ejemplo: `https://www.yourserver.com/notifications?source_news=webhooks`.
+1. En el campo `notification_url`, indica la URL desde la que se recibirán las notificaciones, como se muestra a continuación. Para recibir notificaciones exclusivamente vía IPN y no vía Webhooks, es posible agregar el parámetro `source_news=ipn` a la `notification_url`. Por ejemplo: `https://www.yourserver.com/notifications?source_news=ipn`.
 
 
 [[[

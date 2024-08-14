@@ -136,7 +136,7 @@ This also applies to **expired payments**: their status will change from `pendin
 ## QR Code
 
 If you integrated with QR Code and wish to receive notifications, please note the following:
-* Notifications cannot be configured through Your integrations. You must set them up when creating a payment.
+* Webhooks notifications cannot be configured through Your integrations. You must set them up when creating a payment.
 * Consequently, it is not possible to validate the origin of notifications using the `x-Signature` header. For alternative methods to verify the origin of these notifications, please contact  [Mercado Pago Support](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/support/center).
 * The activation of the `merchant_orders` topic will allow you to receive alerts about order creation and updates. While the topic sends a `status=opened`, it will be the notification with `status=closed` that will securely certify that the generated order has been paid.
 

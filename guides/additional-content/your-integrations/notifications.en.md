@@ -10,7 +10,7 @@ The activation of these topics will depend on the Mercado Pago solution you have
 | Recurring payment of a subscription (creation - update) | Plans and Subscriptions | `subscription_authorized_payment` | Subscriptions |
 | Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
 | Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
-| Linking and unlinking of mp-connect accounts | Application linking | `mp-connect` | All products that have implemented OAuth |
+| Linking and unlinking of accounts connected via OAuth | Application linking | `mp-connect` | All products that have implemented OAuth |
 ----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` / `point_integration_ipn` | Mercado Pago Point |------------
 | Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
 | Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` / `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |

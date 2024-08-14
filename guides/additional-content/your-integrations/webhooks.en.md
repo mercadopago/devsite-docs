@@ -10,8 +10,8 @@ To configure your Webhooks notifications, choose one of the options below:
 
 | Configuration type | Description |
 |---|---|
-| [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_through_your_integrations) | Allows configuring notifications for various topics, identifying different accounts if necessary, and validating the notification origin using the secret signature (except notifications for QR Code integrations). |
-| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) | Allows specific configuration of notifications for each payment. This configuration is not allowed for Mercado Pago Point or Mercado Pago Delivery integrations. |
+| [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_through_your_integrations) | Allows configuring notifications for each one of your applications, identifying different accounts if necessary, and validating the notification origin using the secret signature (except notifications for QR Code integrations). |
+| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) | Allows specific configuration of notifications for each payment, preference or order. This configuration is not allowed for Mercado Pago Point or Mercado Pago Delivery integrations. |
 
 > WARNING
 >
@@ -52,7 +52,7 @@ To do this, follow these steps:
 >
 > Note
 > 
-> If you need to identify multiple accounts, you can add the parameter `?cliente=(sellersname) endpoint` to the endpoint URL to identify the sellers.
+> If you need to identify multiple accounts, you can add the parameter `?cliente=(sellersname)` to the endpoint URL to identify the sellers.
 
 3. Select the **events** from which you want to receive notifications in `JSON` format via an `HTTP POST` to the URL specified earlier. An event can be any type of update on the reported object, including status changes or attributes. Refer to the table below to see the events that can be configured, considering the integrated Mercado Pago solution and its business specifics.
 
@@ -62,7 +62,7 @@ To do this, follow these steps:
 | Recurring payment of a subscription (creation - update) | Plans and Subscriptions | `subscription_authorized_payment` | Subscriptions |
 | Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
 | Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
-| Linking and unlinking of mp-connect accounts | Application linking | `mp-connect` | All products that have implemented OAuth |
+| Linking and unlinking of accounts connected via OAuth | Application linking | `mp-connect` | All products that have implemented OAuth |
 ----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` | Mercado Pago Point |------------
 | Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
 | Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
@@ -400,7 +400,7 @@ Simulating receiving notifications is necessary to verify if they are configured
 
 ## Configuration during payment creation
 
-During the payment creation process, it's possible to configure the notification URL more specifically for each payment using the `notification_url` field and implementing the necessary notification receiver.
+During the creation process of a payment, preference or order, it's possible to configure the notification URL more specifically for each payment using the `notification_url` field and implementing the necessary notification receiver.
 
 > WARNING
 >
