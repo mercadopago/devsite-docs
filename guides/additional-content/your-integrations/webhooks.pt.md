@@ -10,8 +10,8 @@ Para configurar as notificações Webhooks, escolha entre uma das opções abaix
 
 | Tipo de configuração | Descrição |
 |---|---|
-| [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes) | Permite configurar notificações para cada aplicação, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta (exceto para notificações de integrações com Código QR). |
-| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento, preferência ou pedidos comerciais. Não é permitido configurar para integrações com Mercado Pago Point e nem para integrações com Mercado Pago Delivery. |
+| [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes) | Permite configurar notificações para cada aplicação, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta----[mla, mlb, mlu, mlc]----(exceto para notificações de integrações com Código QR)------------. |
+| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento, preferência ou pedidos comerciais. ----[mla]----Não é permitido configurar para integrações com Mercado Pago Point e nem para integrações com Mercado Pago Delivery----------------[mlb, mlm]----Não é permitido configurar para integrações com Mercado Pago Point------------.|
 
 > WARNING
 >
@@ -34,7 +34,7 @@ Configure notificações para cada aplicação diretamente em [Suas integraçõe
 >
 > Importante
 >
-> Este método de configuração não está disponível para integrações com Código QR e nem Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
+> Este método de configuração não está disponível para integrações com----[mla, mlb, mlc, mlu]----Código QR e nem------------Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
 
 
 ### 1. Indicar URLs e configurar eventos
@@ -83,11 +83,15 @@ Para isso, siga as etapas descritas abaixo.
 
 5. Por fim, clique e **Salvar** para gerar uma **assinatura secreta** exclusiva para a sua aplicação, permitindo validar a autenticidade das notificações recebidas e garantir que tenham sido enviadas pelo Mercado Pago. A assinatura gerada não tem prazo de validade e sua renovação periódica não é obrigatória, embora seja altamente recomendável. Para renová-la, clique no botão de **redefinição** ao lado da assinatura.
 
+----[mla, mlb, mlu, mlc]----
+
 > WARNING
 > 
 > Importante
 > 
 > As notificações de Código QR não podem ser verificadas utilizando a assinatura secreta, por isso, prossiga diretamente com a etapa de simulação de recebimento de notificações. Para integrações com Código QR que necessitam verificar a origem das notificações, entre em contato com [Soporte do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/support/center).
+
+------------
 
 ### 2. Validar origem da notificação
 
@@ -404,12 +408,24 @@ Para garantir que as notificações estejam configuradas corretamente, é necess
 ## Configuração durante a criação de pagamentos
 
 Durante o processo de criação de pagamentos, preferências ou ordens comerciais, é possível configurar a URL de notificação de maneira específica para cada pagamento, utilizando o campo `notification_url` e implementando o receptor de notificações necessário. 
-
+----[mla]----
 > WARNING
 >
 > Importante
 > 
 > Este método não permite configurar notificações para os tópicos `point_integration_wh` e `delivery` utilizando este método. Para ativá-los, utilize as [configurações de Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes).
+
+------------
+
+----[mlb, mlm]----
+
+> WARNING
+>
+> Importante
+> 
+> Este método não permite configurar notificações para o tópico de `point_integration_wh` utilizando este método. Para ativá-lo, utilize as [configurações de Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes).
+
+------------
 
 A seguir, explicamos como realizar esta configuração utilizando nossos SDKs.
 
@@ -717,11 +733,31 @@ Após realizar as configurações necessárias, a notificação Webhooks será e
 | **action** | Evento notificado, indicando se é uma atualização de recurso ou a criação de um novo | `payment.created` |
 | **data.id**  | ID do pagamento, do `merchant_order` ou da reclamação | `999999999` |
 
+
+----[mla]----
 > WARNING
 >
 > Importante
 >
 > Para obter o formato de notificações para tópicos diferentes de `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` e `topic_card_id_wh`, consulte [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info).
+------------
+----[mlb, mlm]----
+> WARNING
+>
+> Importante
+>
+> Para obter o formato de notificações para tópicos diferentes de `payment`, como `point_integration_wh`, `topic_claims_integration_wh` e `topic_card_id_wh`, consulte [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info).
+
+------------
+----[mlu, mlc, mco, mpe]----
+> WARNING
+>
+> Importante
+>
+> Para obter o formato de notificações para tópicos diferentes de `payment`, como `topic_claims_integration_wh` e `topic_card_id_wh`, consulte [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info).
+
+------------
+
 
 ## Ações necessárias após receber uma notificação
 

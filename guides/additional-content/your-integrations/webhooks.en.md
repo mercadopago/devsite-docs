@@ -10,8 +10,8 @@ To configure your Webhooks notifications, choose one of the options below:
 
 | Configuration type | Description |
 |---|---|
-| [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_through_your_integrations) | Allows configuring notifications for each one of your applications, identifying different accounts if necessary, and validating the notification origin using the secret signature (except notifications for QR Code integrations). |
-| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) | Allows specific configuration of notifications for each payment, preference or order. This configuration is not allowed for Mercado Pago Point or Mercado Pago Delivery integrations. |
+| [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_through_your_integrations) | Allows configuring notifications for each one of your applications, identifying different accounts if necessary, and validating the notification origin using the secret signature ----[mla, mlb, mlu, mlc]----(except notifications for QR Code integrations)------------. |
+| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) | Allows specific configuration of notifications for each payment, preference or order ----[mla]----This configuration is not allowed for Mercado Pago Point or Mercado Pago Delivery integrations----------------[mlb, mlm]----This configuration is not allowed for Mercado Pago Point------------. |
 
 > WARNING
 >
@@ -32,7 +32,7 @@ Set up notifications for each application directly in [Your integrations](/devel
 >
 > Important
 >
-> This configuration method is not available for QR Code or Subscriptions integrations. To set up notifications for either of these integrations, use the [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) method.
+> This configuration method is not available for ----[mla, mlb, mlu, mlc]----QR Code or------------ Subscriptions integrations. To set up notifications for either of these integrations, use the [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) method.
 
 
 ### 1. Specify URLs and configure events
@@ -80,12 +80,14 @@ To do this, follow these steps:
 
 5. Finally, click on **Save**. This will generate a unique **secret signature** for your application, allowing you to validate the authenticity of received notifications, ensuring they were sent by Mercado Pago. Note that the generated signature does not have an expiration date, and its periodic renewal is not mandatory but highly recommended. Simply click the **Reset** button next to the signature to renew it.
 
+
+----[mla, mlb, mlu, mlc]----
 > WARNING
 > 
 > Important
 > 
 > QR Code notifications cannot be verified using the secret signature. Therefore, you should proceed directly to the Simulate receiving notifications step. If you have a QR Code integration and still want to verify the origin of your notifications, please contact [Mercado Pago Support](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/support/center).
-
+------------
 
 ### 2. Validate notification origin
 
@@ -402,11 +404,23 @@ Simulating receiving notifications is necessary to verify if they are configured
 
 During the creation process of a payment, preference or order, it's possible to configure the notification URL more specifically for each payment using the `notification_url` field and implementing the necessary notification receiver.
 
+----[mla]----
 > WARNING
 >
 > Important
 > 
 > It's not possible to configure notifications for the point_integration_wh and delivery topics using this method. To activate these topics, use the [Your integrations settings](/developers/en/docs/your-integrations/notifications/webhooks#yourintegrationssettings).
+------------
+
+----[mlb, mlm]----
+> WARNING
+>
+> Important
+>
+> It's not possible to configure notifications for the point_integration_wh topic using this method. To activate it, use the [Your integrations settings](/developers/en/docs/your-integrations/notifications/webhooks#yourintegrationssettings).
+
+------------
+
 
 Next, we explain how to do this with the help of the SDKs.
 
@@ -713,11 +727,30 @@ After making the necessary configurations, the Webhooks notification will be del
 | **action** | Notified event, indicating if it's a resource update or a new creation | `payment.created` |
 | **data.id**  | ID of the payment, `merchant_order`, or claim | `999999999` |
 
+----[mla]----
 > WARNING
 >
 > Important
 >
 > To obtain the notification format for topics other than `payment`, such as `point_integration_wh`, `delivery`, `topic_claims_integration_wh`, and `topic_card_id_wh`, consult [Additional information about notifications](/developers/en/docs/your-integrations/notifications/additional-info).
+------------
+
+----[mlb, mlm]----
+> WARNING
+>
+> Important
+>
+> To obtain the notification format for topics other than `payment`, such as `point_integration_wh`, `topic_claims_integration_wh` and `topic_card_id_wh`, consult [Additional information about notifications](/developers/en/docs/your-integrations/notifications/additional-info).
+------------
+
+----[mlu, mlc, mco, mpe]----
+> WARNING
+>
+> Important
+>
+> To obtain the notification format for topics other than `payment`, such as `topic_claims_integration_wh` and `topic_card_id_wh`, consult [Additional information about notifications](/developers/en/docs/your-integrations/notifications/additional-info).
+------------
+
 
 ## Necessary actions after receiving a notification
 

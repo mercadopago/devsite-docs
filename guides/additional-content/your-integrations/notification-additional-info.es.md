@@ -135,12 +135,15 @@ En caso de haber integrado medios de pago offline y configurado tus notificacion
 Esto es válido también para el caso de **pagos expirados**: su estado pasará de `pending` a `cancelled`, y el alerta correspondiente será enviado a tu sistema. 
 
 
+----[mla, mlb, mlu, mlc]----
 ## Código QR
 
 Si realizaste una integración con Código QR y deseas recibir notificaciones, debes tener en cuenta: 
 * No es posible configurar notificaciones webhooks por medio de Tus integraciones. Debes hacerlo al momento de crear un pago. 
 * Por este motivo, tampoco es posible validar el origen de las notificaciones a partir del *header* `x-Signature`. Para conocer vías alternativas para verificar el origen de estas notificaciones, puedes contactar a [Soporte de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/support/center).
 * La activación del tópico `merchant_orders` te permitirá recibir alertas sobre creación y actualizaciones de pedidos. Si bien el tópico envía un `status=opened`, será la notificación con `status=closed` aquella que certificará con seguridad que la orden generada fue pagada.
+
+------------
 
 ----[mla]----
 ## Delivery

@@ -46,7 +46,7 @@ Para configurar URLs y eventos, sigue el paso a paso a continuación:
 >
 > En caso de ser necesario identificar múltiples cuentas, agrega el parámetro `?cliente=(nombredelvendedor)` endpoint al final de la URL indicada, para identificar a los vendedores.
 
-3. Selecciona los **eventos** para los cuales deseas recibir las notificaciones, que serán enviadas en formato `json` a través de un `HTTP POST` a la URL especificada anteriormente.  Un evento puede ser cualquier actualización sobre el tópico reportado, incluyendo cambios de status o atributos. Consulta la tabla a continuación para ver qué eventos pueden ser configurados teniendo en cuenta la solución de Mercado Pago integrada y las particularidades de negocio.
+3. Selecciona los **eventos** para los cuales deseas recibir las notificaciones, que serán enviadas en formato `JSON` a través de un `HTTP POST` a la URL especificada anteriormente.  Un evento puede ser cualquier actualización sobre el tópico reportado, incluyendo cambios de status o atributos. Consulta la tabla a continuación para ver qué eventos pueden ser configurados teniendo en cuenta la solución de Mercado Pago integrada y las particularidades de negocio.
 
 | Eventos | Nombre en Tus integraciones | Tópico | Productos asociados |
 |---|---|---|---|
