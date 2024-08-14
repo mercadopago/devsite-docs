@@ -1,6 +1,6 @@
 # IPN
 
-IPN (Instant Payment Notification) é um mecanismo que permite que uma aplicação receba notificações do Mercado Pago sobre status de pagamentos, _chargebacks_ e `merchant_orders`.  Essas notificações são enviadas através de uma chamada HTTP POST, informando sobre as transações.
+IPN (Instant Payment Notification) é um mecanismo que permite que uma aplicação receba notificações do Mercado Pago sobre o status de um pagamento, _chargebacks_ e `merchant_orders`. Essas notificações são enviadas através de uma chamada HTTP POST, informando sobre as transações.
 
 > WARNING
 >
@@ -16,7 +16,6 @@ As notificações IPN podem ser configuradas de duas maneiras:
 | [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/ipn#configuraoduranteacriaodepagamentos) | Isso pode ser realizado a partir do campo `notification_url`. A URL poderá ser diferente para cada objeto ou aplicação.  |
 
 Nesta documentação explicaremos as configurações necessárias para o recebimento das notificações IPN, além de apresentar quais são as ações necessárias para que o Mercado Pago valide o correto recebimento das mensagens.
-
 
 ## Configuração via Suas integrações
 
@@ -35,7 +34,7 @@ Para configurar as notificações IPN via Suas integrações, é necessário ind
 Para configurar URLS e eventos, siga as etapas descritas abaixo:
 
 1. Acesse [Suas integrações](/developers/panel/app) e selecione a aplicação para a qual deseja ativar as notificações. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard) e siga as instruções para fazê-lo.
-2. No menu à esquerda, clique em **IPN** e configure a **URL de produção** que será usada para receber as notificações. Leve em consideração que é possível  testar se a URL indicada está recebendo as notificações corretamente. Isso permite verificar a solicitação, a resposta do servidor e a descrição do evento.
+2. No menu à esquerda, clique em **IPN** e configure a **URL de produção** que será usada para receber as notificações. Leve em consideração que é possível testar se a URL indicada está recebendo as notificações corretamente. Isso permite verificar a solicitação, a resposta do servidor e a descrição do evento.
 
 ![ipn](/images/dashboard/ipn_pt_.png)
 
@@ -43,13 +42,13 @@ Para configurar URLS e eventos, siga as etapas descritas abaixo:
 >
 > Nota
 >
-> Caso seja necessário identificar múltiplas contas, adicione o parâmetro  `?cliente=(nomedovendedor)` ao final da URL indicada para identificar os vendedores.
+> Caso seja necessário identificar múltiplas contas, adicione o parâmetro `?cliente=(nomedovendedor)` ao final da URL indicada para identificar os vendedores.
 
 3. Selecione os **eventos** para os quais deseja receber notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento pode ser qualquer atualização no objeto relatado, incluindo alterações de status ou atributos. Consulte a tabela abaixo para ver os eventos configuráveis, considerando a solução do Mercado Pago integrada e suas necessidades de negócio.
 
 | Nome em Suas integrações | Eventos | Tópico | Produtos associados |
 |---|---|---|---|
-| Criação e atualização de pagamentos | Pagos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----MP Point------------<br>Wallet Connect |
+| Criação e atualização de pagamentos | Pagos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
 ----[mla, mlm, mlb]----| Finalização, cancelamento ou erro ao processar tentativas de pagamento nos dispositivos Mercado Pago Point. | Integrações Point | `point_integration_ipn` | Mercado Pago Point |------------
 | Alertas de fraude após o processamento de um pedido | Alertas de fraude | `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout PRO |
 | Criação, fechamento ou expiração de pedidos. |  Ordens comerciais | `merchant_order` | Checkout Pro<br>Código QR  |

@@ -1,6 +1,6 @@
 # Webhooks
 
-Webhooks (também conhecido como retorno de chamada web) são um método simples que permite a um aplicativo ou sistema fornecer informações em tempo real sempre que um evento ocorre. É uma forma passiva de receber dados entre dois sistemas por meio de uma solicitação `HTTP POST`.
+Webhooks (também conhecido como retorno de chamada web) são um método simples que permite a uma aplicação ou sistema fornecer informações em tempo real sempre que um evento ocorre. É uma forma passiva de receber dados entre dois sistemas por meio de uma solicitação `HTTP POST`.
 
 As notificações Webhooks podem ser configuradas para cada uma das aplicações criadas em  [Suas integrações](/developers/panel/app). Você também poderá configurar uma URL de teste que, junto com suas credenciais de teste, permitirá testar o funcionamento correto das suas notificações antes de sair à produção.
 
@@ -11,7 +11,7 @@ Para configurar as notificações Webhooks, escolha entre uma das opções abaix
 | Tipo de configuração | Descrição |
 |---|---|
 | [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes) | Permite configurar notificações para diversos tópicos, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta (exceto para notificações de integrações com Código QR). |
-| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento. Não é permitido configurar para integrações com Mercado Pago Point nem para integrações com Delivery. |
+| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento. Não é permitido configurar para integrações com Mercado Pago Point e nem para integrações com Mercado Pago Delivery. |
 
 > WARNING
 >
@@ -21,10 +21,10 @@ Para configurar as notificações Webhooks, escolha entre uma das opções abaix
 
 Uma vez que as notificações estiverem configuradas, consulte as [ações necessárias após receber uma notificação](/developers/pt/docs/your-integrations/notifications/webhooks#aesnecessriasapsreceberumanotificao) para validar se foram devidamente recebidas.
 
-
 ## Configuração via Suas integrações 
 
 Configure notificações para cada aplicação diretamente em [Suas integrações](/developers/panel/app) de forma eficiente e segura. Nesta documentação, explicaremos como:
+
 1. Indicar URLs e configurar eventos
 2. Validar origem da notificação
 3. Simular o recebimento da notificação
@@ -34,7 +34,7 @@ Configure notificações para cada aplicação diretamente em [Suas integraçõe
 >
 > Importante
 >
-> Este método de configuração não está disponível para integrações com Código QR nem Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
+> Este método de configuração não está disponível para integrações com Código QR e nem Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
 
 
 ### 1. Indicar URLs e configurar eventos
@@ -57,7 +57,6 @@ Para isso, siga as etapas descritas abaixo.
 > Caso seja necessário identificar múltiplas contas, adicione o parâmetro `?cliente=(nomedovendedor) endpoint` ao final da URL indicada para identificar os vendedores.
 
 3. Selecione os  **eventos** para os quais deseja receber notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento pode ser qualquer atualização no objeto relatado, incluindo alterações de status ou atributos. Consulte a tabela abaixo para ver os eventos configuráveis, considerando a solução do Mercado Pago integrada e suas necessidades de negócio.
-
 
 | Eventos | Nome em Suas integrações | Tópico | Produtos associados |
 |---|---|---|---|
@@ -90,7 +89,6 @@ Para isso, siga as etapas descritas abaixo.
 > 
 > As notificações de Código QR não podem ser verificadas utilizando a assinatura secreta, por isso, prossiga diretamente com a etapa de simulação de recebimento de notificações. Para integrações com Código QR que necessitam verificar a origem das notificações, entre em contato com [Soporte do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/support/center).
 
-
 ### 2. Validar origem da notificação
 
 As notificações enviadas pelo Mercado Pago serão semelhantes ao exemplo abaixo para um alerta do tópico `payment`:
@@ -122,7 +120,7 @@ Esta assinatura será enviada no _header_ `x-signature`, conforme o exemplo abai
 
 Para configurar essa validação, é necessário extrair a chave contida no _header_ e compará-la com a chave fornecida para sua aplicação em Suas integrações. Para isso, siga as etapas abaixo. No final, disponibilizamos alguns SDKs com um exemplo de código completo para facilitar o processo:
 
-1. Para extrair o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de 2 elementos. O valor para o prefixo  `ts` é o _timestamp_ (em millissegundos) da notificação, e `v1` é a assinatura encriptada. Seguindo o exemplo apresentado acima, `ts=1704908010` e `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
+1. Para extrair o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de 2 elementos. O valor para o prefixo  `ts` é o _timestamp_ (em milissegundos) da notificação, e `v1` é a assinatura encriptada. Seguindo o exemplo apresentado acima, `ts=1704908010` e `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
 2. Utilizando o _template_ e as descrições abaixo, substitua os parâmetros pelos dados recebidos na sua notificação.
 
 ```template
@@ -405,7 +403,7 @@ Para garantir que as notificações estejam configuradas corretamente, é necess
 
 ## Configuração durante a criação de pagamentos
 
-Durante o processo de criação de pagamentos, é possível configurar a URL de notificação de  de maneira específica para cada pagamento, utilizando o campo `notification_url` e implementando o receptor de notificações necessário. 
+Durante o processo de criação de pagamentos, é possível configurar a URL de notificação de maneira específica para cada pagamento, utilizando o campo `notification_url` e implementando o receptor de notificações necessário. 
 
 > WARNING
 >
@@ -679,7 +677,7 @@ curl -X POST \
          $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
          break;
      case "point_integration_wh":
-         // $_POST contiene la informaciòn relacionada a la notificaciòn.
+         // $_POST contém as informações relacionadas à notificação.
          break;
  }
 ?>
@@ -724,7 +722,6 @@ Após realizar as configurações necessárias, a notificação Webhooks será e
 > Importante
 >
 > Para obter o formato de notificações para tópicos diferentes de `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` e `topic_card_id_wh`, consulte [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info).
-
 
 ## Ações necessárias após receber uma notificação
 
@@ -791,6 +788,7 @@ Além disso, você encontrará uma lista completa das últimas notificações en
 ### Detalhes do evento
 
 Ao clicar em uma das notificações listadas, é possível acessar os detalhes do evento. Esta seção fornece mais informações e permite a recuperação de dados perdidos em caso de falha na entrega da notificação para manter o sistema sempre atualizado.
+
  * **Status:** Status do evento junto com o código de sucesso ou erro correspondente.
  * **Evento:** Tipo de evento disparado, conforme selecionado na configuração das notificações.
  * **Tipo:** Tópico ao qual o evento disparado pertence, conforme a seleção feita durante a configuração.

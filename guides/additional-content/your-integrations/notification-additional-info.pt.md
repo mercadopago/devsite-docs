@@ -8,7 +8,7 @@ Card Updater é uma função para integrações de produtos com pagamentos recor
 
 Este processo ocorre a partir de um pagamento recusado, onde a verificação feita pelo Card Updater pode gerar um novo `card_id` para um cliente (em casos de erro na inserção de dados ou troca de cartão), ou manter o `card_id` previamente criado, mas atualizando a base de dados com as informações corretas do cartão.
 
-Em qualquer um dos casos, será enviada uma notificação Webhooks como a mostrada a seguir:
+Em qualquer um dos casos, será enviada uma notificação Webhooks como no exemplo abaixo.
 
 ```json
 
@@ -55,6 +55,7 @@ Este tópico permite receber notificações sobre a atualização dos status nas
 ## Assinaturas
 
 Para ativar as notificações da sua integração com Assinaturas, considere as informações descritas abaixo:
+
 * Se você integrou **Assinaturas com planos associados**, ative o tópico `subscription_preapproval_plan` para receber alertas sobre a criação ou atualização de um Plano.
 * Se você integrou **Assinaturas sem planos associados**, ative o tópico `subscription_preapproval` para receber alertas sobre a criação ou atualização de uma **assinatura de pagamento pendente**, ou o tópico `subscription_authorized_payment` para atualizações sobre **assinaturas com pagamento autorizado**.
 * Em **todos os casos, também é necessário ativar o tópico `payments`**, que permite receber notificações sobre os pagamentos associados a essas assinaturas quando forem efetuados.
@@ -62,9 +63,9 @@ Para ativar as notificações da sua integração com Assinaturas, considere as 
 ## Checkout Pro
 
 Se você integrou com o Checkout Pro e deseja receber notificações, considere as informações descritas abaixo: 
+
 * A ativação do tópico `merchant_orders` permitirá receber alertas sobre a criação e atualizações de pedidos.
 * A ativação do tópico `payments` será útil para manter sua base de dados atualizada, pois notificará sobre as atualizações nos pagamentos correspondentes aos pedidos gerados.
-
 
 ## Alertas de fraude
 
@@ -134,10 +135,10 @@ Se você integrou meios de pagamento offline e configurou suas notificações co
 
 Isso também é válido para **pagamentos expirados**: seu status mudará de `pending` para `cancelled`, e o alerta correspondente será enviado ao seu sistema.
 
-
 ## Código QR
 
 Se você integrou com código QR e deseja receber notificações, considere o seguinte:
+
 * Não é possível configurar notificações através de Suas integrações. Você deve fazê-lo no momento da criação do pagamento. 
 * Portanto, não é possível validar a origem das notificações usando o *header* `x-Signature`. Para conhecer vias alternativas para verificar a origem dessas notificações, você pode entrar em contato com o [Suporte do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/support/center).
 * A ativação do tópico `merchant_orders` permitirá que você receba alertas sobre a criação e atualizações de pedidos. Embora o tópico envie um `status=opened`, será a notificação com `status=closed` que certificará com segurança que o pedido gerado foi pago.
@@ -176,4 +177,5 @@ Ao receber uma notificação deste tópico, confirme o recebimento retornando um
 ------------
 
 ## Link de pagamento
+
 Não é possível configurar notificações para Links de pagamento gerados através do Painel do Mercado Pago.
