@@ -132,6 +132,7 @@ In cases where notifications for the topic `topic_claims_integration_wh` have be
 If you have integrated payments with offline payment methods and configured your notifications with the payments topic, you should know that all changes in payment status will be notified to you.
 
 This also applies to **expired payments**: their status will change from `pending` to `cancelled`, and the corresponding alert will be sent to your system.
+----[mla, mlb, mlc, mlu]----
 
 ## QR Code
 
@@ -139,6 +140,8 @@ If you integrated with QR Code and wish to receive notifications, please note th
 * Webhooks notifications cannot be configured through Your integrations. You must set them up when creating a payment.
 * Consequently, it is not possible to validate the origin of notifications using the `x-Signature` header. For alternative methods to verify the origin of these notifications, please contact  [Mercado Pago Support](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/support/center).
 * The activation of the `merchant_orders` topic will allow you to receive alerts about order creation and updates. While the topic sends a `status=opened`, it will be the notification with `status=closed` that will securely certify that the generated order has been paid.
+
+------------
 
 ----[mla]----
 ## Delivery
