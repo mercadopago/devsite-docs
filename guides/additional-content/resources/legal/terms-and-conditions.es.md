@@ -1,7 +1,7 @@
 ----[mla]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 13/08/2024_
+_Última modificación: 14/08/2024_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona humana y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de la unidad de negocio “Mercado Pago” de MercadoLibre S.R.L., CUIT: 30-70308853-4 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -19,11 +19,11 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
  
 **1.5 Desarrolladores:** Son todas aquellas personas humanas o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
 
-**1.6 Incidente:** se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
+**1.6 Incidente:** Se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
  
 **1.7 Datos Personales:** Se refiere a cualquier información relativa a una persona identificada o identificable. Se considerará persona identificable a toda persona cuya identidad pueda determinarse, directa o indirectamente, mediante un identificador, como por ejemplo un nombre, un número de identificación, datos de localización, un identificador en línea o uno o varios elementos propios de la identidad física, fisiológica, genética, psíquica, económica, cultural o social de dicha persona.
 
-**1.8 Encargado de Tratamiento**: se refiere a la persona humana o jurídica que trate Datos Personales por cuenta y orden del Responsable del Tratamiento.
+**1.8 Encargado de Tratamiento**: Se refiere a la persona humana o jurídica que trate Datos Personales por cuenta y orden del Responsable del Tratamiento.
 
 **1.9 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de los Datos Personales que sean de aplicación a estos Términos y Condiciones, en especial la Ley 25.326 de Protección de Datos Personales y cualquier otra normativa que pueda ser aplicable. 
  
@@ -31,13 +31,13 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
  
 **1.11 Mercado Pago:** Es una unidad de negocio de MercadoLibre S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
 
-**1.12 Responsable de Tratamiento:** se refiere a la persona que, sola o conjuntamente con otros, determina los fines y los medios del tratamiento de los Datos Personales.
+**1.12 Responsable de Tratamiento:** Se refiere a la persona que, sola o conjuntamente con otros, determina los fines y los medios del tratamiento de los Datos Personales.
  
 **1.13 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
 
-**1.14 Titular de Datos:** una persona identificada o identificable cuyos Datos Personales sean tratados en el marco de estos Términos y Condiciones y que tenga derechos sobre ellos, de acuerdo a lo establecido en las Leyes de Protección de Datos Personales.
+**1.14 Titular de Datos:** Una persona identificada o identificable cuyos Datos Personales sean tratados en el marco de estos Términos y Condiciones y que tenga derechos sobre ellos, de acuerdo a lo establecido en las Leyes de Protección de Datos Personales.
 
-**1.15 Tratar, tratamiento de Datos:** se refiere a cualquier operación realizada sobre los Datos Personales, incluyendo pero no limitándose a la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
+**1.15 Tratar, tratamiento de Datos:** Se refiere a cualquier operación realizada sobre los Datos Personales, incluyendo pero no limitándose a la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
  
 **1.16 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers) y todas sus versiones pertenecientes a Mercado Libre.
  
@@ -327,11 +327,10 @@ Mercado Pago ofrece servicios de pago y no es una entidad financiera ni se encue
 Los fondos depositados en la cuenta de pago no constituyen depósitos en una entidad financiera, ni cuentan con ninguna de las garantías que tales depósitos puedan gozar de acuerdo con la legislación y reglamentación aplicables en materia de depósitos de entidades financieras.
 
 ------------
-
 ----[mlb]----
 # Termos e Condições para Desenvolvedores do Mercado Pago
 
-_Última modificação: 20/12/2021_
+_Última modificação: 14/08/2024_
 
 Estes termos e condições, incluindo os anexos (doravante denominados simplesmente como os “Termos e Condições”), constituem um contrato que determina as regras para que qualquer pessoa física e/ou jurídica possa participar como Desenvolvedor e possa acessar e/ou utilizar a API do Mercadopago.com Representações Ltda., CNPJ/ME nº 10.573.521/0001-91 (“Mercado Pago”) (“API”). O acesso e/ou uso da API pelos Desenvolvedores envolve sua aceitação destes Termos e Condições. 
  
@@ -634,11 +633,10 @@ O Mercado Pago poderá alterar, a qualquer tempo, os Termos e Condições, notif
 Os termos em maiúscula que não estejam definidos nestes Termos e Condições terão o significado a eles atribuído nos Termos e Condições Gerais do Mercado Pago.
 
 ------------
-
 ----[mlc]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 20/12/2021_
+_Última modificación: 14/08/2024_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona natural y/o jurídica pueda participar como Desarrollador (según se define más adelante) y pueda acceder y/o usar la API de Mercado Pago S.A., R.U.T. 76.516.950-K (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -656,29 +654,33 @@ Cualquier persona que no acepte estos Términos y Condiciones no podrá particip
  
 **1.5 Desarrolladores:** Son todas aquellas personas naturales o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
 
-**1.6 Incidente:** se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
+**1.6 Incidente:** Se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
  
-**1.7 Información Personal o Datos Personales:** Se refiere a cualquier información relativa a una persona identificada o identificable, incluida, sin que deba entenderse limitada, en archivos electrónicos y archivos impresos. Esta información, incluye datos sensibles (según definición establecida en las Ley de Protección de Datos Personales aplicable) y puede comprender: nombre o iniciales, domicilio u otras direcciones físicas, número de teléfono móvil o fijo, correo electrónico, dirección IP, número de tarjeta de crédito, fotografías o cualquier otro dato o información sujeto a las Leyes de Protección de Datos Personales.
+**1.7 Datos Personales:** Se refiere a cualquier información relativa a una persona identificada o identificable. Se considerará persona identificable a toda persona cuya identidad pueda determinarse, directa o indirectamente, mediante un identificador, como por ejemplo un nombre, un número de identificación, datos de localización, un identificador en línea o uno o varios elementos propios de la identidad física, fisiológica, genética, psíquica, económica, cultural o social de dicha persona.
 
-**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que aplicables a los presentes Términos y Condiciones y/o la Aplicación, incluidas, pero no limitadas a la Ley N° 19.628 de Chile, o cualquiera que la suceda o reemplace, la Ley N° 20.575, la Ley N° 19.496  y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
- 
-**1.9 Mercado Libre:** Es MercadoLibre Chile Ltda. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
- 
-**1.10 Mercado Pago:** Es Mercado Pago S.A. 
- 
-**1.11 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago incluyendo sus anexos, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.8 Encargado de Tratamiento:** Se refiere a la persona humana o jurídica que trate Datos Personales por cuenta y orden del Responsable del Tratamiento.
 
-**1.12 Titular de Datos:** una persona identificada o identificable cuyos Datos Personales sean tratados, consultados, recibidos, transmitidos, eliminados o mantenidos por el Desarrollador. Una persona identificable es aquella que puede ser identificada, directa o indirectamente, en particular mediante un número de identificación o uno o más elementos específicos de su identidad física, psicológica, mental, económica, cultural o social.
+**1.9 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de de los Datos Personales que sean de aplicación a estos Términos y Condiciones, en especial la Ley 25.326 de Protección de Datos Personales y cualquier otra normativa que pueda ser aplicable.
+ 
+**1.10 Mercado Libre:** Es MercadoLibre Chile Ltda. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+ 
+**1.11 Mercado Pago:** Es Mercado Pago S.A.
 
-**1.13 Tratar, Tratamiento de Datos:** se refiere a cualquier forma de manejo de los Datos llevada a cabo por cualquier medio, incluidos, sin que deba entenderse limitación, la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
+**1.12 Responsable de Tratamiento:** se refiere a la persona que, sola o conjuntamente con otros, determina los fines y los medios del tratamiento de los Datos Personales. 
  
-**1.14 Sitio:** Es el sitio de "Mercado Pago Developers" (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.13 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago incluyendo sus anexos, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+
+**1.14 Titular de Datos:** Una persona identificada o identificable cuyos Datos Personales sean tratados en el marco de estos Términos y Condiciones y que tenga derechos sobre ellos, de acuerdo a lo establecido en las Leyes de Protección de Datos Personales.
+
+**1.15 Tratar, Tratamiento de Datos:** Se refiere a cualquier operación realizada sobre los Datos Personales, incluyendo pero no limitándose a la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
  
-**1.15 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
+**1.16 Sitio:** Es el sitio de "Mercado Pago Developers" (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
  
-**1.16 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.17 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
  
-**1.17 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.18 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+ 
+**1.19 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -753,7 +755,6 @@ Los Desarrolladores no podrán modificar de ninguna manera las Marcas de Mercado
 
 Mercado Pago podrá revocar la licencia de uso prevista en esta cláusula en cualquier momento y por cualquier motivo, sin que esto genere ningún derecho a indemnización para el Desarrollador, en cuyo caso el Desarrollador deberá cesar en el uso de las Marcas de Mercado Pago en forma inmediata. Por el contrario, el Desarrollador será único y total responsable de los motivos de la revocación efectuada por Mercado Pago.
 
-
 ### 4.2 Marcas de los Desarrolladores
 
 Los Desarrolladores otorgan a Mercado Pago una licencia de uso no exclusiva, gratuita, sin limitación territorial ni temporal ni de ninguna otra naturaleza, para que a su exclusiva discreción, use los nombres comerciales, marcas, logotipos, diseños y nombres de dominio o de titularidad de los Desarrolladores (las “Marcas de los Desarrolladores”), a fin de publicitar o difundir su participación como Desarrolladores y/o de difundir la existencia de la Aplicación.
@@ -778,41 +779,25 @@ Los Usuarios de la Aplicación podrán exhibir el Contenido de Mercado Pago en s
 
 ## 6. Obtención y uso de Información Personal
 
-Los Desarrolladores se declaran responsables del Tratamiento de Datos y aceptan cumplir con todos y cada una de los requisitos de las Leyes de Protección de Datos Personales aplicables y sus políticas de privacidad deberán cumplir con los estándares normativos aplicables.
+Cuando en el marco de estos Términos y Condiciones el Desarrollador utilice alguna de las herramientas de Mercado Pago en software propio o en software de terceros para el desarrollo de aplicaciones, y para ello se procesen Datos Personales, se establecen las siguientes previsiones:  
 
-Los Desarrolladores acuerdan que la Información Personal compartida sólo se procesara en la medida en que sea necesario de acuerdo con los fines y para cumplir con las obligaciones establecidas en los Términos y Condiciones; y garantizan que el procesamiento de dicha Información Personal se basará en uno de los fundamentos legales admitidos en las Leyes de Protección de Datos aplicables.
+**6.1 Rol del Desarrollador:** Al tratar Datos Personales el Usuario de Mercado Pago que permite al Desarrollador acceder a Datos Personales a través del uso de la API actuará como Responsable de Tratamiento y el Desarrollador actuará como su Encargado de Tratamiento. Ambas Partes se comprometen a cumplir con las Leyes de Protección de Datos Personales.
 
-Los Desarrolladores podrán acceder a Información Personal siempre y cuando obtengan el consentimiento del Titular de conformidad con las Leyes de Protección de Datos aplicables e informen a los mismos de manera clara y expresa que quien recibe la información es el Desarrollador y no Mercado Pago. Los Desarrolladores podrán obtener y utilizar dicha información únicamente con el alcance autorizado por los titulares de los datos.
+**6.2 Finalidad y proporcionalidad del tratamiento:** El Desarrollador sólo podrá tratar los Datos Personales de conformidad con las instrucciones y autorizaciones que haya recibido del Usuario de Mercado Pago que actúe como Responsable de Tratamiento. El Desarrollador tratará los Datos Personales a los que acceda exclusivamente para cumplir con las finalidades y las obligaciones establecidas en estos Términos y Condiciones.
 
-Los Desarrolladores deberán como mínimo, informar con claridad a los Usuarios de la Aplicación el tipo de información recolectada por la Aplicación, el uso que harán de esa información, con qué terceros compartirán la información y como podrán ejercer sobre dicha información los derechos de acceso, rectificación cancelación y oposición, dejando en claro que quien recaba la información es el Desarrollador y no Mercado Pago.
+Si el Desarrollador realiza alguna actividad de tratamiento que no esté relacionada con la ejecución de estos Términos y Condiciones, esta actividad de tratamiento se llevará a cabo fuera del contexto de las condiciones establecidas por esta Cláusula. En este caso, el Desarrollador será el único responsable de dicho tratamiento, quedando Mercado Pago y cualquiera de sus sociedades relacionadas, exentas de cualquier queja, denuncia, reclamo, obligación o responsabilidad derivados del indebido tratamiento de Datos Personales.
 
-Los Desarrolladores protegerán la Información Personal de cualquier procesamiento, pérdida, uso, divulgación, adquisición o acceso no autorizados y notificarán a Mercado Pago cualquier acceso o uso no autorizado de dicha información como así también a los Usuarios de la Aplicación y autoridad competente, en la medida que lo requiera la ley aplicable.
+**6.3 Subcontratación:** En caso de que el Desarrollador decida contratar a un subprocesador para que lleve adelante alguna operación de tratamiento de Datos Personales relacionada a la ejecución de estos Términos y Condiciones, deberá asegurarse de que el subprocesador limite el uso que hace de los Datos Personales a las finalidades previstas en el contrato con el Usuario de Mercado Pago, que tenga la capacidad de mantener seguros y confidenciales los Datos Personales y de cumplir con los requerimientos de estos Términos y Condiciones y de las Leyes de Protección de Datos Personales.
 
-El Desarrollador deberá abstenerse de comunicar, divulgar, transferir o ceder la Información Personal a terceros, salvo que cuente con la autorización previa, expresa y por escrito de Mercado Pago y/o de los titulares de los datos.
+**6.4 Requerimientos de Autoridades Competentes:** El Desarrollador, además de notificar al Usuario de Mercado Pago, deberá notificar a Mercado Pago inmediatamente y sin demora injustificada cualquier comunicación o requerimiento que reciban de una Autoridad Competente. El Desarrollador colaborará con Mercado Pago tanto como lo permitan o lo requieran las Leyes de Protección de Datos Personales para dar respuesta a los requerimientos de las Autoridades Competentes.
 
-En caso de que el Desarrollador decida subcontratar el tratamiento de la Información Personal, deberá asegurarse de que el proveedor del servicio limite el uso que hacen de ésta a las finalidades previstas en la subcontratación (las que deberán contar por escrito), que tenga la capacidad de mantener segura y confidencial la Información Personal y de cumplir con los requisitos de tratamiento de datos de Mercado Pago y de las Leyes de Datos Personales aplicables, siendo en todo momento el Desarrollador el responsable del tratamiento de los Datos Personales como lo indica la normativa aplicable.
+**6.5 Indemnización:** Los Desarrolladores deberán indemnizar a Mercado Pago por cualquier daño directo o indirecto que resulte de cualquier incumplimiento de las obligaciones establecidas en estos Términos y Condiciones y/o en las Leyes de Protección de Datos Personales.
 
-Los Desarrolladores no podrán recopilar ni almacenar bajo circunstancia alguna, claves de seguridad o datos de tarjetas de crédito o débito de Usuarios de Mercado Pago.
+**6.6 Seguridad y Confidencialidad de la información Personal:** Los Desarrolladores adoptarán medidas técnicas y organizativas de seguridad adecuadas y actualizadas para proteger los Datos Personales y cualquier información a la que accedan por parte de los Usuarios de Mercado Pago para evitar la pérdida, uso, divulgación, adquisición o acceso no autorizados y/o Incidente de Seguridad.
 
-Los Desarrolladores deberán dar respuesta en tiempo y forma, de acuerdo a las Leyes de Protección de Datos vigentes y aplicables, a cualquier solicitud de derechos relacionados con la privacidad y protección de datos personales. En caso de duda o imposibilidad para dar respuesta, notificará inmediatamente, de forma que se acuerde la viabilidad y forma de dar respuesta.
+El Desarrollador además de notificar al Usuario de Mercado Pago, deberá notificar a Mercado Pago cualquier Incidente de Privacidad, incluido cualquier Incidente de Privacidad de sus subprocesadores, enviando un correo a privacidad@mercadolibre.com. El Desarrollador colaborará con Mercado Pago en la investigación y auditoría, o cualquier otra acción que Mercado Pago - a su discreción - implemente, y llevará a cabo las medidas correctivas aplicables.
 
-Los Desarrolladores deberán notificar con carácter inmediato, cualquier comunicación o requerimiento que reciba de una autoridad competente, debiendo además colaborar mutuamente tanto como lo permitan las Leyes de Protección de Datos aplicables.
-
-Los Desarrolladores deberán asegurar que la Información Personal compartida sea cierta, y notificarán si toman conocimiento de inexactitudes en la Información Personal compartida.
-
-Los Desarrolladores deberán informar y cooperar, en la medida permitida por las Leyes de Protección de Datos aplicables, si un titular de datos o una autoridad competente presenta una disputa, reclamo o investigación relacionados con el Tratamiento de la Información Personal compartida, contra Mercado Libre y/o Mercado Pago.
-
-Los Desarrollardores deberán indemnizar a Mercado Libre y/o Mercado Pago, por cualquier daño directo o indirecto que resulte de cualquier incumplimiento de sus obligaciones aquí establecidas y/o las Leyes de Protección de Datos aplicables.
-
-*Incidentes de Seguridad:* En cualquier momento durante el tratamiento de la Información Personal, el Desarrollador notificará cualquier Incidente que afecte, vulnere, o ponga en riesgo la Información Personal, incluida la intrusión en las instalaciones, los sistemas o los equipos informáticos de los subcontratistas del Desarrollador.
-
-El Desarrollador colaborará con la investigación, auditoría y notificación a las partes afectadas, titulares, los organismos estatales y autoridades reguladoras, así como con las medidas correctivas aplicables. En la medida de su carácter de Responsable y en cumplimiento a las Leyes de Protección de Datos Personales, implementarán el plan de detección, clasificación, atención, investigación, respuesta, contención y notificación a afectados, en relación con Incidentes de Seguridad de la Información relativa a los Datos Personales. 
-
-*Tiempo de Conservación:* El Desarrollador no retendrá, ni procesará la Información Personal compartida más tiempo del necesario para llevar a cabo las finalidades y obligaciones establecidos en los presentes Términos y Condiciones. No obstante, conservarán la Información Personal compartida, de conformidad con cualquier período de retención legal o profesional aplicable en sus respectivos países y/o industrias.
-
-*Transferencia internacional:* Para cualquier transferencia internacional de Información Personal hacia un país que no garantice un nivel adecuado de protección de conformidad con las Leyes de Protección de Datos Personales, el Desarrollador cumplirá con las Leyes de Protección de Datos Personales, en materia de transferencia internacional de datos personales.
-
-Si el Desarrollador realiza alguna actividad de tratamiento que no esté relacionada con la ejecución de los Términos y Condiciones, esta actividad de Tratamiento se llevará a cabo fuera del contexto de las condiciones establecidas por esta cláusula. En este caso, el Desarrollador será el único responsable de dicho tratamiento, quedando Mercado Libre y/o Mercado Pago, exento de cualquier obligación o responsabilidad que de ella se derive.
+**6.7. Plazo de conservación de los Datos Personales:** El Desarrollador no conservará los Datos Personales por más tiempo del necesario para cumplir con las finalidades y obligaciones establecidas en estos Términos y Condiciones. Sin embargo, el Desarrollador podrá conservar los Datos Personales por un plazo adicional cuando: (i) así lo permitan o lo impongan las leyes aplicables; o (ii) así lo hayan autorizado los Titulares de Datos.
 
 ## 7. Actividades restringidas
 
@@ -848,7 +833,6 @@ El Desarrollador conoce y acepta que, en caso de que Mercado Pago decidiera impl
 
 Mercado Pago no se encuentra obligada a brindar ningún servicio de soporte o mantenimiento sobre la API.
 
-
 ## 9. Monitoreo y auditorías
 
 Mercado Pago podrá monitorear o supervisar el uso que los Desarrolladores hagan de la API y/o el funcionamiento de las Aplicaciones. Los Desarrolladores no podrán, ni podrán intentar, bloquear o de otro modo interferir en el monitoreo o la supervisión, y Mercado Pago podrá contrarrestar por medios técnicos cualquier método que los Desarrolladores utilicen para bloquear o interferir dichas actividades de monitoreo.
@@ -860,7 +844,6 @@ Asimismo, Mercado Pago podrá auditar periódicamente, en forma aleatoria y sin 
 Los Desarrolladores deberán cooperar con las auditorías que realice Mercado Pago y, en caso de ser requerido, deberán demostrar que cumplen con los Términos y Condiciones.
 
 Mercado Pago le proporcionará al Desarrollador resultados detallados de cualquier auditoría de seguridad realizada. El Desarrollador tendrá treinta (30) días para resolver cualquier inconveniente que Mercado Pago haya identificado durante la auditoría de seguridad. Si el Desarrollador no resuelve dichos inconvenientes, Mercado Pago podrá, sin necesidad de otorgar preaviso, suspender o discontinuar su acceso a la API y al Contenido de Mercado Pago.
-
 
 ## 10. Requisitos de Seguridad
 
@@ -906,7 +889,6 @@ El Desarrollador deberá proceder a reembolsar a Mercado Pago de manera expediti
 
 En el caso de producirse un Incidente o en el supuesto que Mercado Pago y/o sus subsidiarias, afiliadas, vinculadas y/o controladas se vean afectadas por publicidad de carácter negativa a raíz de un Incidente , Mercado Pago podrá a su criterio suspender o terminar la relación contractual con el Desarrollador, con carácter inmediato, mediante notificación escrita al Desarrollador.
 
-
 ## 11. Titularidad
 
 Mercado Pago es titular y conserva todos los derechos de propiedad intelectual relacionados con la API, el Contenido de Mercado Pago, el Sitio, los servicios prestados por Mercado Pago, y cualquier contenido o tecnología de Mercado Pago creado/a o derivado/a de aquellos. Los Desarrolladores son titulares y conservan todos los derechos de propiedad intelectual relacionados con su Aplicación y/o sus desarrollos. Estos Términos y Condiciones no otorgan licencias tácitas. Cualquier derecho no otorgado a los Desarrolladores expresamente en virtud de estos Términos y Condiciones queda reservado a Mercado Pago.
@@ -914,7 +896,6 @@ Mercado Pago es titular y conserva todos los derechos de propiedad intelectual r
 Los Desarrolladores no podrán realizar actos que infrinjan los derechos de propiedad de Mercado Pago sobre la API, el Sitio o el Contenido de Mercado Pago o en general los derechos de propiedad intelectual e industrial de Mercado Pago.
 
 Los Desarrolladores otorgan a Mercado Pago una licencia ilimitada, irrevocable, perpetua, cedible, transferible y gratuita de uso de todas las sugerencias que hagan relacionadas a la API y/o a su uso.
-
 
 ## 12. Exención y limitación de responsabilidad
 
@@ -926,20 +907,17 @@ MERCADO LIBRE Y/O MERCADO PAGO NO SERÁN RESPONSABLES POR DAÑOS EMERGENTES, DIR
 
 LOS DESARROLLADORES RECONOCEN Y ACEPTAN QUE LAS LIMITACIONES DE RESPONSABILIDAD CONVENIDAS EN ESTOS TÉRMINOS RESULTAN RAZONABLES, TODA VEZ QUE CONSTITUYEN UN ELEMENTO ESENCIAL PARA MANTENER LAS CONDICIONES ECONÓMICAS DE LA RELACIÓN ENTRE MERCADO PAGO Y EL DESARROLLADOR.
 
-
 ## 13. Indemnidad
 
 Los Desarrolladores mantendrán indemnes a Mercado Pago, sus sociedades controladas, controlantes, y/o vinculadas, y a sus respectivos directores, gerentes, representantes y/o empleados, por cualquier reclamo administrativo, judicial o extrajudicial, daño, costo, gasto, condena, sanción, infracción o pérdida originados en, o relacionados con: (i) el uso que los Desarrolladores hagan de la API; o (ii) el desarrollo, mantenimiento y contenidos de las Aplicaciones; o (iii) la violación por parte de los Desarrolladores o de la Aplicación a derechos de terceros, o (iv) el incumplimiento de los Términos y Condiciones por parte de los Desarrolladores o de sus prestadores de servicios; o (iv) el uso del Contenido de Mercado Pago por los Desarrolladores o los Usuarios de la Aplicación, o (v) el uso de la Aplicación por parte de los Usuarios de la Aplicación, o (vi) la falsedad o inexactitud de cualquiera de las declaraciones formuladas por los Desarrolladores bajo estos Términos y Condiciones como así también de la documentación en general y la desactualización de todos éstos, o (vii) la divulgación o uso incorrecto o indebido de la Información Confidencial y de la Información Personal.
 
 A tal fin, los Desarrolladores facultan a Mercado Pago a intervenir y representarlo en dichos reclamos, pudiendo celebrar, en su nombre y representación, los acuerdos transaccionales que Mercado Pago considere oportunos y que tiendan a evitar mayores costos y/o evitar eventuales contingencias. Asimismo, los Desarrolladores no podrán celebrar acuerdos transaccionales sin el consentimiento previo de Mercado Pago, el que no podrá ser irrazonablemente denegado.
 
-
 ## 14. Confidencialidad
 
 Los Desarrolladores no utilizarán ni divulgarán la Información Confidencial salvo cuando sea necesario para cumplir con los Términos y Condiciones y en la medida de lo permitido en ellos.
 
 La “Información Confidencial” incluye toda la información proporcionada a los Desarrolladores por Mercado Pago en virtud del Programa de Desarrolladores y/o del Programa de Desarrolladores Certificados, tal como, y sin limitación, la API, el Contenido de Mercado Pago, las Claves de Acceso y/o cualquier información recibida por los Desarrolladores a través de la API o provista por Mercado Pago a los Desarrolladores.
-
 
 ## 15. Terminación
 
@@ -948,7 +926,6 @@ Mercado Pago se reserva el derecho de revocar, suspender o interrumpir, total o 
 Asimismo, si Mercado Pago razonablemente entendiera que un Desarrollador o sus proveedores de servicios han incumplido los Términos y Condiciones, Mercado Pago podrá adoptar todas las medidas que considere oportunas, tales como por ejemplo efectuar una advertencia, iniciar una investigación o suspender o revocar, sin previo aviso, la licencia de uso de la API.
 
 En caso de revocación, el Desarrollador deberá: (i) dejar de hacer uso y de acceder a la API y al Contenido de Mercado Pago; (ii) pagar las tarifas atrasadas y devengadas hasta la fecha de revocación; (iii) destruir todas sus copias intermedias del Contenido de Mercado Pago y de la Información Personal; y (iv) dejar de identificarse como Desarrollador y/o dejar de usar las Marcas de Mercado Pago.
-
 
 ## 16. Jurisdicción y ley aplicable
 
@@ -979,16 +956,14 @@ Mercado Pago podrá modificar en cualquier momento los Términos y Condiciones, 
 Los términos en mayúscula que no estén definidos en estos Términos y Condiciones tendrán el significado asignado a los mismos en los Términos y Condiciones de Uso de Mercado Pago.
 
 ------------
-
 ----[mco]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 20/12/2021_
+_Última modificación: 14/08/2024_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona natural y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de Mercado Pago Colombia Ltda., N.I.T.: 900116319-8 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
 Cualquier persona que no acepte estos Términos y Condiciones para Desarrolladores de Mercado Pago no podrá participar como Desarrollador, ni acceder y/o usar la API.
-
 
 ## 1. Definiciones
  
@@ -1002,30 +977,33 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
 
 **1.5 Desarrolladores:** Son todas aquellas personas naturales o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
 
-**1.6 Incidente:** se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
+**1.6 Incidente:** Se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
 
-**1.7 Información Personal:** Se refiere a cualquier información relativa a una persona identificada o identificable, incluida, sin que deba entenderse limitada, en archivos electrónicos y archivos impresos. Esta información, incluye Datos Sensibles (según definición establecida en esta cláusula) y puede comprender: nombre o iniciales, domicilio u otras direcciones físicas, número de teléfono móvil o fijo, correo electrónico, dirección IP, número de tarjeta de crédito, fotografías o cualquier otro dato o información sujeta a las Leyes de Protección de Datos Personales.
+**1.7 Datos Personales:** Se refiere a cualquier información relativa a una persona identificada o identificable.  Se considerará persona identificable a toda persona cuya identidad pueda determinarse, directa o indirectamente, mediante un identificador, como por ejemplo un nombre, un número de identificación, datos de localización, un identificador en línea o uno o varios elementos propios de la identidad física, fisiológica, genética, psíquica, económica, cultural o social de dicha persona.
 
-**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que sean de aplicación al presente Acuerdo, incluidas, pero no limitadas a la Ley N° 1.581 de Colombia y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
+**1.8 Encargado de Tratamiento:** Se refiere a la persona humana o jurídica que trate Datos Personales por cuenta y orden del Responsable del Tratamiento.
 
-**1.9 Mercado Libre:** Es MercadoLibre Colombia LTDA. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+**1.9 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de los Datos Personales que sean de aplicación a estos Términos y Condiciones, en especial la Ley 25.326 de Protección de Datos Personales y cualquier otra normativa que pueda ser aplicable.
 
-**1.10 Mercado Pago:** Es Mercado Pago Colombia Ltda.
+**1.10 Mercado Libre:** Es MercadoLibre Colombia LTDA. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
 
-**1.11 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.11 Mercado Pago:** Es Mercado Pago Colombia Ltda.
 
-**1.12 Titular de Datos:** una persona identificada o identificable cuyos Datos Personales sean tratados, consultados, recibidos, transmitidos, eliminados o mantenidos por el Desarrollador. Una persona identificable es aquella que puede ser identificada, directa o indirectamente, en particular mediante un número de identificación o uno o más elementos específicos de su identidad física, psicológica, mental, económica, cultural o social.
+**1.12 Responsable de Tratamiento:** Se refiere a la persona que, sola o conjuntamente con otros, determina los fines y los medios del tratamiento de los Datos Personales. 
 
-**1.13 Tratar, tratamiento de Datos:** se refiere a cualquier forma de manejo de los Datos llevada a cabo por cualquier medio, incluidos, sin que deba entenderse limitación, la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
+**1.13 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
 
-**1.14 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.14 Titular de Datos:** Una persona identificada o identificable cuyos Datos Personales sean tratados en el marco de estos Términos y Condiciones y que tenga derechos sobre ellos, de acuerdo a lo establecido en las Leyes de Protección de Datos Personales.
 
-**1.15 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
+**1.15 Tratar, tratamiento de Datos:** Se refiere a cualquier operación realizada sobre los Datos Personales, incluyendo pero no limitándose a la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
 
-**1.16 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.16 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
 
-**1.17 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.17 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
 
+**1.18 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+
+**1.19 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -1041,13 +1019,11 @@ Mercado Pago otorga a los Desarrolladores, mientras hagan uso de la API, una lic
 
 2.1.4 Publicar el Contenido de Mercado Pago dentro de una Aplicación de conformidad con estos Términos y Condiciones, implementando medidas de seguridad apropiadas para impedir que terceros no autorizados accedan al Contenido de Mercado Pago.
 
-
 ### 2.2 Acceso
 
 Los Desarrolladores podrán acceder a la API a través de los medios descritos en la documentación vinculada a la API que les será provista por Mercado Pago.
 
 Mercado Pago, a su exclusiva discreción, podrá requerir que los Desarrolladores cuenten con Claves de Acceso (por ejemplo, passwords o access tokens) para acceder a la API. Los Desarrolladores deberán mantener en confidencialidad dichas claves y son responsables en todo momento del uso que se les dé a éstas y de las acciones que se realicen al acceder a la API mediante el uso de las citadas claves.
-
 
 ### 2.3 Límites a las llamadas a la API
 
@@ -1064,7 +1040,6 @@ Los Desarrolladores deberán abstenerse de incluir en el título con el cual se 
 Los Desarrolladores reconocen y aceptan que Mercado Pago podrá desarrollar productos, servicios o aplicaciones que puedan competir con las Aplicaciones o cualquier otro producto o servicio desarrollado por los Desarrolladores.
 
 Los Desarrolladores autorizan a Mercado Pago a: (i) realizar copias, modificaciones, distribución o testeo interno de la Aplicación u otros procesos que Mercado Pago considere necesarios; y (ii) exhibir en el Sitio o cualquier otro documento o por cualquier otro medio, imágenes vinculadas al contenido o funcionamiento de la Aplicación.
-
 
 ## 3. Certificaciones
 
@@ -1106,7 +1081,6 @@ Los Desarrolladores otorgan a Mercado Pago una licencia de uso no exclusiva, gra
 
 Cuando un Desarrollador solicite a Mercado Pago la inclusión de una Aplicación en el Sitio o el alojamiento de una Aplicación por parte de Mercado Pago, el Desarrollador estará autorizando a Mercado Pago a que (i) utilice las Marcas de los Desarrolladores; (ii) albergue la Aplicación, proporcione vínculos hacia ella o la incorpore de cualquier otra forma a los servicios prestados por Mercado Pago; (iii) realice copias, modificaciones, distribución, testeo interno u otros procesos que Mercado Libre considere necesarios; y (iv) exhiba en el Sitio o cualquier otro sitio u otro documento, imágenes vinculadas al contenido o funcionamiento de la Aplicación.
 
-
 ## 5. Contenido de Mercado Pago
 
 ### 5.1 Acceso
@@ -1123,45 +1097,27 @@ Cuando el Contenido de Mercado Pago contenga información de Usuarios de Mercado
 
 Los Usuarios de la Aplicación podrán exhibir el Contenido de Mercado Pago en sus sitios web o en sus aplicaciones. Los Desarrolladores deberán informar y sujetar a los Usuarios de la Aplicación a las pautas previstas en esta cláusula 5.2 en relación a la exhibición del Contenido de Mercado Pago, así como informarles sobre los derechos de Mercado Pago sobre la API y el Contenido de Mercado Pago.
 
-
 ## 6. Obtención y uso de Información Personal
 
-Los Desarrolladores se declaran responsables del tratamiento de datos y aceptan cumplir con todos y cada una de los requisitos de las leyes aplicables en materia de protección de datos personales y sus políticas de privacidad deberán cumplir con los estándares legales aplicables.
+Cuando en el marco de estos Términos y Condiciones el Desarrollador utilice alguna de las herramientas de Mercado Pago en software propio o en software de terceros para el desarrollo de aplicaciones, y para ello se procesen Datos Personales, se establecen las siguientes previsiones:  
 
-Los Desarrolladores acuerdan que la Información Personal compartida sólo se procesara en la medida en que sea necesario de acuerdo con los fines y para cumplir con las obligaciones establecidas en los términos y condiciones; y garantizan que el procesamiento de dicha Información Personal se basará en uno de los fundamentos legales admitidos en las Leyes de Protección de Datos aplicables.
+**6.1 Rol del Desarrollador:** Al tratar Datos Personales el Usuario de Mercado Pago que permite al Desarrollador acceder a Datos Personales a través del uso de la API actuará como Responsable de Tratamiento y el Desarrollador actuará como su Encargado de Tratamiento. Ambas Partes se comprometen a cumplir con las Leyes de Protección de Datos Personales.
 
-Los Desarrolladores podrán acceder a Información Personal siempre y cuando obtengan el consentimiento de su titular de conformidad con la legislación aplicable e informen a los mismos de manera clara y expresa que quien recibe la información es el Desarrollador y no Mercado Pago. Los Desarrolladores podrán obtener y utilizar dicha información únicamente con el alcance autorizado por los titulares de los datos.
+**6.2 Finalidad y proporcionalidad del tratamiento:** El Desarrollador sólo podrá tratar los Datos Personales de conformidad con las instrucciones y autorizaciones que haya recibido del Usuario de Mercado Pago que actúe como Responsable de Tratamiento. El Desarrollador tratará los Datos Personales a los que acceda exclusivamente para cumplir con las finalidades y las obligaciones establecidas en estos Términos y Condiciones.
 
-Los Desarrolladores deberán como mínimo, informar con claridad a los Usuarios de la Aplicación el tipo de información recolectada por la Aplicación, el uso que harán de esa información, con qué terceros compartirán la información y como podrán ejercer sobre dicha información los derechos de acceso, rectificación cancelación y oposición, dejando en claro que quien recaba la información es el Desarrollador y no Mercado Pago.
+Si el Desarrollador realiza alguna actividad de tratamiento que no esté relacionada con la ejecución de estos Términos y Condiciones, esta actividad de tratamiento se llevará a cabo fuera del contexto de las condiciones establecidas por esta Cláusula. En este caso, el Desarrollador será el único responsable de dicho tratamiento, quedando Mercado Pago y cualquiera de sus sociedades relacionadas, exentas de cualquier queja, denuncia, reclamo, obligación o responsabilidad derivados del indebido tratamiento de Datos Personales.
 
-Los Desarrolladores protegerán la Información Personal de cualquier procesamiento, pérdida, uso, divulgación, adquisición o acceso no autorizados y notificarán a Mercado Pago cualquier acceso o uso no autorizado de dicha información como así también a los Usuarios de la Aplicación y autoridad competente, en la medida que lo requiera la ley aplicable.
+**6.3 Subcontratación:** En caso de que el Desarrollador decida contratar a un subprocesador para que lleve adelante alguna operación de tratamiento de Datos Personales relacionada a la ejecución de estos Términos y Condiciones, deberá asegurarse de que el subprocesador limite el uso que hace de los Datos Personales a las finalidades previstas en el contrato con el Usuario de Mercado Pago, que tenga la capacidad de mantener seguros y confidenciales los Datos Personales y de cumplir con los requerimientos de estos Términos y Condiciones y de las Leyes de Protección de Datos Personales.
 
-El Desarrollador deberá abstenerse de comunicar, divulgar, transferir o ceder la Información Personal a terceros, salvo que cuente con la autorización previa, expresa y por escrito de Mercado Pago y/o de los titulares de los datos.
+**6.4 Requerimientos de Autoridades Competentes:** El Desarrollador, además de notificar al Usuario de Mercado Pago, deberá notificar a Mercado Pago inmediatamente y sin demora injustificada cualquier comunicación o requerimiento que reciban de una Autoridad Competente. El Desarrollador colaborará con Mercado Pago tanto como lo permitan o lo requieran las Leyes de Protección de Datos Personales para dar respuesta a los requerimientos de las Autoridades Competentes.
 
-En caso de que el Desarrollador decida subcontratar el tratamiento de la Información Personal, deberá asegurarse de que el proveedor del servicio limite el uso que hacen de ésta a las finalidades previstas en la subcontratación, que tenga la capacidad de mantener segura y confidencial la Información Personal y de cumplir con los requisitos de tratamiento de datos de Mercado Pago y de la normativa de protección de datos personales, siendo en todo momento el Desarrollador el responsable del tratamiento de los Datos Personales como lo indica la normativa aplicable.
+**6.5 Indemnización:** Los Desarrolladores deberán indemnizar a Mercado Pago por cualquier daño directo o indirecto que resulte de cualquier incumplimiento de las obligaciones establecidas en estos Términos y Condiciones y/o en las Leyes de Protección de Datos Personales.
 
-Los Desarrolladores no podrán recopilar ni almacenar bajo circunstancia alguna, claves de seguridad o datos de tarjetas de crédito o débito de Usuarios de Mercado Pago.
+**6.6 Seguridad y Confidencialidad de la información Personal:** Los Desarrolladores adoptarán medidas técnicas y organizativas de seguridad adecuadas y actualizadas para proteger los Datos Personales y cualquier información a la que accedan por parte de los Usuarios de Mercado Pago para evitar la pérdida, uso, divulgación, adquisición o acceso no autorizados y/o Incidente de Seguridad.
 
-Los Desarrolladores deberán dar respuesta en tiempo y forma, de acuerdo a las Leyes de Protección de Datos vigentes y aplicables, a cualquier solicitud de derechos relacionados con la privacidad y protección de datos personales. En caso de duda o imposibilidad para dar respuesta, notificará inmediatamente, de forma que se acuerde la viabilidad y forma de dar respuesta.
+El Desarrollador además de notificar al Usuario de Mercado Pago, deberá notificar a Mercado Pago cualquier Incidente de Privacidad, incluido cualquier Incidente de Privacidad de sus subprocesadores, enviando un correo a privacidad@mercadolibre.com. El Desarrollador colaborará con Mercado Pago en la investigación y auditoría, o cualquier otra acción que Mercado Pago - a su discreción - implemente, y llevará a cabo las medidas correctivas aplicables.
 
-Los Desarrolladores deberán notificar con carácter inmediato, cualquier comunicación o requerimiento que reciba de una Autoridad Competente, debiendo además colaborar mutuamente tanto como lo permitan las Leyes de Protección de Datos aplicables.
-
-Los Desarrolladores deberán asegurar que la Información Personal compartida sea cierta, y notificarán si toman conocimiento de inexactitudes en la Información Personal compartida. 
-
-Los Desarrolladores deberán informar y cooperar, en la medida permitida por las Leyes de Protección de Datos aplicables, si un titular de datos o una autoridad competente presenta una disputa, reclamo o investigación relacionados con el Tratamiento de la Información Personal compartida contra una Parte o ambas Partes. 
-
-Los Desarrollardores deberán indemnizar a Mercado Libre y/o Mercado Pago, por cualquier daño directo o indirecto que resulte de cualquier incumplimiento de sus obligaciones aquí establecidas y/o las Leyes de Protección de Datos aplicables.
-
-*Incidentes de Seguridad:* En cualquier momento durante el tratamiento de la Información Personal, el Desarrollador notificará cualquier Incidente de la Seguridad de la Información que afecte o vulnere la Información Personal, incluida la intrusión en las instalaciones, los sistemas o los equipos informáticos de los subcontratistas del Desarrollador.
-
-El Desarrollador colaborará con la investigación, auditoría y notificación a las partes afectadas, titulares, los organismos estatales y autoridades reguladoras, así como con las medidas correctivas aplicables. En la medida de su carácter de Responsable y en cumplimiento a las Leyes de Protección de Datos Personales, implementarán el plan de detección, clasificación, atención, investigación, respuesta, contención y notificación a afectados, en relación con Incidentes de Seguridad de la Información relativa a los Datos Personales. 
-
-*Tiempo de Conservación:* El Desarrollador no retendrá, ni procesará la Información Personal compartida más tiempo del necesario para llevar a cabo las finalidades y obligaciones establecidos en los presentes Términos y Condiciones. No obstante, conservarán la Información Personal compartida, de conformidad con cualquier período de retención legal o profesional aplicable en sus respectivos países y/o industrias.
-
-*Transferencia internacional:* Para cualquier transferencia internacional de Información Personal hacia un país que no garantice un nivel adecuado de protección de conformidad con las Leyes de Protección de Datos Personales, el Desarrollador cumplirá con las Leyes de Protección de Datos Personales, en materia de transferencia internacional de datos personales.
-
-Si el Desarrollador realiza alguna actividad de tratamiento que no esté relacionada con la ejecución de los Términos y Condiciones, esta actividad de tratamiento se llevará a cabo fuera del contexto de las condiciones establecidas por esta Cláusula. En este caso, el Desarrollador será el único responsable de dicho tratamiento, quedando Mercado Libre y/o Mercado Pago, exento de cualquier obligación o responsabilidad que de ella se derive.
-
+**6.7. Plazo de conservación de los Datos Personales:** El Desarrollador no conservará los Datos Personales por más tiempo del necesario para cumplir con las finalidades y obligaciones establecidas en estos Términos y Condiciones. Sin embargo, el Desarrollador podrá conservar los Datos Personales por un plazo adicional cuando: (i) así lo permitan o lo impongan las leyes aplicables; o (ii) así lo hayan autorizado los Titulares de Datos.
 
 ## 7. Actividades restringidas
 
@@ -1197,7 +1153,6 @@ El Desarrollador conoce y acepta que, en caso de que Mercado Pago decidiera impl
 
 Mercado Pago no se encuentra obligada a brindar ningún servicio de soporte o mantenimiento sobre la API.
 
-
 ## 9. Monitoreo y auditorías
 
 Mercado Pago podrá monitorear o supervisar el uso que los Desarrolladores hagan de la API y/o el funcionamiento de las Aplicaciones. Los Desarrolladores no podrán, ni podrán intentar, bloquear o de otro modo interferir en el monitoreo o la supervisión, y Mercado Pago podrá contrarrestar por medios técnicos cualquier método que los Desarrolladores utilicen para bloquear o interferir dichas actividades de monitoreo.
@@ -1209,7 +1164,6 @@ Asimismo, Mercado Pago podrá auditar periódicamente, en forma aleatoria y sin 
 Los Desarrolladores deberán cooperar con las auditorías que realice Mercado Pago y, en caso de ser requerido, deberán demostrar que cumplen con los Términos y Condiciones.
 
 Mercado Pago le proporcionará al Desarrollador resultados detallados de cualquier auditoría de seguridad realizada. El Desarrollador tendrá treinta (30) días para resolver cualquier inconveniente que Mercado Pago haya identificado durante la auditoría de seguridad. Si el Desarrollador no resuelve dichos inconvenientes, Mercado Pago podrá, sin necesidad de otorgar preaviso, suspender o discontinuar su acceso a la API y al Contenido de Mercado Pago.
-
 
 ## 10. Requisitos de Seguridad
 
@@ -1263,7 +1217,6 @@ Los Desarrolladores no podrán realizar actos que infrinjan los derechos de prop
 
 Los Desarrolladores otorgan a Mercado Pago una licencia ilimitada, irrevocable, perpetua, cedible, transferible y gratuita de uso de todas las sugerencias que hagan relacionadas a la API y/o a su uso.
 
-
 ## 12. Exención y limitación de responsabilidad
 
 SALVO LO DISPUESTO EXPRESAMENTE EN LOS TÉRMINOS Y CONDICIONES, Y EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEGISLACIÓN APLICABLE, MERCADO PAGO NO GARANTIZA (I) LA DISPONIBILIDAD, USO CONTINUADO O ININTERRUMPIDO DE LA API, DEL CONTENIDO DE MERCADO PAGO, DEL SITIO O DE LOS SERVICIOS DE MERCADO PAGO, (II) LA ADECUACIÓN O IDONEIDAD DE ÉSTOS PARA PROPÓSITOS, USOS O SISTEMAS DETERMINADOS, O (III) LA AUSENCIA DE ERRORES O COMERCIABILIDAD.
@@ -1273,7 +1226,6 @@ MERCADO PAGO NO MANIFIESTA NI GARANTIZA QUE EL SITIO, LOS SERVICIOS DE MERCADO L
 MERCADO LIBRE Y/O MERCADO PAGO NO SERÁN RESPONSABLES POR DAÑOS EMERGENTES, DIRECTOS, INDIRECTOS, NI LUCRO CESANTE O PÉRDIDA DE CHANCES, NI ESTARÁ OBLIGADA AL PAGO DE INDEMNIZACIÓN DE CUALQUIER OTRA NATURALEZA.
 
 LOS DESARROLLADORES RECONOCEN Y ACEPTAN QUE LAS LIMITACIONES DE RESPONSABILIDAD CONVENIDAS EN ESTOS TÉRMINOS RESULTAN RAZONABLES, TODA VEZ QUE CONSTITUYEN UN ELEMENTO ESENCIAL PARA MANTENER LAS CONDICIONES ECONÓMICAS DE LA RELACIÓN ENTRE MERCADO PAGO Y EL DESARROLLADOR.
-
 
 ## 13. Indemnidad
 
@@ -1295,7 +1247,6 @@ Mercado Pago se reserva el derecho de revocar, suspender o interrumpir, total o 
 Asimismo, si Mercado Pago razonablemente entendiera que un Desarrollador o sus proveedores de servicios han incumplido los Términos y Condiciones, Mercado Pago podrá adoptar todas las medidas que considere oportunas, tales como por ejemplo efectuar una advertencia, iniciar una investigación o suspender o revocar, sin previo aviso, la licencia de uso de la API.
 
 En caso de revocación, el Desarrollador deberá: (i) dejar de hacer uso y de acceder a la API y al Contenido de Mercado Pago; (ii) pagar las tarifas atrasadas y devengadas hasta la fecha de revocación; (iii) destruir todas sus copias intermedias del Contenido de Mercado Pago y de la Información Personal; y (iv) dejar de identificarse como Desarrollador y/o dejar de usar las Marcas de Mercado Pago.
-
 
 ## 16. Jurisdicción y ley aplicable
 
@@ -1327,11 +1278,10 @@ Mercado Pago podrá modificar en cualquier momento los Términos y Condiciones, 
 Los términos en mayúscula que no estén definidos en estos Términos y Condiciones tendrán el significado asignado a los mismos en los Términos y Condiciones de Uso de Mercado Pago.
 
 ------------
-
 ----[mpe]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 20/12/2021_
+_Última modificación: 14/08/2024_
 
 **1.1 API:** Es la Interfaz de Programación de Aplicaciones de Mercado Pago y toda otra herramienta puesta a disposición de los Desarrolladores.
 
@@ -1343,29 +1293,33 @@ _Última modificación: 20/12/2021_
 
 **1.5 Desarrolladores:** Son todas aquellas personas naturales o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
 
-**1.6 Incidente:** se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
+**1.6 Incidente:** Se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
 
-**1.7 Información Personal:** Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones. Se refiere a cualquier información relativa a una persona identificada o identificable, incluida, sin que deba entenderse limitada, en archivos electrónicos y archivos impresos. Esta información, incluye Datos Sensibles (según definición establecida en esta cláusula) y puede comprender: nombre o iniciales, domicilio u otras direcciones físicas, número de teléfono móvil o fijo, correo electrónico, dirección IP, número de tarjeta de crédito, fotografías o cualquier otro dato o información sujeta a las Leyes de Protección de Datos Personales.
+**1.7 Datos Personales:** Tiene el significado asignado bajo la cláusula 6 de estos Términos y Condiciones. Se refiere a cualquier información relativa a una persona identificada o identificable. Se considerará persona identificable a toda persona cuya identidad pueda determinarse, directa o indirectamente, mediante un identificador, como por ejemplo un nombre, un número de identificación, datos de localización, un identificador en línea o uno o varios elementos propios de la identidad física, fisiológica, genética, psíquica, económica, cultural o social de dicha persona.
 
-**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que sean de aplicación al presente Acuerdo, incluidas, pero no limitadas a la Ley N° 29.733 del Perú y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
+**1.8 Encargado de Tratamiento:** Se refiere a la persona humana o jurídica que trate Datos Personales por cuenta y orden del Responsable del Tratamiento.
 
-**1.9 Mercado Libre:** Es Mercado Libre Perú S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+**1.9 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de los Datos Personales que sean de aplicación a estos Términos y Condiciones, en especial la Ley 25.326 de Protección de Datos Personales y cualquier otra normativa que pueda ser aplicable.
 
-**1.10 Mercado Pago:** Es una unidad de negocio de Mercado Libre Perú S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
+**1.10 Mercado Libre:** Es Mercado Libre Perú S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
 
-**1.11 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.11 Mercado Pago:** Es una unidad de negocio de Mercado Libre Perú S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
 
-**1.12 Titular de Datos:** una persona identificada o identificable cuyos Datos Personales sean tratados, consultados, recibidos, transmitidos, eliminados o mantenidos por el Desarrollador. Una persona identificable es aquella que puede ser identificada, directa o indirectamente, en particular mediante un número de identificación o uno o más elementos específicos de su identidad física, psicológica, mental, económica, cultural o social.
+**1.12 Responsable de Tratamiento:** Se refiere a la persona que, sola o conjuntamente con otros, determina los fines y los medios del tratamiento de los Datos Personales. 
 
-**1.13 Tratar, tratamiento de Datos:** se refiere a cualquier forma de manejo de los Datos llevada a cabo por cualquier medio, incluidos, sin que deba entenderse limitación, la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
+**1.13 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
 
-**1.14 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.14 Titular de Datos:** Una persona identificada o identificable cuyos Datos Personales sean tratados en el marco de estos Términos y Condiciones y que tenga derechos sobre ellos, de acuerdo a lo establecido en las Leyes de Protección de Datos Personales.
 
-**1.15 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
+**1.15 Tratar, tratamiento de Datos:** Se refiere a cualquier operación realizada sobre los Datos Personales, incluyendo pero no limitándose a la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
 
-**1.16 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.16 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
 
-**1.17 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.17 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus servicios a los Usuarios.
+
+**1.18 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+
+**1.19 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -1461,41 +1415,25 @@ Los Usuarios de la Aplicación podrán exhibir el Contenido de Mercado Pago en s
 
 ## 6. Obtención y uso de Información Personal
 
-Los Desarrolladores se declaran responsables del tratamiento de datos y aceptan cumplir con todos y cada una de los requisitos de las leyes aplicables en materia de protección de datos personales y sus políticas de privacidad deberán cumplir con los estándares legales aplicables.
+Cuando en el marco de estos Términos y Condiciones el Desarrollador utilice alguna de las herramientas de Mercado Pago en software propio o en software de terceros para el desarrollo de aplicaciones, y para ello se procesen Datos Personales, se establecen las siguientes previsiones:  
 
-Los Desarrolladores acuerdan que la Información Personal compartida sólo se procesara en la medida en que sea necesario de acuerdo con los fines y para cumplir con las obligaciones establecidas en los términos y condiciones; y garantizan que el procesamiento de dicha Información Personal se basará en uno de los fundamentos legales admitidos en las Leyes de Protección de Datos aplicables.
+**6.1 Rol del Desarrollador:** Al tratar Datos Personales el Usuario de Mercado Pago que permite al Desarrollador acceder a Datos Personales a través del uso de la API actuará como Responsable de Tratamiento y el Desarrollador actuará como su Encargado de Tratamiento. Ambas Partes se comprometen a cumplir con las Leyes de Protección de Datos Personales.
 
-Los Desarrolladores podrán acceder a Información Personal siempre y cuando obtengan el consentimiento de su titular de conformidad con la legislación aplicable e informen a los mismos de manera clara y expresa que quien recibe la información es el Desarrollador y no Mercado Pago. Los Desarrolladores podrán obtener y utilizar dicha información únicamente con el alcance autorizado por los titulares de los datos.
+**6.2 Finalidad y proporcionalidad del tratamiento:** El Desarrollador sólo podrá tratar los Datos Personales de conformidad con las instrucciones y autorizaciones que haya recibido del Usuario de Mercado Pago que actúe como Responsable de Tratamiento. El Desarrollador tratará los Datos Personales a los que acceda exclusivamente para cumplir con las finalidades y las obligaciones establecidas en estos Términos y Condiciones.
 
-Los Desarrolladores deberán como mínimo, informar con claridad a los Usuarios de la Aplicación el tipo de información recolectada por la Aplicación, el uso que harán de esa información, con qué terceros compartirán la información y como podrán ejercer sobre dicha información los derechos de acceso, rectificación cancelación y oposición, dejando en claro que quien recaba la información es el Desarrollador y no Mercado Pago.
+Si el Desarrollador realiza alguna actividad de tratamiento que no esté relacionada con la ejecución de estos Términos y Condiciones, esta actividad de tratamiento se llevará a cabo fuera del contexto de las condiciones establecidas por esta Cláusula. En este caso, el Desarrollador será el único responsable de dicho tratamiento, quedando Mercado Pago y cualquiera de sus sociedades relacionadas, exentas de cualquier queja, denuncia, reclamo, obligación o responsabilidad derivados del indebido tratamiento de Datos Personales.
 
-Los Desarrolladores protegerán la Información Personal de cualquier procesamiento, pérdida, uso, divulgación, adquisición o acceso no autorizados y notificarán a Mercado Pago cualquier acceso o uso no autorizado de dicha información como así también a los Usuarios de la Aplicación y autoridad competente, en la medida que lo requiera la ley aplicable.
+**6.3 Subcontratación:** En caso de que el Desarrollador decida contratar a un subprocesador para que lleve adelante alguna operación de tratamiento de Datos Personales relacionada a la ejecución de estos Términos y Condiciones, deberá asegurarse de que el subprocesador limite el uso que hace de los Datos Personales a las finalidades previstas en el contrato con el Usuario de Mercado Pago, que tenga la capacidad de mantener seguros y confidenciales los Datos Personales y de cumplir con los requerimientos de estos Términos y Condiciones y de las Leyes de Protección de Datos Personales.
 
-El Desarrollador deberá abstenerse de comunicar, divulgar, transferir o ceder la Información Personal a terceros, salvo que cuente con la autorización previa, expresa y por escrito de Mercado Pago y/o de los titulares de los datos.
+**6.4 Requerimientos de Autoridades Competentes:** El Desarrollador, además de notificar al Usuario de Mercado Pago, deberá notificar a Mercado Pago inmediatamente y sin demora injustificada cualquier comunicación o requerimiento que reciban de una Autoridad Competente. El Desarrollador colaborará con Mercado Pago tanto como lo permitan o lo requieran las Leyes de Protección de Datos Personales para dar respuesta a los requerimientos de las Autoridades Competentes.
 
-En caso de que el Desarrollador decida subcontratar el tratamiento de la Información Personal, deberá asegurarse de que el proveedor del servicio limite el uso que hacen de ésta a las finalidades previstas en la subcontratación, que tenga la capacidad de mantener segura y confidencial la Información Personal y de cumplir con los requisitos de tratamiento de datos de Mercado Pago y de la normativa de protección de datos personales, siendo en todo momento el Desarrollador el responsable del tratamiento de los Datos Personales como lo indica la normativa aplicable.
+**6.5 Indemnización:** Los Desarrolladores deberán indemnizar a Mercado Pago por cualquier daño directo o indirecto que resulte de cualquier incumplimiento de las obligaciones establecidas en estos Términos y Condiciones y/o en las Leyes de Protección de Datos Personales.
 
-Los Desarrolladores no podrán recopilar ni almacenar bajo circunstancia alguna, claves de seguridad o datos de tarjetas de crédito o débito de Usuarios de Mercado Pago.
+**6.6 Seguridad y Confidencialidad de la información Personal:** Los Desarrolladores adoptarán medidas técnicas y organizativas de seguridad adecuadas y actualizadas para proteger los Datos Personales y cualquier información a la que accedan por parte de los Usuarios de Mercado Pago para evitar la pérdida, uso, divulgación, adquisición o acceso no autorizados y/o Incidente de Seguridad.
 
-Los Desarrolladores deberán dar respuesta en tiempo y forma, de acuerdo a las Leyes de Protección de Datos vigentes y aplicables, a cualquier solicitud de derechos relacionados con la privacidad y protección de datos personales. En caso de duda o imposibilidad para dar respuesta, notificará inmediatamente, de forma que se acuerde la viabilidad y forma de dar respuesta.  
+El Desarrollador además de notificar al Usuario de Mercado Pago, deberá notificar a Mercado Pago cualquier Incidente de Privacidad, incluido cualquier Incidente de Privacidad de sus subprocesadores, enviando un correo a privacidad@mercadolibre.com. El Desarrollador colaborará con Mercado Pago en la investigación y auditoría, o cualquier otra acción que Mercado Pago - a su discreción - implemente, y llevará a cabo las medidas correctivas aplicables.
 
-Los Desarrolladores deberán notificar con carácter inmediato, cualquier comunicación o requerimiento que reciba de una Autoridad Competente, debiendo además colaborar mutuamente tanto como lo permitan las Leyes de Protección de Datos aplicables.
-
-Los Desarrolladores deberán asegurar que la Información Personal compartida sea cierta, y notificarán si toman conocimiento de inexactitudes en la Información Personal compartida. 
-
-Los Desarrolladores deberán informar y cooperar, en la medida permitida por las Leyes de Protección de Datos aplicables, si un titular de datos o una autoridad competente presenta una disputa, reclamo o investigación relacionados con el Tratamiento de la Información Personal compartida contra una Parte o ambas Partes. 
-
-Los Desarrollardores deberán indemnizar a Mercado Libre y/o Mercado Pago, por cualquier daño directo o indirecto que resulte de cualquier incumplimiento de sus obligaciones aquí establecidas y/o las Leyes de Protección de Datos aplicables.
-
-*Incidentes de Seguridad:* En cualquier momento durante el tratamiento de la Información Personal, el Desarrollador notificará cualquier Incidente de la Seguridad de la Información que afecte o vulnere la Información Personal, incluida la intrusión en las instalaciones, los sistemas o los equipos informáticos de los subcontratistas del Desarrollador. 
-
-El Desarrollador colaborará con la investigación, auditoría y notificación a las partes afectadas, titulares, los organismos estatales y autoridades reguladoras, así como con las medidas correctivas aplicables. En la medida de su carácter de Responsable y en cumplimiento a las Leyes de Protección de Datos Personales, implementarán el plan de detección, clasificación, atención, investigación, respuesta, contención y notificación a afectados, en relación con Incidentes de Seguridad de la Información relativa a los Datos Personales. 
-
-*Tiempo de Conservación:* El Desarrollador no retendrá, ni procesará la Información Personal compartida más tiempo del necesario para llevar a cabo las finalidades y obligaciones establecidos en los presentes Términos y Condiciones. No obstante, conservarán la Información Personal compartida, de conformidad con cualquier período de retención legal o profesional aplicable en sus respectivos países y/o industrias.
-
-*Transferencia internacional:* Para cualquier transferencia internacional de Información Personal hacia un país que no garantice un nivel adecuado de protección de conformidad con las Leyes de Protección de Datos Personales, el Desarrollador cumplirá con las Leyes de Protección de Datos Personales, en materia de transferencia internacional de datos personales.
-
-Si el Desarrollador realiza alguna actividad de tratamiento que no esté relacionada con la ejecución de los Términos y Condiciones, esta actividad de tratamiento se llevará a cabo fuera del contexto de las condiciones establecidas por esta Cláusula. En este caso, el Desarrollador será el único responsable de dicho tratamiento, quedando Mercado Libre y/o Mercado Pago, exento de cualquier obligación o responsabilidad que de ella se derive.
+**6.7. Plazo de conservación de los Datos Personales:** El Desarrollador no conservará los Datos Personales por más tiempo del necesario para cumplir con las finalidades y obligaciones establecidas en estos Términos y Condiciones. Sin embargo, el Desarrollador podrá conservar los Datos Personales por un plazo adicional cuando: (i) así lo permitan o lo impongan las leyes aplicables; o (ii) así lo hayan autorizado los Titulares de Datos.
 
 ## 7. Actividades restringidas
 
@@ -1655,11 +1593,10 @@ Mercado Pago podrá modificar en cualquier momento los Términos y Condiciones, 
 Los términos en mayúscula que no estén definidos en estos Términos y Condiciones tendrán el significado asignado a los mismos en los Términos y Condiciones de Uso de Mercado Pago.
 
 ------------
-
 ----[mlm]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 20/12/2021_
+_Última modificación: 14/08/2024_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona física y/o moral que funge como Desarrollador pueda acceder y/o usar la interfaz de programación de aplicaciones de la unidad de negocio “Mercado Pago” de MercadoLibre, S. de R.L de C.V. (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -1677,28 +1614,32 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
 
 **1.5 Desarrolladores:** Son todas aquellas personas físicas o morales, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
 
-**1.6 Incidente:** se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
+**1.6 Incidente:** Se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
 
-**1.7 Información Personal:** Se refiere a cualquier información relativa a una persona identificada o identificable, incluida, sin que deba entenderse limitada, en archivos electrónicos y archivos impresos. Esta información, incluye Datos Sensibles (según definición establecida en esta cláusula) y puede comprender: nombre o iniciales, domicilio u otras direcciones físicas, número de teléfono móvil o fijo, correo electrónico, dirección IP, número de tarjeta de crédito, fotografías o cualquier otro dato o información sujeta a las Leyes de Protección de Datos Personales.
+**1.7 Datos Personales:** Se refiere a cualquier información relativa a una persona identificada o identificable. Se considerará persona identificable a toda persona cuya identidad pueda determinarse, directa o indirectamente, mediante un identificador, como por ejemplo un nombre, un número de identificación, datos de localización, un identificador en línea o uno o varios elementos propios de la identidad física, fisiológica, genética, psíquica, económica, cultural o social de dicha persona.
 
-**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que sean de aplicación al presente Acuerdo, incluidas, pero no limitadas a la  Ley Federal de Protección de Datos Personales en Posesión de los Particulares de México  y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
+**1.8 Encargado de Tratamiento:** Se refiere a la persona humana o jurídica que trate Datos Personales por cuenta y orden del Responsable del Tratamiento.
 
-**1.9 Mercado Libre:**  Es MercadoLibre, S. de R.L de C.V. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+**1.9 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de los Datos Personales que sean de aplicación a estos Términos y Condiciones, en especial la Ley 25.326 de Protección de Datos Personales y cualquier otra normativa que pueda ser aplicable.
 
-**1.10 Mercado Pago:** Es una unidad de negocio de MercadoLibre, S. de R.L de C.V. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
+**1.10 Mercado Libre:** Es MercadoLibre, S. de R.L de C.V. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
 
-**1.11 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.11 Mercado Pago:** Es una unidad de negocio de MercadoLibre, S. de R.L de C.V. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
 
-**1.12 Titular de Datos:** una persona identificada o identificable cuyos Datos Personales sean tratados, consultados, recibidos, transmitidos, eliminados o mantenidos por el Desarrollador. Una persona identificable es aquella que puede ser identificada, directa o indirectamente, en particular mediante un número de identificación o uno o más elementos específicos de su identidad física, psicológica, mental, económica, cultural o social.
+**1.12 Responsable de Tratamiento:** Se refiere a la persona que, sola o conjuntamente con otros, determina los fines y los medios del tratamiento de los Datos Personales. 
 
-**1.13 Tratar, Tratamiento de Datos:** se refiere a cualquier forma de manejo de los Datos llevada a cabo por cualquier medio, incluidos, sin que deba entenderse limitación, la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
+**1.13 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
 
-**1.14 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.14 Titular de Datos:** Una persona identificada o identificable cuyos Datos Personales sean tratados en el marco de estos Términos y Condiciones y que tenga derechos sobre ellos, de acuerdo a lo establecido en las Leyes de Protección de Datos Personales.
+
+**1.15 Tratar, Tratamiento de Datos:** Se refiere a cualquier operación realizada sobre los Datos Personales, incluyendo pero no limitándose a la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
+
+**1.16 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
 1.15 Términos y Condiciones Generales: Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus Servicios a los Usuarios.
 
-**1.16 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.17 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
 
-**1.17 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.18 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -1790,41 +1731,25 @@ Los Usuarios de la Aplicación podrán exhibir el Contenido de Mercado Pago en s
 
 ## 6. Obtención y uso de Información Personal
 
-Los Desarrolladores se declaran responsables del tratamiento de datos y aceptan cumplir con todos y cada una de los requisitos de las leyes aplicables en materia de protección de datos personales y sus políticas de privacidad deberán cumplir con los estándares legales aplicables.
+Cuando en el marco de estos Términos y Condiciones el Desarrollador utilice alguna de las herramientas de Mercado Pago en software propio o en software de terceros para el desarrollo de aplicaciones, y para ello se procesen Datos Personales, se establecen las siguientes previsiones:  
 
-Los Desarrolladores acuerdan que la Información Personal compartida sólo se procesará en la medida en que sea necesario de acuerdo con los fines y para cumplir con las obligaciones establecidas en los términos y condiciones; y garantizan que el procesamiento de dicha Información Personal se basará en uno de los fundamentos legales admitidos en las Leyes de Protección de Datos aplicables.
+**6.1 Rol del Desarrollador:** Al tratar Datos Personales el Usuario de Mercado Pago que permite al Desarrollador acceder a Datos Personales a través del uso de la API actuará como Responsable de Tratamiento y el Desarrollador actuará como su Encargado de Tratamiento. Ambas Partes se comprometen a cumplir con las Leyes de Protección de Datos Personales.
 
-Los Desarrolladores podrán acceder a Información Personal siempre y cuando obtengan el consentimiento de su titular de conformidad con la legislación aplicable e informen a los mismos de manera clara y expresa que quien recibe la información es el Desarrollador y no Mercado Pago. Los Desarrolladores podrán obtener y utilizar dicha información únicamente con el alcance autorizado por los titulares de los datos.
+**6.2 Finalidad y proporcionalidad del tratamiento:** El Desarrollador sólo podrá tratar los Datos Personales de conformidad con las instrucciones y autorizaciones que haya recibido del Usuario de Mercado Pago que actúe como Responsable de Tratamiento. El Desarrollador tratará los Datos Personales a los que acceda exclusivamente para cumplir con las finalidades y las obligaciones establecidas en estos Términos y Condiciones.
 
-Los Desarrolladores deberán , como mínimo, informar con claridad a los Usuarios de la Aplicación el tipo de información recolectada por la Aplicación, el uso que harán de esa información, con qué terceros compartirán la información y como podrán ejercer sobre dicha información los derechos de acceso, rectificación cancelación y oposición, dejando en claro que quien recaba la información es el Desarrollador y no Mercado Pago.
+Si el Desarrollador realiza alguna actividad de tratamiento que no esté relacionada con la ejecución de estos Términos y Condiciones, esta actividad de tratamiento se llevará a cabo fuera del contexto de las condiciones establecidas por esta Cláusula. En este caso, el Desarrollador será el único responsable de dicho tratamiento, quedando Mercado Pago y cualquiera de sus sociedades relacionadas, exentas de cualquier queja, denuncia, reclamo, obligación o responsabilidad derivados del indebido tratamiento de Datos Personales.
 
-Los Desarrolladores protegerán la Información Personal de cualquier procesamiento, pérdida, uso, divulgación, adquisición o acceso no autorizados y notificarán a Mercado Pago cualquier acceso o uso no autorizado de dicha información como así también a los Usuarios de la Aplicación y autoridad competente, en la medida que lo requiera la ley aplicable.
+**6.3 Subcontratación:** En caso de que el Desarrollador decida contratar a un subprocesador para que lleve adelante alguna operación de tratamiento de Datos Personales relacionada a la ejecución de estos Términos y Condiciones, deberá asegurarse de que el subprocesador limite el uso que hace de los Datos Personales a las finalidades previstas en el contrato con el Usuario de Mercado Pago, que tenga la capacidad de mantener seguros y confidenciales los Datos Personales y de cumplir con los requerimientos de estos Términos y Condiciones y de las Leyes de Protección de Datos Personales.
 
-El Desarrollador deberá abstenerse de comunicar, divulgar, transferir o ceder la Información Personal a terceros, salvo que cuente con la autorización previa, expresa y por escrito de Mercado Pago y/o de los titulares de los datos.
+**6.4 Requerimientos de Autoridades Competentes:** El Desarrollador, además de notificar al Usuario de Mercado Pago, deberá notificar a Mercado Pago inmediatamente y sin demora injustificada cualquier comunicación o requerimiento que reciban de una Autoridad Competente. El Desarrollador colaborará con Mercado Pago tanto como lo permitan o lo requieran las Leyes de Protección de Datos Personales para dar respuesta a los requerimientos de las Autoridades Competentes.
 
-En caso de que el Desarrollador decida subcontratar el tratamiento de la Información Personal, deberá asegurarse de que el proveedor del servicio limite el uso que hacen de ésta a las finalidades previstas en la subcontratación, que tenga la capacidad de mantener segura y confidencial la Información Personal y de cumplir con los requisitos de tratamiento de datos de Mercado Pago y de la normativa de protección de datos personales, siendo en todo momento el Desarrollador el responsable del tratamiento de los Datos Personales como lo indica la normativa aplicable.
+**6.5 Indemnización:** Los Desarrolladores deberán indemnizar a Mercado Pago por cualquier daño directo o indirecto que resulte de cualquier incumplimiento de las obligaciones establecidas en estos Términos y Condiciones y/o en las Leyes de Protección de Datos Personales.
 
-Los Desarrolladores no podrán recopilar ni almacenar bajo circunstancia alguna, claves de seguridad o datos de tarjetas de crédito o débito de Usuarios de Mercado Pago.
+**6.6 Seguridad y Confidencialidad de la información Personal:** Los Desarrolladores adoptarán medidas técnicas y organizativas de seguridad adecuadas y actualizadas para proteger los Datos Personales y cualquier información a la que accedan por parte de los Usuarios de Mercado Pago para evitar la pérdida, uso, divulgación, adquisición o acceso no autorizados y/o Incidente de Seguridad.
 
-Los Desarrolladores deberán dar respuesta en tiempo y forma, de acuerdo a las Leyes de Protección de Datos Personales vigentes y aplicables, a cualquier solicitud relacionada con la privacidad y protección de los mismos En caso de duda o imposibilidad para dar respuesta, notificará de manera inmediata a Mercado Pago, de forma que se acuerde la viabilidad y manera en la que se dará respuesta a dicha solicitud.  
+El Desarrollador además de notificar al Usuario de Mercado Pago, deberá notificar a Mercado Pago cualquier Incidente de Privacidad, incluido cualquier Incidente de Privacidad de sus subprocesadores, enviando un correo a privacidad@mercadolibre.com. El Desarrollador colaborará con Mercado Pago en la investigación y auditoría, o cualquier otra acción que Mercado Pago - a su discreción - implemente, y llevará a cabo las medidas correctivas aplicables.
 
-Los Desarrolladores deberán notificar de manera inmediata, cualquier comunicación o requerimiento que reciban de cualquier autoridad competente, , debiendo además colaborar tanto como lo permitan las Leyes de Protección de Datos Personales aplicables y vigentes.
-
-Los Desarrolladores deberán asegurar que los Datos Personales compartidos sean correctos y verídicos  y deberá notificar inmediatamente a Mercado Pago si toman conocimiento de cualquier inexactitud o variación de los Datos Personales compartidos. 
-
-Los Desarrolladores deberán informar y cooperar, en la medida permitida por las Leyes de Protección de Datos Personales aplicables y vigentes, si un Titular de Datos o una autoridad competente presenta una denuncia,, reclamo o investigación relacionados con el Tratamiento de llos Datos Personales  contra una Parte o ambas Partes. Los Desarrollardores se obliga a indemnizar plenamente y a mantener indemne a Mercado Pago, sus sociedades relacionadas y sus respectivos directores,  funcionarios, representantes, agentes y empleados respecto de  cualquier daño, costo, pérdida, pasivo, gasto (incluyendo sin limitación, honorarios de abogados, peritos y gastos de justicia) provenientes de reclamos judiciales y/o extrajudiciales, incluyendo el pago de multas o sanciones, originados en y/o vinculados con cualquier incumplimiento de los Desarrolladores, sus empleados, funcionarios, y/o contratistas a las obligaciones asumidas por los Desarrolladores en los  presentes Términos y Condiciones y con cualquier incumplimiento a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, su reglamento, los lineamientos, así como cualquier otra normativa o disposición que le resulte aplicable en tema de protección datos, y/o cualquier queja, demanda, denuncia, reclamo, proceso o procedimiento interpuesto en contra de Mercado Pago y/o sus sociedades relacionadas derivado del tratamiento otorgado por los Desarrolladores a sus Datos Personales.
-
-Los Desarrolladores además sacarán en paz y a salvo a Mercado Pago, sus sociedades relacionadas, y a sus respectivos directores, funcionarios, representantes, agentes y/o empleados de cualquier demanda, queja, reclamo, protesta, denuncia, proceso o procedimiento que pudiese afectar económica o reputacionalmente a Mercado Pago, incluyendo cualquier multa, sanción o infracción, debiendo asumir los Desarrolladores cualquier responsabilidad respecto al tratamiento de Datos Personales dado por éstos. 
-
-*Incidentes de Seguridad:* En cualquier momento durante el tratamiento de los Datos Personales, el Desarrollador notificará cualquier Incidente de la Seguridad de la Información que afecte o vulnere los Datos Personales, incluida la intrusión en las instalaciones, los sistemas o los equipos informáticos de los subcontratistas del Desarrollador.
-
-El Desarrollador colaborará con la investigación, auditoría y notificación a las partes afectadas, titulares, los organismos estatales y federales, autoridades reguladoras, así como con las medidas correctivas aplicables. En la medida de su carácter de Responsable y en cumplimiento a las Leyes de Protección de Datos Personales, implementarán el plan de detección, clasificación, atención, investigación, respuesta, contención y notificación a afectados, en relación con Incidentes de Seguridad de la Información relativa a los Datos Personales. 
-
-*Tiempo de Conservación:* El Desarrollador no retendrá, ni procesará los Datos Personales compartidos un periodo mayor de tiempo que el necesario para llevar a cabo las finalidades y obligaciones establecidos en los presentes Términos y Condiciones. No obstante, conservarán los Datos Personales compartidos, de conformidad con cualquier período de retención legal o profesional aplicable en sus respectivos países y/o industrias.
-
-*Transferencia internacional:* Para cualquier transferencia internacional de Datos Personales hacia un país que no garantice un nivel adecuado de protección de conformidad con las Leyes de Protección de Datos Personales, el Desarrollador cumplirá con las Leyes de Protección de Datos Personales, en materia de transferencia internacional de datos personales.
-
-Si el Desarrollador realiza alguna actividad de tratamiento que no esté relacionada con la ejecución de estos Términos y Condiciones, esta actividad de tratamiento se llevará a cabo fuera del contexto de las condiciones establecidas por esta Cláusula. En este caso, el Desarrollador será el único responsable de dicho tratamiento, quedando Mercado Pago y cualquiera de sus sociedades relacionadas, exentas de cualquier queja, denuncia, reclamo, obligación o responsabilidad derivados del indebido tratamiento de Datos Personales. 
+**6.7. Plazo de conservación de los Datos Personales:** El Desarrollador no conservará los Datos Personales por más tiempo del necesario para cumplir con las finalidades y obligaciones establecidas en estos Términos y Condiciones. Sin embargo, el Desarrollador podrá conservar los Datos Personales por un plazo adicional cuando: (i) así lo permitan o lo impongan las leyes aplicables; o (ii) así lo hayan autorizado los Titulares de Datos.
 
 ## 7. Actividades restringidas
 
@@ -1986,11 +1911,10 @@ Mercado Pago podrá modificar en cualquier momento los Términos y Condiciones, 
 Los términos en mayúscula que no estén definidos en estos Términos y Condiciones tendrán el significado asignado a los mismos en los Términos y Condiciones de Uso de Mercado Pago.
 
 ------------
-
 ----[mlu]----
 # Términos y Condiciones para Desarrolladores de Mercado Pago
 
-_Última modificación: 20/12/2021_
+_Última modificación: 14/08/2024_
 
 Estos términos y condiciones, incluyendo sus anexos (los “Términos y Condiciones”), constituyen un contrato donde se establecen las reglas para que cualquier persona física y/o jurídica pueda participar como Desarrollador y pueda acceder y/o usar la API de la unidad de negocio “Mercado Pago” de Deremate.com de Uruguay S.R.L., R.U.T: 214111700011 (“Mercado Pago”) (la “API”). Al acceder y/o usar la API, los Desarrolladores aceptan estos Términos y Condiciones.
 
@@ -2008,29 +1932,33 @@ Cualquier persona que no acepte estos Términos y Condiciones para Desarrollador
  
 **1.5 Desarrolladores:** Son todas aquellas personas físicas o jurídicas, sean o no Usuarios de Mercado Libre y/o Mercado Pago, que utilizan en software propio o de terceros, alguna de las herramientas de Mercado Pago.
  
-**1.6 Incidente:** se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
+**1.6 Incidente:** Se refiere a: (i) todo incumplimiento detectado en las instalaciones, equipo, sistemas o personas contratadas o empleadas del Desarrollador (en adelante un “Incumplimiento”), que en términos razonables pueda esperarse tenga un efecto adverso sobre la seguridad, confidencialidad o integridad de los Datos y de los sistemas involucrados; (ii)  toda apropiación de datos, y/o situación que implique o constituya un Uso o alteración no autorizado de los Datos y de los sistemas y/o servidores involucrados; como así también toda situación que implique una afectación a su seguridad o constituya un Uso no autorizado de los Datos y (iii) toda falta de cumplimiento a las normas relativas a la protección y seguridad de los datos.
 
-**1.7 Información Personal:** Se refiere a cualquier información relativa a una persona identificada o identificable, incluida, sin que deba entenderse limitada, en archivos electrónicos y archivos impresos. Esta información, incluye Datos Sensibles (según definición establecida en esta cláusula) y puede comprender: nombre o iniciales, domicilio u otras direcciones físicas, número de teléfono móvil o fijo, correo electrónico, dirección IP, número de tarjeta de crédito, fotografías o cualquier otro dato o información sujeta a las Leyes de Protección de Datos Personales.
+**1.7 Datos Personales:** Se refiere a cualquier información relativa a una persona identificada o identificable. Se considerará persona identificable a toda persona cuya identidad pueda determinarse, directa o indirectamente, mediante un identificador, como por ejemplo un nombre, un número de identificación, datos de localización, un identificador en línea o uno o varios elementos propios de la identidad física, fisiológica, genética, psíquica, económica, cultural o social de dicha persona.
 
-**1.8 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de la Información Personal que sean de aplicación al presente Acuerdo, incluidas, pero no limitadas a la Ley N° 18.331 de Uruguay y cualquier otra norma relativa a la protección de los datos personales que pueda resultar aplicable.
+**1.8 Encargado de Tratamiento:** Se refiere a la persona humana o jurídica que trate Datos Personales por cuenta y orden del Responsable del Tratamiento.
 
-**1.9 Mercado Libre:** Es Deremate.com de Uruguay S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
+**1.9 Leyes de Protección de Datos Personales:** Se refiere a todas las leyes, normas, reglamentos y órdenes de cualquier jurisdicción o subdivisión de la misma que guarden relación con la privacidad, seguridad, confidencialidad y/o integridad de los Datos Personales que sean de aplicación a estos Términos y Condiciones, en especial la Ley 25.326 de Protección de Datos Personales y cualquier otra normativa que pueda ser aplicable. 
 
-**1.10 Mercado Pago:** Es una unidad de negocio de Deremate.com de Uruguay S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
+**1.10 Mercado Libre:** Es Deremate.com de Uruguay S.R.L. y/o cualquiera de sus sociedades controladas, vinculadas o relacionadas.
 
-**1.11 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
+**1.11 Mercado Pago:** Es una unidad de negocio de Deremate.com de Uruguay S.R.L. (“Mercado Libre”) que presta, entre otros servicios, el procesamiento en línea de pagos.
 
-**1.12 Titular de Datos:** una persona identificada o identificable cuyos Datos Personales sean tratados, consultados, recibidos, transmitidos, eliminados o mantenidos por el Desarrollador. Una persona identificable es aquella que puede ser identificada, directa o indirectamente, en particular mediante un número de identificación o uno o más elementos específicos de su identidad física, psicológica, mental, económica, cultural o social.
+**1.12 Responsable de Tratamiento:** se refiere a la persona que, sola o conjuntamente con otros, determina los fines y los medios del tratamiento de los Datos Personales. 
 
-**1.13 Tratar, tratamiento de Datos:** se refiere a cualquier forma de manejo de los Datos llevada a cabo por cualquier medio, incluidos, sin que deba entenderse limitación, la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
+**1.13 Términos y Condiciones:** Son estos Términos y Condiciones para Desarrolladores de Mercado Pago, a través de los cuales Mercado Pago pone a disposición de los Desarrolladores la API, para que a partir de su uso o aplicación se desarrollen Aplicaciones que empleen contenidos del Sitio, se integren e interactúen con él y/o con los servicios prestados por Mercado Pago, o faciliten su uso.
 
-**1.14 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
+**1.14 Titular de Datos:** Una persona identificada o identificable cuyos Datos Personales sean tratados en el marco de estos Términos y Condiciones y que tenga derechos sobre ellos, de acuerdo a lo establecido en las Leyes de Protección de Datos Personales.
 
-**1.15 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus Servicios a los Usuarios.
+**1.15 Tratar, tratamiento de Datos:** Se refiere a cualquier operación realizada sobre los Datos Personales, incluyendo pero no limitándose a la recopilación, consulta, recepción, uso, transferencia, recuperación, manipulación, grabación, organización, almacenamiento, mantenimiento, hospedaje, adaptación, alteración, posesión, revelación, divulgación (mediante transmisión, difusión o puesta a disposición de cualquier otra forma), bloqueo, supresión, destrucción, venta o concesión bajo licencia.
 
-**1.16 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+**1.16 Sitio:** Es el sitio de Mercado Pago Developers (disponible en la URL https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/) y todas sus versiones pertenecientes a Mercado Libre.
 
-**1.17 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
+**1.17 Términos y Condiciones Generales:** Son las disposiciones y políticas según las cuales Mercado Pago ofrece sus Servicios a los Usuarios.
+
+**1.18 Usuario de la Aplicación:** Son los usuarios finales de la Aplicación, sus proveedores de servicios y/o cualquier persona que otorgue una sub-licencia sobre la Aplicación.
+
+**1.19 Usuarios de Mercado Pago:** Son las personas que hayan aceptado los términos y condiciones de uso de Mercado Pago y se encuentren registradas como Usuarios de Mercado Pago.
 
 ## 2. La API
 
@@ -2126,41 +2054,25 @@ Los Usuarios de la Aplicación podrán exhibir el Contenido de Mercado Pago en s
 
 ## 6. Obtención y uso de Información Personal
 
-Los Desarrolladores se declaran responsables del tratamiento de datos y aceptan cumplir con todos y cada una de los requisitos de las leyes aplicables en materia de protección de datos personales y sus políticas de privacidad deberán cumplir con los estándares legales aplicables.
+Cuando en el marco de estos Términos y Condiciones el Desarrollador utilice alguna de las herramientas de Mercado Pago en software propio o en software de terceros para el desarrollo de aplicaciones, y para ello se procesen Datos Personales, se establecen las siguientes previsiones:  
 
-Los Desarrolladores acuerdan que la Información Personal compartida sólo se procesara en la medida en que sea necesario de acuerdo con los fines y para cumplir con las obligaciones establecidas en los términos y condiciones; y garantizan que el procesamiento de dicha Información Personal se basará en uno de los fundamentos legales admitidos en las Leyes de Protección de Datos aplicables.
+**6.1 Rol del Desarrollador:** Al tratar Datos Personales el Usuario de Mercado Pago que permite al Desarrollador acceder a Datos Personales a través del uso de la API actuará como Responsable de Tratamiento y el Desarrollador actuará como su Encargado de Tratamiento. Ambas Partes se comprometen a cumplir con las Leyes de Protección de Datos Personales.
 
-Los Desarrolladores podrán acceder a Información Personal siempre y cuando obtengan el consentimiento de su titular de conformidad con la legislación aplicable e informen a los mismos de manera clara y expresa que quien recibe la información es el Desarrollador y no Mercado Pago. Los Desarrolladores podrán obtener y utilizar dicha información únicamente con el alcance autorizado por los titulares de los datos.
+**6.2 Finalidad y proporcionalidad del tratamiento:** El Desarrollador sólo podrá tratar los Datos Personales de conformidad con las instrucciones y autorizaciones que haya recibido del Usuario de Mercado Pago que actúe como Responsable de Tratamiento. El Desarrollador tratará los Datos Personales a los que acceda exclusivamente para cumplir con las finalidades y las obligaciones establecidas en estos Términos y Condiciones.
 
-Los Desarrolladores deberán como mínimo, informar con claridad a los Usuarios de la Aplicación el tipo de información recolectada por la Aplicación, el uso que harán de esa información, con qué terceros compartirán la información y como podrán ejercer sobre dicha información los derechos de acceso, rectificación cancelación y oposición, dejando en claro que quien recaba la información es el Desarrollador y no Mercado Pago.
+Si el Desarrollador realiza alguna actividad de tratamiento que no esté relacionada con la ejecución de estos Términos y Condiciones, esta actividad de tratamiento se llevará a cabo fuera del contexto de las condiciones establecidas por esta Cláusula. En este caso, el Desarrollador será el único responsable de dicho tratamiento, quedando Mercado Pago y cualquiera de sus sociedades relacionadas, exentas de cualquier queja, denuncia, reclamo, obligación o responsabilidad derivados del indebido tratamiento de Datos Personales.
 
-Los Desarrolladores protegerán la Información Personal de cualquier procesamiento, pérdida, uso, divulgación, adquisición o acceso no autorizados y notificarán a Mercado Pago cualquier acceso o uso no autorizado de dicha información como así también a los Usuarios de la Aplicación y autoridad competente, en la medida que lo requiera la ley aplicable.
+**6.3 Subcontratación:** En caso de que el Desarrollador decida contratar a un subprocesador para que lleve adelante alguna operación de tratamiento de Datos Personales relacionada a la ejecución de estos Términos y Condiciones, deberá asegurarse de que el subprocesador limite el uso que hace de los Datos Personales a las finalidades previstas en el contrato con el Usuario de Mercado Pago, que tenga la capacidad de mantener seguros y confidenciales los Datos Personales y de cumplir con los requerimientos de estos Términos y Condiciones y de las Leyes de Protección de Datos Personales.
 
-El Desarrollador deberá abstenerse de comunicar, divulgar, transferir o ceder la Información Personal a terceros, salvo que cuente con la autorización previa, expresa y por escrito de Mercado Pago y/o de los titulares de los datos.
+**6.4 Requerimientos de Autoridades Competentes:** El Desarrollador, además de notificar al Usuario de Mercado Pago, deberá notificar a Mercado Pago inmediatamente y sin demora injustificada cualquier comunicación o requerimiento que reciban de una Autoridad Competente. El Desarrollador colaborará con Mercado Pago tanto como lo permitan o lo requieran las Leyes de Protección de Datos Personales para dar respuesta a los requerimientos de las Autoridades Competentes.
 
-En caso de que el Desarrollador decida subcontratar el tratamiento de la Información Personal, deberá asegurarse de que el proveedor del servicio limite el uso que hacen de ésta a las finalidades previstas en la subcontratación, que tenga la capacidad de mantener segura y confidencial la Información Personal y de cumplir con los requisitos de tratamiento de datos de Mercado Pago y de la normativa de protección de datos personales, siendo en todo momento el Desarrollador el responsable del tratamiento de los Datos Personales como lo indica la normativa aplicable.
+**6.5 Indemnización:** Los Desarrolladores deberán indemnizar a Mercado Pago por cualquier daño directo o indirecto que resulte de cualquier incumplimiento de las obligaciones establecidas en estos Términos y Condiciones y/o en las Leyes de Protección de Datos Personales.
 
-Los Desarrolladores no podrán recopilar ni almacenar bajo circunstancia alguna, claves de seguridad o datos de tarjetas de crédito o débito de Usuarios de Mercado Pago.
+**6.6 Seguridad y Confidencialidad de la información Personal:** Los Desarrolladores adoptarán medidas técnicas y organizativas de seguridad adecuadas y actualizadas para proteger los Datos Personales y cualquier información a la que accedan por parte de los Usuarios de Mercado Pago para evitar la pérdida, uso, divulgación, adquisición o acceso no autorizados y/o Incidente de Seguridad.
 
-Los Desarrolladores deberán dar respuesta en tiempo y forma, de acuerdo a las Leyes de Protección de Datos vigentes y aplicables, a cualquier solicitud de derechos relacionados con la privacidad y protección de datos personales. En caso de duda o imposibilidad para dar respuesta, notificará inmediatamente, de forma que se acuerde la viabilidad y forma de dar respuesta.
+El Desarrollador además de notificar al Usuario de Mercado Pago, deberá notificar a Mercado Pago cualquier Incidente de Privacidad, incluido cualquier Incidente de Privacidad de sus subprocesadores, enviando un correo a privacidad@mercadolibre.com. El Desarrollador colaborará con Mercado Pago en la investigación y auditoría, o cualquier otra acción que Mercado Pago - a su discreción - implemente, y llevará a cabo las medidas correctivas aplicables.
 
-Los Desarrolladores deberán notificar con carácter inmediato, cualquier comunicación o requerimiento que reciba de una Autoridad Competente, debiendo además colaborar mutuamente tanto como lo permitan las Leyes de Protección de Datos aplicables.
-
-Los Desarrolladores deberán asegurar que la Información Personal compartida sea cierta, y notificarán si toman conocimiento de inexactitudes en la Información Personal compartida.
-
-Los Desarrolladores deberán informar y cooperar, en la medida permitida por las Leyes de Protección de Datos aplicables, si un titular de datos o una autoridad competente presenta una disputa, reclamo o investigación relacionados con el Tratamiento de la Información Personal compartida contra una Parte o ambas Partes. 
-
-Los Desarrollardores deberán indemnizar a Mercado Libre y/o Mercado Pago, por cualquier daño directo o indirecto que resulte de cualquier incumplimiento de sus obligaciones aquí establecidas y/o las Leyes de Protección de Datos aplicables.
-
-*Incidentes de Seguridad:* En cualquier momento durante el tratamiento de la Información Personal, el Desarrollador notificará cualquier Incidente de la Seguridad de la Información que afecte o vulnere la Información Personal, incluida la intrusión en las instalaciones, los sistemas o los equipos informáticos de los subcontratistas del Desarrollador. 
-
-El Desarrollador colaborará con la investigación, auditoría y notificación a las partes afectadas, titulares, los organismos estatales y autoridades reguladoras, así como con las medidas correctivas aplicables. En la medida de su carácter de Responsable y en cumplimiento a las Leyes de Protección de Datos Personales, implementarán el plan de detección, clasificación, atención, investigación, respuesta, contención y notificación a afectados, en relación con Incidentes de Seguridad de la Información relativa a los Datos Personales. 
-
-*Tiempo de Conservación:* El Desarrollador no retendrá, ni procesará la Información Personal compartida más tiempo del necesario para llevar a cabo las finalidades y obligaciones establecidos en los presentes Términos y Condiciones. No obstante, conservarán la Información Personal compartida, de conformidad con cualquier período de retención legal o profesional aplicable en sus respectivos países y/o industrias.
-
-*Transferencia internacional:* Para cualquier transferencia internacional de Información Personal hacia un país que no garantice un nivel adecuado de protección de conformidad con las Leyes de Protección de Datos Personales, el Desarrollador cumplirá con las Leyes de Protección de Datos Personales, en materia de transferencia internacional de datos personales.
-
-Si el Desarrollador realiza alguna actividad de tratamiento que no esté relacionada con la ejecución de los Términos y Condiciones, esta actividad de tratamiento se llevará a cabo fuera del contexto de las condiciones establecidas por esta Cláusula. En este caso, el Desarrollador será el único responsable de dicho tratamiento, quedando Mercado Libre y/o Mercado Pago, exento de cualquier obligación o responsabilidad que de ella se derive.
+**6.7. Plazo de conservación de los Datos Personales:** El Desarrollador no conservará los Datos Personales por más tiempo del necesario para cumplir con las finalidades y obligaciones establecidas en estos Términos y Condiciones. Sin embargo, el Desarrollador podrá conservar los Datos Personales por un plazo adicional cuando: (i) así lo permitan o lo impongan las leyes aplicables; o (ii) así lo hayan autorizado los Titulares de Datos.
 
 ## 7. Actividades restringidas
 
