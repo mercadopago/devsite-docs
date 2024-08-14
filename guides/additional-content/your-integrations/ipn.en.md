@@ -49,7 +49,7 @@ To configure URLs and events, follow these steps:
 
 | Events | Name in Your Integrations | Topic | Associated products |
 |---|---|---|---|
-| Creation and update of payments | Payments | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----MP Point------------<br>Wallet Connect |
+| Creation and update of payments | Payments | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
 ----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_ipn` | Mercado Pago Point |------------
 | Fraud alerts after order processing | Fraud alerts | `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
 | Creation, closure, or expiration of commercial orders | Commercial orders | `merchant_order` | Checkout Pro<br>QR Code  |
@@ -67,11 +67,14 @@ To configure URLs and events, follow these steps:
 
 During the payment creation process, it's possible to configure the notification URL more specifically for each payment using the `notification_url` field and implementing the necessary notification receiver.  
 
+----[mlm, mlb, mla]----
+
 > WARNING
 >
 > Important
 >
-> It's not possible to configure notifications for the `point_integration_wh` and `delivery` topics using this method. To activate these topics, use [Your integrations settings](/developers/en/docs/your-integrations/notifications/ipn#bookmark_configuration_through_your_integrations).
+> It's not possible to configure notifications for the `point_integration_wh` topic using this method. To activate these topics, use [Your integrations settings](/developers/en/docs/your-integrations/notifications/ipn#bookmark_configuration_through_your_integrations).
+------------
  
 Next, we explain how to do this with the help of the SDKs.
 

@@ -66,11 +66,14 @@ Para configurar URLS e eventos, siga as etapas descritas abaixo:
 
 Durante o processo de criação de pagamentos, é possível configurar a URL de notificação de maneira específica para cada pagamento. Para isso, utilize o campo `notification_url` e implemente o receptor de notificações necessário.  
 
+----[mla, mlb, mlm]----
 > WARNING
 >
 > Importante
 >
 > Este método não permite configurar notificações para o tópico `point_integration_ipn`. Para ativá-lo, utilize as [configurações através de Suas integrações](/developers/pt/docs/your-integrations/notifications/ipn#configuraoviasuasintegraes).
+
+------------
  
 A seguir, explicamos como realizar esta configuração utilizando nossoss SDKs.
 

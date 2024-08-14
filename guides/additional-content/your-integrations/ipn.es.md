@@ -50,7 +50,7 @@ Para confiruar URLs y eventos, sigue el paso a paso a continuación:
 
 | Eventos | Nombre en Tus integraciones | Tópico | Productos asociados |
 |---|---|---|---|
-| Creación y actualización de pagos | Pagos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----MP Point------------<br>Wallet Connect |
+| Creación y actualización de pagos | Pagos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
 ----[mla, mlm, mlb]----| Finalización, cancelación o errores al procesar intenciones de pago de dispositivos Mercado Pago Point. | Integraciones Point | `point_integration_ipn` | Mercado Pago Point |------------
 | Alertas de fraude luego del procesamiento de un pedido | Alertas de fraude | `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout PRO |
 | Creación, actualización o cierre de órdenes comerciales |  Órdenes comerciales | `merchant_order` | Checkout Pro<br>Código QR  |
@@ -66,11 +66,15 @@ Para confiruar URLs y eventos, sigue el paso a paso a continuación:
 
 Durante el proceso de creación de pagos, es posible configurar la URL de notificación de forma más específica para cada pago, utilizando el campo `notification_url` e implementando un receptor de notificaciones. 
 
+----[mla, mlb, mlm]----
+
 > WARNING
 >
 > Importante
 >
-> Este método no permite configurar notificaciones para el tópico `point_integration_ipn` utilizando este método. Para activarlo, utiliza la configuración mediante Tus integraciones.
+> Este método no permite configurar notificaciones para el tópico `point_integration_ipn` utilizando este método. Para activarlo, utiliza la [configuración mediante Tus integraciones](/developers/es/docs/your-integrations/notifications/ipn#configuracinatravsdetusintegraciones).
+
+------------
  
 A continuación, explicamos cómo configurar notificaciones IPN al crear un pago usando los SDK.
 
