@@ -74,7 +74,7 @@ Durante o processo de criação de pagamentos, é possível configurar a URL de 
  
 A seguir, explicamos como realizar esta configuração utilizando nossoss SDKs.
 
-1. No campo `notificaction_url`, indique a URL do qual serão recebidas as notificações como exemplificado abaixo. Para receber notificações exclusivamente via IPN e não via Webhooks, adicione o parâmetro `source_news=webhooks` à `notification_url`. Por exemplo: "https://www.yourserver.com/notifications?source_news=webhooks".
+1. No campo `notificaction_url`, indique a URL do qual serão recebidas as notificações como exemplificado abaixo. Para receber notificações exclusivamente via IPN e não via Webhooks, adicione o parâmetro `source_news=webhooks` à `notification_url`. Por exemplo: `https://www.yourserver.com/notifications?source_news=webhooks`.
 
 
 [[[

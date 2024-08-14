@@ -39,7 +39,7 @@ In either case, a Webhooks notification will be sent as shown below:
 | `id` | Exclusive identifier of the event, prevents duplicate messages. |
 | `live_mode` | Indicates if the informed URL is valid. |
 | `type` | This value will always be `automatic-payments`. |
-| `user_id` | Identifier of the user to whom the notification is sent.. |
+| `user_id` | Identifier of the user to whom the notification is sent. |
 
 ----[mla, mlm, mlb]----
 ## Integrações Point
@@ -120,8 +120,7 @@ In cases where notifications for the topic `topic_claims_integration_wh` have be
 | `action` | Notification event, indicating whether it is the creation of a resource or its update. |
 | `api_version` | Value indicating the API version sending the notification. |
 | `data.id` | Unique identifier of the claim or chargeback. |
-| `data.resource` | Tipo de notificação recebida. Neste caso, indica notificações relacionadas a reclamações.
-Type of notification received. In this case, it indicates notifications related to claims. |
+| `data.resource` | Type of notification received. In this case, it indicates notifications related to claims. |
 | `date_created` | Notification creation date. |
 | `id` | Received notification identifier. |
 | `live_mode` | Indicates if the provided URL is valid. |

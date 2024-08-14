@@ -11,7 +11,7 @@ To configure your Webhooks notifications, choose one of the options below:
 | Configuration type | Description |
 |---|---|
 | [Configuration through Your integrations](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_through_your_integrations) | Allows configuring notifications for various topics, identifying different accounts if necessary, and validating the notification origin using the secret signature (except notifications for QR Code integrations). |
-| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) | Allows specific configuration of notifications for each payment. This configuration is not allowed for Mercado Pago Point or Delivery integrations. |
+| [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) | Allows specific configuration of notifications for each payment. This configuration is not allowed for Mercado Pago Point or Mercado Pago Delivery integrations. |
 
 > WARNING
 >
@@ -23,7 +23,7 @@ Once notifications are configured, refer to the necessary [actions after receivi
 
 ## Configuration through Your integrations
 
-Efficiently and securely configure notifications for each application directly in [Your integrations](/developers/panel/app). In this documentation, we will explain how to: 
+Set up notifications for each application directly in [Your integrations](/developers/panel/app) efficiently and securely. In this documentation, we will explain how: 
 1. Specify URLs and configure events
 2. Validate the notification source
 3. Simulate receiving the notification
@@ -52,13 +52,13 @@ To do this, follow these steps:
 >
 > Note
 > 
-> If it is necessary to identify multiple accounts, you can add the parameter `?cliente=(sellersname) endpoint` to the endpoint URL to identify the sellers.
+> If you need to identify multiple accounts, you can add the parameter `?cliente=(sellersname) endpoint` to the endpoint URL to identify the sellers.
 
 3. Select the **events** from which you want to receive notifications in `JSON` format via an `HTTP POST` to the URL specified earlier. An event can be any type of update on the reported object, including status changes or attributes. Refer to the table below to see the events that can be configured, considering the integrated Mercado Pago solution and its business specifics.
 
 | Events | Name in Your Integrations | Topic | Associated products |
 |---|---|---|---|
-| Creation and update of payments | Payments | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----MP Point------------<br>Wallet Connect |
+| Creation and update of payments | Payments | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
 | Recurring payment of a subscription (creation - update) | Plans and Subscriptions | `subscription_authorized_payment` | Subscriptions |
 | Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
 | Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
@@ -66,7 +66,7 @@ To do this, follow these steps:
 ----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` | Mercado Pago Point |------------
 | Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
 | Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
-| Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----MP Point------------<br>QR Code<br>Wallet Connect |
+| Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>QR Code<br>Wallet Connect |
 | Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
 | Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` | Checkout Pro<br>QR Code  |
 | Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
@@ -410,7 +410,7 @@ During the payment creation process, it's possible to configure the notification
 
 Next, we explain how to do this with the help of the SDKs.
 
-1. In the `notification_url` field, specify the URL where notifications will be received, as shown in the example below. To receive notifications exclusively via Webhooks and not via IPN, you can add the parameter `source_news=webhooks` to the `notification_url`. For example: "https://www.yourserver.com/notifications?source_news=webhooks".
+1. In the `notification_url` field, specify the URL where notifications will be received, as shown in the example below. To receive notifications exclusively via Webhooks and not via IPN, you can add the parameter `source_news=webhooks` to the `notification_url`. For example: `https://www.yourserver.com/notifications?source_news=webhooks`.
 
 [[[
 ```php

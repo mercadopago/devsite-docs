@@ -42,7 +42,7 @@ To configure URLs and events, follow these steps:
 >
 > Note
 >
-> If it is necessary to identify multiple accounts, you can add the parameter `?cliente=(sellersname)` to the endpoint URL to identify the sellers.
+> If you need to identify multiple accounts, you can add the parameter `?cliente=(sellersname)` to the endpoint URL to identify the sellers.
 
 3. Select the **events** from which you want to receive notifications in JSON format via an HTTP POST to the URL specified earlier. An event can be any type of update on the reported object, including status changes or attributes. Refer to the table below to see the events that can be configured, considering the integrated Mercado Pago solution and its business specifics.
 
@@ -75,7 +75,7 @@ During the payment creation process, it's possible to configure the notification
  
 Next, we explain how to do this with the help of the SDKs.
 
-1. In the `notification_url` field, specify the URL where notifications will be received, as shown in the example below. To receive notifications exclusively via Webhooks and not via IPN, you can add the parameter `source_news=webhooks` to the `notification_url`. For example: "https://www.yourserver.com/notifications?source_news=webhooks".
+1. In the `notification_url` field, specify the URL where notifications will be received, as shown in the example below. To receive notifications exclusively via Webhooks and not via IPN, you can add the parameter `source_news=webhooks` to the `notification_url`. For example: `https://www.yourserver.com/notifications?source_news=webhooks`.
 
 
 [[[
@@ -346,7 +346,7 @@ curl -X POST \
 
 When you receive a notification on your platform, Mercado Pago expects a response to validate that you received it correctly. To do this, you need to return an `HTTP STATUS 200 (OK)` or `201 (CREATED)` status.
 
-The **waiting time** for confirmation of receipt of notifications is **22 seconds**. If this confirmation is not sent, the system will understand that the notification was not received and will **retry sending every 15 minutes** until a response is received. After the third attempt, the interval will be extended, but the attempts will continue.
+The **waiting time** for that confirmation is **22 seconds**. If this confirmation is not sent, the system will understand that the notification was not received and will **retry sending every 15 minutes** until a response is received. After the third attempt, the interval will be extended, but the attempts will continue.
 
 After responding to the notification and confirming its receipt, you can obtain the complete information of the notified resource by making a request to the corresponding API endpoint. To identify which endpoint to use, check the table below:
 
