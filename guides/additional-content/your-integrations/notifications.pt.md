@@ -10,7 +10,7 @@ A ativação desses tópicos dependerá da solução do Mercado Pago que foi int
 | Pagamento recorrente de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_authorized_payment` | Assinaturas |
 | Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
 | Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |
-| Vinculação e desvinculação de contas mp-connect | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham OAuth implementado |
+| Vinculação e desvinculação de contas que se conectaram através de OAuth | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham OAuth implementado |
 ----[mla, mlm, mlb]----| Finalização, cancelamento ou erros ao processar intenções de pagamento de dispositivos Mercado Pago Point. | Integrações Point | `point_integration_wh` / `point_integration_ipn` | Mercado Pago Point |------------
 | Transações com Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
 | Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` / `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |

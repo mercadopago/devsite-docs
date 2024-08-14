@@ -10,8 +10,8 @@ Para configurar as notificações Webhooks, escolha entre uma das opções abaix
 
 | Tipo de configuração | Descrição |
 |---|---|
-| [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes) | Permite configurar notificações para diversos tópicos, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta (exceto para notificações de integrações com Código QR). |
-| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento. Não é permitido configurar para integrações com Mercado Pago Point e nem para integrações com Mercado Pago Delivery. |
+| [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes) | Permite configurar notificações para cada aplicação, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta (exceto para notificações de integrações com Código QR). |
+| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento, preferência ou pedidos comerciais. Não é permitido configurar para integrações com Mercado Pago Point e nem para integrações com Mercado Pago Delivery. |
 
 > WARNING
 >
@@ -54,7 +54,7 @@ Para isso, siga as etapas descritas abaixo.
 >
 > Nota
 > 
-> Caso seja necessário identificar múltiplas contas, adicione o parâmetro `?cliente=(nomedovendedor) endpoint` ao final da URL indicada para identificar os vendedores.
+> Caso seja necessário identificar múltiplas contas, adicione o parâmetro `?cliente=(nomedovendedor)` ao final da URL indicada para identificar os vendedores.
 
 3. Selecione os  **eventos** para os quais deseja receber notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento pode ser qualquer atualização no objeto relatado, incluindo alterações de status ou atributos. Consulte a tabela abaixo para ver os eventos configuráveis, considerando a solução do Mercado Pago integrada e suas necessidades de negócio.
 
@@ -64,7 +64,7 @@ Para isso, siga as etapas descritas abaixo.
 | Pagamento recorrente de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_authorized_payment` | Assinaturas |
 | Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
 | Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |
-| Vinculação e desvinculação de contas mp-connect | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham  OAuth implementado |
+| Vinculação e desvinculação de contas que se conectaram através de OAuth | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham  OAuth implementado |
 ----[mla, mlm, mlb]----| Finalização, cancelamento ou erros ao processar intenções de pagamento de dispositivos Mercado Pago Point. | Integrações Point | `point_integration_wh` | Mercado Pago Point |------------
 | Transações com Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
 | Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
@@ -403,7 +403,7 @@ Para garantir que as notificações estejam configuradas corretamente, é necess
 
 ## Configuração durante a criação de pagamentos
 
-Durante o processo de criação de pagamentos, é possível configurar a URL de notificação de maneira específica para cada pagamento, utilizando o campo `notification_url` e implementando o receptor de notificações necessário. 
+Durante o processo de criação de pagamentos, preferências ou ordens comerciais, é possível configurar a URL de notificação de maneira específica para cada pagamento, utilizando o campo `notification_url` e implementando o receptor de notificações necessário. 
 
 > WARNING
 >

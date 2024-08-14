@@ -139,7 +139,7 @@ Isso também é válido para **pagamentos expirados**: seu status mudará de `pe
 
 Se você integrou com código QR e deseja receber notificações, considere o seguinte:
 
-* Não é possível configurar notificações através de Suas integrações. Você deve fazê-lo no momento da criação do pagamento. 
+* Para Webhooks, não é possível configurar notificações através de Suas integrações. Você deve fazê-lo no momento da criação do pagamento. 
 * Portanto, não é possível validar a origem das notificações usando o *header* `x-Signature`. Para conhecer vias alternativas para verificar a origem dessas notificações, você pode entrar em contato com o [Suporte do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/support/center).
 * A ativação do tópico `merchant_orders` permitirá que você receba alertas sobre a criação e atualizações de pedidos. Embora o tópico envie um `status=opened`, será a notificação com `status=closed` que certificará com segurança que o pedido gerado foi pago.
 

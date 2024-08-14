@@ -13,7 +13,7 @@ As notificações IPN podem ser configuradas de duas maneiras:
 | Modo de configuração | Descrição |
 |---|---|
 | [Configuração através de Suas integrações](/developers/pt/docs/your-integrations/notifications/ipn#configuraoviasuasintegraes) | Poderá ser configurada apenas **uma URL de notificação** por conta (dependendo da aplicação, mais de uma aplicação pode usar essa URL). |
-| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/ipn#configuraoduranteacriaodepagamentos) | Isso pode ser realizado a partir do campo `notification_url`. A URL poderá ser diferente para cada objeto ou aplicação.  |
+| [Configuração durante a criação de pagamentos, preferências ou ordens comerciais](/developers/pt/docs/your-integrations/notifications/ipn#configuraoduranteacriaodepagamentos) | Isso pode ser realizado a partir do campo `notification_url`. A URL poderá ser diferente para cada objeto.  |
 
 Nesta documentação explicaremos as configurações necessárias para o recebimento das notificações IPN, além de apresentar quais são as ações necessárias para que o Mercado Pago valide o correto recebimento das mensagens.
 
@@ -33,7 +33,7 @@ Para configurar as notificações IPN via Suas integrações, é necessário ind
 
 Para configurar URLS e eventos, siga as etapas descritas abaixo:
 
-1. Acesse [Suas integrações](/developers/panel/app) e selecione a aplicação para a qual deseja ativar as notificações. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard) e siga as instruções para fazê-lo.
+1. Acesse [Suas integrações](/developers/panel/app) e selecione uma das aplicações para configurar as notificações para toda a sua conta. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard) e siga as instruções para fazê-lo.
 2. No menu à esquerda, clique em **IPN** e configure a **URL de produção** que será usada para receber as notificações. Leve em consideração que é possível testar se a URL indicada está recebendo as notificações corretamente. Isso permite verificar a solicitação, a resposta do servidor e a descrição do evento.
 
 ![ipn](/images/dashboard/ipn_pt_.png)
@@ -64,7 +64,7 @@ Para configurar URLS e eventos, siga as etapas descritas abaixo:
 
 ## Configuração durante a criação de pagamentos
 
-Durante o processo de criação de pagamentos, é possível configurar a URL de notificação de maneira específica para cada pagamento. Para isso, utilize o campo `notification_url` e implemente o receptor de notificações necessário.  
+Durante o processo de criação de pagamentos, preferências ou ordens comerciais, é possível configurar a URL de notificação de maneira específica para cada pagamento. Para isso, utilize o campo `notification_url` e implemente o receptor de notificações necessário.  
 
 ----[mla, mlb, mlm]----
 > WARNING
@@ -77,7 +77,7 @@ Durante o processo de criação de pagamentos, é possível configurar a URL de 
  
 A seguir, explicamos como realizar esta configuração utilizando nossoss SDKs.
 
-1. No campo `notificaction_url`, indique a URL do qual serão recebidas as notificações como exemplificado abaixo. Para receber notificações exclusivamente via IPN e não via Webhooks, adicione o parâmetro `source_news=webhooks` à `notification_url`. Por exemplo: `https://www.yourserver.com/notifications?source_news=webhooks`.
+1. No campo `notificaction_url`, indique a URL do qual serão recebidas as notificações como exemplificado abaixo. Para receber notificações exclusivamente via IPN e não via Webhooks, adicione o parâmetro `source_news=ipn` à `notification_url`. Por exemplo: `https://www.yourserver.com/notifications?source_news=ipn`.
 
 
 [[[
