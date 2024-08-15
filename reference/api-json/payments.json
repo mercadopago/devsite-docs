@@ -81,18 +81,18 @@
                             "title": {
                               "type": "string",
                               "description": {
-                                "en": "Item name.",
-                                "pt": "Nome do item",
-                                "es": "Nombre de ítem"
+                                "en": "Product title. To learn how to create a good title, check out the article: https://bit.ly/4dJmU89",
+                                "pt": "Título do produto. Para saber como criar um bom título, confira o artigo: https://bit.ly/3X6ytAX",
+                                "es": "Título del producto. Para saber cómo crear un buen título, consulta el artículo: https://bit.ly/4dJmU89"
                               },
                               "example": "Point Mini"
                             },
                             "description": {
                               "type": "string",
                               "description": {
-                                "en": "Long item description.",
-                                "pt": "Descrição do artigo.",
-                                "es": "Descripción de item."
+                                "en": "Product description.",
+                                "pt": "Descrição do produto.",
+                                "es": "Descripción del produto."
                               },
                               "example": "Point product for card payments via Bluetooth."
                             },
