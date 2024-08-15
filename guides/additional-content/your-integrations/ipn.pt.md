@@ -71,7 +71,7 @@ Durante o processo de criação de pagamentos, preferências ou ordens comerciai
 >
 > Importante
 >
-> Este método não permite configurar notificações para o tópico `point_integration_ipn`. Para ativá-lo, utilize as [configurações através de Suas integrações](/developers/pt/docs/your-integrations/notifications/ipn#configuraoviasuasintegraes).
+> Este método não permite configurar notificações para o tópico `point_integration_ipn`. Para ativá-lo, utilize as [configurações via Suas integrações](/developers/pt/docs/your-integrations/notifications/ipn#configuraoviasuasintegraes).
 
 ------------
  

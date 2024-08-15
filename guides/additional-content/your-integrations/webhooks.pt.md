@@ -10,7 +10,7 @@ Para configurar as notificações Webhooks, escolha entre uma das opções abaix
 
 | Tipo de configuração | Descrição |
 |---|---|
-| [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes) | Permite configurar notificações para cada aplicação, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta----[mla, mlb, mlu, mlc]----(exceto para notificações de integrações com Código QR)------------. |
+| [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes) | Permite configurar notificações para cada aplicação, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta----[mla, mlb, mlu, mlc]---- (exceto para notificações de integrações com Código QR)------------. |
 | [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento, preferência ou pedidos comerciais. ----[mla]----Não é permitido configurar para integrações com Mercado Pago Point e nem para integrações com Mercado Pago Delivery----------------[mlb, mlm]----Não é permitido configurar para integrações com Mercado Pago Point------------.|
 
 > WARNING
@@ -70,7 +70,7 @@ Para isso, siga as etapas descritas abaixo.
 | Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
 | Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Código QR<br>Wallet Connect |
 | Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
-| Criação, fechamento ou expiração de ordens comerciais. | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
+| Criação, fechamento ou expiração de ordens comerciais | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
 | Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
 ----[mla]----| Criação, atualização ou cancelamento de pedidos. | Delivery (proximity marketplace) | `delivery` | Mercado Pago Delivery |------------
 
@@ -79,7 +79,7 @@ Para isso, siga as etapas descritas abaixo.
 >
 > Importante
 >
-> Em caso de dúvidas sobre quais tópicos ativar ou quais eventos serão notificados, , consulte a documentação [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info). 
+> Em caso de dúvidas sobre quais tópicos ativar ou quais eventos serão notificados, consulte a documentação [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info). 
 
 5. Por fim, clique e **Salvar** para gerar uma **assinatura secreta** exclusiva para a sua aplicação, permitindo validar a autenticidade das notificações recebidas e garantir que tenham sido enviadas pelo Mercado Pago. A assinatura gerada não tem prazo de validade e sua renovação periódica não é obrigatória, embora seja altamente recomendável. Para renová-la, clique no botão de **redefinição** ao lado da assinatura.
 
@@ -117,7 +117,6 @@ O Mercado Pago sempre incluirá a assinatura secreta nas notificações Webhooks
 Esta assinatura será enviada no _header_ `x-signature`, conforme o exemplo abaixo.
 
 ```x-signature
-
 `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
 
 ```
@@ -413,10 +412,9 @@ Durante o processo de criação de pagamentos, preferências ou ordens comerciai
 >
 > Importante
 > 
-> Este método não permite configurar notificações para os tópicos `point_integration_wh` e `delivery` utilizando este método. Para ativá-los, utilize as [configurações de Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes).
+> Este método não permite configurar notificações para os tópicos `point_integration_wh` e `delivery` utilizando este método. Para ativá-los, utilize as [configurações via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes).
 
 ------------
-
 ----[mlb, mlm]----
 
 > WARNING
