@@ -323,17 +323,17 @@ Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(payment));
 
 | Campo | Tipo | Descrição | Obrigatório/Opcional | Exemplo |
 |---|---|---|---|---|
-| `sub_merchant_id` | Texto | Código do sub comércio. | Obrigatório | 123123 |
+| `sub_merchant_id` | Texto | Código do subcomércio. | Obrigatório | 123123 |
 | `mcc` | Texto | MCC do sub comércio conforme deliberação da Abecs e/ou CNAE primário. | Obrigatório | 5462 |
-| `country` | Texto | País em que o sub comércio está localizado. | Obrigatório | BRA |
-| `address_door_number` | Número | Número da rua onde o sub comércio está localizado. | Obrigatório | 1 |
-| `zip` | Texto | CEP do sub comércio. | Obrigatório | 2222222 |
-| `document_number` | Texto | Identificação do CPF ou CNPJ do sub comércio. | Obrigatório | 222222222222222 |
-| `city` | Texto | Cidade onde o sub comércio está localizado. | Obrigatório | SÃO PAULO |
-| `address_street` | Texto | Rua onde o sub comércio está localizado. | Obrigatório | RUA A |
-| `legal_name` | Texto | Nome do sub comércio. | Obrigatório | LOJINHA DO ZÉ |
-| `region_code_iso` | Texto | Estado onde o sub comércio está localizado. | Obrigatório | BR-MG |
+| `country` | Texto | País em que o subcomércio está localizado. | Obrigatório | BRA |
+| `address_door_number` | Número | Número da rua onde o subcomércio está localizado. | Obrigatório | 1 |
+| `zip` | Texto | CEP do subcomércio. | Obrigatório | 2222222 |
+| `document_number` | Texto | Identificação do CPF ou CNPJ do subcomércio. | Obrigatório | 222222222222222 |
+| `city` | Texto | Cidade onde o subcomércio está localizado. | Obrigatório | SÃO PAULO |
+| `address_street` | Texto | Rua onde o subcomércio está localizado. | Obrigatório | RUA A |
+| `legal_name` | Texto | Nome do subcomércio. | Obrigatório | LOJINHA DO ZÉ |
+| `region_code_iso` | Texto | Estado onde o subcomércio está localizado. | Obrigatório | BR-MG |
 | `region_code` | Texto | Código postal do subcomércio. | Obrigatório | BR |
-| `document_type` | Texto | Número do CPF ou CNPJ do sub comércio. | Obrigatório | CNPJ |
-| `phone` | Texto | Telefone do sub comércio. | Obrigatório | 123123123 |
+| `document_type` | Texto | Número do CPF ou CNPJ do subcomércio. | Obrigatório | CNPJ |
+| `phone` | Texto | Telefone do subcomércio. | Obrigatório | 123123123 |
 | `url` | Texto | URL do Facilitador de Pagamento | Obrigatório | www.nomedofacilitador.com.br |

@@ -1498,6 +1498,7 @@
                           },
                           "example": "Payment_seller_123"
                         },
+                        
                         "discount": {
                           "type": "object",
                           "description": {
