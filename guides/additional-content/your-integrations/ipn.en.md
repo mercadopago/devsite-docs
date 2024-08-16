@@ -1,28 +1,84 @@
 # IPN
 
-The **IPN** (Instant Payment Notification) is a mechanism that allows your application to receive notifications from Mercado Pago informing the status of a certain payment, chargeback and `merchant_order`, through a call HTTP POST to inform about your transactions.
+Instant Payment Notification (IPN) is a mechanism that allows your application to receive notifications from Mercado Pago informing about the status of a specific payment, chargeback, or `merchant_order`, through an `HTTP POST` call to report on your transactions.
 
-In IPN notifications, only one notification URL can be configured per account (depending on the application, more than one application can use this URL). In addition, there is also the possibility of using this type of notification from the object's `notification_url` field, so the URL can be different for each object or application.
+> WARNING
+>
+> Important
+>
+> IPN notifications will be discontinued. Additionally, despite receiving the `x-Signature` header, they do not allow validation through the secret key to confirm they were sent by Mercado Pago. If you wish to perform this origin validation, we recommend migrating to [Webhooks notifications](/developers/en/docs/your-integrations/notifications/webhooks).   
 
-In this documentation, we will explain the necessary settings for receiving IPN notifications (through the Dashboard or when creating payments), as well as showing the necessary actions that you must take for Mercado Pago to validate that the messages were properly received.
+IPN notifications can be configured in two ways: 
 
-## URLs and events configuration
+| Configuration mode | Description |
+|---|---|
+| [Description configuration through Your integrations](/developers/en/docs/your-integrations/notifications/ipn#bookmark_configuration_through_your_integrations) | Only **one notification URL** can be configured per account (depending on the application, more than one application can use this URL). |
+| [Configuration during the creation of a payment, preference or order](/developers/en/docs/your-integrations/notifications/ipn#bookmark_configuration_during_payment_creation) | This can be done using the `notification_url` field. The URL can be different for each object.  |
 
-Below we will explain how to indicate the URLs that will be notified and how to configure the events for which notification will be received.
+In this documentation, we will explain the necessary configurations for receiving IPN notifications, as well as the required actions to ensure that Mercado Pago validates that the messages were properly received.
 
-![ipn](/images/notifications/ipn__pt.png)
+## Configuration through Your integrations
 
-1. If you haven't done so already, create an application in the [developer Dashboard](/developers/panel/app).
-2. Once the application is created, navigate to the IPN section on the **Application Details** page.
-3. Next, configure the **production URL** where the notifications will be received.
-4. If you need to identify multiple accounts, at the end of the indicated URL you can specify the parameter `?customer=(sellername) endpoint` to identify the sellers.
-5. Select the **events** from which you will receive notifications in `json` format using `HTTP POST` to the URL specified above. We notify you of events related to your orders (`merchant_orders`), chargebacks received (`chargebacks`), payments received (`payment`), payment attempts (`point_integration_ipn`) ou fraud alerts (`delivery_cancellation`).
+Configure notifications directly in Your integrations efficiently and securely.
 
-## Configuration while creating payments
+### Specify URLs and configure events
 
-It is possible to configure the notification URL more specifically for each payment using the `notification_url` field. See below how to do this using the SDKs.
+To configure IPN notifications via Your integrations, it is necessary to specify the URLs where they will be received and specify the events for which you wish to receive notifications.
 
-1. In the `notification_url` field, indicate the URL from which notifications will be received, as shown below.
+> WARNING
+>
+> Important
+>
+> When configuring IPN notifications via Your integrations, you are setting up the URL and Events for **all applications within your Mercado Pago account**.
+
+To configure URLs and events, follow these steps:
+
+1. Access [Your integrations](/developers/panel/app) and select the application to enable notifications for your account. If you haven't created an application yet, access the [Developer Dashboard documentation](/developers/en/docs/your-integrations/dashboard) and follow the instructions to do so.
+2. In the left menu, click on **IPN** and configure the **production URL** that will be used to receive notifications. Keep in mind that you can also experiment and test whether the indicated URL is correctly receiving notifications, allowing you to verify the request, server response, and event description.
+
+![ipn](/images/dashboard/ipn_es_.png)
+
+> NOTE
+>
+> Note
+>
+> If you need to identify multiple accounts, you can add the parameter `?cliente=(sellersname)` to the endpoint URL to identify the sellers.
+
+3. Select the **events** from which you want to receive notifications in JSON format via an HTTP POST to the URL specified earlier. An event can be any type of update on the reported object, including status changes or attributes. Refer to the table below to see the events that can be configured, considering the integrated Mercado Pago solution and its business specifics.
+
+
+| Events | Name in Your Integrations | Topic | Associated products |
+|---|---|---|---|
+| Creation and update of payments | Payments | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
+----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_ipn` | Mercado Pago Point |------------
+| Fraud alerts after order processing | Fraud alerts | `delivery_cancellation` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
+| Creation, closure, or expiration of commercial orders | Commercial orders | `merchant_order` | Checkout Pro<br>QR Code  |
+| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `chargebacks` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+
+> WARNING
+>
+> Important
+>
+> If you have any questions about the topics to activate or the events that will be notified, consult the documentation [Additional information about notifications](/developers/en/docs/your-integrations/notifications/additional-info). 
+
+4. Finally, click on **Save**.  
+
+## Configuration during payment creation
+
+During the process of creating a payment, preference or order, it's possible to configure the notification URL more specifically for each payment using the `notification_url` field and implementing the necessary notification receiver.  
+
+----[mlm, mlb, mla]----
+
+> WARNING
+>
+> Important
+>
+> It's not possible to configure notifications for the `point_integration_wh` topic using this method. To activate these topics, use [Your integrations settings](/developers/en/docs/your-integrations/notifications/ipn#bookmark_configuration_through_your_integrations).
+------------
+ 
+Next, we explain how to do this with the help of the SDKs.
+
+1. In the `notification_url` field, specify the URL where notifications will be received, as shown in the example below. To receive notifications exclusively via Webhooks and not via IPN, you can add the parameter `source_news=ipn` to the `notification_url`. For example: `https://www.yourserver.com/notifications?source_news=ipn`.
 
 
 [[[
@@ -245,7 +301,7 @@ curl -X POST \
 ```
 ]]]
 
-2. Implement the notifications receiver using the following code as an example:
+2. Implement the notification receiver using the following code as an example:
 
 ```php
 <?php
@@ -282,49 +338,26 @@ curl -X POST \
  ?>
 ```
 
-3. After the configurations are completed, Mercado Pago will notify this URL with two parameters every time a resource is created or updated:
+3. Once the configurations are done, Mercado Pago will notify that URL with two parameters every time a resource is created or updated. For example, if you set up the URL `https://www.yoursite.com/notifications`, you will receive payment notifications like this: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
 
 | Field | Description |
 | --- | --- |
-| `topic` | Identifies what the resource is, it can be `payment`, `chargebacks`,  `merchant_order ` or `point_integration_ipn`. |
+| `topic` | Identifies what the resource is, which could be `payment`, `chargebacks`, `merchant_order ` o `point_integration_ipn`. |
 | `id` | It is a unique identifier of the notified resource. |
 
-> For example, if you set the URL: `https://www.yoursite.com/notifications`, you will receive payment notifications like this: `https://www.yoursite.com/notifications?topic=payment&id=123456789`.
+## Necessary actions after receiving a notification
 
-4. If you want to receive notifications only from IPN and not from Webhooks, you can add in the `notification_url` the parameter `source_news=ipn`. For example: `https://www.yourserver.com/notifications?source_news=ipn`.
+When you receive a notification on your platform, Mercado Pago expects a response to validate that you received it correctly. To do this, you need to return an `HTTP STATUS 200 (OK)` or `201 (CREATED)` status.
 
-## After receiving the notification
+The **waiting time** for that confirmation is **22 seconds**. If this confirmation is not sent, the system will understand that the notification was not received and will **retry sending every 15 minutes** until a response is received. After the third attempt, the interval will be extended, but the attempts will continue.
 
-[TXTSNIPPET][/guides/snippets/test-integration/notification-response]
+After responding to the notification and confirming its receipt, you can obtain the complete information of the notified resource by making a request to the corresponding API endpoint. To identify which endpoint to use, check the table below:
 
-After returning the notification, you will get the full information of the notified resource by going to the corresponding API endpoint:
-
-| Type | URL | Documentation |
+| Topic | URL | Documentation |
 | --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/payments/_payments_id/get) |
-| chargebacks | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/chargebacks/_chargebacks_id/get) |
-| merchant_orders | `https://api.mercadopago.com/merchant_orders/[ID]` | [check documentation](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/reference/merchant_orders/_merchant_orders_id/get) |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Get payment](/developers/en/reference/payments/_payments_id/get)  |
+| point_integration_ipn| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Search payment intent](/developers/en/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
+| merchant_orders | `https://api.mercadopago.com/merchant_orders/[ID]` | [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) |
+| chargebacks | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Get chargeback](/developers/en/reference/chargebacks/_chargebacks_id/get) |
 
-Also, specifically in fraud alerts, the order must not be delivered and the cancellation needs to be done through the [cancellations API](/developers/en/reference/chargebacks/_payments_payment_id/put).
-
-In the notification, you will receive a `JSON` with the following information containing the payment id to cancel.
-
-[[[
-```Json
-
-
- "description": ".....",
- "merchant_order": 4945357007,
- "payment_id": 23064274473
-
-
-```
-]]]
-
-> NOTE
->
-> Important
->
-> You can also get more order information using the [Get order](/developers/en/reference/merchant_orders/_merchant_orders_id/get) API.
-
-With this information, you will be able to carry out the necessary updates to your platform, such as updating an approved payment or a closed order.
+With this information, you will be able to make the necessary updates to your platform, such as updating an approved payment.
