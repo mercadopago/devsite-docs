@@ -1002,6 +1002,7 @@
                         "properties": {
                           "sub_merchant": {
                             "required": true,
+                            "type": "object",
                             "description": {
                               "en": "Mandatory data related to the su-merchant. They are used by Payment Facilitators to identify submerchants at the time of the transaction.",
                               "pt": "Dados obrigatórios relacionados ao subcomércio. São utilizados pelos Facilitadores de pagamento para identificar os subcomércios no momento da transação.",
@@ -1498,7 +1499,6 @@
                           },
                           "example": "Payment_seller_123"
                         },
-                        
                         "discount": {
                           "type": "object",
                           "description": {
