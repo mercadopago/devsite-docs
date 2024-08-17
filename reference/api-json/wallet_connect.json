@@ -1108,6 +1108,46 @@
                                  "pt": "Estado onde o subcomércio está localizado.",
                                  "es": "Estado en donde el subcomercio está ubicado."
                                 }
+                              },
+                              "region_code": {
+                               "required": true,
+                               "type": "string",
+                               "example": "BR",
+                               "description": {
+                                 "en": "Postal code of the submerchant.",
+                                 "pt": "Código postal do subcomércio.",
+                                 "es": "Código postal del subcomercio."
+                                } 
+                              },
+                              "document_type": {
+                               "required": true,
+                               "type": "string",
+                               "example": "CNPJ",
+                               "description": {
+                                 "en": "CPF or CNPJ number of the submerchant.",
+                                 "pt": "Número do CPF ou CNPJ do sub comércio.",
+                                 "es": "Número del CPF o CNPJ del subcomercio."
+                                }
+                              },
+                              "phone": {
+                               "required": true,
+                               "type": "object",
+                               "example": "123123123",
+                               "description": {
+                                 "en": "Phone number of the submerchant.",
+                                 "pt": "Telefone do subcomércio.",
+                                 "es": "Teléfono del subcomercio."
+                                }
+                              },
+                              "url": {
+                               "required": true,
+                               "type": "string",
+                               "example": "www.nomedofacilitador.com.br",
+                               "description": {
+                                 "en": "Payment facilitator URL.",
+                                 "pt": "URL do Facilitador de Pagamento.",
+                                 "es": "URL del Facilitador de Pago."
+                                } 
                               }
                             }
                           }
