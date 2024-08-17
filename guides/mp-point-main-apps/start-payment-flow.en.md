@@ -188,7 +188,7 @@ if (!response.getPaymentReference().isEmpty()) {
 
 |Field|Description|
 |---|---|
-|response (Uri)| The response received by the SmartPOS. To find it, use `intent.data` of the Activity in charge of opening the deeplink set within the `buildCallbackUri` feature.|
+|response (Uri)| The response received by the [SmartPOS](/developers/en/docs/mp-point/landing). To find it, use `intent.data` of the Activity in charge of opening the deeplink set within the `buildCallbackUri` feature.|
 |PaymentResponse| Object that contains transaction details. If the response is null, it brings a `PaymentResponse` object with a `paymentStatusError`.|
 |paymentMethod| Payment method used to complete the transaction. E.g.: credit card, debit card, QR code, payment link. |
 |paymentReference| Unique transaction identifying number.|

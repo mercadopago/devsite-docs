@@ -188,7 +188,7 @@ if (!response.getPaymentReference().isEmpty()) {
 
 |Campo|Descripción|
 |---|---|
-|response (Uri)| La respuesta recibida de SmartPOS. Para encontrarla, usa `intent.data` de la _Activity_ encargada de abrir el _deeplink_ configurado dentro de la función `buildCallbackUri`.|
+|response (Uri)| La respuesta recibida de [SmartPOS](/developers/es/docs/mp-point/landing). Para encontrarla, usa `intent.data` de la _Activity_ encargada de abrir el _deeplink_ configurado dentro de la función `buildCallbackUri`.|
 |PaymentResponse| Objeto que contiene detalles de la operación. Si la respuesta es nula, se devuelve un `PaymentResponse` con un `paymentStatusError`.|
 |paymentMethod| Medio de pago usado para hacer la operación. Ejemplos: crédito, débito, código QR, link de pago. |
 |paymentReference| Número identificador único de la operación.|
