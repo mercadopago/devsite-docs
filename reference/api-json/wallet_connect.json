@@ -1125,7 +1125,7 @@
                                "example": "CNPJ",
                                "description": {
                                  "en": "CPF or CNPJ number of the submerchant.",
-                                 "pt": "Número do CPF ou CNPJ do sub comércio.",
+                                 "pt": "Número do CPF ou CNPJ do subcomércio.",
                                  "es": "Número del CPF o CNPJ del subcomercio."
                                 }
                               },
@@ -1144,9 +1144,9 @@
                                "type": "string",
                                "example": "www.nomedofacilitador.com.br",
                                "description": {
-                                 "en": "Payment facilitator URL.",
-                                 "pt": "URL do Facilitador de Pagamento.",
-                                 "es": "URL del Facilitador de Pago."
+                                 "en": "Payment facilitator URL. A Payment facilitator is an entity that provides payment solutions for end customers (submerchants) to sell their products and/or services. They are responsible for capturing, processing, and settling transactions directly to their submerchants, becoming creditors of the acquirer.",
+                                 "pt": "URL do Facilitador de pagamento. Um Facilitador de pagamento é uma entidade que oferece soluções de pagamento para clientes finais (subcomércios), permitindo que estes comercializem seus produtos e serviços. Essa entidade é responsável por capturar, processar e liquidar as transações, encaminhando os valores diretamente aos subcomércios, tornando-se um credor do adquirente.",
+                                 "es": "URL del Facilitador de pago. Un Facilitador de pagos es una entidad que proporciona soluciones de pago para que los clientes finales (subcomercios) comercialicen sus productos y/o servicios. Son responsables de capturar, procesar y liquidar las transacciones directamente a sus subcomercios, convirtiéndose en acreedores del adquirente."
                                 } 
                               }
                             }
