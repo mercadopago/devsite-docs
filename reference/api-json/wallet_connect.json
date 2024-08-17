@@ -1463,7 +1463,6 @@
                       }
                     },
                     "wallet_payment": {
-                      "required": true,
                       "type": "object",
                       "description": {
                         "en": "It indicates is a payment from a seller with a previous Wallet Connect vinculation.",
@@ -1472,7 +1471,6 @@
                       },
                       "properties": {
                         "transaction_amount": {
-                          "required": true,
                           "type": "number",
                           "description": {
                             "en": "Payment amount.",
@@ -1517,7 +1515,6 @@
                               "example": 10
                             },
                             "code": {
-                              "required": true,
                               "type": "number",
                               "description": {
                                 "en": "Unique ID that identifies coupon used for discount.",
@@ -1940,7 +1937,6 @@
                     },
                     "wallet_payment": {
                       "type": "object",
-                      "required": true,
                       "description": {
                         "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
                         "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
@@ -1949,7 +1945,6 @@
                       "properties": {
                         "transaction_amount": {
                           "type": "number",
-                          "required": true,
                           "description": {
                             "en": "Payment amount.",
                             "pt": "Valor do pagamento.",
