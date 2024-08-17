@@ -1007,6 +1007,28 @@
                               "en": "Mandatory data related to the su-merchant. They are used by Payment Facilitators to identify submerchants at the time of the transaction.",
                               "pt": "Dados obrigatórios relacionados ao subcomércio. São utilizados pelos Facilitadores de pagamento para identificar os subcomércios no momento da transação.",
                               "es": "Datos obligatorios relacionados con el subcomercio. Son utilizados por los Facilitadores de pago para identificar los subcomercios en el momento de la transacción."
+                            },
+                            "properties": {
+                              "sub_merchant_id": {
+                               "required": true,
+                               "type": "string",
+                               "example": "123123",
+                               "description": {
+                                 "en": "Submerchant code.",
+                                 "pt": "Código do subcomércio.",
+                                 "es": "Código del subcomercio."
+                                }
+                              },
+                              "mcc": {
+                               "required": true,
+                               "type": "string",
+                               "example": "5462",
+                               "description": {
+                                 "en": "Submerchant MCC (Merchant Code Category) according to Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços) decision and/or primary CNAE.",
+                                 "pt": "MCC (Merchant Code Category) do subcomércio conforme deliberação da Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços) e/ou CNAE primário.",
+                                 "es": "MCC (Merchant Code Category) del subcomercio conforme a la decisión de la Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços) y/o el CNAE primario."
+                                }
+                              }
                             }
                           }
                         }
