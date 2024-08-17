@@ -1058,6 +1058,36 @@
                                  "pt": "CEP do subcomércio.",
                                  "es": "CEP del subcomercio."
                                 }
+                              },
+                              "document_number": {
+                               "required": true,
+                               "type": "string",
+                               "example": "222222222222222",
+                               "description": {
+                                 "en": "CPF or CNPJ identification of the submerchant.",
+                                 "pt": "Identificação do CPF ou CNPJ do subcomércio.",
+                                 "es": "Identificación del CPF o CNPJ del subcomercio."
+                                }
+                              },
+                              "city": {
+                               "required": true,
+                               "type": "string",
+                               "example": "SAO PAULO",
+                               "description": {
+                                 "en": "City where the submerchant is located.",
+                                 "pt": "Cidade onde o subcomércio está localizado.",
+                                 "es": "Ciudad en donde el subcomercio está ubicado."
+                                }
+                              },
+                              "address_street": {
+                               "required": true,
+                               "type": "string",
+                               "example": "RUA A",
+                               "description": {
+                                 "en": "Street where the submerchant is located.",
+                                 "pt": "Rua onde o subcomércio está localizado.",
+                                 "es": "Calle en donde el subcomercio está localizado."
+                                } 
                               }
                             }
                           }
