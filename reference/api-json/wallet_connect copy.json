@@ -1072,7 +1072,7 @@
                               "city": {
                                "required": true,
                                "type": "string",
-                               "example": "SÃO PAULO",
+                               "example": "SAO PAULO",
                                "description": {
                                  "en": "City where the submerchant is located.",
                                  "pt": "Cidade onde o subcomércio está localizado.",

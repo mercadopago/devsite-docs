@@ -1072,7 +1072,7 @@
                               "city": {
                                "required": true,
                                "type": "string",
-                               "example": "SAO PAULO",
+                               "example": "SÃO PAULO",
                                "description": {
                                  "en": "City where the submerchant is located.",
                                  "pt": "Cidade onde o subcomércio está localizado.",
@@ -1088,6 +1088,26 @@
                                  "pt": "Rua onde o subcomércio está localizado.",
                                  "es": "Calle en donde el subcomercio está localizado."
                                 } 
+                              },
+                              "legal_name": {
+                               "required": true,
+                               "type": "string",
+                               "example": "LOJINHA DO ZÉ",
+                               "description": {
+                                 "en": "Name of the submerchant.",
+                                 "pt": "Nome do subcomércio.",
+                                 "es": "Nombre del subcomercio."
+                                }
+                              },
+                              "region_code_iso": {
+                               "required": true,
+                               "type": "string",
+                               "example": "BR-MG",
+                               "description": {
+                                 "en": "State where the submerchant is located.",
+                                 "pt": "Estado onde o subcomércio está localizado.",
+                                 "es": "Estado en donde el subcomercio está ubicado."
+                                }
                               }
                             }
                           }
