@@ -1028,6 +1028,36 @@
                                  "pt": "MCC (Merchant Code Category) do subcomércio conforme deliberação da Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços) e/ou CNAE primário.",
                                  "es": "MCC (Merchant Code Category) del subcomercio conforme a la decisión de la Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços) y/o el CNAE primario."
                                 }
+                              },
+                              "country": {
+                               "required": true,
+                               "type": "string",
+                               "example": "BRA",
+                               "description": {
+                                 "en": "Country where the submerchant is located.",
+                                 "pt": "País em que o subcomércio está localizado.",
+                                 "es": "País en donde el subcomercio está ubicado."
+                                }
+                              },
+                              "address_door_number": {
+                               "required": true,
+                               "type": "number",
+                               "example": "1",
+                               "description": {
+                                 "en": "Street number where the submerchant is located.",
+                                 "pt": "Número da rua onde o subcomércio está localizado.",
+                                 "es": "Número de la calle en donde el subcomercio está ubicado."
+                                }
+                              },
+                              "zip": {
+                               "required": true,
+                               "type": "string",
+                               "example": "2222222",
+                               "description": {
+                                 "en": "CEP of the submerchant.",
+                                 "pt": "CEP do subcomércio.",
+                                 "es": "CEP del subcomercio."
+                                }
                               }
                             }
                           }
