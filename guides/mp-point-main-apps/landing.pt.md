@@ -9,7 +9,7 @@ content_section_with_media:
 
 >>>> Disponibilidade por país <<<<
 ---
-available_countries: mlb
+available_countries: mlb, mla, mlm
 
 ---
 
