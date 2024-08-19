@@ -34,5 +34,5 @@ bitmapPrinter.print(imageToPrint, callback);
 
 |Campo|Descripción|
 |---|---|
-|dataToPrint (Bitmap)| La imagen bitmap que se imprimirá.|
-|PaymentResponse| Función de devolución del llamado que ofrece la operación de impresión. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, que tiene un **String** representando el ID o estado de la impresión.|
+|**dataToPrint (Bitmap)**| La imagen bitmap que se imprimirá.|
+|**PaymentResponse**| Función de devolución del llamado que ofrece la operación de impresión. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, que tiene un **String** representando el ID o estado de la impresión.|

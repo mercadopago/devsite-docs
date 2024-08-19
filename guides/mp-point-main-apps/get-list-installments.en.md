@@ -47,8 +47,8 @@ paymentInstallmentTools.getInstallmentsAmount(callback, amount);
 
 |Field|Description|
 |---|---|
-|callback ((MPResponse<List<InstallmentAmount>>) -> Unit)|Response feature with the result of the request of the list of installments.|
-|amount (String)|Amount with which the list of installments is determined.|
-|installment (Int)|Number of installments.|
-|amount (Double)|Amount of each installment.|
-|financialAmount (Double)|Interest rate for each installment.|
+|**callback ((MPResponse<List<InstallmentAmount>>) -> Unit)**|Response feature with the result of the request of the list of installments.|
+|**amount (String)**|Amount with which the list of installments is determined.|
+|**installment (Int)**|Number of installments.|
+|**amount (Double)**|Amount of each installment.|
+|**financialAmount (Double)**|Interest rate for each installment.|

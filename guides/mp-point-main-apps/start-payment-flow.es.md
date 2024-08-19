@@ -88,16 +88,16 @@ paymentFlow.launchPaymentFlowActivity(paymentFlowData, context, callback);
 
 |Campo|Descripción|
 |---|---|
-|amount (String)|E l monto usado para iniciar el flujo de pago.|
-|description (String)| La descripción usada para iniciar el flujo de pago. Su uso es opcional.|
-|intentSuccess (Uri)| URI que llama la pantalla de éxito. Se usa para formar un deeplink que envía la actividad de éxito.|
-|intentError (Uri)| URI que llama la pantalla de error. Se usa para formar un deeplink que envía la actividad de error.|
-|paymentMethod (String)| El medio de pago para realizar la operación. Su uso es opcional.|
-|installments (Int)| El número de cuotas usado para iniciar el flujo de pago. Está disponible solo para Brasil, y su uso es opcional.|
-|launchPaymentFlowActivity| Este método inicia el flujo de pago usando la app SmartPOS.|
-|paymentFlowData (PaymentFlowData)| Modelo de datos necesario para la apertura del flujo.|
-|context (Context)| Contexto de dónde se inciará el flujo.|
-|callback (MPResponse<String> -> Unit)| Ofrece el resultado de la apertura del flujo de pago.|
+|**amount (String)**|E l monto usado para iniciar el flujo de pago.|
+|**description (String)**| La descripción usada para iniciar el flujo de pago. Su uso es opcional.|
+|**intentSuccess (Uri)**| URI que llama la pantalla de éxito. Se usa para formar un deeplink que envía la actividad de éxito.|
+|**intentError (Uri)**| URI que llama la pantalla de error. Se usa para formar un deeplink que envía la actividad de error.|
+|**paymentMethod (String)**| El medio de pago para realizar la operación. Su uso es opcional.|
+|**installments (Int)**| El número de cuotas usado para iniciar el flujo de pago. Está disponible solo para Brasil, y su uso es opcional.|
+|**launchPaymentFlowActivity**| Este método inicia el flujo de pago usando la app SmartPOS.|
+|**paymentFlowData (PaymentFlowData)**| Modelo de datos necesario para la apertura del flujo.|
+|**context (Context)**| Contexto de dónde se inciará el flujo.|
+|**callback (MPResponse<String> -> Unit)**| Ofrece el resultado de la apertura del flujo de pago.|
 
 ## Construir una URI para apertura del flujo de pago
 
@@ -139,25 +139,25 @@ final Uri uriResult = paymentFlow.buildCallbackUri(
 
 |Campo|Descripción|
 |---|---|
-|callback (String)| El monto de la URI para llamar el _deeplink_. Ejemplo: `tuHost://tuApp/prueba`.|
-|methodCallback (String)| Identifica si la URI es para un caso de éxito, de error u otra respuesta personalizada.|
-|metadata (HashMap<String, String>)| Campo opcional para enviar información a la pantalla de respuesta, en caso de que sea necesario mostrar detalles adicionales, como el nombre del cliente o el resumen de los productos comprados. |
-|appID (String)|  Identificador de la app principal. Usamos el nombre del paquete. Ejemplo: `com.tuempresa.tuapp`.|
-|Uri| La URI definida con la información ingresada.|
+|**callback (String)**| El monto de la URI para llamar el _deeplink_. Ejemplo: `tuHost://tuApp/prueba`.|
+|**methodCallback (String)**| Identifica si la URI es para un caso de éxito, de error u otra respuesta personalizada.|
+|**metadata (HashMap<String, String>)**| Campo opcional para enviar información a la pantalla de respuesta, en caso de que sea necesario mostrar detalles adicionales, como el nombre del cliente o el resumen de los productos comprados. |
+|**appID (String)**|  Identificador de la app principal. Usamos el nombre del paquete. Ejemplo: `com.tuempresa.tuapp`.|
+|**Uri**| La URI definida con la información ingresada.|
 
 ## Obtener el resultado del pago
 
 La función `parseResponse` de la clase `PaymentFlow` se usa para recibir el resultado del flujo de pago, que se entrega en forma de objeto `PaymentResponse` listo para su manipulación. En este proceso, la siguiente información se ofrece:
 
-- Medio de pago usado.
-- Referencia de pago.
-- Fecha de creación.
-- Monto del pago.
-- Número de serie del lector.
-- Marca de la tarjeta.
-- Cantidad de cuotas.
-- Últimos cuatro números de la tarjeta.
-- Cualquier error asociado a la operación.
+- **Medio de pago usado.**
+- **Referencia de pago.**
+- **Fecha de creación.**
+- **Monto del pago.**
+- **Número de serie del lector.**
+- **Marca de la tarjeta.**
+- **Cantidad de cuotas.**
+- **Últimos cuatro números de la tarjeta.**
+- **Cualquier error asociado a la operación.**
 
 Consulta cómo implementar esta funcionalidad:
 
@@ -188,17 +188,17 @@ if (!response.getPaymentReference().isEmpty()) {
 
 |Campo|Descripción|
 |---|---|
-|response (Uri)| La respuesta recibida de [SmartPOS](/developers/es/docs/mp-point/landing). Para encontrarla, usa `intent.data` de la _Activity_ encargada de abrir el _deeplink_ configurado dentro de la función `buildCallbackUri`.|
-|PaymentResponse| Objeto que contiene detalles de la operación. Si la respuesta es nula, se devuelve un `PaymentResponse` con un `paymentStatusError`.|
-|paymentMethod| Medio de pago usado para hacer la operación. Ejemplos: crédito, débito, código QR, link de pago. |
-|paymentReference| Número identificador único de la operación.|
-|paymentCreationDate| Fecha de creación de la operación.|
-|paymentAmount|  Monto del pago.|
-|paymentSnDevice| Número de serie del lector donde se hizo la operación.|
-|paymentBrandName| Nombre de usuario registrado en el lector.|
-|paymentInstallments| Número de cuotas que la persona seleccionó al hacer el pago.|
-|paymentLastFourDigits| Últimos cuatro números de la tarjeta usada en el pago.|
-|paymentStatusError| Campo para registrar problemas y errores de la operación.|
+|**response (Uri)**| La respuesta recibida de [SmartPOS](/developers/es/docs/mp-point/landing). Para encontrarla, usa `intent.data` de la _Activity_ encargada de abrir el _deeplink_ configurado dentro de la función `buildCallbackUri`.|
+|**PaymentResponse**| Objeto que contiene detalles de la operación. Si la respuesta es nula, se devuelve un `PaymentResponse` con un `paymentStatusError`.|
+|**paymentMethod**| Medio de pago usado para hacer la operación. Ejemplos: crédito, débito, código QR, link de pago. |
+|**paymentReference**| Número identificador único de la operación.|
+|**paymentCreationDate**| Fecha de creación de la operación.|
+|**paymentAmount**|  Monto del pago.|
+|**paymentSnDevice**| Número de serie del lector donde se hizo la operación.|
+|**paymentBrandName**| Nombre de usuario registrado en el lector.|
+|**paymentInstallments**| Número de cuotas que la persona seleccionó al hacer el pago.|
+|**paymentLastFourDigits**| Últimos cuatro números de la tarjeta usada en el pago.|
+|**paymentStatusError**| Campo para registrar problemas y errores de la operación.|
 
 > WARNING
 >

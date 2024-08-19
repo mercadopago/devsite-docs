@@ -43,10 +43,10 @@ smartInformationTools.getInformation(callback);
 
 |Field|Description|
 |---|---|
-|smartDevice| Device details.|
-|serialNumber| POS machine serial number.|
-|brandName| POS machine brand.|
-|modelName| POS machine model.|
-|paymentModuleVersion| Version of the payment module of the [SmartPOS](/developers/en/docs/mp-point/landing).|
-|integration| Integration SDK details.|
-|nativeSdkVersion| Integration SDK version.|
+|**smartDevice**| Device details.|
+|**serialNumber**| POS machine serial number.|
+|**brandName**| POS machine brand.|
+|**modelName**| POS machine model.|
+|**paymentModuleVersion**| Version of the payment module of the [SmartPOS](/developers/en/docs/mp-point/landing).|
+|**integration**| Integration SDK details.|
+|**nativeSdkVersion**| Integration SDK version.|

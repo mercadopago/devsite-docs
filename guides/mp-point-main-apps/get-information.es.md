@@ -44,24 +44,24 @@ smartInformationTools.getInformation(callback);
 ----[mla, mlb]---- 
 |Campo|Descripción|
 |---|---|
-|smartDevice| detalles del dispositivo|
-|serialNumber| número de serie del lector.|
-|brandName| nombre de la marca del lector.|
-|modelName| nombre del modelo del lector.|
-|paymentModuleVersion| ersión del módulo de pago del [SmartPOS](/developers/en/docs/mp-point/landing).|
-|integration|  detalles del SDK de las integraciones.|
-|nativeSdkVersion| versión del SDK de las integraciones.|
+|**smartDevice**| detalles del dispositivo|
+|**serialNumber**| número de serie del lector.|
+|**brandName**| nombre de la marca del lector.|
+|**modelName**| nombre del modelo del lector.|
+|**paymentModuleVersion**| ersión del módulo de pago del [SmartPOS](/developers/en/docs/mp-point/landing).|
+|**integration**|  detalles del SDK de las integraciones.|
+|**nativeSdkVersion**| versión del SDK de las integraciones.|
 
 ------------ 
 ----[mlm]---- 
 |Campo|Descripción|
 |---|---|
-|smartDevice| detalles del dispositivo|
-|serialNumber| número de serie de la terminal.|
-|brandName| nombre de la marca de la terminal.|
-|modelName| nombre del modelo de la terminal.|
-|paymentModuleVersion| ersión del módulo de pago del [SmartPOS](/developers/en/docs/mp-point/landing).|
-|integration|  detalles del SDK de las integraciones.|
-|nativeSdkVersion| versión del SDK de las integraciones.|
+|**smartDevice**| detalles del dispositivo|
+|**serialNumber**| número de serie de la terminal.|
+|**brandName**| nombre de la marca de la terminal.|
+|**modelName**| nombre del modelo de la terminal.|
+|**paymentModuleVersion**| ersión del módulo de pago del [SmartPOS](/developers/en/docs/mp-point/landing).|
+|**integration**|  detalles del SDK de las integraciones.|
+|**nativeSdkVersion**| versión del SDK de las integraciones.|
 
 ------------

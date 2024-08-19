@@ -56,11 +56,11 @@ paymentInstallmentTools.getInstallmentsAmount(callback, amount);
 
 |Campo|Descripción|
 |---|---|
-|callback ((MPResponse<List<InstallmentAmount>>) -> Unit)|Función de respuesta con el resultado de la solicitud de la lista de cuotas.|
-|amount (String)|Monto con el cual se determina la lista de cuotas.|
-|installment (Int)|Número de cuotas.|
-|amount (Double)|Monto de cada cuota.|
-|financialAmount (Double)|Porcentaje de interés de cada cuota.|
+|**callback ((MPResponse<List<InstallmentAmount>>) -> Unit)**|Función de respuesta con el resultado de la solicitud de la lista de cuotas.|
+|**amount (String)**|Monto con el cual se determina la lista de cuotas.|
+|**installment (Int)|**Número de cuotas.|
+|**amount (Double)**|Monto de cada cuota.|
+|**financialAmount (Double)**|Porcentaje de interés de cada cuota.|
 
 ------------ 
 ----[mlm]---- 
@@ -96,10 +96,10 @@ paymentInstallmentTools.getInstallmentsAmount(callback, amount);
 
 |Campo|Descripción|
 |---|---|
-|callback ((MPResponse<List<InstallmentAmount>>) -> Unit)|Función de respuesta con el resultado de la solicitud de la lista de mensualidades.|
-|amount (String)|Monto con el cual se determina la lista de mensualidades.|
-|installment (Int)|Número de mensualidades.|
-|amount (Double)|Monto de cada mensualidade.|
-|financialAmount (Double)|Porcentaje de interés de cada mensualidade.|
+|**callback ((MPResponse<List<InstallmentAmount>>) -> Unit)**|Función de respuesta con el resultado de la solicitud de la lista de mensualidades.|
+|**amount (String)**|Monto con el cual se determina la lista de mensualidades.|
+|**installment (Int)**|Número de mensualidades.|
+|**amount (Double)**|Monto de cada mensualidade.|
+|**financialAmount (Double)**|Porcentaje de interés de cada mensualidade.|
 
 ------------
