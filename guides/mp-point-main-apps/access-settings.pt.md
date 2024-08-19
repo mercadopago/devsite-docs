@@ -1,4 +1,4 @@
-# Access settings
+# Acessar configurações
 
 Use o método `launch` da classe `BluetoothUiSettings` para iniciar a atividade de configurações de bluetooth do Mercado Pago. Esse componente proporciona diversas funcionalidades, como ativar e desativar, buscar dispositivos, emparelhar e desemparelhar, entre outras. Confira como acessá-lo.
 
