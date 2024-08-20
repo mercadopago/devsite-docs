@@ -95,7 +95,7 @@ bluetoothPrinter.print(dataToPrint, address, callback);
 |---|---|
 |**dataToPrint (String)**| Secuencia de texto que se quiere imprimir|
 |**address (String)**| Dirección de la impresora que se usará para la impresión.|
-|**callback ((MPResponse<BluetoothPrinterResult>) -> Unit)**| Función de devolución del llamado que ofrece el resultado del pedido de impresión. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, que tiene un objeto `[BluetoothPrinterResult]`.|
+|**callback ((MPResponse&lt;BluetoothPrinterResult&gt;) -> Unit)**| Función de devolución del llamado que ofrece el resultado del pedido de impresión. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, que tiene un objeto `[BluetoothPrinterResult]`.|
 |**CONNECTION_FAILED**| Indica que la conexión falló.|
 |**ERROR_UNDEFINED**| Indica que hay un error de causa indefinida. |
 |**SUCCESS**| Indica que la impresión fue exitosa|
