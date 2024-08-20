@@ -1,0 +1,2149 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/v1/orders": {
+      "post": {
+        "tags": ["Order"],
+        "description": {
+          "en": "This endpoint allows to create orders in **One-shot** (processing the payment in a single stage) or **Builder** (processing payment in stages that can be configured and executed incrementally) mode for payment and cashout transactions.",
+          "pt": "Este endpoint permite a criação de uma ordem no modo **One-shot** (processando o pagamento em uma única etapa) ou **Builder** (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout.",
+          "es": "Este endpoint permite crear una orden en modo **One-shot** (procesando el pago en una sola etapa) o **Builder** (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout."
+        },
+        "parameters": [
+          {
+            "in":"header",
+            "name":"Authorization",
+            "required":true,
+            "schema":{
+              "type":"string",
+              "example":"Bearer {{ACCESS_TOKEN}}"
+            },
+            "description":{
+              "en":"The application's private key that should always be used on the backend to generate payments. It is essential to keep this information secure on your servers. You can find your Access Token by accessing your application Credentials.",
+              "pt":"Chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial que essa informação seja mantida segura em seus servidores. Você pode encontrar ser Acces Token acessando as Credenciais da sua aplicação.",
+              "es":"Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. Puedes encontrar tu Acces Token accediendo a las Credenciales de tu aplicación."
+            }
+          },
+          {
+            "in":"header",
+            "name":"X-Idempotency-Key",
+            "required":false,
+            "schema":{
+              "type":"string",
+              "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
+            },
+            "description":{
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias."
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "type":{
+                    "type":"string",
+                    "required":true,
+                    "description":{
+                      "en":"Order type, associated with the Mercado Pago solution for which it is created.",
+                      "pt":"Tipo de ordem, associada à solução do Mercado Pago para a qual foi criada.",
+                      "es":"Tipo de orden, asociada a la solución de Mercado Pago para la que se crea."
+                    },
+                    "enum": [
+                      {
+                        "title": "online",
+                        "description": {
+                          "en": "Value associated with the creation of orders for online payments.",
+                          "es": "Valor asociado a la creación de órdenes para pagos online.",
+                          "pt": "Valor associado à criação de orders para pagamentos online."
+                        }
+                      },
+                      {
+                        "title": "point",
+                        "description": {
+                          "en": "Value associated with the creation of orders for Instore payments, particularly with Mercado Pago Point.",
+                          "es": "Valor asociado a la creación de órdenes para pagos Instore, particularmente con Mercado Pago Point.",
+                          "pt": "Valor associado à criação de orders para pagamentos Instore, nomeadamente com o Mercado Pago Point."
+                        }
+                      }
+                    ],
+                    "example": "online" 
+                  },
+                  "external_reference":{
+                    "type":"string",
+                    "required":true,
+                    "example":"ext_ref_1234",
+                    "description":{
+                      "en":"It is an external reference of the order. It can be, for example, a hashcode from the Central Bank, functioning as an identifier of the transaction origin.",
+                      "es":"Es una referencia externa de la orden. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción.",
+                      "pt":"É uma referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação." 
+                    }
+                  },
+                  "transactions":{
+                    "type":"object",
+                    "required": true,
+                    "description":{
+                      "es":"Contains information about the transaction of a payment order",
+                      "pt":"Contém informações sobre a transação de uma ordem de pagamento",
+                      "en":"Contiene información sobre la transacción de una orden de pago" 
+                    },
+                    "properties": {
+                      "payments": [
+                        {
+                          "type": "object",
+                          "description": {
+                            "en": "Contains information about the order's payment.",
+                            "pt": "Contém informações sobre o pagamento da ordem.",
+                            "es": "Contiene información sobre el pago de la orden."
+                          },
+                          "properties": {
+                            "amount": {
+                              "type": "string",
+                              "required": true,
+                              "description": {
+                                "en": "Payment amount.",
+                                "pt": "Valor do pagamento.",
+                                "es": "Monto del pago."
+                              },
+                              "example": "24.90"
+                            },
+                            "currency": {
+                              "$ref": "#/components/schemas/currency"
+                            },
+                            "payment_method": {
+                              "type": "object",
+                              "required": true,
+                              "description": {
+                                "en": "Information about the payment method",
+                                "pt": "Informação sobre o meio de pagamento",
+                                "es": "Información sobre el medio de pago"
+                              },
+                              "properties": {
+                                "id": {
+                                  "type": "string",
+                                  "example": "visa",
+                                  "description": {
+                                    "en": "Identifier of the payment method selected to make the payment.",
+                                    "pt": "Identificador/bandeira do meio de pagamento selecionado para efetuar o pagamento.",
+                                    "es": "Identificador del medio de pago seleccionado para realizar el pago."
+                                  }
+                                },
+                                "type": {
+                                  "type": "string",
+                                  "example": "credit_card",
+                                  "description": {
+                                    "en": "Type of payment method selected to make the payment.",
+                                    "pt": "Tipo de meio de pagamento selecionado para efetuar o pagamento.",
+                                    "es": "Tipo de medio de pago seleccionado para realizar el pago."
+                                  }
+                                },
+                                "token": {
+                                  "type": "string",
+                                  "description": {
+                                    "en": "Token that identifies the card.",
+                                    "pt": "Token que identifica o cartão.",
+                                    "es": "Token que identifica la tarjeta."
+                                  }
+                                },
+                                "installments": {
+                                  "type": "integer",
+                                  "example": 1,
+                                  "description": {
+                                    "en": "Number of installments selected.",
+                                    "pt": "Número de parcelas selecionado",
+                                    "es": "Cantidad de cuotas seleccionadas"
+                                  }
+                                },
+                                "issuer_id": {
+                                  "type": "string",
+                                  "example": "11233",
+                                  "description": {
+                                    "en": "In a credit or debit card payment, it is the identifier of the issuer of the card.",
+                                    "pt": "Em caso de pagamento com cartão de crédito ou débito, é o identificador do emissor do cartão.",
+                                    "es": "En pagos con tarjeta de crédito o débito, es el identificador del emisor de la tarjeta."
+                                  }
+                                },
+                                "statement_descriptor": {
+                                  "type": "string",
+                                  "example": "MERCADOPAGO",
+                                  "description": {
+                                    "en": "Description of the payment that will appear in the card statement.",
+                                    "pt": "Descrição com a qual o pagamento aparecerá no resumo do cartão.",
+                                    "es": "Descripción con la que aparecerá el pago en el resumen de la tarjeta."
+                                  }
+                                }
+                              } 
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "payer":{
+                    "type":"object",
+                    "description":{
+                      "en":"Payer information",
+                      "pt":"Informações do pagador",
+                      "es":"Información del pagador"
+                    },
+                    "properties":{
+                      "email":{
+                        "type":"string",
+                        "required":true,
+                        "example":"testuser@email.com",
+                        "description":{
+                          "pt":"E-mail do pagador",
+                          "en":"Payer email",
+                          "es":"Correo electrónico del pagador"
+                        }
+                      },
+                      "first_name":{
+                        "type":"string",
+                        "example":"John",
+                        "description":{
+                          "en":"Payer first name",
+                          "pt":"Nome do pagador",
+                          "es":"Nombre del pagador"
+                        }
+                      },
+                      "last_name":{
+                        "type":"string",
+                        "example":"Doe",
+                        "description":{
+                          "en":"Payer last name",
+                          "pt":"Sobrenome do pagador",
+                          "es":"Apellido del pagador"
+                        }
+                      },
+                      "identification":{
+                        "type":"object",
+                        "description":{
+                          "en":"Payer's personal identification.",
+                          "pt":"Identificação pessoal do pagador",
+                          "es":"Identificación personal del pagador"
+                        },
+                        "properties":{
+                          "type":{
+                            "type":"string",
+                            "required":true,
+                            "example":"CPF",
+                            "description":{
+                              "en":"Type of identification",
+                              "pt":"Tipo de documento de identificação",
+                              "es":"Tipo de documento de identificación."
+                            }
+                          },
+                          "number":{
+                            "type":"string",
+                            "required":true,
+                            "description":{
+                              "en":"Identification number",
+                              "pt":"Número do documento de identificação",
+                              "es":"Número de documento de identificación."
+                            }
+                          },
+                          "example": "95749019047"
+                        }
+                      },
+                      "phone":{
+                        "type":"object",
+                        "description":{
+                          "en":"Payer's phone information.",
+                          "pt":"Informações de telefone do pagador.",
+                          "es":"Información relativa al teléfono del pagador."
+                        },
+                        "properties":{
+                          "area_code":{
+                            "type":"string",
+                            "description":{
+                              "en":"Phone area code.",
+                              "pt":"Código de área do telefone.",
+                              "es":"Código de área del teléfono."
+                            },
+                            "example": 11
+                          },
+                          "number":{
+                            "type":"string",
+                            "description":{
+                              "en":"Phone number.",
+                              "pt":"Número do telefone.",
+                              "es":"Número de teléfono."
+                            },
+                            "example": "987654321"
+                          }
+                        }
+                      },
+                      "address":{
+                        "type":"object",
+                        "description":{
+                          "en":"Payer's address information",
+                          "pt":"Informações de endereço do pagador",
+                          "es":"Información relativa a la dirección del pagador"
+                        },
+                        "properties":{
+                          "zip_code":{
+                            "type":"string",
+                            "example":"12345678",
+                            "description":{
+                              "en":"Payer's address zip code",
+                              "pt":"CEP do endereço do pagador",
+                              "es":"Código postal de la dirección del pagador"
+                            }
+                          },
+                          "street_name":{
+                            "type":"string",
+                            "example":"Rua Teste",
+                            "description":{
+                              "en":"Payer's address street name",
+                              "pt":"Nome da rua do endereço do pagador",
+                              "es":"Nombre de la calle de la dirección del pagador"
+                            }
+                          },
+                          "street_number":{
+                            "type":"string",
+                            "example":"123",
+                            "description":{
+                              "en":"Payer address street number",
+                              "pt":"Número da rua do endereço do pagador",
+                              "es":"Número de la calle de la dirección del pagador"
+                            }
+                          }
+                        }
+                      },
+                      "authentication_type":{
+                        "type":"string",
+                        "description":{
+                          "en": "Type of authentication used by payer.",
+                          "pt": "Tipo de autenticação utilizada pelo pagador.",
+                          "es": "Tipo de autenticación utilizada por el pagador."
+                        },
+                        "example":[
+                          "gmail",
+                          "facebook",
+                          "native_web"
+                        ]
+                      },
+                      "registration_date":{
+                        "type":"string",
+                        "example":"2019-01-01T15:01:01.000Z",
+                        "description":{
+                          "en":"Date of registration of the buyer on the site.",
+                          "pt":"Data de cadastro do comprador no site",
+                          "es":"Fecha de registro del comprador en el sitio"
+                        }
+                      },
+                      "last_purchase":{
+                        "type":"string",
+                        "example":"2021-06-15T19:22:41.001-03:00",
+                        "description":{
+                          "en":"Date of the last purchase made by the payer on the website. The valid format of the attribute is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\".",
+                          "pt":"Data da última compra realizada pelo pagador no site. O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\".",
+                          "es":"Fecha de la última compra realizada por el pagador en el sitio web. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\"."
+                        }
+                      },
+                      "is_prime_user":{
+                        "type":"boolean",
+                        "example":true,
+                        "description":{
+                          "en":"Indicates if the payer is a premium user.",
+                          "pt":"Indica se o pagador é um usuário premium. ",
+                          "es":"Indica si el pagador es un usuario premium. "
+                        }
+                      },
+                      "is_first_purchase_online":{
+                        "type":"boolean",
+                        "example":true,
+                        "description":{
+                          "en":"Indicates if the payer has already made a purchase on the website before.",
+                          "pt":"Indica se o pagador já realizou uma compra no site anteriormente.",
+                          "es":"Indica si el pagador ha realizado una compra en el sitio web anteriormente."
+                        }
+                      },
+                      "entity_type":{
+                        "type":"string",
+                        "description":{
+                          "en":"Entity type of the payer (only for bank transfers).",
+                          "pt":"Tipo de entidade do pagador (apenas para transferências bancárias).",
+                          "es":"Tipo de entidad del pagador (sólo para transferencias bancarias)."
+                        },
+                        "example":"individual",
+                        "enum": [
+                          {
+                            "title": "individual",
+                            "description": {
+                              "en": "Payer is individual.",
+                              "es": "El pagador es un individuo.",
+                              "pt": "O pagador é um indivíduo."
+                            }
+                          },
+                          {
+                            "title": "association",
+                            "description": {
+                              "en": "Payer is an association.",
+                              "es": "El pagador es una asociación.",
+                              "pt": "O pagador é uma associação."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "total_amount":{
+                    "type":"string",
+                    "required":true,
+                    "example":"24.90",
+                    "description":{
+                      "en":"Total amount to be paid",
+                      "pt":"Valor total a ser pago",
+                      "es":"Monto total a pagar"
+                    }
+                  },
+                  "type_config":{
+                    "type":"object",
+                    "description":{
+                      "en":"Order type configuration.",
+                      "pt":"Configuração do tipo de ordem.",
+                      "es":"Configuración del tipo de orden."
+                    },
+                    "properties":{
+                      "capture_mode":{
+                        "type":"string",
+                        "description":{
+                          "en":"Order capture mode",
+                          "pt":"Modo de captura da ordem",
+                          "es":"Modo de captura de la orden"
+                        },
+                        "example":"manual",
+                        "enum": [
+                          {
+                            "title": "manual",
+                            "description": {
+                              "en": "Order's capture will be made manually.",
+                              "es": "La captura de la orden se hará de manera manual.",
+                              "pt": "A captura da ordem será feita manualmente."
+                            }
+                          },
+                          {
+                            "title": "automatic",
+                            "description": {
+                              "en": "Order's capture will be made automatically.",
+                              "es": "La captura de la orden se hará de manera automática.",
+                              "pt": "A captura da ordem será feita automaticamente."
+                            }
+                          }
+                        ]
+                      },
+                      "ip_address":{
+                        "type":"string",
+                        "description":{
+                          "en":"Internal protocol (IP) that comes from the request (for bank transfer only).",
+                          "pt":"Protocolo interno (IP) que provém do request (apenas para transferência bancária).",
+                          "es":"Protocolo interno (IP) que proviene del request (solo para transferencia bancaria)."
+                        }
+                      },
+                      "callback_url":{
+                        "type":"string",
+                        "example":"www.mercadopago.com",
+                        "description":{
+                          "en":"URL where mercadopago does the final redirect (only for bank transfers).",
+                          "pt":"URL para a qual o Mercado Pago faz o redirecionamento final (apenas para transferência bancária).",
+                          "es":"URL a la cual Mercado Pago hace la redirección final (sólo para transferencia bancaria)."
+                        }
+                      }
+                    }
+                  },
+                  "currency":{
+                    "$ref": "#/components/schemas/currency"
+                  },
+                  "processing_mode":{
+                    "type":"string",
+                    
+                    "description":{
+                      "en":"Order processing mode",
+                      "pt":"Modo de processamento da order",
+                      "es":"Modo de procesamiento de la orden"
+                    },
+                    "example": "automatic",
+                    "enum": [
+                      {
+                        "title": "manual",
+                        "description": {
+                          "en": "Order's processing will be made manually.",
+                          "es": "El procesamiento de la orden se hará de manera manual.",
+                          "pt": "O processamento da ordem será realizado manualmente."
+                        }
+                      },
+                      {
+                        "title": "automatic",
+                        "description": {
+                          "en": "Order's processing will be made automatically.",
+                          "es": "El procesamiento de la orden se hará de manera automática.",
+                          "pt": "O processamento da ordem será feito automaticamente."
+                        }
+                      }
+                    ]
+                  },
+                  "description":{
+                    "type":"string",
+                    "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
+                    "description":{
+                      "en":"Description of the product purchased, the reason for the payment order, or the description of a product in the marketplace.",
+                      "pt":"Descrição do produto comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
+                      "es":"Descripción del producto comprado, el motivo de la orden de pago, o la descripción de un producto en el marketplace."
+                    }
+                  },
+                  "marketplace":{
+                    "type":"string",
+                    "example":"MERCADOLIVRE",
+                    "description":{
+                      "en":"Name of the marketplace where the order was made.",
+                      "pt":"Nome do marketplace onde a order foi realizada.",
+                      "es":"Nombre del marketplace donde se realizó la orden."
+                    }
+                  },
+                  "marketplace_fee":{
+                    "type":"string",
+                    "example":"2,00%",
+                    "description":{
+                      "pt":"Comissão (taxa) correspondente ao marketplace.",
+                      "en":"Marketplace fee",
+                      "es":"Comisión (fee) que corresponde al marketplace."
+                    }
+                  },
+                  "campaign_id":{
+                    "type":"string",
+                    "example":"123",
+                    "description":{
+                      "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
+                      "pt":"É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
+                      "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
+                    }
+                  },
+                  "items":{
+                    "type":"array",
+                    "description":{
+                      "en":"Information about the list of items to be paid.",
+                      "pt":"Informações sobre a lista de itens a serem pagos.",
+                      "es":"Información sobre la lista de ítems a pagar."
+                    },
+                    "items":{
+                      "type":"object",
+                      "properties":{
+                        "title":{
+                          "type":"string",
+                          "required":true,
+                          "description":{
+                            "en":"Item name.",
+                            "pt":"Nome do item",
+                            "es":"Nombre del ítem"
+                          },
+                          "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram"   
+                        },
+                        "unit_price":{
+                          "type":"string",
+                          "required":true,
+                          "description":{
+                            "en":"Unit price of the purchased item.",
+                            "es":"Precio unitario del ítem comprado.",
+                            "pt":"Preço unitário do item comprado."
+                          },
+                          "example":"1239.90"
+                        },
+                        "quantity":{
+                          "type":"Integer",
+                          "required":true,
+                          "description":{
+                            "en":"Purchased items quantity.",
+                            "pt":"Quantidade de itens comprados.",
+                            "es":"Cantidad de ítems comprados."
+                          },
+                          "example":4
+                        },
+                        "code":{
+                          "type":"string",
+                          "description":{
+                            "en":"Item's identification code.",
+                            "pt":"Código identificador do item.",
+                            "es":"Código identificador del ítem."
+                          },
+                          "example":"1234"
+                        },
+                        "description":{
+                          "type":"string",
+                          "description":{
+                            "en":"Purchased item description.",
+                            "pt":"Descrição do item comprado.",
+                            "es":"Descripción del ítem comprado."
+                          },
+                          "example":"Point product for card payments via Bluetooth."
+                        },
+                        "type":{
+                          "type":"string",
+                          "description":{
+                            "en": "Type of item being purchased.",
+                            "pt": "Tipo de item sendo comprado.",
+                            "es": "Tipo de ítem que se está comprando."
+                          },
+                          "example":"electronics"
+                        },
+                        "picture_url":{
+                          "type":"string",
+                          "example":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png",
+                          "description":{
+                            "en":"Image URL corresponding to the item.",
+                            "pt":"URL da imagem correspondente ao item.",
+                            "es":"URL de la imagen correspondiente al ítem."
+                          }
+                        },
+                        "warranty":{
+                          "type":"boolean",
+                          "example":true,
+                          "description":{
+                            "en":"Indicates if the product has warranty or not. It must be \"true\" if it does, \"false\" if it doesn't.",
+                            "pt":"Indica se o produto tem garantia ou não. Deve ser \"true\" se tiver, \"false\" se não.",
+                            "es":"Indica si el producto tiene garantía o no. Debe ser \"true\" si tiene, \"false\" si no."
+                          }
+                        },
+                        "category_descriptor":{
+                          "type":"object",
+                          "description":{
+                            "en":"Information about the item category.",
+                            "pt":"Informações sobre a categoria do item.",
+                            "es":"Información sobre la categoría del ítem."
+                          },
+                          "properties":{
+                            "event_date":{
+                              "type":"string",
+                              "example":"2023-12-31T09:37:52.000-04:00",
+                              "description":{
+                                "en":"Event Date. You must use the standard ISO 8601 ( \"yyyy-MM-ddTHH:mm:ss.sssZ\") format to input the date and time of the event. For example, to schedule an event for December 31, 2023, at 9:37:52 AM in the UTC-4 timezone, you should enter \"2023-12-31T09:37:52.000-04:00\".",
+                                "pt":"Data do Evento. Utilize o formato padrão ISO 8601 ( \"yyyy-MM-ddTHH:mm:ss.sssZ\") para inserir a data e o horário do evento. Por exemplo, para marcar um evento para o dia 31 de dezembro de 2023, às 9:37:52 AM, no fuso horário UTC-4, você deverá inserir - \"2023-12-31T09:37:52.000-04:00\".",
+                                "es":"Fecha del Evento. Debes utilizar el formato estándar ISO 8601  para introducir la fecha y hora del evento. Por ejemplo, para programar un evento para el 31 de diciembre de 2023 a las 9:37:52 AM en la zona horaria UTC-4, deberás ingresar \"2023-12-31T09:37:52.000-04:00\"."
+                              }
+                            },
+                            "passenger":{
+                              "type":"object",
+                              "description":{
+                                "en":"Information about the passenger.",
+                                "pt":"Informações sobre o passageiro.",
+                                "es":"Información sobre el pasajero."
+                              },
+                              "properties":{
+                                "first_name":{
+                                  "type":"string",
+                                  "description":{
+                                    "en":"Passenger's first name.",
+                                    "pt":"Primeiro nome do passageiro",
+                                    "es":"Nombre del pasajero"
+                                  },
+                                  "example": "John"
+                                },
+                                "last_name":{
+                                  "type":"string",
+                                  "description":{
+                                    "en":"Passenger's last name.",
+                                    "pt":"Sobrenome do passageiro",
+                                    "es":"Apellido del pasajero"
+                                  },
+                                  "example": "Doe"
+                                },
+                                "identification_type":{
+                                  "type":"string",
+                                  "description":{
+                                    "en":"Passenger's identification type.",
+                                    "pt":"Tipo de identificação do passageiro",
+                                    "es":"Tipo de identificación del pasajero"
+                                  },
+                                  "example": "CPF"
+                                },
+                                "identification_number":{
+                                  "type":"string",
+                                  "description":{
+                                    "en":"Passenger's identification number.",
+                                    "pt":"Número de identificação do passageiro",
+                                    "es":"Número de identificación del pasajero"
+                                  },
+                                  "example": "95749019047"
+                                }
+                              }
+                            },
+                            "route":{
+                              "type":"object",
+                              "description":{
+                                "en":"Information about de route.",
+                                "pt":"Informações de rota.",
+                                "es":"Información sobre la ruta."
+                              },
+                              "properties":{
+                                "departure":{
+                                  "type":"string",
+                                  "description":{
+                                    "en":"Departure city.",
+                                    "pt":"Cidade de partida.",
+                                    "es":"Ciudad de partida."
+                                  },
+                                  "example": "SP"
+                                },
+                                "destination":{
+                                  "type":"string",
+                                  "description":{
+                                    "en":"Destination city.",
+                                    "pt":"Cidade de destino",
+                                    "es":"Ciudad de destino"
+                                  },
+                                  "example": "RJ"
+                                },
+                                "departure_date_time":{
+                                  "type":"string",
+                                  "description":{
+                                    "en":"Departure date and time. The valid format is \"yyyy-MM-ddTHH:mm:ss.sssZ\". For example, \"2023-12-31T09:37:52.000-04:00\".",
+                                    "pt":"Data e hora de partida. O formato válido é \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por exemplo, \"2023-12-31T09:37:52.000-04:00\".",
+                                    "es":"Fecha y hora de salida. El formato válido es \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por ejemplo, \"2023-12-31T09:37:52.000-04:00\"."
+                                  }
+                                },
+                                "arrival_date_time":{
+                                  "type":"string",
+                                  "description":{
+                                    "en":"Arrival date and time. The valid format is \"yyyy-MM-ddTHH:mm:ss.sssZ\". For example, \"2023-12-31T09:37:52.000-04:00\".",
+                                    "pt":"Data e hora de chegada. O formato válido é \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por exemplo, \"2023-12-31T09:37:52.000-04:00\". ",
+                                    "es":"Fecha y hora de llegada. El formato válido es \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por ejemplo, \"2023-12-31T09:37:52.000-04:00\"."
+                                  }
+                                },
+                                "company":{
+                                  "type":"string",
+                                  "description":{
+                                    "en":"Company name.",
+                                    "pt":"Nome da empresa.",
+                                    "es":"Nombre de la empresa."
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "coupon":{
+                    "type":"object",
+                    "description":{
+                      "en":"Discount campaign",
+                      "pt":"Campanha de desconto",
+                      "es":"Campaña de descuento"
+                    },
+                    "properties":{
+                      "code":{
+                        "type":"string",
+                        "description":{
+                          "en":"Specific code of the coupon participating in the discount campaign.",
+                          "pt":"Código específico do cupom pertencente à campanha de desconto.",
+                          "es":"Código específico del cupón perteneciente a la campaña de descuento."
+                        },
+                        "example": "test01"
+                      },
+                      "amount":{
+                        "type":"string",
+                        "description":{
+                          "en":"Value of the discount coupon. E.g. - BRL 14.50.",
+                          "pt":"Valor do cupom de desconto. Por exemplo - R$14.50.",
+                          "es":"Valor del cupón de descuento. Por ejemplo - BRL 14.50."
+                        },
+                        "example":"4.90"
+                      }
+                    }
+                  },
+                  "splits":{
+                    "type":"array",
+                    "description":{
+                      "en":"List of payment splits to be made from the total amount.",
+                      "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
+                      "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
+                    },
+                    "items": {
+                      "type": "object",
+                      "properties":{
+                        "id":{
+                          "type":"string",
+                          "description":{
+                            "en":"Split identification.",
+                            "pt":"Identificador do split.",
+                            "es":"Identificador del split."
+                          },
+                          "example":"123"
+                        },
+                        "collector_id":{
+                          "type":"number",
+                          "description":{
+                            "en":"It is the user who receives the money. For example, a user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.",
+                            "pt":"É o usuário que recebe o dinheiro. Por exemplo, um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id.",
+                            "es":"Es el usuario quien recibe el dinero. Por ejemplo, un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id."
+                          },
+                          "example":448876418
+                        },
+                        "type":{
+                          "type":"string",
+                          "description":{
+                            "pt":"Tipo de split realizado",
+                            "en":"Type of split made",
+                            "es":"Tipo de split realizado"
+                          },
+                          "enum": [
+                            {
+                              "title": "amount",
+                              "description": {
+                                "en": "The split will be performed by amount.",
+                                "es": "El criterio para el split será el valor.",
+                                "pt": "O critério para o split será o valor."
+                              }
+                            },
+                            {
+                              "title": "percentage",
+                              "description": {
+                                "en": "The split will be performed by percentage.",
+                                "es": "El criterio para el split será el porcentaje.",
+                                "pt": "O critério para o split será a porcentagem."
+                              }
+                            }
+                          ],
+                          "example": "amount"
+                        },
+                        "value":{
+                          "type":"string",
+                          "description":{
+                            "en":"Split value",
+                            "pt":"Valor do split",
+                            "es":"Valor del split"
+                          },
+                          "example":"50"
+                        }
+                      }
+                    }
+                  },
+                  "shipment":{
+                    "type":"object",
+                    "description":{
+                      "en":"Information about the product shipment.",
+                      "pt":"Informações sobre o envio do produto.",
+                      "es":"Información sobre el envío del producto."
+                    },
+                    "properties":{
+                      "receiver_address":{
+                        "type":"object",
+                        "description":{
+                          "en":"Object comprising the address of the receiver of the purchase.",
+                          "pt":"Objeto composto pelo endereço do destinatário da compra.",
+                          "es":"Objeto compuesto por la dirección del destinatario de la compra."
+                        },
+                        "properties":{
+                          "street_name":{
+                            "type":"string",
+                            "description":{
+                              "en":"Receiver's street name.",
+                              "pt":"Rua do destinatário.",
+                              "es":"Calle del destinatario."
+                            },
+                            "example": "Test Street"
+                          },
+                          "street_number":{
+                            "type":"number",
+                            "description":{
+                              "en":"Receiver's adress number.",
+                              "pt":"Número do endereço do destinatário.",
+                              "es":"Número de la dirección del distanatario."
+                            },
+                            "example": "123"
+                          },
+                          "zip_code":{
+                            "type":"string",
+                            "description":{
+                              "en":"Receiver's adress zip code.",
+                              "pt":"Código postal do endereço do destinatário.",
+                              "es":"Código postal de la dirección del destinatario."
+                            },
+                            "example": "1234"
+                          },
+                          "city_name":{
+                            "type":"string",
+                            "description":{
+                              "en":"Receiver's adress city Name.",
+                              "pt":"Cidade do endereço do destinatário.",
+                              "es":"Ciudad de la dirección del destinatario."
+                            },
+                            "example": "SP"
+                          },
+                          "state_name":{
+                            "type":"string",
+                            "description":{
+                              "en":"State in which the city is located.",
+                              "pt":"Estado onde a cidade está localizada.",
+                              "es":"Provincia donde la ciudad está ubicada."
+                            },
+                            "example": "SP"
+                          },
+                          "floor":{
+                            "type":"string",
+                            "description":{
+                              "en":"Delivery address floor, in case it is an apartment.",
+                              "pt":"Andar do endereço de entrega, se for um apartamento.",
+                              "es":"Piso de la dirección de entrega, en caso de ser un apartamento."
+                            },
+                            "example": "1"
+                          },
+                          "apartment":{
+                            "type":"string",
+                            "description":{
+                              "en":"Delivery address apartment number.",
+                              "pt":"Número do apartamento do endereço de entrega.",
+                              "es":"Número de departamento de la dirección de entrega."
+                            },
+                            "example": "A"
+                          }
+                        }
+                      },
+                      "width":{
+                        "type":"number",
+                        "description":{
+                          "en":"Width of barcode.",
+                          "pt":"Largura do código de barras.",
+                          "es":"Ancho del código de barras."
+                        }
+                      },
+                      "height":{
+                        "type":"number",
+                        "description":{
+                          "en":"Height of barcode.",
+                          "pt":"Altura do código de barras.",
+                          "es":"Altura del código de barras."
+                        }
+                      },
+                      "express_shipment":{
+                        "type":"boolean",
+                        "example":true,
+                        "description":{
+                          "en":"Indicates if the shipment is express or not. \"1\" if it is, \"0\" if it isn't.",
+                          "pt":"Indica se o envio é expresso ou não.  \"1\" se for, \"0\" se não for.",
+                          "es":"Indica si el envío es express o no.  \"1\" si lo es, \"0\" si no lo es."
+                        }
+                      },
+                      "pick_up_on_seller":{
+                        "type":"boolean",
+                        "example":true,
+                        "description":{
+                          "en":"Indicates if the customer will pick up the product at the seller's address. \"1\" if they will, \"0\" if not.",
+                          "pt":"Indica se o cliente irá retirar o produto no endereço do vendedor. \"1\" se irá retirar, \"0\" se não.",
+                          "es":"Indica si el cliente recogerá el producto en la dirección del vendedor. \"1\" si lo recogerá, \"0\" si no."
+                        }
+                      }
+                    }
+                  },
+                  "expiration_time":{
+                    "type": "string",
+                    "format": "date",
+                    "description": {
+                      "en": "Payment’s expiration date. The valid format of the attribute is \"yyyy-MM-dd HH:mm:ss.SSSz\". For example, 2022-11-17T09:37:52.000-04:00.",
+                      "pt": "Data de expiração do pagamento. O formato válido do atributo é \"yyyy-MM-dd HH:mm:ss.SSSz\". Por exemplo, 2022-11-17T09:37:52.000-04:00.",
+                      "es": "Fecha de vencimiento del pago. El formato válido del atributo es \"yyyy-MM-dd HH:mm:ss.SSSz\". Por ejemplo, 2022-11-17T09:37:52.000-04:00."
+                    },
+                    "example": "2022-11-17T09:37:52.000-04:00"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": {
+              "es": "Éxito",
+              "pt": "Sucesso",
+              "en": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id":{
+                      "type":"string",
+                      "example":"123",
+                      "description":{
+                        "en":"Identifier of the order created in the request, automatically generated by Mercado Pago.",
+                        "pt":"Identificador da order criada na solicitação, gerado automaticamente pelo Mercado Pago.",
+                        "es":"Identificador de la orden creada en la solicitud, generado automáticamente por Mercado Pago."
+                      }
+                    },
+                    "type":{
+                      "type":"string",
+                      "description":{
+                        "en":"Order type",
+                        "pt":"Tipo de order",
+                        "es":"Tipo de orden"
+                      },
+                      "example": "online",
+                      "enum": [
+                        {
+                          "title": "online",
+                          "description": {
+                            "en": "Order created for online checkout.",
+                            "es": "Orden creada para checkout online.",
+                            "pt": "Order criada para checkout online."
+                          }
+                        },
+                        {
+                          "title": "point",
+                          "description": {
+                            "en": "Order created for Mercado Pago Point.",
+                            "es": "Orden creada para Mercado Pago Point.",
+                            "pt": "Order criada para Mercado Pago Point."
+                          }
+                        },
+                        {
+                          "title": "offline",
+                          "description": {
+                            "en": "Order created for .",
+                            "es": "Orden creada para .",
+                            "pt": "Order criada para ."
+                          }
+                        }
+                      ]
+                    },
+                    "external_reference":{
+                      "type":"string",
+                      "example":"ext_ref_1234",
+                      "description":{
+                        "en":"It is the external reference of the order, assigned when creating it.",
+                        "pt":"É a referência externa da order, atribuída no momento da criação.",
+                        "es":"Es una referencia externa de la orden, asignada al momento de su creación."
+                      }
+                    },
+                    "site_id":{
+                      "type":"string",
+                      "description":{
+                        "en":"Site or location identifier from where the order was created, according to a predefined list.",
+                        "pt":"Identificador do site ou local de onde a order foi criada, conforme lista pré-determinada.",
+                        "es":"Identificador del sitio o ubicación desde donde se creó la orden, según lista predeterminada."
+                      },
+                      "example": "MLB",
+                      "enum": [
+                        {
+                          "title": "MLB",
+                          "description": {
+                            "en": "Order created in Brazil.",
+                            "es": "Orden creada en Brasil.",
+                            "pt": "Order criada no Brasil."
+                          }
+                        },
+                        {
+                          "title": "MLA",
+                          "description": {
+                            "en": "Order created in Argentina.",
+                            "es": "Orden creada en Argentina.",
+                            "pt": "Order criada na Argentina."
+                          }
+                        },
+                        {
+                          "title": "MCO",
+                          "description": {
+                            "en": "Order created in Colombia.",
+                            "es": "Orden creada en Colombia.",
+                            "pt": "Order criada na Colombia."
+                          }
+                        },
+                        {
+                          "title": "MLU",
+                          "description": {
+                            "en": "Order created in Uruguay.",
+                            "es": "Orden creada en Uruguay.",
+                            "pt": "Order criada no Urugai."
+                          }
+                        },
+                        {
+                          "title": "MLM",
+                          "description": {
+                            "en": "Order created in Mexico.",
+                            "es": "Orden creada en Mexico.",
+                            "pt": "Order criada no Mexico."
+                          }
+                        },
+                        {
+                          "title": "MLC",
+                          "description": {
+                            "en": "Order created in Chile.",
+                            "es": "Orden creada en Chile.",
+                            "pt": "Order criada no Chile."
+                          }
+                        }
+                      ]
+                    },
+                    "status":{
+                      "type":"string",
+                      "example":"failed",
+                      "description":{
+                        "en":"Current status of the order.",
+                        "pt":"Status atual da order.",
+                        "es":"Estado actual de la orden."
+                      },
+                      "enum": [
+                        {
+                          "title": "failed",
+                          "description": {
+                            "en": ".",
+                            "es": ".",
+                            "pt": "."
+                          }
+                        }
+                      ]
+                    },
+                    "transactions":{
+                      "type":"object",
+                      "description":{
+                        "en":"Contains information about the transaction of a payment order.",
+                        "pt":"Contém informações sobre a transação de uma ordem de pagamento.",
+                        "es":"Contiene información sobre la transacción de una orden de pago."
+                      },
+                      "properties":{
+                        "payments":[
+                          {
+                            "type":"object",
+                            "description":{
+                              "en":"Contains information about the payment of the order.",
+                              "pt":"Contém informações sobre o pagamento da ordem.",
+                              "es":"Contiene información sobre el pago de la orden."
+                            },
+                            "properties":{
+                              "id":{
+                                "type":"string",
+                                "example":"123",
+                                "description":{
+                                  "pt":"Identificador de pagamento correspondente ao meio de pagamento.",
+                                  "en":"Payment ID corresponding to the payment method.",
+                                  "es":"ID de pago correspondiente al medio de pago."
+                                }
+                              },
+                              "status":{
+                                "type":"string",
+                                "example":"approved",
+                                "description":{
+                                  "en":"Payment status",
+                                  "pt":"Status do pagamento",
+                                  "es":"Estado del pago"
+                                }
+                              },
+                              "payment_method":{
+                                "type":"object",
+                                "description":{
+                                  "en":"Information about the payment method.",
+                                  "pt":"Informação sobre o meio de pagamento.",
+                                  "es":"Información sobre el medio de pago."
+                                },
+                                "properties":{
+                                  "id":{
+                                    "type":"string",
+                                    "example":"visa",
+                                    "description":{
+                                      "en":"Identifier of the payment method selected to make the payment. If it's a card payment, it will show the brand.",
+                                      "pt":"Identificador do meio de pagamento selecionado para efetuar o pagamento. Caso seja um pagamento com cartão, indicará a bandeira.",
+                                      "es":"Identificador del medio de pago seleccionado para realizar el pago. En caso de ser un pago con tarjeta, indicará la bandera."
+                                    }
+                                  },
+                                  "type":{
+                                    "type":"string",
+                                    "example":"credit_card",
+                                    "description":{
+                                      "en":"Indicates the type of payment method selected to make the payment (debit card, credit card, bank transfer, etc.).",
+                                      "pt":"Indica o tipo de meio de pagamento selecionado para efetuar o pagamento (cartão de débito, cartão de crédito, transferência bancária, etc.).",
+                                      "es":"Indica el tipo de medio de pago seleccionado para realizar el pago (tarjeta de débito, tarjeta de crédito, transferencia, etc.)."
+                                    }
+                                  },
+                                  "installments":{
+                                    "type":"integer",
+                                    "example":1,
+                                    "description":{
+                                      "en":"Number of installments selected when creating the payment.",
+                                      "pt":"Número de parcelas selecionado ao momento da criação do pagamento.",
+                                      "es":"Cantidad de cuotas seleccionadas al momento de la creación del pago."
+                                    }
+                                  },
+                                  "issuer_id":{
+                                    "type":"string",
+                                    "example":"11233",
+                                    "description":{
+                                      "en":"Identifier of the card issuer being used in a credit or debit card payment.",
+                                      "pt":"Identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.",
+                                      "es":"Identificador del emisor de la tarjeta que se está utilizando en un pago con tarjeta de crédito o débito."
+                                    }
+                                  },
+                                  "statement_descriptor":{
+                                    "type":"string",
+                                    "example":"MERCADOPAGO",
+                                    "description":{
+                                      "en":"Description that the payment will appear with in the payer's card statement.",
+                                      "pt":"Descrição com a qual o pagamento aparecerá no resumo do cartão do pagador.",
+                                      "es":"Descripción con la que aparecerá el pago en el resumen de la tarjeta del pagador."
+                                    }
+                                  }
+                                }
+                              },
+                              "currency":{
+                                "$ref": "#/components/schemas/currency"
+                              }
+                            }
+                          }
+                        ],
+                        "refunds":[
+                          {
+                            "type":"object",
+                            "description":{
+                              "en":"Information of refunds related to the payment, in case there is any.",
+                              "pt":"Informações de reembolsos relacionados ao pagamento, caso haja algum.",
+                              "es":"Información sobre reembolsos relacionados con el pago, en caso de que haya alguno."
+                            },
+                            "properties":{
+                              "id":{
+                                "type":"string",
+                                "example":"123",
+                                "description":{
+                                  "en":"Refund identifier.",
+                                  "pt":"Identificador do reembolso.",
+                                  "es":"Identificador del reembolso."
+                                }
+                              },
+                              "amount":{
+                                "type":"string",
+                                "example":"24.90",
+                                "description":{
+                                  "en":"Refund amount.",
+                                  "pt":"Valor de reembolso.",
+                                  "es":"Monto del reembolso."
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "payer":{
+                      "type":"object",
+                      "description":{
+                        "en":"Payer information.",
+                        "pt":"Informações do pagador.",
+                        "es":"Información del pagador."
+                      },
+                      "properties":{
+                        "email":{
+                          "type":"string",
+                          "example":"testuser@email.com",
+                          "description":{
+                            "en":"Payer email.",
+                            "pt":"E-mail do pagador.",
+                            "es":"Correo electrónico del pagador."
+                          }
+                        },
+                        "first_name":{
+                          "type":"string",
+                          "example":"John",
+                          "description":{
+                            "en":"Payer first name",
+                            "pt":"Nome do pagador",
+                            "es":"Nombre del pagador"
+                          }
+                        },
+                        "last_name":{
+                          "type":"string",
+                          "example":"Doe",
+                          "description":{
+                            "en":"Payer last name",
+                            "pt":"Sobrenome do pagador",
+                            "es":"Apellido del pagador"
+                          }
+                        },
+                        "identification":{
+                          "type":"object",
+                          "description":{
+                            "en":"Payer's identification information.",
+                            "pt":"Informações de identificação do pagador.",
+                            "es":"Información relativa a la identificación del pagador."
+                          },
+                          "properties":{
+                            "type":{
+                              "type":"string",
+                              "example":"CPF",
+                              "description":{
+                                "en":"Payer's identification document type.",
+                                "pt":"Tipo de documento de identificação do pagador.",
+                                "es":"Tipo de documento del pagador."
+                              }
+                            },
+                            "number":{
+                              "type":"string",
+                              "example":"123456789",
+                              "description":{
+                                "en":"Payer's identification document number.",
+                                "pt":"Número do documento de identificação do pagador.",
+                                "es":"Número de documento del pagador."
+                              }
+                            }
+                          }
+                        },
+                        "phone":{
+                          "type":"object",
+                          "description":{
+                            "en":"Payer's phone information.",
+                            "pt":"Informações de telefone do pagador.",
+                            "es":"Información de teléfono del pagador."
+                          },
+                          "properties":{
+                            "area_code":{
+                              "type":"string",
+                              "example":"11",
+                              "description":{
+                                "en":"Payer's phone area code.",
+                                "pt":"Código de área do telefone do pagador.",
+                                "es":"Código de área del teléfono del pagador."
+                              }
+                            },
+                            "number":{
+                              "type":"string",
+                              "example":"123456789",
+                              "description":{
+                                "en":"Payer's phone number.",
+                                "pt":"Número do telefone do pagador.",
+                                "es":"Número de teléfono del pagador."
+                              }
+                            }
+                          }
+                        },
+                        "address":{
+                          "type":"object",
+                          "description":{
+                            "en":"Payer's address information",
+                            "pt":"Informações de endereço do pagador.",
+                            "es":"Información relativa a la dirección del pagador."
+                          },
+                          "properties":{
+                            "zip_code":{
+                              "type":"string",
+                              "example":"12345678",
+                              "description":{
+                                "en":"Payer's address zip code.",
+                                "pt":"CEP do endereço do pagador.",
+                                "es":"Código postal de la dirección del pagador."
+                              }
+                            },
+                            "street_name":{
+                              "type":"string",
+                              "example":"Rua Teste",
+                              "description":{
+                                "en":"Payer's address street name.",
+                                "pt":"Nome da rua do endereço do pagador.",
+                                "es":"Calle de la dirección del pagador."
+                              }
+                            },
+                            "street_number":{
+                              "type":"string",
+                              "example":"123",
+                              "description":{
+                                "en":"Payer's address number.",
+                                "pt":"Númerodo endereço do pagador.",
+                                "es":"Número de la dirección del pagador."
+                              }
+                            }
+                          }
+                        },
+                        "authentication_type":{
+                          "type":"string",
+                          "example":"gmail",
+                          "description":{
+                            "en":"Payer authentication type.",
+                            "pt":"Tipo de autenticação do pagador.",
+                            "es":"Tipo de autenticación del pagador."
+                          }
+                        },
+                        "registration_date":{
+                          "type":"string",
+                          "example":"2019-01-01T15:01:01.000Z",
+                          "description":{
+                            "en":"Date of registration of the payer on the site.",
+                            "pt":"Data de cadastro do pagador no site.",
+                            "es":"Fecha de registro del pagador en el sitio."
+                          }
+                        },
+                        "last_purchase":{
+                          "type":"string",
+                          "example":"2021-06-15T19:22:41.001-03:00",
+                          "description":{
+                            "en":"Date of the last purchase made by the payer on the website.",
+                            "pt":"Data da última compra realizada pelo pagador no site.",
+                            "es":"Fecha de la última compra realizada por el pagador en el sitio web. "
+                          }
+                        },
+                        "is_prime_user":{
+                          "type":"boolean",
+                          "example":true,
+                          "description":{
+                            "en":"Indicates if the payer is a premium user. \"true\" if they are, \"false\" if they are not.",
+                            "pt":"Indica se o pagador é um usuário premium. \"true\" caso seja premium, \"false\" caso não seja.",
+                            "es":"Indica si el pagador es un usuario prémium. \"true\" si lo es, \"false\" si no lo es."
+                          }
+                        },
+                        "is_first_purchase_online":{
+                          "type":"boolean",
+                          "example":true,
+                          "description":{
+                            "en":"Indicates if the payer has already made a purchase on the website before. \"true\" if they did, \"false\" if they did not.",
+                            "pt":"Indica se o pagador já realizou uma compra no site anteriormente. \"true\" se sim, \"false\" se não realizou.",
+                            "es":"Indica si el pagador ya ha realizado una compra en el sitio web anteriormente. \"true\" si lo hizo, \"false\" si no."
+                          }
+                        },
+                        "entity_type":{
+                          "type":"string",
+                          "example": "individual",
+                          "description":{
+                            "en":"Entity type of the payer (only for bank transfers). \"individual\" if the payer is an individual, \"association\" if they are an association.",
+                            "pt":"Tipo de entidade do pagador (apenas para transferências bancárias). \"individual\" se for um indivíduo, \"association\" se for uma associação.",
+                            "es":"Tipo de entidad del pagador (sólo para transferencias bancarias). \"individual\" si es un individuo, \"association\" si es una asociación. "
+                          }
+                        }
+                      }
+                    },
+                    "type_config":{
+                      "type":"object",
+                      "description":{
+                        "en":"Order type information.",
+                        "pt":"Informação do tipo de order.",
+                        "es":"Información del tipo de order."
+                      },
+                      "properties":{
+                        "capture_mode":{
+                          "type":"string",
+                          "description":{
+                            "pt":"Modo de captura da order",
+                            "en":"Order capture mode",
+                            "es":"Modo de captura de la orden"
+                          },
+                          "example":"manual",
+                          "enum": [
+                            {
+                              "title": "manual",
+                              "description": {
+                                "en": "Order's capture will be made manually.",
+                                "es": "La captura de la orden se hará de manera manual.",
+                                "pt": "A captura da ordem será realizada manualmente."
+                              }
+                            },
+                            {
+                              "title": "automatic",
+                              "description": {
+                                "en": "Order's capture will be made automatically.",
+                                "es": "La captura de la orden se hará de manera automática.",
+                                "pt": "A captura da ordem será realizada automaticamente."
+                              }
+                            }
+                          ]
+                        },
+                        "ip_address":{
+                          "type":"string",
+                          "description":{
+                            "en":"Internal protocol (IP) that comes from the request (for bank transfer only).",
+                            "pt":"Protocolo interno (IP) que provém do request (apenas para transferência bancária).",
+                            "es":"Protocolo interno (IP) que proviene del request (solo para transferencia bancaria)."
+                          }
+                        },
+                        "callback_url":{
+                          "type":"string",
+                          "example":"www.mercadopago.com",
+                          "description":{
+                            "en":"URL where Mercado Pago does the final redirect (only for bank transfers).",
+                            "pt":"URL para a qual o Mercado Pago faz o redirecionamento final (apenas para transferência bancária).",
+                            "es":"URL a la cual Mercado Pago hace la redirección final (sólo para transferencia bancaria)."
+                          }
+                        }
+                      }
+                    },
+                    "total_amount":{
+                      "type":"string",
+                      "example":"24.90",
+                      "description":{
+                        "pt":"Valor total a ser pago.",
+                        "en":"Total amount to be paid.",
+                        "es":"Monto total a pagar."
+                      }
+                    },
+                    "currency":{
+                      "$ref": "#/components/schemas/currency"
+                    },
+                    "processing_mode":{
+                      "type":"string",
+                      "description":{
+                        "pt":"Modo de processamento da order",
+                        "en":"Order processing mode",
+                        "es":"Modo de procesamiento de la orden"
+                      },
+                      "example": "automatic",
+                      "enum": [
+                        {
+                          "title": "manual",
+                          "description": {
+                            "en": "Order's processing will be made manually.",
+                            "es": "El procesamiento de la orden se hará de manera manual.",
+                            "pt": "O processamento da ordem será realizado manualmente."
+                          }
+                        },
+                        {
+                          "title": "automatic",
+                          "description": {
+                            "en": "Order's processing will be made automatically.",
+                            "es": "El procesamiento de la orden se hará de manera automática.",
+                            "pt": "O processamento da ordem será feito automaticamente."
+                          }
+                        }
+                      ]
+                    },
+                    "description":{
+                      "type":"string",
+                      "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
+                      "description":{
+                        "en":"Description of the product purchased, the reason for the payment order, or the description of a product in the marketplace.",
+                        "pt":"Descrição do produto comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
+                        "es":"Descripción del producto comprado, el motivo de la orden de pago, o la descripción de un producto en el marketplace."
+                      }
+                    },
+                    "marketplace":{
+                      "type":"string",
+                      "example":"MERCADOLIVRE",
+                      "description":{
+                        "en":"Name of the marketplace where the order was made.",
+                        "pt":"Nome do marketplace onde a order foi realizada.",
+                        "es":"Nombre del marketplace donde se realizó la orden."
+                      }
+                    },
+                    "marketplace_fee":{
+                      "type":"string",
+                      "example":"2,00%",
+                      "description":{
+                        "pt":"Comissão (taxa) correspondente ao marketplace.",
+                        "en":"Marketplace fee",
+                        "es":"Comisión (fee) que corresponde al marketplace."
+                      }
+                    },
+                    "campaign_id":{
+                      "type":"string",
+                      "example":"123",
+                      "description":{
+                        "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
+                        "pt":"É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
+                        "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
+                      }
+                    },
+                    "items":{
+                      "type":"array",
+                      "description":{
+                        "en":"Information about the list of items to be paid.",
+                        "pt":"Informações sobre a lista de itens a serem pagos.",
+                        "es":"Información sobre la lista de ítems a pagar."
+                      },
+                      "items":{
+                        "type":"object",
+                        "properties":{
+                          "title":{
+                            "type":"string",
+                            "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
+                            "description":{
+                              "en":"Item name.",
+                              "pt":"Nome do item.",
+                              "es":"Nombre del ítem."
+                            }
+                          },
+                          "unit_price":{
+                            "type":"string",
+                            "example":"1239.90",
+                            "description":{
+                              "en":"Unit price of the purchased item.",
+                              "es":"Precio unitario del ítem comprado.",
+                              "pt":"Preço unitário do item comprado."
+                            }
+                          },
+                          "quantity":{
+                            "type":"Integer",
+                            "example":4,
+                            "description":{
+                              "en":"Purchased items quantity.",
+                              "pt":"Quantidade de itens comprados.",
+                              "es":"Cantidad de ítems comprados."
+                            }
+                          },
+                          "code":{
+                            "type":"string",
+                            "example":"1234",
+                            "description":{
+                              "en":"Item's identification code.",
+                              "pt":"Código identificador do item.",
+                              "es":"Código identificador del ítem."
+                            }
+                          },
+                          "description":{
+                            "type":"string",
+                            "example":"Point product for card payments via Bluetooth.",
+                            "description":{
+                              "en":"Purchased item description.",
+                              "pt":"Descrição do item comprado.",
+                              "es":"Descripción del ítem comprado."
+                            }
+                          },
+                          "type":{
+                            "type":"string",
+                            "example":"test",
+                            "description":{
+                              "en": "Type of item being purchased.",
+                              "pt": "Tipo de item sendo comprado.",
+                              "es": "Tipo de ítem que se está comprando."
+                            }
+                          },
+                          "picture_url":{
+                            "type":"string",
+                            "example":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png",
+                            "description":{
+                              "en":"Image URL corresponding to the item.",
+                              "pt":"URL da imagem correspondente ao item.",
+                              "es":"URL de la imagen correspondiente al ítem."
+                            }
+                          },
+                          "warranty":{
+                            "type":"boolean",
+                            "example":true,
+                            "description":{
+                              "en":"Indicates if the product has warranty or not. \"true\" if it does, \"false\" if it doesn't.",
+                              "pt":"Indica se o produto tem garantia ou não. \"true\" se tiver, \"false\" se não.",
+                              "es":"Indica si el producto tiene garantía o no. \"true\" si tiene, \"false\" si no."
+                            }
+                          },
+                          "category_descriptor":{
+                            "type":"object",
+                            "description":{
+                              "en":"Information about the item category.",
+                              "pt":"Informações sobre a categoria do item.",
+                              "es":"Información sobre la categoría del ítem."
+                            },
+                            "properties":{
+                              "event_date":{
+                                "type":"string",
+                                "example":"2023-12-31T09:37:52.000-04:00",
+                                "description":{
+                                  "en":"Event Date. The format should be \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                                  "pt":"Data do Evento. O formato deve ser \"yyyy-MM-ddTHH:mm:ss.sssZ\". ",
+                                  "es":"Fecha del Evento. El formato debe ser \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                                }
+                              },
+                              "passenger":{
+                                "type":"object",
+                                "description":{
+                                  "en":"Information about the passenger.",
+                                  "pt":"Informações sobre o passageiro.",
+                                  "es":"Información sobre el pasajero."
+                                },
+                                "properties":{
+                                  "first_name":{
+                                    "type":"string",
+                                    "description":{
+                                      "en":"Passenger's first name.",
+                                      "pt":"Nome do passageiro.",
+                                      "es":"Nombre del pasajero."
+                                    },
+                                    "example": "John"
+                                  },
+                                  "last_name":{
+                                    "type":"string",
+                                    "description":{
+                                      "en":"Passenger's last name.",
+                                      "pt":"Sobrenome do passageiro.",
+                                      "es":"Apellido del pasajero."
+                                    },
+                                    "example": "Doe"
+                                  },
+                                  "identification_type":{
+                                    "type":"string",
+                                    "description":{
+                                      "en":"Passenger's identification type.",
+                                      "pt":"Tipo de identificação do passageiro.",
+                                      "es":"Tipo de identificación del pasajero."
+                                    },
+                                    "example": "CPF"
+                                  },
+                                  "identification_number":{
+                                    "type":"string",
+                                    "description":{
+                                      "en":"Passenger's identification number.",
+                                      "pt":"Número de identificação do passageiro.",
+                                      "es":"Número de identificación del pasajero."
+                                    },
+                                    "example": "123456789"
+                                  }
+                                }
+                              },
+                              "route":{
+                                "type":"object",
+                                "description":{
+                                  "en":"Information about de route.",
+                                  "pt":"Informações de rota.",
+                                  "es":"Información sobre la ruta."
+                                },
+                                "properties":{
+                                  "departure":{
+                                    "type":"string",
+                                    "description":{
+                                      "en":"Departure city.",
+                                      "pt":"Cidade de partida.",
+                                      "es":"Ciudad de partida."
+                                    },
+                                    "example": "SP"
+                                  },
+                                  "destination":{
+                                    "type":"string",
+                                    "description":{
+                                      "en":"Destination city.",
+                                      "pt":"Cidade de destino",
+                                      "es":"Ciudad de destino"
+                                    },
+                                    "example": "RJ"
+                                  },
+                                  "departure_date_time":{
+                                    "type":"string",
+                                    "description":{
+                                      "en":"Departure date and time.",
+                                      "pt":"Data e hora de partida.",
+                                      "es":"Fecha y hora de salida."
+                                    },
+                                    "example": "2023-12-31T09:37:52.000-04:00"
+                                  },
+                                  "arrival_date_time":{
+                                    "type":"string",
+                                    "description":{
+                                      "en":"Arrival date and time.",
+                                      "pt":"Data e hora de chegada.",
+                                      "es":"Fecha y hora de llegada."
+                                    },
+                                    "example": "2023-12-31T09:37:52.000-04:00"
+                                  },
+                                  "company":{
+                                    "type":"string",
+                                    "description":{
+                                      "en":"Company name.",
+                                      "pt":"Nome da empresa.",
+                                      "es":"Nombre de la empresa."
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "coupon":{
+                    "type":"object",
+                    "description":{
+                      "en":"Discount campaign.",
+                      "pt":"Campanha de desconto.",
+                      "es":"Campaña de descuento."
+                    },
+                    "properties":{
+                      "code":{
+                        "type":"string",
+                        "description":{
+                          "en":"Specific code of the coupon participating in the discount campaign.",
+                          "pt":"Código específico do cupom pertencente à campanha de desconto.",
+                          "es":"Código específico del cupón perteneciente a la campaña de descuento."
+                        },
+                        "example": "123"
+                      },
+                      "amount":{
+                        "type":"string",
+                        "example":"4.90",
+                        "description":{
+                          "en":"Value of the discount coupon.",
+                          "pt":"É o valor do cupom de desconto.",
+                          "es":"Es el valor del cupón de descuento."
+                        }
+                      }
+                    }
+                  },
+                    "splits":{
+                      "type":"array",
+                      "description":{
+                        "en":"List of payment splits to be made from the total amount.",
+                        "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
+                        "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties":{
+                        "id":{
+                          "type":"string",
+                          "example":"123",
+                          "description":{
+                            "en":"Split identification.",
+                            "pt":"Identificador do split.",
+                            "es":"Identificador del split."
+                          }
+                        },
+                        "collector_id":{
+                          "type":"number",
+                          "example":448876418,
+                          "description":{
+                            "en":"It is the identification of the user who receives the money.",
+                            "pt":"É identificador do usuário que recebe o dinheiro.",
+                            "es":"Es el identificador del usuario que recibe el dinero."
+                          }
+                        },
+                        "type":{
+                          "type":"string",
+                          "description":{
+                            "pt":"Tipo de split realizado",
+                            "en":"Type of split made",
+                            "es":"Tipo de split realizado"
+                          },
+                          "enum": [
+                            {
+                              "title": "amount",
+                              "description": {
+                                "en": "The split will be performed by amount.",
+                                "es": "El criterio para el split será el valor.",
+                                "pt": "O critério para o split será o valor."
+                              }
+                            },
+                            {
+                              "title": "percentage",
+                              "description": {
+                                "en": "The split will be performed by percentage.",
+                                "es": "El criterio para el split será el porcentaje.",
+                                "pt": "O critério para o split será a porcentagem."
+                              }
+                            }
+                          ],
+                          "example": "amount"
+                        },
+                        "value":{
+                          "type":"string",
+                          "example":"50",
+                          "description":{
+                            "pt":"Valor do split",
+                            "en":"Split value",
+                            "es":"Valor del split"
+                          }
+                        }
+                      }
+                      }
+                    },
+                    "shipment":{
+                    "type":"object",
+                    "description":{
+                      "en":"Information about the product shipment.",
+                      "pt":"Informações sobre o envio do produto.",
+                      "es":"Información sobre el envío del producto."
+                    },
+                    "properties":{
+                      "receiver_address":{
+                        "type":"object",
+                        "description":{
+                          "en":"Object comprising the address of the receiver of the purchase.",
+                          "pt":"Objeto composto pelo endereço do destinatário da compra.",
+                          "es":"Objeto compuesto por la dirección del destinatario de la compra."
+                        },
+                        "properties":{
+                          "street_name":{
+                            "type":"string",
+                            "description":{
+                              "en":"Receiver's street name.",
+                              "pt":"Rua do destinatário.",
+                              "es":"Calle del destinatario."
+                            },
+                            "example": "Test Street"
+                          },
+                          "street_number":{
+                            "type":"number",
+                            "description":{
+                              "en":"Receiver's street number.",
+                              "pt":"Número do endereço do destinatário.",
+                              "es":"Número de la dirección del destinatario."
+                            },
+                            "example": "123"
+                          },
+                          "zip_code":{
+                            "type":"string",
+                            "description":{
+                              "en":"Receiver's adress zip code.",
+                              "pt":"CEP do endereço do destinatário.",
+                              "es":"Código postal de la dirección del destinatario."
+                            },
+                            "example": "1234"
+                          },
+                          "city_name":{
+                            "type":"string",
+                            "description":{
+                              "en":"Receiver's adress city Name.",
+                              "pt":"Cidade do endereço do destinatário.",
+                              "es":"Ciudad de la dirección del destinatario."
+                            },
+                            "example": "SP"
+                          },
+                          "state_name":{
+                            "type":"string",
+                            "description":{
+                              "en":"State in which the city is located.",
+                              "pt":"Estado onde a cidade está localizada.",
+                              "es":"Provincia donde la ciudad está ubicada."
+                            },
+                            "example": "SP"
+                          },
+                          "floor":{
+                            "type":"string",
+                            "description":{
+                              "en":"Delivery address floor, in case it is an apartment.",
+                              "pt":"Andar do endereço de entrega, se for um apartamento.",
+                              "es":"Piso de la dirección de entrega, en caso de ser un apartamento."
+                            },
+                            "example": "1"
+                          },
+                          "apartment":{
+                            "type":"string",
+                            "description":{
+                              "en":"Delivery address apartment number.",
+                              "pt":"Número do apartamento do endereço de entrega.",
+                              "es":"Número de departamento de la dirección de entrega."
+                            },
+                            "example": "A"
+                          }
+                        }
+                      },
+                      "width":{
+                        "type":"number",
+                        "description":{
+                          "en":"Width of barcode.",
+                          "pt":"Largura do código de barras.",
+                          "es":"Ancho del código de barras."
+                        }
+                      },
+                      "height":{
+                        "type":"number",
+                        "description":{
+                          "en":"Height of barcode.",
+                          "pt":"Altura do código de barras.",
+                          "es":"Altura del código de barras."
+                        }
+                      },
+                      "express_shipment":{
+                        "type":"boolean",
+                        "example":true,
+                        "description":{
+                          "en":"Indicates if the shipment is express or not. \"1\" if it is, \"0\" if it isn't.",
+                          "pt":"Indica se o envio é expresso ou não. \"1\" se for, \"0\" se não for.",
+                          "es":"Indica si el envío es express o no. \"1\" si lo es, \"0\" si no lo es."
+                        }
+                      },
+                      "pick_up_on_seller":{
+                        "type":"boolean",
+                        "example":true,
+                        "description":{
+                          "en":"Indicates if the customer will pick up the product at the seller's address. \"1\" if it is, \"0\" if it isn't.",
+                          "pt":"Indica se o cliente irá retirar o produto no endereço do vendedor. \"1\" se for, \"0\" se não for.",
+                          "es":"Indica si el cliente recogerá el producto en la dirección del vendedor. \"1\" si lo es, \"0\" si no lo es."
+                        }
+                      }
+                    }
+                  },
+                    "expiration_time":{
+                    "type": "string",
+                    "format": "date",
+                    "description": {
+                      "en": "Payment’s expiration date. The valid format of the attribute is \"yyyy-MM-dd HH:mm:ss.SSSz\".",
+                      "pt": "Data de expiração do pagamento. O formato válido do atributo é \"yyyy-MM-dd HH:mm:ss.SSSz\". ",
+                      "es": "Fecha de vencimiento del pago. El formato válido del atributo \"yyyy-MM-dd HH:mm:ss.SSSz\"."
+                    },
+                    "example": "2022-11-17T09:37:52.000-04:00"
+                  }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error. Invalid ID supplied",
+              "pt": "Erro. ID inválido.",
+              "es": "Error. ID inválido."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "400",
+                          "description": {
+                            "en": "Descripción del error y workarround",
+                            "es": "Descripción del error y workarround",
+                            "pt": "Descripción del error y workarround"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error. Access Token not authorized.",
+              "pt": "Erro. Access Token não autorizado.",
+              "es": "Error. Access Token no autorizado."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "401",
+                          "description": {
+                            "en": "Descripción del error y workarround",
+                            "es": "Descripción del error y workarround",
+                            "pt": "Descripción del error y workarround"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Generic error .",
+              "pt": "Erro genérico.",
+              "es": "Error genérico."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Descripción del error y workarround",
+                            "es": "Descripción del error y workarround",
+                            "pt": "Descripción del error y workarround"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create order",
+          "pt": "Criar ordem",
+          "es": "Crear orden"
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "currency": {
+        "type": "string",
+        "required":true,
+        "description": {
+          "en": "Identifier of the currency used in the payment. We currently have the following options.",
+          "pt": "Identificador da moeda utilizada no pagamento. Atualmente, possuímos as opções a seguir.",
+          "es": "Identificador de la moneda utilizada en el pago. Actualmente tenemos las siguientes opciones."
+        },
+        "example": "BRL",
+        "enum": [
+          {
+            "title": "ARS",
+            "description": {
+              "en": "Argentine peso.",
+              "es": "Peso argentino.",
+              "pt": "Peso argentino."
+            }
+          },
+          {
+            "title": "BRL",
+            "description": {
+              "en": "Brazilian real.",
+              "es": "Real brasilero.",
+              "pt": "Real brasileiro."
+            }
+          },
+          {
+            "title": "CLP",
+            "description": {
+              "en": "Chilean peso.",
+              "es": "Peso chileno.",
+              "pt": "Peso chileno."
+            }
+          },
+          {
+            "title": "MXN",
+            "description": {
+              "en": "Mexican peso.",
+              "es": "Peso mexicano.",
+              "pt": "Peso mexicano."
+            }
+          },
+          {
+            "title": "COP",
+            "description": {
+              "en": "Colombian peso.",
+              "es": "Peso colombiano.",
+              "pt": "Peso colombiano."
+            }
+          },
+          {
+            "title": "PEN",
+            "description": {
+              "en": "Peruvian sol.",
+              "es": "Sol peruano.",
+              "pt": "Sol peruano."
+            }
+          },
+          {
+            "title": "UYU",
+            "description": {
+              "en": "Uruguayan peso.",
+              "es": "Peso uruguayo.",
+              "pt": "Peso uruguaio."
+            }
+          },
+          {
+            "title": "USD",
+            "description": {
+              "en": "US dollar.",
+              "es": "US dollar.",
+              "pt": "US dollar."
+            }
+          }
+        ]
+      }
+    }
+  }
+}
