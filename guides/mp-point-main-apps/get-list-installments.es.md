@@ -96,7 +96,7 @@ paymentInstallmentTools.getInstallmentsAmount(callback, amount);
 
 |Campo|Descripción|
 |---|---|
-|**callback ((MPResponse<List<InstallmentAmount>>) -> Unit)**|Función de respuesta con el resultado de la solicitud de la lista de mensualidades.|
+|****callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -&gt; Unit)****|Función de respuesta con el resultado de la solicitud de la lista de mensualidades.|
 |**amount (String)**|Monto con el cual se determina la lista de mensualidades.|
 |**installment (Int)**|Número de mensualidades.|
 |**amount (Double)**|Monto de cada mensualidade.|
