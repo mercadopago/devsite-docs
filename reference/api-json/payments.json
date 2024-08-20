@@ -5471,9 +5471,9 @@
           "name": "collector.id",
           "in": "query",
           "description": {
-            "en": "Parameter used to filter payment searches by the identification of the person who receives the payment (collector).",
-            "pt": "Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador da pessoa que recebe o pagamento (collector).",
-            "es": "Parámetro utilizado para filtrar la búsqueda de pagos por el identificador de la persona que recibe el pago (collector)."
+            "en": "Parameter used to filter payment searches by the identification of the person who receives the payment (collector). It cannot be used in conjunction with the \"payer.id\" search parameter, you must provide only one of them.",
+            "pt": "Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador da pessoa que recebe o pagamento (collector). Não pode ser utilizado em conjunto com o parâmetro de busca \"payer.id\", você deve fornecer apenas um deles.",
+            "es": "Parámetro utilizado para filtrar la búsqueda de pagos por el identificador de la persona que recibe el pago (collector). No puede ser utilizado en conjunto con el parámetro de búsqueda \"payer.id\", debes proporcionar sólo uno de ellos."
           },
           "required": false,
           "schema": {
@@ -5485,9 +5485,9 @@
           "name": "payer.id",
           "in": "query",
           "description": {
-            "en": "Parameter used to filter searches by the identification of the person who makes the payment (payer).",
-            "pt": "Parâmetro utilizado para filtrar a busca pelo identificador da pessoa que efetua o pagamento (payer).",
-            "es": "Parámetro utilizado para filtrar la búsqueda por el identificador de la persona que realiza el pago (payer)."
+            "en": "Parameter used to filter searches by the identification of the person who makes the payment (payer). It cannot be used in conjunction with the \"collector.id\" search parameter, you must provide only one of them.",
+            "pt": "Parâmetro utilizado para filtrar a busca pelo identificador da pessoa que efetua o pagamento (payer). Não pode ser utilizado em conjunto com o parâmetro de busca \"collector.id\", você deve fornecer apenas um deles.",
+            "es": "Parámetro utilizado para filtrar la búsqueda por el identificador de la persona que realiza el pago (payer). No puede ser utilizado en conjunto con el parámetro de búsqueda \"collector.id\", debes proporcionar sólo uno de ellos."
           },
           "required": false,
           "schema": {
