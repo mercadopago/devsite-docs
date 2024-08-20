@@ -39,7 +39,7 @@ bluetoothDiscoverDevices.getPairedDevices(callback);
 
 |Campo|Descripción|
 |---|---|
-|**callback ((MPResponse<List<BluetoothDeviceModel>>) -> Unit)**| Función de devolución del llamado que ofrece los dispositivos emparejados como resultado. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, en una lista de modelos `BluetoothDeviceModel`.|
+|**callback ((MPResponse&lt;List&lt;BluetoothDeviceModel>>) -> Unit)**| Función de devolución del llamado que ofrece los dispositivos emparejados como resultado. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, en una lista de modelos `BluetoothDeviceModel`.|
 |**id (String)**| Identificador único del dispositivo bluetooth.|
 |**boundState (Int)**| Estado de emparejamiento del dispositivo. Puede tener diferentes valores representando estados distintos.|
 |**name (String)**| Nombre del dispositivo ofrecido por el sistema operacional.|
@@ -83,7 +83,7 @@ bluetoothDiscoverDevices.getPairedPrinterDevices(callback);
 
 |Campo|Descripción|
 |---|---|
-|**callback ((MPResponse<List<BluetoothDeviceModel>>) -> Unit)**| Función de devolución del llamado que ofrece las impresonas emparejadas como resultado. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito en una lista de modelos `BluetoothDeviceModel`.|
+|**callback ((MPResponse&lt;List&lt;BluetoothDeviceModel>>) -> Unit)**| Función de devolución del llamado que ofrece las impresonas emparejadas como resultado. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito en una lista de modelos `BluetoothDeviceModel`.|
 |**id (String)**| Identificador único del dispositivo bluetooth.|
 |**boundState (Int)**| Estado de emparejamiento del dispositivo. Puede tener diferentes valores representando estados distintos.|
 |**name (String)**| Nombre del dispositivo ofrecido por el sistema operacional.|
@@ -154,7 +154,7 @@ bluetoothDiscoverDevices.startDiscovery(callback);
 
 |Campo|Descripción|
 |---|---|
-|**callback ((MPResponse<BluetoothDiscoveryState>) -> Unit)**| Función de devolución del llamado que ofrece el resultado del proceso de búsqueda. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, teniendo un objeto `BluetoothDiscoveryState` que representa el estado actual de la búsqueda, eventos como el inicio y el fin de la búsqueda y los cambios en el dispositivo.|
+|**callback ((MPResponse&lt;BluetoothDiscoveryState>) -> Unit)**| Función de devolución del llamado que ofrece el resultado del proceso de búsqueda. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, teniendo un objeto `BluetoothDiscoveryState` que representa el estado actual de la búsqueda, eventos como el inicio y el fin de la búsqueda y los cambios en el dispositivo.|
 |**id (String)**| Identificador único del dispositivo bluetooth.|
 |**boundState (Int)**| Estado de emparejamiento del dispositivo. Puede tener diferentes valores representando estados distintos.|
 |**name (String)**| Nombre del dispositivo ofrecido por el sistema operacional.|

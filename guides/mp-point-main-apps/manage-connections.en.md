@@ -39,7 +39,7 @@ bluetoothDiscoverDevices.getPairedDevices(callback);
 
 |Field|Description|
 |---|---|
-|**callback ((MPResponse<List<BluetoothDeviceModel>>) -> Unit)**| Request response feature that provides the paired devices as a result. The `[MPResponse]` includes the status, the error (if any), and the details in case of success, in a list of `BluetoothDeviceModel` models.|
+|**callback ((MPResponse&lt;List&lt;BluetoothDeviceModel&gt;&gt;) -> Unit)**| Request response feature that provides the paired devices as a result. The `[MPResponse]` includes the status, the error (if any), and the details in case of success, in a list of `BluetoothDeviceModel` models.|
 |**id (String)**| Unique identifier of the bluetooth device.|
 |**boundState (Int)**| Pairing status of the device. It can have different values representing different status.|
 |**name (String)**| Name of the device provided by the operational system.|
@@ -83,7 +83,7 @@ bluetoothDiscoverDevices.getPairedPrinterDevices(callback);
 
 |Field|Description|
 |---|---|
-|**callback ((MPResponse<List<BluetoothDeviceModel>>) -> Unit)**| Request response feature that provides the paired printers as a result. The `[MPResponse]` includes the status, the error (if any) and the details in case of success in a list of `BluetoothDeviceModel` models.|
+|**callback ((MPResponse&lt;List&lt;BluetoothDeviceModel&gt;&gt;) -> Unit)**| Request response feature that provides the paired printers as a result. The `[MPResponse]` includes the status, the error (if any) and the details in case of success in a list of `BluetoothDeviceModel` models.|
 |**id (String)**| Unique identifier of the bluetooth device.|
 |**boundState (Int)**| Pairing status of the device. It can have different values representing different status.|
 |**name (String)**| Name of the device provided by the operational system.|
@@ -154,7 +154,7 @@ bluetoothDiscoverDevices.startDiscovery(callback);
 
 |Field|Description|
 |---|---|
-|**callback ((MPResponse<BluetoothDiscoveryState>) -> Unit)**| Request response feature that provides the result of the discovery process. The `[MPResponse]` includes the status, the error (if any), and the details in case of success, containing a `BluetoothDiscoveryState` object that represents the current status of the discovery, events such as the start and end of the discovery and changes in the device.|
+|**callback ((MPResponse&lt;BluetoothDiscoveryState&gt;) -> Unit)**| Request response feature that provides the result of the discovery process. The `[MPResponse]` includes the status, the error (if any), and the details in case of success, containing a `BluetoothDiscoveryState` object that represents the current status of the discovery, events such as the start and end of the discovery and changes in the device.|
 |**id (String)**| Unique identifier of the bluetooth device.|
 |**boundState (Int)**| Pairing status of the device. It can have different values representing different status.|
 |**name (String)**| Name of the device provided by the operational system.|

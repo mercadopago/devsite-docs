@@ -49,7 +49,7 @@ bluetoothPrinter.print(dataToPrint, callback);
 |Field|Description|
 |---|---|
 |**dataToPrint (String)**| Text sequence you want to print.|
-|**callback ((MPResponse<BluetoothPrinterResult>) -> Unit)**| Request response feature that provides the result of the print request. The `[MPResponse]` includes the status, the error (if any), and the details in case of success, which contain a `[BluetoothPrinterResult]` object.|
+|**callback ((MPResponse&lt;BluetoothPrinterResult&gt;) -> Unit)**| Request response feature that provides the result of the print request. The `[MPResponse]` includes the status, the error (if any), and the details in case of success, which contain a `[BluetoothPrinterResult]` object.|
 |**CONNECTION_FAILED**| Indicates that the connection failed.|
 |**ERROR_UNDEFINED**| Indicates that there is an error with an unknown cause. |
 |**SUCCESS**| Indicates that the printing was successful.|

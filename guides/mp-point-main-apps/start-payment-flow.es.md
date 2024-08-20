@@ -97,7 +97,7 @@ paymentFlow.launchPaymentFlowActivity(paymentFlowData, context, callback);
 |**launchPaymentFlowActivity**| Este método inicia el flujo de pago usando la app SmartPOS.|
 |**paymentFlowData (PaymentFlowData)**| Modelo de datos necesario para la apertura del flujo.|
 |**context (Context)**| Contexto de dónde se inciará el flujo.|
-|**callback (MPResponse<String> -> Unit)**| Ofrece el resultado de la apertura del flujo de pago.|
+|**allback (MPResponse&lt;String&gt; -> Unit)**| Ofrece el resultado de la apertura del flujo de pago.|
 
 ## Construir una URI para apertura del flujo de pago
 
@@ -141,7 +141,7 @@ final Uri uriResult = paymentFlow.buildCallbackUri(
 |---|---|
 |**callback (String)**| El monto de la URI para llamar el _deeplink_. Ejemplo: `tuHost://tuApp/prueba`.|
 |**methodCallback (String)**| Identifica si la URI es para un caso de éxito, de error u otra respuesta personalizada.|
-|**metadata (HashMap<String, String>)**| Campo opcional para enviar información a la pantalla de respuesta, en caso de que sea necesario mostrar detalles adicionales, como el nombre del cliente o el resumen de los productos comprados. |
+|**metadata (HashMap&lt;String, String&gt;)**| Campo opcional para enviar información a la pantalla de respuesta, en caso de que sea necesario mostrar detalles adicionales, como el nombre del cliente o el resumen de los productos comprados. |
 |**appID (String)**|  Identificador de la app principal. Usamos el nombre del paquete. Ejemplo: `com.tuempresa.tuapp`.|
 |**Uri**| La URI definida con la información ingresada.|
 

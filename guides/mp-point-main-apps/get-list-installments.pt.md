@@ -47,7 +47,7 @@ paymentInstallmentTools.getInstallmentsAmount(callback, amount);
 
 |Campo|Descrição|
 |---|---|
-|**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -&gt; Unit)**|Função de resposta com o resultado da solicitação da lista de parcelas.|
+|**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -> Unit)**|Função de resposta com o resultado da solicitação da lista de parcelas.|
 |**amount (String)**|Valor com o qual se determina a lista de parcelas.|
 |**installment (Int)**|Número de parcelas.|
 |**amount (Double)**|Valor de cada parcela.|

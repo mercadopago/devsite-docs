@@ -65,6 +65,6 @@ protected void onActivityResult(final int requestCode, final int resultCode,
 |---|---|
 |**resultCode (Int)**| Valor do `resultCode` em `onActivityResult`.|
 |**resultData (Intent)**|Valor de data em `onActivityResult`.|
-|**MPResponse<CameraScannerResponse>**| Objeto `[MPResponse]` que encapsula o estado, o erro (se houver) e os dados em caso de sucesso, que contêm um objeto `CameraScannerResponse`.|
+|**MPResponse&lt;CameraScannerResponse&gt;**| Objeto `[MPResponse]` que encapsula o estado, o erro (se houver) e os dados em caso de sucesso, que contêm um objeto `CameraScannerResponse`.|
 |**status (CameraScannerStatus)**| Define o estado da resposta. Pode ser **Ok** (a leitura foi exitosa), **Error** (houve um erro ou a leitura foi cancelada) ou **Unknown** (ocorreu um erro indeterminado).|
 |**message (String)**| Define a mensagem da resposta recebida pelo escâner. Se é ”Ok”, conterá o resultado da leitura do código.|

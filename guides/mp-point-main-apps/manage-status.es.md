@@ -48,7 +48,7 @@ bluetoothIgnitor.turnOn(callback);
 
 |Campo|Descripción|
 |---|---|
-|**callback ((MPResponse<Boolean>) -> Unit)**| Función de devolución del llamado que ofrece el resultado de la operación de activación. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito. La respuesta tiene un valor **booleano**, en el que `true` indica que el bluetooth se activó y `false`, la incapacidad de hacerlo.|
+|**callback ((MPResponse&lt;Boolean&gt;) -> Unit)**| Función de devolución del llamado que ofrece el resultado de la operación de activación. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito. La respuesta tiene un valor **booleano**, en el que `true` indica que el bluetooth se activó y `false`, la incapacidad de hacerlo.|
 
 ## Desactivar el bluetooth
 
@@ -97,7 +97,7 @@ bluetoothIgnitor.turnOff(callback);
 
 |Campo|Descripción|
 |---|---|
-|**callback ((MPResponse<Boolean>) -> Unit)**| Función de devolución del llamado que ofrece el resultado de la operación de desactivado. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito. La respuesta tiene un valor **booleano**, en el que `false` indica que o bluetooth se desactivó y `true`, la incapacidad de hacerlo.|
+|**callback ((MPResponse&lt;Boolean&gt;) -> Unit)**| Función de devolución del llamado que ofrece el resultado de la operación de desactivado. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito. La respuesta tiene un valor **booleano**, en el que `false` indica que o bluetooth se desactivó y `true`, la incapacidad de hacerlo.|
 
 ## Validar el estado actual del bluetooth
 
@@ -147,4 +147,4 @@ bluetoothIgnitor.getCurrentState(callback);
 
 |Campo|Descripción|
 |---|---|
-|**callback ((MPResponse<Boolean>) -> Unit)**| Función de devolución del lado que ofrece el resultado de la validación del estado atual del bluetooth. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito. La respuesta tiene un valor **booleano**, en el que `true` indica que el bluetooth está activado y `false`, su desactivación.|
+|**callback ((MPResponse&lt;Boolean&gt;) -> Unit)**| Función de devolución del lado que ofrece el resultado de la validación del estado atual del bluetooth. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito. La respuesta tiene un valor **booleano**, en el que `true` indica que el bluetooth está activado y `false`, su desactivación.|

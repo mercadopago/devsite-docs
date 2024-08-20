@@ -48,7 +48,7 @@ bluetoothIgnitor.turnOn(callback);
 
 |Field|Description|
 |---|---|
-|**callback ((MPResponse<Boolean>) -> Unit)**| Request response feature that provides the result of the activation operation. The `[MPResponse]` includes the status, the error (if any) and the details in case of an error. The response contains a **boolean** value where `true` indicates that the bluetooth was activated and `false` the inability to do so.|
+|**callback ((MPResponse&lt;Boolean&gt;) -> Unit)**| Request response feature that provides the result of the activation operation. The `[MPResponse]` includes the status, the error (if any) and the details in case of an error. The response contains a **boolean** value where `true` indicates that the bluetooth was activated and `false` the inability to do so.|
 
 ## Deactivate bluetooth
 
@@ -97,7 +97,7 @@ bluetoothIgnitor.turnOff(callback);
 
 |Field|Description|
 |---|---|
-|**callback ((MPResponse<Boolean>) -> Unit)**| Request response feature that provides the result of the deactivation operation. The `[MPResponse]` includes the status, the error (if any), and the details in case of success. The response contains a **boolean** value where `false` indicates that the bluetooth was deactivated and `true` the inability to do so.|
+|**callback ((MPResponse&lt;Boolean&gt;) -> Unit)**| Request response feature that provides the result of the deactivation operation. The `[MPResponse]` includes the status, the error (if any), and the details in case of success. The response contains a **boolean** value where `false` indicates that the bluetooth was deactivated and `true` the inability to do so.|
 
 ## Validate the current status of the bluetooth
 
@@ -147,4 +147,4 @@ bluetoothIgnitor.getCurrentState(callback);
 
 |Field|Description|
 |---|---|
-|**callback ((MPResponse<Boolean>) -> Unit)**| Request response feature that provides the result the validation of the current status of the bluetooth. The `[MPResponse]` includes the status, the error (if any) and the details in case of success. The response contains a **boolean** value where `true` indicates that the bluetooth is activated and `false` indicates its deactivation.|
+|**callback ((MPResponse&lt;Boolean&gt;) -> Unit)**| Request response feature that provides the result the validation of the current status of the bluetooth. The `[MPResponse]` includes the status, the error (if any) and the details in case of success. The response contains a **boolean** value where `true` indicates that the bluetooth is activated and `false` indicates its deactivation.|
