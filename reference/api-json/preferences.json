@@ -4313,9 +4313,9 @@
                     "total_amount": {
                       "type": "object",
                       "description": {
-                        "en": "Total amount of the order.",
-                        "pt": "Valor total do pedido.",
-                        "es": "Costo total de la orden"
+                        "en": "Total amount of the order. For Chile (MLC), it must be an integer.",
+                        "pt": "Valor total do pedido. Para Chile (MLC) debe ser un número entero.",
+                        "es": "Costo total de la orden. Para Chile (MLC) debe ser un número entero."
                       }
                     },
                     "last_updated": {
