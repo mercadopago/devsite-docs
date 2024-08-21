@@ -7,7 +7,7 @@
         "es": "Checkout Pro"
       },
       "externalDocs": {
-        "url": "/guides/online-payments/checkout-pro/introduction"
+        "url": "/docs/checkout-pro/landing"
       }
     },
     "payment-link": {
@@ -17,7 +17,7 @@
         "es": "Link de pago"
       },
       "externalDocs": {
-        "url": "/guides/online-payments/payment-link/intro-button"
+        "url": "/docs/payment-link/intro-button"
       }
     },
     "subscriptions": {
@@ -27,7 +27,7 @@
         "es": "Suscripciones"
       },
       "externalDocs": {
-        "url": "/guides/online-payments/subscriptions/introduction"
+        "url": "/docs/subscriptions/landing"
       }
     },
     "marketplace": {
@@ -37,7 +37,7 @@
         "es": "Marketplace"
       },
       "externalDocs": {
-        "url": "/guides/online-payments/marketplace/checkout-pro/introduction"
+        "url": "/docs/checkout-pro/how-tos/integrate-marketplace"
       }
     },
     "qr-code": {
@@ -47,7 +47,7 @@
         "es": "Código QR"
       },
       "externalDocs": {
-        "url": "/guides/in-person-payments/qr-code/introduction"
+        "url": "/docs/qr-code/introduction"
       }
     },
     "mp-point": {
@@ -57,7 +57,7 @@
         "es": "Mercado Pago Point"
       },
       "externalDocs": {
-        "url": "/docs/mp-point/introduction"
+        "url": "/docs/mp-point/landing"
       }
     },
     "checkout-api": {
@@ -67,7 +67,7 @@
         "es": "Checkout API"
       },
       "externalDocs": {
-        "url": "/guides/online-payments/checkout-api/introduction"
+        "url": "/docs/checkout-api/landing"
       }
     },
     "cash-out": {
@@ -77,7 +77,7 @@
         "es": "Retiros de efectivo"
       },
       "externalDocs": {
-        "url": "/guides/in-person-payments/qr-code/introduction"
+        "url": "/docs/qr-code/introduction"
       }
     },
     "mp-delivery": {
