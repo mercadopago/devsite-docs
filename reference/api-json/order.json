@@ -2072,13 +2072,14 @@
     "/v1/orders/{order_id}/transactions/{transaction_id}":{
       "patch":{
         "tags":[
-          "Order"
+          "order",
+          "checkout-api",
+          "mp-point"
         ],
-        "summary":"Updates an Order transaction",
-        "description":{
-          "en":"Update an order transaction.",
-          "pt":"Atualizar uma transação do pedido.",
-          "es":"Actualizar una transacción de pedido."
+        "description": {
+          "en": "This endpoint allows you to update a payment transaction for an order.",
+          "pt": "Este endpoint permite atualizar uma transação de pagamento de uma order.",
+          "es": "Este endpoint permite actualizar una transacción de pago de una order."
         },
         "parameters":[
           {
