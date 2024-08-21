@@ -7,6 +7,14 @@ content_section_with_media:
 
 ----[mlb]----
 
+--- mini_landing_separator ---
+
+>>>> Disponibilidade por país <<<<
+---
+available_countries: mlb, mla, mlm
+
+---
+
 ---
 bullet_section_with_media: 
  - title: Funcionalidades
@@ -43,14 +51,6 @@ bullet_section_with_media:
 ---
 
 ------------
-
---- mini_landing_separator ---
-
->>>> Disponibilidade por país <<<<
----
-available_countries: mlb, mla, mlm
-
----
 
 --- mini_landing_separator ---
 

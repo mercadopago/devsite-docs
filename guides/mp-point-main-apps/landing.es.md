@@ -5,6 +5,14 @@ content_section_with_media:
  - media_image: /main-apps/landing-all.png
 ---
 
+--- mini_landing_separator ---
+
+>>>> Disponibilidad por país <<<<
+---
+available_countries: mlb, mla, mlm
+
+---
+
 ----[mlb]----
 
 ---
@@ -43,14 +51,6 @@ bullet_section_with_media:
 ---
 
 ------------
-
---- mini_landing_separator ---
-
->>>> Disponibilidad por país <<<<
----
-available_countries: mlb, mla, mlm
-
----
 
 --- mini_landing_separator ---
 
