@@ -3,11 +3,15 @@
   "paths": {
     "/v1/orders": {
       "post": {
-        "tags": ["Order"],
+        "tags": [
+          "order",
+          "checkout-api",
+          "mp-point"
+        ],
         "description": {
           "en": "This endpoint allows to create orders in **One-shot** (processing the payment in a single stage) or **Builder** (processing payment in stages that can be configured and executed incrementally) mode for payment and cashout transactions.",
-          "pt": "Este endpoint permite a criação de uma ordem no modo **One-shot** (processando o pagamento em uma única etapa) ou **Builder** (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout.",
-          "es": "Este endpoint permite crear una orden en modo **One-shot** (procesando el pago en una sola etapa) o **Builder** (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout."
+          "pt": "Este endpoint permite a criação de uma order no modo **One-shot** (processando o pagamento em uma única etapa) ou **Builder** (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout.",
+          "es": "Este endpoint permite crear una order en modo **One-shot** (procesando el pago en una sola etapa) o **Builder** (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout."
         },
         "parameters": [
           {
@@ -50,8 +54,8 @@
                     "required":true,
                     "description":{
                       "en":"Order type, associated with the Mercado Pago solution for which it is created.",
-                      "pt":"Tipo de ordem, associada à solução do Mercado Pago para a qual foi criada.",
-                      "es":"Tipo de orden, asociada a la solución de Mercado Pago para la que se crea."
+                      "pt":"Tipo de order, associada à solução do Mercado Pago para a qual foi criada.",
+                      "es":"Tipo de order, asociada a la solución de Mercado Pago para la que se crea."
                     },
                     "enum": [
                       {
@@ -79,7 +83,7 @@
                     "example":"ext_ref_1234",
                     "description":{
                       "en":"It is an external reference of the order. It can be, for example, a hashcode from the Central Bank, functioning as an identifier of the transaction origin.",
-                      "es":"Es una referencia externa de la orden. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción.",
+                      "es":"Es una referencia externa de la order. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción.",
                       "pt":"É uma referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação." 
                     }
                   },
@@ -88,8 +92,8 @@
                     "required": true,
                     "description":{
                       "es":"Contains information about the transaction of a payment order",
-                      "pt":"Contém informações sobre a transação de uma ordem de pagamento",
-                      "en":"Contiene información sobre la transacción de una orden de pago" 
+                      "pt":"Contém informações sobre a transação de uma order de pagamento",
+                      "en":"Contiene información sobre la transacción de una order de pago" 
                     },
                     "properties": {
                       "payments": [
@@ -97,8 +101,8 @@
                           "type": "object",
                           "description": {
                             "en": "Contains information about the order's payment.",
-                            "pt": "Contém informações sobre o pagamento da ordem.",
-                            "es": "Contiene información sobre el pago de la orden."
+                            "pt": "Contém informações sobre o pagamento da order.",
+                            "es": "Contiene información sobre el pago de la order."
                           },
                           "properties": {
                             "amount": {
@@ -406,33 +410,33 @@
                     "type":"object",
                     "description":{
                       "en":"Order type configuration.",
-                      "pt":"Configuração do tipo de ordem.",
-                      "es":"Configuración del tipo de orden."
+                      "pt":"Configuração do tipo de order.",
+                      "es":"Configuración del tipo de order."
                     },
                     "properties":{
                       "capture_mode":{
                         "type":"string",
                         "description":{
-                          "en":"Order capture mode",
-                          "pt":"Modo de captura da ordem",
-                          "es":"Modo de captura de la orden"
+                          "en":"Order capture mode.",
+                          "pt":"Modo de captura da order.",
+                          "es":"Modo de captura de la order."
                         },
                         "example":"manual",
                         "enum": [
                           {
                             "title": "manual",
                             "description": {
-                              "en": "Order's capture will be made manually.",
-                              "es": "La captura de la orden se hará de manera manual.",
-                              "pt": "A captura da ordem será feita manualmente."
+                              "en": "Order's capture will be made manually. It is the capture mode used for the \"builder\" option. ",
+                              "es": "La captura de la order se hará de manera manual. Es el modo de captura utilizado para la opción \"builder\".",
+                              "pt": "A captura da order será feita manualmente. É o modo de captura utilizado para a opção \"builder\"."
                             }
                           },
                           {
                             "title": "automatic",
                             "description": {
-                              "en": "Order's capture will be made automatically.",
-                              "es": "La captura de la orden se hará de manera automática.",
-                              "pt": "A captura da ordem será feita automaticamente."
+                              "en": "Order's capture will be made automatically. It is the capture mode used for the \"one-shot\" option.",
+                              "es": "La captura de la order se hará de manera automática. Es el modo de captura utilizado para la opción \"one-shot\".",
+                              "pt": "A captura da order será feita automaticamente. É o modo de captura utilizado para a opção \"one-shot\"."
                             }
                           }
                         ]
@@ -463,9 +467,9 @@
                     "type":"string",
                     
                     "description":{
-                      "en":"Order processing mode",
-                      "pt":"Modo de processamento da order",
-                      "es":"Modo de procesamiento de la orden"
+                      "en":"Order processing mode.",
+                      "pt":"Modo de processamento da order.",
+                      "es":"Modo de procesamiento de la order."
                     },
                     "example": "automatic",
                     "enum": [
@@ -473,16 +477,16 @@
                         "title": "manual",
                         "description": {
                           "en": "Order's processing will be made manually.",
-                          "es": "El procesamiento de la orden se hará de manera manual.",
-                          "pt": "O processamento da ordem será realizado manualmente."
+                          "es": "El procesamiento de la order se hará de manera manual.",
+                          "pt": "O processamento da order será realizado manualmente."
                         }
                       },
                       {
                         "title": "automatic",
                         "description": {
                           "en": "Order's processing will be made automatically.",
-                          "es": "El procesamiento de la orden se hará de manera automática.",
-                          "pt": "O processamento da ordem será feito automaticamente."
+                          "es": "El procesamiento de la order se hará de manera automática.",
+                          "pt": "O processamento da order será feito automaticamente."
                         }
                       }
                     ]
@@ -493,7 +497,7 @@
                     "description":{
                       "en":"Description of the product purchased, the reason for the payment order, or the description of a product in the marketplace.",
                       "pt":"Descrição do produto comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
-                      "es":"Descripción del producto comprado, el motivo de la orden de pago, o la descripción de un producto en el marketplace."
+                      "es":"Descripción del producto comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
                     }
                   },
                   "marketplace":{
@@ -502,7 +506,7 @@
                     "description":{
                       "en":"Name of the marketplace where the order was made.",
                       "pt":"Nome do marketplace onde a order foi realizada.",
-                      "es":"Nombre del marketplace donde se realizó la orden."
+                      "es":"Nombre del marketplace donde se realizó la order."
                     }
                   },
                   "marketplace_fee":{
@@ -973,7 +977,7 @@
                       "description":{
                         "en":"Identifier of the order created in the request, automatically generated by Mercado Pago.",
                         "pt":"Identificador da order criada na solicitação, gerado automaticamente pelo Mercado Pago.",
-                        "es":"Identificador de la orden creada en la solicitud, generado automáticamente por Mercado Pago."
+                        "es":"Identificador de la order creada en la solicitud, generado automáticamente por Mercado Pago."
                       }
                     },
                     "type":{
@@ -981,7 +985,7 @@
                       "description":{
                         "en":"Order type",
                         "pt":"Tipo de order",
-                        "es":"Tipo de orden"
+                        "es":"Tipo de order"
                       },
                       "example": "online",
                       "enum": [
@@ -989,7 +993,7 @@
                           "title": "online",
                           "description": {
                             "en": "Order created for online checkout.",
-                            "es": "Orden creada para checkout online.",
+                            "es": "Order creada para checkout online.",
                             "pt": "Order criada para checkout online."
                           }
                         },
@@ -997,7 +1001,7 @@
                           "title": "point",
                           "description": {
                             "en": "Order created for Mercado Pago Point.",
-                            "es": "Orden creada para Mercado Pago Point.",
+                            "es": "Order creada para Mercado Pago Point.",
                             "pt": "Order criada para Mercado Pago Point."
                           }
                         },
@@ -1005,7 +1009,7 @@
                           "title": "offline",
                           "description": {
                             "en": "Order created for .",
-                            "es": "Orden creada para .",
+                            "es": "Order creada para .",
                             "pt": "Order criada para ."
                           }
                         }
@@ -1017,7 +1021,7 @@
                       "description":{
                         "en":"It is the external reference of the order, assigned when creating it.",
                         "pt":"É a referência externa da order, atribuída no momento da criação.",
-                        "es":"Es una referencia externa de la orden, asignada al momento de su creación."
+                        "es":"Es una referencia externa de la order, asignada al momento de su creación."
                       }
                     },
                     "site_id":{
@@ -1025,7 +1029,7 @@
                       "description":{
                         "en":"Site or location identifier from where the order was created, according to a predefined list.",
                         "pt":"Identificador do site ou local de onde a order foi criada, conforme lista pré-determinada.",
-                        "es":"Identificador del sitio o ubicación desde donde se creó la orden, según lista predeterminada."
+                        "es":"Identificador del sitio o ubicación desde donde se creó la order, según lista predeterminada."
                       },
                       "example": "MLB",
                       "enum": [
@@ -1033,7 +1037,7 @@
                           "title": "MLB",
                           "description": {
                             "en": "Order created in Brazil.",
-                            "es": "Orden creada en Brasil.",
+                            "es": "Order creada en Brasil.",
                             "pt": "Order criada no Brasil."
                           }
                         },
@@ -1041,7 +1045,7 @@
                           "title": "MLA",
                           "description": {
                             "en": "Order created in Argentina.",
-                            "es": "Orden creada en Argentina.",
+                            "es": "Order creada en Argentina.",
                             "pt": "Order criada na Argentina."
                           }
                         },
@@ -1049,7 +1053,7 @@
                           "title": "MCO",
                           "description": {
                             "en": "Order created in Colombia.",
-                            "es": "Orden creada en Colombia.",
+                            "es": "Order creada en Colombia.",
                             "pt": "Order criada na Colombia."
                           }
                         },
@@ -1057,7 +1061,7 @@
                           "title": "MLU",
                           "description": {
                             "en": "Order created in Uruguay.",
-                            "es": "Orden creada en Uruguay.",
+                            "es": "Order creada en Uruguay.",
                             "pt": "Order criada no Urugai."
                           }
                         },
@@ -1065,7 +1069,7 @@
                           "title": "MLM",
                           "description": {
                             "en": "Order created in Mexico.",
-                            "es": "Orden creada en Mexico.",
+                            "es": "Order creada en Mexico.",
                             "pt": "Order criada no Mexico."
                           }
                         },
@@ -1073,7 +1077,7 @@
                           "title": "MLC",
                           "description": {
                             "en": "Order created in Chile.",
-                            "es": "Orden creada en Chile.",
+                            "es": "Order creada en Chile.",
                             "pt": "Order criada no Chile."
                           }
                         }
@@ -1085,7 +1089,7 @@
                       "description":{
                         "en":"Current status of the order.",
                         "pt":"Status atual da order.",
-                        "es":"Estado actual de la orden."
+                        "es":"Estado actual de la order."
                       },
                       "enum": [
                         {
@@ -1102,8 +1106,8 @@
                       "type":"object",
                       "description":{
                         "en":"Contains information about the transaction of a payment order.",
-                        "pt":"Contém informações sobre a transação de uma ordem de pagamento.",
-                        "es":"Contiene información sobre la transacción de una orden de pago."
+                        "pt":"Contém informações sobre a transação de uma order de pagamento.",
+                        "es":"Contiene información sobre la transacción de una order de pago."
                       },
                       "properties":{
                         "payments":[
@@ -1111,8 +1115,8 @@
                             "type":"object",
                             "description":{
                               "en":"Contains information about the payment of the order.",
-                              "pt":"Contém informações sobre o pagamento da ordem.",
-                              "es":"Contiene información sobre el pago de la orden."
+                              "pt":"Contém informações sobre o pagamento da order.",
+                              "es":"Contiene información sobre el pago de la order."
                             },
                             "properties":{
                               "id":{
@@ -1423,24 +1427,24 @@
                           "description":{
                             "pt":"Modo de captura da order",
                             "en":"Order capture mode",
-                            "es":"Modo de captura de la orden"
+                            "es":"Modo de captura de la order"
                           },
                           "example":"manual",
                           "enum": [
                             {
                               "title": "manual",
                               "description": {
-                                "en": "Order's capture will be made manually.",
-                                "es": "La captura de la orden se hará de manera manual.",
-                                "pt": "A captura da ordem será realizada manualmente."
+                                "en": "Order's capture will be made manually. It is the capture mode used for the \"builder\" option.",
+                                "es": "La captura de la order se hará de manera manual. Es el modo de captura utilizado para la opción \"builder\".",
+                                "pt": "A captura da order será realizada manualmente. É o modo de captura utilizado para a opção \"builder\"."
                               }
                             },
                             {
                               "title": "automatic",
                               "description": {
-                                "en": "Order's capture will be made automatically.",
-                                "es": "La captura de la orden se hará de manera automática.",
-                                "pt": "A captura da ordem será realizada automaticamente."
+                                "en": "Order's capture will be made automatically. It is the capture mode used for the \"one-shot\" option.",
+                                "es": "La captura de la order se hará de manera automática. Es el modo de captura utilizado para la opción \"one-shot\".",
+                                "pt": "A captura da order será realizada automaticamente. É o modo de captura utilizado para a opção \"one-shot\"."
                               }
                             }
                           ]
@@ -1479,9 +1483,9 @@
                     "processing_mode":{
                       "type":"string",
                       "description":{
-                        "pt":"Modo de processamento da order",
                         "en":"Order processing mode",
-                        "es":"Modo de procesamiento de la orden"
+                        "pt":"Modo de processamento da order",
+                        "es":"Modo de procesamiento de la order"
                       },
                       "example": "automatic",
                       "enum": [
@@ -1489,16 +1493,16 @@
                           "title": "manual",
                           "description": {
                             "en": "Order's processing will be made manually.",
-                            "es": "El procesamiento de la orden se hará de manera manual.",
-                            "pt": "O processamento da ordem será realizado manualmente."
+                            "es": "El procesamiento de la order se hará de manera manual.",
+                            "pt": "O processamento da order será realizado manualmente."
                           }
                         },
                         {
                           "title": "automatic",
                           "description": {
                             "en": "Order's processing will be made automatically.",
-                            "es": "El procesamiento de la orden se hará de manera automática.",
-                            "pt": "O processamento da ordem será feito automaticamente."
+                            "es": "El procesamiento de la order se hará de manera automática.",
+                            "pt": "O processamento da order será feito automaticamente."
                           }
                         }
                       ]
@@ -1509,7 +1513,7 @@
                       "description":{
                         "en":"Description of the product purchased, the reason for the payment order, or the description of a product in the marketplace.",
                         "pt":"Descrição do produto comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
-                        "es":"Descripción del producto comprado, el motivo de la orden de pago, o la descripción de un producto en el marketplace."
+                        "es":"Descripción del producto comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
                       }
                     },
                     "marketplace":{
@@ -1518,7 +1522,7 @@
                       "description":{
                         "en":"Name of the marketplace where the order was made.",
                         "pt":"Nome do marketplace onde a order foi realizada.",
-                        "es":"Nombre del marketplace donde se realizó la orden."
+                        "es":"Nombre del marketplace donde se realizó la order."
                       }
                     },
                     "marketplace_fee":{
@@ -2060,8 +2064,8 @@
         },
         "title": {
           "en": "Create order",
-          "pt": "Criar ordem",
-          "es": "Crear orden"
+          "pt": "Criar order",
+          "es": "Crear order"
         }
       }
     }
