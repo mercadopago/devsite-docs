@@ -5,21 +5,46 @@ content_section_with_media:
  - media_image: /main-apps/landing-all.png
 ---
 
+----[mlb]----
+
 ---
 bullet_section_with_media: 
  - title: Funcionalidades
  - type: normal
  - message: Cuando se integra, la app puede usar las funcionalidades del lector que completan la experiencia. Ellas son:
- - media_image: /main-apps/landing2-all.png
- - benefit_title: Inicio de sesión en la main app desde Point Smart.
- - benefit_title: Pagos en débito, crédito y NFC (pago sin contacto) con tarjeta o celular.
- - benefit_title: Pagos por Pix o código QR.
- - benefit_title: Acceso a la cámara para lectura del código QR.
- - benefit_title: Impresión customizada de comprobantes y archivos de imagen bitmap.
- - benefit_title: Conexión por bluetooth a impresoras, teclados y lectores de código de barras.
- - benefit_title: Acceso a la cámara para lectura de códigos de barra.
+ - benefit_title: Acceso
+ - benefit_message: Inicio de sesión en la main app desde Point Smart.
+ - benefit_title: Pagos
+ - benefit_message: Pagos mediante Pix, tarjeta de débito o crédito, código QR y NFC (pagos sin contacto) con tarjeta o celular.
+ - benefit_title: Cámara
+ - benefit_message: Acceso a la cámara para lectura del código QR y de códigos de barra.
+ - benefit_title: Impresión
+ - benefit_message: Conexión vía bluetooth a impresoras, teclados y lectores de códigos de barras. Además, posibilita la impresión customizada de comprobantes y archivos de imagen bitmap.
+
  - media_image: /main-apps/landing2-all.png
 ---
+
+------------
+----[mla, mlm]----
+
+---
+bullet_section_with_media: 
+ - title: Funcionalidades
+ - type: normal
+ - message: Cuando se integra, la app puede usar las funcionalidades del lector que completan la experiencia. Ellas son:
+ - benefit_title: Acceso
+ - benefit_message: Inicio de sesión en la main app desde Point Smart.
+ - benefit_title: Pagos
+ - benefit_message: Pagos con tarjeta de débito o crédito, código QR y NFC (pagos sin contacto) con tarjeta o celular.
+ - benefit_title: Cámara
+ - benefit_message: Acceso a la cámara para lectura del código QR y de códigos de barra.
+ - benefit_title: Impresión
+ - benefit_message: Conexión vía bluetooth a impresoras, teclados y lectores de códigos de barras. Además, posibilita la impresión customizada de comprobantes y archivos de imagen bitmap.
+
+ - media_image: /main-apps/landing2-all.png
+---
+
+------------
 
 --- mini_landing_separator ---
 

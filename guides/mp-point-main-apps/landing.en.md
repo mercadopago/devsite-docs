@@ -5,28 +5,44 @@ content_section_with_media:
  - media_image: /main-apps/landing-all.png
 ---
 
+----[mlb]----
+
 ---
 bullet_section_with_media: 
  - title: Features
  - type: normal
  - message: Once integrated, the application can use the machine's functionalities to complete the experience. These are:
- - media_image: /main-apps/landing2-all.png
- - benefit_title: xxx
+ - benefit_title: Access
  - benefit_message: Login in the main app from the Point Smart.
- - benefit_title: xxx
- - benefit_message: Debit, credit and NFC payments with card or cell phone.
- - benefit_title: xxx
- - benefit_message: Pix or QR code payments.
- - benefit_title: xxx
- - benefit_message: Access to the camera to read the QR code.
- - benefit_title: xxx
- - benefit_message: Customized printing of receipts and bitmap image files.
- - benefit_title: xxx
- - benefit_message: Bluetooth connection to printers, keyboards and barcode readers.
- - benefit_title: xxx
- - benefit_message: Access to the camera for reading barcodes.
+ - benefit_title: Payments
+ - benefit_message: Payments via Pix, debit or credit card, QR code, and NFC (contactless payment) with card or cellphone.
+ - benefit_title: Camera
+ - benefit_message: Access to the camera to read the QR code and barcodes.
+ - benefit_title: Printing
+ - benefit_message: Connection via Bluetooth to printers, keyboards, and barcode scanners. Additionally, it allows for customized printing of receipts and bitmap image files.
  - media_image: /main-apps/landing2-all.png
 ---
+
+------------
+----[mla, mlm]----
+
+---
+bullet_section_with_media: 
+ - title: Features
+ - type: normal
+ - message: Once integrated, the application can use the machine's functionalities to complete the experience. These are:
+ - benefit_title: Access
+ - benefit_message: Login in the main app from the Point Smart.
+ - benefit_title: Payments
+ - benefit_message: Payments with debit or credit card, QR code, and NFC (contactless payment) with card or cellphone.
+ - benefit_title: Camera
+ - benefit_message: Access to the camera to read the QR code and barcodes.
+ - benefit_title: Printing
+ - benefit_message: Connection via Bluetooth to printers, keyboards, and barcode scanners. Additionally, it allows for customized printing of receipts and bitmap image files.
+ - media_image: /main-apps/landing2-all.png
+---
+
+------------
 
 --- mini_landing_separator ---
 
