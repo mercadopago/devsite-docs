@@ -18,7 +18,7 @@ Ao enviar o _request_ ao endpoint de Pagamentos, garanta que os seguintes atribu
 | transaction_amount  | Valor total que deverá ser cobrado do comprador. |
 | description  | Descrição do pagamento. |
 | external_reference  | Referência de pagamento atribuída pelo vendedor. |
-| forward_data.sub_merchant | Dados encaminhados do `sub_merchant`. Informações obrigatórias que os Facilitadores de pagamento utilizam para identificar os subcomércios no momento da transação. Para mais detalhes de cada campo pertencente a `forward_data.sub_merchant`, acesse a documentação dos [Subcomércios](/developers/pt/docs/wallet-connect/payment-flow/capture-payment/submerchants).|
+| forward_data.sub_merchant | Dados encaminhados do `sub_merchant`. Informações que os facilitadores de pagamento devem enviar obrigatoriamente para identificar os subcomércios durante a transação. Para mais detalhes de cada campo pertencente a `forward_data.sub_merchant`, acesse a documentação dos [Subcomércios](/developers/pt/docs/wallet-connect/payment-flow/capture-payment/submerchants).|
 | payer  | Informação do pagador requerida para criação do pagamento. |
 | token  | _Token_ de pagamento obtido após a finalização do fluxo da vinculação. |
 | type_token  | Tipo de pagamento. Para o uso no fluxo de Wallet Connect é preciso definir o valor “wallet-token”. |

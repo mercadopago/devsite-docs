@@ -18,7 +18,7 @@ When sending the request to the Payments endpoint, ensure that the following att
 | transaction_amount | Total amount to be charged to the buyer. |
 | description | Payment description. |
 | external_reference | Payment reference assigned by seller |
-| forward_data.sub_merchant | Forwarded data from the `sub_merchant`. Mandatory information that Payment facilitators use to identify submerchants at the time of the transaction. For more details on each field belonging to `forward_data.sub_merchant`, access the [Submerchants](/developers/en/docs/wallet-connect/payment-flow/capture-payment/submerchants) documentation. |
+| forward_data.sub_merchant | Forwarded data from the `sub_merchant`. Information that payment facilitators must send mandatorily to identify the sub-merchants during the transaction. For more details on each field belonging to `forward_data.sub_merchant`, access the [Submerchants](/developers/en/docs/wallet-connect/payment-flow/capture-payment/submerchants) documentation. |
 | payer | Payer information required to create a payment. |
 | token | payer_token obtained after completion of the agreement flow. |
 | type_token | Type of payment. To use it in the Wallet Connect flow, the “wallet-token” value must be defined. |
