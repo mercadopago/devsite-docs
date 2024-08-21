@@ -3988,82 +3988,82 @@
                 "status": {
                   "type": "string",
                   "description": {
-                    "en": "It is the current state of payment. It can be two following types.",
-                    "pt": "É o estado atual do pagamento. Podem ser ser dos seguintes tipos",
-                    "es": "Es el estado actual de pago. Puede ser de dos tipos siguientes."
+                    "en": "It is the current state of payment. It can be two following types:",
+                    "pt": "É o estado atual do pagamento. Podem ser dos seguintes tipos:",
+                    "es": "Es el estado actual de pago. Puede ser de los siguientes tipos:"
                   },
                   "example": "cancelled",
                   "enum": [
                     {
                       "title": "pending",
                       "description": {
-                        "en": "The user has not concluded the payment process (for example, to generate a payment by boleto, this payment will be concluded at the moment in which the user makes the non-corresponding payment selected);",
-                        "es": "El usuario no ha concluido el proceso de pago (por ejemplo, para generar un pago por boleto, este pago se concluirá en el momento en que el usuario realice el pago no correspondiente seleccionado);",
-                        "pt": "O usuário não concluiu o processo de pagamento (por exemplo, para gerar um pagamento por boleto, este pagamento será concluído no momento em que o usuário fizer o pagamento não correspondente selecionado);"
+                        "en": "The user has not concluded the payment process (for example, to generate a payment by boleto, this payment will be concluded at the moment in which the user makes the non-corresponding payment selected).",
+                        "es": "El usuario no ha concluido el proceso de pago (por ejemplo, al generar un pago por tarjeta, se concluirá en el momento en que el usuario realice el pago en el lugar seleccionado).",
+                        "pt": "O usuário não concluiu o processo de pagamento (por exemplo, ao gerar um boleto, ele será concluído no momento em que o usuário realizar o pagamento no local selecionado)."
                       }
                     },
                     {
                       "title": "approved",
                       "description": {
-                        "en": "The payment was approved and credited;",
-                        "es": "El pago fue aprobado y acreditado;",
-                        "pt": "O pagamento foi aprovado e creditado;"
+                        "en": "The payment was approved and credited.",
+                        "es": "El pago ha sido aprobado y acreditado.",
+                        "pt": "O pagamento foi aprovado e creditado."
                       }
                     },
                     {
                       "title": "authorized",
                       "description": {
-                        "en": "The payment was authorized, but still was not captured;",
-                        "es": "El pago fue autorizado, pero aún no fue capturado;",
-                        "pt": "O pagamento foi autorizado, mas ainda não foi capturado.;"
+                        "en": "The payment was authorized, but still was not captured.",
+                        "es": "El pago ha sido autorizado, pero aún no ha sido capturado.",
+                        "pt": "O pagamento foi autorizado, mas ainda não foi capturado."
                       }
                     },
                     {
                       "title": "in_process",
                       "description": {
-                        "en": "The payment is in analysis;",
-                        "es": "El pago está en análisis;",
-                        "pt": "O pagamento está em análise;"
+                        "en": "The payment is in analysis.",
+                        "es": "El pago está en análisis.",
+                        "pt": "O pagamento está em análise."
                       }
                     },
                     {
                       "title": "in_mediation",
                       "description": {
-                        "en": "The user started a dispute;",
-                        "es": "El usuario inició una disputa;",
-                        "pt": "O usuário iniciou uma disputa;"
+                        "en": "The user started a dispute.",
+                        "es": "El usuario inició una disputa.",
+                        "pt": "O usuário iniciou uma disputa."
                       }
                     },
                     {
                       "title": "rejected",
                       "description": {
-                        "en": "The payment was rejected. The user can try the payment again;",
-                        "es": "El pago fue rechazado. El usuario puede intentar el pago nuevamente;",
-                        "pt": "O pagamento foi rejeitado. O usuário pode tentar o pagamento novamente;"
+                        "en": "The payment was rejected. (The user can try the payment again).",
+                        "es": "El pago fue rechazado (el usuario puede intentar pagar nuevamente).",
+                        "pt": "O pagamento foi rejeitado (o usuário pode tentar pagar novamente)"
                       }
                     },
                     {
                       "title": "cancelled",
                       "description": {
-                        "en": "Either the payment was canceled by one of the parties or the payment expired;",
-                        "es": "El pago fue cancelado por una de las partes o el pago expiró;",
-                        "pt": "O pagamento foi cancelado por uma das partes ou o pagamento expirou:"
+                        "en": "Either the payment was canceled by one of the parties or the payment expired.",
+                        "es": "Ya sea que el pago fue cancelado por una de las partes o expiró.",
+                        "pt": "Ou o pagamento foi cancelado por uma das partes ou expirou."
                       }
                     },
                     {
                       "title": "refunded",
                       "description": {
                         "en": "The payment was returned to the user;",
-                        "es": "El pago fue devuelto al usuario;",
-                        "pt": "O pagamento foi devolvido ao usuário;"
+                        "es": "El pago fue devuelto al usuario.",
+                        "pt": "O pagamento foi devolvido ao usuário."
                       }
                     },
                     {
                       "title": "charged_back",
                       "description": {
                         "en": "A chargeback was placed on the buyer's credit card.",
-                        "es": " Se realizó un contracargo en la tarjeta de crédito del comprador.",
-                        "pt": "Foi feito um chargeback no cartão de crédito do comprador."
+                        "es": "Se realizó una devolución en la tarjeta de crédito del comprador",
+                        "pt": "Foi realizado um estorno no cartão de crédito do comprador."
                       }
                     }
                   ]
@@ -5384,6 +5384,20 @@
           }
         },
         {
+          "name": "status",
+          "in": "query",
+          "description": {
+            "en": "It is possible to filter by the current state of the payment. It can be of the following types: 'pending': The user has not concluded the payment process (for example, to generate a payment by boleto, this payment will be concluded at the moment in which the user makes the non-corresponding payment selected); 'approved': The payment was approved and credited; 'authorized': The payment was authorized, but still was not captured.",
+            "pt": "É possível filtrar pelo estado atual do pagamento. Podem ser dos seguintes tipos: 'pending': O usuário não concluiu o processo de pagamento (por exemplo, ao gerar um boleto, ele será concluído no momento em que o usuário realizar o pagamento no local selecionado); 'approved': O pagamento foi aprovado e creditado; 'authorized': O pagamento foi autorizado, mas ainda não foi capturado.",
+            "es": "Es posible filtrar por el estado actual del pago. Puede ser de los siguientes tipos: 'pending': El usuario no ha concluido el proceso de pago (por ejemplo, al generar un pago por tarjeta, se concluirá en el momento en que el usuario realice el pago en el lugar seleccionado); 'approved': El pago ha sido aprobado y acreditado; 'authorized': El pago ha sido autorizado, pero aún no ha sido capturado."
+          },
+          "required": false,
+          "schema": {
+            "type": "string",
+            "example": "approved"
+          }
+        },
+        {
           "name": "range",
           "in": "query",
           "description": {
@@ -5457,9 +5471,9 @@
           "name": "collector.id",
           "in": "query",
           "description": {
-            "en": "Parameter used to filter payment searches by the identification of the person who receives the payment (collector).",
-            "pt": "Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador da pessoa que recebe o pagamento (collector).",
-            "es": "Parámetro utilizado para filtrar la búsqueda de pagos por el identificador de la persona que recibe el pago (collector)."
+            "en": "Parameter used to filter payment searches by the identification of the person who receives the payment (collector). It cannot be used in conjunction with the \"payer.id\" search parameter, you must provide only one of them.",
+            "pt": "Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador da pessoa que recebe o pagamento (collector). Não pode ser utilizado em conjunto com o parâmetro de busca \"payer.id\", você deve fornecer apenas um deles.",
+            "es": "Parámetro utilizado para filtrar la búsqueda de pagos por el identificador de la persona que recibe el pago (collector). No puede ser utilizado en conjunto con el parámetro de búsqueda \"payer.id\", debes proporcionar sólo uno de ellos."
           },
           "required": false,
           "schema": {
@@ -5471,9 +5485,9 @@
           "name": "payer.id",
           "in": "query",
           "description": {
-            "en": "Parameter used to filter searches by the identification of the person who makes the payment (payer).",
-            "pt": "Parâmetro utilizado para filtrar a busca pelo identificador da pessoa que efetua o pagamento (payer).",
-            "es": "Parámetro utilizado para filtrar la búsqueda por el identificador de la persona que realiza el pago (payer)."
+            "en": "Parameter used to filter searches by the identification of the person who makes the payment (payer). It cannot be used in conjunction with the \"collector.id\" search parameter, you must provide only one of them.",
+            "pt": "Parâmetro utilizado para filtrar a busca pelo identificador da pessoa que efetua o pagamento (payer). Não pode ser utilizado em conjunto com o parâmetro de busca \"collector.id\", você deve fornecer apenas um deles.",
+            "es": "Parámetro utilizado para filtrar la búsqueda por el identificador de la persona que realiza el pago (payer). No puede ser utilizado en conjunto con el parámetro de búsqueda \"collector.id\", debes proporcionar sólo uno de ellos."
           },
           "required": false,
           "schema": {
