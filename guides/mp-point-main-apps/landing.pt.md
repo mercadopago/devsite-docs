@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Main Apps
- - message: Este é um guia para você desenvolver e integrar main apps, aplicativos de gestão de negócio que podem ser integrados à Point Smart. Navegue pelo menu lateral para encontrar os processos, requisitos e direcionamentos, da ficha técnica da maquininha à distribuição da solução.
+ - message: Este é um guia para você desenvolver e integrar main apps, aplicativos de gestão de negócio que podem ser integrados à Point Smart do Mercado Pago. Navegue pelo menu lateral para encontrar os processos, requisitos e direcionamentos, da ficha técnica da maquininha à distribuição da solução.
  - media_image: /main-apps/landing-all.png
 ---
 

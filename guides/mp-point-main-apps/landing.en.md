@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Main Apps
- - message: This is a guide for you to develop and integrate main apps, business management applications that can be integrated with Point Smart. Browse the side menu to find the processes, requirements and guidelines, from the POS technical data sheet to the solution distribution.
+ - message: This is a guide for you to develop and integrate main apps, business management applications that can be integrated with Mercado Pago's Point Smart. Browse the side menu to find the processes, requirements and guidelines, from the POS technical data sheet to the solution distribution.
  - media_image: /main-apps/landing-all.png
 ---
 
