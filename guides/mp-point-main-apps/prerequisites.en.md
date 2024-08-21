@@ -4,6 +4,7 @@ Before you start developing your solution, take a look at the requirements that 
 
 | Requirement | Description |
 |---|---|
+| Mercado Pago Point | The Mercado Pago card machine that allows buyers to pay in person quickly and securely using credit or debit cards.|
 | Device pre-configuration| In order for the machines to operate in **Integrated mode** and for the pre-configuration to be carried out, share with Mercado Pago the account that will be used for the integration, as well as the cash register and store configurations and the serial numbers of the devices. |
 |Development kit | To start development, download the [Development kit](https://github.com/mercadolibre/point-mainapp-demo-android) provided by Mercado Pago. |
 |Android Studio| Install the [integrated development environment](https://developer.android.com/studio) to build and debug the main apps. |
@@ -12,7 +13,7 @@ Before you start developing your solution, take a look at the requirements that 
 
 ## Point Smart technical specifications
 
-To ensure that the integration is successful, consider the machine's characteristics and how the application will adapt to them.
+To ensure that the integration is successful, consider the Point Smart machine's characteristics and how the application will adapt to them.
 
 ![prerequisites](/main-apps/prerequisites-all.png)
 

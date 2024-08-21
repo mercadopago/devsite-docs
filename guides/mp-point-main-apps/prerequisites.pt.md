@@ -4,6 +4,7 @@ Antes de começar a desenvolver sua solução, veja as condições que devem ser
 
 | Requisitos | Descrição |
 |---|---|
+| Mercado Pago Point | Point é a maquininha de cartão do Mercado Pago que permite aos compradores realizarem pagamentos presenciais de maneira rápida e segura utilizando cartões de crédito ou débito. |
 | Pré-configuração de dispositivos | Para que as maquininhas operem em **Modo integrado** e a pré-configuração seja feita, compartilhe com o Mercado Pago a conta que será utilizada para a integração, bem como as configurações de caixas, lojas e números de série dos aparelhos. |
 |Kit de Desenvolvimento| Para iniciar o desenvolvimento, baixe o [Kit de Desenvolvimento](https://github.com/mercadolibre/point-mainapp-demo-android) fornecido pelo Mercado Pago. |
 |Android Studio| Instale o [ambiente de desenvolvimento Android](https://developer.android.com/studio) para construir e depurar os main apps.|
@@ -12,7 +13,7 @@ Antes de começar a desenvolver sua solução, veja as condições que devem ser
 
 ## Especificações técnicas da Point Smart
 
-Para garantir que a integração seja exitosa, considere as características da maquininha e como o aplicativo se adaptará a elas.
+Para garantir que a integração seja exitosa, considere as características da maquininha Point Smart e como o aplicativo se adaptará a elas.
 
 ![prerequisites](/main-apps/prerequisites-all.png)
 
