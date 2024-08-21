@@ -1,6 +1,6 @@
 ---
 content_section_with_media: 
- - title: Main Apps Playbook
+ - title: Main Apps
  - message: This is a guide for you to develop and integrate main apps, business management applications that can be integrated with Point Smart. Browse the side menu to find the processes, requirements and guidelines, from the POS technical data sheet to the solution distribution. The material is constantly evolving, with new content being included.
  - media_image: /main-apps/landing-all.png
 ---
@@ -10,6 +10,7 @@ bullet_section_with_media:
  - title: Features
  - type: normal
  - message: Once integrated, the application can use the machine's functionalities to complete the experience. These are:
+ - media_image: /main-apps/landing2-all.png
  - benefit_title: xxx
  - benefit_message: Login in the main app from the Point Smart.
  - benefit_title: xxx
