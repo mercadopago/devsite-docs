@@ -12,6 +12,7 @@ bullet_section_with_media:
  - title: Funcionalidades
  - type: normal
  - message: Uma vez integrado, o aplicativo pode usar as funções da maquininha que completam a experiência. São elas:
+ - image: /main-apps/landing2-all.png
  - benefit_title: Acesso
  - benefit_message: Login no main app a partir da Point Smart.
  - benefit_title: Pagamentos
@@ -20,7 +21,6 @@ bullet_section_with_media:
  - benefit_message: Acesso à câmera para leitura do código QR e de códigos de barra.
  - benefit_title: Impressão
  - benefit_message: Conexão via bluetooth a impressoras, teclados e leitores de código de barras. Além disso, possibilida a impressão customizada de comprovantes e arquivos de imagem bitmap.
- - media_image: /main-apps/landing2-all.png
 ---
 
 ------------
@@ -31,6 +31,7 @@ bullet_section_with_media:
  - title: Funcionalidades
  - type: normal
  - message: Uma vez integrado, o aplicativo pode usar as funções da maquininha que completam a experiência. São elas:
+ - image: /main-apps/landing2-all.png
  - benefit_title: Acesso
  - benefit_message: Login no main app a partir da Point Smart.
  - benefit_title: Pagamentos
@@ -39,7 +40,6 @@ bullet_section_with_media:
  - benefit_message: Acesso à câmera para leitura do código QR e de códigos de barra.
  - benefit_title: Impressão
  - benefit_message: Conexão via bluetooth a impressoras, teclados e leitores de código de barras. Além disso, possibilida a impressão customizada de comprovantes e arquivos de imagem bitmap.
- - media_image: /main-apps/landing2-all.png
 ---
 
 ------------

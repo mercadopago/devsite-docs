@@ -12,6 +12,7 @@ bullet_section_with_media:
  - title: Features
  - type: normal
  - message: Once integrated, the application can use the machine's functionalities to complete the experience. These are:
+ - image: /main-apps/landing2-all.png
  - benefit_title: Access
  - benefit_message: Login in the main app from the Point Smart.
  - benefit_title: Payments
@@ -20,7 +21,6 @@ bullet_section_with_media:
  - benefit_message: Access to the camera to read the QR code and barcodes.
  - benefit_title: Printing
  - benefit_message: Connection via Bluetooth to printers, keyboards, and barcode scanners. Additionally, it allows for customized printing of receipts and bitmap image files.
- - media_image: /main-apps/landing2-all.png
 ---
 
 ------------
@@ -31,6 +31,7 @@ bullet_section_with_media:
  - title: Features
  - type: normal
  - message: Once integrated, the application can use the machine's functionalities to complete the experience. These are:
+ - image: /main-apps/landing2-all.png
  - benefit_title: Access
  - benefit_message: Login in the main app from the Point Smart.
  - benefit_title: Payments
@@ -39,7 +40,6 @@ bullet_section_with_media:
  - benefit_message: Access to the camera to read the QR code and barcodes.
  - benefit_title: Printing
  - benefit_message: Connection via Bluetooth to printers, keyboards, and barcode scanners. Additionally, it allows for customized printing of receipts and bitmap image files.
- - media_image: /main-apps/landing2-all.png
 ---
 
 ------------
