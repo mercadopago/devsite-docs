@@ -4,7 +4,7 @@ Antes de empezar a desarrollar tu solución, consulta las condiciones que debes 
 
 | Requisitos | Descripción |
 |---|---|
-| Mercado Pago Point | La máquina de tarjetas de Mercado Pago que permite a los compradores realizar pagos presenciales de forma rápida y segura mediante tarjetas de crédito o débito.|
+| Point Smart de Mercado Pago | [Mercado Pago Point](/developers/es/docs/mp-point/landing) es la máquina de tarjetas de Mercado Pago que permite a los compradores realizar pagos presenciales de forma rápida y segura mediante tarjetas de crédito o débito.|
 | Pre-configuración de dispositivos | Para que los lectores operen de **Modo integrado** y se haga la  pre-configuración, comparte con Mercado Pago la cuenta que se usará para la integración, así como la configuración de cajas, tiendas y números de serie de dispositivos. |
 |Kit de Desarrollo | Para empezar el desarrollo, descarga el [Kit de Desarrollo](https://github.com/mercadolibre/point-mainapp-demo-android) que ofrece Mercado Pago. |
 |Android Studio | Instala el [ambiente de desarrollo Android](https://developer.android.com/studio) para construir y depurar las main apps. |
@@ -13,7 +13,7 @@ Antes de empezar a desarrollar tu solución, consulta las condiciones que debes 
 
 ## Especificaciones técnicas de Point Smart
 
-Para garantizar que la integración sea exitosa, considera las características del lector Point Smart y cómo la app se adaptará a ellas.
+Para garantizar que la integración sea exitosa, considera las características del lector [Point Smart](/developers/es/docs/mp-point/landing) y cómo la app se adaptará a ellas.
 
 ![prerequisites](/main-apps/prerequisites-all.png)
 
