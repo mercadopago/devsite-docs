@@ -40,9 +40,9 @@ Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los sig
 
 ------------
 ----[mla, mlm, mpe, mlu, mlc, mco]----
-Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing) (**Checkout Mercado Pago**), puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
+Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing) (**Mercado Pago Checkout Pro**), puede haber un **aumento en la tasa de aprobación de las ventas en la tienda en línea**. Esto sucede porque los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago. Al final de la transacción, estos compradores son redirigidos al entorno de la tienda.
 
-Para instalar **Checkout Mercado Pago** en una tienda Shopify, sigue los siguientes pasos:
+Para instalar **Mercado Pago Checkout Pro** en una tienda Shopify, sigue los siguientes pasos:
 
 1. Dirígete a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 2. En el panel de administración de la tienda, haz clic en **Configuración** en la esquina inferior izquierda de la página.
@@ -54,7 +54,7 @@ Para instalar **Checkout Mercado Pago** en una tienda Shopify, sigue los siguien
 
 ![Pagos](/images/shopify/payments-page-es.png)
 
-5. Selecciona la pestaña **Buscar por proveedor** y busca la aplicación "Checkout Mercado Pago".
+5. Selecciona la pestaña **Buscar por proveedor** y busca la aplicación "Mercado Pago Checkout Pro".
 
 ![Agregar forma de pago](/images/shopify/add-payment-method-es.png)
 
@@ -96,6 +96,6 @@ Para instalar **Checkout Mercado Pago** en una tienda Shopify, sigue los siguien
 
 > En este paso, podrás seleccionar las imágenes de los medios de pago que quieras mostrar en tu tienda a modo ilustrativo. 
 
-¡Listo! **Checkout Mercado Pago** está preparado para recibir pagos.
+¡Listo! **Mercado Pago Checkout Pro** está preparado para recibir pagos.
 
 ------------
