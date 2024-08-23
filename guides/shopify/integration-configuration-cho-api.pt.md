@@ -69,6 +69,16 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 ![installation cards 7](/images/shopify/installation-cards-7-pt.png)
 
+15. Ainda nas "Configurações" do painel admnistrativo da loja, clique **Checkout > Forma de contato do cliente** e garanta que o campo **E-mail** esteja selecinado como método de contato que os clientes deverão indicar para receber notificações do pedido.
+
+> WARNING
+>
+> Atenção
+>
+> A utilização do **e-mail** como forma de contato é obrigatório para o processamento de pagamentos com o Mercado Pago.
+
+![installation cards 8](/images/shopify/installation-cards-8-pt.png)
+
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
 ----[mlb]----
@@ -140,6 +150,16 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 ![installation cards 7](/images/shopify/installation-cards-7-pt.png)
 
+11. Ainda nas "Configurações" do painel admnistrativo da loja, clique **Checkout > Forma de contato do cliente** e garanta que o campo **E-mail** esteja selecinado como método de contato que os clientes deverão indicar para receber notificações do pedido.
+
+> WARNING
+>
+> Atenção
+>
+> A utilização do **e-mail** como forma de contato é obrigatório para o processamento de pagamentos com o Mercado Pago.
+
+![installation cards 8](/images/shopify/installation-cards-8-pt.png)
+
 Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagamentos da sua loja.
 
 ----[mlb]----
@@ -149,7 +169,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 >
 > Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 > <br><br>
-> Com o Mercado Pago Cartões, os campos de "Número da Casa" e "Bairro" não serão exibidos automaticamente no formulário dos dados de entrega do pedido. Para que esses campos sejam exibidos, basta entrar em contato com a equipe de suporte da plataforma Shopify e fazer a solicitação. Além disso, é importante salientar que o campo **e-mail** é obrigatório para o processamento de pagamentos com o Mercado Pago, não podendo ser solicitada à plataforma Shopify a sua troca por outro campo.
+> Com o Mercado Pago Cartões, os campos de "Número da Casa" e "Bairro" não serão exibidos automaticamente no formulário dos dados de entrega do pedido. Para que esses campos sejam exibidos, basta entrar em contato com a equipe de suporte da plataforma Shopify e fazer a solicitação.
 
 ------------
 ----[mlm]----
