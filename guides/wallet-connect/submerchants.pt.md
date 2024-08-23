@@ -11,7 +11,7 @@ No mercado atual podemos identificar dois tipos de Facilitadores de pagamentos:
 >
 > Importante
 >
-> A Circular BCB nº3978/2020 determina que todos os Facilitadores de pagamento identifiquem os beneficiários finais no momento da transação. Para cumprimento desta norma, é obrigatório enviar os parâmetros do atributo `sub_merchant` que são detalhados na tabela abaixo. Caso os campos não sejam enviados, a bandeira poderá aplicar penalidades que serão repassadas ao Facilitador de Pagamento.
+> A Circular BCB nº3978/2020 determina que todos os Facilitadores de pagamento identifiquem os beneficiários finais no momento da transação. Para cumprimento desta norma, é obrigatório enviar os parâmetros do atributo `sub_merchant` que são detalhados na tabela abaixo. Caso os campos não sejam enviados, a bandeira poderá aplicar penalidades que serão repassadas ao Facilitador de pagamento.
 
 Veja abaixo os detalhes de cada atributo pertencente a `forward_data.sub_merchant`.
 
@@ -30,7 +30,7 @@ Veja abaixo os detalhes de cada atributo pertencente a `forward_data.sub_merchan
 | `region_code` | Texto | Código postal do subcomerciante. | Obrigatório | BR |
 | `document_type` | Texto | Número do CPF ou CNPJ do sub comércio. | Obrigatório | CNPJ |
 | `phone` | Texto | Telefone do subcomerciante. | Obrigatório | 123123123 |
-| `url` | Texto | URL do Facilitador de Pagamento. | Obrigatório | www.nomedofacilitador.com.br |
+| `url` | Texto | URL do Facilitador de pagamento. | Obrigatório | www.nomedofacilitador.com.br |
 
 > WARNING
 >

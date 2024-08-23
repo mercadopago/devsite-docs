@@ -1004,7 +1004,7 @@
                             "required": true,
                             "type": "object",
                             "description": {
-                              "en": "Mandatory data related to the su-merchant. They are used by Payment Facilitators to identify submerchants at the time of the transaction.",
+                              "en": "Mandatory data related to the su-merchant. They are used by Payment facilitators to identify submerchants at the time of the transaction.",
                               "pt": "Dados obrigatórios relacionados ao subcomércio. São utilizados pelos Facilitadores de pagamento para identificar os subcomércios no momento da transação.",
                               "es": "Datos obligatorios relacionados con el subcomercio. Son utilizados por los Facilitadores de pago para identificar los subcomercios en el momento de la transacción."
                             },
