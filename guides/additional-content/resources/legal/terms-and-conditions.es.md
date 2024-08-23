@@ -461,6 +461,10 @@ Quando o Conteúdo do Mercado Pago contiver informações de Usuários do Mercad
 
 Os Usuários do Aplicativo poderão exibir o Conteúdo do Mercado Pago em seus websites ou aplicativos. Os Desenvolvedores deverão informar e sujeitar os Usuários do Aplicativo às diretrizes previstas nesta cláusula 5.2 com relação à exibição do Conteúdo do Mercado Pago, assim como informar a eles acerca dos direitos do Mercado Pago sobre a API e o Conteúdo do Mercado Pago. 
 
+# 6. Obtenção e uso de Informações Pessoais
+
+Quando, no âmbito destes Termos e condições, o Desenvolvedor utilizar qualquer uma das ferramentas do Mercado Pago em seu próprio software ou em software de terceiros para o desenvolvimento de aplicativos, e os Dados Pessoais forem processados para este fim, as seguintes disposições são estabelecidas:  
+
 **6.1 Função do Desenvolvedor:** Ao processar Dados Pessoais, o Usuário do Mercado Pago que permite ao Desenvolvedor acessar Dados Pessoais por meio do uso da API, atuará como Controlador de Dados e o Desenvolvedor atuará como seu Operador. Ambas as Partes se comprometem a cumprir a LGPD.
 
 **6.2 Finalidade e proporcionalidade do processamento:** O Desenvolvedor só poderá processar os Dados Pessoais de acordo com as instruções e autorizações recebidas do Usuário do Mercado Pago atuando como Controlador de Dados.
