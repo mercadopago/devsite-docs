@@ -336,4 +336,4 @@ Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(payment));
 | `region_code` | Texto | Código postal do subcomércio. | Obrigatório | BR |
 | `document_type` | Texto | Número do CPF ou CNPJ do subcomércio. | Obrigatório | CNPJ |
 | `phone` | Texto | Telefone do subcomércio. | Obrigatório | 123123123 |
-| `url` | Texto | URL do Facilitador de Pagamento | Obrigatório | www.nomedofacilitador.com.br |
+| `url` | Texto | URL do Facilitador de pagamento | Obrigatório | www.nomedofacilitador.com.br |
