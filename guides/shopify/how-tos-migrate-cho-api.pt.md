@@ -64,7 +64,7 @@ Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecem
 
 ![installation cards 7](/images/shopify/installation-cards-7-pt.png)
 
-15. Ainda nas "Configurações" do painel admnistrativo da loja, clique **Checkout > Forma de contato do cliente** e garanta que o campo **E-mail** esteja selecinado como método de contato que os clientes deverão indicar para receber notificações do pedido.
+15. Ainda nas "Configurações" do painel administrativo da loja, clique **Checkout > Forma de contato do cliente** e garanta que o campo **E-mail** esteja selecinado como método de contato que os clientes deverão indicar para receber notificações do pedido.
 
 > WARNING
 >
@@ -127,7 +127,7 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 
 ![installation cards 7](/images/shopify/installation-cards-7-pt.png)
 
-11. Ainda nas "Configurações" do painel admnistrativo da loja, clique **Checkout > Forma de contato do cliente** e garanta que o campo **E-mail** esteja selecinado como método de contato que os clientes deverão indicar para receber notificações do pedido.
+11. Ainda nas "Configurações" do painel administrativo da loja, clique **Checkout > Forma de contato do cliente** e garanta que o campo **E-mail** esteja selecinado como método de contato que os clientes deverão indicar para receber notificações do pedido.
 
 > WARNING
 >
