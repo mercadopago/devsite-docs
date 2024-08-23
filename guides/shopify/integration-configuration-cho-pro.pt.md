@@ -63,9 +63,9 @@ Pronto! O **Mercado Pago Checkout Pro** está pronto para receber os pagamentos 
 
 ------------
 ----[mla, mlm, mpe, mlu, mlc, mco]----
-Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) (**Checkout Mercado Pago**), é possível que haja um **aumento na taxa de aprovação das vendas da loja on-line**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que facilita o pagamento. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
+Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing) (**Mercado Pago Checkout Pro**), é possível que haja um **aumento na taxa de aprovação das vendas da loja on-line**. Isso acontece porque os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será feito em nosso ambiente, o que facilita o pagamento. Ao final da transação, esses compradores são redirecionados ao ambiente da loja.
 
-Para instalar o **Checkout Mercado Pago** em sua loja Shopify, siga os seguintes passos:
+Para instalar o **Mercado Pago Checkout Pro** em sua loja Shopify, siga os seguintes passos:
 
 1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
 
@@ -79,7 +79,7 @@ Para instalar o **Checkout Mercado Pago** em sua loja Shopify, siga os seguintes
 
 ![Pagos](/images/shopify/payments-page-pt.png)
 
-5. Selecione a aba **Buscar por provedor** e procure pelo aplicativo "Checkout Mercado Pago".
+5. Selecione a aba **Buscar por provedor** e procure pelo aplicativo "Mercado Pago Checkout Pro".
 
 ![Agregar forma de pago](/images/shopify/add-payment-method-pt.png)
 
@@ -124,6 +124,6 @@ Para instalar o **Checkout Mercado Pago** em sua loja Shopify, siga os seguintes
 
 > Nesta etapa, você pode selecionar as imagens dos métodos de pagamento que deseja exibir em sua loja para fins ilustrativos.
 
-Pronto! O **Checkout Mercado Pago** do Mercado Pago está pronto para receber os pagamentos da sua loja.
+Pronto! O **Mercado Pago Checkout Pro** do Mercado Pago está pronto para receber os pagamentos da sua loja.
 
 ------------
