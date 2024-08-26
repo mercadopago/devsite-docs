@@ -2,6 +2,12 @@
 
 Saiba como migrar para a versão atual do plugin do Mercado Pago para a Nuvemshop.
 
+> WARNING
+>
+> Importante
+>
+> Para realizar a migração corretamente, é essencial que você esteja logado na conta Mercado Pago principal que utiliza para receber pagamentos.
+
 ## Instale o novo plugin
 
 1. No Painel Administrativo da sua loja na Nuvemshop, acesse **Meus aplicativos - Ver todos os aplicativos**.
@@ -13,7 +19,7 @@ Saiba como migrar para a versão atual do plugin do Mercado Pago para a Nuvemsho
 >
 > Nota
 >
-> Neste exato momento você terá ambas as versões do plugin instaladas em seu site. Isso servirá para a sua loja ficar sem nenhum meio de pagamento enquanto estiverem sendo realizadas as etapas de migração.
+> Neste exato momento você terá ambas as versões do plugin instaladas em seu site. Isso servirá para que sua loja não fique sem nenhum meio de pagamento enquanto estiverem sendo realizadas as etapas de migração.
 
 ## Desative o antigo plugin
 
