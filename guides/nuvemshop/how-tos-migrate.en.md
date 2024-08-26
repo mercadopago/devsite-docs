@@ -2,6 +2,12 @@
 
 Find out how to migrate to the current version of the Mercado Pago plugin for Tiendanube.
 
+> WARNING
+>
+> Important
+>
+> To perform the migration correctly, it is essential that you are logged into the main Mercado Pago account you use to receive payments.
+
 ## Install the new plugin
 
 1. In your store's Administrative Panel at Tiendanube, go to **Potentialize > My apps**.
@@ -13,7 +19,7 @@ Find out how to migrate to the current version of the Mercado Pago plugin for Ti
 >
 > Note
 >
-> Right now you will have both versions of the plugin installed on your site. This will allow your store to have no means of payment while the migration steps are being carried out.
+> Right now you will have both versions of the plugin installed on your site. This will prevent your store from being without payment methods while the migration steps are being carried out.
 
 ## Deactivate the old plugin
 
