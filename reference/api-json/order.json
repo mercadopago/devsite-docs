@@ -3403,9 +3403,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This operation of adding **transactions** to the Order can only be carried out in **Builder** mode, with these **processing_mode** fields with this **manual** value.",
-          "pt": "Essa operação de adicionar **transactions** à Order só pode ser realizada no modo **Builder**, com o campo **processing_mode** com valor **manual**.",
-          "es": "Esta operación de agregar **transactions** a la Order solo puede realizarse en el modo **Builder**, con el campo **processing_mode** con valor **manual**."
+          "en": "This endpoint allows payment transactions to be added to the order. This operation of adding transactions to the order can only be carried out in Builder mode, with these 'processing_mode' fields with this 'manual' value.",
+          "pt": "Esse endpoint permite adicionar transações de pagamento à order. Essa operação só pode ser realizada no modo Builder (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental), com o parâmetro 'processing_mode' com valor 'manual'",
+          "es": "Este endpoint permite añadir transacciones de pago a la order. Esta operación de agregar transactions a la order solo puede realizarse en el modo Builder, con el campo 'processing_mode' con valor 'manual'"
         },
         "headers": [
           {
@@ -3975,9 +3975,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "Delete a transaction  using its reference ID.",
-          "pt": "Deleta uma transação utilizando seu ID de referência.",
-          "es": "Eliminar una transacción utilizando su ID de referencia."
+          "en": "This endpoint allows a transaction to be deleted from the order using its reference ID",
+          "pt": "Este endpoint permite deletar uma transação da order, utilizando o seu ID de referência",
+          "es": "Este endpoint permite eliminar una transacción de la orden, utilizando su ID de referencia"
         },
         "parameters": [
           {
