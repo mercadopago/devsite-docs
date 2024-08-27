@@ -3832,27 +3832,54 @@
           },
           "400": {
             "description": {
-              "en": "Error. Invalid ID supplied",
-              "pt": "Erro. ID inválido.",
-              "es": "Error. ID inválido."
+              "pt": "Bad Request",
+              "en": "Bad Request",
+              "es": "Bad Request"
             },
-            "content":{
-              "application/json":{
-                "schema":{
+            "content": {
+              "application/json": {
+                "schema": {
                   "type": "object",
                   "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "400",
-                          "description": {
-                            "en": "Descripción del error y workarround",
-                            "es": "Descripción del error y workarround",
-                            "pt": "Descripción del error y workarround"
+                    "errors": {
+                      "type": "array",
+                      "description": {
+                        "pt": "Objetos de erro",
+                        "en": "Error objects",
+                        "es": "Objetos de error"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "type": "string",
+                            "description": {
+                              "pt": "Código do erro.",
+                              "en": "Error code.",
+                              "es": "Código de error."
+                            },
+                            "example": "empty_required_header"
+                          },
+                          "message": {
+                            "type": "string",
+                            "description": {
+                              "pt": "Mensagem de erro.",
+                              "en": "Error message.",
+                              "es": "Mensaje de error."
+                            },
+                            "example": "Missing HTTP header: X-Idempotency-Key."
+                          },
+                          "doc_url": {
+                            "type": "string",
+                            "description": {
+                              "pt": "URL para a documentação oficial.",
+                              "en": "URL for official documentation.",
+                              "es": "URL para la documentación oficial."
+                            },
+                            "example": "https://mercadopago.com/developers"
                           }
                         }
-                      ]
+                      }
                     }
                   }
                 }
@@ -4039,58 +4066,48 @@
             }
           },
           "401": {
-            "description": {
-              "en": "Error. Access Token not authorized.",
-              "pt": "Erro. Access Token não autorizado.",
-              "es": "Error. Access Token no autorizado."
-            },
-            "content":{
-              "application/json":{
-                "schema":{
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "401",
-                          "description": {
-                            "en": "Descripción del error y workarround",
-                            "es": "Descripción del error y workarround",
-                            "pt": "Descripción del error y workarround"
-                          }
-                        }
-                      ]
-                    }
-                  }
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": {
+                    "en": "Access Token not authorized",
+                    "pt": "Token de acesso não autorizado",
+                    "es": "Token de acceso no autorizado"
+                  },
+                  "type": "string",
+                  "example": "Access Token not authorized"
                 }
               }
             }
           },
           "404": {
-            "description": {
-              "en": "Error. Order not found.",
-              "pt": "Error. Order não encontrada.",
-              "es": "Error. Orden no encontrada."
-            },
-            "content":{
-              "application/json":{
-                "schema":{
+            "content": {
+              "application/json": {
+                "schema": {
                   "type": "object",
+                  "description": {
+                    "en": "Order or transaction not found.",
+                    "pt": "Order ou transaction não encontrada.",
+                    "es": "Orden o transaction no encontrada."
+                  },
                   "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "404",
-                          "description": {
-                            "en": "Order not found. Please check if you provided the correct order ID.",
-                            "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
-                            "pt": "Order não encontrada. Verifique se enviou o ID correto."
-                          }
+                    "Error": [
+                      {
+                        "code": {
+                          "type": "string",
+                          "description": "404"
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Order not found."
+                        },
+                        "doc_url": {
+                          "type": "string",
+                          "description": "link",
+                          "example": "http.ref"
                         }
-                      ]
-                    }
+                      }
+                    ]
                   }
                 }
               }
