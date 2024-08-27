@@ -47,19 +47,22 @@ To perform the integration, you will need to follow the usual integration flow o
 
 #### Example
 
-```json
-    {
-    "description": "API TRANSPARENTE MARKETPLACE",
+```curl
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'accept: application/json' \
+--header 'content-type: application/json' \
+--header 'Authorization: Bearer {{oauth_access_token}}' \
+--data-raw '{
+    "description": "Test payment 3",
     "installments": 1,
     "token": "{{card_token}}",
     "payer": {
-        "id": "{{payer_id}}"
+        "email": "{{payer_email}}"
     },
-    "marketplace": "{{marketplace_id}}",
     "payment_method_id": "master",
-    "application_fee": 2,
-    "transaction_amount": 10
-    }
+    "transaction_amount": 25,
+    "application_fee": 10
+}'
 ```
 
 Upon completing these steps, the checkout will have been integrated into the marketplace and will be ready to process payments.
