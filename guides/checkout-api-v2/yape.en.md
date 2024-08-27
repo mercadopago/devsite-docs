@@ -404,6 +404,8 @@ Due to being a debit card transaction, possible payment statuses are **approved*
 
 > NOTE
 >
+> Note
+>
 > If any error occurs while generating a payment, refer to the list of possible errors in the [API Reference](/developers/en/reference/payments/_payments/post).
 
 ## Integration test
