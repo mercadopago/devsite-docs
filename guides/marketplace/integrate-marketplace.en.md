@@ -51,7 +51,7 @@ To perform the integration, you will need to follow the usual integration flow o
 
 #### Example
 
-```json
+```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
