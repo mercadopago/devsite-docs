@@ -23,7 +23,7 @@ Aprende cómo utilizar la app **Mercado Pago Ordena Checkouts** para cambiar el 
 
 ------------
 ----[mlm]----
-3. Para reordenar la visualización de los proveedores, **haz clic y mantén presionada** la tarjeta del proveedor y arrástrala (_drag n drop_) a la posición deseada. Ten en cuenta que con el **Checkout Mercado Pago** en la primera posición, la tienda tendrá mayores tasas de aprobación para pagos con tarjetas guardadas y ofrecerá una experiencia de compra más completa para los 90 millones de clientes que pagan con Mercado Pago.
+3. Para reordenar la visualización de los proveedores, **haz clic y mantén presionada** la tarjeta del proveedor y arrástrala (_drag n drop_) a la posición deseada. Ten en cuenta que con el **Mercado Pago Checkout Pro** en la primera posición, la tienda tendrá mayores tasas de aprobación para pagos con tarjetas guardadas y ofrecerá una experiencia de compra más completa para los 90 millones de clientes que pagan con Mercado Pago.
 
 ------------
 4. Para confirmar los cambios, haz clic en **Guardar orden de visualización**.

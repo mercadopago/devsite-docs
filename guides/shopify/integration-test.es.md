@@ -7,7 +7,7 @@ Las compras de prueba son esenciales para asegurarse de que los pagos se procese
 > 
 > Importante
 >
-> La prueba solo se puede realizar después de la etapa de configuración de la integración del [Checkout Mercado Pago](/developers/es/docs/shopify/integration-configuration/checkout-pro).
+> La prueba solo se puede realizar después de la etapa de configuración de la integración del [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 ----[mlb]----
@@ -15,7 +15,7 @@ Las compras de prueba son esenciales para asegurarse de que los pagos se procese
 > 
 > Importante
 >
-> La prueba solo se puede realizar después de la etapa de configuración de la integración de uno de los checkouts de pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Checkout Mercado Pago](/developers/es/docs/shopify/integration-configuration/checkout-pro).
+> La prueba solo se puede realizar después de la etapa de configuración de la integración de uno de los checkouts de pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 ----[mlm]----
@@ -51,7 +51,7 @@ Ve a continuación cómo probar la integración:
 ![Credenciais de produção](/images/shopify/test-prod-credentials-es.png)
 
 ----[mlm]----
-7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** uno de los checkout de Mercado Pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Checkout Mercado Pago](/developers/es/docs/shopify/integration-configuration/checkout-pro). .
+7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** uno de los checkout de Mercado Pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro). .
 8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
 9. Haz clic en **Guardar credenciales**.
 
@@ -61,7 +61,7 @@ Ahora, sigue el paso a paso según el tipo de checkout elegido para procesar los
 
 10. Accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
-## Checkout Mercado Pago
+## Mercado Pago Checkout Pro
 
 10. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
 11. En la misma ventana con sesión iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
@@ -105,7 +105,7 @@ Después de completar una compra de prueba utilizando uno de los checkouts, la a
 
 ------------
 ----[mla, mpe, mco, mlu, mlc]----
-7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** el [Checkout Mercado Pago](/developers/es/docs/shopify/integration-configuration/checkout-pro).
+7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** el [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
 9. Haz clic en **Guardar credenciales**.
 10. Abre una nueva ventana anónima e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
