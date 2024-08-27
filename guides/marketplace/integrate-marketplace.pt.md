@@ -51,7 +51,7 @@ Para realizar a integração você precisará seguir o fluxo de integração usu
 
 #### Exemplo
 
-```json
+```curl
 curl --location 'https://api.mercadopago.com/v1/payments' \
 --header 'accept: application/json' \
 --header 'content-type: application/json' \
