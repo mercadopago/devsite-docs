@@ -3397,7 +3397,11 @@
     },
     "/v1/orders/{order_id}/transactions": {
       "post": {
-        "tags": ["Order"],
+        "tags": [
+          "order",
+          "checkout-api",
+          "mp-point"
+        ],
         "description": {
           "en": "This operation of adding **transactions** to the Order can only be carried out in **Builder** mode, with these **processing_mode** fields with this **manual** value.",
           "pt": "Essa operação de adicionar **transactions** à Order só pode ser realizada no modo **Builder**, com o campo **processing_mode** com valor **manual**.",
@@ -3979,7 +3983,9 @@
     "/v1/orders/{order_id}/transactions/{transaction_id}": {
       "delete": {
         "tags": [
-          "Order"
+          "order",
+          "checkout-api",
+          "mp-point"
         ],
         "summary": "Delete transaction by id",
         "description": {
