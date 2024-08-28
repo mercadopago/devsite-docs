@@ -9,8 +9,7 @@ Para integrarse con Wallet Connect, debe cumplir con los requisitos que se descr
 > La integración con Wallet Connect **solo** está disponible para vendedores que tengan al menos una de las siguientes características:
 > <br><br> 
 > - Realizarán en Wallet Connect ventas recurrentes de ticket promedio menor a 15 USD, más de 100 mil usuarios y al menos 2 transacciones mensuales por usuario.
-> - Tienen un modelo de suscripción mensual, con mas de 100 mil usuarios y un ticket promedio menor a 40 USD.
-> <br>
+> - Tienen un modelo de suscripción mensual, con mas de 100 mil usuarios y un ticket promedio menor a 40 USD. <br><br> 
 > Si cumple con las características citadas y está interesado en integrar este producto, contacta a tu ejecutivo comercial para obtener más detalles.
 
 | Requisito  | Descripción  |
