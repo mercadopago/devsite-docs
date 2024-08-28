@@ -3399,15 +3399,14 @@
       "post": {
         "tags": [
           "order",
-          "checkout-api",
-          "mp-point"
+          "checkout-api"
         ],
         "description": {
-          "en": "This endpoint allows payment transactions to be added to the order. This operation of adding transactions to the order can only be carried out in Builder mode, with these 'processing_mode' fields with this 'manual' value.",
+          "en": "This endpoint allows payment transactions to be added to the order. This operation can only be carried out in Builde (processing payment in stages that can be configured and executed incrementally) mode, with these 'processing_mode' fields with this 'manual' value.",
           "pt": "Esse endpoint permite adicionar transações de pagamento à order. Essa operação só pode ser realizada no modo Builder (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental), com o parâmetro 'processing_mode' com valor 'manual'",
-          "es": "Este endpoint permite añadir transacciones de pago a la order. Esta operación de agregar transactions a la order solo puede realizarse en el modo Builder, con el campo 'processing_mode' con valor 'manual'"
+          "es": "Este endpoint permite añadir transacciones de pago a la order. Esta operación solo puede realizarse en el modo Builder (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental), con el campo 'processing_mode' con valor 'manual'"
         },
-        "headers": [
+        "parameters": [
           {
             "name": "Authorization",
             "in": "header",
@@ -3434,20 +3433,19 @@
               "pt": "Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
               "es": "Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el header de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias."
             }
-          }
-        ],
-        "parameters": [
+          },
           {
-            "name": "order_id",
+            "name": "id",
             "in": "path",
             "description": {
-              "en": "Order ID",
-              "pt": "ID da Order",
-              "es": "ID de la Order"
+              "en": "Order ID, returned in the response to the request made for its creation.",
+              "pt": "ID da order, retornado na resposta à requisição para sua criação.",
+              "es": "ID de la orden, devuelto en la respuesta a la requisición para su creación."
             },
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "example": "01J49MMW3SSBK5PSV3DFR32959"
             }
           }
         ],
@@ -3456,181 +3454,64 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "description": {
-                  "en": "Transaction request for type=online",
-                  "pt": "Requisição de transação para type=online",
-                  "es": "Solicitud de transacción para type=online"
-                },
                 "properties": {
-                  "payments": {
-                    "type": "array",
-                    "description": {
-                      "pt": "Contém informações sobre o pagamento da Order.",
-                      "en": "Contains information about payment for the Order.",
-                      "es": "Contiene información sobre el pago de la Order."
+                  "type":{
+                    "type":"string",
+                    "required":true,
+                    "description":{
+                      "en":"Order type, associated with the Mercado Pago solution for which it is created. For online card payments, the only possible value is \"online\".",
+                      "pt":"Tipo de order, associada à solução do Mercado Pago para a qual foi criada. Para pagamentos online com cartões, o único valor possível é \"online\".",
+                      "es":"Tipo de order, asociada a la solución de Mercado Pago para la que se crea. Para pagos online con tarjetas, el único valor posible es \"online\"."
                     },
-                    "required": false,
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "amount": {
-                          "type": "string",
-                          "description": {
-                            "pt": "Valor do pagamento.",
-                            "en": "Payment amount.",
-                            "es": "Monto del pago."
-                          },
-                          "example": "123.45",
-                          "required": true
-                        },
-                        "payment_method": {
-                          "type": "object",
-                          "description": {
-                            "pt": "Informação sobre o meio de pagamento.",
-                            "en": "Information about the payment method.",
-                            "es": "Información sobre el medio de pago."
-                          },
-                          "required": true,
-                          "properties": {
-                            "id": {
-                              "type": "string",
-                              "description": {
-                                "pt": "Indica o identificador/bandeira do meio de pagamento selecionado para efetuar o pagamento.",
-                                "en": "Indicates the identifier of the payment method selected to make the payment.",
-                                "es": "Indica el identificador del medio de pago seleccionado para realizar el pago."
-                              },
-                              "example": "visa",
-                              "required": true
-                            },
-                            "type": {
-                              "type": "string",
-                              "description": {
-                                "pt": "Indica o tipo de meio de pagamento selecionado para efetuar o pagamento.",
-                                "en": "Indicates the type of payment method selected to make the payment.",
-                                "es": "Indica el tipo de medio de pago seleccionado para realizar el pago."
-                              },
-                              "example": "credit_card",
-                              "required": false
-                            },
-                            "token": {
-                              "type": "string",
-                              "description": {
-                                "pt": "Token que identifica o cartão.",
-                                "en": "Token that identifies the card.",
-                                "es": "Token que identifica la tarjeta."
-                              },
-                              "example": "ff8080814c11e237014c1ff593b57b4d",
-                              "required": false
-                            },
-                            "installments": {
-                              "type": "number",
-                              "description": {
-                                "pt": "Número de parcelas selecionado.",
-                                "en": "Number of installments selected.",
-                                "es": "Cantidad seleccionada de cuotas."
-                              },
-                              "example": 1,
-                              "required": false
-                            },
-                            "issuer_id": {
-                              "type": "string",
-                              "description": {
-                                "pt": "É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.",
-                                "en": "It is the identifier of the card issuer being used in a credit or debit card payment.",
-                                "es": "Es el identificador del emisor de la tarjeta que se está utilizando en un pago con tarjeta de crédito o débito."
-                              },
-                              "example": "visa",
-                              "required": false
-                            },
-                            "statement_descriptor": {
-                              "type": "string",
-                              "description": {
-                                "pt": "Descrição com a qual o pagamento aparecerá no resumo do cartão.",
-                                "en": "Description that the payment will appear with in the card statement.",
-                                "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta."
-                              },
-                              "example": "MERCADOPAGO",
-                              "required": false
-                            }
-                          }
-                        },
-                        "currency": {
-                          "type": "string",
-                          "description": {
-                            "pt": "Identificador da moeda utilizada no pagamento. Atualmente, possuímos as opções listadas no exemplo.",
-                            "en": "Currency identifier used in payment. Currently, we have the options listed in the example.",
-                            "es": "Identificador de la moneda utilizada en el pago. Actualmente, tenemos las opciones listadas en el ejemplo."
-                          },
-                          "example": "BRL",
-                          "required": false,
-                          "enum": [
-                            {
-                              "title": "ARS",
-                              "description": {
-                                "en": "Argentine peso.",
-                                "es": "Argentine peso.",
-                                "pt": "Argentine peso."
-                              }
-                            },
-                            {
-                              "title": "BRL",
-                              "description": {
-                                "en": "Brazilian real.",
-                                "es": "Brazilian real.",
-                                "pt": "Brazilian real."
-                              }
-                            },
-                            {
-                              "title": "CLP",
-                              "description": {
-                                "en": "Chilean peso.",
-                                "es": "Chilean peso.",
-                                "pt": "Chilean peso."
-                              }
-                            },
-                            {
-                              "title": "MXN",
-                              "description": {
-                                "en": "Mexican peso.",
-                                "es": "Mexican peso.",
-                                "pt": "Mexican peso."
-                              }
-                            },
-                            {
-                              "title": "COP",
-                              "description": {
-                                "en": "Colombian peso.",
-                                "es": "Colombian peso.",
-                                "pt": "Colombian peso."
-                              }
-                            },
-                            {
-                              "title": "PEN",
-                              "description": {
-                                "en": "Peruvian sol.",
-                                "es": "Peruvian sol.",
-                                "pt": "Peruvian sol."
-                              }
-                            },
-                            {
-                              "title": "UYU",
-                              "description": {
-                                "en": "Uruguayan peso.",
-                                "es": "Uruguayan peso.",
-                                "pt": "Uruguayan peso."
-                              }
-                            },
-                            {
-                              "title": "USD",
-                              "description": {
-                                "en": "US dollar.",
-                                "es": "US dollar.",
-                                "pt": "US dollar."
-                              }
-                            }
-                          ]
+                    "enum": [
+                      {
+                        "title": "online",
+                        "description": {
+                          "en": "Value associated with the creation of orders for online payments.",
+                          "es": "Valor asociado a la creación de órdenes para pagos online.",
+                          "pt": "Valor associado à criação de orders para pagamentos online."
                         }
                       }
+                    ],
+                    "example": "online" 
+                  },
+                  "transactions":{
+                    "type":"object",
+                    "required": true,
+                    "description":{
+                      "en": "Information about the payment transaction to be associated with the order. It can contain as many transactions as necessary. For example, if you want to create a payment with two cards, you can duplicate the \"payments\" node, dividing the total value of the transaction and indicating a different payment method for each one.",
+                      "pt": "Informações sobre a transação de pagamento a ser associada à order. Pode conter quantas transações forem necessárias. Por exemplo, se deseja criar um pagamento com dois cartões, você pode duplicar o nó \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
+                      "es": "Información sobre la transacción de pago que se va a asociar con la order. Puede contener cuantas transacciones sean necesarias. Por ejemplo, en caso de querer crear un pago con dos tarjetas, puedes duplicar el nodo \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno." 
+                    },
+                    "properties": {
+                      "payments": [
+                        {
+                          "type": "object",
+                          "description": {
+                            "en": "Payment transaction to be associated with the order. If you want to create a payment with two cards, you can duplicate this node, dividing the total value of the transaction and indicating a different payment method for each one.",
+                            "pt": "Transação de pagamento a ser associada à order. Caso deseje criar um pagamento com dois cartões, você pode duplicar este nó, dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
+                            "es": "Transacción de pago que se va a asociar con la order. En caso de querer crear un pago con dos tarjetas, puedes duplicar este nodo, dividiendo el monto del pago y señalando el medio de pago en cada uno. "
+                          },
+                          "properties": {
+                            "amount": {
+                              "type": "string",
+                              "required": true,
+                              "description": {
+                                "en": "Payment amount. If only one payment method is used, it must be equivalent to the amount entered in the \"total_amount\" field. If two are used, it is the sum between them that must be equivalent to that amount.",
+                                "pt": "Valor do pagamento. Caso seja utilizado apenas um meio de pagamento, este deverá ser equivalente ao valor informado no campo \"total_amount\". Se forem utilizados dois, é a soma entre eles que deve ser equivalente a esse valor.",
+                                "es": "Monto del pago. Si se utiliza un sólo método de pago, debe ser equivalente al monto ingresado en el campo \"total_amount\". Si se utilizan dos, es la suma entre ambos la que debe ser equivalente a ese monto."
+                              },
+                              "example": "24"
+                            },
+                            "currency": {
+                              "$ref": "#/components/schemas/currency"
+                            },
+                            "payment_method": {
+                              "$ref": "#/components/schemas/payment_method"
+                            }
+                          }
+                        }
+                      ]
                     }
                   }
                 }
@@ -3641,190 +3522,43 @@
         "responses": {
           "201": {
             "description": {
-              "en": "Successful operation",
-              "pt": "Operação realizada com sucesso",
-              "es": "Operación realizada con éxito"
+              "es": "Éxito",
+              "pt": "Sucesso",
+              "en": "Success"
             },
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "description": {
-                    "en": "Transaction response for type=online",
-                    "pt": "Resposta de transação para type=online",
-                    "es": "Respuesta de transacción para type=online"
-                  },
                   "properties": {
-                    "payments": {
-                      "type": "array",
-                      "description": {
-                        "pt": "Contém informações sobre o pagamento da Order.",
-                        "en": "Contains information about payment for the Order.",
-                        "es": "Contiene información sobre el pago de la Order."
-                      },
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "string",
-                            "description": {
-                              "pt": "Identificador do pagamento.",
-                              "en": "Payment identifier.",
-                              "es": "Identificador del pago."
-                            },
-                            "example": "01HRYFXQ53Q3JPEC48MYWMR0TE"
+                      "payments": [
+                        {
+                          "type": "object",
+                          "description": {
+                            "en": "Payment transaction to be associated with the order. If you want to create a payment with two cards, you can duplicate this node, dividing the total value of the transaction and indicating a different payment method for each one.",
+                            "pt": "Transação de pagamento a ser associada à order. Caso deseje criar um pagamento com dois cartões, você pode duplicar este nó, dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
+                            "es": "Transacción de pago que se va a asociar con la order. En caso de querer crear un pago con dos tarjetas, puedes duplicar este nodo, dividiendo el monto del pago y señalando el medio de pago en cada uno. "
                           },
-                          "status": {
-                            "type": "string",
-                            "description": {
-                              "pt": "Estado do pagamento.",
-                              "en": "Payment status.",
-                              "es": "Estado del pago."
+                          "properties": {
+                            "amount": {
+                              "type": "string",
+                              "required": true,
+                              "description": {
+                                "en": "Payment amount. If only one payment method is used, it must be equivalent to the amount entered in the \"total_amount\" field. If two are used, it is the sum between them that must be equivalent to that amount.",
+                                "pt": "Valor do pagamento. Caso seja utilizado apenas um meio de pagamento, este deverá ser equivalente ao valor informado no campo \"total_amount\". Se forem utilizados dois, é a soma entre eles que deve ser equivalente a esse valor.",
+                                "es": "Monto del pago. Si se utiliza un sólo método de pago, debe ser equivalente al monto ingresado en el campo \"total_amount\". Si se utilizan dos, es la suma entre ambos la que debe ser equivalente a ese monto."
+                              },
+                              "example": "24"
                             },
-                            "example": "approved"
-                          },
-                          "amount": {
-                            "type": "string",
-                            "description": {
-                              "pt": "Valor do pagamento.",
-                              "en": "Payment amount.",
-                              "es": "Monto del pago."
+                            "currency": {
+                              "$ref": "#/components/schemas/currency"
                             },
-                            "example": "123.45"
-                          },
-                          "payment_method": {
-                            "type": "object",
-                            "description": {
-                              "pt": "Informação sobre o meio de pagamento.",
-                              "en": "Information about the payment method.",
-                              "es": "Información sobre el medio de pago."
-                            },
-                            "properties": {
-                              "id": {
-                                "type": "string",
-                                "description": {
-                                  "pt": "Indica o identificador/bandeira do meio de pagamento selecionado para efetuar o pagamento.",
-                                  "en": "Indicates the identifier of the payment method selected to make the payment.",
-                                  "es": "Indica el identificador del medio de pago seleccionado para realizar el pago."
-                                },
-                                "example": "visa"
-                              },
-                              "type": {
-                                "type": "string",
-                                "description": {
-                                  "pt": "Indica o tipo de meio de pagamento selecionado para efetuar o pagamento.",
-                                  "en": "Indicates the type of payment method selected to make the payment.",
-                                  "es": "Indica el tipo de medio de pago seleccionado para realizar el pago."
-                                },
-                                "example": "credit_card"
-                              },
-                              "installments": {
-                                "type": "number",
-                                "description": {
-                                  "pt": "Número de parcelas selecionado.",
-                                  "en": "Number of installments selected.",
-                                  "es": "Cantidad seleccionada de cuotas."
-                                },
-                                "example": 1
-                              },
-                              "issuer_id": {
-                                "type": "string",
-                                "description": {
-                                  "pt": "É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.",
-                                  "en": "It is the identifier of the card issuer being used in a credit or debit card payment.",
-                                  "es": "Es el identificador del emisor de la tarjeta que se está utilizando en un pago con tarjeta de crédito o débito."
-                                },
-                                "example": "visa"
-                              },
-                              "statement_descriptor": {
-                                "type": "string",
-                                "description": {
-                                  "pt": "Descrição com a qual o pagamento aparecerá no resumo do cartão.",
-                                  "en": "Description that the payment will appear with in the card statement.",
-                                  "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta."
-                                },
-                                "example": "MERCADOPAGO"
-                              }
+                            "payment_method": {
+                              "$ref": "#/components/schemas/payment_method"
                             }
-                          },
-                          "currency": {
-                            "type": "string",
-                            "description": {
-                              "pt": "Identificador da moeda utilizada no pagamento.",
-                              "en": "Currency identifier used in payment.",
-                              "es": "Identificador de la moneda utilizada en el pago."
-                            },
-                            "example": "BRL",
-                            "enum": [
-                              {
-                                "title": "ARS",
-                                "description": {
-                                  "en": "Argentine peso.",
-                                  "es": "Argentine peso.",
-                                  "pt": "Argentine peso."
-                                }
-                              },
-                              {
-                                "title": "BRL",
-                                "description": {
-                                  "en": "Brazilian real.",
-                                  "es": "Brazilian real.",
-                                  "pt": "Brazilian real."
-                                }
-                              },
-                              {
-                                "title": "CLP",
-                                "description": {
-                                  "en": "Chilean peso.",
-                                  "es": "Chilean peso.",
-                                  "pt": "Chilean peso."
-                                }
-                              },
-                              {
-                                "title": "MXN",
-                                "description": {
-                                  "en": "Mexican peso.",
-                                  "es": "Mexican peso.",
-                                  "pt": "Mexican peso."
-                                }
-                              },
-                              {
-                                "title": "COP",
-                                "description": {
-                                  "en": "Colombian peso.",
-                                  "es": "Colombian peso.",
-                                  "pt": "Colombian peso."
-                                }
-                              },
-                              {
-                                "title": "PEN",
-                                "description": {
-                                  "en": "Peruvian sol.",
-                                  "es": "Peruvian sol.",
-                                  "pt": "Peruvian sol."
-                                }
-                              },
-                              {
-                                "title": "UYU",
-                                "description": {
-                                  "en": "Uruguayan peso.",
-                                  "es": "Uruguayan peso.",
-                                  "pt": "Uruguayan peso."
-                                }
-                              },
-                              {
-                                "title": "USD",
-                                "description": {
-                                  "en": "US dollar.",
-                                  "es": "US dollar.",
-                                  "pt": "US dollar."
-                                }
-                              }
-                            ]
                           }
                         }
-                      }
-                    }
+                      ]
                   }
                 }
               }
@@ -3861,69 +3595,56 @@
           },
           "401": {
             "description": {
-              "en": "Access Token not authorized",
-              "pt": "Access Token não autorizado",
-              "es": "Access Token no autorizado"
+              "en": "Error. Access Token not authorized.",
+              "pt": "Erro. Access Token não autorizado.",
+              "es": "Error. Access Token no autorizado."
             },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "string",
-                  "example": "Access Token not authorized"
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "401",
+                          "description": {
+                            "en": "Descripción del error y workarround",
+                            "es": "Descripción del error y workarround",
+                            "pt": "Descripción del error y workarround"
+                          }
+                        }
+                      ]
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": {
-              "pt": "Order não encontrada.",
-              "en": "Order not found.",
-              "es": "Order no encontrada."
+              "en": "Error. Order not found.",
+              "pt": "Erro. Order não encontrada.",
+              "es": "Error. Orden no encontrada."
             },
-            "content": {
-              "application/json": {
-                "schema": {
+            "content":{
+              "application/json":{
+                "schema":{
                   "type": "object",
                   "properties": {
-                    "errors": {
-                      "type": "array",
-                      "description": {
-                        "pt": "Objetos de erro",
-                        "en": "Error objects",
-                        "es": "Objetos de error"
-                      },
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "code": {
-                            "type": "string",
-                            "description": {
-                              "pt": "Código do erro.",
-                              "en": "Error code.",
-                              "es": "Código de error."
-                            },
-                            "example": "order_not_found"
-                          },
-                          "message": {
-                            "type": "string",
-                            "description": {
-                              "pt": "Mensagem de erro.",
-                              "en": "Error message.",
-                              "es": "Mensaje de error."
-                            },
-                            "example": "Order not found."
-                          },
-                          "doc_url": {
-                            "type": "string",
-                            "description": {
-                              "pt": "URL para a documentação oficial.",
-                              "en": "URL for official documentation.",
-                              "es": "URL para la documentación oficial."
-                            },
-                            "example": "https://mercadopago.com/developers"
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Order not found. Please check if you provided the correct order ID.",
+                            "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
+                            "pt": "Order não encontrada. Verifique se enviou o ID correto."
                           }
                         }
-                      }
+                      ]
                     }
                   }
                 }
@@ -3971,8 +3692,7 @@
       "delete": {
         "tags": [
           "order",
-          "checkout-api",
-          "mp-point"
+          "checkout-api"
         ],
         "description": {
           "en": "This endpoint allows a transaction to be deleted from the order using its reference ID",
@@ -3998,9 +3718,9 @@
             "name": "order_id",
             "in": "path",
             "description": {
-              "en": "Order ID for identification",
-              "pt": "ID da order para identificação",
-              "es": "ID de la orden para identificación"
+              "en": "Order ID, returned in the response to the request made for its creation.",
+              "pt": "ID da order, retornado na resposta à requisição para sua criação.",
+              "es": "ID de la orden, devuelto en la respuesta a la requisición para su creación."
             },
             "required": true,
             "schema": {
@@ -4029,9 +3749,9 @@
               "application/json": {
                 "schema": {
                   "description": {
-                    "en": "Successful operation",
-                    "pt": "Operação realizada com sucesso",
-                    "es": "Operación exitosa"
+                    "es": "Éxito",
+                    "pt": "Sucesso",
+                    "en": "Success"
                   },
                   "type": "string"
                 }
@@ -4070,7 +3790,7 @@
           "404": {
             "description": {
               "en": "Error. Order not found.",
-              "pt": "Error. Order não encontrada.",
+              "pt": "Erro. Order não encontrada.",
               "es": "Error. Orden no encontrada."
             },
             "content":{
@@ -4211,6 +3931,61 @@
             }
           }
         ]
+      },
+      "payment_method": {
+        "type": "object",
+        "description": {
+          "en":"Information about the payment method.",
+          "pt":"Informação sobre o meio de pagamento.",
+          "es":"Información sobre el medio de pago."
+        },
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "visa",
+            "description": {
+              "en":"Identifier of the payment method selected to make the payment. If it's a card payment, it will show the brand.",
+              "pt":"Identificador do meio de pagamento ou bandeira selecionado para efetuar o pagamento. Caso seja um pagamento com cartão, indicará a bandeira.",
+              "es":"Identificador del medio de pago o bandera seleccionado para realizar el pago. En caso de ser un pago con tarjeta, indicará la bandera."
+            }
+          },
+          "type": {
+            "type": "string",
+            "example": "credit_card",
+            "description": {
+              "en":"Type of payment method selected to make the payment.",
+              "pt":"Tipo de meio de pagamento selecionado para efetuar o pagamento.",
+              "es":"Tipo de medio de pago seleccionado para realizar el pago."
+            }
+          },
+          "installments": {
+            "type": "integer",
+            "example": 1,
+            "description": {
+              "pt": "Número de parcelas selecionado.",
+              "en": "Number of installments selected.",
+              "es": "Cantidad de cuotas seleccionada."
+            }
+          },
+          "issuer_id": {
+            "type": "string",
+            "example": "11233",
+            "description": {
+              "en":"Identifier of the card issuer being used in a credit or debit card payment.",
+              "pt":"Identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.",
+              "es":"Identificador del emisor de la tarjeta que se está utilizando en un pago con tarjeta de crédito o débito."
+            }
+          },
+          "statement_descriptor": {
+            "type": "string",
+            "example": "MERCADOPAGO",
+            "description": {
+              "en": "Description that the payment will appear with in the card statement.",
+              "pt": "Descrição com a qual o pagamento aparecerá no resumo do cartão.",
+              "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta."
+            }
+          }
+        }
       }
     }
   }
