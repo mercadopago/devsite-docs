@@ -3721,8 +3721,8 @@
                             "$ref": "#/components/schemas/currency"
                           },
                           "payment_method": {
-                            "required": true,
-                            "$ref": "#/components/schemas/payment_method"
+                            "$ref": "#/components/schemas/payment_method",
+                            "required": true
                           }
                         }
                       }
