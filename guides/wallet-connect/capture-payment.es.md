@@ -18,6 +18,7 @@ Al enviar el _request_ al endpoint de Pagos, asegúrate de incluir los atributos
 | transaction_amount | Valor total que se cobrará al comprador. |
 | description | Descripción de pago. |
 | external_reference | Referencia de pago asignada por el vendedor |
+| forward_data.sub_merchant | Datos encaminados del `sub_merchant`. Información que los Facilitadores de pago deben enviar obligatoriamente para identificar a los subcomercios durante la transacción. Para obtener más detalles de cada campo perteneciente a `forward_data.sub_merchant`, accede a la documentación de los [Subcomercios](/developers/es/docs/wallet-connect/payment-flow/capture-payment/submerchants). |
 | payer | Información del pagador requerida para la creación del pago. |
 | token | _Token_ de pago obtenido después de finalizar el flujo de la vinculación. |
 | type_token | Tipo de pago. Para el uso en el flujo de Wallet Connect es necesario definir el valor "wallet-token". |
@@ -35,17 +36,35 @@ curl -X POST \
     -H 'accept: application/json' \
     -H 'content-type: application/json' \
     -d '{
-           "wallet_payment": {
-              "transaction_amount": 700.50,
-              "description": "Payment Description",
-              "external_reference": "Pago_123"
-           },
-           "payer": {
-              "token": "PAYER_TOKEN",
+         "wallet_payment": {
+          "transaction_amount": 700.50,
+          "description": "Descripción del pago",
+          "external_reference": "Pago_123"
+          "forward_data": {
+             "sub_merchant": {
+                "sub_merchant_id": 123123,
+                "mcc": "5462",
+                "country": "BRA",
+                "address_door_number": 1,
+                "zip": "2222222",
+                "document_number": "222222222222222",
+                "city": "SÃO PAULO",
+                "address_street": "RUA A",
+                "legal_name": "LOJINHA DO ZÉ",
+                "region_code_iso": "BR-MG",
+                "region_code": "BR",
+                "document_type": "CNPJ",
+                "phone": "123123123",
+                "url": "www.nomedofacilitador.com.br"
+               }
+            }
+         },
+         "payer": {
+            "token": "PAYER_TOKEN",
               "type_token": "wallet-token"
-           },
-           "binary_mode": true
-       }'
+         },
+         "binary_mode": true
+      }'
 ```
 ]]]
 

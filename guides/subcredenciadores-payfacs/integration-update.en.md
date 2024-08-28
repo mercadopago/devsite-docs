@@ -323,17 +323,17 @@ Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(payment));
 
 | Field | Type | Description | Required/Optional | Example |
 |---|---|---|---|---|
-| `sub_merchant_id` | Text | Submerchant code | Required | 123123 |
-| `mcc` | Text | Submerchant MCC according to Abecs decision and/or primary CNAE | Required | 5462 |
-| `country` | Text | Country where the submerchant is located | Required | BRA |
-| `address_door_number` | Number | Street number where the submerchant is located | Required | 1 |
-| `zip` | Text | CEP of the submerchant | Required | 2222222 |
-| `document_number` | Text | CPF or CNPJ identification of the submerchant | Required | 222222222222222 |
-| `city` | Text | City where the submerchant is located | Required | SÃO PAULO |
-| `address_street` | Text | Street where the submerchant is located | Required | RUA A |
-| `legal_name` | Text | Name of the submerchant | Required | LOJINHA DO ZÉ |
-| `region_code_iso` | Text | State where the submerchant is located | Required | BR-MG |
-| `region_code` | Text | Postal code of the submerchant | Required | BR |
-| `document_type` | Text | CPF or CNPJ number of the submerchant | Required | CNPJ |
-| `phone` | Text | Phone number of the submerchant | Required | 123123123 |
-| `url` | Text | Payment Facilitator URL | Required | www.paymentfacilitator.com.br |
+| `sub_merchant_id` | Text | Submerchant code. | Required | 123123 |
+| `mcc` | Text | Submerchant MCC according to Abecs decision and/or primary CNAE. | Required | 5462 |
+| `country` | Text | Country where the submerchant is located. | Required | BRA |
+| `address_door_number` | Number | Street number where the submerchant is located. | Required | 1 |
+| `zip` | Text | CEP of the submerchant. | Required | 2222222 |
+| `document_number` | Text | CPF or CNPJ identification of the submerchant. | Required | 222222222222222 |
+| `city` | Text | City where the submerchant is located. | Required | SÃO PAULO |
+| `address_street` | Text | Street where the submerchant is located. | Required | RUA A |
+| `legal_name` | Text | Name of the submerchant. | Required | LOJINHA DO ZÉ |
+| `region_code_iso` | Text | State where the submerchant is located. | Required | BR-MG |
+| `region_code` | Text | Postal code of the submerchant. | Required | BR |
+| `document_type` | Text | CPF or CNPJ number of the submerchant. | Required | CNPJ |
+| `phone` | Text | Phone number of the submerchant. | Required | 123123123 |
+| `url` | Text | Payment facilitator URL. | Required | www.paymentfacilitator.com.br |

@@ -6,8 +6,8 @@
 
 ---
 content_section_with_media:
- - title: Payment Facilitators
- - message: A Payment Facilitator is an entity that provides payment solutions for end customers (submerchants) to sell their products and/or services. They are responsible for capturing, processing, and settling transactions directly to their submerchants, becoming creditors of the Acquirer.
+ - title: Payment facilitators
+ - message: A Payment facilitator is an entity that provides payment solutions for end customers (submerchants) to sell their products and/or services. They are responsible for capturing, processing, and settling transactions directly to their submerchants, becoming creditors of the acquirer.
  - media_image: /subredenciadores-payfacs/landing-sub.png
 ---
 
