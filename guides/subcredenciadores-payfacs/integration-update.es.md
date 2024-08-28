@@ -323,17 +323,17 @@ Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(payment));
 
 | Campo | Tipo | Descripción | Requerido/Opcional | Ejemplo |
 |---|---|---|---|---|
-| `sub_merchant_id` | Texto | Código del subcomercio | Requerido | 123123 |
-| `mcc` | Texto | MCC del subcomercio conforme a la decisión de la Abecs y/o el CNAE primario | Requerido | 5462 |
-| `country` | Texto | País en donde el subcomercio está ubicado | Requerido | BRA |
-| `address_door_number` | Número | Número de la calle en donde el subcomercio está ubicado | Requerido | 1 |
-| `zip` | Texto | CEP del subcomercio | Requerido | 2222222 |
-| `document_number` | Texto | Identificación del CPF o CNPJ del subcomercio | Requerido | 222222222222222 |
-| `city` | Texto | Ciudad en donde el subcomercio está ubicado | Requerido | SÃO PAULO |
-| `address_street` | Texto | Calle en donde el subcomercio está localizado | Requerido | RUA A |
-| `legal_name` | Texto | Nombre del subcomercio | Requerido | LOJINHA DO ZÉ |
-| `region_code_iso` | Texto | Estado en donde el subcomercio está ubicado | Requerido | BR-MG |
-| `region_code` | Texto | Código postal del subcomercio | Requerido | BR |
-| `document_type` | Texto | Número del CPF o CNPJ del subcomercio | Requerido | CNPJ |
-| `phone` | Texto | Teléfono del subcomercio | Requerido | 123123123 |
-| `url` | Texto | URL del Facilitador de Pago | Requerido | www.nomedofacilitador.com.br |
+| `sub_merchant_id` | Texto | Código del subcomercio. | Requerido | 123123 |
+| `mcc` | Texto | MCC del subcomercio conforme a la decisión de la Abecs y/o el CNAE primario. | Requerido | 5462 |
+| `country` | Texto | País en donde el subcomercio está ubicado. | Requerido | BRA |
+| `address_door_number` | Número | Número de la calle en donde el subcomercio está ubicado. | Requerido | 1 |
+| `zip` | Texto | CEP del subcomercio. | Requerido | 2222222 |
+| `document_number` | Texto | Identificación del CPF o CNPJ del subcomercio. | Requerido | 222222222222222 |
+| `city` | Texto | Ciudad en donde el subcomercio está ubicado. | Requerido | SÃO PAULO |
+| `address_street` | Texto | Calle en donde el subcomercio está localizado. | Requerido | RUA A |
+| `legal_name` | Texto | Nombre del subcomercio. | Requerido | LOJINHA DO ZÉ |
+| `region_code_iso` | Texto | Estado en donde el subcomercio está ubicado. | Requerido | BR-MG |
+| `region_code` | Texto | Código postal del subcomercio. | Requerido | BR |
+| `document_type` | Texto | Número del CPF o CNPJ del subcomercio. | Requerido | CNPJ |
+| `phone` | Texto | Teléfono del subcomercio. | Requerido | 123123123 |
+| `url` | Texto | URL del Facilitador de Pago. | Requerido | www.nomedofacilitador.com.br |

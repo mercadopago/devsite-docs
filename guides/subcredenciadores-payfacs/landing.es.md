@@ -6,8 +6,8 @@
 
 ---
 content_section_with_media: 
- - title: Facilitadores de Pagos
- - message: Un Facilitador de Pagos es una entidad que proporciona soluciones de pago para que los clientes finales (subcomercios) comercialicen sus productos y/o servicios. Son responsables de capturar, procesar y liquidar las transacciones directamente a sus subcomercios, convirtiéndose en acreedores del adquirente.
+ - title: Facilitadores de pagos
+ - message: Un Facilitador de pagos es una entidad que proporciona soluciones de pago para que los clientes finales (subcomercios) comercialicen sus productos y/o servicios. Son responsables de capturar, procesar y liquidar las transacciones directamente a sus subcomercios, convirtiéndose en acreedores del adquirente.
  - media_image: /subredenciadores-payfacs/landing-sub.png
 ---
 

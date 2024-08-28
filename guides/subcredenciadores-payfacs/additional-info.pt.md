@@ -11,7 +11,6 @@ De acordo com a orientação das bandeiras e do Normativo nº 28 da Abecs (Assoc
 1. **MCC determinado pelo Comitê das Bandeiras da Abecs;**
 1. **MCC considerando o CNAE Primário disposto na Tabela “de/para” (disponível no Cadastro Unificado de MCC da Abecs).**
 
-
 A Abecs está hospedando um banco de dados que contém informações dos CNPJ que, conforme a regra exposta acima, estão corretamente vinculados ao MCC, seja por deliberação ou atrelado ao CNAE Primário/Principal. 
 
 Todos os participantes do Sistema Brasileiro de Pagamentos podem acessar essas informações por meio das seguintes formas:
