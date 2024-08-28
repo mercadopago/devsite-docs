@@ -1002,59 +1002,11 @@
                           }
                         },
                         {
-                          "title": "partially_bpp_refunded",
-                          "description": {
-                            "en": "The mediation was favorable to the payer, so the payment was partially refunded to them.",
-                            "es": "La mediación fue favorable al pagador y el pago le fue parcialmente devuelto.",
-                            "pt": "A mediação foi favorável ao pagador e o pagamento parcialmente devolvido."
-                          }
-                        },
-                        {
-                          "title": "partially_bpp_covered",
-                          "description": {
-                            "en": "The mediation was favorable to both the payer and the seller, so the payment was partially reimbursed to them.",
-                            "es": "La mediación fue favorable tanto al pagador como al vendedor y el pago les es parcialmente devuelto a ambos.",
-                            "pt": "A mediação foi favorável tanto ao pagador quanto ao vendedor e o pagamento é parcialmente devolvido a ambos."
-                          }
-                        },
-                        {
                           "title": "pending_capture",
                           "description": {
                             "en": "The payment has been authorized and is waiting for capture.",
                             "es": "El pago fue autorizado y está a la espera de ser capturado.",
                             "pt": "O pagamento foi autorizado e aguarda captura."
-                          }
-                        },
-                        {
-                          "title": "by_collector",
-                          "description": {
-                            "en": "If the status is cancelled, the payment has been cancelled by collector.",
-                            "es": "Si el status es cancelled, el pago fue cancelado por el collector.",
-                            "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado pelo collector."
-                          }
-                        },
-                        {
-                          "title": "by_payer",
-                          "description": {
-                            "en": "If the status is cancelled, the payment has been cancelled by the payer.",
-                            "es": "Si el status es cancelled, el pago fue cancelado por el pagador.",
-                            "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado pelo pagador."
-                          }
-                        },
-                        {
-                          "title": "by_admin",
-                          "description": {
-                            "en": "If the status is cancelled, the payment has been cancelled by the administrator. If the status is refunded, the payment has been refunded.",
-                            "es": "Si el status es cancelled, el pago fue cancelado por el administrador. Si el estado es refunded, el pago fue devuelto.",
-                            "pt": "Caso o status seja cancelled, o pagamento foi cancelado pelo administrador. Caso o status seja refunded, o pagamento foi devolvido."
-                          }
-                        },
-                        {
-                          "title": "expired",
-                          "description": {
-                            "en": "If the status is cancelled, the payment has been cancelled after spending 30 days in a pending status.",
-                            "es": "Si el status es cancelled, el pago fue cancelado luego de haber estado 30 días en un estado pendiente.",
-                            "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado após ficar com status pendente por 30 dias."
                           }
                         },
                         {
@@ -1082,27 +1034,11 @@
                           }
                         },
                         {
-                          "title": "pending_provider_response",
-                          "description": {
-                            "en": "The payment is pending, waiting for the server response.",
-                            "es": "El pago está pendiente, esperando respuesta del servidor.",
-                            "pt": "O pagamento está pendente, aguardando resposta do servidor."
-                          }
-                        },
-                        {
                           "title": "pending_waiting_transfer",
                           "description": {
                             "en": "In cases of bank transfer, the status_detail is obtained by waiting for the user to finish the payment process in their bank.",
                             "es": "Para los casos de transferencia bancaria, el status_detail se obtiene al esperar a que el usuario termine el proceso de pago en su banco.",
                             "pt": "Nos casos de transferência bancária, o status_detail é obtido aguardando que o usuário finalize o processo de pagamento no seu banco."
-                          }
-                        },
-                        {
-                          "title": "pending_waiting_for_remedy",
-                          "description": {
-                            "en": "In cases of offline payments, it remains pending until the user regularizes the situation.",
-                            "es": "Para los casos de pagos offline, el mismo queda pendiente hasta que el usuario regularice la situación.",
-                            "pt": "Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário regularize a situação."
                           }
                         },
                         {
@@ -1122,75 +1058,11 @@
                           }
                         },
                         {
-                          "title": "in_process",
-                          "description": {
-                            "en": "In payments with status charged_back, the payment is in process due to the payer disowning it.",
-                            "es": "Para los pagos con status charged_back, el pago está en proceso de ser recuperado debido a un desconocimiento por parte del pagador.",
-                            "pt": "Para pagamentos com o status charged_back, o pagamento está em processo de recuperação pois o pagador desconhece a transação."
-                          }
-                        },
-                        {
-                          "title": "settled",
-                          "description": {
-                            "en": "In payments with status charged_back, the money was retained after a chargeback process.",
-                            "es": "Para los pagos con status charged_back, el dinero fue retenido luego de un proceso de contracargo.",
-                            "pt": "Para pagamentos com o status charged_back, o dinheiro foi retido após um processo de estorno."
-                          }
-                        },
-                        {
-                          "title": "reimbursed",
-                          "description": {
-                            "en": "In payments with status charged_back, the money was reimbursed after a chargeback process.",
-                            "es": "Para los pagos con status charged_back, el dinero fue devuelto luego de un proceso de contracargo.",
-                            "pt": "Para pagamentos com o status charged_back, o dinheiro foi devolvido após um processo de estorno."
-                          }
-                        },
-                        {
-                          "title": "refunded",
-                          "description": {
-                            "en": "The payment has been refunded by the collector.",
-                            "es": "El pago fue devuelto por el collector.",
-                            "pt": "O pagamento foi devolvido pelo collector."
-                          }
-                        },
-                        {
-                          "title": "bpp_refunded",
-                          "description": {
-                            "en": "The mediation was favorable to the payer, but Mercado Pago covers the refund of the money.",
-                            "es": "La mediación fue favorable al pagador, pero Mercado Pago cubre la devolución del dinero.",
-                            "pt": "A mediação foi favorável ao pagador, mas o Mercado Pago cobre a devolução do dinheiro."
-                          }
-                        },
-                        {
-                          "title": "bpp_covered",
-                          "description": {
-                            "en": "The mediation was favorable to both the payer and the seller, so both are supported.",
-                            "es": "La mediación fue favorable tanto al pagador como al vendedor, por lo que ambos están cubiertos.",
-                            "pt": "A mediação foi favorável tanto ao pagador quanto ao vendedor, portanto, ambos estão cobertos."
-                          }
-                        },
-                        {
-                          "title": "bank_rejected",
-                          "description": {
-                            "en": "If the payment method is bank transfer, the bank has rejected the payment.",
-                            "es": "Si el medio de pago es transferencia bancaria, el banco rechazó el pago.",
-                            "pt": "Se a forma de pagamento for transferência bancária, o banco rejeitou o pagamento."
-                          }
-                        },
-                        {
                           "title": "bank_error",
                           "description": {
                             "en": "If the payment method is bank transfer, the payment was rejected due to an error with the bank.",
                             "es": "Si el medio de pago es transferencia bancaria, el pago fue rechazado por un error con el banco.",
                             "pt": "Se a forma de pagamento for transferência bancária, o pagamento foi rejeitado devido a um erro com o banco."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_3ds_challenge",
-                          "description": {
-                            "en": "The payment is rejected for not surpasing the 3DS challenge.",
-                            "es": "Pago rechazado por no superar el challenge 3DS.",
-                            "pt": "Pagamento rejeitado por não superar o challenge 3DS."
                           }
                         },
                         {
@@ -1319,22 +1191,6 @@
                             "en": "Payment rejected by regulations.",
                             "es": "Pago rechazado por regulaciones.",
                             "pt": "Pagamento recusado devido a regulamentações."
-                          }
-                        },
-                        {
-                          "title": "collector_unavailable",
-                          "description": {
-                            "en": "In case of a rejected payment, the collector is restricted and can not operate.",
-                            "es": "En caso de pago rechazado, el collector tiene una restricción y no puede operar.",
-                            "pt": "Em caso de pagamento rejeitado, o collector tem restrição e não pode operar."
-                          }
-                        },
-                        {
-                          "title": "payer_unavailable",
-                          "description": {
-                            "en": "In case of a rejected payment, the payer is restricted and can not operate.",
-                            "es": "En caso de pago rechazado, el pagador tiene una restricción y no puede operar.",
-                            "pt": "Em caso de pagamento rejeitado, o pagador tem restrição e não pode operar."
                           }
                         }
                       ]
