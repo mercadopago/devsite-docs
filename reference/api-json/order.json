@@ -1243,7 +1243,7 @@
                     },
                     "status":{
                       "type":"string",
-                      "example":"failed",
+                      "example":"processed",
                       "description":{
                         "en":"Current status of the order.",
                         "pt":"Status atual da order.",
@@ -1251,11 +1251,59 @@
                       },
                       "enum": [
                         {
+                          "title": "processed",
+                          "description": {
+                            "en": "All transactions have been succesfully processed.",
+                            "es": "Todas las transacciones fueron procesadas exitosamente.",
+                            "pt": "Todas as transações foram processadas com sucesso."
+                          }
+                        },
+                        {
+                          "title": "action_required",
+                          "description": {
+                            "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                            "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                            "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                          }
+                        },
+                        {
+                          "title": "cancelled",
+                          "description": {
+                            "en": "The order has been cancelled and cannot be processed.",
+                            "es": "La order fue cancelada y no puede ser procesada.",
+                            "pt": "A order foi cancelada e não pode ser processada."
+                          }
+                        },
+                        {
                           "title": "failed",
                           "description": {
-                            "en": ".",
-                            "es": ".",
-                            "pt": "."
+                            "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                            "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                            "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                          }
+                        },
+                        {
+                          "title": "processing",
+                          "description": {
+                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                          }
+                        },
+                        {
+                          "title": "refunded",
+                          "description": {
+                            "en": "In case of a refund, the entire money involved in the order was returned.",
+                            "es": "En caso de un reembolso, la totalidad del dinero implicado en la order fue devuelto.",
+                            "pt": "Em caso de reembolso, todo o dinheiro envolvido a order foi devolvido."
+                          }
+                        },
+                        {
+                          "title": "charged_back",
+                          "description": {
+                            "en": "A chargeback was filed and the order is being contested.",
+                            "es": "Se presentó un contracargo y la order está en proceso de contestación.",
+                            "pt": "Um estorno foi apresentado e a order está em processo de contestação."
                           }
                         }
                       ]
@@ -1288,12 +1336,70 @@
                               },
                               "status":{
                                 "type":"string",
-                                "example":"approved",
+                                "example":"processed",
                                 "description":{
                                   "en":"Payment status",
                                   "pt":"Status do pagamento",
                                   "es":"Estado del pago"
-                                }
+                                },
+                                "enum": [
+                                  {
+                                    "title": "processed",
+                                    "description": {
+                                      "en": "The payment has been succesfully processed.",
+                                      "es": "El pago fue procesado exitosamente.",
+                                      "pt": "O pagamento foi processado com sucesso."
+                                    }
+                                  },
+                                  {
+                                    "title": "action_required",
+                                    "description": {
+                                      "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                                      "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                                      "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                                    }
+                                  },
+                                  {
+                                    "title": "cancelled",
+                                    "description": {
+                                      "en": "The payment has been cancelled and cannot be processed.",
+                                      "es": "El pago fue cancelado y no puede ser procesado.",
+                                      "pt": "O pagamento foi cancelado e não pode ser processado."
+                                    }
+                                  },
+                                  {
+                                    "title": "failed",
+                                    "description": {
+                                      "en": "An error occurred in the processing of the payment. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                                      "es": "Se produjo un fallo en el procesamiento del pago. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                                      "pt": "Ocorreu um erro no processamento do pagamento. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                    }
+                                  },
+                                  {
+                                    "title": "processing",
+                                    "description": {
+                                      "en": "The payment is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                                      "es": "El pago está siendo procesado y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                                      "pt": "O pagamento está sendo processado e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                                    }
+                                  },
+                                  {
+                                    "title": "refunded",
+                                    "description": {
+                                      "en": "In case of a refund, the entire money involved in the order was returned.",
+                                      "es": "En caso de un reembolso, la totalidad del dinero implicado en la order fue devuelto.",
+                                      "pt": "Em caso de reembolso, todo o dinheiro envolvido a order foi devolvido."
+                                    }
+                                  },
+                                  {
+                                    "title": "charged_back",
+                                    "description": {
+                                      "en": "A chargeback was filed and the payment is being contested.",
+                                      "es": "Se presentó un contracargo y el pago está en proceso de contestación.",
+                                      "pt": "Um estorno foi apresentado e o pagamento está em processo de contestação."
+                                    }
+                                  }
+                                ]
                               },
                               "amount": {
                                 "type": "string",
@@ -2391,11 +2497,59 @@
                       },
                       "enum": [
                         {
+                          "title": "processed",
+                          "description": {
+                            "en": "All transactions have been succesfully processed.",
+                            "es": "Todas las transacciones fueron procesadas exitosamente.",
+                            "pt": "Todas as transações foram processadas com sucesso."
+                          }
+                        },
+                        {
+                          "title": "action_required",
+                          "description": {
+                            "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                            "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                            "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                          }
+                        },
+                        {
+                          "title": "cancelled",
+                          "description": {
+                            "en": "The order has been cancelled and cannot be processed.",
+                            "es": "La order fue cancelada y no puede ser procesada.",
+                            "pt": "A order foi cancelada e não pode ser processada."
+                          }
+                        },
+                        {
                           "title": "failed",
                           "description": {
-                            "en": ".",
-                            "es": ".",
-                            "pt": "."
+                            "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                            "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                            "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                          }
+                        },
+                        {
+                          "title": "processing",
+                          "description": {
+                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                          }
+                        },
+                        {
+                          "title": "refunded",
+                          "description": {
+                            "en": "In case of a refund, the entire money involved in the order was returned.",
+                            "es": "En caso de un reembolso, la totalidad del dinero implicado en la order fue devuelto.",
+                            "pt": "Em caso de reembolso, todo o dinheiro envolvido a order foi devolvido."
+                          }
+                        },
+                        {
+                          "title": "charged_back",
+                          "description": {
+                            "en": "A chargeback was filed and the order is being contested.",
+                            "es": "Se presentó un contracargo y la order está en proceso de contestación.",
+                            "pt": "Um estorno foi apresentado e a order está em processo de contestação."
                           }
                         }
                       ]
@@ -2433,7 +2587,65 @@
                                   "pt": "Status do pagamento",
                                   "en": "Payment status",
                                   "es": "Estado del pago"
-                                }
+                                },
+                                "enum": [
+                                  {
+                                    "title": "processed",
+                                    "description": {
+                                      "en": "The payment has been succesfully processed.",
+                                      "es": "El pago fue procesado exitosamente.",
+                                      "pt": "O pagamento foi processado com sucesso."
+                                    }
+                                  },
+                                  {
+                                    "title": "action_required",
+                                    "description": {
+                                      "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                                      "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                                      "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                                    }
+                                  },
+                                  {
+                                    "title": "cancelled",
+                                    "description": {
+                                      "en": "The payment has been cancelled and cannot be processed.",
+                                      "es": "El pago fue cancelado y no puede ser procesado.",
+                                      "pt": "O pagamento foi cancelado e não pode ser processado."
+                                    }
+                                  },
+                                  {
+                                    "title": "failed",
+                                    "description": {
+                                      "en": "An error occurred in the processing of the payment. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                                      "es": "Se produjo un fallo en el procesamiento del pago. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                                      "pt": "Ocorreu um erro no processamento do pagamento. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                    }
+                                  },
+                                  {
+                                    "title": "processing",
+                                    "description": {
+                                      "en": "The payment is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                                      "es": "El pago está siendo procesado y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                                      "pt": "O pagamento está sendo processado e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                                    }
+                                  },
+                                  {
+                                    "title": "refunded",
+                                    "description": {
+                                      "en": "In case of a refund, the entire money involved in the order was returned.",
+                                      "es": "En caso de un reembolso, la totalidad del dinero implicado en la order fue devuelto.",
+                                      "pt": "Em caso de reembolso, todo o dinheiro envolvido a order foi devolvido."
+                                    }
+                                  },
+                                  {
+                                    "title": "charged_back",
+                                    "description": {
+                                      "en": "A chargeback was filed and the payment is being contested.",
+                                      "es": "Se presentó un contracargo y el pago está en proceso de contestación.",
+                                      "pt": "Um estorno foi apresentado e o pagamento está em processo de contestação."
+                                    }
+                                  }
+                                ]
                               },
                               "amount": {
                                 "type": "string",
