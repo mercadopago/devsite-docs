@@ -8,9 +8,8 @@ To perform the Wallet Connect integration, you must meet the requirements descri
 >
 > Integration with Wallet Connect is **only** available for sellers with at least one of the following characteristics:
 > <br><br> 
-> - Will process recurring sales through Wallet Connect with an average ticket below 15 USD, over 100,000 users, and at least 2 monthly transactions per user. <br>
-> - Have a monthly subscription model, over 100,000 users, and an average ticket below 40 USD.
-> 
+> - Will process recurring sales through Wallet Connect with an average ticket below 15 USD, over 100,000 users, and at least 2 monthly transactions per user.
+> - Have a monthly subscription model, over 100,000 users, and an average ticket below 40 USD. <br><br> 
 > If you have the mentioned characteristics and are interested in integrating this product, please contact your sales executive for more information.
 
 | Requisite | Description
