@@ -2795,9 +2795,9 @@
                       "type": "string",
                       "example": "2017-08-31T11:26:38.000Z",
                       "description": {
-                        "en": "Payment approval date. A payment can be generated in an intermediate state and then approved, so the creation date will not always coincide with the Approval Date.",
-                        "pt": "Data de aprovação do pagamento. Um pagamento pode ser gerado em um estado intermediário e depois aprovado, portanto, a data de criação nem sempre coincidirá com a Data de Aprovação.",
-                        "es": "Fecha de aprobación del Pago. Un pago puede generarse en un estado intermedio y luego ser aprobado, por tanto la fecha de creación no siempre coincidirá con la Fecha de Aprobación."
+                        "en": "Payment approval date. A payment can be generated in an intermediate state and then approved, so the creation date will not always coincide with the approval date.",
+                        "pt": "Data de aprovação do pagamento. Um pagamento pode ser gerado em um estado intermediário e depois aprovado, portanto, a data de criação nem sempre coincidirá com a data de aprovação.",
+                        "es": "Fecha de aprobación del Pago. Un pago puede generarse en un estado intermedio y luego ser aprobado, por tanto la fecha de creación no siempre coincidirá con la fecha de aprobación."
                       }
                     },
                     "date_last_updated": {
@@ -2813,9 +2813,9 @@
                       "type": "string",
                       "format": "nullable",
                       "description": {
-                        "en": "Payment’s expiration date. The attribute’s valid format is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex. - 2022-11-17T09:37:52.000-04:00.",
-                        "pt": "Data de expiração do pagamento. O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex. - 2022-11-17T09:37:52.000-04:00.",
-                        "es": "Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Ej. - 2022-11-17T09:37:52.000-04:00."
+                        "en": "Payment’s expiration date. The attribute’s format is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex. - 2022-11-17T09:37:52.000-04:00.",
+                        "pt": "Data de expiração do pagamento. O formato do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\". Ex. - 2022-11-17T09:37:52.000-04:00.",
+                        "es": "Fecha de vencimiento del pago. El formato del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\". Ej. - 2022-11-17T09:37:52.000-04:00."
                       }
                     },
                     "money_release_date": {
@@ -2834,9 +2834,9 @@
                       "type": "string",
                       "format": "nullable",
                       "description": {
-                        "en": "Is the identifier of the card issuer being used in a credit or debit card payment.",
-                        "pt": "É o identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.",
-                        "es": "Es el identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito."
+                        "en": "Identifier of the card issuer being used in a credit or debit card payment.",
+                        "pt": "Identificador do emissor do cartão que está sendo utilizado em um pagamento com cartão de crédito ou débito.",
+                        "es": "Identificador del emisor de la tarjeta que se utiliza en un pago con tarjeta de crédito o débito."
                       }
                     },
                     "payment_method_id": {
@@ -3034,17 +3034,17 @@
                       "type": "string",
                       "example": "Pago Pizza",
                       "description": {
-                        "en": "Description sent in the payment creation request. Ex. - In a pix payment, the description is “Payment of Credit Market installments”. In another cases, such as a purchase in a physical store where the customer uses the machine to pay, we can find the description “Sale in person”. In marketplace purchases, the purchase description usually corresponds to a purchased product - “Pendrive Twist Pd590 64gb 2.0 Black And Silver + 1 product”.",
-                        "pt": "Descrição enviada na solicitação de criação de pagamento. Por exemplo - Em um pagamento Pix, há a descrição “Pagamento de parcelas de Mercado Crédito”. Em outro caso, uma compra em loja física onde o cliente utiliza a maquininha para pagar, podemos encontrar a descrição - “Venda presencial”. Já em compras do marketplace, a descrição da compra geralmente corresponde ao produto comprado - “\tPendrive Twist Pd590 64gb 2.0 Preto E Prateado + 1 produto”.",
-                        "es": "Descripción enviada en el request de creación de pago. Por ejemplo - En un pago con pix, se encuentra la descripción “Pago de cuotas Mercado Crédito”. En otro caso, una compra en una tienda física donde el cliente utiliza la máquina para pagar, podemos encontrar la descripción “Venta en persona”. En las compras en marketplace, la descripción de compra suele corresponder a un producto comprado - “Pendrive Twist Pd590 64gb 2.0 Negro Y Plata + 1 producto”."
+                        "en": "Purchased product’s description, the reason for payment. E.g. - \"Xiaomi Redmi Note 11S mobile phone 128gb 6gb Ram Original Global Blue Version\" (description of a product in the marketplace).",
+                        "pt": "Descrição do produto comprado, a razão de pagamento. Ex. - \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul\" (descrição de um produto no marketplace).",
+                        "es": "Descripción del producto adquirido, el motivo del pago. Ej. - \"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Original Global Blue Version\" (descripción de un producto en el marketplace)."
                       }
                     },
                     "live_mode": {
                       "type": "boolean",
                       "description": {
-                        "en": "Indicates whether the Payment was made in a production environment or in a Test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
-                        "pt": "Indica se o Pagamento foi feito em ambiente de produção ou em ambiente de Teste. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.",
-                        "es": "Indica si el Pago se realizó en ambiente productivo o en un ambiente de Test. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox."
+                        "en": "Indicates whether the payment was made in a production environment or in a test environment. If TRUE, then the chargeback will be processed in production mode. If FALSE, then the chargeback will be processed in sandbox mode.",
+                        "pt": "Indica se o pagamento foi feito em ambiente de produção ou em ambiente de teste. Se TRUE, o estorno será processado em modo de produção. Se FALSE, o estorno será processado no modo sandbox.",
+                        "es": "Indica si el pago se realizó en ambiente productivo o en un ambiente de test. Si es TRUE, el contracargo se procesará en modo de producción. Si es FALSE, el contracargo se procesará en modo sandbox."
                       }
                     },
                     "sponsor_id": {
@@ -3061,7 +3061,7 @@
                       "format": "nullable",
                       "description": {
                         "en": "Transaction’s authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (debit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.",
-                        "pt": "Código de autorização de transação para pagamentos com “payment_method_type” do tipo “credit_card” (cartão de crédito), “debit_card” (cartão de crédito) e “voucher_card” (cartão de voucher para benefícios, como Alelo). Em síntese, este código é utilizado para transações com cartão. O código é numérico e possui 6 dígitos.",
+                        "pt": "Código de autorização de transação para pagamentos com “payment_method_type” do tipo “credit_card” (cartão de crédito), “debit_card” (cartão de débito) e “voucher_card” (cartão de voucher para benefícios, como Alelo). Em síntese, este código é utilizado para transações com cartão. O código é numérico e possui 6 dígitos.",
                         "es": "Código de autorización de transacción para pagos con “payment_method_type” de tipo “credit_card” (tarjeta de crédito), “debit_card” (tarjeta de débito) y “voucher_card” (tarjeta de bono para beneficios, como Alelo). En resumen, este código se utiliza para transacciones con tarjeta. Es numérico y tiene 6 dígitos."
                       }
                     },
@@ -3130,9 +3130,9 @@
                               "type": "string",
                               "example": "CPF",
                               "description": {
-                                "en": "Refers to the type of identification. It can be one of the following types.",
-                                "pt": "Refere-se ao tipo de identificação. Pode ser dos seguintes tipos.",
-                                "es": "Se refiere al tipo de identificación. Puede ser de los siguientes tipos."
+                                "en": "Refers to the type of identification. It can be one of the following types:",
+                                "pt": "Refere-se ao tipo de identificação. Pode ser dos seguintes tipos:",
+                                "es": "Se refiere al tipo de identificación. Puede ser de los siguientes tipos:"
                               },
                               "enum": [
                                 {
@@ -3195,16 +3195,16 @@
                                   "title": "CC",
                                   "description": {
                                     "en": "Citizenship Card, Colombia.",
-                                    "es": "Tarjeta de Ciudadanía, Colombia.",
-                                    "pt": "Cartão de Cidadania, Colômbia."
+                                    "es": "Cédula de Ciudadanía, Colombia.",
+                                    "pt": "Cédula de Cidadania, Colômbia."
                                   }
                                 },
                                 {
                                   "title": "RUT",
                                   "description": {
                                     "en": "Single Tax List, Chile.",
-                                    "es": "Lista Única de Impuestos, Chile.",
-                                    "pt": "Lista Única de Impostos, Chile."
+                                    "es": "Rol Único Tributario, Chile",
+                                    "pt": "Rol Único Tributário, Chile."
                                   }
                                 },
                                 {
@@ -3212,7 +3212,7 @@
                                   "description": {
                                     "en": "Identity Card, Uruguay.",
                                     "es": "Cédula de Identidad, Uruguay.",
-                                    "pt": "Cartão de Identidade, Uruguai."
+                                    "pt": "Cédula de Identidade, Uruguai."
                                   }
                                 }
                               ]
@@ -3246,7 +3246,7 @@
                       "description": {
                         "en": "At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.",
                         "pt": "No nível de Pagamentos, são apenas dados e nós apenas encaminhamos essas informações para outras APIs, como Risco, para realizar pontuação e prevenir fraudes, para Impostos para determiná-los para pagamentos internacionais.",
-                        "es": "En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras API, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales."
+                        "es": "En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras APIs, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales."
                       }
                     },
                     "external_reference": {
@@ -3300,52 +3300,52 @@
                       "format": "nullable",
                       "description": {
                         "en": "Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).",
-                        "pt": "Esquema de Pricing aplicado pelo Mercado Pago. É um campo que representa as informações de um tipo de financiamento (parcelamento). Ex. - “ahora12” é um schema que indica que o pagamento está parcelado em 12 vezes. Em adição, o financiamento pode ter um custo adicional, sendo tal custo incluído nessa mesma resposta  e apontado a quem se aplica isso (payer/collector).",
+                        "pt": "Esquema de Pricing aplicado pelo Mercado Pago. É um campo que representa as informações de um tipo de financiamento (parcelamento). Ex. - “ahora12” é um schema que indica que o pagamento está parcelado em 12 vezes. Em adição, o financiamento pode ter um custo adicional, sendo tal custo incluído nessa mesma resposta e apontado a quem se aplica isso (payer/collector).",
                         "es": "Esquema de precios aplicado por Mercado Pago. Es un campo que representa la información de un tipo de financiamiento (cuota). Ej - “ahora12” es un esquema que indica que el pago se divide en 12 cuotas. Además, el financiamiento puede tener un costo adicional, siendo incluido dicho costo en esa misma respuesta y señalándose a quién aplica (payer/collector)."
                       }
                     },
                     "transaction_details": {
                       "type": "object",
                       "description": {
-                        "en": "Transaction details",
-                        "pt": "Detalhes da transação",
-                        "es": "Detalles de la transacción"
+                        "en": "Transaction details.",
+                        "pt": "Detalhes da transação.",
+                        "es": "Detalles de la transacción."
                       },
                       "properties": {
                         "net_received_amount": {
                           "type": "number",
                           "example": 250,
                           "description": {
-                            "en": "Net amount received",
-                            "pt": "Valor líquido recebido",
-                            "es": "Monto neto recibido"
+                            "en": "Net amount received.",
+                            "pt": "Valor líquido recebido.",
+                            "es": "Monto neto recibido."
                           }
                         },
                         "total_paid_amount": {
                           "type": "number",
                           "example": 250,
                           "description": {
-                            "en": "Total amount charged to the payer",
-                            "pt": "Valor total cobrado ao pagador",
-                            "es": "Monto total cobrado al payer"
+                            "en": "Total amount charged to the payer.",
+                            "pt": "Valor total cobrado ao pagador.",
+                            "es": "Monto total cobrado al payer."
                           }
                         },
                         "overpaid_amount": {
                           "type": "number",
                           "example": 0,
                           "description": {
-                            "en": "Overpaid amount",
-                            "pt": "Valor pago a mais",
-                            "es": "Monto pagado en exceso"
+                            "en": "Overpaid amount.",
+                            "pt": "Valor pago a mais.",
+                            "es": "Monto pagado en exceso."
                           }
                         },
                         "external_resource_url": {
                           "type": "string",
                           "format": "nullable",
                           "description": {
-                            "en": "External resource url",
-                            "pt": "URL de recurso externo",
-                            "es": "URL de recurso externo"
+                            "en": "External resource URL.",
+                            "pt": "URL de recurso externo.",
+                            "es": "URL de recurso externo."
                           }
                         },
                         "installment_amount": {
@@ -3361,36 +3361,36 @@
                           "type": "string",
                           "format": "nullable",
                           "description": {
-                            "en": "Financial institution",
-                            "pt": "Instituição financeira",
-                            "es": "Institución financiera"
+                            "en": "Financial institution.",
+                            "pt": "Instituição financeira.",
+                            "es": "Institución financiera."
                           }
                         },
                         "payment_method_reference_id": {
                           "type": "string",
                           "format": "nullable",
                           "description": {
-                            "en": "Unique identifier of the payment method",
-                            "pt": "Identificador único do meio de pagamento",
-                            "es": "Identificador único del método de pago"
+                            "en": "Unique identifier of the payment method.",
+                            "pt": "Identificador único do meio de pagamento.",
+                            "es": "Identificador único del método de pago."
                           }
                         },
                         "payable_deferral_period": {
                           "type": "string",
                           "format": "nullable",
                           "description": {
-                            "en": "Payment deferral period",
-                            "pt": "Período de diferimento de pagamento",
-                            "es": "Período de diferimiento del pago"
+                            "en": "Payment deferral period.",
+                            "pt": "Período de diferimento de pagamento.",
+                            "es": "Período de diferimiento del pago."
                           }
                         },
                         "acquirer_reference": {
                           "type": "string",
                           "format": "nullable",
                           "description": {
-                            "en": "Acquirer reference",
-                            "pt": "Referência do adquirente",
-                            "es": "Referencia de adquirente"
+                            "en": "Acquirer reference.",
+                            "pt": "Referência do adquirente.",
+                            "es": "Referencia de adquirente."
                           }
                         }
                       }
@@ -3434,50 +3434,50 @@
                       "example": 1,
                       "description": {
                         "en": "Number of installments selected.",
-                        "pt": "Número de parcelas selecionado",
-                        "es": "Cantidad seleccionada de cuotas"
+                        "pt": "Número de parcelas selecionado.",
+                        "es": "Cantidad seleccionada de cuotas."
                       }
                     },
                     "card": {
                       "type": "object",
                       "description": {
                         "en": "Card ID.",
-                        "pt": "Identificador de cartão",
-                        "es": "Identificador de tarjeta"
+                        "pt": "Identificador de cartão.",
+                        "es": "Identificador de tarjeta."
                       }
                     },
                     "notification_url": {
                       "type": "string",
                       "format": "nullable",
                       "description": {
-                        "en": "Notifications URL available to receive notifications of events related to Payment.",
-                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento.",
-                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago."
+                        "en": "Notifications URL available to receive notifications of events related to Payment. The maximum number of characters allowed for submission in this parameter is 248 characters.",
+                        "pt": "URL de notificações disponível para receber notificações de eventos relacionados ao Pagamento. A quantidade máxima de caracteres permitidos para envio neste parâmetro é de 248 caracteres.",
+                        "es": "URL de Notificaciones disponibilizada para recibir las notificaciones de los eventos relacionados al Pago. La cantidad máxima de caracteres permitidos para enviar en este parámetro es de 248 caracteres."
                       }
                     },
                     "processing_mode": {
                       "type": "string",
                       "format": "nullable",
                       "description": {
-                        "en": "Processing mode. There are two types.",
-                        "pt": "Modo de processamento. Existem dois tipos.",
-                        "es": "Modo de procesamiento. Existen dos tipos."
+                        "en": "Processing mode. There are two types:",
+                        "pt": "Modo de processamento. Existem dois tipos:",
+                        "es": "Modo de procesamiento. Existen dos tipos:"
                       },
                       "enum": [
                         {
                           "title": "Aggregator",
                           "description": {
-                            "en": "The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer.",
-                            "es": "The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer.",
-                            "pt": "The merchant will use the Mercado Pago merchant codes and will take advantage of the financial advantages that we offer."
+                            "en": "The merchant will use Mercado Pago's merchant codes and benefit from the financial advantages we offer.",
+                            "es": "El merchant utilizará los códigos de merchant de Mercado Pago y se beneficiará de las ventajas financieras que ofrecemos.",
+                            "pt": "O merchant utilizará os códigos de merchant do Mercado Pago e aproveitará as vantagens financeiras que oferecemos."
                           }
                         },
                         {
                           "title": "Gateway",
                           "description": {
-                            "en": "For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment.",
-                            "es": "For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment.",
-                            "pt": "For the merchant it is necessary to have their own merchant codes for online sales and to have an agreement with each of the desired means of payment."
+                            "en": "The merchant must have their own merchant code for online sales and agreements with each desired payment method.",
+                            "es": "El merchant debe tener su propio código de merchant para ventas en línea y acuerdos con cada método de pago deseado.",
+                            "pt": "O merchant deve ter seu próprio código de merchant para vendas online e acordos com cada método de pagamento desejado."
                           }
                         }
                       ]
@@ -4106,9 +4106,9 @@
                       "type": "number",
                       "example": 20359978,
                       "description": {
-                        "en": "Unique Payment Identifier, automatically generated by Mercado Pago",
-                        "pt": "Identificador único de pagamento, gerado automaticamente pelo Mercado Pago",
-                        "es": "Identificador único del pago, generado automáticamente por Mercado Pago"
+                        "en": "Unique Payment Identifier, automatically generated by Mercado Pago.",
+                        "pt": "Identificador único de pagamento, gerado automaticamente pelo Mercado Pago.",
+                        "es": "Identificador único del pago, generado automáticamente por Mercado Pago."
                       }
                     },
                     "date_created": {
@@ -5834,7 +5834,7 @@
                               "format": "nullable",
                               "description": {
                                 "en": "Transaction authorization code for payments with “payment_method_type” of type “credit_card” (credit card), “debit_card” (credit card) and “voucher_card” (voucher card for benefits, such as Alelo). In summary, this code is used for card transactions. The code is numerical and has 6 digits.",
-                                "pt": "Código de autorização de transação para pagamentos com “payment_method_type” do tipo “credit_card” (cartão de crédito), “debit_card” (cartão de crédito) e “voucher_card” (cartão de voucher para benefícios, como Alelo). Em síntese, este código é utilizado para transações com cartão. O código é numérico e possui 6 dígitos.",
+                                "pt": "Código de autorização de transação para pagamentos com “payment_method_type” do tipo “credit_card” (cartão de crédito), “debit_card” (cartão de débito) e “voucher_card” (cartão de voucher para benefícios, como Alelo). Em síntese, este código é utilizado para transações com cartão. O código é numérico e possui 6 dígitos.",
                                 "es": "Código de autorización de transacción para pagos con “payment_method_type” de tipo “credit_card” (tarjeta de crédito), “debit_card” (tarjeta de débito) y “voucher_card” (tarjeta de bono para beneficios, como Alelo). En resumen, este código se utiliza para transacciones con tarjeta. El código es numérico y tiene 6 dígitos."
                               }
                             },
@@ -5953,7 +5953,7 @@
                                           "description": {
                                             "en": "Single Population Registration Code, Mexico.",
                                             "es": "Clave Única de Registro de Población, México.",
-                                            "pt": "Código Único de Registro de Población, México."
+                                            "pt": "Código Único de Registro de População, México."
                                           }
                                         },
                                         {
@@ -6010,7 +6010,7 @@
                               "type": "object",
                               "description": {
                                 "en": "This is an optional key-value object where the customer can add additional information that needs to be recorded at checkout. Ex. - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}.",
-                                "pt": "Este é um objeto opcional do tipo chave-valor  no qual o cliente  pode adicionar informações adicionais que precisam ser registradas no pagamento. Por exemplo - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}.",
+                                "pt": "Este é um objeto opcional do tipo chave-valor  no qual o cliente pode adicionar informações adicionais que precisam ser registradas no pagamento. Por exemplo - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}.",
                                 "es": "Este es un objeto clave-valor opcional en el que el cliente puede agregar información adicional que debe registrarse al finalizar la compra. Por ejemplo - {\"payments_group_size\":1,\"payments_group_timestamp\":\"2022-11-18T15:01:44Z\",\"payments_group_uuid\":\"96cfd2a4-0b06-4dea-b25f-c5accb02ba10\"}"
                               }
                             },
@@ -6018,8 +6018,8 @@
                               "type": "object",
                               "description": {
                                 "en": "At Payments level, it's only data, and we only forward that information to other APIs like Risk, to perform scoring and prevent fraud, or to Tax, to determine them for international payments.",
-                                "pt": "No nível de Pagamentos, são apenas dados e apenas encaminhamos essas informações para outras APIS, como Risco, para realizar pontuação e prevenir fraudes, para Impostos para determiná-los para pagamentos internacionais.",
-                                "es": "En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras API, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales."
+                                "pt": "No nível de Pagamentos, são apenas dados e apenas encaminhamos essas informações para outras APIs, como Risco, para realizar pontuação e prevenir fraudes, para Impostos para determiná-los para pagamentos internacionais.",
+                                "es": "En el nivel de Pagos, son solo datos y únicamente reenviamos esa información a otras APIs, como Riesgo, para realizar puntajes y prevenir fraudes, o a Impuestos, para determinarlos para pagos internacionales."
                               }
                             },
                             "external_reference": {
@@ -6073,7 +6073,7 @@
                               "format": "nullable",
                               "description": {
                                 "en": "Pricing Scheme applied by Mercado Pago. It is a field that represents the information of a type of financing (installment). Ex - “ahora12” is a schema that indicates that the payment is divided into 12 installments. In addition, financing may have an additional cost, such cost being included in that same answer and pointed out to whom this applies (payer/collector).",
-                                "pt": "Esquema de Pricing aplicado pelo Mercado Pago. É um campo que representa as informações de um tipo de financiamento (parcelamento). Por exemplo - “ahora12” é um schema que indica que o pagamento está parcelado em 12 vezes. Em adição, o financiamento pode ter um custo adicional, sendo tal custo incluído nessa mesma resposta  e apontado a quem se aplica isso (payer/collector).",
+                                "pt": "Esquema de Pricing aplicado pelo Mercado Pago. É um campo que representa as informações de um tipo de financiamento (parcelamento). Por exemplo - “ahora12” é um schema que indica que o pagamento está parcelado em 12 vezes. Em adição, o financiamento pode ter um custo adicional, sendo tal custo incluído nessa mesma resposta e apontado a quem se aplica isso (payer/collector).",
                                 "es": "Esquema de precios aplicado por Mercado Pago. Es un campo que representa la información de un tipo de financiamiento (cuota). Por ejemplo - “ahora12” es un esquema que indica que el pago se divide en 12 cuotas. Además, el financiamiento puede tener un costo adicional, siendo incluido dicho costo en esa misma respuesta y señalándose a quién aplica (payer/collector)."
                               }
                             },
@@ -6285,9 +6285,9 @@
                           }
                         },
                         "description": {
-                          "en": "Search results",
-                          "pt": "Resultados da pesquisa",
-                          "es": "Resultados de la búsqueda"
+                          "en": "Search results.",
+                          "pt": "Resultados da pesquisa.",
+                          "es": "Resultados de la búsqueda."
                         }
                       }
                     }
