@@ -4059,9 +4059,9 @@
           }
         },
         "title": {
-          "en": "Delete transaction by ID",
-          "pt": "Deletar transação por ID",
-          "es": "Eliminar transacción por ID"
+          "en": "Delete a transaction from the order",
+          "pt": "Deletar uma transação da order",
+          "es": "Eliminar una transacción de la order"
         }
       },
       "patch":{
