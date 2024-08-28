@@ -1,4 +1,4 @@
-# Subcomercios
+# Subcomercio
 
 Los subcomercios son clientes finales que tienen **Facilitadores de pago**, entidades que ofrecen soluciones de pago que permiten a estos subcomercios comercializar sus productos y/o servicios. Son responsables de capturar, procesar y liquidar las transacciones directamente a sus subcomercios, convirtiéndose en acreedores del adquirente.
 

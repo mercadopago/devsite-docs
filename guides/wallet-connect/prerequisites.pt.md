@@ -10,8 +10,8 @@ Para realizar a integração com Wallet Connect, é preciso atender aos requisit
 > <br><br> 
 > - Processarão no Wallet Connect vendas recorrentes com ticket médio inferior a 15 USD, mais de 100 mil usuários e pelo menos 2 transações mensais por usuário. <br>
 > - Possuem um modelo de assinatura mensal, mais de 100 mil usuários e ticket médio inferior a 40 USD.
-> <br><br> 
-> Caso atenda as caracterísitcas citdas e tenha interesse em integrar este produto, entre em contato com seu executivo comercial para mais infornmações. 
+> 
+> Caso atenda as características citdas e tenha interesse em integrar este produto, entre em contato com seu executivo comercial para mais infornmações. 
 
 | Requisito  | Descrição  |
 | --- | --- |
