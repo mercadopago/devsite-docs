@@ -3717,12 +3717,10 @@
                             "example": "24"
                           },
                           "currency": {
-                            "required": true,
                             "$ref": "#/components/schemas/currency"
                           },
                           "payment_method": {
-                            "$ref": "#/components/schemas/payment_method",
-                            "required": true
+                            "$ref": "#/components/schemas/payment_method"
                           }
                         }
                       }
@@ -4679,6 +4677,7 @@
       },
       "payment_method": {
         "type": "object",
+        "required": true,
         "description": {
           "en":"Information about the payment method.",
           "pt":"Informação sobre o meio de pagamento.",
