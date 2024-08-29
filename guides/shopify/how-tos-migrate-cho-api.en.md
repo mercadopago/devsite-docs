@@ -42,6 +42,13 @@ To install the **Mercado Pago Cartões** checkout on a Shopify store, we offer t
 12. Finally, click on the **Verify activation** option of Mercado Pago Cartões, go to the **Settings** section of Shopify, and click **Activate** to activate the app and complete the installation.
 13. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 14. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
+15. Still in the "Settings" of the store's administrative panel, click **Checkout > Customer Contact Method** and ensure that the **Email** field is selected as the contact method that customers should use to receive order notifications.
+
+> WARNING
+>
+> Attention
+>
+> The use of **email** as a contact method is mandatory for processing payments with Mercado Pago.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 
@@ -77,6 +84,13 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 8. Finally, click on the **Verify activation** option of Mercado Pago Cartões, go to the "Settings" section of Shopify, and click **Activate** to activate the app and complete the installation.
 9. After completing the installation, return to the store's admin panel and click on **Settings > Payments**.
 10. In "Payment capture method", ensure that the **automatically at checkout** field is enabled to guarantee that payments are captured when the order is placed.
+11. Still in the "Settings" of the store's administrative panel, click **Checkout > Customer Contact Method** and ensure that the **Email** field is selected as the contact method that customers should use to receive order notifications.
+
+> WARNING
+>
+> Attention
+>
+> The use of **email** as a contact method is mandatory for processing payments with Mercado Pago.
 
 Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 

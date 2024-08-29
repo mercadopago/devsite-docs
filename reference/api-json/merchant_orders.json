@@ -55,7 +55,7 @@
                     "type": "number",
                     "description": {
                       "en": "Identifier of the Partners Mercado Pago account. It is used to identify if the integration was performed by a partner.",
-                      "pt": "Identificador da conta Mercado Pago do Partnet. É usado para identificar se a integração foi realizada por um partner.",
+                      "pt": "Identificador da conta Mercado Pago do Partner. É usado para identificar se a integração foi realizada por um partner.",
                       "es": "Identificador de la cuenta de Mercado Pago del Partner. Se utiliza para identificar si la integración fue realizada por algún partner."
                     }
                   },

@@ -47,19 +47,22 @@ Para realizar la integración deberás seguir el flujo de integración habitual 
 
 #### Ejemplo
 
-```json
-    {
-    "description": "API TRANSPARENTE MARKETPLACE",
+```curl
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'accept: application/json' \
+--header 'content-type: application/json' \
+--header 'Authorization: Bearer {{oauth_access_token}}' \
+--data-raw '{
+    "description": "Pago de prueba 3",
     "installments": 1,
     "token": "{{card_token}}",
     "payer": {
-        "id": "{{payer_id}}"
+        "email": "{{payer_email}}"
     },
-    "marketplace": "{{marketplace_id}}",
     "payment_method_id": "master",
-    "application_fee": 2,
-    "transaction_amount": 10
-    }
+    "transaction_amount": 25,
+    "application_fee": 10
+}'
 ```
 
 Al completar estos pasos, el checkout se habrá integrado en el _marketplace_ y estará listo para procesar pagos.

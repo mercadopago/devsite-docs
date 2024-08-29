@@ -429,7 +429,7 @@
                           }
                         },
                         {
-                          "title": "in_process",
+                          "title": "transaction_in_process",
                           "description": {
                             "en": "The transaction is in process, pending final status, and awaiting authorization.",
                             "es": "La transacción está en proceso, pendiente de estado final, y aguarda autorización.",
