@@ -729,14 +729,31 @@
                           ]
                         },
                         "values": {
-                          "type": "object",
-                          "example": "conversion_id",
-                          "description": {
-                            "en": "Configuration values according the track type.",
-                            "pt": "Valores de configuração de acordo com o tipo de track.",
-                            "es": "Valores de configuración de acuerdo al tipo de track."
+                        "type": "object",
+                        "description": {
+                          "en": "Configuration values according the track type.",
+                          "pt": "Valores de configuração de acordo com o tipo de track.",
+                          "es": "Valores de configuración de acuerdo al tipo de track."
+                        },
+                        "properties": {
+                          "conversion_id": {
+                            "type": "number",
+                            "description": {
+                              "en": "Conversion ID.",
+                              "pt": "ID de conversão.",
+                              "es": "ID de conversión."
+                            }
+                          },
+                          "conversion_label": {
+                            "type": "string",
+                            "description": {
+                              "en": "Conversion label.",
+                              "pt": "Rótulo de conversão.",
+                              "es": "Etiqueta de conversión."
+                            }
                           }
                         }
+                      }
                       }
                     }
                   },
