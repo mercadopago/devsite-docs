@@ -25,4 +25,4 @@ Em primeiro lugar, você precisa [criar um link de pagamento](https://www.mercad
 
 ## Verifique os pagamentos recebidos
 
-É possível verificar suas vendas na lista de atividades da [sua conta Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/atividades) ou [integrar notificações](/developers/pt/guides/notificações/ipn/introdução) no seu sistema.
+É possível verificar suas vendas na lista de atividades da [sua conta Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/atividades) ou [integrar notificações](/developers/pt/docs/qr-code/additional-content/your-integrations/notifications/ipn) no seu sistema.
