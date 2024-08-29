@@ -1556,6 +1556,14 @@
                             "es": "binary_mode must be boolean.",
                             "pt": "binary_mode must be boolean."
                           }
+                        },
+                        {
+                          "title": "sponsor_id site must be the same as collector_id",
+                          "description": {
+                            "en": "The sponsor_id site must be the same as the collector_id site.",
+                            "es": "El sitio de sponsor_id debe ser el mismo que el de collector_id.",
+                            "pt": "O campo sponsor_id deve ser o mesmo que o campo collector_id."
+                          }
                         }
                       ]
                     }
