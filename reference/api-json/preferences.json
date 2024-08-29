@@ -738,6 +738,7 @@
                         "properties": {
                           "conversion_id": {
                             "type": "number",
+                            "example": "123",
                             "description": {
                               "en": "Conversion ID.",
                               "pt": "ID de conversão.",
@@ -746,6 +747,7 @@
                           },
                           "conversion_label": {
                             "type": "string",
+                            "example": "abc",
                             "description": {
                               "en": "Conversion label.",
                               "pt": "Rótulo de conversão.",
