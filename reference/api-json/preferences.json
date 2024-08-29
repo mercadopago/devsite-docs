@@ -701,34 +701,6 @@
                     "items": {
                       "type": "object",
                       "properties": {
-                        "values": {
-                          "type": "object",
-                          "description": {
-                            "en": "Configuration values according the track type.",
-                            "pt": "Valores de configuração de acordo com o tipo de track.",
-                            "es": "Valores de configuración de acuerdo al tipo de track."
-                          },
-                          "properties": {
-                            "conversion_id": {
-                              "type": "number",
-                              "example": "123",
-                              "description": {
-                                "en": "Example.",
-                                "pt": "Example.",
-                                "es": "Example."
-                              }
-                            },
-                            "conversion_label": {
-                              "type": "string",
-                              "example": "abc",
-                              "description": {
-                                "en": "Example.",
-                                "pt": "Example.",
-                                "es": "Example."
-                              }
-                            }
-                          }
-                        },
                         "type": {
                           "type": "string",
                           "example": "google_ad",
@@ -755,6 +727,15 @@
                               }
                             }
                           ]
+                        },
+                        "values": {
+                          "type": "object",
+                          "example": "conversion_id",
+                          "description": {
+                            "en": "Configuration values according the track type.",
+                            "pt": "Valores de configuração de acordo com o tipo de track.",
+                            "es": "Valores de configuración de acuerdo al tipo de track."
+                          }
                         }
                       }
                     }
