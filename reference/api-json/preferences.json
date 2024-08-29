@@ -701,6 +701,34 @@
                     "items": {
                       "type": "object",
                       "properties": {
+                        "values": {
+                          "type": "object",
+                          "description": {
+                            "en": "Configuration values according the track type.",
+                            "pt": "Valores de configuração de acordo com o tipo de track.",
+                            "es": "Valores de configuración de acuerdo al tipo de track."
+                          },
+                          "properties": {
+                            "conversion_id": {
+                              "type": "number",
+                              "example": "123",
+                              "description": {
+                                "en": "Example.",
+                                "pt": "Example.",
+                                "es": "Example."
+                              }
+                            },
+                            "conversion_label": {
+                              "type": "string",
+                              "example": "abc",
+                              "description": {
+                                "en": "Example.",
+                                "pt": "Example.",
+                                "es": "Example."
+                              }
+                            }
+                          }
+                        },
                         "type": {
                           "type": "string",
                           "example": "google_ad",
@@ -727,15 +755,6 @@
                               }
                             }
                           ]
-                        },
-                        "values": {
-                          "type": "string",
-                          "example": "conversion_id",
-                          "description": {
-                            "en": "Configuration values according the track type.",
-                            "pt": "Valores de configuração de acordo com o tipo de track.",
-                            "es": "Valores de configuración de acuerdo al tipo de track."
-                          }
                         }
                       }
                     }
@@ -1163,6 +1182,14 @@
                             "es": "Preferencia de cuotas."
                           }
                         }
+                      }
+                    },
+                    "binary_mode": {
+                      "type": "boolean",
+                      "description": {
+                        "en": "When set to TRUE, payments can only be approved or rejected. Otherwise they can also result in_process.",
+                        "pt": "Quando definido como TRUE, os pagamentos só podem ser aprovados ou rejeitados. Caso contrário, eles também podem resultar in_process.",
+                        "es": "Cuando se configura como TRUE los pagos sólo pueden resultar aprobados o rechazados. Caso contrario también pueden resultar in_process."
                       }
                     },
                     "client_id": {
