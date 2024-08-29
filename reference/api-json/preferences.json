@@ -731,9 +731,9 @@
                         "values": {
                         "type": "object",
                         "description": {
-                          "en": "Configuration values according the track type.",
-                          "pt": "Valores de configuração de acordo com o tipo de track.",
-                          "es": "Valores de configuración de acuerdo al tipo de track."
+                          "en": "Configuration values according to the type of track. For tracks of type 'google_ad,' configure the values for 'conversion_id' and 'conversion_label'. For tracks of type 'facebook_ad,' configure the value for 'pixel_id'..",
+                          "pt": "Valores de configuração de acordo com o tipo de track. Para tracks do tipo 'google_ad', configure os valores de 'conversion_id' e 'conversion_label'. Para tracks do tipo 'facebook_ad', configure o valores de 'pixel_id'.",
+                          "es": "Valores de configuración de acuerdo con el tipo de track. Para tracks del tipo 'google_ad,' configure los valores de 'conversion_id' y 'conversion_label'. Para tracks del tipo 'facebook_ad,' configure el valor de 'pixel_id'."
                         },
                         "properties": {
                           "conversion_id": {
@@ -752,6 +752,15 @@
                               "en": "Conversion label.",
                               "pt": "Rótulo de conversão.",
                               "es": "Etiqueta de conversión."
+                            }
+                          },
+                          "pixel_id": {
+                            "type": "string",
+                            "example": "abc",
+                            "description": {
+                              "en": "Facebook Pixel.",
+                              "pt": "Pixel do Facebook.",
+                              "es": "Pixel de Facebook."
                             }
                           }
                         }
