@@ -25,4 +25,4 @@ First, you must create a [payment link](https://www.mercadopago.com.ar/tools/cre
 
 ## Track your received payments
 
-You can check your business sales in the activity list in your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) or [integrate notifications](/developers/en/guides/notifications/ipn/introduction) in your system.
+You can check your business sales in the activity list in your [Mercado Pago account](https://www.mercadopago[FAKER][URL][DOMAIN]/activities) or [integrate notifications](/developers/en/docs/qr-code/additional-content/your-integrations/notifications/ipn) in your system.
