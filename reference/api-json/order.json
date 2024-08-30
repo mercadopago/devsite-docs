@@ -4613,7 +4613,6 @@
     "/v1/orders/{order_id}/transactions": {
       "post": {
         "tags": [
-          "order",
           "checkout-api"
         ],
         "description": {
@@ -4903,7 +4902,6 @@
     "/v1/orders/{order_id}/transactions/{transaction_id}": {
       "delete": {
         "tags": [
-          "order",
           "checkout-api"
         ],
         "description": {
