@@ -22,7 +22,7 @@ Saiba como utilizar o app **Mercado Pago Ordena Checkouts** para alterar a ordem
 3. Para reordenar a posição dos provedores, **clique e segure** o card do provedor e arraste-o (_drag n drop_) para a posição desejada. Não será possível alterar a posição do Mercado Pago entre os provedores.
 ------------
 ----[mlm]----
-3. Para reordenar a posição dos provedores, **clique e segure** o card do provedor e arraste-o (_drag n drop_) para a posição desejada. Lembrando que com o **Checkout Mercado Pago** na primeira posição, a loja terá maiores taxas de aprovação em pagamentos com cartões salvos e oferecerá uma experiência de compra mais completa para 90 milhões de clientes que pagam com o Mercado Pago.
+3. Para reordenar a posição dos provedores, **clique e segure** o card do provedor e arraste-o (_drag n drop_) para a posição desejada. Lembrando que com o **Mercado Pago Checkout Pro** na primeira posição, a loja terá maiores taxas de aprovação em pagamentos com cartões salvos e oferecerá uma experiência de compra mais completa para 90 milhões de clientes que pagam com o Mercado Pago.
 ------------
 4. Para confirmar as alterações, clique em **Salvar ordem de exibição**.
 

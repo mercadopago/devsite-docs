@@ -991,6 +991,168 @@
                         },
                         "example": "Payment_seller_123"
                       },
+                      "forward_data": {
+                        "required": false,
+                        "type": "object",
+                        "description": {
+                          "en": "Datos encaminados del atributo 'sub_merchant'. Information that payment facilitators must send mandatorily to identify the sub-merchants during the transaction.",
+                          "pt": "Dados encaminhados do atributo 'sub_merchant'. Informações que os facilitadores de pagamento devem enviar obrigatoriamente para identificar os subcomerciantes durante a transação.",
+                          "es": "Forwarded data from the 'sub_merchant' attribute. Información que los Facilitadores de pago deben enviar obligatoriamente para identificar a los subcomercios durante la transacción."
+                        },
+                        "properties": {
+                          "sub_merchant": {
+                            "required": true,
+                            "type": "object",
+                            "description": {
+                              "en": "Mandatory data related to the su-merchant. They are used by Payment facilitators to identify submerchants at the time of the transaction.",
+                              "pt": "Dados obrigatórios relacionados ao subcomerciante. São utilizados pelos Facilitadores de pagamento para identificar os subcomerciantes no momento da transação.",
+                              "es": "Datos obligatorios relacionados con el subcomercio. Son utilizados por los Facilitadores de pago para identificar los subcomercios en el momento de la transacción."
+                            },
+                            "properties": {
+                              "sub_merchant_id": {
+                               "required": true,
+                               "type": "string",
+                               "example": "123123",
+                               "description": {
+                                 "en": "Submerchant code.",
+                                 "pt": "Código do subcomerciante.",
+                                 "es": "Código del subcomercio."
+                                }
+                              },
+                              "mcc": {
+                               "required": true,
+                               "type": "string",
+                               "example": "5462",
+                               "description": {
+                                 "en": "Submerchant MCC (Merchant Code Category) according to Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços) decision and/or primary CNAE.",
+                                 "pt": "MCC (Merchant Code Category) do subcomerciante conforme deliberação da Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços) e/ou CNAE primário.",
+                                 "es": "MCC (Merchant Code Category) del subcomercio conforme a la decisión de la Abecs (Associação Brasileira das Empresas de Cartões de Crédito e Serviços) y/o el CNAE primario."
+                                }
+                              },
+                              "country": {
+                               "required": true,
+                               "type": "string",
+                               "example": "BRA",
+                               "description": {
+                                 "en": "Country where the submerchant is located.",
+                                 "pt": "País em que o subcomerciante está localizado.",
+                                 "es": "País en donde el subcomercio está ubicado."
+                                }
+                              },
+                              "address_door_number": {
+                               "required": true,
+                               "type": "number",
+                               "example": "1",
+                               "description": {
+                                 "en": "Street number where the submerchant is located.",
+                                 "pt": "Número da rua onde o subcomerciante está localizado.",
+                                 "es": "Número de la calle en donde el subcomercio está ubicado."
+                                }
+                              },
+                              "zip": {
+                               "required": true,
+                               "type": "string",
+                               "example": "2222222",
+                               "description": {
+                                 "en": "CEP of the submerchant.",
+                                 "pt": "CEP do subcomerciante.",
+                                 "es": "CEP del subcomercio."
+                                }
+                              },
+                              "document_number": {
+                               "required": true,
+                               "type": "string",
+                               "example": "222222222222222",
+                               "description": {
+                                 "en": "CPF or CNPJ identification of the submerchant.",
+                                 "pt": "Identificação do CPF ou CNPJ do subcomerciante.",
+                                 "es": "Identificación del CPF o CNPJ del subcomercio."
+                                }
+                              },
+                              "city": {
+                               "required": true,
+                               "type": "string",
+                               "example": "SÃO PAULO",
+                               "description": {
+                                 "en": "City where the submerchant is located.",
+                                 "pt": "Cidade onde o subcomerciante está localizado.",
+                                 "es": "Ciudad en donde el subcomercio está ubicado."
+                                }
+                              },
+                              "address_street": {
+                               "required": true,
+                               "type": "string",
+                               "example": "RUA A",
+                               "description": {
+                                 "en": "Street where the submerchant is located.",
+                                 "pt": "Rua onde o subcomerciante está localizado.",
+                                 "es": "Calle en donde el subcomercio está localizado."
+                                } 
+                              },
+                              "legal_name": {
+                               "required": true,
+                               "type": "string",
+                               "example": "LOJINHA DO ZÉ",
+                               "description": {
+                                 "en": "Name of the submerchant.",
+                                 "pt": "Nome do subcomerciante.",
+                                 "es": "Nombre del subcomercio."
+                                }
+                              },
+                              "region_code_iso": {
+                               "required": true,
+                               "type": "string",
+                               "example": "BR-MG",
+                               "description": {
+                                 "en": "State where the submerchant is located.",
+                                 "pt": "Estado onde o subcomerciante está localizado.",
+                                 "es": "Estado en donde el subcomercio está ubicado."
+                                }
+                              },
+                              "region_code": {
+                               "required": true,
+                               "type": "string",
+                               "example": "BR",
+                               "description": {
+                                 "en": "Postal code of the submerchant.",
+                                 "pt": "Código postal do subcomerciante.",
+                                 "es": "Código postal del subcomercio."
+                                } 
+                              },
+                              "document_type": {
+                               "required": true,
+                               "type": "string",
+                               "example": "CNPJ",
+                               "description": {
+                                 "en": "CPF or CNPJ number of the submerchant.",
+                                 "pt": "Número do CPF ou CNPJ do subcomerciante.",
+                                 "es": "Número del CPF o CNPJ del subcomercio."
+                                }
+                              },
+                              "phone": {
+                               "required": true,
+                               "type": "object",
+                               "example": "123123123",
+                               "description": {
+                                 "en": "Phone number of the submerchant.",
+                                 "pt": "Telefone do subcomerciante.",
+                                 "es": "Teléfono del subcomercio."
+                                }
+                              },
+                              "url": {
+                               "required": true,
+                               "type": "string",
+                               "example": "www.nomedofacilitador.com.br",
+                               "description": {
+                                 "en": "Payment facilitator URL. A Payment facilitator is an entity that provides payment solutions for end customers (submerchants) to sell their products and/or services. They are responsible for capturing, processing, and settling transactions directly to their submerchants, becoming creditors of the acquirer.",
+                                 "pt": "URL do Facilitador de pagamento. Um Facilitador de pagamento é uma entidade que oferece soluções de pagamento para clientes finais (subcomerciantes), permitindo que estes comercializem seus produtos e serviços. Essa entidade é responsável por capturar, processar e liquidar as transações, encaminhando os valores diretamente aos subcomerciantes, tornando-se um credor do adquirente.",
+                                 "es": "URL del Facilitador de pago. Un Facilitador de pagos es una entidad que proporciona soluciones de pago para que los clientes finales (subcomercios) comercialicen sus productos y/o servicios. Son responsables de capturar, procesar y liquidar las transacciones directamente a sus subcomercios, convirtiéndose en acreedores del adquirente."
+                                } 
+                              }
+                            }
+                          }
+                        }
+                      },
                       "discount": {
                         "required": false,
                         "type": "object",
@@ -1301,7 +1463,6 @@
                       }
                     },
                     "wallet_payment": {
-                      "required": true,
                       "type": "object",
                       "description": {
                         "en": "It indicates is a payment from a seller with a previous Wallet Connect vinculation.",
@@ -1310,7 +1471,6 @@
                       },
                       "properties": {
                         "transaction_amount": {
-                          "required": true,
                           "type": "number",
                           "description": {
                             "en": "Payment amount.",
@@ -1355,7 +1515,6 @@
                               "example": 10
                             },
                             "code": {
-                              "required": true,
                               "type": "number",
                               "description": {
                                 "en": "Unique ID that identifies coupon used for discount.",
@@ -1778,7 +1937,6 @@
                     },
                     "wallet_payment": {
                       "type": "object",
-                      "required": true,
                       "description": {
                         "en": "It indicates is an advanced payements from a seller with a previous Wallet Connect vinculation.",
                         "pt": "Indica que é um advanced payment de um vendedor com Wallet Connect previamente vinculado.",
@@ -1787,7 +1945,6 @@
                       "properties": {
                         "transaction_amount": {
                           "type": "number",
-                          "required": true,
                           "description": {
                             "en": "Payment amount.",
                             "pt": "Valor do pagamento.",

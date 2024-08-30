@@ -23,7 +23,7 @@ Learn how to use the **Mercado Pago Ordena Checkouts** app to change the display
 
 ------------
 ----[mlm]----
-3. To reorder the position of the providers, **click and hold** the provider's card and drag it (_drag n drop_) to the desired position. Keep in mind that with **Checkout Mercado Pago** in the first position, the store will have higher approval rates for payments with saved cards and will offer a more complete shopping experience to 90 million customers who pay with Mercado Pago.
+3. To reorder the position of the providers, **click and hold** the provider's card and drag it (_drag n drop_) to the desired position. Keep in mind that with **Mercado Pago Checkout Pro** in the first position, the store will have higher approval rates for payments with saved cards and will offer a more complete shopping experience to 90 million customers who pay with Mercado Pago.
 
 ------------
 4. To confirm the changes, click on **Save display order**.

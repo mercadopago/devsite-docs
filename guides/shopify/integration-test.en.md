@@ -7,7 +7,7 @@ Purchase tests are essential to ensure that payments are being processed correct
 > 
 > Important
 >
-> The test can only be performed after the integration configuration stage of [Checkout Mercado Pago](/developers/en/docs/shopify/integration-configuration/checkout-pro).
+> The test can only be performed after the integration configuration stage of [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 
 
 ------------
@@ -16,7 +16,7 @@ Purchase tests are essential to ensure that payments are being processed correct
 > 
 > Important
 >
-> The test can only be performed after the integration configuration stage of one of the payment checkouts, either [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) or [Checkout Mercado Pago](/developers/en/docs/shopify/integration-configuration/checkout-pro).
+> The test can only be performed after the integration configuration stage of one of the payment checkouts, either [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) or [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
 ----[mlm]----
@@ -45,7 +45,7 @@ See below how to test the integration:
 6. Access the application created in step 5 and click on **Production credentials** in the menu on the left. Copy the `public_key` and the `access_token`.
 
 ----[mlm]----
-7. Go to the settings of the Shopify panel (**Settings > Payments**) and click to **Manage** one of the Mercado Pago checkouts, either [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) or [Checkout Mercado Pago](/developers/en/docs/shopify/integration-configuration/checkout-pro).
+7. Go to the settings of the Shopify panel (**Settings > Payments**) and click to **Manage** one of the Mercado Pago checkouts, either [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) or [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 8. Enter the `public_key` and `access_token` of the seller test account.
 9. Click on **Save credentials**.
 
@@ -55,7 +55,7 @@ Now, follow the step-by-step instructions according to the selected checkout typ
 
 10. Access your store and make a purchase providing test information, such as the phone number and email of the buyer test account. In "Document", select the option **OTHER** and enter 9 digits. Also, use the test cards available in the corresponding [documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/cards).
 
-## Checkout Mercado Pago
+## Mercado Pago Checkout Pro
 
 10. Open a new incognito window and log in to Mercado Pago using the buyer test account created in step 3.
 11. In the same window logged in as the buyer, access your store and make a purchase providing test information, such as the phone number and email of the buyer test account. In "Document", select the option **OTHER** and enter 9 digits. Also, use the test cards available in the corresponding [documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/cards).
@@ -99,7 +99,7 @@ After completing a test purchase using one of the checkouts, the purchase approv
 
 ------------
 ----[mla, mpe, mco, mlu, mlc]----
-7. Go to the settings of the Shopify panel (**Settings > Payments**) and click to **Manage** [Checkout Mercado Pago](/developers/en/docs/shopify/integration-configuration/checkout-pro).
+7. Go to the settings of the Shopify panel (**Settings > Payments**) and click to **Manage** [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 8. Enter the `public_key` and `access_token` of the seller test account.
 9. Click on **Save credentials**.
 10. Open a new incognito window and log in to Mercado Pago using the buyer test account created in step 3.

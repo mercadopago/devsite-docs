@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Wallet Connect
- - message: Wallet Connect is a product that allows the automatic processing of payments through Mercado Pago's digital wallet. With the approval of the buyer, it is possible to make payments using the balance available on the card or Mercado Pago account.
+ - message: Wallet Connect is a product that allows the automatic processing of payments through Mercado Pago's digital wallet. With the approval of the buyer, it is possible to make payments using the balance available on the card or Mercado Pago account. If you are interested in the product, please contact your sales executive.
  - media_video: https://www.youtube.com/embed/osy7RAS_zyQ
 ---
 
