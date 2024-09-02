@@ -164,7 +164,7 @@ Em seguida, configure a preferência de acordo com o seu produto ou serviço.
 Os exemplos de código abaixo configuram o **purpose da preferência** como `wallet_purchase`, onde o usuário deverá fazer login quando for redirecionado para sua conta do Mercado Pago.
 
 ------------
-
+----[mla, mlu, mpe, mco, mlb, mlm]----
 [[[
 ```php
 <?php
@@ -191,7 +191,7 @@ let preference = {
       "id": "item-ID-1234",
       "title": "Meu produto",
       "quantity": 1,
-      "unit_price": 75.76
+      "unit_price": 75
     }
   ]
 };
@@ -235,7 +235,7 @@ preference_data = {
   items: [
     {
       title: 'Meu produto',
-      unit_price: 75.56,
+      unit_price: 75,
       quantity: 1
     }
   ]
@@ -260,7 +260,7 @@ var request = new PreferenceRequest
             Title = "Meu produto",
             Quantity = 1,
             CurrencyId = "BRL",
-            UnitPrice = 75.56,
+            UnitPrice = 75,
         },
     },
 };
@@ -279,7 +279,7 @@ preference_data = {
         {
             "title": "Meu Item",
             "quantity": 1,
-            "unit_price": 75.76
+            "unit_price": 75
         }
     ]
 }
@@ -299,12 +299,158 @@ curl -X POST \
       {
           "title": "Meu produto",
           "quantity": 1,
-          "unit_price": 75.76
+          "unit_price": 75
       }
   ]
 }'
 ```
 ]]]
+
+------------
+----[mlc]----
+[[[
+```php
+<?php
+$client = new PreferenceClient();
+$preference = $client->create([
+  "items"=> array(
+    array(
+      "title" => "Meu produto",
+      "quantity" => 1,
+      "unit_price" => 25 // preço unitário do item, deve ser um número inteiro.
+    )
+  )
+]);
+?>
+```
+```node
+// Cria um objeto de preferência
+let preference = {
+  // o "purpose": "wallet_purchase" permite apenas pagamentos logados
+  // para permitir pagamentos como guest, você pode omitir essa propriedade
+  "purpose": "wallet_purchase",
+  "items": [
+    {
+      "id": "item-ID-1234",
+      "title": "Meu produto",
+      "quantity": 1,
+      "unit_price": 75 // preço unitário do item, deve ser um número inteiro.
+    }
+  ]
+};
+ 
+mercadopago.preferences.create(preference)
+  .then(function (response) {
+    // Este valor é o preferenceId que será enviado para o Brick na inicialização
+    const preferenceId = response.body.id;
+  }).catch(function (error) {
+    console.log(error);
+  });
+```
+```java
+// Cria um objeto de preferência
+PreferenceClient client = new PreferenceClient();
+ 
+// Cria um item na preferência
+List<PreferenceItemRequest> items = new ArrayList<>();
+PreferenceItemRequest item =
+   PreferenceItemRequest.builder()
+       .title("Meu produto")
+       .quantity(1)
+       .unitPrice(new BigDecimal("100"))
+       .build();
+items.add(item);
+ 
+PreferenceRequest request = PreferenceRequest.builder()
+  // o .purpose('wallet_purchase') permite apenas pagamentos logados
+  // para permitir pagamentos como guest, você pode omitir essa linha
+  .purpose('wallet_purchase')
+  .items(items).build();
+ 
+client.create(request);
+```
+```ruby
+# Cria um objeto de preferência
+preference_data = {
+  # o purpose: 'wallet_purchase', permite apenas pagamentos logados
+  # para permitir pagamentos como guest, você pode omitir essa propriedade
+  purpose: 'wallet_purchase',
+  items: [
+    {
+      title: 'Meu produto',
+      unit_price: 75, // preço unitário do item, deve ser um número inteiro.
+      quantity: 1
+    }
+  ]
+}
+preference_response = sdk.preference.create(preference_data)
+preference = preference_response[:response]
+ 
+# Este valor é o preferenceId que você usará no HTML na inicialização no Brick
+@preference_id = preference['id']
+```
+```csharp
+// Cria o objeto de request da preferência
+var request = new PreferenceRequest
+{
+  // o Purpose = 'wallet_purchase', permite apenas pagamentos logados
+  // para permitir pagamentos como guest, você pode omitir essa propriedade
+    Purpose = "wallet_purchase",
+    Items = new List<PreferenceItemRequest>
+    {
+        new PreferenceItemRequest
+        {
+            Title = "Meu produto",
+            Quantity = 1,
+            CurrencyId = "BRL",
+            UnitPrice = 75, // preço unitário do item, deve ser um número inteiro.
+        },
+    },
+};
+ 
+// Cria a preferência usando o client
+var client = new PreferenceClient();
+Preference preference = await client.CreateAsync(request);
+```
+```python
+# Cria um item na preferência
+preference_data = {
+  # o "purpose": "wallet_purchase", permite apenas pagamentos logados
+  # para permitir pagamentos como guest, você pode omitir essa propriedade
+    "purpose": "wallet_purchase",
+    "items": [
+        {
+            "title": "Meu Item",
+            "quantity": 1,
+            "unit_price": 75 // preço unitário do item, deve ser um número inteiro.
+        }
+    ]
+}
+ 
+preference_response = sdk.preference().create(preference_data)
+preference = preference_response["response"]
+```
+```curl
+curl -X POST \
+'https://api.mercadopago.com/checkout/preferences' \
+-H 'Content-Type: application/json' \
+-H 'cache-control: no-cache' \
+-H 'Authorization: Bearer **PROD_ACCESS_TOKEN**' \
+-d '{
+  "purpose": "wallet_purchase",
+  "items": [
+      {
+          "title": "Meu produto",
+          "quantity": 1,
+          "unit_price": 75 // preço unitário do item, deve ser um número inteiro.
+      }
+  ]
+}'
+```
+]]]
+
+------------
+
 
 > WARNING
 >

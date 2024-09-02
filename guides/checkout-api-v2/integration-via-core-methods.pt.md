@@ -64,6 +64,14 @@ A captura dos dados do cartão (número do cartão, código de segurança e data
 
 Para obter esses dados e processar os pagamentos, insira o HTML abaixo diretamente no projeto.
 
+----[mlc]----
+> WARNING
+>
+> Atenção
+>
+> O valor `unit_price` deve ser um número inteiro.
+
+------------
 ----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```html

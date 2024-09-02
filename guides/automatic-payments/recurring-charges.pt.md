@@ -866,6 +866,15 @@ curl --location --request POST 'https://api.mercadopago.com/v1/card_tokens' \
 
 Utilize o token gerado anteriormente para registrar o pagamento, indicando o ID do cliente associado ao cartão.
 
+----[mlc]----
+> WARNING
+>
+> Importante
+>
+> O valor da cobrança deverá será ser com um número inteiro. Ou seja, **não poderão ser utilizadas casas decimais**.
+
+------------
+
 [[[
 ```php
 <?php
