@@ -161,12 +161,116 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 >
 > Al enviar el formulario, se genera un token que representa de manera segura los datos de la tarjeta, también llamado **cardtoken**. Es posible acceder a él mediante la función `cardForm.getCardFormData()`, como se muestra a continuación en el callback `onSubmit`. Además, este token también se almacena en un campo oculto dentro del formulario, donde se puede encontrar con la nomenclatura `MPHiddenInputToken`. Ten en cuenta que puede ser utilizado **solo una vez** y caduca en un plazo de **7 días**.
 
-----[mla, mlu, mpe, mco, mlb, mlc]----
+----[mla, mlu, mpe, mco, mlb]----
 [[[
 ```javascript
 
     const cardForm = mp.cardForm({
       amount: "100.5",
+      iframe: true,
+      form: {
+        id: "form-checkout",
+        cardNumber: {
+          id: "form-checkout__cardNumber",
+          placeholder: "Numero de tarjeta",
+        },
+        expirationDate: {
+          id: "form-checkout__expirationDate",
+          placeholder: "MM/YY",
+        },
+        securityCode: {
+          id: "form-checkout__securityCode",
+          placeholder: "Código de seguridad",
+        },
+        cardholderName: {
+          id: "form-checkout__cardholderName",
+          placeholder: "Titular de la tarjeta",
+        },
+        issuer: {
+          id: "form-checkout__issuer",
+          placeholder: "Banco emisor",
+        },
+        installments: {
+          id: "form-checkout__installments",
+          placeholder: "Cuotas",
+        },        
+        identificationType: {
+          id: "form-checkout__identificationType",
+          placeholder: "Tipo de documento",
+        },
+        identificationNumber: {
+          id: "form-checkout__identificationNumber",
+          placeholder: "Número del documento",
+        },
+        cardholderEmail: {
+          id: "form-checkout__cardholderEmail",
+          placeholder: "E-mail",
+        },
+      },
+      callbacks: {
+        onFormMounted: error => {
+          if (error) return console.warn("Form Mounted handling error: ", error);
+          console.log("Form mounted");
+        },
+        onSubmit: event => {
+          event.preventDefault();
+
+          const {
+            paymentMethodId: payment_method_id,
+            issuerId: issuer_id,
+            cardholderEmail: email,
+            amount,
+            token,
+            installments,
+            identificationNumber,
+            identificationType,
+          } = cardForm.getCardFormData();
+
+          fetch("/process_payment", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              token,
+              issuer_id,
+              payment_method_id,
+              transaction_amount: Number(amount),
+              installments: Number(installments),
+              description: "Descripción del producto",
+              payer: {
+                email,
+                identification: {
+                  type: identificationType,
+                  number: identificationNumber,
+                },
+              },
+            }),
+          });
+        },
+        onFetching: (resource) => {
+          console.log("Fetching resource: ", resource);
+
+          // Animate progress bar
+          const progressBar = document.querySelector(".progress-bar");
+          progressBar.removeAttribute("value");
+
+          return () => {
+            progressBar.setAttribute("value", "0");
+          };
+        }
+      },
+    });
+```
+]]]
+
+------------
+----[mlc]----
+[[[
+```javascript
+
+    const cardForm = mp.cardForm({
+      amount: "100", // El valor debe ser un número entero.
       iframe: true,
       form: {
         id: "form-checkout",
