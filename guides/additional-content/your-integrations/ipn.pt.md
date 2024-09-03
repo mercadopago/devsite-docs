@@ -6,7 +6,7 @@ IPN (Instant Payment Notification) é um mecanismo que permite que uma aplicaç�
 >
 > Importante
 >
-> As notificações IPN serão descontinuadas. Além disso, apesar de receber o _header_ `x-Signature`, elas não permitem a validação por meio da chave secreta para confirmar que foram enviadas pelo Mercado Pago. Para realizar essa validação de origem, recomendamos migrar para as [notificações Webhooks](/developers/pt/docs/your-integrations/notifications/webhooks).   
+> As notificações IPN serão descontinuadas. Além disso, apesar de receber o _header_ `x-Signature`, elas não permitem a validação por meio da chave secreta para confirmar que foram enviadas pelo Mercado Pago. Para realizar essa validação de origem, recomendamos migrar para as [notificações Webhooks](/developers/pt/docs/your-integrations/notifications/webhooks), que agora também enviam os tópicos `merchant_order` e `chargebacks`.   
 
 As notificações IPN podem ser configuradas de duas maneiras: 
 
