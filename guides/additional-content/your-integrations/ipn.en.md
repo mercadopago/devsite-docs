@@ -6,7 +6,7 @@ Instant Payment Notification (IPN) is a mechanism that allows your application t
 >
 > Important
 >
-> IPN notifications will be discontinued. Additionally, despite receiving the `x-Signature` header, they do not allow validation through the secret key to confirm they were sent by Mercado Pago. If you wish to perform this origin validation, we recommend migrating to [Webhooks notifications](/developers/en/docs/your-integrations/notifications/webhooks).   
+> IPN notifications will be discontinued. Additionally, despite receiving the `x-Signature` header, they do not allow validation through the secret key to confirm they were sent by Mercado Pago. If you wish to perform this origin validation, we recommend migrating to [Webhooks notifications](/developers/en/docs/your-integrations/notifications/webhooks), which now also send the `merchant_order` and `chargebacks` topics.   
 
 IPN notifications can be configured in two ways: 
 
