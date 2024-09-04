@@ -46,42 +46,24 @@ De esta manera, la aplicación se eliminará correctamente.
 >
 > Al eliminar una aplicación, ten en cuenta que tu tienda perderá la capacidad de recibir pagos a través de la integración asociada. Además, se perderán todas las configuraciones, incluidas las credenciales que tengas asociadas. **Una vez eliminada una aplicación, no se puede recuperar**.
 
-## Calidad de la aplicación
+## Medición de calidad
 
-En esta sección, nos aseguraremos de que tu aplicación cumpla con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores con Mercado Pago. [Haz clic aquí](/developers/es/guides/additional-content/homologator/homologator) y conoce toda la información necesaria para saber cómo homologar correctamente tu integración.
+La [medición de calidad](/developers/es/guides/additional-content/homologator/homologator) es la última etapa del proceso de integración, donde podrás validar si cumple con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores. 
 
-----[mla, mlm, mlu, mco, mlc, mpe]----
+Existen 2 formas de medir la calidad de tu integración:
+ * **Manual:** puedes realizar la medición por tu cuenta, cuando lo prefieras. Sólo necesitas contar con un `payment ID` de un pago realizado con credenciales de producción y acceder a **“Calidad de integración"**, dentro del menú lateral, donde podrás consultar el paso a paso. 
 
-> WARNING
->
-> Importante
->
-> Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.
-> <br><br>
-> Es necesario que la aplicación a evaluar registre la integración de un producto de entre aquellos en los que la herramienta de medición está disponible. Por ahora, solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout API,](/developers/es/docs/checkout-api/landing) [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
-
-------------
-----[mlb]----
+ * **Automática:**  del 1 al 7 de cada mes, Mercado Pago realiza una medición periódica de calidad para todas las integraciones con **Checkout Pro, Checkout ----[mla, mlm, mlu, mco, mlc, mpe]----API------------ ----[mlb]----Transparente------------, Checkout Bricks y Mercado Pago Point** que cuenten con un pago realizado con credenciales de producción.
 
 > WARNING
 >
 > Importante
 >
-> Antes de comenzar la evaluación, asegúrate de que la homologación de la aplicación en el entorno de producción haya sido completada, incluyendo la realización de al menos un pago productivo.
-> <br><br>
-> Es necesario que la aplicación a evaluar registre la integración de un producto de entre aquellos en los que la herramienta de medición está disponible. Por ahora, solo está disponible para integraciones con [Checkout Pro,](/developers/es/docs/checkout-pro/landing) [Checkout Transparente,](/developers/es/docs/checkout-api/landing) [Checkout Bricks](/developers/es/docs/checkout-bricks/landing) y [Mercado Pago Point.](/developers/es/docs/mp-point/landing)
+> La única manera de evaluar la calidad de una integración con **Código QR** es realizando una medición manual. Por su parte, integraciones con **Plugins y Plataformas** no podrán ser evaluadas.
 
-------------
+Como resultado de esta medición, obtendrás un puntaje que indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación, junto con las recomendaciones necesarias para hacer ajustes en caso de que sea necesario. 
 
-### Evaluar calidad
-
-El puntaje indica qué tan segura y alineada con las buenas prácticas de integración de Mercado Pago está la configuración de tu aplicación.
-
-Al hacer clic en **Evaluar la calidad**, comenzarás el proceso de análisis de tu integración. Durante esta revisión, nuestra herramienta identificará áreas de mejora y te guiará para realizar los cambios necesarios en tu integración. Este proceso implica la revisión de varios campos asociados.
-
-Accede a [Calidad de la integración](/developers/es/docs/integration-quality) y conoce toda la información necesaria para saber cómo medir la calidad de tu aplicación.
-
-> Después de implementar mejoras, es necesario hacer clic nuevamente en **Actualizar puntaje** para volver a evaluar su integración y verificar si cumple con los estándares requeridos.
+Para saber más detalles, accede a la documentación sobre [calidad de integración](/developers/es/guides/additional-content/homologator/homologator).
 
 ## Prueba de integración
 
