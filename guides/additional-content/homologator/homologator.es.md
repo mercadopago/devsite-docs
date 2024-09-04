@@ -45,7 +45,7 @@ Entre los días 1 y 7 de cada mes, Mercado Pago realiza una evaluación automát
 
 **El proceso de medición automática es llevado adelante mensualmente, incluso cuando hayas realizado por tu cuenta una medición manual previa**. Como a lo largo del tiempo, y en función de las mejoras aplicadas, las integraciones pueden presentar cambios en sus configuraciones, en Mercado Pago buscamos garantizar que tu trabajo con nuestras soluciones sea cada vez más satisfactorio, acercándote distintas opciones para lograr una calidad ideal. 
 
-Podrás encontrar los resultados de esta medición automática dentro de los [Detalles de tu aplicación](/developers/es/docs/your-integrations/application-details). Al igual que con la medición manual, podrás visualizar el puntaje de tu aplicación, conocer las acciones indicadas como necesarias y buenas prácticas sugeridas. Para conocer más detalles, dirígete a [¿Cómo leer el resultado de tu evaluación?]()
+Podrás encontrar los resultados de esta medición automática dentro de los [Detalles de la aplicación](/developers/es/docs/your-integrations/application-details). Al igual que con la medición manual, podrás visualizar el puntaje de tu aplicación, conocer las acciones indicadas como necesarias y buenas prácticas sugeridas. Para conocer más detalles, dirígete a [¿Cómo leer el resultado de tu evaluación?](/developers/es/docs/integration-quality#cmoleerelresultadodetuevaluacin)
  
 
 ### Medición manual
@@ -62,7 +62,7 @@ Para medir la calidad de tu integración de manera manual, ingresa al menú [Tus
 
  * Puedes localizar la aplicación deseada y, desde el botón **“>”**,  ingresar a la pantalla desde la que puedes realizar la evaluación de tu integración.
     ![Tus integraciones](/homologator/integration-quality-your-integrations-es.png)
- * Puedes seleccionar la aplicación deseada y, desde los [Detalles de tu aplicación](/developers/es/docs/your-integrations/application-details), hacer clic en **Iniciar medición** dentro del panel "Status", en caso de que se trate de una primera medición, o en **Medir de nuevo**, en caso de haber realizado una medición con anterioridad.
+ * Puedes seleccionar la aplicación deseada y, desde los [Detalles de la aplicación](/developers/es/docs/your-integrations/application-details), hacer clic en **Iniciar medición** dentro del panel "Status", en caso de que se trate de una primera medición, o en **Medir de nuevo**, en caso de haber realizado una medición con anterioridad.
     ![Detalles de aplicación](/homologator/integration-quality-aplication-details-es.png)
 
 Una vez dentro de la sección **“Medir calidad de tu integración"**, sigue los pasos a continuación.
@@ -72,7 +72,7 @@ Una vez dentro de la sección **“Medir calidad de tu integración"**, sigue lo
 
 2. Finalmente, haz clic en **Medir la calidad**.
 
-De esta manera, habrás realizado la medición de calidad de manera manual. Accede a [¿Cómo leer el resultado de tu evaluación?]() para saber cómo interpretarla y mantener tu integración alineada con los estándares de Mercado Pago.
+De esta manera, habrás realizado la medición de calidad de manera manual. Accede a [¿Cómo leer el resultado de tu evaluación?](/developers/es/docs/integration-quality#cmoleerelresultadodetuevaluacin) para saber cómo interpretarla y mantener tu integración alineada con los estándares de Mercado Pago.
 
 
 ## ¿Cómo leer el resultado de tu evaluación?
@@ -83,7 +83,7 @@ Ya sea que hayas realizado una medición de calidad manual, o hayas recibido los
 
 1. **Puntuación**: indica qué tan segura es la configuración de tu aplicación y si está en línea con las buenas prácticas de integración de Mercado Pago. El **puntaje mínimo** para que su aplicación cumpla con los requisitos es de **73**, pero **recomendamos obtener 100 puntos para mejorar la experiencia del usuario y aumentar la tasa de aprobación de pagos**.
 2. **Fecha de última medición** y **payment ID**: indica el día y la hora de la última medición y el `payment ID` en el que se basa el puntaje de calidad de la aplicación.
-3. **Aspectos evaluados**: indica qué puntaje fue obtenido para cada uno de los aspectos evaluados. Haz clic en ellos para poder saber qué oportunidades de mejora fueron identificadas en el proceso y cómo puedes abordarlas. Consulta la sección [¿Cómo mejorar la calidad de tu integración?]() para explorar más posibilidades de optimización.
+3. **Aspectos evaluados**: indica qué puntaje fue obtenido para cada uno de los aspectos evaluados. Haz clic en ellos para poder saber qué oportunidades de mejora fueron identificadas en el proceso y cómo puedes abordarlas. Consulta la sección [¿Cómo mejorar la calidad de tu integración?](/developers/es/docs/integration-quality#cmomejorarlacalidaddetuintegracin) para explorar más posibilidades de optimización.
 4. **Medir de nuevo**: una vez que hayas aplicado las oportunidades de mejora, tienes la opción de medir nuevamente la calidad de tu integración de manera manual o, si lo prefieres, aguardar a la medición automática mensual realizada por Mercado Pago.
 
 ## ¿Cómo mejorar la calidad de tu integración?

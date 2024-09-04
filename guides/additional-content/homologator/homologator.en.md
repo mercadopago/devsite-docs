@@ -44,7 +44,7 @@ Between the 1st and 7th of each month, Mercado Pago conducts an automatic evalua
 
 **The automatic measurement process is conducted monthly, even if you have previously performed a manual measurement yourself**. Over time and based on applied improvements, integrations may have configuration changes. Mercado Pago seeks to ensure your work with our solutions becomes increasingly satisfying by offering various options to achieve ideal quality.
 
-You can find the results of this automatic measurement within the [Application details](/developers/en/docs/your-integrations/application-details). Like with the manual measurement, you can view your application's score, understand the necessary actions identified, and note suggested best practices. For more details, refer to [How to read your measurement results?]()
+You can find the results of this automatic measurement within the [Application details](/developers/en/docs/your-integrations/application-details). Like with the manual measurement, you can view your application's score, understand the necessary actions identified, and note suggested best practices. For more details, refer to [How to read your measurement results?](/developers/en/docs/integration-quality#howtoreadyourevaluationresults)
 
 ### Manual measurement
 
@@ -65,11 +65,11 @@ To manually measure the quality of your integration, access the [Your Integratio
 
 Once inside the **"Measure the Quality of Your Integration"** section, follow the steps below.
 
-1. Enter the `payment ID` of the last productive payment made with [production credentials](/developers/en/guides/additional-content/your-integrations/credentials) of the application you wish to evaluate. 
+1. Enter the `payment ID` of the last productive payment made with [production credentials](/developers/en/docs/your-integrations/credentials) of the application you wish to evaluate. 
 
 2. Finally, click on **Measure quality** again.
 
-By doing this, the manually quality measurement will be performed. Access [How to read your evaluation results?]() to know how to interpret it and maintain your integration aligned with Mercado Pago standards.
+By doing this, the manually quality measurement will be performed. Access [How to read your evaluation results?](/developers/en/docs/integration-quality#howtoreadyourevaluationresults) to know how to interpret it and maintain your integration aligned with Mercado Pago standards.
 
 ## How to read your evaluation results?
 
@@ -79,7 +79,7 @@ Whether you conducted a manual quality measurement or received the results of yo
 
 1. **Score**: indicates how safe your application's configuration is and if it is aligned with Mercado Pago's best integration practices. The **minimum score** for your application to meet the requirements is **73**, but **we recommend achieving 100 points to enhance the user experience and increase the payment approval rate**.
 2. **Last Measurement Date** and **payment ID**: indicates the day and time of the last measurement and the `payment ID` on which the application's quality score is based.
-3. **Evaluated Aspects**: indicates the score obtained for each evaluated aspect. Click on them to find out which improvement opportunities were identified in the process and how you can address them. Consult the section [How to improve your integration quality?]() for more optimization possibilities.
+3. **Evaluated Aspects**: indicates the score obtained for each evaluated aspect. Click on them to find out which improvement opportunities were identified in the process and how you can address them. Consult the section [How to improve the quality of your integration?](/developers/en/docs/integration-quality#howtoimprovethequalityofyourintegration) for more optimization possibilities.
 4. **Measure Again**: once you have applied the improvement opportunities, you can manually measure your integration's quality again or, if preferred, wait for the automatic monthly measurement conducted by Mercado Pago.
 
 ## How to improve the quality of your integration?
