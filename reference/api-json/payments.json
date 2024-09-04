@@ -2053,14 +2053,6 @@
                           }
                         },
                         {
-                          "title": "2060",
-                          "description": {
-                            "en": "The customer can't be equal to the collector. - If you encounter this error, ensure that the customer and the collector are different entities.",
-                            "es": "The customer can't be equal to the collector. - Si encuentra este error, asegúrese de que el cliente y el recolector sean entidades diferentes.",
-                            "pt": "The customer can't be equal to the collector. - Se encontrar esse erro, certifique-se de que o cliente e o coletor sejam entidades diferentes."
-                          }
-                        },
-                        {
                           "title": "2062",
                           "description": {
                             "en": "Invalid card token. - Ensure that the card token provided is valid and correct if this error occurs.",
@@ -2679,35 +2671,6 @@
                             "en": "blocked_by PolicyAgent - At least one policy returned unauthorized - This error occurs when at least one policy returns 'unauthorized'. This can happen if the `authorization` header is removed during the request or if the Access Token is not sent. Please verify the submission of this information and try making a new request.",
                             "es": "blocked_by PolicyAgent - At least one policy returned unauthorized - Este error ocurre cuando al menos una política devuelve 'unauthorized'. Esto puede suceder si el header de `authorization` se elimina durante la solicitud o si no se envía el Access Token. Verifique el envío de esta información e intente hacer una nueva solicitud.",
                             "pt": "blocked_by PolicyAgent - At least one policy returned unauthorized - Este erro ocorre quando pelo menos uma política retorna 'unauthorized'. Isso pode acontecer se o header de `authorization` for removido durante a requisição ou se o Access Token não for enviado. Verifique o envio dessas informações e tente fazer uma nova requisição."
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "404": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "2000",
-                          "description": {
-                            "en": "Payment not found. This error will return a field called \"data\". This field contains the error date \"25-09-2023T16:57:53UTC\" and a Request ID, an ID that identifies payment traceability. - If this error occurs, ensure the payment ID is correct and try again.",
-                            "es": "Pago no encontrado. Este error devolverá un campo llamado \"data\". Este campo contiene la fecha del error \"25-09-2023T16:57:53UTC\" y un ID de solicitud que identifica la trazabilidad del pago. - Si ocurre este error, asegúrese de que el ID de pago sea correcto e intente nuevamente.",
-                            "pt": "Pagamento não encontrado. Este erro retornará um campo chamado \"data\". Este campo contém a data do erro \"25-09-2023T16:57:53UTC\" e um ID de solicitação que identifica a rastreabilidade do pagamento. - Se esse erro ocorrer, certifique-se de que o ID de pagamento está correto e tente novamente."
                           }
                         }
                       ]

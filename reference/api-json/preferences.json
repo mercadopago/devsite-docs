@@ -835,9 +835,9 @@
                             "type": "string",
                             "example": "Dummy Item",
                             "description": {
-                              "en": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails.",
-                              "pt": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails.",
-                              "es": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos."
+                              "en": "This is the item`s title, which will display during the payment process, at checkout, activities, and emails. To learn how to create a good title, check out the article: https://bit.ly/4dJmU89",
+                              "pt": "Este é o título do item, que será exibido durante o processo de pagamento, no checkout, nas atividades e nos e-mails. Para saber como criar um bom título, confira o artigo: https://bit.ly/3X6ytAX",
+                              "es": "Este es el título del ítem, que se mostrará durante el proceso de pago, en el checkout, actividades y correos electrónicos. Para saber cómo crear un buen título, consulta el artículo: https://bit.ly/4dJmU89"
                             }
                           },
                           "description": {
