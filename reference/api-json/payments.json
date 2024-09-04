@@ -1002,59 +1002,11 @@
                           }
                         },
                         {
-                          "title": "partially_bpp_refunded",
-                          "description": {
-                            "en": "The mediation was favorable to the payer, so the payment was partially refunded to them.",
-                            "es": "La mediación fue favorable al pagador y el pago le fue parcialmente devuelto.",
-                            "pt": "A mediação foi favorável ao pagador e o pagamento parcialmente devolvido."
-                          }
-                        },
-                        {
-                          "title": "partially_bpp_covered",
-                          "description": {
-                            "en": "The mediation was favorable to both the payer and the seller, so the payment was partially reimbursed to them.",
-                            "es": "La mediación fue favorable tanto al pagador como al vendedor y el pago les es parcialmente devuelto a ambos.",
-                            "pt": "A mediação foi favorável tanto ao pagador quanto ao vendedor e o pagamento é parcialmente devolvido a ambos."
-                          }
-                        },
-                        {
                           "title": "pending_capture",
                           "description": {
                             "en": "The payment has been authorized and is waiting for capture.",
                             "es": "El pago fue autorizado y está a la espera de ser capturado.",
                             "pt": "O pagamento foi autorizado e aguarda captura."
-                          }
-                        },
-                        {
-                          "title": "by_collector",
-                          "description": {
-                            "en": "If the status is cancelled, the payment has been cancelled by collector.",
-                            "es": "Si el status es cancelled, el pago fue cancelado por el collector.",
-                            "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado pelo collector."
-                          }
-                        },
-                        {
-                          "title": "by_payer",
-                          "description": {
-                            "en": "If the status is cancelled, the payment has been cancelled by the payer.",
-                            "es": "Si el status es cancelled, el pago fue cancelado por el pagador.",
-                            "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado pelo pagador."
-                          }
-                        },
-                        {
-                          "title": "by_admin",
-                          "description": {
-                            "en": "If the status is cancelled, the payment has been cancelled by the administrator. If the status is refunded, the payment has been refunded.",
-                            "es": "Si el status es cancelled, el pago fue cancelado por el administrador. Si el estado es refunded, el pago fue devuelto.",
-                            "pt": "Caso o status seja cancelled, o pagamento foi cancelado pelo administrador. Caso o status seja refunded, o pagamento foi devolvido."
-                          }
-                        },
-                        {
-                          "title": "expired",
-                          "description": {
-                            "en": "If the status is cancelled, the payment has been cancelled after spending 30 days in a pending status.",
-                            "es": "Si el status es cancelled, el pago fue cancelado luego de haber estado 30 días en un estado pendiente.",
-                            "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado após ficar com status pendente por 30 dias."
                           }
                         },
                         {
