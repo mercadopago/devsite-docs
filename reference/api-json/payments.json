@@ -5307,9 +5307,9 @@
           "checkout-bricks"
         ],
         "description": {
-          "en": "This endpoint allows for searches and returns payments made in the last twelve months from the date of the query",
-          "pt": "Este endpoint permite realizar pesquisas e retorna os pagamentos efetuados nos últimos doze meses a partir da data da consulta",
-          "es": "Este endpoint permite realizar búsquedas y devuelve los pagos efectuados en los últimos doce meses a partir de la fecha de la consulta"
+          "en": "This endpoint allows for searches and returns payments made in the last twelve months from the date of the query. In case of success, the request will return a response with status 200",
+          "pt": "Este endpoint permite realizar pesquisas e retorna os pagamentos efetuados nos últimos doze meses a partir da data da consulta. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Este endpoint permite realizar búsquedas y devuelve los pagos efectuados en los últimos doce meses a partir de la fecha de la consulta. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters": [
           {
@@ -6623,6 +6623,14 @@
                             "en": "Invalid range interval - Must be less than 365 days.",
                             "es": "Invalid range interval - Must be less than 365 days.",
                             "pt": "Invalid range interval - Must be less than 365 days."
+                          }
+                        },
+                        {
+                          "title": "bad request",
+                          "description": {
+                            "en": "The attribute [query param name] is not a possible param.",
+                            "es": "The attribute [query param name] is not a possible param.",
+                            "pt": "The attribute [query param name] is not a possible param."
                           }
                         }
                       ]
