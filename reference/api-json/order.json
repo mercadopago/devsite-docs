@@ -1523,18 +1523,18 @@
                           "type":"string",
                           "example":"John",
                           "description":{
-                            "en":"Payer first name",
-                            "pt":"Nome do pagador",
-                            "es":"Nombre del pagador"
+                            "en":"Payer first name.",
+                            "pt":"Nome do pagador.",
+                            "es":"Nombre del pagador."
                           }
                         },
                         "last_name":{
                           "type":"string",
                           "example":"Doe",
                           "description":{
-                            "en":"Payer last name",
-                            "pt":"Sobrenome do pagador",
-                            "es":"Apellido del pagador"
+                            "en":"Payer last name.",
+                            "pt":"Sobrenome do pagador.",
+                            "es":"Apellido del pagador."
                           }
                         },
                         "identification":{
@@ -1549,7 +1549,7 @@
                               "type":"string",
                               "example":"CPF",
                               "description":{
-                                "en":"Payer's identification document type.",
+                                "en":"Payer's identification type.",
                                 "pt":"Tipo de documento de identificação do pagador.",
                                 "es":"Tipo de documento del pagador."
                               }
@@ -2020,33 +2020,33 @@
                       }
                     },
                     "coupon":{
-                    "type":"object",
-                    "description":{
-                      "en":"Discount campaign.",
-                      "pt":"Campanha de desconto.",
-                      "es":"Campaña de descuento."
-                    },
-                    "properties":{
-                      "code":{
-                        "type":"string",
-                        "description":{
-                          "en":"Specific code of the coupon participating in the discount campaign.",
-                          "pt":"Código específico do cupom pertencente à campanha de desconto.",
-                          "es":"Código específico del cupón perteneciente a la campaña de descuento."
-                        },
-                        "example": "123"
+                      "type":"object",
+                      "description":{
+                        "en":"Discount campaign.",
+                        "pt":"Campanha de desconto.",
+                        "es":"Campaña de descuento."
                       },
-                      "amount":{
-                        "type":"string",
-                        "example":"4.90",
-                        "description":{
-                          "en":"Value of the discount coupon.",
-                          "pt":"É o valor do cupom de desconto.",
-                          "es":"Es el valor del cupón de descuento."
+                      "properties":{
+                        "code":{
+                          "type":"string",
+                          "description":{
+                            "en":"Specific code of the coupon participating in the discount campaign.",
+                            "pt":"Código específico do cupom pertencente à campanha de desconto.",
+                            "es":"Código específico del cupón perteneciente a la campaña de descuento."
+                          },
+                          "example": "123"
+                        },
+                        "amount":{
+                          "type":"string",
+                          "example":"4.90",
+                          "description":{
+                            "en":"Value of the discount coupon.",
+                            "pt":"É o valor do cupom de desconto.",
+                            "es":"Es el valor del cupón de descuento."
+                          }
                         }
                       }
-                    }
-                  },
+                    },
                     "splits":{
                       "type":"array",
                       "description":{
@@ -2115,132 +2115,132 @@
                       }
                     },
                     "shipment":{
-                    "type":"object",
-                    "description":{
-                      "en":"Information about the product shipment.",
-                      "pt":"Informações sobre o envio do produto.",
-                      "es":"Información sobre el envío del producto."
-                    },
-                    "properties":{
-                      "receiver_address":{
-                        "type":"object",
-                        "description":{
-                          "en":"Object comprising the address of the receiver of the purchase.",
-                          "pt":"Objeto composto pelo endereço do destinatário da compra.",
-                          "es":"Objeto compuesto por la dirección del destinatario de la compra."
+                      "type":"object",
+                      "description":{
+                        "en":"Information about the product shipment.",
+                        "pt":"Informações sobre o envio do produto.",
+                        "es":"Información sobre el envío del producto."
+                      },
+                      "properties":{
+                        "receiver_address":{
+                          "type":"object",
+                          "description":{
+                            "en":"Object comprising the address of the receiver of the purchase.",
+                            "pt":"Objeto composto pelo endereço do destinatário da compra.",
+                            "es":"Objeto compuesto por la dirección del destinatario de la compra."
+                          },
+                          "properties":{
+                            "street_name":{
+                              "type":"string",
+                              "description":{
+                                "en":"Receiver's street name.",
+                                "pt":"Rua do destinatário.",
+                                "es":"Calle del destinatario."
+                              },
+                              "example": "Test Street"
+                            },
+                            "street_number":{
+                              "type":"number",
+                              "description":{
+                                "en":"Receiver's street number.",
+                                "pt":"Número do endereço do destinatário.",
+                                "es":"Número de la dirección del destinatario."
+                              },
+                              "example": "123"
+                            },
+                            "zip_code":{
+                              "type":"string",
+                              "description":{
+                                "en":"Receiver's adress zip code.",
+                                "pt":"CEP do endereço do destinatário.",
+                                "es":"Código postal de la dirección del destinatario."
+                              },
+                              "example": "1234"
+                            },
+                            "city_name":{
+                              "type":"string",
+                              "description":{
+                                "en":"Receiver's adress city Name.",
+                                "pt":"Cidade do endereço do destinatário.",
+                                "es":"Ciudad de la dirección del destinatario."
+                              },
+                              "example": "SP"
+                            },
+                            "state_name":{
+                              "type":"string",
+                              "description":{
+                                "en":"State in which the city is located.",
+                                "pt":"Estado onde a cidade está localizada.",
+                                "es":"Provincia donde la ciudad está ubicada."
+                              },
+                              "example": "SP"
+                            },
+                            "floor":{
+                              "type":"string",
+                              "description":{
+                                "en":"Delivery address floor, in case it is an apartment.",
+                                "pt":"Andar do endereço de entrega, se for um apartamento.",
+                                "es":"Piso de la dirección de entrega, en caso de ser un apartamento."
+                              },
+                              "example": "1"
+                            },
+                            "apartment":{
+                              "type":"string",
+                              "description":{
+                                "en":"Delivery address apartment number.",
+                                "pt":"Número do apartamento do endereço de entrega.",
+                                "es":"Número de departamento de la dirección de entrega."
+                              },
+                              "example": "A"
+                            }
+                          }
                         },
-                        "properties":{
-                          "street_name":{
-                            "type":"string",
-                            "description":{
-                              "en":"Receiver's street name.",
-                              "pt":"Rua do destinatário.",
-                              "es":"Calle del destinatario."
-                            },
-                            "example": "Test Street"
-                          },
-                          "street_number":{
-                            "type":"number",
-                            "description":{
-                              "en":"Receiver's street number.",
-                              "pt":"Número do endereço do destinatário.",
-                              "es":"Número de la dirección del destinatario."
-                            },
-                            "example": "123"
-                          },
-                          "zip_code":{
-                            "type":"string",
-                            "description":{
-                              "en":"Receiver's adress zip code.",
-                              "pt":"CEP do endereço do destinatário.",
-                              "es":"Código postal de la dirección del destinatario."
-                            },
-                            "example": "1234"
-                          },
-                          "city_name":{
-                            "type":"string",
-                            "description":{
-                              "en":"Receiver's adress city Name.",
-                              "pt":"Cidade do endereço do destinatário.",
-                              "es":"Ciudad de la dirección del destinatario."
-                            },
-                            "example": "SP"
-                          },
-                          "state_name":{
-                            "type":"string",
-                            "description":{
-                              "en":"State in which the city is located.",
-                              "pt":"Estado onde a cidade está localizada.",
-                              "es":"Provincia donde la ciudad está ubicada."
-                            },
-                            "example": "SP"
-                          },
-                          "floor":{
-                            "type":"string",
-                            "description":{
-                              "en":"Delivery address floor, in case it is an apartment.",
-                              "pt":"Andar do endereço de entrega, se for um apartamento.",
-                              "es":"Piso de la dirección de entrega, en caso de ser un apartamento."
-                            },
-                            "example": "1"
-                          },
-                          "apartment":{
-                            "type":"string",
-                            "description":{
-                              "en":"Delivery address apartment number.",
-                              "pt":"Número do apartamento do endereço de entrega.",
-                              "es":"Número de departamento de la dirección de entrega."
-                            },
-                            "example": "A"
+                        "width":{
+                          "type":"number",
+                          "description":{
+                            "en":"Width of barcode.",
+                            "pt":"Largura do código de barras.",
+                            "es":"Ancho del código de barras."
+                          }
+                        },
+                        "height":{
+                          "type":"number",
+                          "description":{
+                            "en":"Height of barcode.",
+                            "pt":"Altura do código de barras.",
+                            "es":"Altura del código de barras."
+                          }
+                        },
+                        "express_shipment":{
+                          "type":"boolean",
+                          "example":true,
+                          "description":{
+                            "en":"Indicates if the shipment is express or not. \"true\" if it is, \"false\" if it isn't.",
+                            "pt":"Indica se o envio é expresso ou não. \"true\" se for, \"false\" se não for.",
+                            "es":"Indica si el envío es express o no. \"true\" si lo es, \"false\" si no lo es."
+                          }
+                        },
+                        "pick_up_on_seller":{
+                          "type":"boolean",
+                          "example":true,
+                          "description":{
+                            "en":"Indicates if the customer will pick up the product at the seller's address. \"true\" if it is, \"false\" if it isn't.",
+                            "pt":"Indica se o cliente irá retirar o produto no endereço do vendedor. \"true\" se for, \"false\" se não for.",
+                            "es":"Indica si el cliente recogerá el producto en la dirección del vendedor. \"true\" si lo es, \"false\" si no lo es."
                           }
                         }
-                      },
-                      "width":{
-                        "type":"number",
-                        "description":{
-                          "en":"Width of barcode.",
-                          "pt":"Largura do código de barras.",
-                          "es":"Ancho del código de barras."
-                        }
-                      },
-                      "height":{
-                        "type":"number",
-                        "description":{
-                          "en":"Height of barcode.",
-                          "pt":"Altura do código de barras.",
-                          "es":"Altura del código de barras."
-                        }
-                      },
-                      "express_shipment":{
-                        "type":"boolean",
-                        "example":true,
-                        "description":{
-                          "en":"Indicates if the shipment is express or not. \"true\" if it is, \"false\" if it isn't.",
-                          "pt":"Indica se o envio é expresso ou não. \"true\" se for, \"false\" se não for.",
-                          "es":"Indica si el envío es express o no. \"true\" si lo es, \"false\" si no lo es."
-                        }
-                      },
-                      "pick_up_on_seller":{
-                        "type":"boolean",
-                        "example":true,
-                        "description":{
-                          "en":"Indicates if the customer will pick up the product at the seller's address. \"true\" if it is, \"false\" if it isn't.",
-                          "pt":"Indica se o cliente irá retirar o produto no endereço do vendedor. \"true\" se for, \"false\" se não for.",
-                          "es":"Indica si el cliente recogerá el producto en la dirección del vendedor. \"true\" si lo es, \"false\" si no lo es."
-                        }
                       }
-                    }
-                  },
-                    "expiration_time":{
-                    "type": "string",
-                    "format": "date",
-                    "description": {
-                      "en": "Payment’s expiration date. The valid format of the attribute is \"yyyy-MM-dd HH:mm:ss.SSSz\".",
-                      "pt": "Data de expiração do pagamento. O formato válido do atributo é \"yyyy-MM-dd HH:mm:ss.SSSz\". ",
-                      "es": "Fecha de vencimiento del pago. El formato válido del atributo \"yyyy-MM-dd HH:mm:ss.SSSz\"."
                     },
-                    "example": "2022-11-17T09:37:52.000-04:00"
-                  }
+                    "expiration_time":{
+                      "type": "string",
+                      "format": "date",
+                      "description": {
+                        "en": "Payment’s expiration date. The valid format of the attribute is \"yyyy-MM-dd HH:mm:ss.SSSz\".",
+                        "pt": "Data de expiração do pagamento. O formato válido do atributo é \"yyyy-MM-dd HH:mm:ss.SSSz\". ",
+                        "es": "Fecha de vencimiento del pago. El formato válido del atributo \"yyyy-MM-dd HH:mm:ss.SSSz\"."
+                      },
+                      "example": "2022-11-17T09:37:52.000-04:00"
+                    }
                   }
                 }
               }
@@ -3846,11 +3846,11 @@
                       "properties":{
                         "email":{
                           "type":"string",
-                          "example":"",
+                          "example":"testuser@email.com",
                           "description":{
-                            "pt":"E-mail do pagador",
-                            "en":"Payer email",
-                            "es":"Correo electrónico del pagador"
+                            "en":"Payer email.",
+                            "pt":"E-mail do pagador.",
+                            "es":"Correo electrónico del pagador."
                           }
                         },
                         "first_name":{
@@ -3866,34 +3866,35 @@
                           "type":"string",
                           "example":"Doe",
                           "description":{
-                            "pt":"Sobrenome do pagador",
-                            "en":"Payer last name",
-                            "es":"Apellido del pagador"
+                            "pt":"Sobrenome do pagador.",
+                            "en":"Payer last name.",
+                            "es":"Apellido del pagador."
                           }
                         },
                         "identification":{
                           "type":"object",
                           "description":{
-                            "pt":"Informações de identificação do pagador",
-                            "en":"Payer identification information",
-                            "es":"Información de identificación del pagador"
+                            "en":"Payer's identification information.",
+                            "pt":"Informações de identificação do pagador.",
+                            "es":"Información relativa a la identificación del pagador."
                           },
                           "properties":{
                             "type":{
                               "type":"string",
                               "example":"CPF",
                               "description":{
-                                "pt":"Tipo de documento de identificação do pagador",
-                                "en":"Payer identification document type",
-                                "es":"Tipo de documento de identificación del pagador"
+                                "en":"Payer's identification type.",
+                                "pt":"Tipo de documento de identificação do pagador.",
+                                "es":"Tipo de documento del pagador."
                               }
                             },
                             "number":{
                               "type":"string",
+                              "example":"123456789",
                               "description":{
-                                "pt":"Número do documento de identificação do pagador",
-                                "en":"Payer identification document number",
-                                "es":"Número del documento de identificación del pagador"
+                                "en":"Payer's identification document number.",
+                                "pt":"Número do documento de identificação do pagador.",
+                                "es":"Número de documento del pagador."
                               }
                             }
                           }
@@ -3901,25 +3902,27 @@
                         "phone":{
                           "type":"object",
                           "description":{
-                            "pt":"Informações de telefone do pagador",
-                            "en":"Payer phone information",
-                            "es":"Información de teléfono del pagador"
+                            "en":"Payer's phone information.",
+                            "pt":"Informações de telefone do pagador.",
+                            "es":"Información de teléfono del pagador."
                           },
                           "properties":{
                             "area_code":{
                               "type":"string",
+                              "example":"11",
                               "description":{
-                                "pt":"Código de área do telefone do pagador",
-                                "en":"Payer phone area code",
-                                "es":"Código de área del teléfono del pagador"
+                                "en":"Payer's phone area code.",
+                                "pt":"Código de área do telefone do pagador.",
+                                "es":"Código de área del teléfono del pagador."
                               }
                             },
                             "number":{
                               "type":"string",
+                              "example":"123456789",
                               "description":{
-                                "pt":"Número do telefone do pagador",
-                                "en":"Payer phone number",
-                                "es":"Número de teléfono del pagador"
+                                "en":"Payer's phone number.",
+                                "pt":"Número do telefone do pagador.",
+                                "es":"Número de teléfono del pagador."
                               }
                             }
                           }
@@ -3927,99 +3930,92 @@
                         "address":{
                           "type":"object",
                           "description":{
-                            "pt":"Informações de endereço do pagador",
-                            "en":"Payer address information",
-                            "es":"Información de dirección del pagador"
+                            "en":"Payer's address information",
+                            "pt":"Informações de endereço do pagador.",
+                            "es":"Información relativa a la dirección del pagador."
                           },
                           "properties":{
                             "zip_code":{
                               "type":"string",
                               "example":"12345678",
                               "description":{
-                                "pt":"CEP do endereço do pagador",
-                                "en":"Payer address zip code",
-                                "es":"Código postal de la dirección del pagador"
+                                "en":"Payer's address zip code.",
+                                "pt":"CEP do endereço do pagador.",
+                                "es":"Código postal de la dirección del pagador."
                               }
                             },
                             "street_name":{
                               "type":"string",
                               "example":"Rua Teste",
                               "description":{
-                                "pt":"Nome da rua do endereço do pagador",
-                                "en":"Payer address street name",
-                                "es":"Nombre de la calle de la dirección del pagador"
+                                "en":"Payer's address street name.",
+                                "pt":"Nome da rua do endereço do pagador.",
+                                "es":"Calle de la dirección del pagador."
                               }
                             },
                             "street_number":{
                               "type":"string",
                               "example":"123",
                               "description":{
-                                "pt":"Número da rua do endereço do pagador",
-                                "en":"Payer address street number",
-                                "es":"Número de la calle de la dirección del pagador"
+                                "en":"Payer's address number.",
+                                "pt":"Númerodo endereço do pagador.",
+                                "es":"Número de la dirección del pagador."
                               }
                             }
                           }
                         },
                         "authentication_type":{
                           "type":"string",
-                          "example":[
-                            "gmail",
-                            "facebook",
-                            "native_web"
-                          ],
+                          "example":"gmail",
                           "description":{
-                            "pt":"Tipo de autenticação do pagador",
-                            "en":"Payer authentication type",
-                            "es":"Tipo de autenticación del pagador"
+                            "en": "Type of authentication used by payer.",
+                            "pt": "Tipo de autenticação utilizada pelo pagador.",
+                            "es": "Tipo de autenticación utilizada por el pagador."
                           }
                         },
                         "registration_date":{
                           "type":"string",
                           "example":"2019-01-01T15:01:01.000Z",
                           "description":{
-                            "en":"Date of registration of the buyer on your site.",
-                            "pt":"Data de cadastro do comprador em seu site",
-                            "es":"Fecha de registración del comprador en tu sitio"
+                            "en":"Date of registration of the payer on the site, in ISO 8601 format.",
+                            "pt":"Data de cadastro do pagador no site, no formato ISO 8601.",
+                            "es":"Fecha de registro del pagador en el sitio, en formato ISO 8601."
                           }
                         },
                         "last_purchase":{
                           "type":"string",
                           "example":"2021-06-15T19:22:41.001-03:00",
                           "description":{
-                            "en":"Date of the last purchase made by the payer on your website. The valid format of the attribute is as follows - \"yyyy-MM-dd'T'HH:mm:ssz\".",
-                            "pt":"Data da última compra realizada pelo pagador em seu site. O formato válido do atributo é o seguinte - \"yyyy-MM-dd'T'HH:mm:ssz\".",
-                            "es":"Fecha de la última compra realizada por el pagador en tu sitio web. El formato válido del atributo es el siguiente - \"yyyy-MM-dd'T'HH:mm:ssz\"."
+                            "en":"Date of the last purchase made by the payer on the website, in ISO 8601 format.",
+                            "pt":"Data da última compra realizada pelo pagador no site, no formato ISO 8601.",
+                            "es":"Fecha de la última compra realizada por el pagador en el sitio web, en formato ISO 8601. "
                           }
                         },
                         "is_prime_user":{
                           "type":"boolean",
                           "example":true,
                           "description":{
-                            "en":"Indicates if the payer is a premium user.",
-                            "pt":"Indica se o pagador é um usuário premium. ",
-                            "es":"Indica si el pagador es un usuario premium. "
+                            "en":"Indicates if the payer is a premium user. \"true\" if they are, \"false\" if they are not.",
+                            "pt":"Indica se o pagador é um usuário premium. \"true\" caso seja premium, \"false\" caso não seja.",
+                            "es":"Indica si el pagador es un usuario prémium. \"true\" si lo es, \"false\" si no lo es."
                           }
                         },
                         "is_first_purchase_online":{
                           "type":"boolean",
                           "example":true,
                           "description":{
-                            "pt":"Indica se o pagador já realizou uma compra em seu site anteriormente.",
-                            "en":"Indicates if the payer has already made a purchase on your website before.",
-                            "es":"Indica si el pagador ya ha realizado una compra en tu sitio web anteriormente."
+                            "en":"Indicates if the payer has already made a purchase on the website before. \"true\" if they did, \"false\" if they did not.",
+                            "pt":"Indica se o pagador já realizou uma compra no site anteriormente. \"true\" se sim, \"false\" se não realizou.",
+                            "es":"Indica si el pagador ya ha realizado una compra en el sitio web anteriormente. \"true\" si lo hizo, \"false\" si no."
                           }
                         },
                         "entity_type":{
                           "type":"string",
-                          "example":[
-                            "individual",
-                            "association"
-                          ],
+                          "example": "individual",
                           "description":{
-                            "en":"Entity type of the payer (only for bank transfers).",
-                            "pt":"Tipo de entidade do pagador (apenas para transferências bancárias)",
-                            "es":"Tipo de entidad del pagador (sólo para transferencias bancarias)"
+                            "en":"Entity type of the payer (only for bank transfers). \"individual\" if the payer is an individual, \"association\" if they are an association.",
+                            "pt":"Tipo de entidade do pagador (apenas para transferências bancárias). \"individual\" se for um indivíduo, \"association\" se for uma associação.",
+                            "es":"Tipo de entidad del pagador (sólo para transferencias bancarias). \"individual\" si es un individuo, \"association\" si es una asociación. "
                           }
                         }
                       }
@@ -4027,22 +4023,37 @@
                     "type_config":{
                       "type":"object",
                       "description":{
-                        "pt":"Configuração do tipo de order",
-                        "en":"Order type configuration",
-                        "es":"Configuración del tipo de order"
+                        "en":"Order type information.",
+                        "pt":"Informação do tipo de order.",
+                        "es":"Información del tipo de order."
                       },
                       "properties":{
                         "capture_mode":{
                           "type":"string",
-                          "example":[
-                            "manual",
-                            "automatic"
-                          ],
                           "description":{
                             "pt":"Modo de captura da order",
                             "en":"Order capture mode",
-                            "es":"Modo de captura de la orden"
-                          }
+                            "es":"Modo de captura de la order"
+                          },
+                          "example":"manual",
+                          "enum": [
+                            {
+                              "title": "manual",
+                              "description": {
+                                "en": "Order's capture will be made manually. It is the capture mode used for the \"builder\" option.",
+                                "es": "La captura de la order se hará de manera manual. Es el modo de captura utilizado para la opción \"builder\".",
+                                "pt": "A captura da order será realizada manualmente. É o modo de captura utilizado para a opção \"builder\"."
+                              }
+                            },
+                            {
+                              "title": "automatic",
+                              "description": {
+                                "en": "Order's capture will be made automatically. It is the capture mode used for the \"one-shot\" option.",
+                                "es": "La captura de la order se hará de manera automática. Es el modo de captura utilizado para la opción \"one-shot\".",
+                                "pt": "A captura da order será realizada automaticamente. É o modo de captura utilizado para a opção \"one-shot\"."
+                              }
+                            }
+                          ]
                         },
                         "ip_address":{
                           "type":"string",
@@ -4067,48 +4078,48 @@
                       "type":"string",
                       "example":"24.90",
                       "description":{
-                        "pt":"Valor total a ser pago",
-                        "en":"Total amount to be paid",
-                        "es":"Monto total a pagar"
+                        "pt":"Valor total a ser pago.",
+                        "en":"Total amount to be paid.",
+                        "es":"Monto total a pagar."
                       }
                     },
                     "currency":{
-                      "type":"string",
-                      "example":[
-                        "ARS",
-                        "BRL",
-                        "COP",
-                        "USD",
-                        "MXN",
-                        "UYU",
-                        "CLP",
-                        "PEN"
-                      ],
-                      "description":{
-                        "pt":"Identificador da moeda utilizada na order. Atualmente, possuímos as opções listadas no exemplo",
-                        "en":"Currency identifier used in order. Currently, we have the options listed in the example",
-                        "es":"Identificador de la moneda utilizada en el order. Actualmente, tenemos las opciones listadas en el ejemplo"
-                      }
+                      "$ref": "#/components/schemas/currency"
                     },
                     "processing_mode":{
                       "type":"string",
-                      "example":[
-                        "manual",
-                        "automatic"
-                      ],
                       "description":{
-                        "pt":"Modo de processamento da order",
                         "en":"Order processing mode",
-                        "es":"Modo de procesamiento de la orden"
-                      }
+                        "pt":"Modo de processamento da order",
+                        "es":"Modo de procesamiento de la order"
+                      },
+                      "example": "automatic",
+                      "enum": [
+                        {
+                          "title": "manual",
+                          "description": {
+                            "en": "Order's processing will be made manually. It is the processing mode used for the \"builder\" option, as it sets the processing to be made afterwards, by using the \"Process transaction\" endpoint..",
+                            "es": "El procesamiento de la order se hará de manera manual. Es el modo de procesamiento utilizado para la opción \"builder\", en tanto configura que el procesamiento sea hecho posteriormente, utilizando el endpoint \"Procesar transacción\".",
+                            "pt": "O processamento da order será realizado manualmente. É o modo de processamento utilizado para a opção \"builder\", enquanto configura o processamento para ser feito posteriormente, utilizando o endpoint \"Processar transação\".."
+                          }
+                        },
+                        {
+                          "title": "automatic",
+                          "description": {
+                            "en": "Order's processing will be made instantly. It is the capture mode used for the \"one-shot\" option.",
+                            "es": "El procesamiento de la order se hará instantáneamente. Es el modo de procesamiento utilizado para la opción \"one-shot\".",
+                            "pt": "O processamento da order será feito imediatamente. É o modo de processamento utilizado para a opção \"one-shot\"."
+                          }
+                        }
+                      ]
                     },
                     "description":{
                       "type":"string",
-                      "example":"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul",
+                      "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
                       "description":{
-                        "pt":"Descrição do produto comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
                         "en":"Description of the product purchased, the reason for the payment order, or the description of a product in the marketplace.",
-                        "es":"Descripción del producto comprado, el motivo de la orden de pago, o la descripción de un producto en el marketplace."
+                        "pt":"Descrição do produto comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
+                        "es":"Descripción del producto comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
                       }
                     },
                     "marketplace":{
@@ -4122,11 +4133,11 @@
                     },
                     "marketplace_fee":{
                       "type":"string",
-                      "example":"2,00%",
+                      "example":"2.00",
                       "description":{
-                        "pt":"Taxa do marketplace",
-                        "en":"Marketplace fee",
-                        "es":"Tarifa del marketplace"
+                        "en":"Marketplace fee, expressed as a percentage of the value inserted in \"total_amount\". This field only allows values with two decimals, for example: 10.00 (10%). ",
+                        "pt":"Comissão (taxa) correspondente ao marketplace, expresso como uma porcentagem do valor inserido em \"total_amount\". Este campo só permite valores com duas casas decimais, por exemplo 10,00 (10%).",
+                        "es":"Comisión (fee) que corresponde al marketplace, expresado como porcentaje del valor ingresado en \"total_amount\". Este campo sólo permite valores con dos decimales, por ejemplo 10.00 (10%)."
                       }
                     },
                     "campaign_id":{
@@ -4141,100 +4152,100 @@
                     "items":{
                       "type":"array",
                       "description":{
-                        "en":"List of items to be paid.",
-                        "pt":"Lista de itens a serem pagos.",
-                        "es":"Lista de ítems a pagar."
+                        "en":"Information about the list of items to be paid.",
+                        "pt":"Informações sobre a lista de itens a serem pagos.",
+                        "es":"Información sobre la lista de ítems a pagar."
                       },
-                      "item":{
+                      "items":{
                         "type":"object",
                         "properties":{
                           "title":{
                             "type":"string",
-                            "example":"Celular Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original azul",
+                            "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram Versão Global Original",
                             "description":{
                               "en":"Item name.",
-                              "pt":"Nome do item",
-                              "es":"Nombre de ítem"
+                              "pt":"Nome do item.",
+                              "es":"Nombre de ítem."
                             }
                           },
                           "unit_price":{
                             "type":"string",
                             "example":"1239,90",
                             "description":{
-                              "es":"Precio unitario.",
-                              "pt":"Preço unitário.",
-                              "en":"Unit price."
+                              "en":"Unit price of the purchased item.",
+                              "es":"Precio unitario del ítem comprado.",
+                              "pt":"Preço unitário do item comprado."
                             }
                           },
                           "quantity":{
                             "type":"Integer",
                             "example":4,
                             "description":{
-                              "en":"Item quantity.",
-                              "pt":"Quantidade do produto",
-                              "es":"Cantidad de producto"
+                              "en":"Purchased items quantity.",
+                              "pt":"Quantidade de itens comprados.",
+                              "es":"Cantidad de ítems comprados."
                             }
                           },
                           "code":{
                             "type":"string",
                             "example":"1234",
                             "description":{
-                              "en":"Item code.",
-                              "pt":"Código do item",
-                              "es":"Código de ítem"
+                              "en":"Item's identification code.",
+                              "pt":"Código identificador do item.",
+                              "es":"Código identificador del ítem."
                             }
                           },
                           "description":{
                             "type":"string",
                             "example":"Point product for card payments via Bluetooth.",
                             "description":{
-                              "en":"Item Description.",
-                              "pt":"Descrição do item.",
-                              "es":"Descripción de item."
+                              "en":"Purchased item description.",
+                              "pt":"Descrição do item comprado.",
+                              "es":"Descripción del ítem comprado."
                             }
                           },
                           "type":{
                             "type":"string",
                             "example":"Electronico",
                             "description":{
-                              "pt":"Tipo do item a ser vendido",
-                              "en":"Type of item to be sold",
-                              "es":"Tipo de ítem a vender"
+                              "en": "Type of item being purchased.",
+                              "pt": "Tipo de item sendo comprado.",
+                              "es": "Tipo de ítem que se está comprando."
                             }
                           },
                           "picture_url":{
                             "type":"string",
                             "example":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png",
                             "description":{
-                              "en":"Image URL.",
-                              "pt":"URL da imagem.",
-                              "es":"URL de imagen."
+                              "en":"Image URL corresponding to the item.",
+                              "pt":"URL da imagem correspondente ao item.",
+                              "es":"URL de la imagen correspondiente al ítem."
                             }
                           },
                           "warranty":{
                             "type":"boolean",
                             "example":true,
                             "description":{
-                              "en":"Indicates if the product has warranty or not. True if it does, false if it doesn't.",
-                              "pt":"Indica se o produto tem garantia ou não. True se tiver, false se não.",
-                              "es":"Indica si el producto tiene garantía o no. True si tiene, false si no."
+                              "en":"Indicates if the product has warranty or not. \"true\" if it does, \"false\" if it doesn't.",
+                              "pt":"Indica se o produto tem garantia ou não. \"true\" se tiver, \"false\" se não.",
+                              "es":"Indica si el producto tiene garantía o no. \"true\" si tiene, \"false\" si no."
                             }
                           },
                           "category_descriptor":{
                             "type":"object",
                             "description":{
-                              "pt":"Informações sobre a categoria do item",
-                              "en":"Information about the item category",
-                              "es":"Información sobre la categoría del ítem"
+                              "en":"Information about the item category.",
+                              "pt":"Informações sobre a categoria do item.",
+                              "es":"Información sobre la categoría del ítem."
                             },
                             "properties":{
                               "event_date":{
                                 "type":"string",
                                 "example":"2023-12-31T09:37:52.000-04:00",
                                 "description":{
-                                  "en":"Event Date - Use the standard ISO 8601 format to input the date and time of the event. The format should be \"yyyy-MM-ddTHH:mm:ss.sssZ\". For example, to schedule an event for December 31, 2023, at 9:37:52 AM in the UTC-4 timezone, you would enter \"2023-12-31T09:37:52.000-04:00\".",
-                                  "pt":"Data do Evento - Utilize o formato padrão ISO 8601 para inserir a data e o horário do evento. O formato deve ser \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por exemplo, para marcar um evento para o dia 31 de dezembro de 2023, às 9:37:52 AM, no fuso horário UTC-4, você deverá inserir - \"2023-12-31T09:37:52.000-04:00\".",
-                                  "es":"Fecha del Evento - Por favor, utilice el formato estándar ISO 8601 para introducir la fecha y hora del evento. El formato debe ser \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por ejemplo, para programar un evento para el 31 de diciembre de 2023 a las 9:37:52 AM en la zona horaria UTC-4, deberá ingresar \"2023-12-31T09:37:52.000-04:00\"."
+                                  "en":"Event Date. The format should be \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                                  "pt":"Data do Evento. O formato deve ser \"yyyy-MM-ddTHH:mm:ss.sssZ\". ",
+                                  "es":"Fecha del Evento. El formato debe ser \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
                                 }
                               },
                               "passenger":{
@@ -4249,51 +4260,56 @@
                                     "type":"string",
                                     "description":{
                                       "en":"Passenger's first name.",
-                                      "pt":"Primeiro nome do passageiro",
-                                      "es":"Nombre del pasajero"
-                                    }
+                                      "pt":"Nome do passageiro.",
+                                      "es":"Nombre del pasajero."
+                                    },
+                                    "example": "John"
                                   },
                                   "last_name":{
                                     "type":"string",
                                     "description":{
                                       "en":"Passenger's last name.",
-                                      "pt":"Sobrenome do passageiro",
-                                      "es":"Apellido del pasajero"
-                                    }
+                                      "pt":"Sobrenome do passageiro.",
+                                      "es":"Apellido del pasajero."
+                                    },
+                                    "example": "Doe"
                                   },
                                   "identification_type":{
                                     "type":"string",
                                     "description":{
                                       "en":"Passenger's identification type.",
-                                      "pt":"Tipo de identificação do passageiro",
-                                      "es":"Tipo de identificación del pasajero"
-                                    }
+                                      "pt":"Tipo de identificação do passageiro.",
+                                      "es":"Tipo de identificación del pasajero."
+                                    },
+                                    "example": "CPF"
                                   },
                                   "identification_number":{
                                     "type":"string",
                                     "description":{
                                       "en":"Passenger's identification number.",
-                                      "pt":"Número de identificação do passageiro",
-                                      "es":"Número de identificación del pasajero"
-                                    }
+                                      "pt":"Número de identificação do passageiro.",
+                                      "es":"Número de identificación del pasajero."
+                                    },
+                                    "example": "123456789"
                                   }
                                 }
                               },
                               "route":{
                                 "type":"object",
                                 "description": {
-                                  "pt": "Informações sobre a rota do item",
-                                  "en": "Information about the item route",
-                                  "es": "Información sobre la ruta del ítem"
+                                  "en":"Information about de route.",
+                                  "pt":"Informações de rota.",
+                                  "es":"Información sobre la ruta."
                                 },
                                 "properties":{
                                   "departure":{
                                     "type":"string",
                                     "description":{
                                       "en":"Departure city.",
-                                      "pt":"Cidade de partida",
-                                      "es":"Ciudad de salida"
-                                    }
+                                      "pt":"Cidade de partida.",
+                                      "es":"Ciudad de partida."
+                                    },
+                                    "example": "SP"
                                   },
                                   "destination":{
                                     "type":"string",
@@ -4301,30 +4317,33 @@
                                       "en":"Destination city.",
                                       "pt":"Cidade de destino",
                                       "es":"Ciudad de destino"
-                                    }
+                                    },
+                                    "example": "RJ"
                                   },
                                   "departure_date_time":{
                                     "type":"string",
                                     "description":{
-                                      "en":"Departure date and time. Valid format is as follows - \"yyyy-MM-ddTHH:mm:ss.sssZ\". Example - 2023-12-31T09:37:52.000-04:00.",
-                                      "pt":"Data e hora de partida. O formato válido é o seguinte - \"yyyy-MM-ddTHH:mm:ss.sssZ\". Exemplo - 2023-12-31T09:37:52.000-04:00.",
-                                      "es":"Fecha y hora de salida. El formato válido es el siguiente - \"yyyy-MM-ddTHH:mm:ss.sssZ\". Ejemplo - 2023-12-31T09:37:52.000-04:00."
-                                    }
+                                      "en": "Departure date and time. Valid format is \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                                      "pt": "Data e hora de partida. O formato válido é \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                                      "es": "Fecha y hora de salida. El formato válido es \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                                    },
+                                    "example": "2023-12-31T09:37:52.000-04:00"
                                   },
                                   "arrival_date_time":{
                                     "type":"string",
                                     "description":{
-                                      "en":"Arrival date and time. Valid format is as follows - \"yyyy-MM-ddTHH:mm:ss.sssZ\". Example - 2023-12-31T09:37:52.000-04:00.",
-                                      "pt":"Data e hora de chegada. O formato válido é o seguinte - \"yyyy-MM-ddTHH:mm:ss.sssZ\". Exemplo - 2023-12-31T09:37:52.000-04:00.",
-                                      "es":"Fecha y hora de llegada. El formato válido es el siguiente - \"yyyy-MM-ddTHH:mm:ss.sssZ\". Ejemplo - 2023-12-31T09:37:52.000-04:00."
-                                    }
+                                      "en": "Arrival date and time. Valid format is \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                                      "pt": "Data e hora de chegada. O formato válido é \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                                      "es": "Fecha y hora de llegada. El formato válido es \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                                    },
+                                    "example": "2023-12-31T09:37:52.000-04:00"
                                   },
                                   "company":{
                                     "type":"string",
                                     "description":{
                                       "en":"Company name.",
-                                      "pt":"Nome da empresa",
-                                      "es":"Nombre de la empresa"
+                                      "pt":"Nome da empresa.",
+                                      "es":"Nombre de la empresa."
                                     }
                                   }
                                 }
@@ -4337,85 +4356,104 @@
                     "coupon":{
                       "type":"object",
                       "description":{
-                        "en":"Discount campaign",
-                        "pt":"Campanha de desconto",
-                        "es":"Campaña de descuento"
+                        "en":"Discount campaign.",
+                        "pt":"Campanha de desconto.",
+                        "es":"Campaña de descuento."
                       },
-                    "properties":{
-                      "code":{
-                        "type":"string",
-                        "description":{
-                          "en":"Discount campaign with a specific code.",
-                          "pt":"Campanha de desconto com um código específico",
-                          "es":"Campaña de descuento con un código específico"
-                        }
-                      },
-                      "amount":{
-                        "type":"string",
-                        "example":"4.90",
-                        "description":{
-                          "en":"It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.",
-                          "pt":"É o valor do cupom de desconto. Por exemplo - R$14,50. O tipo do atributo é BigDecimal.",
-                          "es":"Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal."
+                      "properties":{
+                        "code":{
+                          "type":"string",
+                          "description":{
+                            "en":"Specific code of the coupon participating in the discount campaign.",
+                            "pt":"Código específico do cupom pertencente à campanha de desconto.",
+                            "es":"Código específico del cupón perteneciente a la campaña de descuento."
+                          },
+                          "example": "123"
+                        },
+                        "amount":{
+                          "type":"string",
+                          "example":"4.90",
+                          "description":{
+                            "en":"Value of the discount coupon.",
+                            "pt":"É o valor do cupom de desconto.",
+                            "es":"Es el valor del cupón de descuento."
+                          }
                         }
                       }
-                    }
-                  },
+                    },
                     "splits":{
                       "type":"array",
                       "description":{
-                        "en":"List of splits to be made.",
-                        "pt":"Lista de splits a serem realizados.",
-                        "es":"Lista de splits a realizarse."
+                        "en":"List of payment splits to be made from the total amount.",
+                        "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
+                        "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
                       },
-                    "properties":{
-                      "id":{
-                        "type":"string",
-                        "example":"123",
-                        "description":{
-                          "en":"Split ID.",
-                          "pt":"ID do split.",
-                          "es":"ID del split."
-                        }
-                      },
-                      "collector_id":{
-                        "type":"number",
-                        "example":448876418,
-                        "description":{
-                          "en":"It is the user who receives the money. Ex - A user (payer) buys a cell phone through the marketplace. The identifier of the store/seller to receive the payment is the collector_id.",
-                          "pt":"É o usuário que recebe o dinheiro. Por exemplo - Um usuário (payer) compra um celular pelo marketplace. O identificador da loja/vendedor a receber o pagamento é o collector_id.",
-                          "es":"Es el usuario quien recibe el dinero. Por ejemplo - Un usuario (payer) compra un celular a través del marketplace. El identificador de la tienda/vendedor para recibir el pago es el collector_id."
-                        }
-                      },
-                      "type":{
-                        "type":"string",
-                        "example":[
-                          "amount",
-                          "percentage"
-                        ],
-                        "description":{
-                          "pt":"Tipo de split realizado",
-                          "en":"Type of split made",
-                          "es":"Tipo de split realizado"
-                        }
-                      },
-                      "value":{
-                        "type":"string",
-                        "example":"50",
-                        "description":{
-                          "pt":"Valor do split",
-                          "en":"Split value",
-                          "es":"Valor del split"
+                      "items": {
+                        "type": "object",
+                        "properties":{
+                          "id":{
+                            "type":"string",
+                            "example":"123",
+                            "description":{
+                              "en":"Split identification.",
+                              "pt":"Identificador do split.",
+                              "es":"Identificador del split."
+                            }
+                          },
+                          "collector_id":{
+                            "type":"number",
+                            "example":448876418,
+                            "description":{
+                              "en":"It is the identification of the user who receives the money.",
+                              "pt":"É identificador do usuário que recebe o dinheiro.",
+                              "es":"Es el identificador del usuario que recibe el dinero."
+                            }
+                          },
+                          "type":{
+                            "type":"string",
+                            "description":{
+                              "pt":"Tipo de split realizado",
+                              "en":"Type of split made",
+                              "es":"Tipo de split realizado"
+                            },
+                            "enum": [
+                              {
+                                "title": "amount",
+                                "description": {
+                                  "en": "The split will be performed by amount.",
+                                  "es": "El criterio para el split será el valor.",
+                                  "pt": "O critério para o split será o valor."
+                                }
+                              },
+                              {
+                                "title": "percentage",
+                                "description": {
+                                  "en": "The split will be performed by percentage.",
+                                  "es": "El criterio para el split será el porcentaje.",
+                                  "pt": "O critério para o split será a porcentagem."
+                                }
+                              }
+                            ],
+                            "example": "amount"
+                          },
+                          "value":{
+                            "type":"string",
+                            "example":"50",
+                            "description":{
+                              "pt":"Valor do split.",
+                              "en":"Split value.",
+                              "es":"Valor del split."
+                            }
+                          }
                         }
                       }
-                    }
-                  },
+                    },
                     "shipment":{
                       "type":"object",
                       "description":{
-                        "pt":"Informações sobre o envio do produto",
-                        "en":"Information about the product shipment",
-                        "es":"Información sobre el envío del producto"
+                        "en":"Information about the product shipment.",
+                        "pt":"Informações sobre o envio do produto.",
+                        "es":"Información sobre el envío del producto."
                       },
                       "properties":{
                         "receiver_address":{
@@ -4429,50 +4467,56 @@
                             "street_name":{
                               "type":"string",
                               "description":{
-                                "en":"Street name.",
-                                "pt":"Rua",
-                                "es":"Calle"
-                              }
+                                "en":"Receiver's street name.",
+                                "pt":"Rua do destinatário.",
+                                "es":"Calle del destinatario."
+                              },
+                              "example": "Test Street"
                             },
                             "street_number":{
                               "type":"number",
                               "description":{
-                                "en":"Number.",
-                                "pt":"Número",
-                                "es":"Número"
-                              }
+                                "en":"Receiver's street number.",
+                                "pt":"Número do endereço do destinatário.",
+                                "es":"Número de la dirección del destinatario."
+                              },
+                              "example": "123"
                             },
                             "zip_code":{
                               "type":"string",
                               "description":{
-                                "en":"Zip code.",
-                                "pt":"Código postal",
-                                "es":"Código postal"
-                              }
+                                "en":"Receiver's adress zip code.",
+                                "pt":"CEP do endereço do destinatário.",
+                                "es":"Código postal de la dirección del destinatario."
+                              },
+                              "example": "1234"
                             },
                             "city_name":{
                               "type":"string",
                               "description":{
-                                "en":"City Name.",
-                                "pt":"Cidade",
-                                "es":"Ciudad"
-                              }
+                                "en":"Receiver's adress city Name.",
+                                "pt":"Cidade do endereço do destinatário.",
+                                "es":"Ciudad de la dirección del destinatario."
+                              },
+                              "example": "SP"
                             },
                             "state_name":{
                               "type":"string",
                               "description":{
-                                "en":"State.",
-                                "pt":"Estado",
-                                "es":"Provincia"
-                              }
+                                "en":"State in which the city is located.",
+                                "pt":"Estado onde a cidade está localizada.",
+                                "es":"Provincia donde la ciudad está ubicada."
+                              },
+                              "example": "SP"
                             },
                             "floor":{
                               "type":"string",
                               "description":{
-                                "en":"Delivery address floor.",
-                                "pt":"Andar do endereço de entrega.",
-                                "es":"Piso de la dirección de entrega"
-                              }
+                                "en":"Delivery address floor, in case it is an apartment.",
+                                "pt":"Andar do endereço de entrega, se for um apartamento.",
+                                "es":"Piso de la dirección de entrega, en caso de ser un apartamento."
+                              },
+                              "example": "1"
                             },
                             "apartment":{
                               "type":"string",
@@ -4480,7 +4524,8 @@
                                 "en":"Delivery address apartment number.",
                                 "pt":"Número do apartamento do endereço de entrega.",
                                 "es":"Número de departamento de la dirección de entrega."
-                              }
+                              },
+                              "example": "A"
                             }
                           }
                         },
@@ -4488,34 +4533,34 @@
                           "type":"number",
                           "description":{
                             "en":"Width of barcode.",
-                            "pt":"Largura do código de barras",
-                            "es":"Ancho del código de barras"
+                            "pt":"Largura do código de barras.",
+                            "es":"Ancho del código de barras."
                           }
                         },
                         "height":{
                           "type":"number",
                           "description":{
                             "en":"Height of barcode.",
-                            "pt":"Altura do código de barras",
-                            "es":"Altura del código de barras"
+                            "pt":"Altura do código de barras.",
+                            "es":"Altura del código de barras."
                           }
                         },
                         "express_shipment":{
                           "type":"boolean",
                           "example":true,
                           "description":{
-                            "en":"Indicates if the shipment is express or not. Valid values are as follows - \"1\" if it is, \"0\" if it isn't.",
-                            "pt":"Indica se o envio é expresso ou não. Os valores válidos são os seguintes - \"1\" se for, \"0\" se não for.",
-                            "es":"Indica si el envío es express o no. Los valores válidos son los siguientes - \"1\" si lo es, \"0\" si no lo es."
+                            "en":"Indicates if the shipment is express or not. \"true\" if it is, \"false\" if it isn't.",
+                            "pt":"Indica se o envio é expresso ou não. \"true\" se for, \"false\" se não for.",
+                            "es":"Indica si el envío es express o no. \"true\" si lo es, \"false\" si no lo es."
                           }
                         },
                         "pick_up_on_seller":{
                           "type":"boolean",
                           "example":true,
                           "description":{
-                            "en":"Indicates if the customer will pick up the product at the seller's address. Valid values are as follows - \"1\" if it is, \"0\" if it isn't.",
-                            "pt":"Indica se o cliente irá retirar o produto no endereço do vendedor. Os valores válidos são os seguintes - \"1\" se for, \"0\" se não for.",
-                            "es":"Indica si el cliente recogerá el producto en la dirección del vendedor. Los valores válidos son los siguientes - \"1\" si lo es, \"0\" si no lo es."
+                            "en":"Indicates if the customer will pick up the product at the seller's address. \"true\" if it is, \"false\" if it isn't.",
+                            "pt":"Indica se o cliente irá retirar o produto no endereço do vendedor. \"true\" se for, \"false\" se não for.",
+                            "es":"Indica si el cliente recogerá el producto en la dirección del vendedor. \"true\" si lo es, \"false\" si no lo es."
                           }
                         }
                       }
@@ -4524,62 +4569,37 @@
                       "type": "string",
                       "format": "date",
                       "description": {
-                        "en": "Payment’s expiration date. The valid format of the attribute is as follows - \"yyyy-MM-dd HH:mm:ss.SSSz\". Ex - 2022-11-17T09:37:52.000-04:00.",
-                        "pt": "Data de expiração do pagamento. O formato válido do atributo é o seguinte - \"yyyy-MM-dd HH:mm:ss.SSSz\". Por exemplo - 2022-11-17T09:37:52.000-04:00.",
-                        "es": "Fecha de vencimiento del pago. El formato válido del atributo es el siguiente - \"yyyy-MM-dd HH:mm:ss.SSSz\". Ej - 2022-11-17T09:37:52.000-04:00."
-                      }
+                        "en": "Payment’s expiration date. The valid format of the attribute is \"yyyy-MM-dd HH:mm:ss.SSSz\".",
+                        "pt": "Data de expiração do pagamento. O formato válido do atributo é \"yyyy-MM-dd HH:mm:ss.SSSz\". ",
+                        "es": "Fecha de vencimiento del pago. El formato válido del atributo \"yyyy-MM-dd HH:mm:ss.SSSz\"."
+                      },
+                      "example": "2022-11-17T09:37:52.000-04:00"
                     }
+                  }
                 }
               }
             }
           },
-            "400":{
-              "content":{
-                "application/json":{
-                  "schema":{
-                    "description":{
-                      "pt":"Invalid ID supplied"
-                    },
-                    "type":"string",
-                    "example":"Invalid ID supplied"
-                  }
-                }
-              }
+          "400": {
+            "description": {
+              "en": "Error. Invalid ID supplied",
+              "pt": "Erro. ID inválido.",
+              "es": "Error. ID inválido."
             },
-            "401":{
-              "content":{
-                "application/json":{
-                  "schema":{
-                    "description":{
-                      "pt":"Access Token not authorized"
-                    },
-                    "type":"string",
-                    "example":"Access Token not authorized"
-                  }
-                }
-              }
-            },
-            "404": {
-              "content": {
-                "application/json": {
-                  "schema": {
-                    "type": "object",
-                    "description": "Order not found.",
-                    "properties": {
-                      "errors": [
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
                         {
-                          "code": {
-                            "type": "string",
-                            "description": "404"
-                          },
-                          "message": {
-                            "type": "string",
-                            "description": "Order not found."
-                          },
-                          "doc_url": {
-                            "type": "string",
-                            "description": "link",
-                            "example": "http.ref"
+                          "title": "400",
+                          "description": {
+                            "en": "Descripción del error y workarround",
+                            "es": "Descripción del error y workarround",
+                            "pt": "Descripción del error y workarround"
                           }
                         }
                       ]
@@ -4587,16 +4607,90 @@
                   }
                 }
               }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error. Access Token not authorized.",
+              "pt": "Erro. Access Token não autorizado.",
+              "es": "Error. Access Token no autorizado."
             },
-            "500":{
-              "content":{
-                "application/json":{
-                  "schema":{
-                    "description":{
-                      "pt":"Generic error"
-                    },
-                    "type":"string",
-                    "example":"Generic error"
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "401",
+                          "description": {
+                            "en": "Descripción del error y workarround",
+                            "es": "Descripción del error y workarround",
+                            "pt": "Descripción del error y workarround"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error. Order not found.",
+              "pt": "Error. Order não encontrada.",
+              "es": "Error. Orden no encontrada."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "404",
+                          "description": {
+                            "en": "Order not found. Please check if you provided the correct order ID.",
+                            "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
+                            "pt": "Order não encontrada. Verifique se enviou o ID correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Generic error .",
+              "pt": "Erro genérico.",
+              "es": "Error genérico."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Generic error. Please try submitting the request again.",
+                            "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
                   }
                 }
               }
