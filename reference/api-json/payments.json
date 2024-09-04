@@ -1034,27 +1034,11 @@
                           }
                         },
                         {
-                          "title": "pending_provider_response",
-                          "description": {
-                            "en": "The payment is pending, waiting for the server response.",
-                            "es": "El pago está pendiente, esperando respuesta del servidor.",
-                            "pt": "O pagamento está pendente, aguardando resposta do servidor."
-                          }
-                        },
-                        {
                           "title": "pending_waiting_transfer",
                           "description": {
                             "en": "In cases of bank transfer, the status_detail is obtained by waiting for the user to finish the payment process in their bank.",
                             "es": "Para los casos de transferencia bancaria, el status_detail se obtiene al esperar a que el usuario termine el proceso de pago en su banco.",
                             "pt": "Nos casos de transferência bancária, o status_detail é obtido aguardando que o usuário finalize o processo de pagamento no seu banco."
-                          }
-                        },
-                        {
-                          "title": "pending_waiting_for_remedy",
-                          "description": {
-                            "en": "In cases of offline payments, it remains pending until the user regularizes the situation.",
-                            "es": "Para los casos de pagos offline, el mismo queda pendiente hasta que el usuario regularice la situación.",
-                            "pt": "Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário regularize a situação."
                           }
                         },
                         {
