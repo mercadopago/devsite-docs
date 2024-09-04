@@ -1,5 +1,5 @@
 ----[mlb]----
-# Parcelamento via Pix em até 12x
+# Linha de crédito
 Com o Checkout Transparente, é possível oferecer **Parcelamento via Pix em até 12x**. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão.
 Atualmente, o **Parcelamento via Pix em até 12x** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing), e agora também é possível acessá-lo diretamente do checkout da loja via Checkout Transparente.
 
