@@ -4,7 +4,6 @@
     "/v1/orders": {
       "post": {
         "tags": [
-          "order",
           "checkout-api"
         ],
         "description": {
@@ -2344,9 +2343,7 @@
     "/v1/orders/{id}": {
       "get": {
         "tags": [
-          "order",
-          "checkout-api",
-          "mp-point"
+          "checkout-api"
         ],
         "description": {
           "en": "Consult all order information using the ID obtained in the response to its creation.",
@@ -3609,7 +3606,6 @@
     "/v1/orders/{order_id}/cancel":{
       "post":{
         "tags":[
-          "order",
           "checkout-api"
         ],
         "description":{
