@@ -1,8 +1,7 @@
 ----[mlb]----
-# Parcelamento via Pix em até 12x
+# Linha de crédito
 With Checkout Transparente, it is possible to offer **Parcelamento via Pix em até 12x**. With this line of credit, administered by Mercado Pago, the payment is credited in full to the seller's account, while the customer can choose to pay in up to 12 fixed monthly installments, no card needed.
 Currently, Parcelamento via Pix em até 12x is offered in our [Checkout Pro](/developers/en/docs/checkout-pro/landing), and now it is also possible to access directly from the store checkout by Checkout Transparente.
-
 
 If you want to show Parcelamento via Pix em até 12x in the store's checkout, follow the steps below.
 1. In the store **Control Panel**, go to **Stores > Configuration > Sales > Payment Methods**.
@@ -14,7 +13,6 @@ If you want to show Parcelamento via Pix em até 12x in the store's checkout, fo
     4. When the customer does not have an active line of credit to use Parcelamento vía Pix em até 12x, we will redirect them to Mercado Pago. The **Payment completion view** option allows you to remove payment methods from Mercado Pago and, if your customer still wants to use any of them, they must go back to checkout to finish the payment.
 
 ![Configuration of the payment method screen](/images/adobe-commerce/cho-api-config2-mlb-pt.png)
-
 
 ## Common payment method definitions
 In this section, you can define some general characteristics of the platform for the use of Checkout Transparente. Fill in each of the requested fields according to the description below.
