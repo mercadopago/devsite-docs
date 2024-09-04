@@ -65,6 +65,7 @@ Para medir a qualidade da sua integração manualmente, acesse o menu [Suas inte
 Uma vez na seção **“Medir qualidade da sua integração”**, siga os passos abaixo:
 
 1. Insira o `payment ID` do último pagamento realizado com [credenciais de produção](/developers/pt/guides/additional-content/your-integrations/credentials) da aplicação que deseja avaliar. 
+ ![medição manual](/homologator/integration-quality-payment-id-pt.png)
 
 2. Clique novamente em **Medir a qualidade**.
 
