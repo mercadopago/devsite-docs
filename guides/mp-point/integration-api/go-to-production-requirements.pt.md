@@ -22,7 +22,7 @@ A opção de pagamento via Pix só será exibida se houver uma Chave Pix cadastr
 
 ## Medir a qualidade da integração
 
-Para oferecer a melhor experiência tanto para o vendedor quanto para o comprador,é necessário avaliar a [qualidade de sua integração](/developers/pt/docs/mp-point/how-tos/integration-quality) com nossa ferramenta de medição. 
+Para oferecer a melhor experiência tanto para o vendedor quanto para o comprador,é necessário avaliar a [qualidade de sua integração](/developers/pt/docs/mp-point/how-tos/integration-quality) com nossa ferramenta de medição.
 
 A homologação poderá ser realizada de 2 formas:
  * **Manual**, onde será necessário inserir o `payment ID` de um pagamento realizado com credenciais produtivas para poder fazer a medição quando desejar.

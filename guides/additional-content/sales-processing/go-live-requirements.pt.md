@@ -31,7 +31,7 @@ A opção de pagamento com Pix só será exibida se houver uma Chave Pix cadastr
 
 ### Medição de qualidade
 
-Para oferecer a melhor experiência tanto para o vendedor quanto para o comprador,é necessário avaliar a [qualidade de sua integração](/developers/pt/guides/additional-content/homologator/homologator) com nossa ferramenta de medição. 
+Para oferecer a melhor experiência tanto para o vendedor quanto para o comprador, é necessário avaliar a [qualidade de sua integração](/developers/pt/guides/additional-content/homologator/homologator) com a nossa ferramenta de medição. 
 
 A homologação poderá ser realizada de 2 formas:
  * **Manual**, onde será necessário inserir o `payment ID` de um pagamento realizado com credenciais produtivas para poder fazer a medição quando desejar.

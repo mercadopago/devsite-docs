@@ -35,7 +35,7 @@ Dependiendo de la solución integrada, la evaluación de tu integración puede h
 
 ### Medición automática
 
-Entre los días 1 y 7 de cada mes, Mercado Pago realiza una evaluación automática de todas las aplicaciones integradas con **Checkout Pro, Checkout ----[mla, mlm, mlu, mco, mlc, mpe]----API------------ ----[mlb]----Transparente------------, Checkout Bricks y Mercado Pago Point** que cuenten con un `payment ID` productivo. 
+Entre los días 1 y 7 de cada mes, Mercado Pago realiza una evaluación automática de todas las aplicaciones integradas con **Checkout Pro, Checkout ----[mla, mlm, mlu, mco, mlc, mpe]----API,------------ ----[mlb]----Transparente,------------ Checkout Bricks y Mercado Pago Point** que cuenten con un `payment ID` productivo. 
 
 > NOTE
 >

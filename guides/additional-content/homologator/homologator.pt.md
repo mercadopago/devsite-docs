@@ -1,6 +1,6 @@
-# Como medir qualidade da integração
+# Como medir a qualidade da integração
 
-Para garantir a melhor experiência tanto para o vendedor quanto para o comprador, o Mercado Pago avalia suaintegração considerando os padrões necessários de segurança e qualidade.
+Para garantir a melhor experiência tanto para o vendedor quanto para o comprador, o Mercado Pago avalia sua integração considerando os padrões necessários de segurança e qualidade.
 
 Abaixo, você encontrará todas as informações necessárias sobre como essa medição é realizada, permitindo que você aproveite ao máximo nossa ferramenta e mantenha um processo contínuo de melhoria da qualidade.
 
@@ -15,7 +15,7 @@ Durante o processo de medição serão analisados ​​uma série de campos ass
 | Aspecto | Descrição |
 |---|---|
 | Experiência da pessoa que compra | Para crescer e manter o índice de usuários em sua integração, é importante oferecer uma boa experiência de pagamento. As sugestões fornecidas pelo Mercado Pago, resultantes da medição de qualidade irão guiá-lo para alcançar os melhores resultados. |
-| Conciliação Financeira | A consistência em conferir informações financeiras visa manter a integridade dos dados em seu sistema. Por isso, é importante incluir as medidas necessárias e as boas práticas recomendadas pelo resultado de sua avaliação. |
+| Conciliação financeira | A consistência em conferir informações financeiras visa manter a integridade dos dados em seu sistema. Por isso, é importante incluir as medidas necessárias e as boas práticas recomendadas pelo resultado de sua avaliação. |
 | Aprovação de pagamentos | Para garantir uma boa taxa de aprovação de pagamento, é importante validar todos os campos indicados como melhorias necessárias e seguir as boas práticas recomendadas pelo Mercado Pago. Isso fornecerá dados mais completos às nossas ferramentas de fraude,  permitindo uma avaliação mais precisa e detalhada. |
 | Escalabilidade | Ao avaliar a qualidade é importante utilizar as versões mais atualizadas das nossas APIs e bibliotecas oficiais. Isso assegura que você alcançará os melhores resultados possíveis. |
 | Segurança | O Mercado Pago buscará garantir a confidencialidade dos dados envolvidos no processo de compra. As melhorias indicadas ou as boas práticas sugeridas no resultado da sua medição permitirão obter os dados necessários de forma segura. |
@@ -56,7 +56,7 @@ Se desejar, você pode realizar uma avaliação manual da sua integração, desd
 
 Para medir a qualidade da sua integração manualmente, acesse o menu [Suas integrações](/developers/panel/app). Lá, você terá 2 opções para acessar a ferramenta de medição:
 
- * É possível localizar a aplicação desejada e, a partir do botão **“>”**, entrar na tela de onde pode realizar a avaliação da sua integração.
+ * É possível localizar a aplicação desejada e, a partir do botão **“>”**, entrar na tela onde poderá realizar a avaliação da sua integração.
  ![Suas integrações](/homologator/integration-quality-your-integrations-pt.png)
 
  * Você pode selecionar a aplicação desejada e, nos [Detalhes da aplicação](/developers/pt/docs/your-integrations/application-details), clicar em **Iniciar medição** no painel "Status", caso seja a primeira medição, ou em **Medir novamente**, caso já tenha realizado uma medição anteriormente.

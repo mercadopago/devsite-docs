@@ -27,7 +27,7 @@ The measurement can be carried out in two ways:
 * **Manual**, where you will need to enter the `payment ID` of a payment made with production credentials to perform the measurement whenever you wish.
 * **Automatic**, directly conducted by our tool once a month, as long as you also have a payment made with production credentials.
 
-In both cases, the measurement is performed considering  fundamental aspects for the effectiveness of your integration, such as payment approval improvement, financial reconciliation, security, among others.
+In both cases, the measurement is performed considering fundamental aspects for the effectiveness of your integration, such as payment approval improvement, financial reconciliation, security, among others.
 
 If adjustments are needed, necessary actions and best practices will be suggested to improve the evaluated aspects and ensure that your integration meets the necessary standards.
 

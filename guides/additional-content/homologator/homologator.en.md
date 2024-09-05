@@ -34,7 +34,7 @@ Depending on the integrated solution, your integration evaluation can be conduct
 
 ### Automatic measurement
 
-Between the 1st and 7th of each month, Mercado Pago conducts an automatic evaluation of all applications integrated with **Checkout Pro, Checkout ----[mla, mlm, mlu, mco, mlc, mpe]----API------------ ----[mlb]----Transparente------------, Checkout Bricks, and Mercado Pago Point** that have a productive `payment ID`.
+Between the 1st and 7th of each month, Mercado Pago conducts an automatic evaluation of all applications integrated with **Checkout Pro, Checkout ----[mla, mlm, mlu, mco, mlc, mpe]----API,------------ ----[mlb]----Transparente,------------ Checkout Bricks, and Mercado Pago Point** that have a productive `payment ID`.
 
 > NOTE
 >
@@ -44,7 +44,7 @@ Between the 1st and 7th of each month, Mercado Pago conducts an automatic evalua
 
 **The automatic measurement process is conducted monthly, even if you have previously performed a manual measurement yourself**. Over time and based on applied improvements, integrations may have configuration changes. Mercado Pago seeks to ensure your work with our solutions becomes increasingly satisfying by offering various options to achieve ideal quality.
 
-You can find the results of this automatic measurement within the [Application details](/developers/en/docs/your-integrations/application-details). Like with the manual measurement, you can view your application's score, understand the necessary actions identified, and note suggested best practices. For more details, refer to [How to read your measurement results?](/developers/en/docs/integration-quality#howtoreadyourevaluationresults)
+You can find the results of this automatic measurement within the [Application details](/developers/en/docs/your-integrations/application-details). Same as with the manual measurement, you can view your application's score, understand the necessary actions identified, and note suggested best practices. For more details, refer to [How to read your measurement results?](/developers/en/docs/integration-quality#howtoreadyourevaluationresults)
 
 ### Manual measurement
 

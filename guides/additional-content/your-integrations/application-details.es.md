@@ -48,12 +48,12 @@ De esta manera, la aplicación se eliminará correctamente.
 
 ## Medición de calidad
 
-La [medición de calidad](/developers/es/guides/additional-content/homologator/homologator) es la última etapa del proceso de integración, donde podrás validar si cumple con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores. 
+La [medición de calidad](/developers/es/guides/additional-content/homologator/homologator) es la última etapa del proceso de integración, donde podrás validar si cumple con los requisitos de calidad y seguridad necesarios para brindar la mejor experiencia tanto a vendedores como a compradores.
 
 Existen 2 formas de medir la calidad de tu integración:
  * **Manual:** puedes realizar la medición por tu cuenta, cuando lo prefieras. Sólo necesitas contar con un `payment ID` de un pago realizado con credenciales de producción y acceder a **“Calidad de integración"**, dentro del menú lateral, donde podrás consultar el paso a paso. 
 
- * **Automática:**  del 1 al 7 de cada mes, Mercado Pago realiza una medición periódica de calidad para todas las integraciones con **Checkout Pro, Checkout ----[mla, mlm, mlu, mco, mlc, mpe]----API------------ ----[mlb]----Transparente------------, Checkout Bricks y Mercado Pago Point** que cuenten con un pago realizado con credenciales de producción.
+ * **Automática:**  del 1 al 7 de cada mes, Mercado Pago realiza una medición periódica de calidad para todas las integraciones con **Checkout Pro, Checkout ----[mla, mlm, mlu, mco, mlc, mpe]----API,------------ ----[mlb]----Transparente,------------ Checkout Bricks y Mercado Pago Point** que cuenten con un pago realizado con credenciales de producción.
 
 > WARNING
 >
