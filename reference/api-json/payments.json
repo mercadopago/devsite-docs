@@ -986,7 +986,7 @@
                       },
                       "enum": [
                         {
-                          "title": "Accredited",
+                          "title": "accredited",
                           "description": {
                             "en": "Credited payment.",
                             "es": "Pago acreditado.",
@@ -994,11 +994,35 @@
                           }
                         },
                         {
+                          "title": "partially_refunded",
+                          "description": {
+                            "en": "The payment has at least one partial refund.",
+                            "es": "El pago se realizó con al menos un reembolso parcial.",
+                            "pt": "O pagamento foi feito com pelo menos um reembolso parcial."
+                          }
+                        },
+                        {
+                          "title": "pending_capture",
+                          "description": {
+                            "en": "The payment has been authorized and is waiting for capture.",
+                            "es": "El pago fue autorizado y está a la espera de ser capturado.",
+                            "pt": "O pagamento foi autorizado e aguarda captura."
+                          }
+                        },
+                        {
+                          "title": "offline_process",
+                          "description": {
+                            "en": "Due to lack of online processing, the payment is being processed offline.",
+                            "es": "Por una falta de procesamiento online, el pago está siendo procesado de manera offline.",
+                            "pt": "Por falta de processamento online, o pagamento está sendo processado de maneira offline"
+                          }
+                        },
+                        {
                           "title": "pending_contingency",
                           "description": {
-                            "en": "The payment is being processed.",
-                            "es": "El pago está siendo procesado.",
-                            "pt": "O pagamento está sendo processado."
+                            "en": "Temporary failure. The payment will be processed deferred.",
+                            "es": "Falla temporal. El pago va a ser procesado de manera diferida.",
+                            "pt": "Falha temporária. O pagamento será processado diferido."
                           }
                         },
                         {
@@ -1010,43 +1034,91 @@
                           }
                         },
                         {
+                          "title": "pending_waiting_transfer",
+                          "description": {
+                            "en": "In cases of bank transfer, the status_detail is obtained by waiting for the user to finish the payment process in their bank.",
+                            "es": "Para los casos de transferencia bancaria, el status_detail se obtiene al esperar a que el usuario termine el proceso de pago en su banco.",
+                            "pt": "Nos casos de transferência bancária, o status_detail é obtido aguardando que o usuário finalize o processo de pagamento no seu banco."
+                          }
+                        },
+                        {
+                          "title": "pending_waiting_payment",
+                          "description": {
+                            "en": "In cases of offline payments, it remains pending until the user finishes the payment.",
+                            "es": "Para los casos de pagos offline, el mismo queda pendiente hasta que el usuario realice el pago.",
+                            "pt": "Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário realize o pagamento."
+                          }
+                        },
+                        {
+                          "title": "pending_challenge",
+                          "description": {
+                            "en": "In cases of credit card payments, there is a pending confirmation due to a challenge.",
+                            "es": "Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a cause de un challenge.",
+                            "pt": "Nos casos de pagamentos com cartão de crédito, há uma confirmação pendente por devido a um challenge."
+                          }
+                        },
+                        {
+                          "title": "bank_error",
+                          "description": {
+                            "en": "If the payment method is bank transfer, the payment was rejected due to an error with the bank.",
+                            "es": "Si el medio de pago es transferencia bancaria, el pago fue rechazado por un error con el banco.",
+                            "pt": "Se a forma de pagamento for transferência bancária, o pagamento foi rejeitado devido a um erro com o banco."
+                          }
+                        },
+                        {
+                          "title": "cc_rejected_3ds_mandatory",
+                          "description": {
+                            "en": "The payment is rejected for not having a 3DS challenge when it is mandatory.",
+                            "es": "Pago rechazado por no tener el challenge 3DS cuando es obligatorio.",
+                            "pt": "Pagamento rejeitado por não ter o challenge 3DS quando é obrigatório."
+                          }
+                        },
+                        {
+                          "title": "cc_rejected_bad_filled_card_number",
+                          "description": {
+                            "en": "Incorrect card number.",
+                            "es": "Número de tarjeta incorrecto.",
+                            "pt": "Número de cartão incorreto."
+                          }
+                        },
+                        {
                           "title": "cc_rejected_bad_filled_date",
                           "description": {
                             "en": "Incorrect expiration date.",
-                            "es": "Fecha de vencimiento incorrecta.",
-                            "pt": "Data de vencimento incorreta."
+                            "es": "Fecha de caducidad incorrecta.",
+                            "pt": "Data de validade incorreta."
                           }
                         },
                         {
                           "title": "cc_rejected_bad_filled_other",
                           "description": {
                             "en": "Incorrect card details.",
-                            "es": "Datos de la tarjeta incorrectos.",
+                            "es": "Detalles de la tarjeta incorrectos.",
                             "pt": "Detalhes do cartão incorretos."
                           }
                         },
                         {
                           "title": "cc_rejected_bad_filled_security_code",
                           "description": {
-                            "en": "Incorrect CVV.",
-                            "es": "CVV incorrecto.",
-                            "pt": "CVV incorreto."
+                            "en": "Incorrect security code (CVV).",
+                            "es": "Código de seguridad (CVV) incorrecto.",
+                            "pt": "Código de segurança (CVV) incorreto."
                           }
                         },
                         {
                           "title": "cc_rejected_blacklist",
                           "description": {
-                            "en": "The card is on a black list for theft/complaints/fraud.",
-                            "es": "La tarjeta está en una lista negra por robo/quejas/fraude.",
-                            "pt": "O cartão está em uma lista negra por roubo/reclamações/fraude."
+                            "en": "The card is in the denial list, being present in problems related to theft/complaints/fraud.",
+                            "es": "La tarjeta está inhabilitada, presente en problemas de robo/quejas/fraude.",
+                            "pt": "O cartão está desativado, presente em problemas de roubo/reclamações/fraude."
                           }
                         },
                         {
                           "title": "cc_rejected_call_for_authorize",
                           "description": {
-                            "en": "The means of payment requires prior authorization of the amount of the operation.",
-                            "es": "El medio de pago requiere autorización previa del monto de la operación.",
-                            "pt": "O meio de pagamento requer autorização prévia do valor da operação."
+                            "en": "The payment method requires prior authorization of the transaction value, which must be resolved between the payer and the entity.",
+                            "es": "El método de pago requiere de una autorización previa por el valor de la transacción, que debe resolver el pagador con la entidad.",
+                            "pt": "O método de pagamento requer autorização prévia para o valor da transação, que o pagador deverá resolver junto à entidade."
                           }
                         },
                         {
@@ -1060,41 +1132,41 @@
                         {
                           "title": "cc_rejected_duplicated_payment",
                           "description": {
-                            "en": "Duplicate transaction.",
-                            "es": "Transacción duplicada.",
-                            "pt": "Transação duplicada."
+                            "en": "Payment rejected due to duplicated transaction on the card issuer end.",
+                            "es": "Pago rechazado debido a que la transacción es duplicada del lado del proveedor de la tarjeta.",
+                            "pt": "Pagamento recusado porque a transação está duplicada do lado do fornecedor do cartão."
                           }
                         },
                         {
                           "title": "cc_rejected_high_risk",
                           "description": {
-                            "en": "Rejection due to Fraud Prevention.",
-                            "es": "Rechazo por Prevención de Fraude.",
-                            "pt": "Rejeição por Prevenção de Fraude."
+                            "en": "Rejected by Fraud Prevention.",
+                            "es": "Rechazado por Prevención de Fraudes.",
+                            "pt": "Recusado por prevenção de fraudes."
                           }
                         },
                         {
                           "title": "cc_rejected_insufficient_amount",
                           "description": {
-                            "en": "Insufficient amount.",
-                            "es": "Monto insuficiente.",
-                            "pt": "Quantia insuficiente."
+                            "en": "The card limit is insufficient for this transaction.",
+                            "es": "El límite de la tarjeta es insuficiente para esta transacción.",
+                            "pt": "O limite do cartão é insuficiente para esta transação."
                           }
                         },
                         {
                           "title": "cc_rejected_invalid_installments",
                           "description": {
                             "en": "Invalid number of installments.",
-                            "es": "Número de cuotas inválido.",
-                            "pt": "Número de parcelas inválido."
+                            "es": "Número inválido de cuotas/meses.",
+                            "pt": "Número inválido de parcelas."
                           }
                         },
                         {
                           "title": "cc_rejected_max_attempts",
                           "description": {
-                            "en": "Exceeded maximum number of attempts.",
-                            "es": "Excedido el número máximo de intentos.",
-                            "pt": "Excedido o número máximo de tentativas."
+                            "en": "Maximum number of attempts exceeded.",
+                            "es": "Se excedió el número máximo de intentos.",
+                            "pt": "Foi excedido o número máximo de tentativas."
                           }
                         },
                         {
@@ -1103,6 +1175,22 @@
                             "en": "Generic error.",
                             "es": "Error genérico.",
                             "pt": "Erro genérico."
+                          }
+                        },
+                        {
+                          "title": "cc_rejected_time_out",
+                          "description": {
+                            "en": "The transaction was rejected due to timeout.",
+                            "es": "La transacción fue rechazada debido al límite de tiempo.",
+                            "pt": "A transação foi rejeitada devido ao limite de tempo."
+                          }
+                        },
+                        {
+                          "title": "rejected_by_regulations",
+                          "description": {
+                            "en": "Payment rejected by regulations.",
+                            "es": "Pago rechazado por regulaciones.",
+                            "pt": "Pagamento recusado devido a regulamentações."
                           }
                         }
                       ]
@@ -1342,10 +1430,10 @@
                                 "type": "number",
                                 "example": 58,
                                 "description": {
-                                "en": "Unit price of the purchased item. This parameter will return as an String. For Chile (MLC), it must be an integer.",
-                                "pt": "Preço unitário do item comprado. Este parâmetro será retornado como uma String. Para o Chile (MLC) deve ser um número inteiro.",
-                                "es": "Precio unitario del ítem comprado. Te devolveremos este parámetro como una String. Para Chile (MLC) debe ser un número entero."
-                               }
+                                  "en": "Unit price of the purchased item. This parameter will return as an String. For Chile (MLC), it must be an integer.",
+                                  "pt": "Preço unitário do item comprado. Este parâmetro será retornado como uma String. Para o Chile (MLC) deve ser um número inteiro.",
+                                  "es": "Precio unitario del ítem comprado. Te devolveremos este parámetro como una String. Para Chile (MLC) debe ser un número entero."
+                                }
                               }
                             }
                           },
@@ -2869,123 +2957,355 @@
                       },
                       "enum": [
                         {
-                          "title": "Accredited",
+                          "title": "accredited",
                           "description": {
-                            "en": "credited payment.",
-                            "es": "credited payment.",
-                            "pt": "credited payment."
+                            "en": "Credited payment.",
+                            "es": "Pago acreditado.",
+                            "pt": "Pagamento creditado."
+                          }
+                        },
+                        {
+                          "title": "partially_refunded",
+                          "description": {
+                            "en": "The payment has at least one partial refund.",
+                            "es": "El pago se realizó con al menos un reembolso parcial.",
+                            "pt": "O pagamento foi feito com pelo menos um reembolso parcial."
+                          }
+                        },
+                        {
+                          "title": "partially_bpp_refunded",
+                          "description": {
+                            "en": "The mediation was favorable to the payer, so the payment was partially refunded to them.",
+                            "es": "La mediación fue favorable al pagador y el pago le fue parcialmente devuelto.",
+                            "pt": "A mediação foi favorável ao pagador e o pagamento parcialmente devolvido."
+                          }
+                        },
+                        {
+                          "title": "partially_bpp_covered",
+                          "description": {
+                            "en": "The mediation was favorable to both the payer and the seller, so the payment was partially reimbursed to them.",
+                            "es": "La mediación fue favorable tanto al pagador como al vendedor y el pago les es parcialmente devuelto a ambos.",
+                            "pt": "A mediação foi favorável tanto ao pagador quanto ao vendedor e o pagamento é parcialmente devolvido a ambos."
+                          }
+                        },
+                        {
+                          "title": "pending_capture",
+                          "description": {
+                            "en": "The payment has been authorized and is waiting for capture.",
+                            "es": "El pago fue autorizado y está a la espera de ser capturado.",
+                            "pt": "O pagamento foi autorizado e aguarda captura."
+                          }
+                        },
+                        {
+                          "title": "by_collector",
+                          "description": {
+                            "en": "If the status is cancelled, the payment has been cancelled by collector.",
+                            "es": "Si el status es cancelled, el pago fue cancelado por el collector.",
+                            "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado pelo collector."
+                          }
+                        },
+                        {
+                          "title": "by_payer",
+                          "description": {
+                            "en": "If the status is cancelled, the payment has been cancelled by the payer.",
+                            "es": "Si el status es cancelled, el pago fue cancelado por el pagador.",
+                            "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado pelo pagador."
+                          }
+                        },
+                        {
+                          "title": "by_admin",
+                          "description": {
+                            "en": "If the status is cancelled, the payment has been cancelled by the administrator. If the status is refunded, the payment has been refunded.",
+                            "es": "Si el status es cancelled, el pago fue cancelado por el administrador. Si el estado es refunded, el pago fue devuelto.",
+                            "pt": "Caso o status seja cancelled, o pagamento foi cancelado pelo administrador. Caso o status seja refunded, o pagamento foi devolvido."
+                          }
+                        },
+                        {
+                          "title": "expired",
+                          "description": {
+                            "en": "If the status is cancelled, the payment has been cancelled after spending 30 days in a pending status.",
+                            "es": "Si el status es cancelled, el pago fue cancelado luego de haber estado 30 días en un estado pendiente.",
+                            "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado após ficar com status pendente por 30 dias."
+                          }
+                        },
+                        {
+                          "title": "offline_process",
+                          "description": {
+                            "en": "Due to lack of online processing, the payment is being processed offline.",
+                            "es": "Por una falta de procesamiento online, el pago está siendo procesado de manera offline.",
+                            "pt": "Por falta de processamento online, o pagamento está sendo processado de maneira offline"
                           }
                         },
                         {
                           "title": "pending_contingency",
                           "description": {
-                            "en": "the payment is being processed.",
-                            "es": "the payment is being processed.",
-                            "pt": "the payment is being processed."
+                            "en": "Temporary failure. The payment will be processed deferred.",
+                            "es": "Falla temporal. El pago va a ser procesado de manera diferida.",
+                            "pt": "Falha temporária. O pagamento será processado diferido."
                           }
                         },
                         {
                           "title": "pending_review_manual",
                           "description": {
-                            "en": "the payment is under review to determine its approval or rejection.",
-                            "es": "the payment is under review to determine its approval or rejection.",
-                            "pt": "the payment is under review to determine its approval or rejection."
+                            "en": "The payment is under review to determine its approval or rejection.",
+                            "es": "El pago está en revisión para determinar su aprobación o rechazo.",
+                            "pt": "O pagamento está em revisão para determinar sua aprovação ou rejeição."
+                          }
+                        },
+                        {
+                          "title": "pending_provider_response",
+                          "description": {
+                            "en": "The payment is pending, waiting for the server response.",
+                            "es": "El pago está pendiente, esperando respuesta del servidor.",
+                            "pt": "O pagamento está pendente, aguardando resposta do servidor."
+                          }
+                        },
+                        {
+                          "title": "pending_waiting_transfer",
+                          "description": {
+                            "en": "In cases of bank transfer, the status_detail is obtained by waiting for the user to finish the payment process in their bank.",
+                            "es": "Para los casos de transferencia bancaria, el status_detail se obtiene al esperar a que el usuario termine el proceso de pago en su banco.",
+                            "pt": "Nos casos de transferência bancária, o status_detail é obtido aguardando que o usuário finalize o processo de pagamento no seu banco."
+                          }
+                        },
+                        {
+                          "title": "pending_waiting_for_remedy",
+                          "description": {
+                            "en": "In cases of offline payments, it remains pending until the user regularizes the situation.",
+                            "es": "Para los casos de pagos offline, el mismo queda pendiente hasta que el usuario regularice la situación.",
+                            "pt": "Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário regularize a situação."
+                          }
+                        },
+                        {
+                          "title": "pending_waiting_payment",
+                          "description": {
+                            "en": "In cases of offline payments, it remains pending until the user finishes the payment.",
+                            "es": "Para los casos de pagos offline, el mismo queda pendiente hasta que el usuario realice el pago.",
+                            "pt": "Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário realize o pagamento."
+                          }
+                        },
+                        {
+                          "title": "pending_challenge",
+                          "description": {
+                            "en": "In cases of credit card payments, there is a pending confirmation due to a challenge.",
+                            "es": "Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a cause de un challenge.",
+                            "pt": "Nos casos de pagamentos com cartão de crédito, há uma confirmação pendente por devido a um challenge."
+                          }
+                        },
+                        {
+                          "title": "in_process",
+                          "description": {
+                            "en": "In payments with status charged_back, the payment is in process due to the payer disowning it.",
+                            "es": "Para los pagos con status charged_back, el pago está en proceso de ser recuperado debido a un desconocimiento por parte del pagador.",
+                            "pt": "Para pagamentos com o status charged_back, o pagamento está em processo de recuperação pois o pagador desconhece a transação."
+                          }
+                        },
+                        {
+                          "title": "settled",
+                          "description": {
+                            "en": "In payments with status charged_back, the money was retained after a chargeback process.",
+                            "es": "Para los pagos con status charged_back, el dinero fue retenido luego de un proceso de contracargo.",
+                            "pt": "Para pagamentos com o status charged_back, o dinheiro foi retido após um processo de estorno."
+                          }
+                        },
+                        {
+                          "title": "reimbursed",
+                          "description": {
+                            "en": "In payments with status charged_back, the money was reimbursed after a chargeback process.",
+                            "es": "Para los pagos con status charged_back, el dinero fue devuelto luego de un proceso de contracargo.",
+                            "pt": "Para pagamentos com o status charged_back, o dinheiro foi devolvido após um processo de estorno."
+                          }
+                        },
+                        {
+                          "title": "refunded",
+                          "description": {
+                            "en": "The payment has been refunded by the collector.",
+                            "es": "El pago fue devuelto por el collector.",
+                            "pt": "O pagamento foi devolvido pelo collector."
+                          }
+                        },
+                        {
+                          "title": "bpp_refunded",
+                          "description": {
+                            "en": "The mediation was favorable to the payer, but Mercado Pago covers the refund of the money.",
+                            "es": "La mediación fue favorable al pagador, pero Mercado Pago cubre la devolución del dinero.",
+                            "pt": "A mediação foi favorável ao pagador, mas o Mercado Pago cobre a devolução do dinheiro."
+                          }
+                        },
+                        {
+                          "title": "bpp_covered",
+                          "description": {
+                            "en": "The mediation was favorable to both the payer and the seller, so both are supported.",
+                            "es": "La mediación fue favorable tanto al pagador como al vendedor, por lo que ambos están cubiertos.",
+                            "pt": "A mediação foi favorável tanto ao pagador quanto ao vendedor, portanto, ambos estão cobertos."
+                          }
+                        },
+                        {
+                          "title": "bank_rejected",
+                          "description": {
+                            "en": "If the payment method is bank transfer, the bank has rejected the payment.",
+                            "es": "Si el medio de pago es transferencia bancaria, el banco rechazó el pago.",
+                            "pt": "Se a forma de pagamento for transferência bancária, o banco rejeitou o pagamento."
+                          }
+                        },
+                        {
+                          "title": "bank_error",
+                          "description": {
+                            "en": "If the payment method is bank transfer, the payment was rejected due to an error with the bank.",
+                            "es": "Si el medio de pago es transferencia bancaria, el pago fue rechazado por un error con el banco.",
+                            "pt": "Se a forma de pagamento for transferência bancária, o pagamento foi rejeitado devido a um erro com o banco."
+                          }
+                        },
+                        {
+                          "title": "cc_rejected_3ds_challenge",
+                          "description": {
+                            "en": "The payment is rejected for not surpasing the 3DS challenge.",
+                            "es": "Pago rechazado por no superar el challenge 3DS.",
+                            "pt": "Pagamento rejeitado por não superar o challenge 3DS."
+                          }
+                        },
+                        {
+                          "title": "cc_rejected_3ds_mandatory",
+                          "description": {
+                            "en": "The payment is rejected for not having a 3DS challenge when it is mandatory.",
+                            "es": "Pago rechazado por no tener el challenge 3DS cuando es obligatorio.",
+                            "pt": "Pagamento rejeitado por não ter o challenge 3DS quando é obrigatório."
+                          }
+                        },
+                        {
+                          "title": "cc_rejected_bad_filled_card_number",
+                          "description": {
+                            "en": "Incorrect card number.",
+                            "es": "Número de tarjeta incorrecto.",
+                            "pt": "Número de cartão incorreto."
                           }
                         },
                         {
                           "title": "cc_rejected_bad_filled_date",
                           "description": {
-                            "en": "incorrect expiration date.",
-                            "es": "incorrect expiration date.",
-                            "pt": "incorrect expiration date."
+                            "en": "Incorrect expiration date.",
+                            "es": "Fecha de caducidad incorrecta.",
+                            "pt": "Data de validade incorreta."
                           }
                         },
                         {
                           "title": "cc_rejected_bad_filled_other",
                           "description": {
-                            "en": "incorrect card details.",
-                            "es": "incorrect card details.",
-                            "pt": "incorrect card details."
+                            "en": "Incorrect card details.",
+                            "es": "Detalles de la tarjeta incorrectos.",
+                            "pt": "Detalhes do cartão incorretos."
                           }
                         },
                         {
                           "title": "cc_rejected_bad_filled_security_code",
                           "description": {
-                            "en": "incorrect CVV.",
-                            "es": "incorrect CVV.",
-                            "pt": "incorrect CVV."
+                            "en": "Incorrect security code (CVV).",
+                            "es": "Código de seguridad (CVV) incorrecto.",
+                            "pt": "Código de segurança (CVV) incorreto."
                           }
                         },
                         {
                           "title": "cc_rejected_blacklist",
                           "description": {
-                            "en": "the card is on a black list for theft/complaints/fraud.",
-                            "es": "the card is on a black list for theft/complaints/fraud.",
-                            "pt": "the card is on a black list for theft/complaints/fraud."
+                            "en": "The card is in the denial list, being present in problems related to theft/complaints/fraud.",
+                            "es": "La tarjeta está inhabilitada, presente en problemas de robo/quejas/fraude.",
+                            "pt": "O cartão está desativado, presente em problemas de roubo/reclamações/fraude."
                           }
                         },
                         {
                           "title": "cc_rejected_call_for_authorize",
                           "description": {
-                            "en": "the means of payment requires prior authorization of the amount of the operation.",
-                            "es": "the means of payment requires prior authorization of the amount of the operation.",
-                            "pt": "the means of payment requires prior authorization of the amount of the operation."
+                            "en": "The payment method requires prior authorization of the transaction value, which must be resolved between the payer and the entity.",
+                            "es": "El método de pago requiere de una autorización previa por el valor de la transacción, que debe resolver el pagador con la entidad.",
+                            "pt": "O método de pagamento requer autorização prévia para o valor da transação, que o pagador deverá resolver junto à entidade."
                           }
                         },
                         {
                           "title": "cc_rejected_card_disabled",
                           "description": {
-                            "en": "the card is inactive.",
-                            "es": "the card is inactive.",
-                            "pt": "the card is inactive."
+                            "en": "The card is inactive.",
+                            "es": "La tarjeta está inactiva.",
+                            "pt": "O cartão está inativo."
                           }
                         },
                         {
                           "title": "cc_rejected_duplicated_payment",
                           "description": {
-                            "en": "transacción duplicada.",
-                            "es": "transacción duplicada.",
-                            "pt": "transacción duplicada."
+                            "en": "Payment rejected due to duplicated transaction on the card issuer end.",
+                            "es": "Pago rechazado debido a que la transacción es duplicada del lado del proveedor de la tarjeta.",
+                            "pt": "Pagamento recusado porque a transação está duplicada do lado do fornecedor do cartão."
                           }
                         },
                         {
                           "title": "cc_rejected_high_risk",
                           "description": {
-                            "en": "rechazo por Prevención de Fraude.",
-                            "es": "rechazo por Prevención de Fraude.",
-                            "pt": "rechazo por Prevención de Fraude."
+                            "en": "Rejected by Fraud Prevention.",
+                            "es": "Rechazado por Prevención de Fraudes.",
+                            "pt": "Recusado por prevenção de fraudes."
                           }
                         },
                         {
                           "title": "cc_rejected_insufficient_amount",
                           "description": {
-                            "en": "insufficient amount.",
-                            "es": "insufficient amount.",
-                            "pt": "insufficient amount."
+                            "en": "The card limit is insufficient for this transaction.",
+                            "es": "El límite de la tarjeta es insuficiente para esta transacción.",
+                            "pt": "O limite do cartão é insuficiente para esta transação."
                           }
                         },
                         {
                           "title": "cc_rejected_invalid_installments",
                           "description": {
-                            "en": "invalid number of installments.",
-                            "es": "invalid number of installments.",
-                            "pt": "invalid number of installments."
+                            "en": "Invalid number of installments.",
+                            "es": "Número inválido de cuotas/meses.",
+                            "pt": "Número inválido de parcelas."
                           }
                         },
                         {
                           "title": "cc_rejected_max_attempts",
                           "description": {
-                            "en": "exceeded maximum number of attempts.",
-                            "es": "exceeded maximum number of attempts.",
-                            "pt": "exceeded maximum number of attempts."
+                            "en": "Maximum number of attempts exceeded.",
+                            "es": "Se excedió el número máximo de intentos.",
+                            "pt": "Foi excedido o número máximo de tentativas."
                           }
                         },
                         {
                           "title": "cc_rejected_other_reason",
                           "description": {
-                            "en": "generic error.",
-                            "es": "generic error.",
-                            "pt": "generic error."
+                            "en": "Generic error.",
+                            "es": "Error genérico.",
+                            "pt": "Erro genérico."
+                          }
+                        },
+                        {
+                          "title": "cc_rejected_time_out",
+                          "description": {
+                            "en": "The transaction was rejected due to timeout.",
+                            "es": "La transacción fue rechazada debido al límite de tiempo.",
+                            "pt": "A transação foi rejeitada devido ao limite de tempo."
+                          }
+                        },
+                        {
+                          "title": "rejected_by_regulations",
+                          "description": {
+                            "en": "Payment rejected by regulations.",
+                            "es": "Pago rechazado por regulaciones.",
+                            "pt": "Pagamento recusado devido a regulamentações."
+                          }
+                        },
+                        {
+                          "title": "collector_unavailable",
+                          "description": {
+                            "en": "In case of a rejected payment, the collector is restricted and can not operate.",
+                            "es": "En caso de pago rechazado, el collector tiene una restricción y no puede operar.",
+                            "pt": "Em caso de pagamento rejeitado, o collector tem restrição e não pode operar."
+                          }
+                        },
+                        {
+                          "title": "payer_unavailable",
+                          "description": {
+                            "en": "In case of a rejected payment, the payer is restricted and can not operate.",
+                            "es": "En caso de pago rechazado, el pagador tiene una restricción y no puede operar.",
+                            "pt": "Em caso de pagamento rejeitado, o pagador tem restrição e não pode operar."
                           }
                         }
                       ]
@@ -4198,123 +4518,19 @@
                       },
                       "enum": [
                         {
-                          "title": "Accredited",
+                          "title": "partially_refunded",
                           "description": {
-                            "en": "credited payment.",
-                            "es": "credited payment.",
-                            "pt": "credited payment."
+                            "en": "The payment has at least one partial refund.",
+                            "es": "El pago se realizó con al menos un reembolso parcial.",
+                            "pt": "O pagamento foi feito com pelo menos um reembolso parcial."
                           }
                         },
                         {
-                          "title": "pending_contingency",
+                          "title": "refunded",
                           "description": {
-                            "en": "the payment is being processed.",
-                            "es": "the payment is being processed.",
-                            "pt": "the payment is being processed."
-                          }
-                        },
-                        {
-                          "title": "pending_review_manual",
-                          "description": {
-                            "en": "the payment is under review to determine its approval or rejection.",
-                            "es": "the payment is under review to determine its approval or rejection.",
-                            "pt": "the payment is under review to determine its approval or rejection."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_bad_filled_date",
-                          "description": {
-                            "en": "incorrect expiration date.",
-                            "es": "incorrect expiration date.",
-                            "pt": "incorrect expiration date."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_bad_filled_other",
-                          "description": {
-                            "en": "incorrect card details.",
-                            "es": "incorrect card details.",
-                            "pt": "incorrect card details."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_bad_filled_security_code",
-                          "description": {
-                            "en": "incorrect CVV.",
-                            "es": "incorrect CVV.",
-                            "pt": "incorrect CVV."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_blacklist",
-                          "description": {
-                            "en": "the card is on a black list for theft/complaints/fraud.",
-                            "es": "the card is on a black list for theft/complaints/fraud.",
-                            "pt": "the card is on a black list for theft/complaints/fraud."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_call_for_authorize",
-                          "description": {
-                            "en": "the means of payment requires prior authorization of the amount of the operation.",
-                            "es": "the means of payment requires prior authorization of the amount of the operation.",
-                            "pt": "the means of payment requires prior authorization of the amount of the operation."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_card_disabled",
-                          "description": {
-                            "en": "the card is inactive.",
-                            "es": "the card is inactive.",
-                            "pt": "the card is inactive."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_duplicated_payment",
-                          "description": {
-                            "en": "transacción duplicada.",
-                            "es": "transacción duplicada.",
-                            "pt": "transacción duplicada."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_high_risk",
-                          "description": {
-                            "en": "rechazo por Prevención de Fraude.",
-                            "es": "rechazo por Prevención de Fraude.",
-                            "pt": "rechazo por Prevención de Fraude."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_insufficient_amount",
-                          "description": {
-                            "en": "insufficient amount.",
-                            "es": "insufficient amount.",
-                            "pt": "insufficient amount."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_invalid_installments",
-                          "description": {
-                            "en": "invalid number of installments.",
-                            "es": "invalid number of installments.",
-                            "pt": "invalid number of installments."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_max_attempts",
-                          "description": {
-                            "en": "exceeded maximum number of attempts.",
-                            "es": "exceeded maximum number of attempts.",
-                            "pt": "exceeded maximum number of attempts."
-                          }
-                        },
-                        {
-                          "title": "cc_rejected_other_reason",
-                          "description": {
-                            "en": "generic error.",
-                            "es": "generic error.",
-                            "pt": "generic error."
+                            "en": "The payment has been refunded by the collector.",
+                            "es": "El pago fue devuelto por el collector.",
+                            "pt": "O pagamento foi devolvido pelo collector."
                           }
                         }
                       ]
@@ -4554,9 +4770,9 @@
                                 "type": "number",
                                 "example": 58,
                                 "description": {
-                                "en": "Unit price of the purchased item. This parameter will return as an String. For Chile (MLC), it must be an integer.",
-                                "pt": "Preço unitário do item comprado. Este parâmetro será retornado como uma String. Para o Chile (MLC) deve ser um número inteiro.",
-                                "es": "Precio unitario del ítem comprado. Te devolveremos este parámetro como una String. Para Chile (MLC) debe ser un número entero."
+                                  "en": "Unit price of the purchased item. This parameter will return as an String. For Chile (MLC), it must be an integer.",
+                                  "pt": "Preço unitário do item comprado. Este parâmetro será retornado como uma String. Para o Chile (MLC) deve ser um número inteiro.",
+                                  "es": "Precio unitario del ítem comprado. Te devolveremos este parámetro como una String. Para Chile (MLC) debe ser un número entero."
                                 }
                               }
                             }
@@ -5642,73 +5858,273 @@
                               },
                               "enum": [
                                 {
-                                  "title": "Accredited",
+                                  "title": "accredited",
                                   "description": {
-                                    "en": "Payment successfully credited.",
-                                    "es": "Pago acreditado con éxito.",
-                                    "pt": "Pagamento creditado com sucesso."
+                                    "en": "Credited payment.",
+                                    "es": "Pago acreditado.",
+                                    "pt": "Pagamento creditado."
+                                  }
+                                },
+                                {
+                                  "title": "partially_refunded",
+                                  "description": {
+                                    "en": "The payment has at least one partial refund.",
+                                    "es": "El pago se realizó con al menos un reembolso parcial.",
+                                    "pt": "O pagamento foi feito com pelo menos um reembolso parcial."
+                                  }
+                                },
+                                {
+                                  "title": "partially_bpp_refunded",
+                                  "description": {
+                                    "en": "The mediation was favorable to the payer, so the payment was partially refunded to them.",
+                                    "es": "La mediación fue favorable al pagador y el pago le fue parcialmente devuelto.",
+                                    "pt": "A mediação foi favorável ao pagador e o pagamento parcialmente devolvido."
+                                  }
+                                },
+                                {
+                                  "title": "partially_bpp_covered",
+                                  "description": {
+                                    "en": "The mediation was favorable to both the payer and the seller, so the payment was partially reimbursed to them.",
+                                    "es": "La mediación fue favorable tanto al pagador como al vendedor y el pago les es parcialmente devuelto a ambos.",
+                                    "pt": "A mediação foi favorável tanto ao pagador quanto ao vendedor e o pagamento é parcialmente devolvido a ambos."
+                                  }
+                                },
+                                {
+                                  "title": "pending_capture",
+                                  "description": {
+                                    "en": "The payment has been authorized and is waiting for capture.",
+                                    "es": "El pago fue autorizado y está a la espera de ser capturado.",
+                                    "pt": "O pagamento foi autorizado e aguarda captura."
+                                  }
+                                },
+                                {
+                                  "title": "by_collector",
+                                  "description": {
+                                    "en": "If the status is cancelled, the payment has been cancelled by collector.",
+                                    "es": "Si el status es cancelled, el pago fue cancelado por el collector.",
+                                    "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado pelo collector."
+                                  }
+                                },
+                                {
+                                  "title": "by_payer",
+                                  "description": {
+                                    "en": "If the status is cancelled, the payment has been cancelled by the payer.",
+                                    "es": "Si el status es cancelled, el pago fue cancelado por el pagador.",
+                                    "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado pelo pagador."
+                                  }
+                                },
+                                {
+                                  "title": "by_admin",
+                                  "description": {
+                                    "en": "If the status is cancelled, the payment has been cancelled by the administrator. If the status is refunded, the payment has been refunded.",
+                                    "es": "Si el status es cancelled, el pago fue cancelado por el administrador. Si el estado es refunded, el pago fue devuelto.",
+                                    "pt": "Caso o status seja cancelled, o pagamento foi cancelado pelo administrador. Caso o status seja refunded, o pagamento foi devolvido."
+                                  }
+                                },
+                                {
+                                  "title": "expired",
+                                  "description": {
+                                    "en": "If the status is cancelled, the payment has been cancelled after spending 30 days in a pending status.",
+                                    "es": "Si el status es cancelled, el pago fue cancelado luego de haber estado 30 días en un estado pendiente.",
+                                    "pt": "Caso o status seja cancelled, significa que o pagamento foi cancelado após ficar com status pendente por 30 dias."
+                                  }
+                                },
+                                {
+                                  "title": "offline_process",
+                                  "description": {
+                                    "en": "Due to lack of online processing, the payment is being processed offline.",
+                                    "es": "Por una falta de procesamiento online, el pago está siendo procesado de manera offline.",
+                                    "pt": "Por falta de processamento online, o pagamento está sendo processado de maneira offline"
                                   }
                                 },
                                 {
                                   "title": "pending_contingency",
                                   "description": {
-                                    "en": "The payment is currently being processed.",
-                                    "es": "El pago está siendo procesado.",
-                                    "pt": "O pagamento está em processamento."
+                                    "en": "Temporary failure. The payment will be processed deferred.",
+                                    "es": "Falla temporal. El pago va a ser procesado de manera diferida.",
+                                    "pt": "Falha temporária. O pagamento será processado diferido."
                                   }
                                 },
                                 {
                                   "title": "pending_review_manual",
                                   "description": {
-                                    "en": "The payment is under review to determine approval or rejection.",
+                                    "en": "The payment is under review to determine its approval or rejection.",
                                     "es": "El pago está en revisión para determinar su aprobación o rechazo.",
                                     "pt": "O pagamento está em revisão para determinar sua aprovação ou rejeição."
                                   }
                                 },
                                 {
+                                  "title": "pending_provider_response",
+                                  "description": {
+                                    "en": "The payment is pending, waiting for the server response.",
+                                    "es": "El pago está pendiente, esperando respuesta del servidor.",
+                                    "pt": "O pagamento está pendente, aguardando resposta do servidor."
+                                  }
+                                },
+                                {
+                                  "title": "pending_waiting_transfer",
+                                  "description": {
+                                    "en": "In cases of bank transfer, the status_detail is obtained by waiting for the user to finish the payment process in their bank.",
+                                    "es": "Para los casos de transferencia bancaria, el status_detail se obtiene al esperar a que el usuario termine el proceso de pago en su banco.",
+                                    "pt": "Nos casos de transferência bancária, o status_detail é obtido aguardando que o usuário finalize o processo de pagamento no seu banco."
+                                  }
+                                },
+                                {
+                                  "title": "pending_waiting_for_remedy",
+                                  "description": {
+                                    "en": "In cases of offline payments, it remains pending until the user regularizes the situation.",
+                                    "es": "Para los casos de pagos offline, el mismo queda pendiente hasta que el usuario regularice la situación.",
+                                    "pt": "Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário regularize a situação."
+                                  }
+                                },
+                                {
+                                  "title": "pending_waiting_payment",
+                                  "description": {
+                                    "en": "In cases of offline payments, it remains pending until the user finishes the payment.",
+                                    "es": "Para los casos de pagos offline, el mismo queda pendiente hasta que el usuario realice el pago.",
+                                    "pt": "Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário realize o pagamento."
+                                  }
+                                },
+                                {
+                                  "title": "pending_challenge",
+                                  "description": {
+                                    "en": "In cases of credit card payments, there is a pending confirmation due to a challenge.",
+                                    "es": "Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a cause de un challenge.",
+                                    "pt": "Nos casos de pagamentos com cartão de crédito, há uma confirmação pendente por devido a um challenge."
+                                  }
+                                },
+                                {
+                                  "title": "in_process",
+                                  "description": {
+                                    "en": "In payments with status charged_back, the payment is in process due to the payer disowning it.",
+                                    "es": "Para los pagos con status charged_back, el pago está en proceso de ser recuperado debido a un desconocimiento por parte del pagador.",
+                                    "pt": "Para pagamentos com o status charged_back, o pagamento está em processo de recuperação pois o pagador desconhece a transação."
+                                  }
+                                },
+                                {
+                                  "title": "settled",
+                                  "description": {
+                                    "en": "In payments with status charged_back, the money was retained after a chargeback process.",
+                                    "es": "Para los pagos con status charged_back, el dinero fue retenido luego de un proceso de contracargo.",
+                                    "pt": "Para pagamentos com o status charged_back, o dinheiro foi retido após um processo de estorno."
+                                  }
+                                },
+                                {
+                                  "title": "reimbursed",
+                                  "description": {
+                                    "en": "In payments with status charged_back, the money was reimbursed after a chargeback process.",
+                                    "es": "Para los pagos con status charged_back, el dinero fue devuelto luego de un proceso de contracargo.",
+                                    "pt": "Para pagamentos com o status charged_back, o dinheiro foi devolvido após um processo de estorno."
+                                  }
+                                },
+                                {
+                                  "title": "refunded",
+                                  "description": {
+                                    "en": "The payment has been refunded by the collector.",
+                                    "es": "El pago fue devuelto por el collector.",
+                                    "pt": "O pagamento foi devolvido pelo collector."
+                                  }
+                                },
+                                {
+                                  "title": "bpp_refunded",
+                                  "description": {
+                                    "en": "The mediation was favorable to the payer, but Mercado Pago covers the refund of the money.",
+                                    "es": "La mediación fue favorable al pagador, pero Mercado Pago cubre la devolución del dinero.",
+                                    "pt": "A mediação foi favorável ao pagador, mas o Mercado Pago cobre a devolução do dinheiro."
+                                  }
+                                },
+                                {
+                                  "title": "bpp_covered",
+                                  "description": {
+                                    "en": "The mediation was favorable to both the payer and the seller, so both are supported.",
+                                    "es": "La mediación fue favorable tanto al pagador como al vendedor, por lo que ambos están cubiertos.",
+                                    "pt": "A mediação foi favorável tanto ao pagador quanto ao vendedor, portanto, ambos estão cobertos."
+                                  }
+                                },
+                                {
+                                  "title": "bank_rejected",
+                                  "description": {
+                                    "en": "If the payment method is bank transfer, the bank has rejected the payment.",
+                                    "es": "Si el medio de pago es transferencia bancaria, el banco rechazó el pago.",
+                                    "pt": "Se a forma de pagamento for transferência bancária, o banco rejeitou o pagamento."
+                                  }
+                                },
+                                {
+                                  "title": "bank_error",
+                                  "description": {
+                                    "en": "If the payment method is bank transfer, the payment was rejected due to an error with the bank.",
+                                    "es": "Si el medio de pago es transferencia bancaria, el pago fue rechazado por un error con el banco.",
+                                    "pt": "Se a forma de pagamento for transferência bancária, o pagamento foi rejeitado devido a um erro com o banco."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_3ds_challenge",
+                                  "description": {
+                                    "en": "The payment is rejected for not surpasing the 3DS challenge.",
+                                    "es": "Pago rechazado por no superar el challenge 3DS.",
+                                    "pt": "Pagamento rejeitado por não superar o challenge 3DS."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_3ds_mandatory",
+                                  "description": {
+                                    "en": "The payment is rejected for not having a 3DS challenge when it is mandatory.",
+                                    "es": "Pago rechazado por no tener el challenge 3DS cuando es obligatorio.",
+                                    "pt": "Pagamento rejeitado por não ter o challenge 3DS quando é obrigatório."
+                                  }
+                                },
+                                {
+                                  "title": "cc_rejected_bad_filled_card_number",
+                                  "description": {
+                                    "en": "Incorrect card number.",
+                                    "es": "Número de tarjeta incorrecto.",
+                                    "pt": "Número de cartão incorreto."
+                                  }
+                                },
+                                {
                                   "title": "cc_rejected_bad_filled_date",
                                   "description": {
-                                    "en": "The card's expiration date is incorrect.",
-                                    "es": "La fecha de vencimiento de la tarjeta es incorrecta.",
-                                    "pt": "A data de validade do cartão está incorreta."
+                                    "en": "Incorrect expiration date.",
+                                    "es": "Fecha de caducidad incorrecta.",
+                                    "pt": "Data de validade incorreta."
                                   }
                                 },
                                 {
                                   "title": "cc_rejected_bad_filled_other",
                                   "description": {
-                                    "en": "The card details provided are incorrect.",
-                                    "es": "Los detalles de la tarjeta proporcionados son incorrectos.",
-                                    "pt": "Os dados do cartão fornecidos estão incorretos."
+                                    "en": "Incorrect card details.",
+                                    "es": "Detalles de la tarjeta incorrectos.",
+                                    "pt": "Detalhes do cartão incorretos."
                                   }
                                 },
                                 {
                                   "title": "cc_rejected_bad_filled_security_code",
                                   "description": {
-                                    "en": "The CVV code entered is incorrect.",
-                                    "es": "El código CVV ingresado es incorrecto.",
-                                    "pt": "O código CVV inserido está incorreto."
+                                    "en": "Incorrect security code (CVV).",
+                                    "es": "Código de seguridad (CVV) incorrecto.",
+                                    "pt": "Código de segurança (CVV) incorreto."
                                   }
                                 },
                                 {
                                   "title": "cc_rejected_blacklist",
                                   "description": {
-                                    "en": "The card is on the denial list, possibly due to issues related to theft, complaints, or fraud.",
-                                    "es": "La tarjeta está en la lista de denegación, posiblemente debido a problemas relacionados con robo, quejas o fraude.",
-                                    "pt": "O cartão está na lista de negação, possivelmente devido a problemas relacionados a roubo, reclamações ou fraude."
+                                    "en": "The card is in the denial list, being present in problems related to theft/complaints/fraud.",
+                                    "es": "La tarjeta está inhabilitada, presente en problemas de robo/quejas/fraude.",
+                                    "pt": "O cartão está desativado, presente em problemas de roubo/reclamações/fraude."
                                   }
                                 },
                                 {
                                   "title": "cc_rejected_call_for_authorize",
                                   "description": {
-                                    "en": "The payment method requires prior authorization for the transaction amount.",
-                                    "es": "El medio de pago requiere autorización previa para el monto de la transacción.",
-                                    "pt": "O meio de pagamento requer autorização prévia para o valor da transação."
+                                    "en": "The payment method requires prior authorization of the transaction value, which must be resolved between the payer and the entity.",
+                                    "es": "El método de pago requiere de una autorización previa por el valor de la transacción, que debe resolver el pagador con la entidad.",
+                                    "pt": "O método de pagamento requer autorização prévia para o valor da transação, que o pagador deverá resolver junto à entidade."
                                   }
                                 },
                                 {
                                   "title": "cc_rejected_card_disabled",
                                   "description": {
-                                    "en": "The card is currently inactive.",
+                                    "en": "The card is inactive.",
                                     "es": "La tarjeta está inactiva.",
                                     "pt": "O cartão está inativo."
                                   }
@@ -5716,51 +6132,83 @@
                                 {
                                   "title": "cc_rejected_duplicated_payment",
                                   "description": {
-                                    "en": "This is a duplicated transaction.",
-                                    "es": "Esta es una transacción duplicada.",
-                                    "pt": "Esta é uma transação duplicada."
+                                    "en": "Payment rejected due to duplicated transaction on the card issuer end.",
+                                    "es": "Pago rechazado debido a que la transacción es duplicada del lado del proveedor de la tarjeta.",
+                                    "pt": "Pagamento recusado porque a transação está duplicada do lado do fornecedor do cartão."
                                   }
                                 },
                                 {
                                   "title": "cc_rejected_high_risk",
                                   "description": {
-                                    "en": "Payment rejected by Fraud Prevention.",
-                                    "es": "Pago rechazado por Prevención de Fraude.",
-                                    "pt": "Pagamento rejeitado pela Prevenção de Fraude."
+                                    "en": "Rejected by Fraud Prevention.",
+                                    "es": "Rechazado por Prevención de Fraudes.",
+                                    "pt": "Recusado por prevenção de fraudes."
                                   }
                                 },
                                 {
                                   "title": "cc_rejected_insufficient_amount",
                                   "description": {
-                                    "en": "Insufficient funds to complete the payment.",
-                                    "es": "Fondos insuficientes para completar el pago.",
-                                    "pt": "Fundos insuficientes para completar o pagamento."
+                                    "en": "The card limit is insufficient for this transaction.",
+                                    "es": "El límite de la tarjeta es insuficiente para esta transacción.",
+                                    "pt": "O limite do cartão é insuficiente para esta transação."
                                   }
                                 },
                                 {
                                   "title": "cc_rejected_invalid_installments",
                                   "description": {
-                                    "en": "The number of installments entered is invalid.",
-                                    "es": "El número de cuotas ingresado es inválido.",
-                                    "pt": "O número de parcelas inserido é inválido."
+                                    "en": "Invalid number of installments.",
+                                    "es": "Número inválido de cuotas/meses.",
+                                    "pt": "Número inválido de parcelas."
                                   }
                                 },
                                 {
                                   "title": "cc_rejected_max_attempts",
                                   "description": {
-                                    "en": "The maximum number of payment attempts has been exceeded.",
-                                    "es": "Se ha superado el número máximo de intentos de pago.",
-                                    "pt": "O número máximo de tentativas de pagamento foi excedido."
+                                    "en": "Maximum number of attempts exceeded.",
+                                    "es": "Se excedió el número máximo de intentos.",
+                                    "pt": "Foi excedido o número máximo de tentativas."
                                   }
                                 },
                                 {
                                   "title": "cc_rejected_other_reason",
                                   "description": {
-                                    "en": "A generic error occurred.",
-                                    "es": "Se produjo un error genérico.",
-                                    "pt": "Ocorreu um erro genérico."
+                                    "en": "Generic error.",
+                                    "es": "Error genérico.",
+                                    "pt": "Erro genérico."
                                   }
-                                }                                
+                                },
+                                {
+                                  "title": "cc_rejected_time_out",
+                                  "description": {
+                                    "en": "The transaction was rejected due to timeout.",
+                                    "es": "La transacción fue rechazada debido al límite de tiempo.",
+                                    "pt": "A transação foi rejeitada devido ao limite de tempo."
+                                  }
+                                },
+                                {
+                                  "title": "rejected_by_regulations",
+                                  "description": {
+                                    "en": "Payment rejected by regulations.",
+                                    "es": "Pago rechazado por regulaciones.",
+                                    "pt": "Pagamento recusado devido a regulamentações."
+                                  }
+                                },
+                                {
+                                  "title": "collector_unavailable",
+                                  "description": {
+                                    "en": "In case of a rejected payment, the collector is restricted and can not operate.",
+                                    "es": "En caso de pago rechazado, el collector tiene una restricción y no puede operar.",
+                                    "pt": "Em caso de pagamento rejeitado, o collector tem restrição e não pode operar."
+                                  }
+                                },
+                                {
+                                  "title": "payer_unavailable",
+                                  "description": {
+                                    "en": "In case of a rejected payment, the payer is restricted and can not operate.",
+                                    "es": "En caso de pago rechazado, el pagador tiene una restricción y no puede operar.",
+                                    "pt": "Em caso de pagamento rejeitado, o pagador tem restrição e não pode operar."
+                                  }
+                                }
                               ]
                             },
                             "currency_id": {
@@ -5950,7 +6398,7 @@
                                             "es": "Cédula de Identidad, Uruguay.",
                                             "pt": "Cédula de Identidade, Uruguai."
                                           }
-                                        }                                        
+                                        }
                                       ]
                                     },
                                     "number": {
@@ -6215,7 +6663,7 @@
                                     "es": "El merchant debe tener su propio código de merchant para ventas en línea y acuerdos con cada método de pago deseado.",
                                     "pt": "O merchant deve ter seu próprio código de merchant para vendas online e acordos com cada método de pagamento desejado."
                                   }
-                                }                                
+                                }
                               ]
                             },
                             "merchant_account_id": {
@@ -6850,7 +7298,7 @@
               "es": "El pagador no tiene una cuenta.",
               "pt": "O pagador não possui uma conta."
             }
-          }          
+          }
         ]
       },
       "currency_id": {
@@ -6989,7 +7437,7 @@
               "es": "Certificado de Depósito Bancario.",
               "pt": "Certificado de Depósito Bancário."
             }
-          }          
+          }
         ]
       },
       "fee_details_type": {
@@ -7048,7 +7496,7 @@
               "es": "Descuento ofrecido por el vendedor mediante la absorción del costo.",
               "pt": "Desconto oferecido pelo vendedor por meio da absorção do custo."
             }
-          }          
+          }
         ]
       },
       "fee_payer": {
@@ -7075,7 +7523,7 @@
               "es": "El comprador cubre el costo.",
               "pt": "O comprador assume o custo."
             }
-          }          
+          }
         ]
       },
       "status": {
@@ -7292,7 +7740,7 @@
               "es": "El reembolso fue realizado a través del Programa de Protección al Comprador de Mercado Pago.",
               "pt": "O reembolso foi feito pelo Programa de Proteção ao Comprador do Mercado Pago."
             }
-          }          
+          }
         ]
       },
       "barcode_type": {
@@ -7326,7 +7774,7 @@
               "es": "Código de barras de densidad media.",
               "pt": "Código de barras de densidade média."
             }
-          }          
+          }
         ]
       }
     }
