@@ -467,22 +467,6 @@
                             "es": "The payment has been authorized but not captured yet.",
                             "pt": "The payment has been authorized but not captured yet."
                           }
-                        },
-                        {
-                          "title": "settled",
-                          "description": {
-                            "en": "The payment was either an incorrect charge or the seller does not have coverage. The amount of the charge was withdrawn/held from the seller’s account.",
-                            "es": "El pago correspondía a un cobro indebido o el vendedor no tiene cobertura. El monto del cobro fue retirado/retenido de la cuenta del vendedor.",
-                            "pt": "O pagamento correspondia a uma cobrança indevida ou o vendedor não tem cobertura. O valor da cobrança foi retirado/retido da conta do vendedor."
-                          }
-                        },
-                        {
-                          "title": "reimbursed",
-                          "description": {
-                            "en": "Payment was reimbursed because the seller has coverage or because the dispute was resolved. The money is in the seller’s account.",
-                            "es": "Pago reembolsado porque el vendedor tiene cobertura o porque se resolvió la disputa. El dinero está en la cuenta del vendedor.",
-                            "pt": "Pagamento reembolsado porque o vendedor tem cobertura ou porque a disputa foi resolvida. O dinheiro está na conta do vendedor."
-                          }
                         }
                       ]
                     },
@@ -860,22 +844,6 @@
                             "en": "The payment has been authorized but not captured yet.",
                             "es": "The payment has been authorized but not captured yet.",
                             "pt": "The payment has been authorized but not captured yet."
-                          }
-                        },
-                        {
-                          "title": "settled",
-                          "description": {
-                            "en": "The payment was either an incorrect charge or the seller does not have coverage. The amount of the charge was withdrawn/held from the seller’s account.",
-                            "es": "El pago correspondía a un cobro indebido o el vendedor no tiene cobertura. El monto del cobro fue retirado/retenido de la cuenta del vendedor.",
-                            "pt": "O pagamento correspondia a uma cobrança indevida ou o vendedor não tem cobertura. O valor da cobrança foi retirado/retido da conta do vendedor."
-                          }
-                        },
-                        {
-                          "title": "reimbursed",
-                          "description": {
-                            "en": "Payment was reimbursed because the seller has coverage or because the dispute was resolved. The money is in the seller’s account.",
-                            "es": "Pago reembolsado porque el vendedor tiene cobertura o porque se resolvió la disputa. El dinero está en la cuenta del vendedor.",
-                            "pt": "Pagamento reembolsado porque o vendedor tem cobertura ou porque a disputa foi resolvida. O dinheiro está na conta do vendedor."
                           }
                         }
                       ]
@@ -1370,22 +1338,6 @@
                             "en": "The payment has been authorized but not captured yet.",
                             "es": "The payment has been authorized but not captured yet.",
                             "pt": "The payment has been authorized but not captured yet."
-                          }
-                        },
-                        {
-                          "title": "settled",
-                          "description": {
-                            "en": "The payment was either an incorrect charge or the seller does not have coverage. The amount of the charge was withdrawn/held from the seller’s account.",
-                            "es": "El pago correspondía a un cobro indebido o el vendedor no tiene cobertura. El monto del cobro fue retirado/retenido de la cuenta del vendedor.",
-                            "pt": "O pagamento correspondia a uma cobrança indevida ou o vendedor não tem cobertura. O valor da cobrança foi retirado/retido da conta do vendedor."
-                          }
-                        },
-                        {
-                          "title": "reimbursed",
-                          "description": {
-                            "en": "Payment was reimbursed because the seller has coverage or because the dispute was resolved. The money is in the seller’s account.",
-                            "es": "Pago reembolsado porque el vendedor tiene cobertura o porque se resolvió la disputa. El dinero está en la cuenta del vendedor.",
-                            "pt": "Pagamento reembolsado porque o vendedor tem cobertura ou porque a disputa foi resolvida. O dinheiro está na conta do vendedor."
                           }
                         }
                       ]
