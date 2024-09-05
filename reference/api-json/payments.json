@@ -1053,7 +1053,7 @@
                           "title": "pending_challenge",
                           "description": {
                             "en": "In cases of credit card payments, there is a pending confirmation due to a challenge.",
-                            "es": "Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a cause de un challenge.",
+                            "es": "Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a causa de un challenge.",
                             "pt": "Nos casos de pagamentos com cartão de crédito, há uma confirmação pendente por devido a um challenge."
                           }
                         },
@@ -1109,7 +1109,7 @@
                           "title": "cc_rejected_blacklist",
                           "description": {
                             "en": "The card is in the denial list, being present in problems related to theft/complaints/fraud.",
-                            "es": "La tarjeta está inhabilitada, presente en problemas de robo/quejas/fraude.",
+                            "es": "La tarjeta está inhabilitada por estar presente en problemas de robo/quejas/fraude.",
                             "pt": "O cartão está desativado, presente em problemas de roubo/reclamações/fraude."
                           }
                         },
@@ -3117,7 +3117,7 @@
                         "title": "pending_challenge",
                         "description": {
                           "en": "In cases of credit card payments, there is a pending confirmation due to a challenge.",
-                          "es": "Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a cause de un challenge.",
+                          "es": "Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a causa de un challenge.",
                           "pt": "Nos casos de pagamentos com cartão de crédito, há uma confirmação pendente por devido a um challenge."
                         }
                       },
@@ -3237,7 +3237,7 @@
                         "title": "cc_rejected_blacklist",
                         "description": {
                           "en": "The card is in the denial list, being present in problems related to theft/complaints/fraud.",
-                          "es": "La tarjeta está inhabilitada, presente en problemas de robo/quejas/fraude.",
+                          "es": "La tarjeta está inhabilitada por estar presente en problemas de robo/quejas/fraude.",
                           "pt": "O cartão está desativado, presente em problemas de roubo/reclamações/fraude."
                         }
                       },
@@ -5990,7 +5990,7 @@
                                 "title": "pending_challenge",
                                 "description": {
                                   "en": "In cases of credit card payments, there is a pending confirmation due to a challenge.",
-                                  "es": "Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a cause de un challenge.",
+                                  "es": "Para los casos de pagos con tarjeta de crédito, hay una confirmación pendiente a causa de un challenge.",
                                   "pt": "Nos casos de pagamentos com cartão de crédito, há uma confirmação pendente por devido a um challenge."
                                 }
                               },
@@ -6110,7 +6110,7 @@
                                 "title": "cc_rejected_blacklist",
                                 "description": {
                                   "en": "The card is in the denial list, being present in problems related to theft/complaints/fraud.",
-                                  "es": "La tarjeta está inhabilitada, presente en problemas de robo/quejas/fraude.",
+                                  "es": "La tarjeta está inhabilitada por estar presente en problemas de robo/quejas/fraude.",
                                   "pt": "O cartão está desativado, presente em problemas de roubo/reclamações/fraude."
                                 }
                               },
