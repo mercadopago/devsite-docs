@@ -1190,58 +1190,61 @@
                         "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
                       },
                       "items":{
-                        "id":{
-                          "type":"string",
-                          "example":"123",
-                          "description":{
-                            "en":"Split identification.",
-                            "pt":"Identificador do split.",
-                            "es":"Identificador del split."
-                          }
-                        },
-                        "collector_id":{
-                          "type":"number",
-                          "example":448876418,
-                          "description":{
-                            "en":"It is the identification of the user who receives the money.",
-                            "pt":"É identificador do usuário que recebe o dinheiro.",
-                            "es":"Es el identificador del usuario que recibe el dinero."
-                          }
-                        },
-                        "type":{
-                          "type":"string",
-                          "description":{
-                            "pt":"Tipo de split realizado",
-                            "en":"Type of split made",
-                            "es":"Tipo de split realizado"
-                          },
-                          "enum": [
-                            {
-                              "title": "amount",
-                              "description": {
-                                "en": "The split will be performed by amount.",
-                                "es": "El criterio para el split será el valor.",
-                                "pt": "O critério para o split será o valor."
-                              }
-                            },
-                            {
-                              "title": "percentage",
-                              "description": {
-                                "en": "The split will be performed by percentage.",
-                                "es": "El criterio para el split será el porcentaje.",
-                                "pt": "O critério para o split será a porcentagem."
-                              }
+                        "type": "object",
+                        "properties": {
+                          "id":{
+                            "type":"string",
+                            "example":"123",
+                            "description":{
+                              "en":"Split identification.",
+                              "pt":"Identificador do split.",
+                              "es":"Identificador del split."
                             }
-                          ],
-                          "example": "amount"
-                        },
-                        "value":{
-                          "type":"string",
-                          "example":"50",
-                          "description":{
-                            "pt":"Valor do split.",
-                            "en":"Split value.",
-                            "es":"Valor del split."
+                          },
+                          "collector_id":{
+                            "type":"number",
+                            "example":448876418,
+                            "description":{
+                              "en":"It is the identification of the user who receives the money.",
+                              "pt":"É identificador do usuário que recebe o dinheiro.",
+                              "es":"Es el identificador del usuario que recibe el dinero."
+                            }
+                          },
+                          "type":{
+                            "type":"string",
+                            "description":{
+                              "pt":"Tipo de split realizado",
+                              "en":"Type of split made",
+                              "es":"Tipo de split realizado"
+                            },
+                            "enum": [
+                              {
+                                "title": "amount",
+                                "description": {
+                                  "en": "The split will be performed by amount.",
+                                  "es": "El criterio para el split será el valor.",
+                                  "pt": "O critério para o split será o valor."
+                                }
+                              },
+                              {
+                                "title": "percentage",
+                                "description": {
+                                  "en": "The split will be performed by percentage.",
+                                  "es": "El criterio para el split será el porcentaje.",
+                                  "pt": "O critério para o split será a porcentagem."
+                                }
+                              }
+                            ],
+                            "example": "amount"
+                          },
+                          "value":{
+                            "type":"string",
+                            "example":"50",
+                            "description":{
+                              "pt":"Valor do split.",
+                              "en":"Split value.",
+                              "es":"Valor del split."
+                            }
                           }
                         }
                       }
