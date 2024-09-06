@@ -2458,7 +2458,6 @@
                   "properties": {
                     "transactions": {
                       "type": "object",
-                      "required": true,
                       "description": {
                         "en": "Payment transaction that had its information updated.",
                         "pt": "Transação de pagamento que teve as suas informações atualizadas.",
@@ -2478,9 +2477,9 @@
                                 "type": "string",
                                 "example": "pay_01J49MMW3SSBK5PSV3DFR32959",
                                 "description": {
-                                  "en": "It's the \"transaction_id\". Identifier of the payment transaction that had its information updated.",
-                                  "pt": "É o \"transaction_id\". Identificador da transação de pagamento que teve informações atualizadas.",
-                                  "es": "Es el \"transaction_id\". Identificador de la transacción de pago que tuvo información actualizada."
+                                  "en": "It's the 'transaction_id'. Identifier of the payment transaction that had its information updated.",
+                                  "pt": "É o 'transaction_id'. Identificador da transação de pagamento que teve informações atualizadas.",
+                                  "es": "Es el 'transaction_id'. Identificador de la transacción de pago que tuvo información actualizada."
                                 }
                               },
                               "amount": {
