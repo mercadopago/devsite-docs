@@ -529,6 +529,145 @@
                                 }
                               ]
                             },
+                            "status_detail":{
+                              "type":"string",
+                              "example":"accredited",
+                              "description":{
+                                "en":"Details about payment status.",
+                                "pt":"Detalhes sobre o status do pagamento.",
+                                "es":"Detalles sobre el estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "accredited",
+                                  "description": {
+                                    "en": "Payment accredited.",
+                                    "es": "Pago agreditado.",
+                                    "pt": "Pagamento acreditado."
+                                  }
+                                },
+                                {
+                                  "title": "partially_refunded",
+                                  "description": {
+                                    "en": "The payment has been partially refunded.",
+                                    "es": "El pago fue parcialmente devuelto.",
+                                    "pt": "O pagamento foi parcialmente devolvido."
+                                  }
+                                },
+                                {
+                                  "title": "waiting_capture",
+                                  "description": {
+                                    "en": "In cases of status=action_required, integrator action is required to complete processing. This status_detail indicates that the capture of an authorized payment is needed.",
+                                    "es": "En los casos de status=action_required, es necesaria una acción del integrador para completar el procesamiento. Este status_detail indica que se aguarda la captura de un pago autorizado.",
+                                    "pt": "Em casos de status=action_required, a ação do integrador é necessária para concluir o processamento. Este status_detail indica que está aguardando a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "bad_filled_card_data",
+                                  "description": {
+                                    "en": "An error occurred in the processing due to sending incorrect card data.",
+                                    "es": "Se produjo un fallo en el procesamiento por haber enviado datos erróneos de la tarjeta.",
+                                    "pt": "Ocorreu um erro no processamento devido ao envio de dados incorretos do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "invalid_card_token",
+                                  "description": {
+                                    "en": "An error occurred in the processing due to sending an incorrect card token.",
+                                    "es": "Se produjo un fallo en el procesamiento por haber enviado un token de tarjeta inválido.",
+                                    "pt": "Ocorreu um erro no processamento devido ao envio de um token de cartão incorreto."
+                                  }
+                                },
+                                {
+                                  "title": "high_risk",
+                                  "description": {
+                                    "en": "The transaction was rejected due to fraud prevention.",
+                                    "es": "La transacción fue rechazada por prevención de fraude.",
+                                    "pt": "A transação foi rejeitada devido à prevenção de fraude."
+                                  }
+                                },
+                                {
+                                  "title": "rejected_by_issuer",
+                                  "description": {
+                                    "en": "The transaction failed because authorization was required.",
+                                    "es": "La transacción falló por ser necesaria una autorización.",
+                                    "pt": "A transação falhou porque é necessária uma autorização."
+                                  }
+                                },
+                                {
+                                  "title": "required_call_for_authorize",
+                                  "description": {
+                                    "en": "The transaction was rejected by the card issuer.",
+                                    "es": "La transacción fue rechazada por la entidad emisora de la tarjeta.",
+                                    "pt": "A transação foi rejeitada pela entidade emissora do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "max_attempts_exceeded",
+                                  "description": {
+                                    "en": "The transaction was rejected for exceeding the maximum number of attempts to complete it.",
+                                    "es": "La transacción fue rechazada por exceder el número máximo de intentos para realizarla.",
+                                    "pt": "A transação foi rejeitada por exceder o número máximo de tentativas para processá-la."
+                                  }
+                                },
+                                {
+                                  "title": "card_disabled",
+                                  "description": {
+                                    "en": "The card chosen for the transaction is disabled.",
+                                    "es": "La tarjeta elegida para la transacción está inhabilitada.",
+                                    "pt": "O cartão escolhido para a transação está desabilitado."
+                                  }
+                                },
+                                {
+                                  "title": "card_insufficient_amount",
+                                  "description": {
+                                    "en": "The card chosen for the transaction does not have enough founds.",
+                                    "es": "La tarjeta elegida para la transacción no dispone de fondo suficiente.",
+                                    "pt": "O cartão escolhido para a transação não tem fundos suficientes."
+                                  }
+                                },
+                                {
+                                  "title": "amount_limit_exceeded",
+                                  "description": {
+                                    "en": "The transaction amount exceeds the card limit.",
+                                    "es": "El monto de la transacción excede el límite de la tarjeta.",
+                                    "pt": "O valor da transação excede o limite do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "invalid_installments",
+                                  "description": {
+                                    "en": "There was an error during processing.",
+                                    "es": "Ocurrió un error durante el procesamiento.",
+                                    "pt": " Ocorreu um erro durante o processamento. "
+                                  }
+                                },
+                                {
+                                  "title": "processing_error",
+                                  "description": {
+                                    "en": "The installments amount selected when creating the transaction is invalid.",
+                                    "es": "La cantidad de cuotas/meses seleccionada al crear la transacción es inválida.",
+                                    "pt": "O número de parcelas selecionado na criação da transação é inválido."
+                                  }
+                                },
+                                {
+                                  "title": "pending_review_manual",
+                                  "description": {
+                                    "en": "The payment is pending manual review.",
+                                    "es": "El pago está está pendiente de revisión manual.",
+                                    "pt": "O pagamento está pendente de revisão manual."
+                                  }
+                                },
+                                {
+                                  "title": "in_process",
+                                  "description": {
+                                    "en": "The payment is being processed.",
+                                    "es": "El pago está está siendo procesado.",
+                                    "pt": "O pagamento está sendo processado."
+                                  }
+                                }
+                              ]
+                            },
                             "payment_method": {
                               "$ref": "#/components/schemas/payment_method"    
                             },
@@ -1077,6 +1216,169 @@
                                 }
                               ]
                             },
+                            "status_detail":{
+                              "type":"string",
+                              "example":"accredited",
+                              "description":{
+                                "en":"Details about payment status.",
+                                "pt":"Detalhes sobre o status do pagamento.",
+                                "es":"Detalles sobre el estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "accredited",
+                                  "description": {
+                                    "en": "Payment accredited.",
+                                    "es": "Pago agreditado.",
+                                    "pt": "Pagamento acreditado."
+                                  }
+                                },
+                                {
+                                  "title": "partially_refunded",
+                                  "description": {
+                                    "en": "The payment has been partially refunded.",
+                                    "es": "El pago fue parcialmente devuelto.",
+                                    "pt": "O pagamento foi parcialmente devolvido."
+                                  }
+                                },
+                                {
+                                  "title": "waiting_capture",
+                                  "description": {
+                                    "en": "In cases of status=action_required, integrator action is required to complete processing. This status_detail indicates that the capture of an authorized payment is needed.",
+                                    "es": "En los casos de status=action_required, es necesaria una acción del integrador para completar el procesamiento. Este status_detail indica que se aguarda la captura de un pago autorizado.",
+                                    "pt": "Em casos de status=action_required, a ação do integrador é necessária para concluir o processamento. Este status_detail indica que está aguardando a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "bad_filled_card_data",
+                                  "description": {
+                                    "en": "An error occurred in the processing due to sending incorrect card data.",
+                                    "es": "Se produjo un fallo en el procesamiento por haber enviado datos erróneos de la tarjeta.",
+                                    "pt": "Ocorreu um erro no processamento devido ao envio de dados incorretos do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "invalid_card_token",
+                                  "description": {
+                                    "en": "An error occurred in the processing due to sending an incorrect card token.",
+                                    "es": "Se produjo un fallo en el procesamiento por haber enviado un token de tarjeta inválido.",
+                                    "pt": "Ocorreu um erro no processamento devido ao envio de um token de cartão incorreto."
+                                  }
+                                },
+                                {
+                                  "title": "high_risk",
+                                  "description": {
+                                    "en": "The transaction was rejected due to fraud prevention.",
+                                    "es": "La transacción fue rechazada por prevención de fraude.",
+                                    "pt": "A transação foi rejeitada devido à prevenção de fraude."
+                                  }
+                                },
+                                {
+                                  "title": "rejected_by_issuer",
+                                  "description": {
+                                    "en": "The transaction failed because authorization was required.",
+                                    "es": "La transacción falló por ser necesaria una autorización.",
+                                    "pt": "A transação falhou porque é necessária uma autorização."
+                                  }
+                                },
+                                {
+                                  "title": "required_call_for_authorize",
+                                  "description": {
+                                    "en": "The transaction was rejected by the card issuer.",
+                                    "es": "La transacción fue rechazada por la entidad emisora de la tarjeta.",
+                                    "pt": "A transação foi rejeitada pela entidade emissora do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "max_attempts_exceeded",
+                                  "description": {
+                                    "en": "The transaction was rejected for exceeding the maximum number of attempts to complete it.",
+                                    "es": "La transacción fue rechazada por exceder el número máximo de intentos para realizarla.",
+                                    "pt": "A transação foi rejeitada por exceder o número máximo de tentativas para processá-la."
+                                  }
+                                },
+                                {
+                                  "title": "card_disabled",
+                                  "description": {
+                                    "en": "The card chosen for the transaction is disabled.",
+                                    "es": "La tarjeta elegida para la transacción está inhabilitada.",
+                                    "pt": "O cartão escolhido para a transação está desabilitado."
+                                  }
+                                },
+                                {
+                                  "title": "card_insufficient_amount",
+                                  "description": {
+                                    "en": "The card chosen for the transaction does not have enough founds.",
+                                    "es": "La tarjeta elegida para la transacción no dispone de fondo suficiente.",
+                                    "pt": "O cartão escolhido para a transação não tem fundos suficientes."
+                                  }
+                                },
+                                {
+                                  "title": "amount_limit_exceeded",
+                                  "description": {
+                                    "en": "The transaction amount exceeds the card limit.",
+                                    "es": "El monto de la transacción excede el límite de la tarjeta.",
+                                    "pt": "O valor da transação excede o limite do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "invalid_installments",
+                                  "description": {
+                                    "en": "There was an error during processing.",
+                                    "es": "Ocurrió un error durante el procesamiento.",
+                                    "pt": " Ocorreu um erro durante o processamento. "
+                                  }
+                                },
+                                {
+                                  "title": "processing_error",
+                                  "description": {
+                                    "en": "The installments amount selected when creating the transaction is invalid.",
+                                    "es": "La cantidad de cuotas/meses seleccionada al crear la transacción es inválida.",
+                                    "pt": "O número de parcelas selecionado na criação da transação é inválido."
+                                  }
+                                },
+                                {
+                                  "title": "pending_review_manual",
+                                  "description": {
+                                    "en": "The payment is pending manual review.",
+                                    "es": "El pago está está pendiente de revisión manual.",
+                                    "pt": "O pagamento está pendente de revisão manual."
+                                  }
+                                },
+                                {
+                                  "title": "in_process",
+                                  "description": {
+                                    "en": "When the status=processing, the payment is being processed. When status=charged_back, the chargeback is being process.",
+                                    "es": "Si status=processing, el pago está está siendo procesado. Si status=charged_back, el contracargo está siendo procesado.",
+                                    "pt": "Se status=processing, o pagamento está sendo processado. Se status=charged_back, o estorno está sendo processado."
+                                  }
+                                },
+                                {
+                                  "title": "cancelled_transaction",
+                                  "description": {
+                                    "en": "The transaction has been cancelled.",
+                                    "es": "La transacción fue cancelada.",
+                                    "pt": "A transação foi cancelada."
+                                  }
+                                },
+                                {
+                                  "title": "settled",
+                                  "description": {
+                                    "en": "If status=charged_back, an agreement was reached and the chargeback process has been completed.",
+                                    "es": "Si status=charged_back, se alcanzó un acuerdo y el proceso de contracargo ha finalizado.",
+                                    "pt": "Se status=charged_back, um acordo foi alcançado e o processo de estorno foi concluído."
+                                  }
+                                },
+                                {
+                                  "title": "reimbursed",
+                                  "description": {
+                                    "en": "The transaction amount has been returned.",
+                                    "es": "El monto de la transacción fue devuelto.",
+                                    "pt": "O valor da transação foi devolvido."
+                                  }
+                                }
+                              ]
+                            },
                             "payment_method": {
                               "$ref": "#/components/schemas/payment_method"    
                             },
@@ -1554,6 +1856,25 @@
                                     "en": "The order has been cancelled and cannot be processed.",
                                     "es": "La order fue cancelada y no puede ser procesada.",
                                     "pt": "A order foi cancelada e não pode ser processada."
+                                  }
+                                }
+                              ]
+                            },
+                            "status_detail":{
+                              "type":"string",
+                              "example":"cancelled_transaction",
+                              "description":{
+                                "en":"Details about payment status.",
+                                "pt":"Detalhes sobre o status do pagamento.",
+                                "es":"Detalles sobre el estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "cancelled_transaction",
+                                  "description": {
+                                    "en": "The transaction has been cancelled.",
+                                    "es": "La transacción fue cancelada.",
+                                    "pt": "A transação foi cancelada."
                                   }
                                 }
                               ]
@@ -2735,6 +3056,145 @@
                                     "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
                                     "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
                                     "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                                  }
+                                }
+                              ]
+                            },
+                            "status_detail":{
+                              "type":"string",
+                              "example":"accredited",
+                              "description":{
+                                "en":"Details about payment status.",
+                                "pt":"Detalhes sobre o status do pagamento.",
+                                "es":"Detalles sobre el estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "accredited",
+                                  "description": {
+                                    "en": "Payment accredited.",
+                                    "es": "Pago agreditado.",
+                                    "pt": "Pagamento acreditado."
+                                  }
+                                },
+                                {
+                                  "title": "partially_refunded",
+                                  "description": {
+                                    "en": "The payment has been partially refunded.",
+                                    "es": "El pago fue parcialmente devuelto.",
+                                    "pt": "O pagamento foi parcialmente devolvido."
+                                  }
+                                },
+                                {
+                                  "title": "waiting_capture",
+                                  "description": {
+                                    "en": "In cases of status=action_required, integrator action is required to complete processing. This status_detail indicates that the capture of an authorized payment is needed.",
+                                    "es": "En los casos de status=action_required, es necesaria una acción del integrador para completar el procesamiento. Este status_detail indica que se aguarda la captura de un pago autorizado.",
+                                    "pt": "Em casos de status=action_required, a ação do integrador é necessária para concluir o processamento. Este status_detail indica que está aguardando a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "bad_filled_card_data",
+                                  "description": {
+                                    "en": "An error occurred in the processing due to sending incorrect card data.",
+                                    "es": "Se produjo un fallo en el procesamiento por haber enviado datos erróneos de la tarjeta.",
+                                    "pt": "Ocorreu um erro no processamento devido ao envio de dados incorretos do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "invalid_card_token",
+                                  "description": {
+                                    "en": "An error occurred in the processing due to sending an incorrect card token.",
+                                    "es": "Se produjo un fallo en el procesamiento por haber enviado un token de tarjeta inválido.",
+                                    "pt": "Ocorreu um erro no processamento devido ao envio de um token de cartão incorreto."
+                                  }
+                                },
+                                {
+                                  "title": "high_risk",
+                                  "description": {
+                                    "en": "The transaction was rejected due to fraud prevention.",
+                                    "es": "La transacción fue rechazada por prevención de fraude.",
+                                    "pt": "A transação foi rejeitada devido à prevenção de fraude."
+                                  }
+                                },
+                                {
+                                  "title": "rejected_by_issuer",
+                                  "description": {
+                                    "en": "The transaction failed because authorization was required.",
+                                    "es": "La transacción falló por ser necesaria una autorización.",
+                                    "pt": "A transação falhou porque é necessária uma autorização."
+                                  }
+                                },
+                                {
+                                  "title": "required_call_for_authorize",
+                                  "description": {
+                                    "en": "The transaction was rejected by the card issuer.",
+                                    "es": "La transacción fue rechazada por la entidad emisora de la tarjeta.",
+                                    "pt": "A transação foi rejeitada pela entidade emissora do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "max_attempts_exceeded",
+                                  "description": {
+                                    "en": "The transaction was rejected for exceeding the maximum number of attempts to complete it.",
+                                    "es": "La transacción fue rechazada por exceder el número máximo de intentos para realizarla.",
+                                    "pt": "A transação foi rejeitada por exceder o número máximo de tentativas para processá-la."
+                                  }
+                                },
+                                {
+                                  "title": "card_disabled",
+                                  "description": {
+                                    "en": "The card chosen for the transaction is disabled.",
+                                    "es": "La tarjeta elegida para la transacción está inhabilitada.",
+                                    "pt": "O cartão escolhido para a transação está desabilitado."
+                                  }
+                                },
+                                {
+                                  "title": "card_insufficient_amount",
+                                  "description": {
+                                    "en": "The card chosen for the transaction does not have enough founds.",
+                                    "es": "La tarjeta elegida para la transacción no dispone de fondo suficiente.",
+                                    "pt": "O cartão escolhido para a transação não tem fundos suficientes."
+                                  }
+                                },
+                                {
+                                  "title": "amount_limit_exceeded",
+                                  "description": {
+                                    "en": "The transaction amount exceeds the card limit.",
+                                    "es": "El monto de la transacción excede el límite de la tarjeta.",
+                                    "pt": "O valor da transação excede o limite do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "invalid_installments",
+                                  "description": {
+                                    "en": "There was an error during processing.",
+                                    "es": "Ocurrió un error durante el procesamiento.",
+                                    "pt": " Ocorreu um erro durante o processamento. "
+                                  }
+                                },
+                                {
+                                  "title": "processing_error",
+                                  "description": {
+                                    "en": "The installments amount selected when creating the transaction is invalid.",
+                                    "es": "La cantidad de cuotas/meses seleccionada al crear la transacción es inválida.",
+                                    "pt": "O número de parcelas selecionado na criação da transação é inválido."
+                                  }
+                                },
+                                {
+                                  "title": "pending_review_manual",
+                                  "description": {
+                                    "en": "The payment is pending manual review.",
+                                    "es": "El pago está está pendiente de revisión manual.",
+                                    "pt": "O pagamento está pendente de revisão manual."
+                                  }
+                                },
+                                {
+                                  "title": "in_process",
+                                  "description": {
+                                    "en": "When the status=processing, the payment is being processed.",
+                                    "es": "Si status=processing, el pago está está siendo procesado.",
+                                    "pt": "Se status=processing, o pagamento está sendo processado."
                                   }
                                 }
                               ]
