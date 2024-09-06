@@ -2042,73 +2042,6 @@
                                   "es": "Es el \"transaction_id\". Identificador de la transacción de pago añadida, generado automáticamente por Mercado Pago."
                                 }
                               },
-                              "status": {
-                                "type": "string",
-                                "example": "approved",
-                                "description": {
-                                  "pt": "Status da transação de pagamento.",
-                                  "en": "Status of the payment transaction.",
-                                  "es": "Estado de la transacción de pago."
-                                },
-                                "enum": [
-                                  {
-                                    "title": "processed",
-                                    "description": {
-                                      "en": "The payment has been succesfully processed.",
-                                      "es": "El pago fue procesado exitosamente.",
-                                      "pt": "O pagamento foi processado com sucesso."
-                                    }
-                                  },
-                                  {
-                                    "title": "action_required",
-                                    "description": {
-                                      "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
-                                      "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
-                                      "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
-                                    }
-                                  },
-                                  {
-                                    "title": "cancelled",
-                                    "description": {
-                                      "en": "The payment has been cancelled and cannot be processed.",
-                                      "es": "El pago fue cancelado y no puede ser procesado.",
-                                      "pt": "O pagamento foi cancelado e não pode ser processado."
-                                    }
-                                  },
-                                  {
-                                    "title": "failed",
-                                    "description": {
-                                      "en": "An error occurred in the processing of the payment. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
-                                      "es": "Se produjo un fallo en el procesamiento del pago. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                                      "pt": "Ocorreu um erro no processamento do pagamento. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
-                                    }
-                                  },
-                                  {
-                                    "title": "processing",
-                                    "description": {
-                                      "en": "The payment is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                                      "es": "El pago está siendo procesado y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                                      "pt": "O pagamento está sendo processado e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
-                                    }
-                                  },
-                                  {
-                                    "title": "refunded",
-                                    "description": {
-                                      "en": "In case of a refund, the entire money involved in the order was returned.",
-                                      "es": "En caso de un reembolso, la totalidad del dinero implicado en la order fue devuelto.",
-                                      "pt": "Em caso de reembolso, todo o dinheiro envolvido a order foi devolvido."
-                                    }
-                                  },
-                                  {
-                                    "title": "charged_back",
-                                    "description": {
-                                      "en": "A chargeback was filed and the payment is being contested.",
-                                      "es": "Se presentó un contracargo y el pago está en proceso de contestación.",
-                                      "pt": "Um estorno foi apresentado e o pagamento está em processo de contestação."
-                                    }
-                                  }
-                                ]
-                              },
                               "amount": {
                                 "$ref": "#/components/schemas/amount"
                               },
@@ -2130,9 +2063,9 @@
           },
           "400": {
             "description": {
-              "en": "Error. Invalid ID supplied",
-              "pt": "Erro. ID inválido.",
-              "es": "Error. ID inválido."
+              "en": "Error. Invalid value for property.",
+              "pt": "Erro. Valor inválido para a propriedade.",
+              "es": "Error. Valor no válido para la propiedad. "
             },
             "content":{
               "application/json":{
@@ -2145,9 +2078,9 @@
                         {
                           "title": "400",
                           "description": {
-                            "en": "Descripción del error y workarround",
-                            "es": "Descripción del error y workarround",
-                            "pt": "Descripción del error y workarround"
+                            "en": "An invalid payload was sent, or there is an invalid value for some property. Check the message returned in the error code to find out what the problem was and try again.",
+                            "es": "Se envió un payload inválido, o hay algún valor inválido para alguna propiedad. Chequea el mensaje devuelto en el código de error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Foi enviado um payload inválido ou há um valor inválido para alguma propriedade. Verifique a mensagem retornada no código de erro para descobrir qual era o problema e tente novamente."
                           }
                         }
                       ]
@@ -2585,9 +2518,9 @@
                         {
                           "title": "400",
                           "description": {
-                            "en": "Descripción del error y workarround",
-                            "es": "Descripción del error y workarround",
-                            "pt": "Descripción del error y workarround"
+                            "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
+                            "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
+                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
                           }
                         }
                       ]
