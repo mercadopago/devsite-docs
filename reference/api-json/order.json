@@ -2018,23 +2018,21 @@
                   "properties": {
                     "transactions": {
                       "type":"object",
-                      "required": true,
                       "description": {
                         "es": "Contains information about the transactions associated with the order. It can contain as many transactions as necessary. For example, if you want to create a payment with two cards, you can duplicate the \"payments\" node, dividing the total value of the transaction and indicating a different payment method for each one.",
                         "pt": "Contém informações sobre as transações associadas à order. Pode conter quantas transações forem necessárias. Por exemplo, se deseja criar um pagamento com dois cartões, você pode duplicar o nó \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
                         "en": "Contiene información sobre las transacciones asociadas a la order. Puede contener cuantas transacciones sean necesarias. Por ejemplo, en caso de querer crear un pago con dos tarjetas, puedes duplicar el nodo \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno." 
                       },
                       "properties":{
-                        "payments":[
-                          {
-                            "type": "object",
-                            "description": {
-                              "en": "Payment transactions added to the order. If there is more than one transaction, this node will provide the information for all transactions.",
-                              "pt": "Transações de pagamento adicionadas à order. Caso exista mais de uma transação, este nó trará as informaçÕes de todas as transações.",
-                              "es": "Transacciones de pago añadidas a la order. Si existe más de una transacción, este nodo traerá la información de todas las transacciones."
-                            },
-                            "properties": {
-                              "id": {
+                        "payments":{
+                          "type": "object",
+                          "description": {
+                            "en": "Payment transactions added to the order. If there is more than one transaction, this node will provide the information for all transactions.",
+                            "pt": "Transações de pagamento adicionadas à order. Caso exista mais de uma transação, este nó trará as informaçÕes de todas as transações.",
+                            "es": "Transacciones de pago añadidas a la order. Si existe más de una transacción, este nodo traerá la información de todas las transacciones."
+                          },
+                          "properties": {
+                            "id": {
                                 "type": "string",
                                 "example": "pay_01J49MMW3SSBK5PSV3DFR32959",
                                 "description": {
@@ -2042,19 +2040,18 @@
                                   "pt": "É o 'transaction_id'. Identificador da transação de pagamento adicionada, gerado automaticamente pelo Mercado Pago.",
                                   "es": "Es el 'transaction_id'. Identificador de la transacción de pago añadida, generado automáticamente por Mercado Pago."
                                 }
-                              },
-                              "amount": {
+                            },
+                            "amount": {
                                 "$ref": "#/components/schemas/amount"
-                              },
-                              "currency": {
+                            },
+                            "currency": {
                                 "$ref": "#/components/schemas/currency"
-                              },
-                              "payment_method": {
+                            },
+                            "payment_method": {
                                 "$ref": "#/components/schemas/payment_method"
-                              }
                             }
                           }
-                        ]
+                        }
                       }
                     }
                   }
@@ -2464,16 +2461,15 @@
                         "es": "Transacción de pago que tuvo su información actualizada." 
                       },
                       "properties": {
-                        "payments": [
-                          {
-                            "type": "object",
-                            "description": {
-                              "en": "Payment transactions added to the order. If there is more than one transaction, this node will provide the information for all transactions.",
-                              "pt": "Transações de pagamento adicionadas à order. Caso exista mais de uma transação, este nó trará as informaçÕes de todas as transações.",
-                              "es": "Transacciones de pago añadidas a la order. Si existe más de una transacción, este nodo traerá la información de todas las transacciones."
-                            },
-                            "properties": {
-                              "id": {
+                        "payments": {
+                          "type": "object",
+                          "description": {
+                            "en": "Payment transactions added to the order. If there is more than one transaction, this node will provide the information for all transactions.",
+                            "pt": "Transações de pagamento adicionadas à order. Caso exista mais de uma transação, este nó trará as informaçÕes de todas as transações.",
+                            "es": "Transacciones de pago añadidas a la order. Si existe más de una transacción, este nodo traerá la información de todas las transacciones."
+                          },
+                          "properties": {
+                            "id": {
                                 "type": "string",
                                 "example": "pay_01J49MMW3SSBK5PSV3DFR32959",
                                 "description": {
@@ -2481,19 +2477,18 @@
                                   "pt": "É o 'transaction_id'. Identificador da transação de pagamento que teve informações atualizadas.",
                                   "es": "Es el 'transaction_id'. Identificador de la transacción de pago que tuvo información actualizada."
                                 }
-                              },
-                              "amount": {
-                                "$ref": "#/components/schemas/amount"
-                              },
-                              "currency": {
-                                "$ref": "#/components/schemas/currency"
-                              },
-                              "payment_method": {
-                                "$ref": "#/components/schemas/payment_method"
-                              }
+                            },
+                            "amount": {
+                              "$ref": "#/components/schemas/amount"
+                            },
+                            "currency": {
+                              "$ref": "#/components/schemas/currency"
+                            },
+                            "payment_method": {
+                              "$ref": "#/components/schemas/payment_method"
                             }
                           }
-                        ]
+                        }
                       }
                     }
                   }
