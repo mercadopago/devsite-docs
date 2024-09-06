@@ -2023,8 +2023,8 @@
                         "pt": "Contém informações sobre as transações associadas à order. Pode conter quantas transações forem necessárias. Por exemplo, se deseja criar um pagamento com dois cartões, você pode duplicar o nó \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
                         "en": "Contiene información sobre las transacciones asociadas a la order. Puede contener cuantas transacciones sean necesarias. Por ejemplo, en caso de querer crear un pago con dos tarjetas, puedes duplicar el nodo \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno." 
                       },
-                      "properties":{
-                        "payments":{
+                      "properties": {
+                        "payments": {
                           "type": "object",
                           "description": {
                             "en": "Payment transactions added to the order. If there is more than one transaction, this node will provide the information for all transactions.",
