@@ -7,9 +7,9 @@
           "checkout-api"
         ],
         "description": {
-          "en": "This endpoint allows to create orders in **One-shot** (processing the payment in a single stage) or **Builder** (processing payment in stages that can be configured and executed incrementally) mode for payment and cashout transactions.",
-          "pt": "Este endpoint permite a criação de uma order no modo **One-shot** (processando o pagamento em uma única etapa) ou **Builder** (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout.",
-          "es": "Este endpoint permite crear una order en modo **One-shot** (procesando la transacción en una sola etapa) o **Builder** (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout."
+          "en": "This endpoint allows to create orders in \"One-shot\" (processing the payment in a single stage) or \"Builder\" (processing payment in stages that can be configured and executed incrementally) mode for payment and cashout transactions",
+          "pt": "Este endpoint permite a criação de uma order no modo \"One-shot\" (processando o pagamento em uma única etapa) ou \"Builder\" (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout",
+          "es": "Este endpoint permite crear una order en modo \"One-shot\" (procesando la transacción en una sola etapa) o \"Builder\" (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout"
         },
         "parameters": [
           {
@@ -86,34 +86,32 @@
                       "en":"Contiene información sobre las transacciones asociadas a la order. Puede contener cuantas transacciones sean necesarias. Por ejemplo, en caso de querer crear un pago con dos tarjetas, puedes duplicar el nodo \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno." 
                     },
                     "properties": {
-                      "payments": [
-                        {
-                          "type": "object",
-                          "description": {
-                            "en": "Contains information about the payment order. if you want to create a payment with two cards, you can duplicate this node, dividing the total value of the transaction and indicating a different payment method for each one.",
-                            "pt": "Contém informações sobre a order do pagamento. Caso deseje criar um pagamento com dois cartões, você pode duplicar o nó, dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
-                            "es": "Contiene información sobre la order de pago. En caso de querer crear un pago con dos tarjetas, puedes duplicar este nodo, dividiendo el monto del pago y señalando el medio de pago en cada uno. "
+                      "payments": {
+                        "type": "object",
+                        "description": {
+                          "en": "Contains information about the payment order. if you want to create a payment with two cards, you can duplicate this node, dividing the total value of the transaction and indicating a different payment method for each one.",
+                          "pt": "Contém informações sobre a order do pagamento. Caso deseje criar um pagamento com dois cartões, você pode duplicar o nó, dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
+                          "es": "Contiene información sobre la order de pago. En caso de querer crear un pago con dos tarjetas, puedes duplicar este nodo, dividiendo el monto del pago y señalando el medio de pago en cada uno. "
+                        },
+                        "properties": {
+                          "amount": {
+                            "type": "string",
+                            "required": true,
+                            "description": {
+                              "en": "Payment amount. If only one payment method is used, it must be equivalent to the amount entered in the \"total_amount\" field. If two are used, it is the sum between them that must be equivalent to that amount.",
+                              "pt": "Valor do pagamento. Caso seja utilizado apenas um meio de pagamento, este deverá ser equivalente ao valor informado no campo \"total_amount\". Se forem utilizados dois, é a soma entre eles que deve ser equivalente a esse valor.",
+                              "es": "Monto del pago. Si se utiliza un sólo método de pago, debe ser equivalente al monto ingresado en el campo \"total_amount\". Si se utilizan dos, es la suma entre ambos la que debe ser equivalente a ese monto."
+                            },
+                            "example": "24.90"
                           },
-                          "properties": {
-                            "amount": {
-                              "type": "string",
-                              "required": true,
-                              "description": {
-                                "en": "Payment amount. If only one payment method is used, it must be equivalent to the amount entered in the \"total_amount\" field. If two are used, it is the sum between them that must be equivalent to that amount.",
-                                "pt": "Valor do pagamento. Caso seja utilizado apenas um meio de pagamento, este deverá ser equivalente ao valor informado no campo \"total_amount\". Se forem utilizados dois, é a soma entre eles que deve ser equivalente a esse valor.",
-                                "es": "Monto del pago. Si se utiliza un sólo método de pago, debe ser equivalente al monto ingresado en el campo \"total_amount\". Si se utilizan dos, es la suma entre ambos la que debe ser equivalente a ese monto."
-                              },
-                              "example": "24.90"
-                            },
-                            "currency": {
-                              "$ref": "#/components/schemas/currency"
-                            },
-                            "payment_method": {
-                              "$ref": "#/components/schemas/payment_method"    
-                            }
+                          "currency": {
+                            "$ref": "#/components/schemas/currency"
+                          },
+                          "payment_method": {
+                            "$ref": "#/components/schemas/payment_method"    
                           }
                         }
-                      ]
+                      }
                     }
                   },
                   "payer":{
@@ -468,93 +466,91 @@
                         "es":"Contiene información sobre las transaccións asociadas a una order."
                       },
                       "properties":{
-                        "payments":[
-                          {
-                            "type":"object",
-                            "description":{
-                              "en":"Contains information about the payment associated with the order.",
-                              "pt":"Contém informações sobre o pagamento associado à order.",
-                              "es":"Contiene información sobre el pago asociado a una order."
-                            },
-                            "properties":{
-                              "id":{
-                                "type":"string",
-                                "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
-                                "description":{
-                                  "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                  "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                  "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
-                                }
-                              },
-                              "amount": {
-                                "type": "string",
-                                "example": "24.90",
-                                "description": {
-                                  "pt": "Valor do pagamento.",
-                                  "en": "Payment amount.",
-                                  "es": "Monto del pago."
-                                }
-                              },
-                              "status":{
-                                "type":"string",
-                                "example":"processed",
-                                "description":{
-                                  "en":"Payment status.",
-                                  "pt":"Status do pagamento.",
-                                  "es":"Estado del pago."
-                                },
-                                "enum": [
-                                  {
-                                    "title": "created",
-                                    "description": {
-                                      "en": "The order has been created successfully.",
-                                      "es": "La order fue creada exitosamente.",
-                                      "pt": "A order foi criada com sucesso."
-                                    }
-                                  },
-                                  {
-                                    "title": "processed",
-                                    "description": {
-                                      "en": "All transactions have been succesfully processed.",
-                                      "es": "Todas las transacciones fueron procesadas exitosamente.",
-                                      "pt": "Todas as transações foram processadas com sucesso."
-                                    }
-                                  },
-                                  {
-                                    "title": "action_required",
-                                    "description": {
-                                      "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
-                                      "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
-                                      "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
-                                    }
-                                  },
-                                  {
-                                    "title": "failed",
-                                    "description": {
-                                      "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
-                                      "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                                      "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
-                                    }
-                                  },
-                                  {
-                                    "title": "processing",
-                                    "description": {
-                                      "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                                      "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                                      "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
-                                    }
-                                  }
-                                ]
-                              },
-                              "payment_method": {
-                                "$ref": "#/components/schemas/payment_method"    
-                              },
-                              "currency":{
-                                "$ref": "#/components/schemas/currency"
+                        "payments":{
+                          "type":"object",
+                          "description":{
+                            "en":"Contains information about the payment associated with the order.",
+                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "es":"Contiene información sobre el pago asociado a una order."
+                          },
+                          "properties":{
+                            "id":{
+                              "type":"string",
+                              "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
+                              "description":{
+                                "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                               }
+                            },
+                            "amount": {
+                              "type": "string",
+                              "example": "24.90",
+                              "description": {
+                                "pt": "Valor do pagamento.",
+                                "en": "Payment amount.",
+                                "es": "Monto del pago."
+                              }
+                            },
+                            "status":{
+                              "type":"string",
+                              "example":"processed",
+                              "description":{
+                                "en":"Payment status.",
+                                "pt":"Status do pagamento.",
+                                "es":"Estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "created",
+                                  "description": {
+                                    "en": "The order has been created successfully.",
+                                    "es": "La order fue creada exitosamente.",
+                                    "pt": "A order foi criada com sucesso."
+                                  }
+                                },
+                                {
+                                  "title": "processed",
+                                  "description": {
+                                    "en": "All transactions have been succesfully processed.",
+                                    "es": "Todas las transacciones fueron procesadas exitosamente.",
+                                    "pt": "Todas as transações foram processadas com sucesso."
+                                  }
+                                },
+                                {
+                                  "title": "action_required",
+                                  "description": {
+                                    "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                                    "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                                    "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "failed",
+                                  "description": {
+                                    "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                                    "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                                    "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                  }
+                                },
+                                {
+                                  "title": "processing",
+                                  "description": {
+                                    "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                                    "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                                    "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                                  }
+                                }
+                              ]
+                            },
+                            "payment_method": {
+                              "$ref": "#/components/schemas/payment_method"    
+                            },
+                            "currency":{
+                              "$ref": "#/components/schemas/currency"
                             }
                           }
-                        ]
+                        }
                       }
                     },
                     "currency":{
@@ -634,59 +630,62 @@
                         "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
                         "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
                       },
-                      "properties":{
-                        "id":{
-                          "type":"string",
-                          "example":"123",
-                          "description":{
-                            "en":"Split identification.",
-                            "pt":"Identificador do split.",
-                            "es":"Identificador del split."
-                          }
-                        },
-                        "collector_id":{
-                          "type":"number",
-                          "example":448876418,
-                          "description":{
-                            "en":"It is the identification of the user who receives the money.",
-                            "pt":"É identificador do usuário que recebe o dinheiro.",
-                            "es":"Es el identificador del usuario que recibe el dinero."
-                          }
-                        },
-                        "type":{
-                          "type":"string",
-                          "description":{
-                            "pt":"Tipo de split realizado",
-                            "en":"Type of split made",
-                            "es":"Tipo de split realizado"
-                          },
-                          "enum": [
-                            {
-                              "title": "amount",
-                              "description": {
-                                "en": "The split will be performed by amount.",
-                                "es": "El criterio para el split será el valor.",
-                                "pt": "O critério para o split será o valor."
-                              }
-                            },
-                            {
-                              "title": "percentage",
-                              "description": {
-                                "en": "The split will be performed by percentage.",
-                                "es": "El criterio para el split será el porcentaje.",
-                                "pt": "O critério para o split será a porcentagem."
-                              }
+                      "items":{
+                        "type": "object",
+                        "properties": {
+                          "id":{
+                            "type":"string",
+                            "example":"123",
+                            "description":{
+                              "en":"Split identification.",
+                              "pt":"Identificador do split.",
+                              "es":"Identificador del split."
                             }
-                          ],
-                          "example": "amount"
-                        },
-                        "value":{
-                          "type":"string",
-                          "example":"50",
-                          "description":{
-                            "pt":"Valor do split.",
-                            "en":"Split value.",
-                            "es":"Valor del split."
+                          },
+                          "collector_id":{
+                            "type":"number",
+                            "example":448876418,
+                            "description":{
+                              "en":"It is the identification of the user who receives the money.",
+                              "pt":"É identificador do usuário que recebe o dinheiro.",
+                              "es":"Es el identificador del usuario que recibe el dinero."
+                            }
+                          },
+                          "type":{
+                            "type":"string",
+                            "description":{
+                              "pt":"Tipo de split realizado",
+                              "en":"Type of split made",
+                              "es":"Tipo de split realizado"
+                            },
+                            "enum": [
+                              {
+                                "title": "amount",
+                                "description": {
+                                  "en": "The split will be performed by amount.",
+                                  "es": "El criterio para el split será el valor.",
+                                  "pt": "O critério para o split será o valor."
+                                }
+                              },
+                              {
+                                "title": "percentage",
+                                "description": {
+                                  "en": "The split will be performed by percentage.",
+                                  "es": "El criterio para el split será el porcentaje.",
+                                  "pt": "O critério para o split será a porcentagem."
+                                }
+                              }
+                            ],
+                            "example": "amount"
+                          },
+                          "value":{
+                            "type":"string",
+                            "example":"50",
+                            "description":{
+                              "pt":"Valor do split.",
+                              "en":"Split value.",
+                              "es":"Valor del split."
+                            }
                           }
                         }
                       }
@@ -810,9 +809,9 @@
           "checkout-api"
         ],
         "description": {
-          "en": "Consult all order information using the ID obtained in the response to its creation.",
-          "pt": "Consulta todas as informações de uma order utilizando o ID obtido na resposta à sua criação.",
-          "es": "Consulta toda la información sobre una order utilizando el ID obtenido en la respuesta a su creación."
+          "en": "Consult all order information using the ID obtained in the response to its creation",
+          "pt": "Consulta todas as informações de uma order utilizando o ID obtido na resposta à sua criação",
+          "es": "Consulta toda la información sobre una order utilizando el ID obtenido en la respuesta a su creación"
         },
         "parameters": [
           {
@@ -1013,109 +1012,107 @@
                         "es":"Contiene información sobre las transaccións asociadas a una order."
                       },
                       "properties":{
-                        "payments":[
-                          {
-                            "type":"object",
-                            "description":{
-                              "en":"Contains information about the payment associated with the order.",
-                              "pt":"Contém informações sobre o pagamento associado à order.",
-                              "es":"Contiene información sobre el pago asociado a una order."
-                            },
-                            "properties":{
-                              "id":{
-                                "type":"string",
-                                "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
-                                "description":{
-                                  "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                  "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                  "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
-                                }
-                              },
-                              "amount": {
-                                "type": "string",
-                                "example": "24.90",
-                                "description": {
-                                  "pt": "Valor do pagamento.",
-                                  "en": "Payment amount.",
-                                  "es": "Monto del pago."
-                                }
-                              },
-                              "status":{
-                                "type":"string",
-                                "example":"processed",
-                                "description":{
-                                  "en":"Payment status.",
-                                  "pt":"Status do pagamento.",
-                                  "es":"Estado del pago."
-                                },
-                                "enum": [
-                                  {
-                                    "title": "created",
-                                    "description": {
-                                      "en": "The order has been created successfully.",
-                                      "es": "La order fue creada exitosamente.",
-                                      "pt": "A order foi criada com sucesso."
-                                    }
-                                  },
-                                  {
-                                  "title": "processed",
-                                  "description": {
-                                    "en": "The payment has been succesfully processed.",
-                                    "es": "El pago fue procesado exitosamente.",
-                                    "pt": "O pagamento foi processado com sucesso."
-                                  }
-                                  },
-                                  {
-                                    "title": "action_required",
-                                    "description": {
-                                      "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
-                                      "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
-                                      "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
-                                    }
-                                  },
-                                  {
-                                    "title": "cancelled",
-                                    "description": {
-                                      "en": "The payment has been cancelled and cannot be processed.",
-                                      "es": "El pago fue cancelado y no puede ser procesado.",
-                                      "pt": "O pagamento foi cancelado e não pode ser processado."
-                                    }
-                                  },
-                                  {
-                                    "title": "failed",
-                                    "description": {
-                                      "en": "An error occurred in the processing of the payment. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
-                                      "es": "Se produjo un fallo en el procesamiento del pago. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                                      "pt": "Ocorreu um erro no processamento do pagamento. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
-                                    }
-                                  },
-                                  {
-                                    "title": "processing",
-                                    "description": {
-                                      "en": "The payment is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                                      "es": "El pago está siendo procesado y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                                      "pt": "O pagamento está sendo processado e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
-                                    }
-                                  },
-                                  {
-                                    "title": "charged_back",
-                                    "description": {
-                                      "en": "A chargeback was filed and the payment is being contested.",
-                                      "es": "Se presentó un contracargo y el pago está en proceso de contestación.",
-                                      "pt": "Um estorno foi apresentado e o pagamento está em processo de contestação."
-                                    }
-                                  }
-                                ]
-                              },
-                              "payment_method": {
-                                "$ref": "#/components/schemas/payment_method"    
-                              },
-                              "currency":{
-                                "$ref": "#/components/schemas/currency"
+                        "payments":{
+                          "type":"object",
+                          "description":{
+                            "en":"Contains information about the payment associated with the order.",
+                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "es":"Contiene información sobre el pago asociado a una order."
+                          },
+                          "properties":{
+                            "id":{
+                              "type":"string",
+                              "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
+                              "description":{
+                                "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                               }
+                            },
+                            "amount": {
+                              "type": "string",
+                              "example": "24.90",
+                              "description": {
+                                "pt": "Valor do pagamento.",
+                                "en": "Payment amount.",
+                                "es": "Monto del pago."
+                              }
+                            },
+                            "status":{
+                              "type":"string",
+                              "example":"processed",
+                              "description":{
+                                "en":"Payment status.",
+                                "pt":"Status do pagamento.",
+                                "es":"Estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "created",
+                                  "description": {
+                                    "en": "The order has been created successfully.",
+                                    "es": "La order fue creada exitosamente.",
+                                    "pt": "A order foi criada com sucesso."
+                                  }
+                                },
+                                {
+                                "title": "processed",
+                                "description": {
+                                  "en": "The payment has been succesfully processed.",
+                                  "es": "El pago fue procesado exitosamente.",
+                                  "pt": "O pagamento foi processado com sucesso."
+                                }
+                                },
+                                {
+                                  "title": "action_required",
+                                  "description": {
+                                    "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                                    "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                                    "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "cancelled",
+                                  "description": {
+                                    "en": "The payment has been cancelled and cannot be processed.",
+                                    "es": "El pago fue cancelado y no puede ser procesado.",
+                                    "pt": "O pagamento foi cancelado e não pode ser processado."
+                                  }
+                                },
+                                {
+                                  "title": "failed",
+                                  "description": {
+                                    "en": "An error occurred in the processing of the payment. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                                    "es": "Se produjo un fallo en el procesamiento del pago. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                                    "pt": "Ocorreu um erro no processamento do pagamento. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                  }
+                                },
+                                {
+                                  "title": "processing",
+                                  "description": {
+                                    "en": "The payment is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                                    "es": "El pago está siendo procesado y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                                    "pt": "O pagamento está sendo processado e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                                  }
+                                },
+                                {
+                                  "title": "charged_back",
+                                  "description": {
+                                    "en": "A chargeback was filed and the payment is being contested.",
+                                    "es": "Se presentó un contracargo y el pago está en proceso de contestación.",
+                                    "pt": "Um estorno foi apresentado e o pagamento está em processo de contestação."
+                                  }
+                                }
+                              ]
+                            },
+                            "payment_method": {
+                              "$ref": "#/components/schemas/payment_method"    
+                            },
+                            "currency":{
+                              "$ref": "#/components/schemas/currency"
                             }
                           }
-                        ]
+                        }
                       }
                     },
                     "currency":{
@@ -1195,59 +1192,62 @@
                         "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
                         "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
                       },
-                      "properties":{
-                        "id":{
-                          "type":"string",
-                          "example":"123",
-                          "description":{
-                            "en":"Split identification.",
-                            "pt":"Identificador do split.",
-                            "es":"Identificador del split."
-                          }
-                        },
-                        "collector_id":{
-                          "type":"number",
-                          "example":448876418,
-                          "description":{
-                            "en":"It is the identification of the user who receives the money.",
-                            "pt":"É identificador do usuário que recebe o dinheiro.",
-                            "es":"Es el identificador del usuario que recibe el dinero."
-                          }
-                        },
-                        "type":{
-                          "type":"string",
-                          "description":{
-                            "pt":"Tipo de split realizado",
-                            "en":"Type of split made",
-                            "es":"Tipo de split realizado"
-                          },
-                          "enum": [
-                            {
-                              "title": "amount",
-                              "description": {
-                                "en": "The split will be performed by amount.",
-                                "es": "El criterio para el split será el valor.",
-                                "pt": "O critério para o split será o valor."
-                              }
-                            },
-                            {
-                              "title": "percentage",
-                              "description": {
-                                "en": "The split will be performed by percentage.",
-                                "es": "El criterio para el split será el porcentaje.",
-                                "pt": "O critério para o split será a porcentagem."
-                              }
+                      "items":{
+                        "type": "object",
+                        "properties": {
+                          "id":{
+                            "type":"string",
+                            "example":"123",
+                            "description":{
+                              "en":"Split identification.",
+                              "pt":"Identificador do split.",
+                              "es":"Identificador del split."
                             }
-                          ],
-                          "example": "amount"
-                        },
-                        "value":{
-                          "type":"string",
-                          "example":"50",
-                          "description":{
-                            "pt":"Valor do split.",
-                            "en":"Split value.",
-                            "es":"Valor del split."
+                          },
+                          "collector_id":{
+                            "type":"number",
+                            "example":448876418,
+                            "description":{
+                              "en":"It is the identification of the user who receives the money.",
+                              "pt":"É identificador do usuário que recebe o dinheiro.",
+                              "es":"Es el identificador del usuario que recibe el dinero."
+                            }
+                          },
+                          "type":{
+                            "type":"string",
+                            "description":{
+                              "pt":"Tipo de split realizado",
+                              "en":"Type of split made",
+                              "es":"Tipo de split realizado"
+                            },
+                            "enum": [
+                              {
+                                "title": "amount",
+                                "description": {
+                                  "en": "The split will be performed by amount.",
+                                  "es": "El criterio para el split será el valor.",
+                                  "pt": "O critério para o split será o valor."
+                                }
+                              },
+                              {
+                                "title": "percentage",
+                                "description": {
+                                  "en": "The split will be performed by percentage.",
+                                  "es": "El criterio para el split será el porcentaje.",
+                                  "pt": "O critério para o split será a porcentagem."
+                                }
+                              }
+                            ],
+                            "example": "amount"
+                          },
+                          "value":{
+                            "type":"string",
+                            "example":"50",
+                            "description":{
+                              "pt":"Valor do split.",
+                              "en":"Split value.",
+                              "es":"Valor del split."
+                            }
                           }
                         }
                       }
@@ -1400,9 +1400,9 @@
           "checkout-api"
         ],
         "description":{
-          "en":"Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"action_required\" can be canceled.",
-          "pt":"Cancela uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" pode ser cancelada.",
-          "es":"Cancela una orden y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"action_required\"."
+          "en":"Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"action_required\" can be canceled",
+          "pt":"Cancela uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" pode ser cancelada",
+          "es":"Cancela una orden y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"action_required\""
         },
         "parameters":[
           {
@@ -1555,61 +1555,59 @@
                         "es":"Contiene información sobre las transaccións asociadas a una order."
                       },
                       "properties":{
-                        "payments":[
-                          {
-                            "type":"object",
-                            "description":{
-                              "en":"Contains information about the payment associated with the order.",
-                              "pt":"Contém informações sobre o pagamento associado à order.",
-                              "es":"Contiene información sobre el pago asociado a una order."
-                            },
-                            "properties":{
-                              "id":{
-                                "type":"string",
-                                "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
-                                "description":{
-                                  "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                  "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                  "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
-                                }
-                              },
-                              "amount": {
-                                "type": "string",
-                                "example": "24.90",
-                                "description": {
-                                  "pt": "Valor do pagamento.",
-                                  "en": "Payment amount.",
-                                  "es": "Monto del pago."
-                                }
-                              },
-                              "status":{
-                                "type":"string",
-                                "example":"cancelled",
-                                "description":{
-                                  "en":"Payment status.",
-                                  "pt":"Status do pagamento.",
-                                  "es":"Estado del pago."
-                                },
-                                "enum": [
-                                  {
-                                    "title": "cancelled",
-                                    "description": {
-                                      "en": "The order has been cancelled and cannot be processed.",
-                                      "es": "La order fue cancelada y no puede ser procesada.",
-                                      "pt": "A order foi cancelada e não pode ser processada."
-                                    }
-                                  }
-                                ]
-                              },
-                              "payment_method": {
-                                "$ref": "#/components/schemas/payment_method"    
-                              },
-                              "currency":{
-                                "$ref": "#/components/schemas/currency"
+                        "payments": {
+                          "type":"object",
+                          "description":{
+                            "en":"Contains information about the payment associated with the order.",
+                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "es":"Contiene información sobre el pago asociado a una order."
+                          },
+                          "properties":{
+                            "id":{
+                              "type":"string",
+                              "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
+                              "description":{
+                                "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                               }
+                            },
+                            "amount": {
+                              "type": "string",
+                              "example": "24.90",
+                              "description": {
+                                "pt": "Valor do pagamento.",
+                                "en": "Payment amount.",
+                                "es": "Monto del pago."
+                              }
+                            },
+                            "status":{
+                              "type":"string",
+                              "example":"cancelled",
+                              "description":{
+                                "en":"Payment status.",
+                                "pt":"Status do pagamento.",
+                                "es":"Estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "cancelled",
+                                  "description": {
+                                    "en": "The order has been cancelled and cannot be processed.",
+                                    "es": "La order fue cancelada y no puede ser procesada.",
+                                    "pt": "A order foi cancelada e não pode ser processada."
+                                  }
+                                }
+                              ]
+                            },
+                            "payment_method": {
+                              "$ref": "#/components/schemas/payment_method"    
+                            },
+                            "currency":{
+                              "$ref": "#/components/schemas/currency"
                             }
                           }
-                        ]
+                        }
                       }
                     },
                     "currency":{
@@ -1689,59 +1687,62 @@
                         "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
                         "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
                       },
-                      "properties":{
-                        "id":{
-                          "type":"string",
-                          "example":"123",
-                          "description":{
-                            "en":"Split identification.",
-                            "pt":"Identificador do split.",
-                            "es":"Identificador del split."
-                          }
-                        },
-                        "collector_id":{
-                          "type":"number",
-                          "example":448876418,
-                          "description":{
-                            "en":"It is the identification of the user who receives the money.",
-                            "pt":"É identificador do usuário que recebe o dinheiro.",
-                            "es":"Es el identificador del usuario que recibe el dinero."
-                          }
-                        },
-                        "type":{
-                          "type":"string",
-                          "description":{
-                            "pt":"Tipo de split realizado",
-                            "en":"Type of split made",
-                            "es":"Tipo de split realizado"
-                          },
-                          "enum": [
-                            {
-                              "title": "amount",
-                              "description": {
-                                "en": "The split will be performed by amount.",
-                                "es": "El criterio para el split será el valor.",
-                                "pt": "O critério para o split será o valor."
-                              }
-                            },
-                            {
-                              "title": "percentage",
-                              "description": {
-                                "en": "The split will be performed by percentage.",
-                                "es": "El criterio para el split será el porcentaje.",
-                                "pt": "O critério para o split será a porcentagem."
-                              }
+                      "items":{
+                        "type": "object",
+                        "properties":{
+                          "id":{
+                            "type":"string",
+                            "example":"123",
+                            "description":{
+                              "en":"Split identification.",
+                              "pt":"Identificador do split.",
+                              "es":"Identificador del split."
                             }
-                          ],
-                          "example": "amount"
-                        },
-                        "value":{
-                          "type":"string",
-                          "example":"50",
-                          "description":{
-                            "pt":"Valor do split.",
-                            "en":"Split value.",
-                            "es":"Valor del split."
+                          },
+                          "collector_id":{
+                            "type":"number",
+                            "example":448876418,
+                            "description":{
+                              "en":"It is the identification of the user who receives the money.",
+                              "pt":"É identificador do usuário que recebe o dinheiro.",
+                              "es":"Es el identificador del usuario que recibe el dinero."
+                            }
+                          },
+                          "type":{
+                            "type":"string",
+                            "description":{
+                              "pt":"Tipo de split realizado",
+                              "en":"Type of split made",
+                              "es":"Tipo de split realizado"
+                            },
+                            "enum": [
+                              {
+                                "title": "amount",
+                                "description": {
+                                  "en": "The split will be performed by amount.",
+                                  "es": "El criterio para el split será el valor.",
+                                  "pt": "O critério para o split será o valor."
+                                }
+                              },
+                              {
+                                "title": "percentage",
+                                "description": {
+                                  "en": "The split will be performed by percentage.",
+                                  "es": "El criterio para el split será el porcentaje.",
+                                  "pt": "O critério para o split será a porcentagem."
+                                }
+                              }
+                            ],
+                            "example": "amount"
+                          },
+                          "value":{
+                            "type":"string",
+                            "example":"50",
+                            "description":{
+                              "pt":"Valor do split.",
+                              "en":"Split value.",
+                              "es":"Valor del split."
+                            }
                           }
                         }
                       }
@@ -1893,7 +1894,7 @@
           "checkout-api"
         ],
         "description": {
-          "en": "This endpoint allows payment transactions to be added to the order. This operation can only be carried out in Builde (processing payment in stages that can be configured and executed incrementally) mode, with these 'processing_mode' fields with this 'manual' value.",
+          "en": "This endpoint allows payment transactions to be added to the order. This operation can only be carried out in Builde (processing payment in stages that can be configured and executed incrementally) mode, with these 'processing_mode' fields with this 'manual' value",
           "pt": "Esse endpoint permite adicionar transações de pagamento à order. Essa operação só pode ser realizada no modo Builder (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental), com o parâmetro 'processing_mode' com valor 'manual'",
           "es": "Este endpoint permite añadir transacciones de pago a la order. Esta operación solo puede realizarse en el modo Builder (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental), con el campo 'processing_mode' con valor 'manual'"
         },
@@ -2630,11 +2631,10 @@
         "tags":[
           "checkout-api"
         ],
-        "summary":"Process Order",
-        "description": {
-          "en":"Performs the processing of an order and its transactions using the reference ID obtained in the response to its creation.",
-          "pt":"Executa o processamento de uma order e e suas transações utilizando o ID de referência obtido na resposta à sua criação.",
-          "es":"Realiza el procesamiento de una order y sus transacciones asociadas utilizando el ID de referencia obtenido en la respuesta a su creación."
+        "description":{
+          "en":"Performs the processing of an order and its transactions using the reference ID obtained in the response to its creation",
+          "pt":"Executa o processamento de uma order e e suas transações utilizando o ID de referência obtido na resposta à sua criação",
+          "es":"Realiza el procesamiento de una order y sus transacciones asociadas utilizando el ID de referencia obtenido en la respuesta a su creación"
         },
         "parameters":[
           {
@@ -2667,6 +2667,7 @@
           },
           {
             "name":"X-Idempotency-Key",
+            "in":"header",
             "required":true,
             "schema": {
               "type":"string",
@@ -2781,86 +2782,84 @@
                         "pt":"Contém informações sobre as transações associadas a uma order.",
                         "es":"Contiene información sobre las transaccións asociadas a una order."
                       },
-                      "properties": {
-                        "payments":[
-                          {
-                            "type":"array",
-                            "description": {
-                              "en":"Contains information about the payment associated with the order.",
-                              "pt":"Contém informações sobre o pagamento associado à order.",
-                              "es":"Contiene información sobre el pago asociado a una order."
-                            },
-                            "properties": {
-                              "id": {
-                                "type":"string",
-                                "example":"pay_01J49MMW3SSBK5PSV3DFR32959",
-                                "description": {
-                                  "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                  "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                  "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
-                                }
-                              },
-                              "status": {
-                                "type":"string",
-                                "example":"processed",
-                                "description": {
-                                  "pt":"Status do pagamento.",
-                                  "en":"Payment status.",
-                                  "es":"Estado del pago."
-                                },
-                                "enum": [
-                                  {
-                                    "title": "processed",
-                                    "description": {
-                                      "en": "All transactions have been succesfully processed.",
-                                      "es": "Todas las transacciones fueron procesadas exitosamente.",
-                                      "pt": "Todas as transações foram processadas com sucesso."
-                                    }
-                                  },
-                                  {
-                                    "title": "action_required",
-                                    "description": {
-                                      "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
-                                      "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
-                                      "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
-                                    }
-                                  },
-                                  {
-                                    "title": "failed",
-                                    "description": {
-                                      "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
-                                      "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                                      "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
-                                    }
-                                  },
-                                  {
-                                    "title": "processing",
-                                    "description": {
-                                      "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                                      "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                                      "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
-                                    }
-                                  }
-                                ]
-                              },
-                              "amount": {
-                                "type":"string",
-                                "example":"24.90",
-                                "description": {
-                                  "pt": "Valor do pagamento.",
-                                  "en": "Payment amount.",
-                                  "es": "Monto del pago."
-                                }
-                              },
-                              "payment_method": {
-                                "$ref": "#/components/schemas/payment_method"
-                              },
-                              "currency": {
-                                "$ref": "#/components/schemas/currency"
+                      "properties":{
+                        "payments": {
+                          "type":"object",
+                          "description":{
+                            "en":"Contains information about the payment associated with the order.",
+                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "es":"Contiene información sobre el pago asociado a una order."
+                          },
+                          "properties":{
+                            "id":{
+                              "type":"string",
+                              "example":"pay_01J49MMW3SSBK5PSV3DFR32959",
+                              "description":{
+                                "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                               }
+                            },
+                            "status":{
+                              "type":"string",
+                              "example":"processed",
+                              "description":{
+                                "pt":"Status do pagamento.",
+                                "en":"Payment status.",
+                                "es":"Estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "processed",
+                                  "description": {
+                                    "en": "All transactions have been succesfully processed.",
+                                    "es": "Todas las transacciones fueron procesadas exitosamente.",
+                                    "pt": "Todas as transações foram processadas com sucesso."
+                                  }
+                                },
+                                {
+                                  "title": "action_required",
+                                  "description": {
+                                    "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                                    "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                                    "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "failed",
+                                  "description": {
+                                    "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                                    "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                                    "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                  }
+                                },
+                                {
+                                  "title": "processing",
+                                  "description": {
+                                    "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                                    "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                                    "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                                  }
+                                }
+                              ]
+                            },
+                            "amount":{
+                              "type":"string",
+                              "example":"24.90",
+                              "description":{
+                                "pt": "Valor do pagamento.",
+                                "en": "Payment amount.",
+                                "es": "Monto del pago."
+                              }
+                            },
+                            "payment_method":{
+                              "$ref": "#/components/schemas/payment_method"
+                            },
+                            "currency": {
+                              "$ref": "#/components/schemas/currency"
                             }
                           }
-                        ]
+                        }
                       }
                     },
                     "payer": {
@@ -2975,84 +2974,85 @@
                         }
                       }
                     },
-                  "splits": {
-                    "type":"array",
-                    "description": {
-                      "en":"List of payment splits to be made from the total amount.",
-                      "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
-                      "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
-                    },
-                    "properties": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type":"string",
-                          "example":"123",
-                          "description": {
-                            "en":"Split identification.",
-                            "pt":"Identificador do split.",
-                            "es":"Identificador del split."
-                          }
-                        },
-                        "collector_id": {
-                          "type":"number",
-                          "example":448876418,
-                          "description": {
-                            "en":"It is the identification of the user who receives the money.",
-                            "pt":"É identificador do usuário que recebe o dinheiro.",
-                            "es":"Es el identificador del usuario que recibe el dinero."
-                          }
-                        },
-                        "type": {
-                          "type":"string",
-                          "description": {
-                            "pt":"Tipo de split realizado",
-                            "en":"Type of split made",
-                            "es":"Tipo de split realizado"
-                          },
-                          "enum": [
-                            {
-                              "title": "amount",
-                              "description": {
-                                "en": "The split will be performed by amount.",
-                                "es": "El criterio para el split será el valor.",
-                                "pt": "O critério para o split será o valor."
-                              }
-                            },
-                            {
-                              "title": "percentage",
-                              "description": {
-                                "en": "The split will be performed by percentage.",
-                                "es": "El criterio para el split será el porcentaje.",
-                                "pt": "O critério para o split será a porcentagem."
-                              }
+                    "splits":{
+                      "type":"array",
+                      "description":{
+                        "en":"List of payment splits to be made from the total amount.",
+                        "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
+                        "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties":{
+                          "id":{
+                            "type":"string",
+                            "example":"123",
+                            "description":{
+                              "en":"Split identification.",
+                              "pt":"Identificador do split.",
+                              "es":"Identificador del split."
                             }
-                          ],
-                          "example": "amount"
-                        },
-                        "value": {
-                          "type":"string",
-                          "example":"50",
-                          "description": {
-                            "pt":"Valor do split.",
-                            "en":"Split value.",
-                            "es":"Valor del split."
+                          },
+                          "collector_id":{
+                            "type":"number",
+                            "example":448876418,
+                            "description":{
+                              "en":"It is the identification of the user who receives the money.",
+                              "pt":"É identificador do usuário que recebe o dinheiro.",
+                              "es":"Es el identificador del usuario que recibe el dinero."
+                            }
+                          },
+                          "type":{
+                            "type":"string",
+                            "description":{
+                              "pt":"Tipo de split realizado",
+                              "en":"Type of split made",
+                              "es":"Tipo de split realizado"
+                            },
+                            "enum": [
+                              {
+                                "title": "amount",
+                                "description": {
+                                  "en": "The split will be performed by amount.",
+                                  "es": "El criterio para el split será el valor.",
+                                  "pt": "O critério para o split será o valor."
+                                }
+                              },
+                              {
+                                "title": "percentage",
+                                "description": {
+                                  "en": "The split will be performed by percentage.",
+                                  "es": "El criterio para el split será el porcentaje.",
+                                  "pt": "O critério para o split será a porcentagem."
+                                }
+                              }
+                            ],
+                            "example": "amount"
+                          },
+                          "value":{
+                            "type":"string",
+                            "example":"50",
+                            "description":{
+                              "pt":"Valor do split.",
+                              "en":"Split value.",
+                              "es":"Valor del split."
+                            }
                           }
                         }
                       }
-                    }
-                  },
-                  "shipment": {
-                    "$ref": "#/components/schemas/shipment"
-                  },
-                  "expiration_time": {
-                    "type":"string",
-                    "description": {
-                      "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
-                      "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
-                      "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
                     },
-                    "example": "P3Y6M4DT12H30M5S"
+                    "shipment":{
+                      "$ref": "#/components/schemas/shipment"
+                    },
+                    "expiration_time":{
+                      "type":"string",
+                      "description": {
+                        "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
+                        "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
+                        "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
+                      },
+                      "example": "P3Y6M4DT12H30M5S"
+                    }
                   }
                 }
               }
@@ -3173,7 +3173,6 @@
                 }
               }
             }
-          }
           }
         },
         "title": {
@@ -3384,13 +3383,13 @@
               "number": {
                 "type":"string",
                 "required":true,
-                "description": {
+                "example": "95749019047",
+                "description":{
                   "en":"Payer's identification document number.",
                   "pt":"Número do documento de identificação",
                   "es":"Número de documento de identificación."
                 }
-              },
-              "example": "95749019047"
+              }
             }
           },
           "phone": {
@@ -3620,204 +3619,202 @@
           }
         }
       },
-      "items":{
+      "items": {
         "type":"array",
         "description":{
           "en":"Information about the list of items to be paid.",
           "pt":"Informações sobre a lista de itens a serem pagos.",
           "es":"Información sobre la lista de ítems a pagar."
         },
-        "properties":{
-          "item":{
-            "type":"object",
-            "properties":{
-              "title":{
-                "type":"string",
-                "required":true,
-                "description":{
-                  "en":"Item name. The character limit is 150.",
-                  "pt":"Nome do item. O limite de caracteres é 150.",
-                  "es":"Nombre del ítem. El límite de caracteres es 150"
-                },
-                "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram"   
-              },
-              "unit_price":{
-                "type":"string",
-                "required":true,
-                "description":{
-                  "en":"Unit price of the purchased item. It must be sent with two decimals.",
-                  "es":"Precio unitario del ítem comprado. Debe ser enviado con dos números decimales.",
-                  "pt":"Preço unitário do item comprado. Deve ser enviado com duas casas decimais."
-                },
-                "example":"12.90"
-              },
-              "quantity":{
-                "type":"Integer",
-                "required":true,
-                "description":{
-                  "en":"Purchased items quantity.",
-                  "pt":"Quantidade de itens comprados.",
-                  "es":"Cantidad de ítems comprados."
-                },
-                "example":4
-              },
-              "code":{
-                "type":"string",
-                "description":{
-                  "en":"Item's identification code.",
-                  "pt":"Código identificador do item.",
-                  "es":"Código identificador del ítem."
-                },
-                "example":"1234"
-              },
+        "items": {
+          "type":"object",
+          "properties":{
+            "title":{
+              "type":"string",
+              "required":true,
+              "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
               "description":{
-                "type":"string",
-                "description":{
-                  "en":"Purchased item description. The character limit is 100.",
-                  "pt":"Descrição do item comprado. O limite de caracteres é 100.",
-                  "es":"Descripción del ítem comprado. El límite de caracteres es 100."
+                "en":"Item name. The character limit is 150.",
+                "pt":"Nome do item. O limite de caracteres é 150.",
+                "es":"Nombre del ítem. El límite de caracteres es 150"
+              }   
+            },
+            "unit_price":{
+              "type":"string",
+              "required":true,
+              "example":"12.90",
+              "description":{
+                "en":"Unit price of the purchased item. It must be sent with two decimals.",
+                "es":"Precio unitario del ítem comprado. Debe ser enviado con dos números decimales.",
+                "pt":"Preço unitário do item comprado. Deve ser enviado com duas casas decimais."
+              }
+            },
+            "quantity":{
+              "type":"Integer",
+              "required":true,
+              "example":4,
+              "description":{
+                "en":"Purchased items quantity.",
+                "pt":"Quantidade de itens comprados.",
+                "es":"Cantidad de ítems comprados."
+              } 
+            },
+            "code":{
+              "type":"string",
+              "example":"1234",
+              "description":{
+                "en":"Item's identification code.",
+                "pt":"Código identificador do item.",
+                "es":"Código identificador del ítem."
+              }
+            },
+            "description":{
+              "type":"string",
+              "example":"Point product for card payments via Bluetooth.",
+              "description":{
+                "en":"Purchased item description. The character limit is 100.",
+                "pt":"Descrição do item comprado. O limite de caracteres é 100.",
+                "es":"Descripción del ítem comprado. El límite de caracteres es 100."
+              } 
+            },
+            "type":{
+              "type":"string",
+              "example":"electronics",
+              "description":{
+                "en": "Type of item being purchased.",
+                "pt": "Tipo de item sendo comprado.",
+                "es": "Tipo de ítem que se está comprando."
+              }
+            },
+            "picture_url":{
+              "type":"string",
+              "example":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png",
+              "description":{
+                "en":"Image URL corresponding to the item.",
+                "pt":"URL da imagem correspondente ao item.",
+                "es":"URL de la imagen correspondiente al ítem."
+              }
+            },
+            "warranty":{
+              "type":"boolean",
+              "example":true,
+              "description":{
+                "en":"Indicates if the product has warranty or not. It must be \"true\" if it does, \"false\" if it doesn't.",
+                "pt":"Indica se o produto tem garantia ou não. Deve ser \"true\" se tiver, \"false\" se não.",
+                "es":"Indica si el producto tiene garantía o no. Debe ser \"true\" si tiene, \"false\" si no."
+              }
+            },
+            "category_descriptor":{
+              "type":"object",
+              "description":{
+                "en":"Information about the item category.",
+                "pt":"Informações sobre a categoria do item.",
+                "es":"Información sobre la categoría del ítem."
+              },
+              "properties":{
+                "event_date":{
+                  "type":"string",
+                  "example":"2023-12-31T09:37:52.000-04:00",
+                  "description":{
+                    "en":"Event Date. You must use the standard ISO 8601 ( \"yyyy-MM-ddTHH:mm:ss.sssZ\") format to input the date and time of the event. For example, to schedule an event for December 31, 2023, at 9:37:52 AM in the UTC-4 timezone, you should enter \"2023-12-31T09:37:52.000-04:00\".",
+                    "pt":"Data do Evento. Utilize o formato padrão ISO 8601 ( \"yyyy-MM-ddTHH:mm:ss.sssZ\") para inserir a data e o horário do evento. Por exemplo, para marcar um evento para o dia 31 de dezembro de 2023, às 9:37:52 AM, no fuso horário UTC-4, você deverá inserir - \"2023-12-31T09:37:52.000-04:00\".",
+                    "es":"Fecha del Evento. Debes utilizar el formato estándar ISO 8601  para introducir la fecha y hora del evento. Por ejemplo, para programar un evento para el 31 de diciembre de 2023 a las 9:37:52 AM en la zona horaria UTC-4, deberás ingresar \"2023-12-31T09:37:52.000-04:00\"."
+                  }
                 },
-                "example":"Point product for card payments via Bluetooth."
-              },
-              "type":{
-                "type":"string",
-                "description":{
-                  "en": "Type of item being purchased.",
-                  "pt": "Tipo de item sendo comprado.",
-                  "es": "Tipo de ítem que se está comprando."
-                },
-                "example":"electronics"
-              },
-              "picture_url":{
-                "type":"string",
-                "example":"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png",
-                "description":{
-                  "en":"Image URL corresponding to the item.",
-                  "pt":"URL da imagem correspondente ao item.",
-                  "es":"URL de la imagen correspondiente al ítem."
-                }
-              },
-              "warranty":{
-                "type":"boolean",
-                "example":true,
-                "description":{
-                  "en":"Indicates if the product has warranty or not. It must be \"true\" if it does, \"false\" if it doesn't.",
-                  "pt":"Indica se o produto tem garantia ou não. Deve ser \"true\" se tiver, \"false\" se não.",
-                  "es":"Indica si el producto tiene garantía o no. Debe ser \"true\" si tiene, \"false\" si no."
-                }
-              },
-              "category_descriptor":{
-                "type":"object",
-                "description":{
-                  "en":"Information about the item category.",
-                  "pt":"Informações sobre a categoria do item.",
-                  "es":"Información sobre la categoría del ítem."
-                },
-                "properties":{
-                  "event_date":{
-                    "type":"string",
-                    "example":"2023-12-31T09:37:52.000-04:00",
-                    "description":{
-                      "en":"Event Date. You must use the standard ISO 8601 ( \"yyyy-MM-ddTHH:mm:ss.sssZ\") format to input the date and time of the event. For example, to schedule an event for December 31, 2023, at 9:37:52 AM in the UTC-4 timezone, you should enter \"2023-12-31T09:37:52.000-04:00\".",
-                      "pt":"Data do Evento. Utilize o formato padrão ISO 8601 ( \"yyyy-MM-ddTHH:mm:ss.sssZ\") para inserir a data e o horário do evento. Por exemplo, para marcar um evento para o dia 31 de dezembro de 2023, às 9:37:52 AM, no fuso horário UTC-4, você deverá inserir - \"2023-12-31T09:37:52.000-04:00\".",
-                      "es":"Fecha del Evento. Debes utilizar el formato estándar ISO 8601  para introducir la fecha y hora del evento. Por ejemplo, para programar un evento para el 31 de diciembre de 2023 a las 9:37:52 AM en la zona horaria UTC-4, deberás ingresar \"2023-12-31T09:37:52.000-04:00\"."
-                    }
+                "passenger":{
+                  "type":"object",
+                  "description":{
+                    "en":"Information about the passenger.",
+                    "pt":"Informações sobre o passageiro.",
+                    "es":"Información sobre el pasajero."
                   },
-                  "passenger":{
-                    "type":"object",
-                    "description":{
-                      "en":"Information about the passenger.",
-                      "pt":"Informações sobre o passageiro.",
-                      "es":"Información sobre el pasajero."
+                  "properties":{
+                    "first_name":{
+                      "type":"string",
+                      "description":{
+                        "en":"Passenger's first name.",
+                        "pt":"Primeiro nome do passageiro",
+                        "es":"Nombre del pasajero"
+                      },
+                      "example": "John"
                     },
-                    "properties":{
-                      "first_name":{
-                        "type":"string",
-                        "description":{
-                          "en":"Passenger's first name.",
-                          "pt":"Primeiro nome do passageiro",
-                          "es":"Nombre del pasajero"
-                        },
-                        "example": "John"
+                    "last_name":{
+                      "type":"string",
+                      "description":{
+                        "en":"Passenger's last name.",
+                        "pt":"Sobrenome do passageiro",
+                        "es":"Apellido del pasajero"
                       },
-                      "last_name":{
-                        "type":"string",
-                        "description":{
-                          "en":"Passenger's last name.",
-                          "pt":"Sobrenome do passageiro",
-                          "es":"Apellido del pasajero"
-                        },
-                        "example": "Doe"
+                      "example": "Doe"
+                    },
+                    "identification_type":{
+                      "type":"string",
+                      "description":{
+                        "en":"Passenger's identification type. It must have a minimum length of 1 character, and a maximum length of 10.",
+                        "pt":"Tipo de identificação do passageiro. Deve ter comprimento mínimo de 1 caractere e máximo de 10.",
+                        "es":"Tipo de identificación del pasajero. Debe tener una extensión mínima de 1 caracter, y una extensión máxima de 10."
                       },
-                      "identification_type":{
-                        "type":"string",
-                        "description":{
-                          "en":"Passenger's identification type. It must have a minimum length of 1 character, and a maximum length of 10.",
-                          "pt":"Tipo de identificação do passageiro. Deve ter comprimento mínimo de 1 caractere e máximo de 10.",
-                          "es":"Tipo de identificación del pasajero. Debe tener una extensión mínima de 1 caracter, y una extensión máxima de 10."
-                        },
-                        "example": "CPF"
+                      "example": "CPF"
+                    },
+                    "identification_number":{
+                      "type":"string",
+                      "description":{
+                        "en":"Passenger's identification number.",
+                        "pt":"Número de identificação do passageiro",
+                        "es":"Número de identificación del pasajero"
                       },
-                      "identification_number":{
-                        "type":"string",
-                        "description":{
-                          "en":"Passenger's identification number.",
-                          "pt":"Número de identificação do passageiro",
-                          "es":"Número de identificación del pasajero"
-                        },
-                        "example": "95749019047"
+                      "example": "95749019047"
+                    }
+                  }
+                },
+                "route":{
+                  "type":"object",
+                  "description":{
+                    "en":"Information about de route.",
+                    "pt":"Informações de rota.",
+                    "es":"Información sobre la ruta."
+                  },
+                  "properties":{
+                    "departure":{
+                      "type":"string",
+                      "description":{
+                        "en":"Departure city.",
+                        "pt":"Cidade de partida.",
+                        "es":"Ciudad de partida."
+                      },
+                      "example": "SP"
+                    },
+                    "destination":{
+                      "type":"string",
+                      "description":{
+                        "en":"Destination city.",
+                        "pt":"Cidade de destino",
+                        "es":"Ciudad de destino"
+                      },
+                      "example": "RJ"
+                    },
+                    "departure_date_time":{
+                      "type":"string",
+                      "description":{
+                        "en":"Departure date and time. The valid format is \"yyyy-MM-ddTHH:mm:ss.sssZ\". For example, \"2023-12-31T09:37:52.000-04:00\".",
+                        "pt":"Data e hora de partida. O formato válido é \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por exemplo, \"2023-12-31T09:37:52.000-04:00\".",
+                        "es":"Fecha y hora de salida. El formato válido es \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por ejemplo, \"2023-12-31T09:37:52.000-04:00\"."
                       }
-                    }
-                  },
-                  "route":{
-                    "type":"object",
-                    "description":{
-                      "en":"Information about de route.",
-                      "pt":"Informações de rota.",
-                      "es":"Información sobre la ruta."
                     },
-                    "properties":{
-                      "departure":{
-                        "type":"string",
-                        "description":{
-                          "en":"Departure city.",
-                          "pt":"Cidade de partida.",
-                          "es":"Ciudad de partida."
-                        },
-                        "example": "SP"
-                      },
-                      "destination":{
-                        "type":"string",
-                        "description":{
-                          "en":"Destination city.",
-                          "pt":"Cidade de destino",
-                          "es":"Ciudad de destino"
-                        },
-                        "example": "RJ"
-                      },
-                      "departure_date_time":{
-                        "type":"string",
-                        "description":{
-                          "en":"Departure date and time. The valid format is \"yyyy-MM-ddTHH:mm:ss.sssZ\". For example, \"2023-12-31T09:37:52.000-04:00\".",
-                          "pt":"Data e hora de partida. O formato válido é \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por exemplo, \"2023-12-31T09:37:52.000-04:00\".",
-                          "es":"Fecha y hora de salida. El formato válido es \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por ejemplo, \"2023-12-31T09:37:52.000-04:00\"."
-                        }
-                      },
-                      "arrival_date_time":{
-                        "type":"string",
-                        "description":{
-                          "en":"Arrival date and time. The valid format is \"yyyy-MM-ddTHH:mm:ss.sssZ\". For example, \"2023-12-31T09:37:52.000-04:00\".",
-                          "pt":"Data e hora de chegada. O formato válido é \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por exemplo, \"2023-12-31T09:37:52.000-04:00\". ",
-                          "es":"Fecha y hora de llegada. El formato válido es \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por ejemplo, \"2023-12-31T09:37:52.000-04:00\"."
-                        }
-                      },
-                      "company":{
-                        "type":"string",
-                        "description":{
-                          "en":"Company name.",
-                          "pt":"Nome da empresa.",
-                          "es":"Nombre de la empresa."
-                        }
+                    "arrival_date_time":{
+                      "type":"string",
+                      "description":{
+                        "en":"Arrival date and time. The valid format is \"yyyy-MM-ddTHH:mm:ss.sssZ\". For example, \"2023-12-31T09:37:52.000-04:00\".",
+                        "pt":"Data e hora de chegada. O formato válido é \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por exemplo, \"2023-12-31T09:37:52.000-04:00\". ",
+                        "es":"Fecha y hora de llegada. El formato válido es \"yyyy-MM-ddTHH:mm:ss.sssZ\". Por ejemplo, \"2023-12-31T09:37:52.000-04:00\"."
+                      }
+                    },
+                    "company":{
+                      "type":"string",
+                      "description":{
+                        "en":"Company name.",
+                        "pt":"Nome da empresa.",
+                        "es":"Nombre de la empresa."
                       }
                     }
                   }
