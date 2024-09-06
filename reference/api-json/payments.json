@@ -1186,6 +1186,38 @@
                           }
                         },
                         {
+                          "title": "cc_amount_rate_limit_exceeded",
+                          "description": {
+                            "en": "Rejected because it exceeded the limit (CAP - Maximum Allowed Capacity) of the payment method.",
+                            "es": "Rechazado porque superó el límite (CAP - Capacidad Máxima Permitida) del medio de pago.",
+                            "pt": "Rejeitado porque superou o limite (CAP - Capacidade Máxima Permitida) do meio de pagamento."
+                          }
+                        },
+                        {
+                          "title": "rejected_high_risk",
+                          "description": {
+                            "en": "Rejected due to risk assessment, credit scoring, or suspected fraud.",
+                            "es": "Rechazado por evaluación de riesgo, puntuación de crédito o sospecha de fraude.",
+                            "pt": "Rejeitado por avaliação de risco, pontuação de crédito ou suspeita de fraude."
+                          }
+                        },
+                        {
+                          "title": "rejected_insufficient_data",
+                          "description": {
+                            "en": "Rejected due to the lack of all required mandatory information in the payment.",
+                            "es": "Rechazado debido a la falta de toda la información obligatoria requerida en el pago.",
+                            "pt": "Rejeitado devido à falta de todas as informações obrigatórias necessárias no pagamento."
+                          }
+                        },
+                        {
+                          "title": "rejected_by_bank",
+                          "description": {
+                            "en": "Operation rejected by the bank.",
+                            "es": "Operación rechazada por el banco.",
+                            "pt": "Operação recusada pelo banco"
+                          }
+                        },
+                        {
                           "title": "rejected_by_regulations",
                           "description": {
                             "en": "Payment rejected by regulations.",
@@ -3282,6 +3314,38 @@
                             "en": "The transaction was rejected due to timeout.",
                             "es": "La transacción fue rechazada debido al límite de tiempo.",
                             "pt": "A transação foi rejeitada devido ao limite de tempo."
+                          }
+                        },
+                        {
+                          "title": "cc_amount_rate_limit_exceeded",
+                          "description": {
+                            "en": "Rejected because it exceeded the limit (CAP - Maximum Allowed Capacity) of the payment method.",
+                            "es": "Rechazado porque superó el límite (CAP - Capacidad Máxima Permitida) del medio de pago.",
+                            "pt": "Rejeitado porque superou o limite (CAP - Capacidade Máxima Permitida) do meio de pagamento."
+                          }
+                        },
+                        {
+                          "title": "rejected_high_risk",
+                          "description": {
+                            "en": "Rejected due to risk assessment, credit scoring, or suspected fraud.",
+                            "es": "Rechazado por evaluación de riesgo, puntuación de crédito o sospecha de fraude.",
+                            "pt": "Rejeitado por avaliação de risco, pontuação de crédito ou suspeita de fraude."
+                          }
+                        },
+                        {
+                          "title": "rejected_insufficient_data",
+                          "description": {
+                            "en": "Rejected due to the lack of all required mandatory information in the payment.",
+                            "es": "Rechazado debido a la falta de toda la información obligatoria requerida en el pago.",
+                            "pt": "Rejeitado devido à falta de todas as informações obrigatórias necessárias no pagamento."
+                          }
+                        },
+                        {
+                          "title": "rejected_by_bank",
+                          "description": {
+                            "en": "Operation rejected by the bank.",
+                            "es": "Operación rechazada por el banco.",
+                            "pt": "Operação recusada pelo banco"
                           }
                         },
                         {
@@ -6183,6 +6247,38 @@
                                     "en": "The transaction was rejected due to timeout.",
                                     "es": "La transacción fue rechazada debido al límite de tiempo.",
                                     "pt": "A transação foi rejeitada devido ao limite de tempo."
+                                  }
+                                },
+                                {
+                                  "title": "cc_amount_rate_limit_exceeded",
+                                  "description": {
+                                    "en": "Rejected because it exceeded the limit (CAP - Maximum Allowed Capacity) of the payment method.",
+                                    "es": "Rechazado porque superó el límite (CAP - Capacidad Máxima Permitida) del medio de pago.",
+                                    "pt": "Rejeitado porque superou o limite (CAP - Capacidade Máxima Permitida) do meio de pagamento."
+                                  }
+                                },
+                                {
+                                  "title": "rejected_high_risk",
+                                  "description": {
+                                    "en": "Rejected due to risk assessment, credit scoring, or suspected fraud.",
+                                    "es": "Rechazado por evaluación de riesgo, puntuación de crédito o sospecha de fraude.",
+                                    "pt": "Rejeitado por avaliação de risco, pontuação de crédito ou suspeita de fraude."
+                                  }
+                                },
+                                {
+                                  "title": "rejected_insufficient_data",
+                                  "description": {
+                                    "en": "Rejected due to the lack of all required mandatory information in the payment.",
+                                    "es": "Rechazado debido a la falta de toda la información obligatoria requerida en el pago.",
+                                    "pt": "Rejeitado devido à falta de todas as informações obrigatórias necessárias no pagamento."
+                                  }
+                                },
+                                {
+                                  "title": "rejected_by_bank",
+                                  "description": {
+                                    "en": "Operation rejected by the bank.",
+                                    "es": "Operación rechazada por el banco.",
+                                    "pt": "Operação recusada pelo banco"
                                   }
                                 },
                                 {
