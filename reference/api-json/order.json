@@ -7,9 +7,9 @@
           "checkout-api"
         ],
         "description": {
-          "en": "This endpoint allows to create orders in **One-shot** (processing the payment in a single stage) or **Builder** (processing payment in stages that can be configured and executed incrementally) mode for payment and cashout transactions",
-          "pt": "Este endpoint permite a criação de uma order no modo **One-shot** (processando o pagamento em uma única etapa) ou **Builder** (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout",
-          "es": "Este endpoint permite crear una order en modo **One-shot** (procesando la transacción en una sola etapa) o **Builder** (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout"
+          "en": "This endpoint allows to create orders in \"One-shot\" (processing the payment in a single stage) or \"Builder\" (processing payment in stages that can be configured and executed incrementally) mode for payment and cashout transactions",
+          "pt": "Este endpoint permite a criação de uma order no modo \"One-shot\" (processando o pagamento em uma única etapa) ou \"Builder\" (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout",
+          "es": "Este endpoint permite crear una order en modo \"One-shot\" (procesando la transacción en una sola etapa) o \"Builder\" (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout"
         },
         "parameters": [
           {
@@ -86,34 +86,32 @@
                       "en":"Contiene información sobre las transacciones asociadas a la order. Puede contener cuantas transacciones sean necesarias. Por ejemplo, en caso de querer crear un pago con dos tarjetas, puedes duplicar el nodo \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno." 
                     },
                     "properties": {
-                      "payments": [
-                        {
-                          "type": "object",
-                          "description": {
-                            "en": "Contains information about the payment order. if you want to create a payment with two cards, you can duplicate this node, dividing the total value of the transaction and indicating a different payment method for each one.",
-                            "pt": "Contém informações sobre a order do pagamento. Caso deseje criar um pagamento com dois cartões, você pode duplicar o nó, dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
-                            "es": "Contiene información sobre la order de pago. En caso de querer crear un pago con dos tarjetas, puedes duplicar este nodo, dividiendo el monto del pago y señalando el medio de pago en cada uno. "
+                      "payments": {
+                        "type": "object",
+                        "description": {
+                          "en": "Contains information about the payment order. if you want to create a payment with two cards, you can duplicate this node, dividing the total value of the transaction and indicating a different payment method for each one.",
+                          "pt": "Contém informações sobre a order do pagamento. Caso deseje criar um pagamento com dois cartões, você pode duplicar o nó, dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
+                          "es": "Contiene información sobre la order de pago. En caso de querer crear un pago con dos tarjetas, puedes duplicar este nodo, dividiendo el monto del pago y señalando el medio de pago en cada uno. "
+                        },
+                        "properties": {
+                          "amount": {
+                            "type": "string",
+                            "required": true,
+                            "description": {
+                              "en": "Payment amount. If only one payment method is used, it must be equivalent to the amount entered in the \"total_amount\" field. If two are used, it is the sum between them that must be equivalent to that amount.",
+                              "pt": "Valor do pagamento. Caso seja utilizado apenas um meio de pagamento, este deverá ser equivalente ao valor informado no campo \"total_amount\". Se forem utilizados dois, é a soma entre eles que deve ser equivalente a esse valor.",
+                              "es": "Monto del pago. Si se utiliza un sólo método de pago, debe ser equivalente al monto ingresado en el campo \"total_amount\". Si se utilizan dos, es la suma entre ambos la que debe ser equivalente a ese monto."
+                            },
+                            "example": "24.90"
                           },
-                          "properties": {
-                            "amount": {
-                              "type": "string",
-                              "required": true,
-                              "description": {
-                                "en": "Payment amount. If only one payment method is used, it must be equivalent to the amount entered in the \"total_amount\" field. If two are used, it is the sum between them that must be equivalent to that amount.",
-                                "pt": "Valor do pagamento. Caso seja utilizado apenas um meio de pagamento, este deverá ser equivalente ao valor informado no campo \"total_amount\". Se forem utilizados dois, é a soma entre eles que deve ser equivalente a esse valor.",
-                                "es": "Monto del pago. Si se utiliza un sólo método de pago, debe ser equivalente al monto ingresado en el campo \"total_amount\". Si se utilizan dos, es la suma entre ambos la que debe ser equivalente a ese monto."
-                              },
-                              "example": "24.90"
-                            },
-                            "currency": {
-                              "$ref": "#/components/schemas/currency"
-                            },
-                            "payment_method": {
-                              "$ref": "#/components/schemas/payment_method"    
-                            }
+                          "currency": {
+                            "$ref": "#/components/schemas/currency"
+                          },
+                          "payment_method": {
+                            "$ref": "#/components/schemas/payment_method"    
                           }
                         }
-                      ]
+                      }
                     }
                   },
                   "payer":{
@@ -468,93 +466,91 @@
                         "es":"Contiene información sobre las transaccións asociadas a una order."
                       },
                       "properties":{
-                        "payments":[
-                          {
-                            "type":"object",
-                            "description":{
-                              "en":"Contains information about the payment associated with the order.",
-                              "pt":"Contém informações sobre o pagamento associado à order.",
-                              "es":"Contiene información sobre el pago asociado a una order."
-                            },
-                            "properties":{
-                              "id":{
-                                "type":"string",
-                                "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
-                                "description":{
-                                  "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
-                                  "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
-                                  "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
-                                }
-                              },
-                              "amount": {
-                                "type": "string",
-                                "example": "24.90",
-                                "description": {
-                                  "pt": "Valor do pagamento.",
-                                  "en": "Payment amount.",
-                                  "es": "Monto del pago."
-                                }
-                              },
-                              "status":{
-                                "type":"string",
-                                "example":"processed",
-                                "description":{
-                                  "en":"Payment status.",
-                                  "pt":"Status do pagamento.",
-                                  "es":"Estado del pago."
-                                },
-                                "enum": [
-                                  {
-                                    "title": "created",
-                                    "description": {
-                                      "en": "The order has been created successfully.",
-                                      "es": "La order fue creada exitosamente.",
-                                      "pt": "A order foi criada com sucesso."
-                                    }
-                                  },
-                                  {
-                                    "title": "processed",
-                                    "description": {
-                                      "en": "All transactions have been succesfully processed.",
-                                      "es": "Todas las transacciones fueron procesadas exitosamente.",
-                                      "pt": "Todas as transações foram processadas com sucesso."
-                                    }
-                                  },
-                                  {
-                                    "title": "action_required",
-                                    "description": {
-                                      "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
-                                      "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
-                                      "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
-                                    }
-                                  },
-                                  {
-                                    "title": "failed",
-                                    "description": {
-                                      "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
-                                      "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                                      "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
-                                    }
-                                  },
-                                  {
-                                    "title": "processing",
-                                    "description": {
-                                      "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
-                                      "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                                      "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
-                                    }
-                                  }
-                                ]
-                              },
-                              "payment_method": {
-                                "$ref": "#/components/schemas/payment_method"    
-                              },
-                              "currency":{
-                                "$ref": "#/components/schemas/currency"
+                        "payments":{
+                          "type":"object",
+                          "description":{
+                            "en":"Contains information about the payment associated with the order.",
+                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "es":"Contiene información sobre el pago asociado a una order."
+                          },
+                          "properties":{
+                            "id":{
+                              "type":"string",
+                              "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
+                              "description":{
+                                "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                               }
+                            },
+                            "amount": {
+                              "type": "string",
+                              "example": "24.90",
+                              "description": {
+                                "pt": "Valor do pagamento.",
+                                "en": "Payment amount.",
+                                "es": "Monto del pago."
+                              }
+                            },
+                            "status":{
+                              "type":"string",
+                              "example":"processed",
+                              "description":{
+                                "en":"Payment status.",
+                                "pt":"Status do pagamento.",
+                                "es":"Estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "created",
+                                  "description": {
+                                    "en": "The order has been created successfully.",
+                                    "es": "La order fue creada exitosamente.",
+                                    "pt": "A order foi criada com sucesso."
+                                  }
+                                },
+                                {
+                                  "title": "processed",
+                                  "description": {
+                                    "en": "All transactions have been succesfully processed.",
+                                    "es": "Todas las transacciones fueron procesadas exitosamente.",
+                                    "pt": "Todas as transações foram processadas com sucesso."
+                                  }
+                                },
+                                {
+                                  "title": "action_required",
+                                  "description": {
+                                    "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                                    "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                                    "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "failed",
+                                  "description": {
+                                    "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                                    "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                                    "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                  }
+                                },
+                                {
+                                  "title": "processing",
+                                  "description": {
+                                    "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                                    "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                                    "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                                  }
+                                }
+                              ]
+                            },
+                            "payment_method": {
+                              "$ref": "#/components/schemas/payment_method"    
+                            },
+                            "currency":{
+                              "$ref": "#/components/schemas/currency"
                             }
                           }
-                        ]
+                        }
                       }
                     },
                     "currency":{
@@ -1193,7 +1189,7 @@
                         "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
                         "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
                       },
-                      "properties":{
+                      "items":{
                         "id":{
                           "type":"string",
                           "example":"123",
@@ -3685,14 +3681,14 @@
           }
         }
       },
-      "items":{
+      "items": {
         "type":"array",
         "description":{
           "en":"Information about the list of items to be paid.",
           "pt":"Informações sobre a lista de itens a serem pagos.",
           "es":"Información sobre la lista de ítems a pagar."
         },
-        "item":{
+        "items": {
           "type":"object",
           "properties":{
             "title":{
