@@ -14,20 +14,6 @@
         "parameters": [
           {
             "in":"header",
-            "name":"Authorization",
-            "required":true,
-            "schema":{
-              "type":"string",
-              "example":"Bearer {{ACCESS_TOKEN}}"
-            },
-            "description":{
-              "en":"The application's private key that should always be used on the backend to generate payments. It is essential to keep this information secure on your servers. You can find your Access Token by accessing your application Credentials.",
-              "pt":"Chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial que essa informação seja mantida segura em seus servidores. Você pode encontrar ser Acces Token acessando as Credenciais da sua aplicação.",
-              "es":"Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. Puedes encontrar tu Acces Token accediendo a las Credenciales de tu aplicación."
-            }
-          },
-          {
-            "in":"header",
             "name":"X-Idempotency-Key",
             "required":false,
             "schema":{
@@ -827,20 +813,6 @@
               "type": "string",
               "example": "01J49MMW3SSBK5PSV3DFR32959"
             }
-          },
-          {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "example": "Bearer {{ACCESS_TOKEN}}"
-            },
-            "description": {
-              "en": "The application's private key that should always be used on the backend to generate orders. It is essential to keep this information secure on your servers. You can find your Access Token by accessing your application Credentials.",
-              "pt": "Chave privada da aplicação que sempre deve ser usada no backend para gerar orders. É essencial que essa informação seja mantida segura em seus servidores. Você pode encontrar seu Access Token acessando as Credenciais da sua aplicação.",
-              "es": "Clave privada de la aplicación que siempre se debe utilizar en el backend para generar orders. Es esencial mantener esta información segura en tus servidores. Puedes encontrar tu Access Token accediendo a las Credenciales de tu aplicación."
-            }
           }
         ],
         "responses": {
@@ -1417,20 +1389,6 @@
             "schema":{
               "type":"string",
               "example": "01J49MMW3SSBK5PSV3DFR32959"
-            }
-          },
-          {
-            "in":"header",
-            "name":"Authorization",
-            "required":true,
-            "schema":{
-              "type":"string",
-              "example":"Bearer {{ACCESS_TOKEN}}"
-            },
-            "description":{
-              "en":"The application's private key that should always be used on the backend to generate payments. It is essential to keep this information secure on your servers. You can find your Access Token by accessing your application Credentials.",
-              "pt":"Chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial que essa informação seja mantida segura em seus servidores. Você pode encontrar ser Acces Token acessando as Credenciais da sua aplicação.",
-              "es":"Clave privada de la aplicación que siempre se debe utilizar en el backend para generar pagos. Es esencial mantener esta información segura en tus servidores. Puedes encontrar tu Acces Token accediendo a las Credenciales de tu aplicación."
             }
           }
         ],
@@ -2181,20 +2139,6 @@
         },
         "parameters": [
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "example": "Bearer {{ACCESS_TOKEN}}"
-            },
-            "description": {
-              "en": "The application's private key that should always be used on the backend to generate orders. It is essential to keep this information secure on your servers. You can find your Access Token by accessing your application Credentials.",
-              "pt": "Chave privada da aplicação que sempre deve ser usada no backend para gerar orders. É essencial que essa informação seja mantida segura em seus servidores. Você pode encontrar seu Access Token acessando as Credenciais da sua aplicação.",
-              "es": "Clave privada de la aplicación que siempre se debe utilizar en el backend para generar orders. Es esencial mantener esta información segura en tus servidores. Puedes encontrar tu Access Token accediendo a las Credenciales de tu aplicación."
-            }
-          },
-          {
             "name": "order_id",
             "in": "path",
             "description": {
@@ -2615,20 +2559,6 @@
             "schema": {
               "type":"string",
               "example":"01J49MMW3SSBK5PSV3DFR32959"
-            }
-          },
-          {
-            "name":"Authorization",
-            "in":"header",
-            "required":true,
-            "schema": {
-              "type":"string",
-              "example":"Bearer {{ACCESS_TOKEN}}"
-            },
-            "description": {
-              "en":"The application's private key that should always be used on the backend to generate orders. It is essential to keep this information secure on your servers. You can find your Access Token by accessing your application Credentials.",
-              "pt":"Chave privada da aplicação que sempre deve ser usada no backend para gerar orders. É essencial que essa informação seja mantida segura em seus servidores. Você pode encontrar seu Access Token acessando as Credenciais da sua aplicação.",
-              "es":"Clave privada de la aplicación que siempre se debe utilizar en el backend para generar orders. Es esencial mantener esta información segura en tus servidores. Puedes encontrar tu Access Token accediendo a las Credenciales de tu aplicación."
             }
           },
           {
