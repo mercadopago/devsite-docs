@@ -10,15 +10,7 @@ Las compras de prueba son esenciales para asegurarse de que los pagos se procese
 > La prueba solo se puede realizar después de la etapa de configuración de la integración del [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 
 ------------
-----[mlb]----
-> WARNING
-> 
-> Importante
->
-> La prueba solo se puede realizar después de la etapa de configuración de la integración de uno de los checkouts de pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
-
-------------
-----[mlm]----
+----[mlb, mlm]----
 > WARNING
 > 
 > Importante
@@ -50,48 +42,22 @@ Ve a continuación cómo probar la integración:
 
 ![Credenciais de produção](/images/shopify/test-prod-credentials-es.png)
 
-----[mlm]----
+----[mlb, mlm]----
 7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** uno de los checkout de Mercado Pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro). .
 8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
 9. Haz clic en **Guardar credenciales**.
+10. Por último, en la pantalla de gestión del checkout en cuestión, activa la opción **modo de prueba**.
 
 Ahora, sigue el paso a paso según el tipo de checkout elegido para procesar los pagos:
 
 ## Mercado Pago Tarjetas
 
-10. Accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
+11. Accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
 ## Mercado Pago Checkout Pro
 
-10. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
-11. En la misma ventana con sesión iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
-
-Después de completar una compra de prueba utilizando uno de los checkouts, la aprobación de la compra será visible en el Panel Administrativo de Shopify, con excepción de las compras hechas por medios offline que permanecerán con estado pendiente.
-
-> WARNING
-> 
-> Importante
->
-> Durante las pruebas, estarás operando en el entorno de producción; sin embargo, se trata de una prueba en la que estarás utilizando credenciales ficticias para simular escenarios reales. Al concluir las pruebas, recuerda reemplazar las credenciales del vendedor (tanto de producción como de prueba), ingresadas en el panel del plugin en el paso 8, por las credenciales reales de tu cuenta en Mercado Pago. Esta acción permitirá que continúes vendiendo en tu tienda y evitará confusiones.
-> <br><br>
-> Además, los pedidos serán registrados en el historial de la cuenta de prueba del vendedor de Mercado Pago.
-
-------------
-----[mlb]----
-7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** uno de los checkout de Mercado Pago, ya sea [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) o [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro). .
-8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
-9. Haz clic en **Guardar credenciales**.
-
-Ahora, sigue el paso a paso según el tipo de checkout elegido para procesar los pagos:
-
-## Mercado Pago Tarjetas
-
-10. Accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
-
-## Mercado Pago Checkout Pro
-
-10. Abre una nueva ventana anónima e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
-11. En la misma ventana con sesión iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
+11. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
+12. En la misma ventana con sesión iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
 Después de completar una compra de prueba utilizando uno de los checkouts, la aprobación de la compra será visible en el Panel Administrativo de Shopify, con excepción de las compras hechas por medios offline que permanecerán con estado pendiente.
 
@@ -108,8 +74,9 @@ Después de completar una compra de prueba utilizando uno de los checkouts, la a
 7. Ve a las configuraciones del panel de Shopify (**Configuraciones > Pagos**) y haz clic para **Gestionar** el [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro).
 8. Ingresa la `public_key` y el `access_token` de la cuenta de prueba del vendedor.
 9. Haz clic en **Guardar credenciales**.
-10. Abre una nueva ventana anónima e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
-11. En la misma ventana con sesión iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
+10. Por último, en la pantalla de gestión del checkout en cuestión, activa la opción **modo de prueba**.
+11. Abre una nueva ventana anónima e inicia sesión en Mercado Pago usando la cuenta de prueba del comprador creada en el paso 3.
+12. En la misma ventana con sesión iniciada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. Utiliza también las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/shopify/additional-content/your-integrations/test/cards) correspondiente.
 
 Después de completar una compra de prueba utilizando uno de los checkouts, la aprobación de la compra será visible en el Panel Administrativo de Shopify, con excepción de las compras hechas por medios offline que permanecerán con estado pendiente.
 
