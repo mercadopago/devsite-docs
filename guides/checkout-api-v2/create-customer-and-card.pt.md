@@ -75,7 +75,6 @@ customer = customer_response[:response]
 
 card_request = {
   token: '9b2d63e00d66a8c721607214cedaecda',
-  issuer_id: '3245612',
   payment_method_id: 'visa'
 }
 card_response = sdk.card.create(customer['id'], card_request)
@@ -113,7 +112,6 @@ customer = customer_response["response"]
 
 card_data = {
   "token": "9b2d63e00d66a8c721607214cedaecda",
-  "issuer_id": "3245612",
   "payment_method_id": "visa"
 }
 card_response = sdk.card().create(customer["id"], card_data)
@@ -168,7 +166,7 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
   'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
-  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "visa"}'
+  -d '{"token": "9b2d63e00d66a8c721607214cedaecda", "payment_method_id": "visa"}'
 
 ```
 ]]]
@@ -199,4 +197,4 @@ A resposta trará o seguinte resultado.
 >
 > Atenção
 >
-> Caso a resposta da requisição retorne um erro do tipo `invalid parameter` com código HTTP 400, revise os parâmetros `payment_method_id` e `issuer_id` e garanta que os valores tenham sido inseridos de maneira correta. Além disso, ao utilizar usuários de teste, tenha em mente o seguinte formato para o e-mail do cliente: `test_payer_[0-9]{1,10}@testuser.com` Por exemplo: `test_payer_12345@testuser.com`.
+> Caso a resposta da requisição retorne um erro do tipo `invalid parameter` com código HTTP 400, revise o parâmetro `payment_method_id` e garanta que o valor tenha sido inserido de maneira correta. Além disso, ao utilizar usuários de teste, tenha em mente o seguinte formato para o e-mail do cliente: `test_payer_[0-9]{1,10}@testuser.com` Por exemplo: `test_payer_12345@testuser.com`.
