@@ -78,7 +78,7 @@ After completing a test purchase using one of the checkouts, the purchase approv
 > 
 > Important
 >
-> During testing, you will be operating in the production environment; however, it is a test where you will be using fictitious credentials to simulate real scenarios. Upon completing the tests, remember to replace the seller credentials (both production and test), entered in the plugin panel in step 8, with your real Mercado Pago account credentials. This action will allow you to continue selling in your store and avoid confusion.
+> During testing, you will be operating in the production environment; however, it is a test where you will be using fictitious credentials to simulate real scenarios. Upon completing the tests, deactivate the **test mode** (step 10) field an remember to replace the seller credentials (both production and test), entered in the plugin panel in step 8, with your real Mercado Pago account credentials. This action will allow you to continue selling in your store and avoid confusion.
 > <br><br>
 > Additionally, the orders will be recorded in the transaction history of the Mercado Pago seller test account.
 
