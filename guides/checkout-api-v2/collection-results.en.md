@@ -3,6 +3,7 @@
 | Status | `status_detail` | Description |
 | --- | --- | --- |
 | approved | `accredited` | Done! Your payment was credited. Your statement will show the `amount` charge as `statement_descriptor`. |
+| approved | `partially_refunded` | The payment has at least one partial refund. |
 | authorized | `pending_capture` | The payment has been authorized and is waiting for [capture](/developers/en/docs/checkout-api/payment-management/capture-authorized-payment). |
 | in_process | `offline_process` | Due to lack of online processing, the payment is being processed offline. |
 | in_process | `pending_contingency` | We are processing your payment.<br/><br/>Don't worry! You will be notified via e-mail if the payment was credited in less than 2 business days. |

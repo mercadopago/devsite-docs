@@ -3,6 +3,7 @@
 | Estado | `status_detail` | Descripción |
 | --- | --- | --- |
 | approved | `accredited` | ¡Listo! Se acreditó tu pago. En tu resumen verás el cargo de `amount` como `statement_descriptor`. |
+| approved | `partially_refunded` | El pago se realizó con al menos un reembolso parcial. |
 | authorized | `pending_capture` | El pago fue autorizado y está a la espera de [ser capturado](/developers/es/docs/checkout-api/payment-management/capture-authorized-payment). |
 | in_process | `offline_process` | Por una falta de procesamiento online, el pago está siendo procesado de manera offline. |
 | in_process | `pending_contingency` | Estamos procesando tu pago.<br/><br/>No te preocupes, menos de 2 días hábiles te avisaremos por e-mail si se acreditó. |

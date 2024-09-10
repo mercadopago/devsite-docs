@@ -3,6 +3,7 @@
 | Status | `status_detail` | Descrição |
 | --- | --- | --- |
 | approved | `accredited` | Pronto, seu pagamento foi aprovado! No resumo, você verá a cobrança do valor como `statement_descriptor`. |
+| approved | `partially_refunded` | O pagamento foi feito com pelo menos um reembolso parcial. |
 | authorized | `pending_capture` | O pagamento foi autorizado e aguarda [captura](/developers/pt/docs/checkout-api/payment-management/capture-authorized-payment). |
 | in_process | `offline_process` | Por falta de processamento online, o pagamento está sendo processado de maneira offline. |
 | in_process | `pending_contingency` | Estamos processando o pagamento.<br/><br/>Não se preocupe, em menos de 2 dias úteis informaremos por e-mail se foi creditado. |
