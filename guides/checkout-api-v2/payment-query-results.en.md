@@ -1,8 +1,9 @@
-# Payment creation results
+# Query about a payment status
 
 | Status | `status_detail` | Description |
 | --- | --- | --- |
 | approved | `accredited` | Done! Your payment was credited. Your statement will show the `amount` charge as `statement_descriptor`. |
+| approved | `partially_refunded` | The payment has at least one partial refund. |
 | authorized | `pending_capture` | The payment has been authorized and is waiting for [capture](/developers/en/docs/checkout-api/payment-management/capture-authorized-payment). |
 | in_process | `offline_process` | Due to lack of online processing, the payment is being processed offline. |
 | in_process | `pending_contingency` | We are processing your payment.<br/><br/>Don't worry! You will be notified via e-mail if the payment was credited in less than 2 business days. |
@@ -10,7 +11,16 @@
 | pending | `pending_waiting_transfer` | In cases of bank transfer, the `status_detail` is obtained by waiting for the user to finish the payment process in their bank. |
 | pending | `pending_waiting_payment` | In cases of offline payments, it remains pending until the user finishes the payment. |
 | pending | `pending_challenge` | n cases of credit card payments, there is a pending confirmation due to a challenge. |
+| cancelled | `expired` | The payment has been cancelled after spending 30 days in a pending status.| 
+| cancelled | `by_collector` | The payment has been cancelled by collector.| 
+| cancelled | `by_payer` | The payment has been cancelled by payer.|
+| charged_back | `settled` | The money was retained after a chargeback process. |
+| charged_back | `reimbursed` | The money was reimbursed after a chargeback process.|
+| charged_back | `in_process` | The payment is in process due to the payer disowning it.|
+| refunded | `refunded` | The payment has been refunded by the collector.|
+| refunded | `by_admin` | The payment has been refunded by the administrator. |
 | rejected | `bank_error` | If the payment method is bank transfer, the payment was rejected due to an error with the bank. |
+| rejected | `cc_rejected_3ds_challenge` | The payment is rejected for not surpasing the 3DS challenge. |
 | rejected | `cc_rejected_3ds_mandatory` | The payment is rejected for not having a 3DS challenge when it is mandatory. |
 | rejected | `cc_rejected_bad_filled_card_number` | Check card number. |
 | rejected | `cc_rejected_bad_filled_date` | Check expiration date. |
