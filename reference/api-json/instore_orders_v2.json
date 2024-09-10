@@ -7,9 +7,9 @@
           "qr-code"
         ],
         "description": {
-          "en": "Delete an order whenever you need to with the ID of the user and the external ID",
-          "pt": "Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa",
-          "es": "Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja"
+          "en": "Delete an order whenever you need to with the ID of the user and the external ID. If the request is successful, the response will be: code 204 - The server successfully processed the request, but is not returning any content",
+          "pt": "Exclua uma ordem criada sempre que for necessário com o ID do vendedor e a caixa. Se a requisição for bem-sucedida, a resposta será: código 204 - The server successfully processed the request, but is not returning any content",
+          "es": "Elimina una orden creada siempre que lo necesites con el ID del vendedor y de la caja. Si la solicitud es exitosa, la respuesta será: código 204 - The server successfully processed the request, but is not returning any content"
         },
         "parameters": [
           {
@@ -379,9 +379,9 @@
           "qr-code"
         ],
         "description": {
-          "en": "Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want",
-          "pt": "Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento",
-          "es": "Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio"
+          "en": "Generate a payment order with all the payment information for your product or service and associate it with the Point of Sale you want. If the request is successful, the response will be: code 204 - The server successfully processed the request, but is not returning any content",
+          "pt": "Gerar uma ordem para associar com a preferência de pagamento e obter a URL necessária para iniciar o fluxo de pagamento. Se a requisição for bem-sucedida, a resposta será: código 204 - The server successfully processed the request, but is not returning any content",
+          "es": "Genera una orden de pago asociada a la caja que quieras con toda la información de pago de tu producto o servicio. Si la solicitud es exitosa, la respuesta será: código 204 - The server successfully processed the request, but is not returning any content"
         },
         "parameters": [
           {
