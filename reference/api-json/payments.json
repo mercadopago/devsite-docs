@@ -5,11 +5,11 @@
       "post": {
         "sdks": true,
         "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\n\nMap<String, String> customHeaders = new HashMap<>();\ncustomHeaders.put(\"x-idempotency-key\", \"<SOME_UNIQUE_VALUE>\");\n\nMPRequestOptions requestOptions = MPRequestOptions.builder()\n    .customHeaders(customHeaders)\n    .build();\n\nPaymentClient client = new PaymentClient();\n\nList<PaymentItemRequest> items = new ArrayList<>();\n\nPaymentItemRequest item =\n    PaymentItemRequest.builder()\n        .id(\"MLB2907679857\")\n        .title(\"Point Mini\")\n        .description(\"Point product for card payments via Bluetooth.\")\n        .pictureUrl(\n            \"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png\")\n        .categoryId(\"electronics\")\n        .quantity(1)\n        .unitPrice(new BigDecimal(\"58.8\"))\n        .build();\n\nitems.add(item);\n\nPaymentCreateRequest createRequest =\n    PaymentCreateRequest.builder()\n        .additionalInfo(\n            PaymentAdditionalInfoRequest.builder()\n                .items(items)\n                .payer(\n                    PaymentAdditionalInfoPayerRequest.builder()\n                        .firstName(\"Test\")\n                        .lastName(\"Test\")\n                        .phone(\n                      PhoneRequest.builder().areaCode(\"11\").number(\"987654321\").build())\n                        .build())\n                .shipments(\n                    PaymentShipmentsRequest.builder()\n                        .receiverAddress(\n                            PaymentReceiverAddressRequest.builder()\n                                .zipCode(\"12312-123\")\n                                .stateName(\"Rio de Janeiro\")\n                                .cityName(\"Buzios\")\n                                .streetName(\"Av das Nacoes Unidas\")\n                                .streetNumber(\"3003\")\n                                .build())\n                        .build())\n                .build())\n        .binaryMode(false)\n        .capture(false)\n        .description(\"Payment for product\")\n        .externalReference(\"MP0001\")\n        .installments(1)\n        .order(PaymentOrderRequest.builder().type(\"mercadolibre\").build())\n        .payer(PaymentPayerRequest.builder()\n            .entityType(\"individual\")\n            .type(\"customer\")\n            .email(\"test_user_123@testuser.com\")\n            .identification(IdentificationRequest.builder()\n                .type(\"CPF\")\n                .number(\"01234567890\")\n                .build())\n            .build())\n        .paymentMethodId(\"master\")\n        .token(\"ff8080814c11e237014c1ff593b57b4d\")\n        .transactionAmount(new BigDecimal(\"58.8\"))\n        .build();\nclient.create(createRequest, requestOptions);",
-        "php": "MercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n\n$client = new PaymentClient();\n$request_options = new RequestOptions();\n$request_options->setCustomHeaders([\"X-Idempotency-Key: <SOME_UNIQUE_VALUE>\"]);\n\n$createRequest = [\n    \"additional_info\" => [\n        \"items\" => [\n            [\n                \"id\" => \"MLB2907679857\",\n                \"title\" => \"Point Mini\",\n                \"description\" => \"Point product for card payments via Bluetooth.\",\n                \"picture_url\" => \"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png\",\n                \"category_id\" => \"electronics\",\n                \"quantity\" => 1,\n                \"unit_price\" => 58.8,\n                \"type\" => \"electronics\",\n                \"event_date\" => \"2023-12-31T09:37:52.000-04:00\",\n                \"warranty\" => false,\n                \"category_descriptor\" => [\n                    \"passenger\" => [],\n                    \"route\" => []\n                ]\n            ]\n        ],\n        \"payer\" => [\n            \"first_name\" => \"Test\",\n            \"last_name\" => \"Test\",\n            \"phone\" => [\n                \"area_code\" => 11,\n                \"number\" => \"987654321\"\n            ],\n            \"address\" => [\n                \"street_number\" => null\n            ],\n            \"shipments\" => [\n                \"receiver_address\" => [\n                    \"zip_code\" => \"12312-123\",\n                    \"state_name\" => \"Rio de Janeiro\",\n                    \"city_name\" => \"Buzios\",\n                    \"street_name\" => \"Av das Nacoes Unidas\",\n                    \"street_number\" => 3003\n                ],\n                \"width\" => null,\n                \"height\" => null\n            ]\n        ],\n    ],\n    \"application_fee\" => null,\n    \"binary_mode\" => false,\n    \"campaign_id\" => null,\n    \"capture\" => false,\n    \"coupon_amount\" => null,\n    \"description\" => \"Payment for product\",\n    \"differential_pricing_id\" => null,\n    \"external_reference\" => \"MP0001\",\n    \"installments\" => 1,\n    \"metadata\" => null,\n    \"payer\" => [\n        \"entity_type\" => \"individual\",\n        \"type\" => \"customer\",\n        \"email\" => \"test_user_123@testuser.com\",\n        \"identification\" => [\n            \"type\" => \"CPF\",\n            \"number\" => \"95749019047\"\n        ]\n    ],\n    \"payment_method_id\" => \"master\",\n    \"token\" => \"ff8080814c11e237014c1ff593b57b4d\",\n    \"transaction_amount\" => 58.8,\n];\n\n$client->create($createRequest, $request_options);",
-        "js": "const client = new MercadoPago({ accessToken: '<ACCESS_TOKEN>' });\nconst payments = new Payment(client);\n\npayments.create({\n  body: {\n    additional_info: {\n      items: [\n        {\n          id: 'MLB2907679857',\n          title: 'Point Mini',\n          description: 'Point product for card payments via Bluetooth.',\n          picture_url: 'https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png',\n          category_id: 'electronics',\n          quantity: 1,\n          unit_price: 58.8,\n        }\n      ],\n      payer: {\n        first_name: 'Test',\n        last_name: 'Test',\n        phone: {\n          area_code: '11',\n          number: '987654321'\n        },\n        address: {\n          street_number: null\n        }\n      },\n      shipments: {\n        receiver_address: {\n          zip_code: '12312-123',\n          state_name: 'Rio de Janeiro',\n          city_name: 'Buzios',\n          street_name: 'Av das Nacoes Unidas',\n          street_number: 3003\n        }\n      }\n    },\n    application_fee: null,\n    binary_mode: false,\n    campaign_id: null,\n    capture: false,\n    coupon_amount: null,\n    description: 'Payment for product',\n    differential_pricing_id: null,\n    external_reference: 'MP0001',\n    installments: 1,\n    metadata: null,\n    payer: {\n      entity_type: 'individual',\n      type: 'customer',\n      email: 'test_user_123@testuser.com',\n      identification: {\n        type: 'CPF',\n        number: '95749019047'\n      }\n    },\n    payment_method_id: 'master',\n    token: 'ff8080814c11e237014c1ff593b57b4d',\n    transaction_amount: 58.8\n  },\n  requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }\n})\n  .then((result) => console.log(result))\n  .catch((error) => console.log(error));",
-        "python": "import mercadopago\nsdk = mercadopago.SDK(\"ENV_ACCESS_TOKEN\")\n\nrequest_options = mercadopago.config.RequestOptions()\nrequest_options.custom_headers = {\n\t'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\npayment_data = {\n\t\"application_fee\": False,\n\t\"binary_mode\": False,\n\t\"campaign_id\": None,\n\t\"capture\": False,\n\t\"coupon_amount\": None,\n\t\"description\": \"Payment for product\",\n\t\"differential_pricing_id\": None,\n\t\"external_reference\": \"MP0001\",\n\t\"installments\": 1,\n\t\"metadata\": None,\n\t\"payer\": {\n\t\t\"entity_type\": \"individual\",\n\t\t\"type\": \"customer\",\n\t\t\"email\": \"test_user_123@testuser.com\",\n\t\t\"identification\": {\n\t\t\t\"type\": \"CPF\",\n\t\t\t\"number\": \"95749019047\"\n\t\t}\n\t},\n\t\"payment_method_id\": \"master\",\n\t\"token\": \"ff8080814c11e237014c1ff593b57b4d\",\n\t\"transaction_amount\": 58.8,\n\t\"notification_url\": \"https://www.suaurl.com/notificacoes/\",\n\t\"sponsor_id\": None,\n\t\"binary_mode\": False,\n\t\"external_reference\": \"MP0001\",\n\t\"statement_descriptor\": \"MercadoPago\",\n\t\"additional_info\": {\n\t\t\"items\": [\n\t\t\t{\n\t\t\t\t\"id\": \"MLB2907679857\",\n\t\t\t\t\"title\": \"Point Mini\",\n\t\t\t\t\"description\": \"Point product for card payments via Bluetooth.\",\n\t\t\t\t\"picture_url\": \"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png\",\n\t\t\t\t\"category_id\": \"electronics\",\n\t\t\t\t\"type\": \"electronics\",\n\t\t\t\t\"quantity\": 1,\n\t\t\t\t\"unit_price\": 58.80,\n\t\t\t\t\"event_date\": \"2023-12-31T09:37:52.000-04:00\",\n\t\t\t\t\"warranty\": False,\n\t\t\t\t\"category_descriptor\": {\n\t\t\t\t\t\"passenger\": {},\n\t\t\t\t\t\"route\": {}\n\t\t\t\t}\n\t\t\t}\n\t\t],\n\t\t\"payer\": {\n\t\t\t\"first_name\": \"Test\",\n\t\t\t\"last_name\": \"Test\",\n\t\t\t\"address\": {\n\t\t\t\t\"zip_code\": \"06233-200\",\n\t\t\t\t\"street_name\": \"Av das Nacoes Unidas\",\n\t\t\t\t\"street_number\": 3003\n\t\t\t},\n\t\t\t\"phone\": {\n\t\t\t\t\"area_code\": \"11\",\n\t\t\t\t\"number\": \"987654321\"\n\t\t\t}\n\t\t},\n\t\t\"shipments\": {\n\t\t\t\"width\": None,\n\t\t\t\"height\": None,\n\t\t\t\"receiver_address\": {\n\t\t\t\t\"street_name\": \"Av das Nacoes Unidas\",\n\t\t\t\t\"street_number\": 3003,\n\t\t\t\t\"zip_code\": \"06233200\",\n\t\t\t\t\"city_name\": \"Buzios\",\n\t\t\t\t\"state_name\": \"Rio de Janeiro\"\n\t\t\t}\n\t\t}\n\t}\n}\n\npayment_response = sdk.payment().create(payment_data, request_options)\npayment = payment_response[\"response\"]",
+        "php": "MercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n\n$client = new PaymentClient();\n$request_options = new RequestOptions();\n$request_options->setCustomHeaders([\"X-Idempotency-Key: <SOME_UNIQUE_VALUE>\"]);\n\n$createRequest = [\n    \"additional_info\" => [\n        \"items\" => [\n            [\n                \"id\" => \"MLB2907679857\",\n                \"title\" => \"Point Mini\",\n                \"description\" => \"Point product for card payments via Bluetooth.\",\n                \"picture_url\" => \"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png\",\n                \"category_id\" => \"electronics\",\n                \"quantity\" => 1,\n                \"unit_price\" => 58,\n                \"type\" => \"electronics\",\n                \"event_date\" => \"2023-12-31T09:37:52.000-04:00\",\n                \"warranty\" => false,\n                \"category_descriptor\" => [\n                    \"passenger\" => [],\n                    \"route\" => []\n                ]\n            ]\n        ],\n        \"payer\" => [\n            \"first_name\" => \"Test\",\n            \"last_name\" => \"Test\",\n            \"phone\" => [\n                \"area_code\" => 11,\n                \"number\" => \"987654321\"\n            ],\n            \"address\" => [\n                \"street_number\" => null\n            ],\n            \"shipments\" => [\n                \"receiver_address\" => [\n                    \"zip_code\" => \"12312-123\",\n                    \"state_name\" => \"Rio de Janeiro\",\n                    \"city_name\" => \"Buzios\",\n                    \"street_name\" => \"Av das Nacoes Unidas\",\n                    \"street_number\" => 3003\n                ],\n                \"width\" => null,\n                \"height\" => null\n            ]\n        ],\n    ],\n    \"application_fee\" => null,\n    \"binary_mode\" => false,\n    \"campaign_id\" => null,\n    \"capture\" => false,\n    \"coupon_amount\" => null,\n    \"description\" => \"Payment for product\",\n    \"differential_pricing_id\" => null,\n    \"external_reference\" => \"MP0001\",\n    \"installments\" => 1,\n    \"metadata\" => null,\n    \"payer\" => [\n        \"entity_type\" => \"individual\",\n        \"type\" => \"customer\",\n        \"email\" => \"test_user_123@testuser.com\",\n        \"identification\" => [\n            \"type\" => \"CPF\",\n            \"number\" => \"95749019047\"\n        ]\n    ],\n    \"payment_method_id\" => \"master\",\n    \"token\" => \"ff8080814c11e237014c1ff593b57b4d\",\n    \"transaction_amount\" => 58,\n];\n\n$client->create($createRequest, $request_options);",
+        "js": "const client = new MercadoPago({ accessToken: '<ACCESS_TOKEN>' });\nconst payments = new Payment(client);\n\npayments.create({\n  body: {\n    additional_info: {\n      items: [\n        {\n          id: 'MLB2907679857',\n          title: 'Point Mini',\n          description: 'Point product for card payments via Bluetooth.',\n          picture_url: 'https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png',\n          category_id: 'electronics',\n          quantity: 1,\n          unit_price: 58.8,\n        }\n      ],\n      payer: {\n        first_name: 'Test',\n        last_name: 'Test',\n        phone: {\n          area_code: '11',\n          number: '987654321'\n        },\n        address: {\n          street_number: null\n        }\n      },\n      shipments: {\n        receiver_address: {\n          zip_code: '12312-123',\n          state_name: 'Rio de Janeiro',\n          city_name: 'Buzios',\n          street_name: 'Av das Nacoes Unidas',\n          street_number: 3003\n        }\n      }\n    },\n    application_fee: null,\n    binary_mode: false,\n    campaign_id: null,\n    capture: false,\n    coupon_amount: null,\n    description: 'Payment for product',\n    differential_pricing_id: null,\n    external_reference: 'MP0001',\n    installments: 1,\n    metadata: null,\n    payer: {\n      entity_type: 'individual',\n      type: 'customer',\n      email: 'test_user_123@testuser.com',\n      identification: {\n        type: 'CPF',\n        number: '95749019047'\n      }\n    },\n    payment_method_id: 'master',\n    token: 'ff8080814c11e237014c1ff593b57b4d',\n    transaction_amount: 58\n  },\n  requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }\n})\n  .then((result) => console.log(result))\n  .catch((error) => console.log(error));",
+        "python": "import mercadopago\nsdk = mercadopago.SDK(\"ENV_ACCESS_TOKEN\")\n\nrequest_options = mercadopago.config.RequestOptions()\nrequest_options.custom_headers = {\n\t'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\npayment_data = {\n\t\"application_fee\": False,\n\t\"binary_mode\": False,\n\t\"campaign_id\": None,\n\t\"capture\": False,\n\t\"coupon_amount\": None,\n\t\"description\": \"Payment for product\",\n\t\"differential_pricing_id\": None,\n\t\"external_reference\": \"MP0001\",\n\t\"installments\": 1,\n\t\"metadata\": None,\n\t\"payer\": {\n\t\t\"entity_type\": \"individual\",\n\t\t\"type\": \"customer\",\n\t\t\"email\": \"test_user_123@testuser.com\",\n\t\t\"identification\": {\n\t\t\t\"type\": \"CPF\",\n\t\t\t\"number\": \"95749019047\"\n\t\t}\n\t},\n\t\"payment_method_id\": \"master\",\n\t\"token\": \"ff8080814c11e237014c1ff593b57b4d\",\n\t\"transaction_amount\": 58,\n\t\"notification_url\": \"https://www.suaurl.com/notificacoes/\",\n\t\"sponsor_id\": None,\n\t\"binary_mode\": False,\n\t\"external_reference\": \"MP0001\",\n\t\"statement_descriptor\": \"MercadoPago\",\n\t\"additional_info\": {\n\t\t\"items\": [\n\t\t\t{\n\t\t\t\t\"id\": \"MLB2907679857\",\n\t\t\t\t\"title\": \"Point Mini\",\n\t\t\t\t\"description\": \"Point product for card payments via Bluetooth.\",\n\t\t\t\t\"picture_url\": \"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png\",\n\t\t\t\t\"category_id\": \"electronics\",\n\t\t\t\t\"type\": \"electronics\",\n\t\t\t\t\"quantity\": 1,\n\t\t\t\t\"unit_price\": 58,\n\t\t\t\t\"event_date\": \"2023-12-31T09:37:52.000-04:00\",\n\t\t\t\t\"warranty\": False,\n\t\t\t\t\"category_descriptor\": {\n\t\t\t\t\t\"passenger\": {},\n\t\t\t\t\t\"route\": {}\n\t\t\t\t}\n\t\t\t}\n\t\t],\n\t\t\"payer\": {\n\t\t\t\"first_name\": \"Test\",\n\t\t\t\"last_name\": \"Test\",\n\t\t\t\"address\": {\n\t\t\t\t\"zip_code\": \"06233-200\",\n\t\t\t\t\"street_name\": \"Av das Nacoes Unidas\",\n\t\t\t\t\"street_number\": 3003\n\t\t\t},\n\t\t\t\"phone\": {\n\t\t\t\t\"area_code\": \"11\",\n\t\t\t\t\"number\": \"987654321\"\n\t\t\t}\n\t\t},\n\t\t\"shipments\": {\n\t\t\t\"width\": None,\n\t\t\t\"height\": None,\n\t\t\t\"receiver_address\": {\n\t\t\t\t\"street_name\": \"Av das Nacoes Unidas\",\n\t\t\t\t\"street_number\": 3003,\n\t\t\t\t\"zip_code\": \"06233200\",\n\t\t\t\t\"city_name\": \"Buzios\",\n\t\t\t\t\"state_name\": \"Rio de Janeiro\"\n\t\t\t}\n\t\t}\n\t}\n}\n\npayment_response = sdk.payment().create(payment_data, request_options)\npayment = payment_response[\"response\"]",
         "csharp": "MercadoPagoConfig.AccessToken = \"ENV_ACCESS_TOKEN\";\n\nvar requestOptions = new RequestOptions();\nrequestOptions.CustomHeaders.Add(\"x-idempotency-key\", \"<SOME_UNIQUE_VALUE>\");\n\nvar item = new PaymentItemRequest\n{\n    Id = \"MLB2907679857\",\n    Title = \"Point Mini\",\n    Description = \"Point product for card payments via Bluetooth.\",\n    PictureUrl = \"https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png\",\n    CategoryId = \"electronics\",\n    Quantity = 1,\n    UnitPrice = (decimal?)58.8,\n    EventDate = \"2023-12-31T09:37:52.000-04:00\",\n    Warranty = false,\n    CategoryDescriptor = new PaymentCategoryDescriptorRequest\n    {\n        Passenger = {},\n        Route = {}\n    }\n};\n\nvar payerInfo = new PaymentAdditionalInfoPayerRequest\n{\n    FirstName = \"Test\",\n    LastName = \"Test\",\n    Phone = new PhoneRequest\n    {\n        AreaCode = \"11\",\n        Number = \"987654321\"\n    },\n    Address = new AddressRequest\n    {\n        StreetNumber = null\n    }\n};\n\nvar shipmentsInfo = new PaymentShipmentsRequest\n{\n    ReceiverAddress = new PaymentReceiverAddressRequest\n    {\n        ZipCode = \"12312-123\",\n        StateName = \"Rio de Janeiro\",\n        CityName = \"Buzios\",\n        StreetName = \"Av das Nacoes Unidas\",\n        StreetNumber = \"3003\"\n    }\n\n};\n\nvar additionalInfo = new PaymentAdditionalInfoRequest\n{\n    Items = new List<PaymentItemRequest> { item },\n    Payer = payerInfo,\n    Shipments = shipmentsInfo\n};\n\nvar paymentPayerRequest = new PaymentPayerRequest\n{\n    Email = \"test_user_123@testuser.com\",\n    FirstName = \"Test\",\n    LastName = \"User\",\n    Identification = new IdentificationRequest\n    {\n        Type = \"CPF\",\n        Number = \"01234567890\",\n    },\n};\n\nvar request = new PaymentCreateRequest\n{\n    ApplicationFee = null,\n    BinaryMode= false,\n    CampaignId = null,\n    Capture = false,\n    CouponAmount = null,\n    Description = \"Payment for product\",\n    DifferentialPricingId = null,\n    ExternalReference = \"MP0001\",\n    Installments = 1,\n    Metadata = null,\n    NotificationUrl = null,\n    Payer = paymentPayerRequest,\n    PaymentMethodId = \"master\",\n    StatementDescriptor = null,\n    TransactionAmount = (decimal?)58.8,\n    Token = \"ff8080814c11e237014c1ff593b57b4d\",\n    AdditionalInfo = additionalInfo,\n};\n\nvar client = new PaymentClient();\nPayment payment = await client.CreateAsync(request, requestOptions);",
-        "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')\n\ncustom_headers = {\n 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\ncustom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)\n\npayment_object = {\n  additional_info: {\n    items: [\n      {\n        id: 'MLB2907679857',\n        title: 'Point Mini',\n        description: 'Point product for card payments via Bluetooth.',\n        picture_url: 'https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png',\n        category_id: 'electronics',\n        quantity: 1,\n        unit_price: 58.8,\n      }\n    ],\n    payer: {\n      first_name: 'Test',\n      last_name: 'Test',\n      phone: {\n        area_code: '11',\n        number: '987654321'\n      },\n      address: {\n        street_number: nil\n      }\n    },\n    shipments: {\n      receiver_address: {\n        zip_code: '12312-123',\n        state_name: 'Rio de Janeiro',\n        city_name: 'Buzios',\n        street_name: 'Av das Nacoes Unidas',\n        street_number: 3003\n      },\n    }\n  },\n  application_fee: nil,\n  binary_mode: false,\n  campaign_id: nil,\n  capture: false,\n  coupon_amount: nil,\n  description: 'Payment for product',\n  differential_pricing_id: nil,\n  external_reference: 'MP0001',\n  installments: 1,\n  metadata: nil,\n  payer: {\n    entity_type: 'individual',\n    type: 'customer',\n    email: 'test_user_123@testuser.com',\n    identification: {\n      type: 'CPF',\n      number: '95749019047'\n    }\n  },\n  payment_method_id: 'master',\n  token: 'ff8080814c11e237014c1ff593b57b4d',\n  transaction_amount: 58.8\n}\n\npayment_response = sdk.payment.create(payment_object, custom_request_options)\npayment_response[:response]",
+        "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('YOUR_ACCESS_TOKEN')\n\ncustom_headers = {\n 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\ncustom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)\n\npayment_object = {\n  additional_info: {\n    items: [\n      {\n        id: 'MLB2907679857',\n        title: 'Point Mini',\n        description: 'Point product for card payments via Bluetooth.',\n        picture_url: 'https://http2.mlstatic.com/resources/frontend/statics/growth-sellers-landings/device-mlb-point-i_medium2x.png',\n        category_id: 'electronics',\n        quantity: 1,\n        unit_price: 58,\n      }\n    ],\n    payer: {\n      first_name: 'Test',\n      last_name: 'Test',\n      phone: {\n        area_code: '11',\n        number: '987654321'\n      },\n      address: {\n        street_number: nil\n      }\n    },\n    shipments: {\n      receiver_address: {\n        zip_code: '12312-123',\n        state_name: 'Rio de Janeiro',\n        city_name: 'Buzios',\n        street_name: 'Av das Nacoes Unidas',\n        street_number: 3003\n      },\n    }\n  },\n  application_fee: nil,\n  binary_mode: false,\n  campaign_id: nil,\n  capture: false,\n  coupon_amount: nil,\n  description: 'Payment for product',\n  differential_pricing_id: nil,\n  external_reference: 'MP0001',\n  installments: 1,\n  metadata: nil,\n  payer: {\n    entity_type: 'individual',\n    type: 'customer',\n    email: 'test_user_123@testuser.com',\n    identification: {\n      type: 'CPF',\n      number: '95749019047'\n    }\n  },\n  payment_method_id: 'master',\n  token: 'ff8080814c11e237014c1ff593b57b4d',\n  transaction_amount: 58\n}\n\npayment_response = sdk.payment.create(payment_object, custom_request_options)\npayment_response[:response]",
         "tags": [
           "checkout-pro",
           "subscriptions",
@@ -126,11 +126,11 @@
                             "unit_price": {
                               "type": "number",
                               "description": {
-                                "en": "Unit price of the purchased item. This parameter will return as an String.",
-                                "pt": "Preço unitário do item comprado. Este parâmetro será retornado como uma String.",
-                                "es": "Precio unitario del ítem comprado. Te devolveremos este parámetro como una String."
+                                "en": "Unit price of the purchased item. This parameter will return as an String. For Chile (MLC), it must be an integer.",
+                                "pt": "Preço unitário do item comprado. Este parâmetro será retornado como uma String. Para o Chile (MLC) deve ser um número inteiro.",
+                                "es": "Precio unitario del ítem comprado. Te devolveremos este parámetro como una String. Para Chile (MLC) debe ser un número entero."
                               },
-                              "example": 58.8
+                              "example": 58
                             },
                             "type": {
                               "type": "string",
@@ -871,12 +871,12 @@
                   "transaction_amount": {
                     "type": "number",
                     "description": {
-                      "en": "Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
-                      "pt": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.",
-                      "es": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100."
+                      "en": "Product’s cost. For Chile (MLC), it must be an integer.",
+                      "pt": "Custo do produto. Para o Chile (MLC) deve ser um número inteiro.",
+                      "es": "Costo del producto. Para Chile (MLC) debe ser un número entero."
                     },
                     "required": true,
-                    "example": 58.8
+                    "example": 58
                   }
                 }
               }
@@ -1340,11 +1340,11 @@
                               },
                               "unit_price": {
                                 "type": "number",
-                                "example": 58.8,
+                                "example": 58,
                                 "description": {
-                                  "es": "Precio unitario.",
-                                  "pt": "Preço unitário.",
-                                  "en": "Unit price."
+                                  "es": "Precio unitario. Para Chile (MLC) debe ser un número entero.",
+                                  "pt": "Preço unitário. Para o Chile (MLC) deve ser um número inteiro.",
+                                  "en": "Unit price. For Chile (MLC), it must be an integer."
                                 }
                               }
                             }
@@ -1459,27 +1459,27 @@
                       "type": "number",
                       "example": 58.8,
                       "description": {
-                        "en": "Product’s cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
-                        "pt": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.",
-                        "es": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100."
+                        "en": "Product’s cost. For Chile (MLC), it must be an integer.",
+                        "pt": "Custo do produto. Para o Chile (MLC) deve ser um número inteiro.",
+                        "es": "Costo del producto. Para Chile (MLC) debe ser un número entero."
                       }
                     },
                     "transaction_amount_refunded": {
                       "type": "number",
-                      "example": 0,
+                      "example": 50,
                       "description": {
-                        "en": "Transaction amount refunded",
-                        "pt": "Valor reembolsado da transação",
-                        "es": "Monto reembolsado de transacción"
+                        "en": "Transaction amount refunded. For Chile (MLC), it must be an integer.",
+                        "pt": "Valor reembolsado da transação. Para o Chile (MLC) deve ser um número inteiro.",
+                        "es": "Monto reembolsado de transacción. Para Chile (MLC) debe ser un número entero."
                       }
                     },
                     "coupon_amount": {
                       "type": "number",
-                      "example": 0,
+                      "example": 15,
                       "description": {
-                        "en": "It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.",
-                        "pt": "É o valor do cupom de desconto. Ex. - R$14,50. O tipo do atributo é BigDecimal.",
-                        "es": "Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal."
+                        "en": "It is the value of the discount coupon. For Chile (MLC), it must be an integer.",
+                        "pt": "É o valor do cupom de desconto. Para o Chile (MLC) deve ser um número inteiro.",
+                        "es": "Es el valor del cupón de descuento. Para Chile (MLC) debe ser un número entero."
                       }
                     },
                     "differential_pricing_id": {
@@ -1507,45 +1507,45 @@
                           "type": "string",
                           "format": "nullable",
                           "description": {
-                            "en": "Unique identifier of the payment method",
-                            "pt": "Identificador único do meio de pagamento",
-                            "es": "Identificador único del método de pago"
+                            "en": "Unique identifier of the payment method.",
+                            "pt": "Identificador único do meio de pagamento.",
+                            "es": "Identificador único del método de pago."
                           }
                         },
                         "net_received_amount": {
                           "type": "number",
                           "example": 56.16,
                           "description": {
-                            "en": "Net amount received",
-                            "pt": "Valor líquido recebido",
-                            "es": "Monto neto recibido"
+                            "en": "Net amount received.",
+                            "pt": "Valor líquido recebido.",
+                            "es": "Monto neto recibido."
                           }
                         },
                         "total_paid_amount": {
                           "type": "number",
                           "example": 58.8,
                           "description": {
-                            "en": "Total amount charged to the payer",
-                            "pt": "Valor total cobrado ao pagador",
-                            "es": "Monto total cobrado al payer"
+                            "en": "Total amount charged to the payer.",
+                            "pt": "Valor total cobrado ao pagador.",
+                            "es": "Monto total cobrado al payer."
                           }
                         },
                         "overpaid_amount": {
                           "type": "number",
                           "example": 0,
                           "description": {
-                            "en": "Overpaid amount",
-                            "pt": "Valor pago a mais",
-                            "es": "Monto pagado en exceso"
+                            "en": "Overpaid amount.",
+                            "pt": "Valor pago a mais.",
+                            "es": "Monto pagado en exceso."
                           }
                         },
                         "external_resource_url": {
                           "type": "string",
                           "format": "nullable",
                           "description": {
-                            "en": "External resource url",
-                            "pt": "URL de recurso externo",
-                            "es": "URL de recurso externo"
+                            "en": "External resource url.",
+                            "pt": "URL de recurso externo.",
+                            "es": "URL de recurso externo."
                           }
                         },
                         "installment_amount": {
@@ -1561,34 +1561,34 @@
                           "type": "string",
                           "format": "nullable",
                           "description": {
-                            "en": "Financial institution",
-                            "pt": "Instituição financeira",
-                            "es": "Institución financiera"
+                            "en": "Financial institution.",
+                            "pt": "Instituição financeir.a",
+                            "es": "Institución financiera."
                           }
                         },
                         "payable_deferral_period": {
                           "type": "string",
                           "format": "nullable",
                           "description": {
-                            "en": "Payment deferral period",
-                            "pt": "Período de diferimento de pagamento",
-                            "es": "Período de diferimiento del pago"
+                            "en": "Payment deferral period.",
+                            "pt": "Período de diferimento de pagamento.",
+                            "es": "Período de diferimiento del pago."
                           }
                         },
                         "acquirer_reference": {
                           "type": "string",
                           "format": "nullable",
                           "description": {
-                            "en": "Acquirer reference",
-                            "pt": "Referência do adquirente",
-                            "es": "Referencia de adquirente"
+                            "en": "Acquirer reference.",
+                            "pt": "Referência do adquirente.",
+                            "es": "Referencia de adquirente."
                           }
                         }
                       },
                       "description": {
-                        "en": "Transaction details",
-                        "pt": "Detalhes da transação",
-                        "es": "Detalles de la transacción"
+                        "en": "Transaction details.",
+                        "pt": "Detalhes da transação.",
+                        "es": "Detalles de la transacción."
                       }
                     },
                     "fee_details": {
@@ -1604,8 +1604,8 @@
                             "example": 2.64,
                             "description": {
                               "en": "Fee amount.",
-                              "pt": "Valor da comissão",
-                              "es": "Monto de la comisión"
+                              "pt": "Valor da comissão.",
+                              "es": "Monto de la comisión."
                             }
                           },
                           "fee_payer": {
@@ -1615,8 +1615,8 @@
                       },
                       "description": {
                         "en": "Fee detail.",
-                        "pt": "Detalhe de comissão",
-                        "es": "Detalle de comisión"
+                        "pt": "Detalhe de comissão.",
+                        "es": "Detalle de comisión."
                       }
                     },
                     "captured": {
@@ -2892,129 +2892,129 @@
                     "type": "string",
                     "example": "accredited",
                     "description": {
-                      "en": "Detail in which the Collection resulted",
-                      "pt": "Detalhe em que resultou a Coleção",
-                      "es": "Detalle en el que resultó el Cobro"
+                      "en": "Detail in which the Collection resulted.",
+                      "pt": "Detalhe em que resultou a Coleção.",
+                      "es": "Detalle en el que resultó la Colección."
                     },
                     "enum": [
                       {
                         "title": "Accredited",
                         "description": {
-                          "en": "credited payment.",
-                          "es": "credited payment.",
-                          "pt": "credited payment."
+                          "en": "Credited payment.",
+                          "es": "Pago acreditado.",
+                          "pt": "Pagamento creditado."
                         }
                       },
                       {
                         "title": "pending_contingency",
                         "description": {
-                          "en": "the payment is being processed.",
-                          "es": "the payment is being processed.",
-                          "pt": "the payment is being processed."
+                          "en": "The payment is being processed.",
+                          "es": "El pago está siendo procesado.",
+                          "pt": "O pagamento está sendo processado."
                         }
                       },
                       {
                         "title": "pending_review_manual",
                         "description": {
-                          "en": "the payment is under review to determine its approval or rejection.",
-                          "es": "the payment is under review to determine its approval or rejection.",
-                          "pt": "the payment is under review to determine its approval or rejection."
+                          "en": "The payment is under review to determine its approval or rejection.",
+                          "es": "El pago está en revisión para determinar su aprobación o rechazo.",
+                          "pt": "O pagamento está em revisão para determinar sua aprovação ou rejeição."
                         }
                       },
                       {
                         "title": "cc_rejected_bad_filled_date",
                         "description": {
-                          "en": "incorrect expiration date.",
-                          "es": "incorrect expiration date.",
-                          "pt": "incorrect expiration date."
+                          "en": "Incorrect expiration date.",
+                          "es": "Fecha de vencimiento incorrecta.",
+                          "pt": "Data de validade incorreta."
                         }
                       },
                       {
                         "title": "cc_rejected_bad_filled_other",
                         "description": {
-                          "en": "incorrect card details.",
-                          "es": "incorrect card details.",
-                          "pt": "incorrect card details."
+                          "en": "Incorrect card details.",
+                          "es": "Datos de tarjeta incorrectos.",
+                          "pt": "Detalhes do cartão incorretos."
                         }
                       },
                       {
                         "title": "cc_rejected_bad_filled_security_code",
                         "description": {
-                          "en": "incorrect CVV.",
-                          "es": "incorrect CVV.",
-                          "pt": "incorrect CVV."
+                          "en": "Incorrect CVV.",
+                          "es": "CVV incorrecto.",
+                          "pt": "CVV incorreto."
                         }
                       },
                       {
                         "title": "cc_rejected_blacklist",
                         "description": {
-                          "en": "the card is on a black list for theft/complaints/fraud.",
-                          "es": "the card is on a black list for theft/complaints/fraud.",
-                          "pt": "the card is on a black list for theft/complaints/fraud."
+                          "en": "The card is on a black list for theft/complaints/fraud.",
+                          "es": "La tarjeta está en una lista negra por robo/reclamaciones/fraude.",
+                          "pt": "O cartão está em uma lista negra por roubo/reclamações/fraude."
                         }
                       },
                       {
                         "title": "cc_rejected_call_for_authorize",
                         "description": {
-                          "en": "the means of payment requires prior authorization of the amount of the operation.",
-                          "es": "the means of payment requires prior authorization of the amount of the operation.",
-                          "pt": "the means of payment requires prior authorization of the amount of the operation."
+                          "en": "The means of payment requires prior authorization of the amount of the operation.",
+                          "es": "El medio de pago requiere autorización previa del monto de la operación.",
+                          "pt": "O meio de pagamento requer autorização prévia do valor da operação."
                         }
                       },
                       {
                         "title": "cc_rejected_card_disabled",
                         "description": {
-                          "en": "the card is inactive.",
-                          "es": "the card is inactive.",
-                          "pt": "the card is inactive."
+                          "en": "The card is inactive.",
+                          "es": "La tarjeta está inactiva.",
+                          "pt": "O cartão está inativo."
                         }
                       },
                       {
                         "title": "cc_rejected_duplicated_payment",
                         "description": {
-                          "en": "transacción duplicada.",
-                          "es": "transacción duplicada.",
-                          "pt": "transacción duplicada."
+                          "en": "Duplicate transaction.",
+                          "es": "Transacción duplicada.",
+                          "pt": "Transação duplicada."
                         }
                       },
                       {
                         "title": "cc_rejected_high_risk",
                         "description": {
-                          "en": "rechazo por Prevención de Fraude.",
-                          "es": "rechazo por Prevención de Fraude.",
-                          "pt": "rechazo por Prevención de Fraude."
+                          "en": "Rejection due to fraud prevention.",
+                          "es": "Rechazo por prevención de fraude.",
+                          "pt": "Rejeitado por prevenção de fraude."
                         }
                       },
                       {
                         "title": "cc_rejected_insufficient_amount",
                         "description": {
-                          "en": "insufficient amount.",
-                          "es": "insufficient amount.",
-                          "pt": "insufficient amount."
+                          "en": "Insufficient amount.",
+                          "es": "Monto insuficiente.",
+                          "pt": "Valof insuficiente."
                         }
                       },
                       {
                         "title": "cc_rejected_invalid_installments",
                         "description": {
-                          "en": "invalid number of installments.",
-                          "es": "invalid number of installments.",
-                          "pt": "invalid number of installments."
+                          "en": "Invalid number of installments.",
+                          "es": "Número de cuotas/mensualidades inválido.",
+                          "pt": "Número de parcelas inválido."
                         }
                       },
                       {
                         "title": "cc_rejected_max_attempts",
                         "description": {
-                          "en": "exceeded maximum number of attempts.",
-                          "es": "exceeded maximum number of attempts.",
-                          "pt": "exceeded maximum number of attempts."
+                          "en": "Exceeded maximum number of attempts.",
+                          "es": "Se excedió el número máximo de intentos.",
+                          "pt": "Excedido o número máximo de tentativas."
                         }
                       },
                       {
                         "title": "cc_rejected_other_reason",
                         "description": {
-                          "en": "generic error.",
-                          "es": "generic error.",
-                          "pt": "generic error."
+                          "en": "Generic error.",
+                          "es": "Error genérico.",
+                          "pt": "Erro genérico."
                         }
                       }
                     ]
@@ -3255,27 +3255,27 @@
                     "type": "number",
                     "example": 250,
                     "description": {
-                      "en": "Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
-                      "pt": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.",
-                      "es": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100."
+                      "en": "Product cost. For Chile (MLC), it must be an integer.",
+                      "pt": "Custo do produto. Para o Chile (MLC) deve ser um número inteiro.",
+                      "es": "Costo del producto. Para Chile (MLC) debe ser un número entero."
                     }
                   },
                   "transaction_amount_refunded": {
                     "type": "number",
-                    "example": 0,
+                    "example": 50,
                     "description": {
-                      "en": "Transaction amount refunded",
-                      "pt": "Valor reembolsado da transação",
-                      "es": "Monto reembolsado de transacción"
+                      "en": "Transaction amount refunded. For Chile (MLC), it must be an integer.",
+                      "pt": "Valor reembolsado da transação. Para o Chile (MLC) deve ser um número inteiro.",
+                      "es": "Monto reembolsado de transacción. Para Chile (MLC) debe ser un número entero."
                     }
                   },
                   "coupon_amount": {
                     "type": "number",
-                    "example": 0,
+                    "example": 15,
                     "description": {
-                      "en": "It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.",
-                      "pt": "É o valor do cupom de desconto. Ex - R$14,50. O tipo do atributo é BigDecimal.",
-                      "es": "Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal."
+                      "en": "It is the value of the discount coupon. For Chile (MLC), it must be an integer.",
+                      "pt": "É o valor do cupom de desconto. Para o Chile (MLC) deve ser um número inteiro.",
+                      "es": "Es el valor del cupón de descuento. Para Chile (MLC) debe ser un número entero."
                     }
                   },
                   "differential_pricing_id": {
@@ -3299,45 +3299,45 @@
                   "transaction_details": {
                     "type": "object",
                     "description": {
-                      "en": "Transaction details",
-                      "pt": "Detalhes da transação",
-                      "es": "Detalles de la transacción"
+                      "en": "Transaction details.",
+                      "pt": "Detalhes da transação.",
+                      "es": "Detalles de la transacción."
                     },
                     "properties": {
                       "net_received_amount": {
                         "type": "number",
                         "example": 250,
                         "description": {
-                          "en": "Net amount received",
-                          "pt": "Valor líquido recebido",
-                          "es": "Monto neto recibido"
+                          "en": "Net amount received.",
+                          "pt": "Valor líquido recebido.",
+                          "es": "Monto neto recibido."
                         }
                       },
                       "total_paid_amount": {
                         "type": "number",
                         "example": 250,
                         "description": {
-                          "en": "Total amount charged to the payer",
-                          "pt": "Valor total cobrado ao pagador",
-                          "es": "Monto total cobrado al payer"
+                          "en": "Total amount charged to the payer.",
+                          "pt": "Valor total cobrado ao pagador.",
+                          "es": "Monto total cobrado al payer."
                         }
                       },
                       "overpaid_amount": {
                         "type": "number",
                         "example": 0,
                         "description": {
-                          "en": "Overpaid amount",
-                          "pt": "Valor pago a mais",
-                          "es": "Monto pagado en exceso"
+                          "en": "Overpaid amount.",
+                          "pt": "Valor pago a mais.",
+                          "es": "Monto pagado en exceso."
                         }
                       },
                       "external_resource_url": {
                         "type": "string",
                         "format": "nullable",
                         "description": {
-                          "en": "External resource url",
-                          "pt": "URL de recurso externo",
-                          "es": "URL de recurso externo"
+                          "en": "External resource url.",
+                          "pt": "URL de recurso externo.",
+                          "es": "URL de recurso externo."
                         }
                       },
                       "installment_amount": {
@@ -3353,36 +3353,36 @@
                         "type": "string",
                         "format": "nullable",
                         "description": {
-                          "en": "Financial institution",
-                          "pt": "Instituição financeira",
-                          "es": "Institución financiera"
+                          "en": "Financial institution.",
+                          "pt": "Instituição financeira.",
+                          "es": "Institución financiera."
                         }
                       },
                       "payment_method_reference_id": {
                         "type": "string",
                         "format": "nullable",
                         "description": {
-                          "en": "Unique identifier of the payment method",
-                          "pt": "Identificador único do meio de pagamento",
-                          "es": "Identificador único del método de pago"
+                          "en": "Unique identifier of the payment method.",
+                          "pt": "Identificador único do meio de pagamento.",
+                          "es": "Identificador único del método de pago."
                         }
                       },
                       "payable_deferral_period": {
                         "type": "string",
                         "format": "nullable",
                         "description": {
-                          "en": "Payment deferral period",
-                          "pt": "Período de diferimento de pagamento",
-                          "es": "Período de diferimiento del pago"
+                          "en": "Payment deferral period.",
+                          "pt": "Período de diferimento de pagamento.",
+                          "es": "Período de diferimiento del pago."
                         }
                       },
                       "acquirer_reference": {
                         "type": "string",
                         "format": "nullable",
                         "description": {
-                          "en": "Acquirer reference",
-                          "pt": "Referência do adquirente",
-                          "es": "Referencia de adquirente"
+                          "en": "Acquirer reference.",
+                          "pt": "Referência do adquirente.",
+                          "es": "Referencia de adquirente."
                         }
                       }
                     }
@@ -3933,9 +3933,9 @@
       "java": "MercadoPagoConfig.setAccessToken(\"YOUR_ACCESS_TOKEN\");\n\nMap<String, String> customHeaders = new HashMap<>();\ncustomHeaders.put(\"x-idempotency-key\", \"<SOME_UNIQUE_VALUE>\");\n\nMPRequestOptions requestOptions = MPRequestOptions.builder()\n    .customHeaders(customHeaders)\n    .build();\n\nPaymentClient client = new PaymentClient();\nLong paymentId = \"<PAYMENT_ID>\";\nclient.capture(paymentId, customHeaders);",
       "php": "<?php\nMercadoPagoConfig::setAccessToken(\"ACCESS_TOKEN\");\n\n$request_options = new RequestOptions();\n$request_options->setCustomHeaders([\"X-Idempotency-Key: <SOME_UNIQUE_VALUE>\"]);\n\n$client = new PaymentClient();\n$id = \"<PAYMENT_ID>\";\n$payment = $client->capture($id, $request_options);\n?>",
       "js": "const client = new MercadoPago({ accessToken: config.access_token });\nconst payment = new Payment(client);\n\npayment.capture({\n\t      id: '<PAYMENT_ID>',\n\t      requestOptions: { idempotencyKey: '<SOME_UNIQUE_VALUE>' }\n}).then(console.log).catch(console.log);",
-      "python": "import mercadopago\nsdk = mercadopago.SDK(\"ENV_ACCESS_TOKEN\")\n\nrequest_options = mercadopago.config.RequestOptions()\nrequest_options.custom_headers = {\n\t'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\nupdate_request = {\n\t\"capture\": False,\n\t\"transaction_amount\": 58.8\n}\n\nrequest = self.sdk.payment().update(123, update_request, request_options)\nprint(request)",
+      "python": "import mercadopago\nsdk = mercadopago.SDK(\"ENV_ACCESS_TOKEN\")\n\nrequest_options = mercadopago.config.RequestOptions()\nrequest_options.custom_headers = {\n\t'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\nupdate_request = {\n\t\"capture\": False,\n\t\"transaction_amount\": 58\n}\n\nrequest = self.sdk.payment().update(123, update_request, request_options)\nprint(request)",
       "csharp": "MercadoPagoConfig.AccessToken = \"ENV_ACCESS_TOKEN\";\n\nvar requestOptions = new RequestOptions();\nrequestOptions.CustomHeaders.Add(\"x-idempotency-key\", \"<SOME_UNIQUE_VALUE>\");\n\nvar client = new PaymentClient();\nPayment payment = await client.CaptureAsync(\"<PAYMENT_ID>\", requestOptions);",
-      "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')\n\ncustom_headers = {\n       'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\ncustom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)\n\nupdate_request = {\n      capture: false,\n      transaction_amount: 58.8\n}\n\npayment_response = sdk.payment.update(123, update_request, custom_request_options)\npayment_response[:response]",
+      "ruby": "require 'mercadopago'\n\nsdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')\n\ncustom_headers = {\n       'x-idempotency-key': '<SOME_UNIQUE_VALUE>'\n}\n\ncustom_request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)\n\nupdate_request = {\n      capture: false,\n      transaction_amount: 58\n}\n\npayment_response = sdk.payment.update(123, update_request, custom_request_options)\npayment_response[:response]",
       "tags": [
         "checkout-pro",
         "subscriptions",
@@ -4071,9 +4071,9 @@
                 "transaction_amount": {
                   "type": "number",
                   "description": {
-                    "en": "Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
-                    "pt": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.",
-                    "es": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100."
+                    "en": "Product cost. For Chile (MLC), it must be an integer.",
+                    "pt": "Custo do produto. Para o Chile (MLC) deve ser um número inteiro.",
+                    "es": "Costo del producto. Para Chile (MLC) debe ser un número entero."
                   },
                   "example": 58.8
                 }
@@ -4221,129 +4221,129 @@
                     "type": "string",
                     "example": "accredited",
                     "description": {
-                      "en": "Detail in which the Collection resulted",
-                      "pt": "Detalhe em que resultou a Coleção",
-                      "es": "Detalle en el que resultó el Cobro"
+                      "en": "Detail in which the Collection resulted.",
+                      "pt": "Detalhe em que resultou a Coleção.",
+                      "es": "Detalle en el que resultó el Colección."
                     },
                     "enum": [
                       {
                         "title": "Accredited",
                         "description": {
-                          "en": "credited payment.",
-                          "es": "credited payment.",
-                          "pt": "credited payment."
+                          "en": "Credited payment.",
+                          "es": "Pago acreditado.",
+                          "pt": "Pagamento creditado."
                         }
                       },
                       {
                         "title": "pending_contingency",
                         "description": {
-                          "en": "the payment is being processed.",
-                          "es": "the payment is being processed.",
-                          "pt": "the payment is being processed."
+                          "en": "The payment is being processed.",
+                          "es": "El pago está siendo procesado.",
+                          "pt": "O pagamento está sendo processado."
                         }
                       },
                       {
                         "title": "pending_review_manual",
                         "description": {
-                          "en": "the payment is under review to determine its approval or rejection.",
-                          "es": "the payment is under review to determine its approval or rejection.",
-                          "pt": "the payment is under review to determine its approval or rejection."
+                          "en": "The payment is under review to determine its approval or rejection.",
+                          "es": "El pago está en revisión para determinar su aprobación o rechazo.",
+                          "pt": "O pagamento está em revisão para determinar sua aprovação ou rejeição."
                         }
                       },
                       {
                         "title": "cc_rejected_bad_filled_date",
                         "description": {
-                          "en": "incorrect expiration date.",
-                          "es": "incorrect expiration date.",
-                          "pt": "incorrect expiration date."
+                          "en": "Incorrect expiration date.",
+                          "es": "Fecha de vencimiento incorrecta.",
+                          "pt": "Data de vencimento incorreta."
                         }
                       },
                       {
                         "title": "cc_rejected_bad_filled_other",
                         "description": {
-                          "en": "incorrect card details.",
-                          "es": "incorrect card details.",
-                          "pt": "incorrect card details."
+                          "en": "Incorrect card details.",
+                          "es": "Datos de la tarjeta incorrectos.",
+                          "pt": "Detalhes do cartão incorretos."
                         }
                       },
                       {
                         "title": "cc_rejected_bad_filled_security_code",
                         "description": {
-                          "en": "incorrect CVV.",
-                          "es": "incorrect CVV.",
-                          "pt": "incorrect CVV."
+                          "en": "Incorrect CVV.",
+                          "es": "CVV incorrecto.",
+                          "pt": "CVV incorreto."
                         }
                       },
                       {
                         "title": "cc_rejected_blacklist",
                         "description": {
-                          "en": "the card is on a black list for theft/complaints/fraud.",
-                          "es": "the card is on a black list for theft/complaints/fraud.",
-                          "pt": "the card is on a black list for theft/complaints/fraud."
+                          "en": "The card is on a black list for theft/complaints/fraud.",
+                          "es": "La tarjeta está en una lista negra por robo/quejas/fraude.",
+                          "pt": "O cartão está em uma lista negra por roubo/reclamações/fraude."
                         }
                       },
                       {
                         "title": "cc_rejected_call_for_authorize",
                         "description": {
-                          "en": "the means of payment requires prior authorization of the amount of the operation.",
-                          "es": "the means of payment requires prior authorization of the amount of the operation.",
-                          "pt": "the means of payment requires prior authorization of the amount of the operation."
+                          "en": "The means of payment requires prior authorization of the amount of the operation.",
+                          "es": "El medio de pago requiere autorización previa del monto de la operación.",
+                          "pt": "O meio de pagamento requer autorização prévia do valor da operação."
                         }
                       },
                       {
                         "title": "cc_rejected_card_disabled",
                         "description": {
-                          "en": "the card is inactive.",
-                          "es": "the card is inactive.",
-                          "pt": "the card is inactive."
+                          "en": "The card is inactive.",
+                          "es": "La tarjeta está inactiva.",
+                          "pt": "O cartão está inativo."
                         }
                       },
                       {
                         "title": "cc_rejected_duplicated_payment",
                         "description": {
-                          "en": "transacción duplicada.",
-                          "es": "transacción duplicada.",
-                          "pt": "transacción duplicada."
+                          "en": "Duplicate transaction.",
+                          "es": "Transacción duplicada.",
+                          "pt": "Transação duplicada."
                         }
                       },
                       {
                         "title": "cc_rejected_high_risk",
                         "description": {
-                          "en": "rechazo por Prevención de Fraude.",
-                          "es": "rechazo por Prevención de Fraude.",
-                          "pt": "rechazo por Prevención de Fraude."
+                          "en": "Rejection due to fraud prevention.",
+                          "es": "Rechazo por prevención de fraude.",
+                          "pt": "Rejeição por prevenção de fraude."
                         }
                       },
                       {
                         "title": "cc_rejected_insufficient_amount",
                         "description": {
-                          "en": "insufficient amount.",
-                          "es": "insufficient amount.",
-                          "pt": "insufficient amount."
+                          "en": "Insufficient amount.",
+                          "es": "Monto insuficiente.",
+                          "pt": "Quantia insuficiente."
                         }
                       },
                       {
                         "title": "cc_rejected_invalid_installments",
                         "description": {
-                          "en": "invalid number of installments.",
-                          "es": "invalid number of installments.",
-                          "pt": "invalid number of installments."
+                          "en": "Invalid number of installments.",
+                          "es": "Número de cuotas inválido.",
+                          "pt": "Número de parcelas inválido."
                         }
                       },
                       {
                         "title": "cc_rejected_max_attempts",
                         "description": {
-                          "en": "exceeded maximum number of attempts.",
-                          "es": "exceeded maximum number of attempts.",
-                          "pt": "exceeded maximum number of attempts."
+                          "en": "Exceeded maximum number of attempts.",
+                          "es": "Excedido el número máximo de intentos.",
+                          "pt": "Excedido o número máximo de tentativas."
                         }
                       },
                       {
                         "title": "cc_rejected_other_reason",
                         "description": {
-                          "en": "generic error.",
-                          "es": "generic error.",
-                          "pt": "generic error."
+                          "en": "Generic error.",
+                          "es": "Error genérico.",
+                          "pt": "Erro genérico."
                         }
                       }
                     ]
@@ -4581,11 +4581,11 @@
                             },
                             "unit_price": {
                               "type": "number",
-                              "example": 58.8,
+                              "example": 58,
                               "description": {
-                                "es": "Unit price.",
-                                "pt": "Unit price.",
-                                "en": "Unit price."
+                                "es": "Precio unitario. Para Chile (MLC) debe ser un número entero.",
+                                "pt": "Preço unitário. Para o Chile (MLC) deve ser um número inteiro.",
+                                "en": "Unit price. For Chile (MLC), it must be an integer."
                               }
                             }
                           }
@@ -4698,29 +4698,29 @@
                   },
                   "transaction_amount": {
                     "type": "number",
-                    "example": 58.8,
+                    "example": 58,
                     "description": {
-                      "en": "Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
-                      "pt": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.",
-                      "es": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100."
+                      "en": "Product cost. For Chile (MLC), it must be an integer.",
+                      "pt": "Custo do produto. Para o Chile (MLC) deve ser um número inteiro.",
+                      "es": "Costo del producto. Para Chile (MLC) debe ser un número entero."
                     }
                   },
                   "transaction_amount_refunded": {
                     "type": "number",
-                    "example": 0,
+                    "example": 50,
                     "description": {
-                      "en": "Transaction amount refunded",
-                      "pt": "Valor reembolsado da transação",
-                      "es": "Monto reembolsado de transacción"
+                      "en": "Transaction amount refunded.",
+                      "pt": "Valor reembolsado da transação.",
+                      "es": "Monto reembolsado de transacción."
                     }
                   },
                   "coupon_amount": {
                     "type": "number",
-                    "example": 0,
+                    "example": 15,
                     "description": {
-                      "en": "It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.",
-                      "pt": "É o valor do cupom de desconto. Ex. - R$14,50. O tipo do atributo é BigDecimal.",
-                      "es": "Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal."
+                      "en": "It is the value of the discount coupon.",
+                      "pt": "É o valor do cupom de desconto.",
+                      "es": "Es el valor del cupón de descuento."
                     }
                   },
                   "differential_pricing_id": {
@@ -5471,9 +5471,9 @@
           "name": "collector.id",
           "in": "query",
           "description": {
-            "en": "Parameter used to filter payment searches by the identification of the person who receives the payment (collector).",
-            "pt": "Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador da pessoa que recebe o pagamento (collector).",
-            "es": "Parámetro utilizado para filtrar la búsqueda de pagos por el identificador de la persona que recibe el pago (collector)."
+            "en": "Parameter used to filter payment searches by the identification of the person who receives the payment (collector). It cannot be used in conjunction with the \"payer.id\" search parameter, you must provide only one of them.",
+            "pt": "Parâmetro utilizado para filtrar a busca de pagamentos pelo identificador da pessoa que recebe o pagamento (collector). Não pode ser utilizado em conjunto com o parâmetro de busca \"payer.id\", você deve fornecer apenas um deles.",
+            "es": "Parámetro utilizado para filtrar la búsqueda de pagos por el identificador de la persona que recibe el pago (collector). No puede ser utilizado en conjunto con el parámetro de búsqueda \"payer.id\", debes proporcionar sólo uno de ellos."
           },
           "required": false,
           "schema": {
@@ -5485,9 +5485,9 @@
           "name": "payer.id",
           "in": "query",
           "description": {
-            "en": "Parameter used to filter searches by the identification of the person who makes the payment (payer).",
-            "pt": "Parâmetro utilizado para filtrar a busca pelo identificador da pessoa que efetua o pagamento (payer).",
-            "es": "Parámetro utilizado para filtrar la búsqueda por el identificador de la persona que realiza el pago (payer)."
+            "en": "Parameter used to filter searches by the identification of the person who makes the payment (payer). It cannot be used in conjunction with the \"collector.id\" search parameter, you must provide only one of them.",
+            "pt": "Parâmetro utilizado para filtrar a busca pelo identificador da pessoa que efetua o pagamento (payer). Não pode ser utilizado em conjunto com o parâmetro de busca \"collector.id\", você deve fornecer apenas um deles.",
+            "es": "Parámetro utilizado para filtrar la búsqueda por el identificador de la persona que realiza el pago (payer). No puede ser utilizado en conjunto con el parámetro de búsqueda \"collector.id\", debes proporcionar sólo uno de ellos."
           },
           "required": false,
           "schema": {
@@ -5679,129 +5679,129 @@
                             "type": "string",
                             "example": "accredited",
                             "description": {
-                              "en": "Detail in which the Collection resulted",
-                              "pt": "Detalhe em que resultou a Coleção",
-                              "es": "Detalle en el que resultó el Cobro"
+                              "en": "Detail in which the Collection resulted.",
+                              "pt": "Detalhe em que resultou a Coleção.",
+                              "es": "Detalle en el que resultó el Colección."
                             },
                             "enum": [
                               {
                                 "title": "Accredited",
                                 "description": {
-                                  "en": "credited payment.",
-                                  "es": "credited payment.",
-                                  "pt": "credited payment."
+                                  "en": "Credited payment.",
+                                  "es": "Pago acreditado.",
+                                  "pt": "Pagamento creditado."
                                 }
                               },
                               {
                                 "title": "pending_contingency",
                                 "description": {
-                                  "en": "the payment is being processed.",
-                                  "es": "the payment is being processed.",
-                                  "pt": "the payment is being processed."
+                                  "en": "The payment is being processed.",
+                                  "es": "El pago está siendo procesado.",
+                                  "pt": "O pagamento está sendo processado."
                                 }
                               },
                               {
                                 "title": "pending_review_manual",
                                 "description": {
-                                  "en": "the payment is under review to determine its approval or rejection.",
-                                  "es": "the payment is under review to determine its approval or rejection.",
-                                  "pt": "the payment is under review to determine its approval or rejection."
+                                  "en": "The payment is under review to determine its approval or rejection.",
+                                  "es": "El pago está en revisión para determinar su aprobación o rechazo.",
+                                  "pt": "O pagamento está em revisão para determinar sua aprovação ou rejeição."
                                 }
                               },
                               {
                                 "title": "cc_rejected_bad_filled_date",
                                 "description": {
-                                  "en": "incorrect expiration date.",
-                                  "es": "incorrect expiration date.",
-                                  "pt": "incorrect expiration date."
+                                  "en": "Incorrect expiration date.",
+                                  "es": "Fecha de vencimiento incorrecta.",
+                                  "pt": "Data de validade incorreta."
                                 }
                               },
                               {
                                 "title": "cc_rejected_bad_filled_other",
                                 "description": {
-                                  "en": "incorrect card details.",
-                                  "es": "incorrect card details.",
-                                  "pt": "incorrect card details."
+                                  "en": "Incorrect card details.",
+                                  "es": "Datos de tarjeta incorrectos.",
+                                  "pt": "Detalhes do cartão incorretos."
                                 }
                               },
                               {
                                 "title": "cc_rejected_bad_filled_security_code",
                                 "description": {
-                                  "en": "incorrect CVV.",
-                                  "es": "incorrect CVV.",
-                                  "pt": "incorrect CVV."
+                                  "en": "Incorrect CVV.",
+                                  "es": "CVV incorrecto.",
+                                  "pt": "CVV incorreto."
                                 }
                               },
                               {
                                 "title": "cc_rejected_blacklist",
                                 "description": {
-                                  "en": "the card is in the denial list, being present in problems related to theft/complaints/fraud.",
-                                  "es": "the card is in the denial list, being present in problems related to theft/complaints/fraud.",
-                                  "pt": "the card is in the denial list, being present in problems related to theft/complaints/fraud."
+                                  "en": "The card is on a black list for theft/complaints/fraud.",
+                                  "es": "La tarjeta está en una lista negra por robo/reclamaciones/fraude.",
+                                  "pt": "O cartão está em uma lista negra por roubo/reclamações/fraude."
                                 }
                               },
                               {
                                 "title": "cc_rejected_call_for_authorize",
                                 "description": {
-                                  "en": "the payment method requires prior authorization of the transaction value.",
-                                  "es": "the payment method requires prior authorization of the transaction value.",
-                                  "pt": "the payment method requires prior authorization of the transaction value."
+                                  "en": "The means of payment requires prior authorization of the amount of the operation.",
+                                  "es": "El medio de pago requiere autorización previa del monto de la operación.",
+                                  "pt": "O meio de pagamento requer autorização prévia do valor da operação."
                                 }
                               },
                               {
                                 "title": "cc_rejected_card_disabled",
                                 "description": {
-                                  "en": "the card is inactive.",
-                                  "es": "the card is inactive.",
-                                  "pt": "the card is inactive."
+                                  "en": "The card is inactive.",
+                                  "es": "La tarjeta está inactiva.",
+                                  "pt": "O cartão está inativo."
                                 }
                               },
                               {
                                 "title": "cc_rejected_duplicated_payment",
                                 "description": {
-                                  "en": "duplicated transaction.",
-                                  "es": "duplicated transaction.",
-                                  "pt": "duplicated transaction."
+                                  "en": "Duplicate transaction.",
+                                  "es": "Transacción duplicada.",
+                                  "pt": "Transação duplicada."
                                 }
                               },
                               {
                                 "title": "cc_rejected_high_risk",
                                 "description": {
-                                  "en": "rejected by Fraud Prevention.",
-                                  "es": "rejected by Fraud Prevention.",
-                                  "pt": "rejected by Fraud Prevention."
+                                  "en": "Rejection due to fraud prevention.",
+                                  "es": "Rechazo por prevención de fraude.",
+                                  "pt": "Rejeitado por prevenção de fraude."
                                 }
                               },
                               {
                                 "title": "cc_rejected_insufficient_amount",
                                 "description": {
-                                  "en": "insufficient amount.",
-                                  "es": "insufficient amount.",
-                                  "pt": "insufficient amount."
+                                  "en": "Insufficient amount.",
+                                  "es": "Monto insuficiente.",
+                                  "pt": "Valof insuficiente."
                                 }
                               },
                               {
                                 "title": "cc_rejected_invalid_installments",
                                 "description": {
-                                  "en": "invalid number of installments.",
-                                  "es": "invalid number of installments.",
-                                  "pt": "invalid number of installments."
+                                  "en": "Invalid number of installments.",
+                                  "es": "Número de cuotas/mensualidades inválido.",
+                                  "pt": "Número de parcelas inválido."
                                 }
                               },
                               {
                                 "title": "cc_rejected_max_attempts",
                                 "description": {
-                                  "en": "maximum number of attempts exceeded.",
-                                  "es": "maximum number of attempts exceeded.",
-                                  "pt": "maximum number of attempts exceeded."
+                                  "en": "Exceeded maximum number of attempts.",
+                                  "es": "Se excedió el número máximo de intentos.",
+                                  "pt": "Excedido o número máximo de tentativas."
                                 }
                               },
                               {
                                 "title": "cc_rejected_other_reason",
                                 "description": {
-                                  "en": "generic error.",
-                                  "es": "generic error.",
-                                  "pt": "generic error."
+                                  "en": "Generic error.",
+                                  "es": "Error genérico.",
+                                  "pt": "Erro genérico."
                                 }
                               }
                             ]
@@ -6040,29 +6040,29 @@
                           },
                           "transaction_amount": {
                             "type": "number",
-                            "example": 250,
-                            "description": {
-                              "en": "Product cost. Example - The sale of a product for R$100.00 will have a transactionAmount = 100.",
-                              "pt": "Custo do produto. Exemplo - A venda de um produto por R$100,00 terá um transactionAmount = 100.",
-                              "es": "Costo del producto. Ejemplo - La venta de un producto por R$ 100,00 tendrá un transactionAmount = 100."
+                            "example": 58,
+                              "description": {
+                                "en": "Product cost. For Chile (MLC), it must be an integer.",
+                                "pt": "Custo do produto. Para o Chile (MLC) deve ser um número inteiro.",
+                                "es": "Costo del producto. Para Chile (MLC) debe ser un número entero."
                             }
                           },
                           "transaction_amount_refunded": {
                             "type": "number",
-                            "example": 0,
+                            "example": 15,
                             "description": {
-                              "en": "Transaction amount refunded",
-                              "pt": "Valor reembolsado da transação",
-                              "es": "Monto reembolsado de transacción"
+                              "en": "Transaction amount refunded. For Chile (MLC), it must be an integer.",
+                              "pt": "Valor reembolsado da transação. Para o Chile (MLC) deve ser um número inteiro.",
+                              "es": "Monto reembolsado de transacción. Para Chile (MLC) debe ser un número entero."
                             }
                           },
                           "coupon_amount": {
                             "type": "number",
-                            "example": 0,
+                            "example": 15,
                             "description": {
-                              "en": "It is the value of the discount coupon. E.g. - BRL 14.50. The attribute's type is BigDecimal.",
-                              "pt": "É o valor do cupom de desconto. Ex - R$14,50. O tipo do atributo é BigDecimal.",
-                              "es": "Es el valor del cupón de descuento. Por ejemplo - BRL 14,50. El tipo del atributo es BigDecimal."
+                              "en": "It is the value of the discount coupon. For Chile (MLC), it must be an integer.",
+                              "pt": "É o valor do cupom de desconto. Para o Chile (MLC) deve ser um número inteiro.",
+                              "es": "Es el valor del cupón de descuento. Para Chile (MLC) debe ser un número entero."
                             }
                           },
                           "differential_pricing_id": {
@@ -6090,36 +6090,36 @@
                                 "type": "number",
                                 "example": 250,
                                 "description": {
-                                  "en": "Net amount received",
-                                  "pt": "Valor líquido recebido",
-                                  "es": "Monto neto recibido"
+                                  "en": "Net amount received.",
+                                  "pt": "Valor líquido recebido.",
+                                  "es": "Monto neto recibido."
                                 }
                               },
                               "total_paid_amount": {
                                 "type": "number",
                                 "example": 250,
                                 "description": {
-                                  "en": "Total amount charged to the payer",
-                                  "pt": "Valor total cobrado ao pagador",
-                                  "es": "Monto total cobrado al payer"
+                                  "en": "Total amount charged to the payer.",
+                                  "pt": "Valor total cobrado ao pagador.",
+                                  "es": "Monto total cobrado al payer."
                                 }
                               },
                               "overpaid_amount": {
                                 "type": "number",
                                 "example": 0,
                                 "description": {
-                                  "en": "Overpaid amount",
-                                  "pt": "Valor pago a mais",
-                                  "es": "Monto pagado en exceso"
+                                  "en": "Overpaid amount.",
+                                  "pt": "Valor pago a mais.",
+                                  "es": "Monto pagado en exceso."
                                 }
                               },
                               "external_resource_url": {
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "en": "External resource url",
-                                  "pt": "URL de recurso externo",
-                                  "es": "URL de recurso externo"
+                                  "en": "External resource url.",
+                                  "pt": "URL de recurso externo.",
+                                  "es": "URL de recurso externo."
                                 }
                               },
                               "installment_amount": {
@@ -6135,43 +6135,43 @@
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "en": "Financial institution",
-                                  "pt": "Instituição financeira",
-                                  "es": "Institución financiera"
+                                  "en": "Financial institution.",
+                                  "pt": "Instituição financeira.",
+                                  "es": "Institución financiera."
                                 }
                               },
                               "payment_method_reference_id": {
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "en": "Unique identifier of the payment method",
-                                  "pt": "Identificador único do meio de pagamento",
-                                  "es": "Identificador único del método de pago"
+                                  "en": "Unique identifier of the payment method.",
+                                  "pt": "Identificador único do meio de pagamento.",
+                                  "es": "Identificador único del método de pago."
                                 }
                               },
                               "payable_deferral_period": {
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "en": "Payment deferral period",
-                                  "pt": "Período de diferimento de pagamento",
-                                  "es": "Período de diferimiento del pago"
+                                  "en": "Payment deferral period.",
+                                  "pt": "Período de diferimento de pagamento.",
+                                  "es": "Período de diferimiento del pago."
                                 }
                               },
                               "acquirer_reference": {
                                 "type": "string",
                                 "format": "nullable",
                                 "description": {
-                                  "en": "Acquirer reference",
-                                  "pt": "Referência do adquirente",
-                                  "es": "Referencia de adquirente"
+                                  "en": "Acquirer reference.",
+                                  "pt": "Referência do adquirente.",
+                                  "es": "Referencia de adquirente."
                                 }
                               }
                             },
                             "description": {
-                              "en": "Transaction details",
-                              "pt": "Detalhes da transação",
-                              "es": "Detalles de la transacción"
+                              "en": "Transaction details.",
+                              "pt": "Detalhes da transação.",
+                              "es": "Detalles de la transacción."
                             }
                           },
                           "captured": {
@@ -6203,9 +6203,9 @@
                             "type": "string",
                             "format": "nullable",
                             "description": {
-                              "en": "Description that the payment will appear with in the card statement (eg MERCADOPAGO)",
-                              "pt": "Descrição com a qual o pagamento aparecerá no resumo do cartão (ex. MERCADOPAGO)",
-                              "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta (ej. MERCADOPAGO)"
+                              "en": "Description that the payment will appear with in the card statement (eg MERCADOPAGO).",
+                              "pt": "Descrição com a qual o pagamento aparecerá no resumo do cartão (ex. MERCADOPAGO).",
+                              "es": "Descripción con la que aparecerá el pago en el resumen de tarjeta (ej. MERCADOPAGO)."
                             }
                           },
                           "installments": {
@@ -6221,8 +6221,8 @@
                             "type": "object",
                             "description": {
                               "en": "Card ID.",
-                              "pt": "Identificador de cartão",
-                              "es": "Identificador de tarjeta"
+                              "pt": "Identificador de cartão.",
+                              "es": "Identificador de tarjeta."
                             }
                           },
                           "notification_url": {
@@ -6247,16 +6247,16 @@
                                 "title": "Aggregator",
                                 "description": {
                                   "en": "The merchant will use the Mercado Pago merchant codes and take advantage of the financial advantages we offer.",
-                                  "es": "The merchant will use the Mercado Pago merchant codes and take advantage of the financial advantages we offer.",
-                                  "pt": "The merchant will use the Mercado Pago merchant codes and take advantage of the financial advantages we offer."
+                                  "es": "El comerciante utilizará los códigos de comerciante de Mercado Pago y aprovechará las ventajas financieras que ofrecemos.",
+                                  "pt": "O comerciante usará os códigos de comerciante do Mercado Pago e aproveitará as vantagens financeiras que oferecemos."
                                 }
                               },
                               {
                                 "title": "Gateway",
                                 "description": {
                                   "en": "For the merchant, it is necessary to have his own merchant code for online sales and to have an agreement with each of the desired payment methods.",
-                                  "es": "For the merchant, it is necessary to have his own merchant code for online sales and to have an agreement with each of the desired payment methods.",
-                                  "pt": "For the merchant, it is necessary to have his own merchant code for online sales and to have an agreement with each of the desired payment methods."
+                                  "es": "Para el comerciante, es necesario tener su propio código de comerciante para ventas en línea y tener un acuerdo con cada uno de los métodos de pago deseados.",
+                                  "pt": "Para o comerciante, é necessário ter seu próprio código de comerciante para vendas online e ter um acordo com cada um dos métodos de pagamento desejados."
                                 }
                               }
                             ]
@@ -7125,73 +7125,73 @@
         {
           "title": "pending",
           "description": {
-            "en": "The user has not concluded the payment process (for example, by generating a payment by boleto, it will be concluded at the moment in which the user makes the payment in the selected place).",
-            "es": "The user has not concluded the payment process (for example, by generating a payment by boleto, it will be concluded at the moment in which the user makes the payment in the selected place).",
-            "pt": "The user has not concluded the payment process (for example, by generating a payment by boleto, it will be concluded at the moment in which the user makes the payment in the selected place)."
+            "en": "The user has not concluded the payment process (for example, to generate a payment by boleto, this payment will be concluded at the moment in which the user makes the non-corresponding payment selected);",
+            "es": "El usuario no ha concluido el proceso de pago (por ejemplo, para generar un pago por boleto, este pago se concluirá en el momento en que el usuario realice el pago no correspondiente seleccionado);",
+            "pt": "O usuário não concluiu o processo de pagamento (por exemplo, para gerar um pagamento por boleto, este pagamento será concluído no momento em que o usuário fizer o pagamento não correspondente selecionado);"
           }
         },
         {
           "title": "approved",
           "description": {
-            "en": "The payment has been approved and credited.",
-            "es": "The payment has been approved and credited.",
-            "pt": "The payment has been approved and credited."
+            "en": "The payment was approved and credited;",
+            "es": "El pago fue aprobado y acreditado;",
+            "pt": "O pagamento foi aprovado e creditado;"
           }
         },
         {
           "title": "authorized",
           "description": {
-            "en": "The payment has been authorized but not captured yet.",
-            "es": "The payment has been authorized but not captured yet.",
-            "pt": "The payment has been authorized but not captured yet."
+            "en": "The payment was authorized, but still was not captured;",
+            "es": "El pago fue autorizado, pero aún no fue capturado;",
+            "pt": "O pagamento foi autorizado, mas ainda não foi capturado.;"
           }
         },
         {
           "title": "in_process",
           "description": {
-            "en": "The payment is in analysis.",
-            "es": "The payment is in analysis.",
-            "pt": "The payment is in analysis."
+            "en": "The payment is in analysis;",
+            "es": "El pago está en análisis;",
+            "pt": "O pagamento está em análise;"
           }
         },
         {
           "title": "in_mediation",
           "description": {
-            "en": "The user started a dispute.",
-            "es": "The user started a dispute.",
-            "pt": "The user started a dispute."
+            "en": "The user started a dispute;",
+            "es": "El usuario inició una disputa;",
+            "pt": "O usuário iniciou uma disputa;"
           }
         },
         {
           "title": "rejected",
           "description": {
-            "en": "The payment was rejected (the user can try to pay again).",
-            "es": "The payment was rejected (the user can try to pay again).",
-            "pt": "The payment was rejected (the user can try to pay again)."
+            "en": "The payment was rejected. The user can try the payment again;",
+            "es": "El pago fue rechazado. El usuario puede intentar el pago nuevamente;",
+            "pt": "O pagamento foi rejeitado. O usuário pode tentar o pagamento novamente;"
           }
         },
         {
           "title": "cancelled",
           "description": {
-            "en": "Either the payment was canceled by one of the parties or expired.",
-            "es": "Either the payment was canceled by one of the parties or expired.",
-            "pt": "Either the payment was canceled by one of the parties or expired."
+            "en": "Either the payment was canceled by one of the parties or the payment expired;",
+            "es": "El pago fue cancelado por una de las partes o el pago expiró;",
+            "pt": "O pagamento foi cancelado por uma das partes ou o pagamento expirou:"
           }
         },
         {
           "title": "refunded",
           "description": {
-            "en": "The payment was returned to the user.",
-            "es": "The payment was returned to the user.",
-            "pt": "The payment was returned to the user."
+            "en": "The payment was returned to the user;",
+            "es": "El pago fue devuelto al usuario;",
+            "pt": "O pagamento foi devolvido ao usuário;"
           }
         },
         {
           "title": "charged_back",
           "description": {
             "en": "A chargeback was placed on the buyer's credit card.",
-            "es": "A chargeback was placed on the buyer's credit card.",
-            "pt": "A chargeback was placed on the buyer's credit card."
+            "es": " Se realizó un contracargo en la tarjeta de crédito del comprador.",
+            "pt": "Foi feito um chargeback no cartão de crédito do comprador."
           }
         }
       ]

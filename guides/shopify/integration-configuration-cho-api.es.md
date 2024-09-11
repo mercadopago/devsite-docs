@@ -10,7 +10,7 @@
 > Esta nueva aplicación es exclusiva para pagos con tarjetas. Para configurar pagos con Pix, consulta la [documentación correspondiente](/developers/es/docs/shopify/integration-configuration/pix). Para pagos con boleto bancário, utiliza [Mercado Pago Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro). 
 
 ------------
-----[mlm]----
+----[mlm, mco]----
 # Tarjetas
 
 **Mercado Pago Tarjetas** ([Checkout API](/developers/es/docs/checkout-api/landing)) es una app que permite pagos transparentes con tarjetas de débito o crédito, en la que todo el proceso de finalización de compra se realiza dentro del entorno de la tienda online, sin necesidad de redireccionamiento a una página externa. Además de permitir un mayor control en el proceso de personalización e integración, reduce el abandono del carrito y aumenta la posibilidad de conversión.
@@ -69,6 +69,16 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 
 ![installation cards 7](/images/shopify/installation-cards-7-es.png)
 
+15. Aún en las "Configuraciones" del panel administrativo de la tienda, haz clic en **Checkout > Método de contacto del cliente** y asegúrate de que el campo **Correo electrónico** esté seleccionado como el método de contacto que los clientes deberán indicar para recibir notificaciones del pedido.
+
+> WARNING
+>
+> Atención
+>
+> El uso del **correo electrónico** como forma de contacto es obligatorio para el procesamiento de pagos con Mercado Pago.
+
+![installation cards 8](/images/shopify/installation-cards-8-es.png)
+
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 
 ----[mlm]----
@@ -93,11 +103,15 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 ## Instalar vía Marketplace
 
 ----[mlb]----
-1. A partir de [este enlace](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR), accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+1. Accede a la [página de la aplicación **Mercado Pago Tarjetas**](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR) en el Marketplace y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
 
 ------------
 ----[mlm]----
-1. A partir de [este enlace](https://apps.shopify.com/mercado-pago-tarjetas-mx?locale=pt-BR), accede a la página de la aplicación **Mercado Pago Tarjetas** en el "Marketplace" y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+1. Accede a la [página de la aplicación **Mercado Pago Tarjetas**](https://apps.shopify.com/mercado-pago-tarjetas-mx) en el Marketplace y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+
+------------
+----[mco]----
+1. Accede a la [página de la aplicación **Mercado Pago Tarjetas**](https://apps.shopify.com/mercado-pago-tarjetas-co) en el Marketplace y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
 
 ------------
 ![installation mkplace 0](/images/shopify/installation-cards-mkplace-0-es.png)
@@ -138,6 +152,16 @@ Para instalar el checkout **Mercado Pago Tarjetas** en una tienda Shopify, ofrec
 10. En "Método de captura de pago", asegúrate de que el campo **De forma automática al pagar** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
 
 ![installation cards 7](/images/shopify/installation-cards-7-es.png)
+
+11. Aún en las "Configuraciones" del panel administrativo de la tienda, haz clic en **Checkout > Método de contacto del cliente** y asegúrate de que el campo **Correo electrónico** esté seleccionado como el método de contacto que los clientes deberán indicar para recibir notificaciones del pedido.
+
+> WARNING
+>
+> Atención
+>
+> El uso del **correo electrónico** como forma de contacto es obligatorio para el procesamiento de pagos con Mercado Pago.
+
+![installation cards 8](/images/shopify/installation-cards-8-es.png)
 
 ¡Listo! El checkout **Mercado Pago Tarjetas** está listo para recibir pagos.
 

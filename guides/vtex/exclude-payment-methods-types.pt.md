@@ -37,7 +37,6 @@ Na tabela a seguir, você encontrará a nomenclatura que cada tipo e método de 
 |American Express|`amex`|`credit_card`|American Express, MercadoPagoPro e MercadoPagoWallet|
 |Elo|`elo`|`credit_card`|Elo, MercadoPagoPro e MercadoPagoWallet|
 |Hipercard|`hipercard`|`credit_card`|Hipercard, MercadoPagoPro e MercadoPagoWallet|
-|PEC|`pec`|`ticket`|MercadoPagoPro e MercadoPagoOff|
 |Boleto|`bolbradesco`|`ticket`|Boleto Bancário, MercadoPagoPro e MercadoPagoOff|
 |Pix|`pix`|`bank_transfer`|Pix e MercadoPagoPro|
 

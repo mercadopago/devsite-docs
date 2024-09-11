@@ -13,7 +13,7 @@ bullet_section_with_media:
  - type: normal
  - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (Pix, boleto bancário, pagamento em lotérica sem boleto, saldo na conta Mercado Pago e Mercado Crédito).
+ - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (Pix, boleto bancário, saldo na conta Mercado Pago e Mercado Crédito).
  - benefit_title: Checkout Transparente
  - benefit_message: O pagamento é realizado sem sair da sua loja virtual com Pix, cartão de crédito e boleto.
  - image: /nuvemshop/nuvemshop-payment.png  

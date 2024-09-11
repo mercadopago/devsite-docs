@@ -40,6 +40,15 @@ Lembrando que não se deve apenas chamar a função de renderização com os nov
 
 O exemplo de código abaixo exemplifica o fluxo utilizando a atualização de uma preferência em [Payment Brick](/developers/pt/docs/checkout-bricks/payment-brick/introduction), mas o fluxo em si é válido para atualização necessária em dados de inicialização de qualquer Brick.
 
+----[mlc]----
+> WARNING
+>
+> Atenção
+>
+> O valor `amount` deve ser um número inteiro.
+
+------------
+
 ```Javascript
 //First render
 const renderPaymentBrick = async (bricksBuilder) => {

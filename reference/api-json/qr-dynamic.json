@@ -521,7 +521,7 @@
         "description": {
           "en": "Generates a payment order with all the payment information for your product or service and associate it with the Point of Sale you want. The success response consists of an empty 201 code",
           "pt": "Gera uma ordem de pagamento com todas as informações do seu produto ou serviço e associa-o ao Ponto de Venda que desejar. A resposta de sucesso consiste em um código 201 vazio",
-          "es": "Genera una orden de pago con todos los datos de pago de tu producto o servicio y asóciala al Punto de Venta que desees. La respuesta de éxito consiste en un código 201 vacío."
+          "es": "Genera una orden de pago con todos los datos de pago de tu producto o servicio y asóciala al Punto de Venta que desees. La respuesta de éxito consiste en un código 201 vacío"
         },
         "parameters": [
           {

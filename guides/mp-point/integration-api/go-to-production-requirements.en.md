@@ -21,9 +21,13 @@ The Pix payment option will only be displayed if there is a Pix Key registered i
 
 ## Measure the Integration Quality
 
-Before going to production, and in order to offer the best experience to both the seller and the buyer, you must assess the [quality of your integration](/developers/en/docs/mp-point/how-tos/integration-quality) with our homologation tool.
+Before going to production, and in order to offer the best experience to both the seller and the buyer, you must assess the [quality of your integration](/developers/en/docs/mp-point/how-tos/integration-quality) with our measurement tool. This is a certification process that allows you to verify if you are meeting the **quality and security standards of Mercado Pago** before starting to receive real payments. 
 
-This is a certification process that allows you to verify if you are meeting the **quality and security standards of Mercado Pago** before starting to receive real payments. By entering the `payment ID` of a payment made with production credentials, our tool measures essential aspects for the effectiveness of your integration, such as payment approval improvement, financial reconciliation, security, among others.
+The measurement can be carried out in two ways:
+* **Manual**, where you will need to enter the `payment ID` of a payment made with production credentials to perform the measurement whenever you wish.
+* **Automatic**, directly conducted by our tool once a month, as long as you also have a payment made with production credentials.
+
+In both cases, the measurement is performed considering fundamental aspects for the effectiveness of your integration, such as payment approval improvement, financial reconciliation, security, among others.
 
 If adjustments are needed, necessary actions and best practices will be suggested to improve the evaluated aspects and ensure that your integration meets the necessary standards.
 

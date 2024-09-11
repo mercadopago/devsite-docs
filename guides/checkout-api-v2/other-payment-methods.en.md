@@ -1,7 +1,7 @@
 # Other payment methods
 
 ----[mlb]----
-With Mercado Pago's Checkout Transparente, it is possible to offer, in addition to card and Pix, **payments via boleto bancário and pagamento em lotérica**.
+With Mercado Pago's Checkout Transparente, it is possible to offer, in addition to card and Pix, **payments via boleto bancário**.
 
 > NOTE
 >
@@ -128,7 +128,7 @@ curl -X GET \
 ]]]
 
 ----[mlb]----
-To offer **Boleto Bancário** and/or **Pagamento em lotérica**, follow the steps below.
+To offer **Boleto Bancário**, follow the steps below.
 
 ------------
 ----[mla]----
@@ -362,7 +362,7 @@ elem.appendChild(tempOptions);
 When finalizing the inclusion of the payment form and obtaining the types of documents, it is necessary to forward the buyer's email, type and document number, the payment method used and the details of the amount to be paid using our Payments API or one of our SDKs.
 
 ----[mlb]----
-To configure payments with **Boleto Bancário** or **Pagamento em lotérica**, send a **POST** with the parameters detailed in the tables below to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
+To configure payments with **Boleto Bancário**, send a **POST** with the parameters detailed in the tables below to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
 > WARNING
 >
@@ -668,7 +668,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 
 | Parameter | Type | Description, possible values and examples |
 |---|---|---|
-| `payment_method_id` | string | Payment method. For pagamentos em lotéricas, it is always `pec`. |
+| `payment_method_id` | string | Payment method. |
 
 > WARNING
 >

@@ -51,7 +51,7 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media: 
- - title: Receba pagamentos com o Checkout Mercado Pago (Checkout Pro)
+ - title: Receba pagamentos com o Mercado Pago Checkout Pro (Checkout Pro)
  - type: normal
  - message: Integre o Mercado Pago na Shopify e redirecione seus compradores diretamente para a página do Mercado Pago, permitindo que concluam o pagamento de maneira simples e segura. O Checkout Pro oferece um design pré-configurado para facilitar a experiência de pagamento.
  - image: /shopify/mini-landing-1.png
@@ -70,7 +70,7 @@ bullet_section_with_media:
 
 ---
 bullet_section_with_media: 
- - title: Receba pagamentos com o Checkout Mercado Pago (Checkout Pro)
+ - title: Receba pagamentos com o Mercado Pago Checkout Pro (Checkout Pro)
  - type: normal
  - message: Integre o Mercado Pago na Shopify e redirecione seus compradores diretamente para a página do Mercado Pago, permitindo que concluam o pagamento de maneira simples e segura. O Checkout Pro oferece um design pré-configurado para facilitar a experiência de pagamento.
  - image: /shopify/mini-landing-1.png
@@ -106,7 +106,7 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda
+available_payments: credit, debit, mercadopago, boleto, pix, moneda
 
 ---
 ------------

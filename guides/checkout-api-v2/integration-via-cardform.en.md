@@ -162,12 +162,116 @@ After adding the payment form, you will need to initialize it. This step consist
 >
 > When submitting the form, a token, also known as **cardtoken**, is generated, securely representing the card data. You can access it via the `cardForm.getCardFormData()` function, as shown abive in the `onSubmit` callback. Furthermore, this token is also stored in a hidden input within the form where it can be found with the name `MPHiddenInputToken`. Keep in mind that the cardtoken can **only be used once** and expires within **7 days**.
 
-----[mla, mlu, mpe, mco, mlb, mlc]----
+----[mla, mlu, mpe, mco, mlb]----
 [[[
 ```javascript
 
 const cardForm = mp.cardForm({
 amount: "100.5",
+iframe: true,
+form: {
+id: "form-checkout",
+cardNumber: {
+id: "form-checkout__cardNumber",
+placeholder: "Card Number",
+},
+expirationDate: {
+id: "form-checkout__expirationDate",
+placeholder: "MM/YY",
+},
+securityCode: {
+id: "form-checkout__securityCode",
+placeholder: "Security Code",
+},
+cardholderName: {
+id: "form-checkout__cardholderName",
+placeholder: "Cardholder",
+},
+issuer: {
+id: "form-checkout__issuer",
+placeholder: "Issuing bank",
+},
+installments: {
+id: "form-checkout__installments",
+placeholder: "Installments",
+},
+identificationType: {
+id: "form-checkout__identificationType",
+placeholder: "Document type",
+},
+identificationNumber: {
+id: "form-checkout__identificationNumber",
+placeholder: "Document number",
+},
+cardholderEmail: {
+id: "form-checkout__cardholderEmail",
+placeholder: "Email",
+},
+},
+callbacks: {
+onFormMounted: error => {
+if (error) return console.warn("Form Mounted handling error: ", error);
+console.log("Form mounted");
+},
+onSubmit: event => {
+event.preventDefault();
+
+const {
+paymentMethodId: payment_method_id,
+issuerId: issuer_id,
+cardholderEmail: email,
+amount,
+token,
+installments,
+identificationNumber,
+identificationType,
+} = cardForm.getCardFormData();
+
+fetch("/process_payment", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify({
+token,
+issuer_id,
+payment_method_id,
+transaction_amount: Number(amount),
+installments: Number(installments),
+description: "Product Description",
+payer: {
+email,
+identification: {
+type: identificationType,
+number: identificationNumber,
+},
+},
+}),
+});
+},
+onFetching: (resource) => {
+console.log("Fetching resource: ", resource);
+
+// Animate progress bar
+const progressBar = document.querySelector(".progress-bar");
+progressBar.removeAttribute("value");
+
+return() => {
+progressBar.setAttribute("value", "0");
+};
+}
+},
+});
+```
+]]]
+
+------------
+----[mlc]----
+[[[
+```javascript
+
+const cardForm = mp.cardForm({
+amount: "100", // The value must be an integer.
 iframe: true,
 form: {
 id: "form-checkout",

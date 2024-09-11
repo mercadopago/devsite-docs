@@ -22,11 +22,17 @@ A opção de pagamento via Pix só será exibida se houver uma Chave Pix cadastr
 
 ## Medir a qualidade da integração
 
-Para oferecer uma melhor experiência tanto para o vendedor quanto para o comprador, é importante analisar a [qualidade de sua integração](/developers/pt/docs/mp-point/how-tos/integration-quality) com a nossa ferramenta de homologação.
+Para oferecer a melhor experiência tanto para o vendedor quanto para o comprador,é necessário avaliar a [qualidade de sua integração](/developers/pt/docs/mp-point/how-tos/integration-quality) com nossa ferramenta de medição.
 
-Este processo assegura que a integração atenda aos **requisitos de qualidade e segurança do Mercado Pago** antes de iniciar o processamento de pagamentos reais. Inserindo o `payment ID` de um pagamento efetuado com credenciais de produção, nossa ferramenta realiza uma avaliação completa, focando em aspectos fundamentais para a eficácia da integração, como a melhoria na aprovação de pagamentos, conciliação financeira ou segurança, entre outros.
+A homologação poderá ser realizada de 2 formas:
+ * **Manual**, onde será necessário inserir o `payment ID` de um pagamento realizado com credenciais produtivas para poder fazer a medição quando desejar.
+ * **Automática**, realizada diretamente pela nossa ferramenta uma vez por mês, desde que você também tenha um pagamento realizado com credenciais produtivas.
+
+Em ambos os casos, a medição é realizada considerando aspectos fundamentais para a eficácia da integração, como a melhoria na aprovação de pagamentos, conciliação financeira ou segurança, entre outros.
 
 Caso a ferramenta identifique necessidades de ajustes, serão recomendadas ações e boas práticas para otimizar esses pontos avaliados, garantindo que a integração preencha os requisitos necessários.
+
+Uma vez que as mudanças sejam aplicadas, você pode voltar a medir a qualidade da sua integração ou, se preferir, aguardar para receber os resultados da medição automática.
 
 ## Relatórios
 
