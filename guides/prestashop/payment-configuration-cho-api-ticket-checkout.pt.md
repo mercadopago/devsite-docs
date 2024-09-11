@@ -15,7 +15,6 @@ Para integrar a forma de pagamento, siga os passos abaixo.
 2. Escolha os meios de pagamento que deseja oferecer, podendo ser: 
  ----[mlb]---- 
  * Dinheiro (saldo no Mercado Pago ou boleto bancário); 
- * Pagamento na lotérica sem boleto (com CPF).
  ------------ 
  ----[mla, mlm, mpe, mco, mlu, mlc]---- 
  * Dinheiro (saldo no Mercado Pago ou efectivo).

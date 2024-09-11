@@ -673,7 +673,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 
 | Parámetro | Tipo | Descripción, valores posibles y ejemplos |
 |---|---|---|
-| `payment_method_id` | string | Método de pago. Para pagos en agencia, es siempre `pec`. |
+| `payment_method_id` | string | Método de pago. |
 
 > WARNING
 >
