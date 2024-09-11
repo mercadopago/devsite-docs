@@ -1406,9 +1406,9 @@
                       "type": "string",
                       "example": "https://sandbox.mercadopago.com/mla/checkout/pay?pref_id=202809963-920c288b-4ebb-40be-966f-700250fa5370",
                       "description": {
-                        "en": "Automatically generated URL to open the Checkout in sandbox mode. Real users are used here, but transactions are executed using test credentials.",
-                        "pt": "URL gerado automaticamente para abrir o Checkout no modo sandbox. Usuários reais são usados ​​aqui, mas as transações são executadas com credenciais de teste.",
-                        "es": "URL generada automáticamente para abrir el Checkout en modo sandbox. Aquí se utilizan usuarios reales, pero las transacciones se ejecutan con credenciales de prueba."
+                        "en": "We recommend that you do not use this parameter to test your integration, as it will be deprecated soon. Instead, please follow the detailed instructions in the documentation available at: https://www.mercadopago.com.br/developers/en/docs/checkout-pro/integration-test/test-purchase.",
+                        "pt": "Recomendamos que não utilize este parâmetro para testar sua integração, pois ele será descontinuado em breve. Para testá-la, recomendamos seguir as instruções detalhadas na documentação disponível em: https://www.mercadopago.com.br/developers/pt/docs/checkout-pro/integration-test/test-purchase.",
+                        "es": "Recomendamos que no utilice este parámetro para probar su integración, ya que será descontinuado pronto. En su lugar, le sugerimos seguir las instrucciones detalladas en la documentación disponible en: https://www.mercadopago.com.ar/developers/es/docs/checkout-pro/integration-test/test-purchase."
                       }
                     },
                     "metadata": {
