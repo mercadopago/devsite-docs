@@ -245,8 +245,8 @@
                             "type": "string",
                             "description": {
                               "en": "Buyer's name.",
-                              "pt": "Nome do comprador",
-                              "es": "Nombre del comprador"
+                              "pt": "Nome do comprador.",
+                              "es": "Nombre del comprador."
                             },
                             "example": "Test"
                           },
@@ -263,8 +263,8 @@
                             "type": "object",
                             "description": {
                               "en": "Buyer's phone.",
-                              "pt": "Telefone do comprador",
-                              "es": "Teléfono del comprador"
+                              "pt": "Telefone do comprador.",
+                              "es": "Teléfono del comprador."
                             },
                             "properties": {
                               "area_code": {
@@ -279,7 +279,7 @@
                               "number": {
                                 "type": "string",
                                 "description": {
-                                  "en": "Buyer's fone number",
+                                  "en": "Buyer's fone number.",
                                   "pt": "Número de telefone do comprador.",
                                   "es": "Número telefónico del comprador."
                                 },
@@ -642,8 +642,8 @@
                     "type": "object",
                     "description": {
                       "en": "Identifies the buyer.",
-                      "pt": "Id do pagador",
-                      "es": "Identificador del pagador"
+                      "pt": "ID do pagador. Importante: Para pagamentos realizados via Pix, os dados do payer não são retornados por questões de conformidade.",
+                      "es": "Identificador del pagador."
                     },
                     "required": true,
                     "properties": {
@@ -657,8 +657,8 @@
                         "type": "number",
                         "description": {
                           "en": "Identification of the associated payer.",
-                          "pt": "Identificação do pagador associado",
-                          "es": "Identificación del pagador asociado"
+                          "pt": "Identificação do pagador associado.",
+                          "es": "Identificación del pagador asociado."
                         }
                       },
                       "email": {
