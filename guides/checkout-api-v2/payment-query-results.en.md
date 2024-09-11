@@ -1,4 +1,4 @@
-# Query about a payment status
+# Get payment status
 
 | Status | `status_detail` | Description |
 | --- | --- | --- |
