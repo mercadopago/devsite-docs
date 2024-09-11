@@ -15,7 +15,7 @@ Veja abaixo quais são os meios de pagamento disponíveis para a loja ao integra
 
 * [Cartões](/developers/pt/docs/prestashop/payment-configuration/checkout-api/cards): cartões de crédito e débito.
 ----[mlb]----
-* [Ticket checkout](/developers/pt/docs/prestashop/payment-configuration/checkout-api/ticket-checkout): pagamentos em dinheiro (saldo no Mercado Pago ou boleto bancário) e pagamento na lotérica sem boleto (com CPF).
+* [Ticket checkout](/developers/pt/docs/prestashop/payment-configuration/checkout-api/ticket-checkout): pagamentos em dinheiro (saldo no Mercado Pago ou boleto bancário).
 * [Pix](/developers/pt/docs/prestashop/payment-configuration/checkout-api/pix): transferência bancária disponível 24h por dia. A opção de pagamento com Pix só será exibida se houver uma [Chave Pix cadastrada](https://www.youtube.com/watch?v=60tApKYVnkA) no Mercado Pago. 
 ------------
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 

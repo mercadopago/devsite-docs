@@ -51,7 +51,7 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, mercadocredito, boleto, pix, pec
+available_payments: credit, debit, mercadopago, mercadocredito, boleto, pix
 
 ---
 ------------

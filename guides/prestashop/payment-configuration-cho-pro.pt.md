@@ -9,7 +9,7 @@ Para integrar o Checkout Pro, siga os passos abaixo.
  ----[mlb]---- 
  * Cartões de débito e crédito; 
  * Dinheiro (saldo da conta do Mercado Pago ou boleto bancário); 
- * Transferência bancária (Pix e PEC). A opção de pagamento com Pix só será exibida se houver uma Chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
+ * Transferência bancária (Pix). A opção de pagamento com Pix só será exibida se houver uma Chave Pix cadastrada no Mercado Pago. Caso ainda não tenha criado, [clique aqui](https://www.youtube.com/watch?v=60tApKYVnkA) e veja o passo a passo.
  ------------ 
 ----[mla, mlm, mpe, mco, mlu, mlc]---- 
  * Cartões de débito e crédito;
