@@ -2401,7 +2401,7 @@
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
-                            "pt": "Order não encontrada. Verifique se enviou o ID correto."
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
                           }
                         }
                       ]
