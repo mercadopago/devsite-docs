@@ -1195,7 +1195,7 @@
                                   "description": {
                                     "en": "An error occurred in the processing of the payment. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
                                     "es": "Se produjo un fallo en el procesamiento del pago. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                                    "pt": "Ocorreu um erro no processamento do pagamento. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                    "pt": "Ocorreu um erro no processamento do pagamento, possivelmente causado pelo  envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                                   }
                                 },
                                 {
