@@ -599,7 +599,7 @@
                                   "description": {
                                     "en": "The transaction was rejected by the card issuer.",
                                     "es": "La transacción fue rechazada por la entidad emisora de la tarjeta.",
-                                    "pt": "A transação foi rejeitada pela entidade emissora do cartão."
+                                    "pt": "Transação rejeitada pela entidade emissora do cartão."
                                   }
                                 },
                                 {
