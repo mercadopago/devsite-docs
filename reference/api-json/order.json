@@ -2580,7 +2580,7 @@
                           "description": {
                             "en": "Generic error. Please try submitting the request again.",
                             "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
-                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                            "pt": "Erro genérico. Tente realizar uma nova requisição."
                           }
                         }
                       ]
