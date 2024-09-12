@@ -2996,7 +2996,7 @@
                       "type":"object",
                       "description": {
                         "en":"Contains information about the transactions associated with the order.",
-                        "pt":"Contém informações sobre as transações associadas a uma order.",
+                        "pt":"Este objeto traz informações sobre as transações associadas a uma order.",
                         "es":"Contiene información sobre las transaccións asociadas a una order."
                       },
                       "properties":{
