@@ -7,9 +7,9 @@
           "checkout-api"
         ],
         "description": {
-          "en": "This endpoint allows to create orders in \"automatic\" (processing the transaction in a single stage) or \"manual\" (processing the transaction in stages that can be configured and executed incrementally) mode for payment and cashout transactions",
-          "pt": "Este endpoint permite criaruma order no modo \"automático\" (processando a transação em uma única etapa) ou \"manual\" (processando a transação em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout",
-          "es": "Este endpoint permite crear una order en modo \"automático\" (procesando la transacción en una sola etapa) o \"manual\" (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout"
+          "en": "This endpoint allows to create orders in \"automatic\" (processing the transaction in a single stage) or \"manual\" (processing the transaction in stages that can be configured and executed incrementally) mode for payment and cashout transactions. In case of success, the request will return a response with status 201",
+          "pt": "Este endpoint permite criaruma order no modo \"automático\" (processando a transação em uma única etapa) ou \"manual\" (processando a transação em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+          "es": "Este endpoint permite crear una order en modo \"automático\" (procesando la transacción en una sola etapa) o \"manual\" (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
         },
         "parameters": [
           {
@@ -149,7 +149,7 @@
                   },
                   "description":{
                     "type":"string",
-                    "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
+                    "example":"Point Mini",
                     "description":{
                       "en":"Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
                       "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
@@ -542,7 +542,7 @@
                                   "title": "accredited",
                                   "description": {
                                     "en": "Payment accredited.",
-                                    "es": "Pago agreditado.",
+                                    "es": "Pago acreditado.",
                                     "pt": "Pagamento creditado."
                                   }
                                 },
@@ -683,7 +683,7 @@
                     },
                     "description":{
                       "type":"string",
-                      "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
+                      "example":"Point Mini",
                       "description":{
                         "en":"Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
                         "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
@@ -835,9 +835,9 @@
           },
           "400": {
             "description": {
-              "en": "Error. Invalid value for property",
-              "pt": "Erro. Valor inválido.",
-              "es": "Error. Valor inválido."
+              "en": "Error. Invalid value for property.",
+              "pt": "Erro. Valor inválido para a propriedade.",
+              "es": "Error. Valor no válido para la propiedad. "
             },
             "content":{
               "application/json":{
@@ -934,9 +934,9 @@
           "checkout-api"
         ],
         "description": {
-          "en": "Consult all order information using the ID obtained in the response to its creation",
-          "pt": "Este endpoint permite consultar todas as informações de uma order utilizando o ID obtido na resposta de sua criação",
-          "es": "Consulta toda la información sobre una order utilizando el ID obtenido en la respuesta a su creación"
+          "en": "Consult all order information using the ID obtained in the response to its creation. n case of success, the request will return a response with status 200",
+          "pt": "Este endpoint permite consultar todas as informações de uma order utilizando o ID obtido na resposta de sua criação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Consulta toda la información sobre una order utilizando el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters": [
           {
@@ -1229,7 +1229,7 @@
                                   "title": "accredited",
                                   "description": {
                                     "en": "Payment accredited.",
-                                    "es": "Pago agreditado.",
+                                    "es": "Pago acreditado.",
                                     "pt": "Pagamento creditado."
                                   }
                                 },
@@ -1394,7 +1394,7 @@
                     },
                     "description":{
                       "type":"string",
-                      "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
+                      "example":"Point Mini",
                       "description":{
                         "en":"Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
                         "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
@@ -1674,9 +1674,9 @@
           "checkout-api"
         ],
         "description":{
-          "en":"Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"action_required\" can be canceled",
-          "pt":"Este endpoint permite cancelar uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" pode ser cancelada",
-          "es":"Cancela una orden y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"action_required\""
+          "en":"Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"action_required\" can be canceled. In case of success, the request will return a response with status 200",
+          "pt":"Este endpoint permite cancelar uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Cancela una orden y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"action_required\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters":[
           {
@@ -1894,7 +1894,7 @@
                     },
                     "description":{
                       "type":"string",
-                      "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
+                      "example":"Point Mini",
                       "description":{
                         "en":"Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
                         "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
@@ -2173,9 +2173,9 @@
           "checkout-api"
         ],
         "description": {
-          "en": "This endpoint allows payment transactions to be added to the order. This operation can only be carried out in manual mode (processing the transaction in stages that can be configured and executed incrementally), with the 'processing_mode' field filled with 'manual' value",
-          "pt": "Esse endpoint permite adicionar transações de pagamento à order. Essa operação só pode ser realizada no modo manual (processando a transação em etapas que podem ser configuradas e executadas de forma incremental), com o parâmetro 'processing_mode' com valor 'manual'",
-          "es": "Este endpoint permite añadir transacciones de pago a la order. Esta operación solo puede realizarse en el modo manual (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental), con el campo 'processing_mode' con valor 'manual'"
+          "en": "This endpoint allows payment transactions to be added to the order. This operation can only be carried out in manual mode (processing the transaction in stages that can be configured and executed incrementally), with the 'processing_mode' field filled with 'manual' value. In case of success, the request will return a response with status 201",
+          "pt": "Esse endpoint permite adicionar transações de pagamento à order. Essa operação só pode ser realizada no modo manual (processando a transação em etapas que podem ser configuradas e executadas de forma incremental), com o parâmetro 'processing_mode' com valor 'manual'. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+          "es": "Este endpoint permite añadir transacciones de pago a la order. Esta operación solo puede realizarse en el modo manual (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental), con el campo 'processing_mode' con valor 'manual'. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
         },
         "parameters": [
           {
@@ -2460,9 +2460,9 @@
           "checkout-api"
         ],
         "description": {
-          "en": "This endpoint allows you to delete a payment transaction from the order",
-          "pt": "Este endpoint permite deletar uma transação de pagamento da order",
-          "es": "Este endpoint permite eliminar una transacción de pago de la order"
+          "en": "This endpoint allows you to delete a payment transaction from the order. In case of success, the request will return a response with status 201",
+          "pt": "Este endpoint permite deletar uma transação de pagamento da order. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+          "es": "Este endpoint permite eliminar una transacción de pago de la order. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
         },
         "parameters": [
           {
@@ -2869,9 +2869,9 @@
           "checkout-api"
         ],
         "description":{
-          "en":"Performs the processing of an order and its transactions using the reference ID obtained in the response to its creation",
-          "pt":"Este endpoint permite executar o processamento de uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação",
-          "es":"Realiza el procesamiento de una order y sus transacciones asociadas utilizando el ID de referencia obtenido en la respuesta a su creación"
+          "en":"Performs the processing of an order and its transactions using the reference ID obtained in the response to its creation. In case of success, the request will return a response with status 200",
+          "pt":"Este endpoint permite executar o processamento de uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Realiza el procesamiento de una order y sus transacciones asociadas utilizando el ID de referencia obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters":[
           {
@@ -3271,7 +3271,7 @@
                     },
                     "description": {
                       "type":"string",
-                      "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
+                      "example":"Point Mini",
                       "description": {
                         "en":"Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
                         "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
@@ -4003,7 +4003,7 @@
             "title":{
               "type":"string",
               "required":true,
-              "example":"Xiaomi Redmi Note 11S 128gb 6gb Ram",
+              "example":"Point Mini",
               "description":{
                 "en":"Item name. The character limit is 150.",
                 "pt":"Nome do item. O limite de caracteres é 150.",
