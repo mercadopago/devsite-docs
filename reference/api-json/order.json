@@ -433,7 +433,7 @@
                           "description": {
                             "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
                             "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                            "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                            "pt": "A order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
                           }
                         }
                       ]
