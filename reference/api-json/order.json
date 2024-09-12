@@ -935,7 +935,7 @@
         ],
         "description": {
           "en": "Consult all order information using the ID obtained in the response to its creation",
-          "pt": "Consulta todas as informações de uma order utilizando o ID obtido na resposta à sua criação",
+          "pt": "Este endpoint permite consultar todas as informações de uma order utilizando o ID obtido na resposta de sua criação",
           "es": "Consulta toda la información sobre una order utilizando el ID obtenido en la respuesta a su creación"
         },
         "parameters": [
