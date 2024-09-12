@@ -2755,6 +2755,35 @@
               }
             }
           },
+          "401": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "Unauthorized use of live credentials",
+                          "description": {
+                            "en": "This error occurs when the access token does not have the required 'payment' scope. Verify that the credentials are correct and have the appropriate permissions.",
+                            "es": "Este error ocurre cuando el token de acceso no tiene el alcance 'payment' necesario. Verifique que las credenciales sean correctas y que tengan los permisos adecuados.",
+                            "pt": "Esse erro ocorre quando o token de acesso não tem o escopo 'payment' necessário. Verifique se as credenciais estão corretas e se possuem as permissões adequadas."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
           "403": {
             "description": {
               "en": "Error",
