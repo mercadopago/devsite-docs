@@ -1,4 +1,4 @@
-#  Resultados da criação de um pagamento
+# Consulta sobre o status de um pagamento
 
 | Status | `status_detail` | Descrição |
 | --- | --- | --- |
@@ -11,7 +11,16 @@
 | pending | `pending_waiting_transfer` |Nos casos de transferência bancária, o `status_detail` é obtido aguardando que o usuário finalize o processo de pagamento no seu banco. |
 | pending | `pending_waiting_payment` | Nos casos de pagamentos offline, o mesmo fica pendente até que o usuário realize o pagamento. |
 | pending | `pending_challenge` | Nos casos de pagamentos com cartão de crédito, há uma confirmação pendente por devido a um challenge. |
+| cancelled | `expired` | O pagamento foi cancelado após ficar com status pendente por 30 dias.| 
+| cancelled | `by_collector` | O pagamento foi cancelado pelo collector.| 
+| cancelled | `by_payer` | O pagamento foi cancelado pelo pagador.|
+| charged_back | `settled` | O dinheiro foi retido após um processo de estorno. |
+| charged_back | `reimbursed` | O dinheiro foi devolvido após um processo de estorno.|
+| charged_back | `in_process` | O pagamento está em processo de recuperação pois o pagador desconhece a transação.|
+| refunded | `refunded` | O pagamento foi devolvido pelo collector.|
+| refunded | `by_admin` | o pagamento foi devolvido.|
 | rejected | `bank_error` | Se a forma de pagamento for transferência bancária, o pagamento foi rejeitado devido a um erro com o banco. |
+| rejected | `cc_rejected_3ds_challenge` | Pagamento rejeitado por não superar o challenge 3DS. |
 | rejected | `cc_rejected_3ds_mandatory` | Pagamento rejeitado por não ter o challenge 3DS quando é obrigatório. |
 | rejected | `cc_rejected_bad_filled_card_number` | Revise o número do cartão. |
 | rejected | `cc_rejected_bad_filled_date` | Revise a data de vencimento. |
