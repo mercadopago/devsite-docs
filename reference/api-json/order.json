@@ -3555,7 +3555,7 @@
         "required": true,
         "description": {
           "en": "Identifier of the currency used in the transaction/order. We currently have the following options.",
-          "pt": "Identificador da moeda utilizada na transação/order. Atualmente, possuímos as opções a seguir.",
+          "pt": "Identificador da moeda utilizada na transação/order. Veja abaixo as opções disponíveis.",
           "es": "Identificador de la moneda utilizada en la transacción/order. Actualmente tenemos las siguientes opciones."
         },
         "example": "BRL",
