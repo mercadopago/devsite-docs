@@ -8,7 +8,7 @@
         ],
         "description": {
           "en": "This endpoint allows to create orders in \"automatic\" (processing the transaction in a single stage) or \"manual\" (processing the transaction in stages that can be configured and executed incrementally) mode for payment and cashout transactions",
-          "pt": "Este endpoint permite a criação de uma order no modo \"automático\" (processando a transação em uma única etapa) ou \"manual\" (processando a transação em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout",
+          "pt": "Este endpoint permite criaruma order no modo \"automático\" (processando a transação em uma única etapa) ou \"manual\" (processando a transação em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout",
           "es": "Este endpoint permite crear una order en modo \"automático\" (procesando la transacción en una sola etapa) o \"manual\" (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout"
         },
         "parameters": [
@@ -60,7 +60,7 @@
                     "description":{
                       "en":"It is an external reference of the order. It can be, for example, a hashcode from the Central Bank, functioning as an identifier of the transaction origin.",
                       "es":"Es una referencia externa de la order. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción.",
-                      "pt":"É uma referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação." 
+                      "pt":"Referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação." 
                     }
                   },
                   "transactions":{
@@ -179,7 +179,7 @@
                     "example":"123",
                     "description":{
                       "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
-                      "pt":"É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
+                      "pt":"Identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
                       "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
                     }
                   },
@@ -352,7 +352,7 @@
                       "example":"ext_ref_1234",
                       "description":{
                         "en":"It is the external reference of the order, assigned when creating it.",
-                        "pt":"É a referência externa da order, atribuída no momento da criação.",
+                        "pt":"Referência externa da order, atribuída no momento da criação.",
                         "es":"Es una referencia externa de la order, asignada al momento de su creación."
                       }
                     },
@@ -401,7 +401,7 @@
                           "description": {
                             "en": "The order has been created successfully.",
                             "es": "La order fue creada exitosamente.",
-                            "pt": "A order foi criada com sucesso."
+                            "pt": "Order criada com sucesso."
                           }
                         },
                         {
@@ -425,7 +425,7 @@
                           "description": {
                             "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
                             "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                            "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                            "pt": "Ocorreu um erro no processamento da order, possivelmente devido ao envio incorreto dos dados, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                           }
                         },
                         {
@@ -433,7 +433,7 @@
                           "description": {
                             "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
                             "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                            "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                            "pt": "A order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
                           }
                         }
                       ]
@@ -492,7 +492,7 @@
                                   "description": {
                                     "en": "The order has been created successfully.",
                                     "es": "La order fue creada exitosamente.",
-                                    "pt": "A order foi criada com sucesso."
+                                    "pt": "Order criada com sucesso."
                                   }
                                 },
                                 {
@@ -516,7 +516,7 @@
                                   "description": {
                                     "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
                                     "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                                    "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                    "pt": "Ocorreu um erro no processamento da order, possivelmente causado pelo envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                                   }
                                 },
                                 {
@@ -543,7 +543,7 @@
                                   "description": {
                                     "en": "Payment accredited.",
                                     "es": "Pago agreditado.",
-                                    "pt": "Pagamento acreditado."
+                                    "pt": "Pagamento creditado."
                                   }
                                 },
                                 {
@@ -551,7 +551,7 @@
                                   "description": {
                                     "en": "The payment has been partially refunded.",
                                     "es": "El pago fue parcialmente devuelto.",
-                                    "pt": "O pagamento foi parcialmente devolvido."
+                                    "pt": "Pagamento parcialmente devolvido."
                                   }
                                 },
                                 {
@@ -583,7 +583,7 @@
                                   "description": {
                                     "en": "The transaction was rejected due to fraud prevention.",
                                     "es": "La transacción fue rechazada por prevención de fraude.",
-                                    "pt": "A transação foi rejeitada devido à prevenção de fraude."
+                                    "pt": "Transação rejeitada devido à prevenção de fraude."
                                   }
                                 },
                                 {
@@ -599,7 +599,7 @@
                                   "description": {
                                     "en": "The transaction was rejected by the card issuer.",
                                     "es": "La transacción fue rechazada por la entidad emisora de la tarjeta.",
-                                    "pt": "A transação foi rejeitada pela entidade emissora do cartão."
+                                    "pt": "Transação rejeitada pela entidade emissora do cartão."
                                   }
                                 },
                                 {
@@ -607,7 +607,7 @@
                                   "description": {
                                     "en": "The transaction was rejected for exceeding the maximum number of attempts to complete it.",
                                     "es": "La transacción fue rechazada por exceder el número máximo de intentos para realizarla.",
-                                    "pt": "A transação foi rejeitada por exceder o número máximo de tentativas para processá-la."
+                                    "pt": "Transação rejeitada por exceder o número máximo de tentativas para processá-la."
                                   }
                                 },
                                 {
@@ -639,7 +639,7 @@
                                   "description": {
                                     "en": "There was an error during processing.",
                                     "es": "Ocurrió un error durante el procesamiento.",
-                                    "pt": " Ocorreu um erro durante o processamento. "
+                                    "pt": "Ocorreu um erro durante o processamento. "
                                   }
                                 },
                                 {
@@ -655,7 +655,7 @@
                                   "description": {
                                     "en": "The payment is pending manual review.",
                                     "es": "El pago está está pendiente de revisión manual.",
-                                    "pt": "O pagamento está pendente de revisão manual."
+                                    "pt": "Pagamento pendente de revisão manual."
                                   }
                                 },
                                 {
@@ -713,7 +713,7 @@
                       "example":"123",
                       "description":{
                         "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
-                        "pt":"É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
+                        "pt":"Identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
                         "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
                       }
                     },
@@ -742,7 +742,7 @@
                           "example":"4.90",
                           "description":{
                             "en":"Value of the discount coupon.",
-                            "pt":"É o valor do cupom de desconto.",
+                            "pt":"Valor do cupom de desconto.",
                             "es":"Es el valor del cupón de descuento."
                           }
                         }
@@ -772,7 +772,7 @@
                             "example":448876418,
                             "description":{
                               "en":"It is the identification of the user who receives the money.",
-                              "pt":"É identificador do usuário que recebe o dinheiro.",
+                              "pt":"Identificador do usuário que recebe o dinheiro.",
                               "es":"Es el identificador del usuario que recibe el dinero."
                             }
                           },
@@ -852,7 +852,7 @@
                           "description": {
                             "en": "An invalid payload was sent, or there is an invalid value for some property. Check the message returned in the error code to find out what the problem was and try again.",
                             "es": "Se envió un payload inválido, o hay algún valor inválido para alguna propiedad. Chequea el mensaje devuelto en el código de error para saber cuál fue el problema y vuelve a intentarlo.",
-                            "pt": "Foi enviado um payload inválido ou há um valor inválido para alguma propriedade. Verifique a mensagem retornada no código de erro para descobrir qual era o problema e tente novamente."
+                            "pt": "Um payload inválido foi enviado, ou algum valor de propriedade está incorreto. Verifique a mensagem de erro retornada para identificar o problema e tente novamente."
                           }
                         }
                       ]
@@ -881,7 +881,7 @@
                           "description": {
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "pt": "O Access Token enviado está incorreto. Revise o valor e tente enviar a requisição novamente com a informação correta."
                           }
                         }
                       ]
@@ -935,7 +935,7 @@
         ],
         "description": {
           "en": "Consult all order information using the ID obtained in the response to its creation",
-          "pt": "Consulta todas as informações de uma order utilizando o ID obtido na resposta à sua criação",
+          "pt": "Este endpoint permite consultar todas as informações de uma order utilizando o ID obtido na resposta de sua criação",
           "es": "Consulta toda la información sobre una order utilizando el ID obtenido en la respuesta a su creación"
         },
         "parameters": [
@@ -1007,7 +1007,7 @@
                       "example":"ext_ref_1234",
                       "description":{
                         "en":"It is the external reference of the order, assigned when creating it.",
-                        "pt":"É a referência externa da order, atribuída no momento da criação.",
+                        "pt":"Referência externa da order, atribuída no momento da criação.",
                         "es":"Es una referencia externa de la order, asignada al momento de su creación."
                       }
                     },
@@ -1056,7 +1056,7 @@
                           "description": {
                             "en": "The order has been created successfully.",
                             "es": "La order fue creada exitosamente.",
-                            "pt": "A order foi criada com sucesso."
+                            "pt": "Order criada com sucesso."
                           }
                         },
                         {
@@ -1064,7 +1064,7 @@
                         "description": {
                           "en": "The payment has been succesfully processed.",
                           "es": "El pago fue procesado exitosamente.",
-                          "pt": "O pagamento foi processado com sucesso."
+                          "pt": "Pagamento processado com sucesso."
                         }
                       },
                       {
@@ -1088,7 +1088,7 @@
                         "description": {
                           "en": "An error occurred in the processing of the payment. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
                           "es": "Se produjo un fallo en el procesamiento del pago. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                          "pt": "Ocorreu um erro no processamento do pagamento. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                          "pt": "Ocorreu um erro no processamento do pagamento. possivelmente causado pelo envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                         }
                       },
                       {
@@ -1163,7 +1163,7 @@
                                   "description": {
                                     "en": "The order has been created successfully.",
                                     "es": "La order fue creada exitosamente.",
-                                    "pt": "A order foi criada com sucesso."
+                                    "pt": "Order criada com sucesso."
                                   }
                                 },
                                 {
@@ -1171,7 +1171,7 @@
                                 "description": {
                                   "en": "The payment has been succesfully processed.",
                                   "es": "El pago fue procesado exitosamente.",
-                                  "pt": "O pagamento foi processado com sucesso."
+                                  "pt": "Pagamento processado com sucesso."
                                 }
                                 },
                                 {
@@ -1195,7 +1195,7 @@
                                   "description": {
                                     "en": "An error occurred in the processing of the payment. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
                                     "es": "Se produjo un fallo en el procesamiento del pago. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                                    "pt": "Ocorreu um erro no processamento do pagamento. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                    "pt": "Ocorreu um erro no processamento do pagamento, possivelmente causado pelo  envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                                   }
                                 },
                                 {
@@ -1230,7 +1230,7 @@
                                   "description": {
                                     "en": "Payment accredited.",
                                     "es": "Pago agreditado.",
-                                    "pt": "Pagamento acreditado."
+                                    "pt": "Pagamento creditado."
                                   }
                                 },
                                 {
@@ -1238,7 +1238,7 @@
                                   "description": {
                                     "en": "The payment has been partially refunded.",
                                     "es": "El pago fue parcialmente devuelto.",
-                                    "pt": "O pagamento foi parcialmente devolvido."
+                                    "pt": "Pagamento parcialmente devolvido."
                                   }
                                 },
                                 {
@@ -1326,7 +1326,7 @@
                                   "description": {
                                     "en": "There was an error during processing.",
                                     "es": "Ocurrió un error durante el procesamiento.",
-                                    "pt": " Ocorreu um erro durante o processamento. "
+                                    "pt": "Ocorreu um erro durante o processamento. "
                                   }
                                 },
                                 {
@@ -1342,7 +1342,7 @@
                                   "description": {
                                     "en": "The payment is pending manual review.",
                                     "es": "El pago está está pendiente de revisión manual.",
-                                    "pt": "O pagamento está pendente de revisão manual."
+                                    "pt": "Pagamento pendente de revisão manual."
                                   }
                                 },
                                 {
@@ -1358,7 +1358,7 @@
                                   "description": {
                                     "en": "The transaction has been cancelled.",
                                     "es": "La transacción fue cancelada.",
-                                    "pt": "A transação foi cancelada."
+                                    "pt": "Transação cancelada."
                                   }
                                 },
                                 {
@@ -1424,7 +1424,7 @@
                       "example":"123",
                       "description":{
                         "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
-                        "pt":"É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
+                        "pt":"Identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
                         "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
                       }
                     },
@@ -1453,7 +1453,7 @@
                           "example":"4.90",
                           "description":{
                             "en":"Value of the discount coupon.",
-                            "pt":"É o valor do cupom de desconto.",
+                            "pt":"Valor do cupom de desconto.",
                             "es":"Es el valor del cupón de descuento."
                           }
                         }
@@ -1483,7 +1483,7 @@
                             "example":448876418,
                             "description":{
                               "en":"It is the identification of the user who receives the money.",
-                              "pt":"É identificador do usuário que recebe o dinheiro.",
+                              "pt":"Identificador do usuário que recebe o dinheiro.",
                               "es":"Es el identificador del usuario que recibe el dinero."
                             }
                           },
@@ -1592,7 +1592,7 @@
                           "description": {
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "pt": "O valor enviado como Access Token está incorreto. Revise a informação e faça uma nova requisição com o valor correto."
                           }
                         }
                       ]
@@ -1606,7 +1606,7 @@
             "description": {
               "en": "Error. Order not found.",
               "pt": "Error. Order não encontrada.",
-              "es": "Error. Orden no encontrada."
+              "es": "Error. Order no encontrada."
             },
             "content":{
               "application/json":{
@@ -1621,7 +1621,7 @@
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
-                            "pt": "Order não encontrada. Verifique se enviou o ID correto."
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
                           }
                         }
                       ]
@@ -1650,7 +1650,7 @@
                           "description": {
                             "en": "Generic error. Please try submitting the request again.",
                             "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
-                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                            "pt": "Erro genérico. Tente fazer uma nova requisição."
                           }
                         }
                       ]
@@ -1675,7 +1675,7 @@
         ],
         "description":{
           "en":"Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"action_required\" can be canceled",
-          "pt":"Cancela uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" pode ser cancelada",
+          "pt":"Este endpoint permite cancelar uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" pode ser cancelada",
           "es":"Cancela una orden y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"action_required\""
         },
         "parameters":[
@@ -1747,7 +1747,7 @@
                       "example":"ext_ref_1234",
                       "description":{
                         "en":"It is the external reference of the order, assigned when creating it.",
-                        "pt":"É a referência externa da order, atribuída no momento da criação.",
+                        "pt":"Referência externa da order, atribuída no momento da criação.",
                         "es":"Es una referencia externa de la order, asignada al momento de su creación."
                       }
                     },
@@ -1811,7 +1811,7 @@
                       "type":"object",
                       "description":{
                         "en":"Contains information about the transactions associated with the order.",
-                        "pt":"Contém informações sobre as transações associadas a uma order.",
+                        "pt":"Este objeto traz informações sobre as transações associadas a uma order.",
                         "es":"Contiene información sobre las transaccións asociadas a una order."
                       },
                       "properties":{
@@ -1819,7 +1819,7 @@
                           "type":"object",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
-                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "pt":"Este objeto traz informações sobre o pagamento associado à order.",
                             "es":"Contiene información sobre el pago asociado a una order."
                           },
                           "properties":{
@@ -1874,7 +1874,7 @@
                                   "description": {
                                     "en": "The transaction has been cancelled.",
                                     "es": "La transacción fue cancelada.",
-                                    "pt": "A transação foi cancelada."
+                                    "pt": "Transação cancelada."
                                   }
                                 }
                               ]
@@ -1924,7 +1924,7 @@
                       "example":"123",
                       "description":{
                         "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
-                        "pt":"É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
+                        "pt":"Identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
                         "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
                       }
                     },
@@ -1953,7 +1953,7 @@
                           "example":"4.90",
                           "description":{
                             "en":"Value of the discount coupon.",
-                            "pt":"É o valor do cupom de desconto.",
+                            "pt":"Valor do cupom de desconto.",
                             "es":"Es el valor del cupón de descuento."
                           }
                         }
@@ -1983,7 +1983,7 @@
                             "example":448876418,
                             "description":{
                               "en":"It is the identification of the user who receives the money.",
-                              "pt":"É identificador do usuário que recebe o dinheiro.",
+                              "pt":"Identificador do usuário que recebe o dinheiro.",
                               "es":"Es el identificador del usuario que recibe el dinero."
                             }
                           },
@@ -2091,7 +2091,7 @@
                           "description": {
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e faça uma nova requisição com o valor correto."
                           }
                         }
                       ]
@@ -2105,7 +2105,7 @@
             "description": {
               "en": "Error. Order not found.",
               "pt": "Error. Order não encontrada.",
-              "es": "Error. Orden no encontrada."
+              "es": "Error. Order no encontrada."
             },
             "content":{
               "application/json":{
@@ -2120,7 +2120,7 @@
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
-                            "pt": "Order não encontrada. Verifique se enviou o ID correto."
+                            "pt": "Order não encontrada. Verifique se se o ID enviado está correto."
                           }
                         }
                       ]
@@ -2237,17 +2237,17 @@
                     "type":"object",
                     "required": true,
                     "description":{
-                      "es":"Contains information about the transactions associated with the order. It can contain up to 2 transactions. For example, if you want to create an order with two cards, you can add another item to the array \"payments\" node, dividing the total value of the transaction and indicating a different payment method for each one of the items.",
-                      "pt":"Contém informações sobre as transações associadas à order. Pode conter até 2 transações. Por exemplo, se deseja criar uma order com dois cartões, você pode adicionar um item ao array \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um dos itens do array.",
-                      "en":"Contiene información sobre las transacciones asociadas a la order. Puede contener hasta 2 transacciones. Por ejemplo, en caso de querer crear una order con dos tarjetas, puedes agregar un ítem al array \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno de los ítems del array." 
+                      "es":"Contains Information about the payment transaction to be associated with the order. It can contain up to 2 transactions. For example, if you want to create an order with two cards, you can add another item to the array \"payments\" node, dividing the total value of the transaction and indicating a different payment method for each one of the items.",
+                      "pt":"Contém informações sobre a transação de pagamento que devem ser associadas à order. Pode conter até 2 transações. Por exemplo, se deseja criar uma order com dois cartões, você pode adicionar um item ao array \"payments\", dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um dos itens do array.",
+                      "en":"Contiene información sobre la transacción de pago que se va a asociar con la order. Puede contener hasta 2 transacciones. Por ejemplo, en caso de querer crear una order con dos tarjetas, puedes agregar un ítem al array \"payments\", dividiendo el valor total de la transacción e indicando un método de pago distinto en cada uno de los ítems del array." 
                     },
                     "properties": {
                       "payments": {
                         "type": "object",
                         "description": {
-                          "en": "Contains information about the payment order. if you want to create an order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
-                          "pt": "Contém informações sobre a order do pagamento. Caso deseje criar uma order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
-                          "es": "Contiene información sobre la order de pago. En caso de querer crear una order con dos tarjetas, puedes agregar un ítem al array, dividiendo el monto de la transacción y señalando un medio de pago diferente en cada uno. "
+                          "en": "Payment transaction to be associated with the order. If you want to create an order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
+                          "pt": "Transação de pagamento que deve ser associada à order. Caso deseje criar uma order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
+                          "es": "Transacción de pago que se va a asociar con la order. En caso de querer crear una order con dos tarjetas, puedes agregar un ítem al array, dividiendo el monto de la transacción y señalando un medio de pago diferente en cada uno. "
                         },
                         "properties": {
                           "amount": {
@@ -2308,7 +2308,7 @@
                                 "example": "pay_01J49MMW3SSBK5PSV3DFR32959",
                                 "description": {
                                   "en": "It's the 'transaction_id'. Identifier of the added payment transaction, automatically generated by Mercado Pago.",
-                                  "pt": "É o 'transaction_id'. Identificador da transação de pagamento adicionada, gerado automaticamente pelo Mercado Pago.",
+                                  "pt": "'transaction_id' é o identificador da transação de pagamento adicionada, gerado automaticamente pelo Mercado Pago.",
                                   "es": "Es el 'transaction_id'. Identificador de la transacción de pago añadida, generado automáticamente por Mercado Pago."
                                 }
                             },
@@ -2347,9 +2347,9 @@
                         {
                           "title": "400",
                           "description": {
-                            "en": "An invalid payload was sent, or there is an invalid value for some property. Check the message returned in the error code to find out what the problem was and try again.",
-                            "es": "Se envió un payload inválido, o hay algún valor inválido para alguna propiedad. Chequea el mensaje devuelto en el código de error para saber cuál fue el problema y vuelve a intentarlo.",
-                            "pt": "Foi enviado um payload inválido ou há um valor inválido para alguma propriedade. Verifique a mensagem retornada no código de erro para descobrir qual era o problema e tente novamente."
+                            "en": "The payload sent is invalid or contains an incorrect value for one of the properties. Check the returned error message to identify the issue and try again.",
+                            "es": "El payload enviado es inválido o contiene un valor incorrecto en alguna de las propiedades. Verifica el mensaje de error devuelto para identificar el problema e intenta nuevamente..",
+                            "pt": "O payload enviado é inválido ou contém um valor incorreto em uma das propriedades. Consulte a mensagem de erro retornada para identificar o problema e tente novamente."
                           }
                         }
                       ]
@@ -2378,7 +2378,7 @@
                           "description": {
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e faça uma nova requisição com o valor correto."
                           }
                         }
                       ]
@@ -2392,7 +2392,7 @@
             "description": {
               "en": "Error. Order not found.",
               "pt": "Erro. Order não encontrada.",
-              "es": "Error. Orden no encontrada."
+              "es": "Error. Order no encontrada."
             },
             "content":{
               "application/json":{
@@ -2407,7 +2407,7 @@
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
-                            "pt": "Order não encontrada. Verifique se enviou o ID correto."
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
                           }
                         }
                       ]
@@ -2436,7 +2436,7 @@
                           "description": {
                             "en": "Generic error. Please try submitting the request again.",
                             "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
-                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                            "pt": "Erro genérico. Tente realizar uma nova requisição."
                           }
                         }
                       ]
@@ -2528,7 +2528,7 @@
                           "description": {
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e faça uma nova requisição com o valor correto."
                           }
                         }
                       ]
@@ -2542,7 +2542,7 @@
             "description": {
               "en": "Error. Order not found.",
               "pt": "Erro. Order não encontrada.",
-              "es": "Error. Orden no encontrada."
+              "es": "Error. Order no encontrada."
             },
             "content":{
               "application/json":{
@@ -2557,7 +2557,7 @@
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
-                            "pt": "Order não encontrada. Verifique se enviou o ID correto."
+                            "pt": "Order não encontrada. Verifique se enviou o ID enviado está correto."
                           }
                         }
                       ]
@@ -2586,7 +2586,7 @@
                           "description": {
                             "en": "Generic error. Please try submitting the request again.",
                             "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
-                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                            "pt": "Erro genérico. Tente realizar uma nova requisição."
                           }
                         }
                       ]
@@ -2758,7 +2758,7 @@
                           "description": {
                             "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
                             "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
-                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                            "pt": "O order_id fornecido no path da requisição está incorreto. Forneça um ID válido e realize uma nova requisição."
                           }
                         }
                       ]
@@ -2787,7 +2787,7 @@
                           "description": {
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e faça uma nova requisição com o valor correto."
                           }
                         }
                       ]
@@ -2801,7 +2801,7 @@
             "description": {
               "en": "Error. Order not found.",
               "pt": "Erro. Order não encontrada.",
-              "es": "Error. Orden no encontrada."
+              "es": "Error. Order no encontrada."
             },
             "content": {
               "application/json": {
@@ -2816,7 +2816,7 @@
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
-                            "pt": "Order não encontrada. Verifique se enviou o ID correto."
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
                           }
                         }
                       ]
@@ -2845,7 +2845,7 @@
                           "description": {
                             "en": "Generic error. Please try submitting the request again.",
                             "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
-                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                            "pt": "Erro genérico. Tente realizar uma nova requisição."
                           }
                         }
                       ]
@@ -2870,7 +2870,7 @@
         ],
         "description":{
           "en":"Performs the processing of an order and its transactions using the reference ID obtained in the response to its creation",
-          "pt":"Executa o processamento de uma order e e suas transações utilizando o ID de referência obtido na resposta à sua criação",
+          "pt":"Este endpoint permite executar o processamento de uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação",
           "es":"Realiza el procesamiento de una order y sus transacciones asociadas utilizando el ID de referencia obtenido en la respuesta a su creación"
         },
         "parameters":[
@@ -2879,8 +2879,8 @@
             "in":"path",
             "description": {
               "en": "ID of the order that is being cancelled. This value is returned in the response to the Create order request.",
-              "pt": "ID da order a ser cancelada. Esse valor é retornado na resposta à requisição Criar order.",
-              "es": "ID de la orden a cancelar. Este valor es devuelto en la respuesta a la requisición Crear order."
+              "pt": "ID da order que deve ser cancelada. Esse valor é retornado na resposta à requisição Criar order.",
+              "es": "ID de la order a cancelar. Este valor es devuelto en la respuesta a la requisición Crear order."
             },
             "required":true,
             "schema": {
@@ -2948,7 +2948,7 @@
                       "example":"ext_ref_1234",
                       "description": {
                         "en":"It is the external reference of the order, assigned when creating it.",
-                        "pt":"É a referência externa da order, atribuída no momento da criação.",
+                        "pt":"Referência externa da order, atribuída no momento da criação.",
                         "es":"Es una referencia externa de la order, asignada al momento de su creación."
                       }
                     },
@@ -2985,7 +2985,7 @@
                           "description": {
                             "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
                             "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                            "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                            "pt": "Ocorreu um erro no processamento da order, possivelmente causado pelo envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                           }
                         },
                         {
@@ -2993,7 +2993,7 @@
                           "description": {
                             "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
                             "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
-                            "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                            "pt": "A order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
                           }
                         }
                       ]
@@ -3002,7 +3002,7 @@
                       "type":"object",
                       "description": {
                         "en":"Contains information about the transactions associated with the order.",
-                        "pt":"Contém informações sobre as transações associadas a uma order.",
+                        "pt":"Este objeto traz informações sobre as transações associadas a uma order.",
                         "es":"Contiene información sobre las transaccións asociadas a una order."
                       },
                       "properties":{
@@ -3010,7 +3010,7 @@
                           "type":"object",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
-                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "pt":"Este objeto traz informações sobre o pagamento associado à order.",
                             "es":"Contiene información sobre el pago asociado a una order."
                           },
                           "properties":{
@@ -3053,7 +3053,7 @@
                                   "description": {
                                     "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
                                     "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                                    "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                    "pt": "Ocorreu um erro no processamento da order, possivelmente causado pelo envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                                   }
                                 },
                                 {
@@ -3079,8 +3079,8 @@
                                   "title": "accredited",
                                   "description": {
                                     "en": "Payment accredited.",
-                                    "es": "Pago agreditado.",
-                                    "pt": "Pagamento acreditado."
+                                    "es": "Pago acreditado.",
+                                    "pt": "Pagamento creditado."
                                   }
                                 },
                                 {
@@ -3088,7 +3088,7 @@
                                   "description": {
                                     "en": "The payment has been partially refunded.",
                                     "es": "El pago fue parcialmente devuelto.",
-                                    "pt": "O pagamento foi parcialmente devolvido."
+                                    "pt": "Pagamento parcialmente devolvido."
                                   }
                                 },
                                 {
@@ -3176,7 +3176,7 @@
                                   "description": {
                                     "en": "There was an error during processing.",
                                     "es": "Ocurrió un error durante el procesamiento.",
-                                    "pt": " Ocorreu um erro durante o processamento. "
+                                    "pt": "Ocorreu um erro durante o processamento. "
                                   }
                                 },
                                 {
@@ -3301,7 +3301,7 @@
                       "example":"123",
                       "description": {
                         "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
-                        "pt":"É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
+                        "pt":"Identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
                         "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
                       }
                     },
@@ -3330,7 +3330,7 @@
                           "example":"4.90",
                           "description": {
                             "en":"Value of the discount coupon.",
-                            "pt":"É o valor do cupom de desconto.",
+                            "pt":"Valor do cupom de desconto.",
                             "es":"Es el valor del cupón de descuento."
                           }
                         }
@@ -3360,7 +3360,7 @@
                             "example":448876418,
                             "description":{
                               "en":"It is the identification of the user who receives the money.",
-                              "pt":"É identificador do usuário que recebe o dinheiro.",
+                              "pt":"Identificador do usuário que recebe o dinheiro.",
                               "es":"Es el identificador del usuario que recibe el dinero."
                             }
                           },
@@ -3468,7 +3468,7 @@
                           "description": {
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e faça uma nova requisição com o valor correto."
                           }
                         }
                       ]
@@ -3482,7 +3482,7 @@
             "description": {
               "en": "Error. Order not found.",
               "pt": "Error. Order não encontrada.",
-              "es": "Error. Orden no encontrada."
+              "es": "Error. Order no encontrada."
             },
             "content": {
               "application/json": {
@@ -3497,7 +3497,7 @@
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
-                            "pt": "Order não encontrada. Verifique se enviou o ID correto."
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
                           }
                         }
                       ]
@@ -3526,7 +3526,7 @@
                           "description": {
                             "en": "Generic error. Please try submitting the request again.",
                             "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
-                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                            "pt": "Erro genérico. Tente realizar uma nova requisição."
                           }
                         }
                       ]
@@ -3561,7 +3561,7 @@
         "required": true,
         "description": {
           "en": "Identifier of the currency used in the transaction/order. We currently have the following options.",
-          "pt": "Identificador da moeda utilizada na transação/order. Atualmente, possuímos as opções a seguir.",
+          "pt": "Identificador da moeda utilizada na transação/order. Veja abaixo as opções disponíveis.",
           "es": "Identificador de la moneda utilizada en la transacción/order. Actualmente tenemos las siguientes opciones."
         },
         "example": "BRL",
@@ -3627,7 +3627,7 @@
             "description": {
               "en": "US dollar.",
               "es": "US dollar.",
-              "pt": "US dollar."
+              "pt": "Dólar americano."
             }
           }
         ]
@@ -3637,7 +3637,7 @@
         "required": true,
         "description": {
           "en": "Information about the payment method. Access the endpoint '/v1/payment_methods' to check all available payment methods and get a list with the details of each one and their properties.",
-          "pt": "Informação sobre o meio de pagamento. Acesse o endpoint '/v1/payment_methods' para consultar todos os meios de pagamento disponíveis e obter uma lista com os detalhes de cada um deles e suas propriedades.",
+          "pt": "Informação sobre o meio de pagamento. Utilize o endpoint '/v1/payment_methods' para acessar a lista completa de meios de pagamento disponíveis. Esse recurso fornece detalhes sobre cada meio, incluindo suas propriedades.",
           "es": "Información sobre el medio de pago. Accede al endpoint '/v1/payment_methods' para consultar todos los medios de pago disponibles y obtener una lista con los detalles de cada uno de ellos y sus propiedades."
         },
         "properties": {
