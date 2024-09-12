@@ -2343,7 +2343,7 @@
                           "description": {
                             "en": "An invalid payload was sent, or there is an invalid value for some property. Check the message returned in the error code to find out what the problem was and try again.",
                             "es": "Se envió un payload inválido, o hay algún valor inválido para alguna propiedad. Chequea el mensaje devuelto en el código de error para saber cuál fue el problema y vuelve a intentarlo.",
-                            "pt": "Foi enviado um payload inválido ou há um valor inválido para alguma propriedade. Verifique a mensagem retornada no código de erro para descobrir qual era o problema e tente novamente."
+                            "pt": "O payload enviado é inválido ou contém um valor incorreto em uma das propriedades. Consulte a mensagem de erro retornada para identificar o problema e tente novamente."
                           }
                         }
                       ]
