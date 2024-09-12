@@ -1675,7 +1675,7 @@
         ],
         "description":{
           "en":"Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"action_required\" can be canceled",
-          "pt":"Cancela uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" pode ser cancelada",
+          "pt":"Este endpoint permite cancelar uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"action_required\" pode ser cancelada",
           "es":"Cancela una orden y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"action_required\""
         },
         "parameters":[
