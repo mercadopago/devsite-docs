@@ -607,7 +607,7 @@
                                   "description": {
                                     "en": "The transaction was rejected for exceeding the maximum number of attempts to complete it.",
                                     "es": "La transacción fue rechazada por exceder el número máximo de intentos para realizarla.",
-                                    "pt": "A transação foi rejeitada por exceder o número máximo de tentativas para processá-la."
+                                    "pt": "Transação rejeitada por exceder o número máximo de tentativas para processá-la."
                                   }
                                 },
                                 {
