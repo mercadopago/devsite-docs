@@ -599,9 +599,9 @@
                     "type": "string",
                     "example": "MP0001",
                     "description": {
-                      "en": "It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier. Inglês: Important: This field must be no more than 64 characters.",
-                      "pt": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação. Importante: Este campo deve ter no máximo 64 caracteres.",
-                      "es": "Es una referencia de pago externa. Podría ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador del origen de la transacción. Espanhol: Importante: Este campo debe tener un máximo de 64 caracteres."
+                      "en": "It is a payment external reference. It could be, for example, a hashcode from the Central Bank, working as a transaction origin identifier. Important: This field must be a maximum of 64 characters and may only contain numbers, letters, hyphens (-), and underscores (_). Special characters such as ([ ], (), '', @) are not allowed.",
+                      "pt": "É uma referência externa do pagamento. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação. Importante: Este campo deve ter no máximo 64 caracteres e deve conter apenas números, letras, hífens (-) e sublinhados (_). Caracteres especiais como ([ ], (), '', @) não são permitidos.",
+                      "es": "Es una referencia de pago externa. Podría ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador del origen de la transacción. Importante: Este campo debe tener un máximo de 64 caracteres y solo debe contener números, letras, guiones (-) y guiones bajos (_). No se permiten caracteres especiales como ([ ], (), '', @)."
                     }
                   },
                   "installments": {
@@ -641,9 +641,9 @@
                   "payer": {
                     "type": "object",
                     "description": {
-                      "en": "Identifies the buyer.",
-                      "pt": "ID do pagador. Importante: Para pagamentos realizados via Pix, os dados do payer não são retornados por questões de conformidade.",
-                      "es": "Identificador del pagador."
+                      "en": "Identifies the buyer. Important: For payments made via Pix (Brazilian payment system), payer details are not returned due to compliance with the Central Bank.",
+                      "pt": "ID do pagador. Importante: Para pagamentos realizados via Pix (meio de pagamento do Brasil), os dados do pagador não são retornados por motivos de conformidade com o Banco Central",
+                      "es": "Identificador del pagador. Importante: Para pagos realizados a través de Pix (sistema de pago de Brasil), los datos del pagador no se devuelven por razones de cumplimiento con el Banco Central."
                     },
                     "required": true,
                     "properties": {

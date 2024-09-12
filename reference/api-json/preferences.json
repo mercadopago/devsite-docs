@@ -620,9 +620,9 @@
                     "type": "string",
                     "example": "1643827245",
                     "description": {
-                      "en": "Reference you can synchronize with your payment system.",
-                      "pt": "Referência que pode sincronizar com seu sistema de pagamentos.",
-                      "es": "Referencia que puedes sincronizar con tu sistema de pagos."
+                      "en": "Reference you can synchronize with your payment system. Important: This field must be a maximum of 64 characters and may only contain numbers, letters, hyphens (-), and underscores (_). Special characters such as ([ ], (), '', @) are not allowed.",
+                      "pt": "Referência que pode sincronizar com seu sistema de pagamentos. Importante: Este campo deve ter no máximo 64 caracteres e deve conter apenas números, letras, hífens (-) e sublinhados (_). Caracteres especiais como ([ ], (), '', @) não são permitidos.",
+                      "es": "Referencia que puedes sincronizar con tu sistema de pagos. Importante: Este campo debe tener un máximo de 64 caracteres y solo debe contener números, letras, guiones (-) y guiones bajos (_). No se permiten caracteres especiales como ([ ], (), '', @)."
                     }
                   },
                   "expires": {
