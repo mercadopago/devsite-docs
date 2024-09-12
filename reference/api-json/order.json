@@ -2174,7 +2174,7 @@
         ],
         "description": {
           "en": "This endpoint allows payment transactions to be added to the order. This operation can only be carried out in Builde (processing payment in stages that can be configured and executed incrementally) mode, with these 'processing_mode' fields with this 'manual' value",
-          "pt": "Esse endpoint permite adicionar transações de pagamento à order. Essa operação só pode ser realizada no modo Builder (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental), com o parâmetro 'processing_mode' com valor 'manual'",
+          "pt": "Este endpoint permite adicionar transações de pagamento à order. Essa operação só pode ser realizada no modo Builder (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental), com o parâmetro 'processing_mode' com valor 'manual'",
           "es": "Este endpoint permite añadir transacciones de pago a la order. Esta operación solo puede realizarse en el modo Builder (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental), con el campo 'processing_mode' con valor 'manual'"
         },
         "parameters": [
