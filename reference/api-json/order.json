@@ -1606,7 +1606,7 @@
             "description": {
               "en": "Error. Order not found.",
               "pt": "Error. Order não encontrada.",
-              "es": "Error. Orden no encontrada."
+              "es": "Error. Order no encontrada."
             },
             "content":{
               "application/json":{
