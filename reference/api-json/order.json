@@ -2752,7 +2752,7 @@
                           "description": {
                             "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
                             "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
-                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                            "pt": "O order_id fornecido no path da requisição está incorreto. Forneça um ID válido e realize uma nova requisição."
                           }
                         }
                       ]
