@@ -742,7 +742,7 @@
                           "example":"4.90",
                           "description":{
                             "en":"Value of the discount coupon.",
-                            "pt":"É o valor do cupom de desconto.",
+                            "pt":"Valor do cupom de desconto.",
                             "es":"Es el valor del cupón de descuento."
                           }
                         }
