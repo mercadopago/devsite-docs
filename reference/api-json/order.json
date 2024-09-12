@@ -3631,7 +3631,7 @@
         "required": true,
         "description": {
           "en": "Information about the payment method. Access the endpoint '/v1/payment_methods' to check all available payment methods and get a list with the details of each one and their properties.",
-          "pt": "Informação sobre o meio de pagamento. Acesse o endpoint '/v1/payment_methods' para consultar todos os meios de pagamento disponíveis e obter uma lista com os detalhes de cada um deles e suas propriedades.",
+          "pt": "Informação sobre o meio de pagamento. Utilize o endpoint '/v1/payment_methods' para acessar a lista completa de meios de pagamento disponíveis. Esse recurso fornece detalhes sobre cada meio, incluindo suas propriedades.",
           "es": "Información sobre el medio de pago. Accede al endpoint '/v1/payment_methods' para consultar todos los medios de pago disponibles y obtener una lista con los detalles de cada uno de ellos y sus propiedades."
         },
         "properties": {
