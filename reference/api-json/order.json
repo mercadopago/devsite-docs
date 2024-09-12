@@ -1747,7 +1747,7 @@
                       "example":"ext_ref_1234",
                       "description":{
                         "en":"It is the external reference of the order, assigned when creating it.",
-                        "pt":"É a referência externa da order, atribuída no momento da criação.",
+                        "pt":"Referência externa da order, atribuída no momento da criação.",
                         "es":"Es una referencia externa de la order, asignada al momento de su creación."
                       }
                     },
