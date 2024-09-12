@@ -997,7 +997,7 @@
                           "description": {
                             "en": "Order's processing will be made instantly. It is the capture mode used for the \"one-shot\" option.",
                             "es": "El procesamiento de la order se hará instantáneamente. Es el modo de procesamiento utilizado para la opción \"one-shot\".",
-                            "pt": "O processamento da order será feito imediatamente. É o modo de processamento utilizado para a opção \"one-shot\"."
+                            "pt": "O processamento da order será feito imediatamente. Esse é o modo de processamento utilizado para a opção \"one-shot\"."
                           }
                         }
                       ]
