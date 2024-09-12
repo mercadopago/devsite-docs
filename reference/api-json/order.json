@@ -3004,7 +3004,7 @@
                           "type":"object",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
-                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "pt":"Este objeto traz informações sobre o pagamento associado à order.",
                             "es":"Contiene información sobre el pago asociado a una order."
                           },
                           "properties":{
