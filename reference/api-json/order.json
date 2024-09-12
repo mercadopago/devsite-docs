@@ -60,7 +60,7 @@
                     "description":{
                       "en":"It is an external reference of the order. It can be, for example, a hashcode from the Central Bank, functioning as an identifier of the transaction origin.",
                       "es":"Es una referencia externa de la order. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción.",
-                      "pt":"É uma referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação." 
+                      "pt":"Referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação." 
                     }
                   },
                   "transactions":{
