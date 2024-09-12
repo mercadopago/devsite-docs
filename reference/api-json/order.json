@@ -425,7 +425,7 @@
                           "description": {
                             "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
                             "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
-                            "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                            "pt": "Ocorreu um erro no processamento da order, possivelmente devido ao envio incorreto dos dados, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
                           }
                         },
                         {
