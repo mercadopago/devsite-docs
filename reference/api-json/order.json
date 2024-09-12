@@ -1592,7 +1592,7 @@
                           "description": {
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "pt": "O valor enviado como Access Token está incorreto. Revise a informação e faça uma nova requisição com o valor correto."
                           }
                         }
                       ]
