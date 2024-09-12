@@ -2247,7 +2247,7 @@
                         "required": true,
                         "description": {
                           "en": "Payment transaction to be associated with the order. If you want to create a payment with two cards, you can duplicate this node, dividing the total value of the transaction and indicating a different payment method for each one.",
-                          "pt": "Transação de pagamento a ser associada à order. Caso deseje criar um pagamento com dois cartões, você pode duplicar este nó, dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
+                          "pt": "Transação de pagamento que deve ser associada à order. Caso deseje criar um pagamento com dois cartões, você pode duplicar este nó, dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
                           "es": "Transacción de pago que se va a asociar con la order. En caso de querer crear un pago con dos tarjetas, puedes duplicar este nodo, dividiendo el monto del pago y señalando el medio de pago en cada uno. "
                         },
                         "properties": {
