@@ -1729,7 +1729,7 @@
                           "description": {
                             "en": "Order's processing will be made manually. It is the processing mode used for the \"builder\" option, as it sets the processing to be made afterwards, by using the \"Process transaction\" endpoint..",
                             "es": "El procesamiento de la order se hará de manera manual. Es el modo de procesamiento utilizado para la opción \"builder\", en tanto configura que el procesamiento sea hecho posteriormente, utilizando el endpoint \"Procesar transacción\".",
-                            "pt": "O processamento da order será realizado manualmente. É o modo de processamento utilizado para a opção \"builder\", enquanto configura o processamento para ser feito posteriormente, utilizando o endpoint \"Processar transação\".."
+                            "pt": "O processamento da order foi realizado manualmente. É o modo de processamento utilizado para a opção \"builder\", enquanto configura o processamento para ser feito posteriormente, utilizando o endpoint \"Processar transação\".."
                           }
                         },
                         {
