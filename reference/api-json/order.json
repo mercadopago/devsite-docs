@@ -2864,7 +2864,7 @@
         ],
         "description":{
           "en":"Performs the processing of an order and its transactions using the reference ID obtained in the response to its creation",
-          "pt":"Executa o processamento de uma order e e suas transações utilizando o ID de referência obtido na resposta à sua criação",
+          "pt":"Este endpoint permite executar o processamento de uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação",
           "es":"Realiza el procesamiento de una order y sus transacciones asociadas utilizando el ID de referencia obtenido en la respuesta a su creación"
         },
         "parameters":[
