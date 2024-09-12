@@ -1,10 +1,23 @@
+----[mla, mlb]---- 
 > SERVER_SIDE
 >
 > h1
 >
 > Conta Mercado Pago e Parcelamento sem cartão
 
-Os pagamentos com **Conta Mercado Pago e Parcelamento sem cartão**, a opção de pagar parcelado sem cartão de crédito, não precisam ser enviados via backend. 
+Os pagamentos com **Conta Mercado Pago e Parcelamento sem cartão**, a opção de pagar parcelado sem cartão de crédito, não precisam ser enviados via backend.
+
+------------
+----[mla, mlb]---- 
+> SERVER_SIDE
+>
+> h1
+>
+> Conta Mercado Pago e Parcelamento sem cartão
+
+Os pagamentos com **Conta Mercado Pago e Parcelamento sem cartão**, a opção de pagar parcelado sem cartão de crédito, não precisam ser enviados via backend.
+
+------------
 
 Caso o usuário selecione esta opção como meio de pagamento, a `preferenceId` enviada na inicialização do Brick é responsável por redirecionar o comprador ao site do Mercado Pago, onde será feito o pagamento diretamente em nosso site. 
 
