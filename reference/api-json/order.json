@@ -2874,7 +2874,7 @@
             "description": {
               "en": "ID of the order that is being cancelled. This value is returned in the response to the Create order request.",
               "pt": "ID da order que deve ser cancelada. Esse valor é retornado na resposta à requisição Criar order.",
-              "es": "ID de la orden a cancelar. Este valor es devuelto en la respuesta a la requisición Crear order."
+              "es": "ID de la order a cancelar. Este valor es devuelto en la respuesta a la requisición Crear order."
             },
             "required":true,
             "schema": {
