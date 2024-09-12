@@ -8,7 +8,7 @@
         ],
         "description": {
           "en": "This endpoint allows to create orders in \"One-shot\" (processing the payment in a single stage) or \"Builder\" (processing payment in stages that can be configured and executed incrementally) mode for payment and cashout transactions",
-          "pt": "Este endpoint permite a criação de uma order no modo \"One-shot\" (processando o pagamento em uma única etapa) ou \"Builder\" (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout",
+          "pt": "Este endpoint permite criar uma order no modo \"One-shot\" (processando o pagamento em uma única etapa) ou \"Builder\" (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout",
           "es": "Este endpoint permite crear una order en modo \"One-shot\" (procesando la transacción en una sola etapa) o \"Builder\" (procesando el pago en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout"
         },
         "parameters": [
