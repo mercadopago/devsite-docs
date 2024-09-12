@@ -713,7 +713,7 @@
                       "example":"123",
                       "description":{
                         "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
-                        "pt":"É o identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
+                        "pt":"Identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
                         "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
                       }
                     },
