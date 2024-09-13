@@ -32,25 +32,33 @@ Ao finalizar a instalação da SDK, é possível utilizar os seguintes módulos 
 ---
 future_product_avaible: 
  - card_avaible: true
- - card_icon: Card
- - card_title: Checkout Pro para Web
- - card_description: Ofereça diferentes meios de pagamento aos clientes em um site de maneira simples, rápida e segura.
- - card_button:  /developers/pt/docs/checkout-pro/integrate-checkout-pro/web
- - card_buttonDescription: Integrar
+ - card_icon: Pay
+ - card_title: Payment Brick
+ - card_description: Ofereça diferentes métodos de pagamento para os clientes escolherem, com a capacidade de salvar detalhes do cartão para compras futuras.
+ - card_button: /developers/pt/docs/checkout-bricks/payment-brick/default-rendering
+ - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
+ - card_avaible: true
+ - card_icon: Wallet
+ - card_title: Wallet Brick
+ - card_description: Vincule a conta Mercado Pago e permita pagamentos registrados.
+ - card_button: /developers/pt/docs/checkout-bricks/wallet-brick/default-rendering
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
+ - card_avaible: true
+ - card_icon: Card
+ - card_title: Card Payment Brick
+ - card_description: Ofereça pagamentos com cartão de crédito e débito.
+ - card_button: /developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering
+ - card_buttonDescription: Saiba mais
+ - card_pillText: DISPONÍVEL
  - card_avaible: true
  - card_icon: Loading
- - card_title: Checkout Pro para Mobile
- - card_description: Ofereça diferentes meios de pagamento aos clientes na sua aplicação móvel, utilizando a linguagem que melhor se adapte ao seu projeto.
- - card_button: /developers/pt/docs/checkout-pro/integrate-checkout-pro/mobile
- - card_buttonDescription: Integrar
+ - card_title: Status Screen Brick
+ - card_description: Informe os clientes dos resultados do processo de compra após efetuar o pagamento.
+ - card_button: /developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering
+ - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
- - card_linkAvailable: false
- - card_linkProof:
- - card_linkProofDescription:
 ---
 
 > NOTE
