@@ -38,6 +38,9 @@ future_product_avaible:
  - card_button: /developers/pt/docs/checkout-bricks/payment-brick/default-rendering
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
@@ -45,6 +48,9 @@ future_product_avaible:
  - card_button: /developers/pt/docs/checkout-bricks/wallet-brick/default-rendering
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
@@ -52,6 +58,9 @@ future_product_avaible:
  - card_button: /developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
@@ -59,6 +68,9 @@ future_product_avaible:
  - card_button: /developers/pt/docs/checkout-bricks/status-screen-brick/default-rendering
  - card_buttonDescription: Saiba mais
  - card_pillText: DISPONÍVEL
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
 
 > NOTE
