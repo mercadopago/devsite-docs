@@ -37,30 +37,42 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Payment Brick
  - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar los datos de la tarjeta para futuras compras.
- - card_link: /developers/es/docs/checkout-bricks/payment-brick/default-rendering
- - card_linkDescription: Saber más
+ - card_button: /developers/es/docs/checkout-bricks/payment-brick/default-rendering
+ - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
  - card_description: Vinculá la cuenta de Mercado Pago y permití pagos logueados.
- - card_link: /developers/es/docs/checkout-bricks/wallet-brick/default-rendering
- - card_linkDescription: Saber más
+ - card_button: /developers/es/docs/checkout-bricks/wallet-brick/default-rendering
+ - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
  - card_description: Ofrece pagos con tarjeta de crédito y débito.
- - card_link: /developers/es/docs/checkout-bricks/card-payment-brick/default-rendering
- - card_linkDescription: Saber más
+ - card_button: /developers/es/docs/checkout-bricks/card-payment-brick/default-rendering
+ - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
  - card_description: Informa a tus clientes los resultados del proceso de compra, luego de realizado el pago.
- - card_link: /developers/es/docs/checkout-bricks/status-screen-brick/default-rendering
- - card_linkDescription: Saber más
+ - card_button: /developers/es/docs/checkout-bricks/status-screen-brick/default-rendering
+ - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
 
 ------------
@@ -73,30 +85,42 @@ future_product_avaible:
  - card_icon: Pay
  - card_title: Payment Brick
  - card_description: Ofrece diferentes medios de pago entre los que podrán elegir tus clientes, con la posibilidad de guardar los datos de la tarjeta para futuras compras.
- - card_link: /developers/es/docs/checkout-bricks/payment-brick/default-rendering
- - card_linkDescription: Saber más
+ - card_button: /developers/es/docs/checkout-bricks/payment-brick/default-rendering
+ - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Wallet
  - card_title: Wallet Brick
  - card_description: Vincula la cuenta de Mercado Pago y permite pagos logueados.
- - card_link: /developers/es/docs/checkout-bricks/wallet-brick/default-rendering
- - card_linkDescription: Saber más
+ - card_button: /developers/es/docs/checkout-bricks/wallet-brick/default-rendering
+ - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Card
  - card_title: Card Payment Brick
  - card_description: Ofrece pagos con tarjeta de crédito y débito.
- - card_link: /developers/es/docs/checkout-bricks/card-payment-brick/default-rendering
- - card_linkDescription: Saber más
+ - card_button: /developers/es/docs/checkout-bricks/card-payment-brick/default-rendering
+ - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
  - card_avaible: true
  - card_icon: Loading
  - card_title: Status Screen Brick
  - card_description: Informa a tus clientes los resultados del proceso de compra, luego de realizado el pago.
- - card_link: /developers/es/docs/checkout-bricks/status-screen-brick/default-rendering
- - card_linkDescription: Saber más
+ - card_button: /developers/es/docs/checkout-bricks/status-screen-brick/default-rendering
+ - card_buttonDescription: Saber más
  - card_pillText: DISPONIBLE
+ - card_linkAvailable: false
+ - card_linkProof:
+ - card_linkProofDescription:
 ---
 
 ------------
