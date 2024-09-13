@@ -43,7 +43,7 @@ Al automatizar la recurrencia de tus cobros, se crean pagos autorizados que tend
 
 ### Estados de pago
 
-En el momento en que se cobre la cuota pueden surgir três alternativas en base al resultado de su pago:
+En el momento en que se cobre la cuota pueden surgir tres alternativas en base al resultado de su pago:
 
 * __El pago es realizado exitosamente__ por lo que la cuota quedará `processed` y ya no se reintentará cobrarla. 
 
