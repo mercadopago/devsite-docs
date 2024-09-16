@@ -8,7 +8,7 @@
         ],
         "description": {
           "en": "This endpoint allows to create orders in \"automatic\" (processing the transaction in a single stage) or \"manual\" (processing the transaction in stages that can be configured and executed incrementally) mode for payment and cashout transactions. In case of success, the request will return a response with status 201",
-          "pt": "Este endpoint permite criaruma order no modo \"automático\" (processando a transação em uma única etapa) ou \"manual\" (processando a transação em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+          "pt": "Este endpoint permite criar uma order no modo \"automático\" (processando a transação em uma única etapa) ou \"manual\" (processando a transação em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
           "es": "Este endpoint permite crear una order en modo \"automático\" (procesando la transacción en una sola etapa) o \"manual\" (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
         },
         "parameters": [
