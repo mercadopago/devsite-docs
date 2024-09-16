@@ -365,6 +365,42 @@
                         "es":"Monto total a pagar."
                       }
                     },
+                    "client_id":{
+                      "type":"string",
+                      "example":"1234",
+                      "description":{
+                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                        "en":"Identifier of the Mercado Pago application that created the order.",
+                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                      }
+                    },
+                    "collector_id":{
+                      "type":"string",
+                      "example":"12345",
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
                     "site_id":{
                       "$ref": "#/components/schemas/site_id"
                     },
@@ -1132,6 +1168,42 @@
                     "site_id":{
                       "$ref": "#/components/schemas/site_id"
                     },
+                    "client_id":{
+                      "type":"string",
+                      "example":"1234",
+                      "description":{
+                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                        "en":"Identifier of the Mercado Pago application that created the order.",
+                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                      }
+                    },
+                    "collector_id":{
+                      "type":"string",
+                      "example":"12345",
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
                     "type":{
                       "type":"string",
                       "description":{
@@ -1871,6 +1943,42 @@
                     },
                     "site_id":{
                       "$ref": "#/components/schemas/site_id"
+                    },
+                    "client_id":{
+                      "type":"string",
+                      "example":"1234",
+                      "description":{
+                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                        "en":"Identifier of the Mercado Pago application that created the order.",
+                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                      }
+                    },
+                    "collector_id":{
+                      "type":"string",
+                      "example":"12345",
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
                     },
                     "type":{
                       "type":"string",
@@ -3209,6 +3317,42 @@
                     },
                     "site_id": {
                       "$ref": "#/components/schemas/site_id"
+                    },
+                    "client_id":{
+                      "type":"string",
+                      "example":"1234",
+                      "description":{
+                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                        "en":"Identifier of the Mercado Pago application that created the order.",
+                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                      }
+                    },
+                    "collector_id":{
+                      "type":"string",
+                      "example":"12345",
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
                     },
                     "status": {
                       "type":"string",
