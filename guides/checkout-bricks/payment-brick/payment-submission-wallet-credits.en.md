@@ -2,7 +2,7 @@
 >
 > h1
 >
-> Mercado Pago Wallet and Installments without card
+> Mercado Pago Wallet and Installments without Card
 
 Payments with **Mercado Pago Wallet and Installments without card**, the option to pay in installments without a credit card, do not need to be sent via the backend. 
 

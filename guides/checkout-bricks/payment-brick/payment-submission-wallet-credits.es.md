@@ -3,9 +3,9 @@
 >
 > h1
 >
-> Cuenta de Mercado Pago y Cuotas sin tarjeta
+> Cuenta de Mercado Pago y Cuotas sin Tarjeta
 
-Los pagos con **Cuenta de Mercado Pago y Cuotas sin tarjeta**, la opción de pagar en cuotas sin contar con una tarjeta, no necesitan ser enviados a través del backend. 
+Los pagos con **Cuenta de Mercado Pago y Cuotas sin Tarjeta**, la opción de pagar en cuotas sin contar con una tarjeta, no necesitan ser enviados a través del backend. 
 
 Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. 
 
@@ -17,15 +17,11 @@ Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se des
 >
 > h1
 >
-> Cuenta de Mercado Pago y Meses sin tarjeta
+> Cuenta de Mercado Pago y Meses sin Tarjeta
 
-Los pagos con **Cuenta de Mercado Pago y Meses sin tarjeta**, la opción de pagar en mensualidades sin contar con una tarjeta, no necesitan ser enviados a través del backend. 
+Los pagos con **Cuenta de Mercado Pago y Meses sin Tarjeta**, la opción de pagar en mensualidades sin contar con una tarjeta, no necesitan ser enviados a través del backend. 
 
 Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio.
-
-## Prueba tu integración
-
-Con la integración completada, podrás probar la recepción de pagos. Para obtener más información, accede a la sección [Hacer compra de prueba.](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow)
 
 Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo](/developers/es/docs/checkout-bricks/payment-brick/advanced-features/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web).
 

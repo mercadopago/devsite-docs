@@ -41,11 +41,11 @@ Consulta los textos relacionados con cada opción:
 |actionComplement |brand | con Mercado Pago |
 |actionComplement |amount | Monto de la compra obtenido a través de la preferencia, en el formato de la moneda del pago.  |
 |valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |
-|valueProp |convenience_all | Meses con o sin tarjeta |
+|valueProp |convenience_all | Meses con tarjeta o Meses sin Tarjeta de Mercado Pago |
 |valueProp |security_details | Todos tus datos protegidos |
 |valueProp |security_safety | Pagá de forma segura |
 |valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
-|valueProp |convenience_credits* | Hasta 12 meses sin tarjeta  |
+|valueProp |convenience_credits* | Hasta 12 Meses sin Tarjeta  |
 |valueProp |payment_methods_logos** | Se mostrarán los logotipos de los métodos de pago disponibles. Para configurar los métodos de pago, utilice la _preference_.. |
 
 ------------
@@ -57,11 +57,11 @@ Consulta los textos relacionados con cada opción:
 |actionComplement |brand | con Mercado Pago |
 |actionComplement |amount | Monto de la compra obtenido a través de la preferencia, en el formato de la moneda del pago.  |
 |valueProp |practicality | Usá tarjetas guardadas o dinero en cuenta |
-|valueProp |convenience_all | Cuotas con o sin tarjeta |
+|valueProp |convenience_all | Cuotas con tarjeta o Cuotas sin Tarjeta de Mercado Pago |
 |valueProp |security_details | Todos tus datos protegidos |
 |valueProp |security_safety | Pagá de forma segura |
 |valueProp |smart_option| El texto será elegido automáticamente por Wallet Brick para aumentar las posibilidades de venta según las características de la compra. |
-|valueProp |convenience_credits* | Hasta 12 cuotas sin tarjeta  |
+|valueProp |convenience_credits* | Hasta 12 Cuotas sin Tarjeta  |
 |valueProp |payment_methods_logos** | Se mostrarán los logotipos de los métodos de pago disponibles. Para configurar los métodos de pago, utilice la _preference_. |
 
 ------------

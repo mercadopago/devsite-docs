@@ -4,7 +4,7 @@ The following table demonstrates the available payment method settings for each 
 
 | Value prop | Settings|
 |---|---|
-|`payment_methods` (default) e `payment_methods_logos`| - Payment methods (Available balance and Installments without card will always be enabled, credit cards, debit cards and ticket) <br/><br/> - Credit card brands (Visa, Mastercard, American Express, Naranja X, Cabal Cencosud, Cordobesa, Argencard, Diners, Tarjeta Shopping and CMR) <br/><br/> - Number of installments (2 to 12) <br/><br/> - Installments with or without interest <br/><br/> - Debit card brands (Visa, Mastercard, Maestro and Cabal) <br/><br/> - Ticket (Rapipago and Pago Fácil)|
+|`payment_methods` (default) e `payment_methods_logos`| - Payment methods (Available balance and Installments without Card will always be enabled; credit and debit cards; ticket) <br/><br/> - Credit card brands (Visa, Mastercard, American Express, Naranja X, Cabal Cencosud, Cordobesa, Argencard, Diners, Tarjeta Shopping and CMR) <br/><br/> - Number of installments (2 to 12) <br/><br/> - Installments with or without interest <br/><br/> - Debit card brands (Visa, Mastercard, Maestro and Cabal) <br/><br/> - Ticket (Rapipago and Pago Fácil)|
 |`installments`| - Credit card brands (Visa, Mastercard, American Express, Naranja X, Cabal Cencosud, Cordobesa, Argencard, Diners, Tarjeta Shopping and CMR) <br/><br/> - Number of installments (2 to 12) <br/><br/> - Installments with or without interest |
 |`security`|No settings for the pop-up.|
 |`credits`|No pop-up. |
