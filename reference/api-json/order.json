@@ -58,9 +58,9 @@
                     "required":true,
                     "example":"ext_ref_1234",
                     "description":{
-                      "en":"It is an external reference of the order. It can be, for example, a hashcode from the Central Bank, functioning as an identifier of the transaction origin.",
-                      "es":"Es una referencia externa de la order. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción.",
-                      "pt":"Referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação." 
+                      "en":"It is an external reference of the order. It can be, for example, a hashcode from the Central Bank, functioning as an identifier of the transaction origin. This field must have a maximum of 64 characters and can only be numbers, letters, hyphens (-) and underscores (_). Special characters such as ([ ], (), '', @) are not allowed.",
+                      "es":"Es una referencia externa de la order. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción. Este campo debe tener como máximo 64 caracteres y estos solo pueden ser números, letras, guiones medios (-) y guiones bajos (_). Caracteres especiales como ([ ], (), '', @) no son permitidos.",
+                      "pt":"Referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação. Este campo deve ter no máximo 64 caracteres e deve conter apenas números, letras, hífens (-) e sublinhados (_). Caracteres especiais como ([ ], (), '', @) não são permitidos." 
                     }
                   },
                   "transactions":{
@@ -961,6 +961,14 @@
                             "en": "Incorrect information was sent. Check the message returned in the error details to find out what the problem was and try again.",
                             "es": "Se envió información incorrecta. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
                             "pt": "Informações incorretas foram enviadas. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_total_amount",
+                          "description": {
+                            "en": "The value entered in \"total_amount\" is not equivalent to the sum of the \"transactions.payments.amount\" field of the total transactions. Please verify if the values ​​are correct.",
+                            "es": "El valor ingresado en \"total_amount\" no es equivalente a la suma del campo \"transactions.payments.amount\" del total de las transacciones. Por favor, verifica que los valores sean correctos.",
+                            "pt": "O valor informado em \"total_amount\" não equivale à soma do campo \"transactions.payments.amount\" do total de transações. Verifique se os valores estão corretos."
                           }
                         }
                       ]
@@ -3847,6 +3855,14 @@
                             "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
                             "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
                             "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_total_amount",
+                          "description": {
+                            "en": "The value entered in \"total_amount\" is not equivalent to the sum of the \"transactions.payments.amount\" field of the total transactions. Please verify if the values ​​are correct.",
+                            "es": "El valor ingresado en \"total_amount\" no es equivalente a la suma del campo \"transactions.payments.amount\" del total de las transacciones. Por favor, verifica que los valores sean correctos.",
+                            "pt": "O valor informado em \"total_amount\" não equivale à soma do campo \"transactions.payments.amount\" do total de transações. Verifique se os valores estão corretos."
                           }
                         }
                       ]
