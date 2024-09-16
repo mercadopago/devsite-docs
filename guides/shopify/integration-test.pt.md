@@ -2,7 +2,7 @@
 
 Os testes de compras são essenciais para garantir que os pagamentos sejam processados corretamente antes de autorizar transações reais. Para verificar se a sua loja está configurada corretamente, recomendamos que você teste os pagamentos antes de iniciá-la em produção. 
 
-----[mla, mpe, mco, mlu, mlc]----
+----[mla, mpe, mlu, mlc]----
 > WARNING
 > 
 > Importante
@@ -11,7 +11,7 @@ Os testes de compras são essenciais para garantir que os pagamentos sejam proce
 
 
 ------------
-----[mlb, mlm]----
+----[mlb, mlm, mco]----
 > WARNING
 > 
 > Importante
@@ -43,7 +43,7 @@ Veja abaixo como testar a integração:
 
 ![Credenciais de produção](/images/shopify/test-prod-credentials.png)
 
-----[mlb, mlm]----
+----[mlb, mlm, mco]----
 7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique para **Gerenciar** um dos checkout do Mercado Pago, sendo ele o [Mercado Pago Cartões](/developers/pt/docs/shopify/integration-configuration/checkout-cards) ou o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro).
 8. Insira a `public_key` e o `access_token` da conta de teste do vendedor.
 9. Clique em **Salvar credenciais**.
@@ -54,6 +54,12 @@ Agora, siga o passo a passo de acordo com o tipo de checkout escolhido para proc
 ## Mercado Pago Cartões
 
 11. Acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/shopify/additional-content/your-integrations/test/cards) correspondente.
+
+> NOTE
+>
+> Nota
+>
+> Caso queira testar a sua integração com uma compra parcelada no cartão de crédito, [veja aqui](https://www.mercadopago.com.br/ajuda/21660) quais são os valores mínimos e máximos para os parcelamentos com cartão.
 
 ## Mercado Pago Checkout Pro
 
@@ -71,7 +77,7 @@ Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da
 > Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.
 
 ------------
-----[mla, mpe, mco, mlu, mlc]----
+----[mla, mpe, mlu, mlc]----
 7. Vá até as configurações do painel da Shopify (**Configurações > Pagamentos**) e clique para **Gerenciar** o [Mercado Pago Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro). 
 8. Insira a `public_key` e o `access_token` da conta de teste do vendedor.
 9. Clique em **Salvar credenciais**.
@@ -90,3 +96,4 @@ Após concluir uma compra de teste utilizando um dos checkouts, a aprovação da
 > Além disso, os pedidos serão registrados no histórico da conta de teste de vendedor do Mercado Pago.
 
 ------------
+
