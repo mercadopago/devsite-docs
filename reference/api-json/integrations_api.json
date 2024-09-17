@@ -7,18 +7,18 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows you to get a list of the available Point devices associated with your Mercado Pago account. Devices can be filtered by point of sale and/or store",
-          "pt": "Este endpoint permite que você obtenha os dispositivos Point associados à sua conta do Mercado Pago. Os dispositivos podem ser filtrados por ponto de venda e/ou loja",
-          "es": "Este endpoint te permite obtener un listado de los dispositivos Point disponibles asociados a tu cuenta de Mercado Pago. Los dispositivos se pueden filtrar por punto de venta y/o tienda"
+          "en": "This endpoint allows you to get a list of the available Point devices associated with your Mercado Pago account. Devices can be filtered by point of sale and/or store. In case of success, the request will return a response with status 200",
+          "pt": "Este endpoint permite que você obtenha os dispositivos Point associados à sua conta do Mercado Pago. Os dispositivos podem ser filtrados por caixa e/ou loja. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Este endpoint te permite obtener un listado de los dispositivos Point disponibles asociados a tu cuenta de Mercado Pago. Los dispositivos se pueden filtrar por caja y/o tienda. En caso de éxito, la solicitud devolverá una respuesta con estado 200"
         },
         "parameters": [
           {
             "name": "x-test-scope",
             "in": "header",
             "description": {
-              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\". When going to production, it should be removed",
-              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\". Al momento de salir a producción, debe ser removido",
-              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\". Na hora de entrar em produção, deve ser retirado"
+              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\". When going to production, it should be removed.",
+              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\". Al momento de salir a producción, debe ser removido.",
+              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\". Na hora de entrar em produção, deve ser retirado."
             },
             "schema": {
               "type": "string",
@@ -43,8 +43,8 @@
             "in": "query",
             "description": {
               "en": "Optional. It's the device Point of Sale identifier, that you should send only if you want to filter the available devices by Point of Sale.",
-              "es": "Opcional. Es el identificador del Punto de Venta, que deberás enviar sólo si quieres filtrar los dispositivos por Punto de Venta.",
-              "pt": "Opcional. É o identificador do Ponto de Venda. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por Ponto de Venda."
+              "es": "Opcional. Es el identificador de la caja, que deberás enviar sólo si quieres filtrar los dispositivos por caja.",
+              "pt": "Opcional. É o identificador da caixa. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por caixa."
             },
             "schema": {
               "type": "integer",
@@ -55,9 +55,9 @@
             "name": "limit",
             "in": "query",
             "description": {
-              "en": "Pagination limit",
-              "pt": "Limite de paginação",
-              "es": "Límite de paginación"
+              "en": "Pagination limit.",
+              "pt": "Limite de paginação.",
+              "es": "Límite de paginación."
             },
             "schema": {
               "type": "integer",
@@ -68,9 +68,9 @@
             "name": "offset",
             "in": "query",
             "description": {
-              "en": "Pagination offset",
-              "pt": "Offset de paginação",
-              "es": "Offset de paginación"
+              "en": "Pagination offset.",
+              "pt": "Offset de paginação.",
+              "es": "Offset de paginación."
             },
             "schema": {
               "type": "integer",
@@ -92,7 +92,11 @@
                   "properties": {
                     "devices": {
                       "type": "array",
-                      "description": null,
+                      "description": {
+                        "en": "List of available devices.",
+                        "es": "Lista de dispositivos disponibles.",
+                        "pt": "Lista de dispositivos disponíveis."
+                      },
                       "items": {
                         "type": "object",
                         "properties": {
@@ -100,40 +104,45 @@
                             "type": "string",
                             "example": "PAX_A910__SMARTPOS1234345545",
                             "description": {
-                              "en": "Device identifier.",
-                              "es": "Identificador del dispositivo",
-                              "pt": "Identificador do dispositivo"
+                              "en": "Device unique identifier. You can identify the desired Point device by the last characters of this field, which should match the serial number displayed on the back label of the device.",
+                              "es": "Identificador único del dispositivo. Podrás identificar el Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera del dispositivo físico.",
+                              "pt": "Identificador exclusivo do dispositivo. Você pode identificar o dispositivo Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do dispositivo físico."
                             }
                           },
                           "pos_id": {
                             "type": "integer",
                             "description": {
-                              "en": "Point of Sale identifier",
-                              "es": "Identificador del Punto de Venta",
-                              "pt": "Identificador do Ponto de Venda"
+                              "en": "Identifier of the Point of Sale to which the device is associated.",
+                              "es": "Identificador de la caja a la que está asociado el dispositivo.",
+                              "pt": "Identificador da caixa à qual o dispositivo está associado."
                             },
                             "example": 47792476
                           },
                           "store_id": {
                             "type": "string",
                             "description": {
-                              "en": "Store identifier.",
-                              "pt": "Identificador da loja.",
-                              "es": "Identificador de la tienda."
+                              "en": "Identifier of the store to which the device is associated.",
+                              "pt": "Identificador da loja à qual o dispositivo está associado.",
+                              "es": "Identificador de la tienda a la que está asociado el dispositivo."
                             },
                             "example": 47792478
                           },
                           "external_pos_id": {
                             "type": "string",
                             "description": {
-                              "en": "External identifier of the store to which the POS belongs",
-                              "es": "Identificador externo de la tienda a la que pertenece el Punto de Venta",
-                              "pt": "Identificador externo da loja a qual pertence o Ponto de Venda"
+                              "en": "External identifier of the store to which the POS belongs, defined by the integrator during its creation.",
+                              "es": "Identificador externo de la tienda a la que pertenece la caja, definido por el integrador durante su creación.",
+                              "pt": "Identificador externo da loja a qual pertence a caixa, definido pelo integrador durante sua criação."
                             },
                             "example": "SUC0101POS"
                           },
                           "operating_mode": {
                             "type": "string",
+                            "description":{
+                              "en": "Operating mode defined currently for the device.",
+                              "es": "Modo de operación en el que está funcionando el dispositivo actualmente.",
+                              "pt": "Modo de operação em que o dispositivo está funcionando atualmente"
+                            },
                             "example": "“PDV” | “STANDALONE”",
                             "enum": [
                               {
@@ -147,7 +156,7 @@
                               {
                                 "title": "STANDALONE",
                                 "description": {
-                                  "en":  "Default device configuration. It's when the device is not integrated with the API.",
+                                  "en": "Default device configuration. It's when the device is not integrated with the API.",
                                   "es": "Configuración del dispositivo por defecto. Es el modo en el que opera el dispositivo cuando no está integrado vía API.",
                                   "pt": "Configuração padrão do dispositivo. É a forma como o dispositivo opera quando não está integrado via API."
                                 }
@@ -213,9 +222,9 @@
           },
           "401": {
             "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
+              "en": "Unauthorized - token is invalid",
+              "pt": "Não autorizado – o token é inválido",
+              "es": "No autorizado - el token es inválido"
             },
             "content": {
               "application/json": {
@@ -228,9 +237,9 @@
                         {
                           "title": "401",
                           "description": {
-                            "en": "Unauthorized - token is invalid",
-                            "es": "Unauthorized - token is invalid",
-                            "pt": "Unauthorized - token is invalid"
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e faça uma nova requisição com o valor correto."
                           }
                         }
                       ]
@@ -271,9 +280,9 @@
           },
           "500": {
             "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
+              "en": "Internal error",
+              "pt": "Erro interno",
+              "es": "Error interno"
             },
             "content": {
               "application/json": {
@@ -286,9 +295,9 @@
                         {
                           "title": "500",
                           "description": {
-                            "en": "Internal server error",
-                            "es": "Internal server error",
-                            "pt": "Internal server error"
+                            "en": "Internal error. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro interno. Tente enviar a solicitação novamente."
                           }
                         }
                       ]
@@ -1783,23 +1792,23 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows you to change a device operating mode. The options are: PDV, that is when a device is used in integration with our API, and STANDALONE, that is when you want to process payments in a device without our API",
-          "pt": "Este endpoint permite alterar o modo de operação do dispositivo. As opções são: PDV, que é quando o dispositivo é usado em modo integrado com nossa API, e STANDALONE, que é usado quando você deseja processar pagamentos sem nossa API",
-          "es": "Este endpoint te permite cambiar el modo de operación del dispositivo. Las opciones son: PDV, que es cuando el dispositivo es usado en modo integrado con nuestra API, y STANDALONE,  que se usa cuando deseas procesar pagos sin nuestra API"
+          "en": "This endpoint allows you to change a device operating mode. The options are: \"PDV\", that is when a device is used in integration with our API, and \"STANDALONE\", that is when you want to process payments in a device without our API. In case of success, the request will return a response with status 200",
+          "pt": "Este endpoint permite alterar o modo de operação do dispositivo. As opções são: \"PDV\", que é quando o dispositivo é usado em modo integrado com nossa API, e \"STANDALONE\", que é usado quando você deseja processar pagamentos sem nossa API. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Este endpoint te permite cambiar el modo de operación del dispositivo. Las opciones son: \"PDV\", que es cuando el dispositivo es usado en modo integrado con nuestra API, y \"STANDALONE\",  que se usa cuando deseas procesar pagos sin nuestra API. En caso de éxito, la solicitud devolverá una respuesta con estado 20o"
         },
         "parameters": [
           {
             "name": "device-id",
             "in": "path",
             "description": {
-              "en": "identifier of the device that will have a payment intent queued",
-              "es": "identificador del dispositivo que tendrá un intento de pago en cola",
-              "pt": "identificador do dispositivo que terá uma tentativa de pagamento em fila"
+              "en": "Identifier of the device for which you want to change the operating mode.",
+              "es": "Identificador del dispositivo para el que se quiere cambiar el modo de operación.",
+              "pt": "Identificador do dispositivo cujo modo de operação deseja alterar."
             },
             "required": true,
             "schema": {
               "type": "string",
-              "example": "{deviceId}"
+              "example": "PAX_A910__SMARTPOS1234345545"
             }
           }
         ],
@@ -1813,7 +1822,11 @@
                   "operating_mode": {
                     "type": "string",
                     "required": true,
-                    "nullable": false,
+                    "description": {
+                      "en": "Mode in which you want the device to operate. It can be one of the two that follows.",
+                      "es": "Modo en el que se desea que opere el dispositivo. Debe ser uno de entre los dos a continuación.",
+                      "pt": "Modo em que deseja que o dispositivo opere. Deve ser um dos dois abaixo."
+                    },
                     "example": "PDV",
                     "enum": [
                       {
@@ -1842,9 +1855,9 @@
         "responses": {
           "200": {
             "description": {
-              "en": "Success - Operating mode successfully changed",
-              "pt": "Sucesso - Modo de operação alterado com sucesso",
-              "es": "Éxito - Modo de operación cambió correctamente"
+              "en": "Success - Operating mode successfully changed.",
+              "pt": "Sucesso - Modo de operação alterado com sucesso.",
+              "es": "Éxito - El modo de operación se cambió correctamente."
             },
             "content": {
               "application/json": {
@@ -1853,7 +1866,11 @@
                   "properties": {
                     "operating_mode": {
                       "type": "string",
-                      "nullable": false,
+                      "description": {
+                        "en": "Mode in which the device is set to operate.",
+                        "es": "Modo de operación definido para el dispositivo.",
+                        "pt": "Modo de operação definido para o dispositivo."
+                      },
                       "required": true,
                       "example": "PDV",
                       "enum": [
@@ -1882,9 +1899,9 @@
           },
           "400": {
             "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
+              "en": "Error - device-id incorrect format.",
+              "pt": "Erro. Formato incorreto para o device-id.",
+              "es": "Error. Formato incorrecto para device-id."
             },
             "content": {
               "application/json": {
@@ -1895,7 +1912,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "400",
+                          "title": "Bad-Request",
                           "description": {
                             "en": "Bad-Request - Device id incorrect format",
                             "es": "Bad-Request - Device id incorrect format",
@@ -1911,9 +1928,9 @@
           },
           "403": {
             "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
+              "en": "Error - User not logged into the device.",
+              "pt": "Erro - Dispositivo não vinculado ao usuário.",
+              "es": "Error - Dispositivo no vinculado al usuario."
             },
             "content": {
               "application/json": {
@@ -1924,7 +1941,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "403",
+                          "title": "Unauthorized",
                           "description": {
                             "en": "Unauthorized - User not logged into the device",
                             "es": "Unauthorized - User not logged into the device",
@@ -1940,9 +1957,9 @@
           },
           "500": {
             "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
+              "en": "Internal error.",
+              "pt": "Erro interno.",
+              "es": "Error interno."
             },
             "content": {
               "application/json": {
@@ -1955,9 +1972,9 @@
                         {
                           "title": "500",
                           "description": {
-                            "en": "Internal server error",
-                            "es": "Internal server error",
-                            "pt": "Internal server error"
+                            "en": "Internal error. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro interno. Tente enviar a solicitação novamente."
                           }
                         }
                       ]
