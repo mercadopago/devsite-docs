@@ -7,7 +7,13 @@
 
 Los pagos con **Cuenta de Mercado Pago y Financiación sin tarjeta**, la opción de pagar en cuotas sin contar con una tarjeta, no necesitan ser enviados a través del backend. 
 
-Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio. 
+Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio.
+
+> WARNING
+> 
+> Importante
+>
+> Si la `preferenceId` tiene solo un método de pago válido, no se mostrarán las imágenes de los logotipos de los otros métodos de pago disponibles.
 
 Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo](/developers/es/docs/checkout-bricks/payment-brick/advanced-features/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web).
  
@@ -23,9 +29,11 @@ Los pagos con **Cuenta de Mercado Pago y Financiamiento sin tarjeta**, la opció
 
 Si el usuario selecciona esta opción como medio de pago, el `preferenceId` enviado en la inicialización del Brick es el encargado de redirigir al comprador al sitio web de Mercado Pago, donde el pago se realizará directamente en nuestro sitio.
 
-## Prueba tu integración
-
-Con la integración completada, podrás probar la recepción de pagos. Para obtener más información, accede a la sección [Hacer compra de prueba.](/developers/es/docs/checkout-bricks/integration-test/test-payment-flow)
+> WARNING
+> 
+> Importante
+>
+> Si la `preferenceId` tiene solo un método de pago válido, no se mostrarán las imágenes de los logotipos de los otros métodos de pago disponibles.
 
 Para redirigir al comprador a tu sitio, puede configurar `back_urls` como se describe [en este artículo](/developers/es/docs/checkout-bricks/payment-brick/advanced-features/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web).
 

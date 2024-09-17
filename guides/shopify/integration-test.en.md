@@ -2,7 +2,7 @@
 
 Purchase tests are essential to ensure that payments are being processed correctly before authorizing real transactions. To verify that your store is set up correctly, we recommend testing payments before going live.
 
-----[mla, mpe, mco, mlu, mlc]----
+----[mla, mpe, mlu, mlc]----
 > WARNING
 > 
 > Important
@@ -11,7 +11,7 @@ Purchase tests are essential to ensure that payments are being processed correct
 
 
 ------------
-----[mlb, mlm]----
+----[mlb, mlm, mco]----
 > WARNING
 > 
 > Important
@@ -36,7 +36,7 @@ See below how to test the integration:
 
 6. Access the application created in step 5 and click on **Production credentials** in the menu on the left. Copy the `public_key` and the `access_token`.
 
-----[mlb, mlm]----
+----[mlb, mlm, mco]----
 7. Go to the settings of the Shopify panel (**Settings > Payments**) and click to **Manage** one of the Mercado Pago checkouts, either [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) or [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 8. Enter the `public_key` and `access_token` of the seller test account.
 9. Click on **Save credentials**.
@@ -47,6 +47,31 @@ Now, follow the step-by-step instructions according to the selected checkout typ
 ## Mercado Pago Cards
 
 11. Access your store and make a purchase providing test information, such as the phone number and email of the buyer test account. In "Document", select the option **OTHER** and enter 9 digits. Also, use the test cards available in the corresponding [documentation](/developers/en/docs/shopify/additional-content/your-integrations/test/cards).
+
+----[mlb]----
+> NOTE
+>
+> Note
+>
+> If you want to test your integration with an installment purchase on a credit card, [see here](https://www.mercadopago.com.br/ajuda/21660) what the minimum and maximum values are for card installments.
+
+------------
+----[mco]----
+> NOTE
+>
+> Note
+>
+> If you want to test your integration with an installment purchase on a credit card, [see here](https://www.mercadopago.com.co/ayuda/620) what the minimum and maximum values are for card installments.
+
+------------
+----[mlm]----
+> NOTE
+>
+> Note
+>
+> If you want to test your integration with an installment purchase on a credit card, [see here](https://www.mercadopago.com.mx/ayuda/monto-minimo-maximo-medios-de-pago_655) what the minimum and maximum values are for card installments.
+
+------------
 
 ## Mercado Pago Checkout Pro
 
@@ -64,7 +89,7 @@ After completing a test purchase using one of the checkouts, the purchase approv
 > Additionally, the orders will be recorded in the transaction history of the Mercado Pago seller test account.
 
 ------------
-----[mla, mpe, mco, mlu, mlc]----
+----[mla, mpe, mlu, mlc]----
 7. Go to the settings of the Shopify panel (**Settings > Payments**) and click to **Manage** [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
 8. Enter the `public_key` and `access_token` of the seller test account.
 9. Click on **Save credentials**.
