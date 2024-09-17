@@ -73,7 +73,7 @@
                     },
                     "properties": {
                       "payments": {
-                        "type": "object",
+                        "type": "array",
                         "description": {
                           "en": "Contains information about the payment order. if you want to create an order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
                           "pt": "Contém informações sobre a order do pagamento. Caso deseje criar uma order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
@@ -489,7 +489,7 @@
                       },
                       "properties":{
                         "payments":{
-                          "type":"object",
+                          "type":"array",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Contém informações sobre o pagamento associado à order.",
@@ -1313,7 +1313,7 @@
                       },
                       "properties":{
                         "payments":{
-                          "type":"object",
+                          "type":"array",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Contém informações sobre o pagamento associado à order.",
@@ -2041,7 +2041,7 @@
                       },
                       "properties":{
                         "payments": {
-                          "type":"object",
+                          "type":"array",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Este objeto traz informações sobre o pagamento associado à order.",
@@ -2497,7 +2497,7 @@
                     },
                     "properties": {
                       "payments": {
-                        "type": "object",
+                        "type": "array",
                         "description": {
                           "en": "Payment transaction to be associated with the order. If you want to create an order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
                           "pt": "Transação de pagamento que deve ser associada à order. Caso deseje criar uma order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
@@ -2550,7 +2550,7 @@
                       },
                       "properties": {
                         "payments": {
-                          "type": "object",
+                          "type": "array",
                           "description": {
                             "en": "Payment transactions added to the order. If there is more than one transaction, this node will provide the information for all transactions.",
                             "pt": "Transações de pagamento adicionadas à order. Caso exista mais de uma transação, este nó trará as informaçÕes de todas as transações.",
@@ -3029,7 +3029,7 @@
                     },
                     "properties": {
                       "payments": {
-                        "type": "object",
+                        "type": "array",
                         "required": true,
                         "description": {
                           "en": "Information that can be updated in the payment transaction. All the fields below can be modified as needed.",
@@ -3076,7 +3076,7 @@
                       },
                       "properties": {
                         "payments": {
-                          "type": "object",
+                          "type": "array",
                           "description": {
                             "en": "Payment transactions added to the order. If there is more than one transaction, this node will provide the information for all transactions.",
                             "pt": "Transações de pagamento adicionadas à order. Caso exista mais de uma transação, este nó trará as informaçÕes de todas as transações.",
@@ -3414,7 +3414,7 @@
                       },
                       "properties":{
                         "payments": {
-                          "type":"object",
+                          "type":"array",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Este objeto traz informações sobre o pagamento associado à order.",
@@ -4148,7 +4148,7 @@
           },
           "statement_descriptor": {
             "type": "string",
-            "example": "MERCADOPAGO",
+            "example": "approved",
             "description": {
               "en": "Description that the payment will appear with in the card statement.",
               "pt": "Descrição com a qual o pagamento aparecerá na fatura do cartão.",
@@ -4254,36 +4254,36 @@
           "address":{
             "type":"object",
             "description":{
-              "en":"Payer's address information",
-              "pt":"Informações de endereço do pagador",
-              "es":"Información relativa a la dirección del pagador"
+              "en":"Payer's address information.",
+              "pt":"Informações de endereço do pagador.",
+              "es":"Información relativa a la dirección del pagador."
             },
             "properties":{
               "zip_code":{
                 "type":"string",
                 "example":"12345678",
                 "description":{
-                  "en":"Payer's address zip code",
-                  "pt":"CEP do endereço do pagador",
-                  "es":"Código postal de la dirección del pagador"
+                  "en":"Payer's address zip code.",
+                  "pt":"CEP do endereço do pagador.",
+                  "es":"Código postal de la dirección del pagador."
                 }
               },
               "street_name":{
                 "type":"string",
                 "example":"Rua Teste",
                 "description":{
-                  "en":"Payer's address street name",
-                  "pt":"Nome da rua do endereço do pagador",
-                  "es":"Nombre de la calle de la dirección del pagador"
+                  "en":"Payer's address street name.",
+                  "pt":"Nome da rua do endereço do pagador.",
+                  "es":"Nombre de la calle de la dirección del pagador."
                 }
               },
               "street_number":{
                 "type":"string",
                 "example":"123",
                 "description":{
-                  "en":"Payer address street number",
-                  "pt":"Número da rua do endereço do pagador",
-                  "es":"Número de la calle de la dirección del pagador"
+                  "en":"Payer address street number.",
+                  "pt":"Número da rua do endereço do pagador.",
+                  "es":"Número de la calle de la dirección del pagador."
                 }
               }
             }
@@ -4441,7 +4441,7 @@
           },
           "callback_url":{
             "type":"string",
-            "example":"www.mercadopago.com",
+            "example":"https://www.mercadopago.com",
             "description":{
               "en":"URL where mercadopago does the final redirect (only for bank transfers).",
               "pt":"URL para a qual o Mercado Pago faz o redirecionamento final (apenas para transferência bancária).",
@@ -4738,6 +4738,7 @@
           },
           "width":{
             "type":"number",
+            "example": "1",
             "description":{
               "en":"Width of barcode.",
               "pt":"Largura do código de barras.",
@@ -4746,6 +4747,7 @@
           },
           "height":{
             "type":"number",
+            "example": "1",
             "description":{
               "en":"Height of barcode.",
               "pt":"Altura do código de barras.",
