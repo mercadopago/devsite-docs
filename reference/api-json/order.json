@@ -8,7 +8,7 @@
         ],
         "description": {
           "en": "This endpoint allows to create orders in \"automatic\" (processing the transaction in a single stage) or \"manual\" (processing the transaction in stages that can be configured and executed incrementally) mode for payment and cashout transactions. In case of success, the request will return a response with status 201",
-          "pt": "Este endpoint permite criaruma order no modo \"automático\" (processando a transação em uma única etapa) ou \"manual\" (processando a transação em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+          "pt": "Este endpoint permite criar uma order no modo \"automático\" (processando a transação em uma única etapa) ou \"manual\" (processando a transação em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
           "es": "Este endpoint permite crear una order en modo \"automático\" (procesando la transacción en una sola etapa) o \"manual\" (procesando la transacción en etapas que pueden ser configuradas y ejecutadas de manera incremental) para transacciones de pago y cashout. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
         },
         "parameters": [
@@ -58,9 +58,9 @@
                     "required":true,
                     "example":"ext_ref_1234",
                     "description":{
-                      "en":"It is an external reference of the order. It can be, for example, a hashcode from the Central Bank, functioning as an identifier of the transaction origin.",
-                      "es":"Es una referencia externa de la order. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción.",
-                      "pt":"Referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação." 
+                      "en":"It is an external reference of the order. It can be, for example, a hashcode from the Central Bank, functioning as an identifier of the transaction origin. This field must have a maximum of 64 characters and can only be numbers, letters, hyphens (-) and underscores (_). Special characters such as ([ ], (), '', @) are not allowed.",
+                      "es":"Es una referencia externa de la order. Puede ser, por ejemplo, un hashcode del Banco Central, funcionando como identificador de origen de la transacción. Este campo debe tener como máximo 64 caracteres y estos solo pueden ser números, letras, guiones medios (-) y guiones bajos (_). Caracteres especiales como ([ ], (), '', @) no son permitidos.",
+                      "pt":"Referência externa da order. Pode ser, por exemplo, um hashcode do Banco Central, funcionando como identificador de origem da transação. Este campo deve ter no máximo 64 caracteres e deve conter apenas números, letras, hífens (-) e sublinhados (_). Caracteres especiais como ([ ], (), '', @) não são permitidos." 
                     }
                   },
                   "transactions":{
@@ -73,7 +73,7 @@
                     },
                     "properties": {
                       "payments": {
-                        "type": "object",
+                        "type": "array",
                         "description": {
                           "en": "Contains information about the payment order. if you want to create an order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
                           "pt": "Contém informações sobre a order do pagamento. Caso deseje criar uma order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
@@ -365,6 +365,42 @@
                         "es":"Monto total a pagar."
                       }
                     },
+                    "client_id":{
+                      "type":"string",
+                      "example":"1234",
+                      "description":{
+                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                        "en":"Identifier of the Mercado Pago application that created the order.",
+                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                      }
+                    },
+                    "collector_id":{
+                      "type":"string",
+                      "example":"12345",
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
                     "site_id":{
                       "$ref": "#/components/schemas/site_id"
                     },
@@ -453,7 +489,7 @@
                       },
                       "properties":{
                         "payments":{
-                          "type":"object",
+                          "type":"array",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Contém informações sobre o pagamento associado à order.",
@@ -835,9 +871,9 @@
           },
           "400": {
             "description": {
-              "en": "Error. Invalid value for property.",
-              "pt": "Erro. Valor inválido para a propriedade.",
-              "es": "Error. Valor no válido para la propiedad. "
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
             },
             "content":{
               "application/json":{
@@ -848,11 +884,91 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "400",
+                          "title": "empty_required_header",
                           "description": {
-                            "en": "An invalid payload was sent, or there is an invalid value for some property. Check the message returned in the error code to find out what the problem was and try again.",
-                            "es": "Se envió un payload inválido, o hay algún valor inválido para alguna propiedad. Chequea el mensaje devuelto en el código de error para saber cuál fue el problema y vuelve a intentarlo.",
-                            "pt": "Um payload inválido foi enviado, ou algum valor de propriedade está incorreto. Verifique a mensagem de erro retornada para identificar o problema e tente novamente."
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la requisición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "required_properties",
+                          "description": {
+                            "en": "There are some required properties missing. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Ciertas propiedades requeridas están ausentes. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Certas propriedades obrigatórias estão ausentes. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "unsupported_properties",
+                          "description": {
+                            "en": "An unsupported property was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió una propiedad que no es soportada. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Foi enviada uma propriedade que não é suportada. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "minimum_properties",
+                          "description": {
+                            "en": "The minimum number of properties required to execute the request was not sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "No se envió el número mínimo de propiedades necesarias para ejecutar la solicitud. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "O número mínimo de propriedades necessárias para executar a solicitação não foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "property_type",
+                          "description": {
+                            "en": "The wrong property type was submitted. For example, an 'integer' value for a 'string' property. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un tipo de propiedad incorrecto. Por ejemplo, un valor 'integer' para una propiedad 'string'. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um tipo de propriedade incorreto foi enviado. Por exemplo, um valor 'integer' para uma propriedade 'string'. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "minimum_items",
+                          "description": {
+                            "en": "The minimum number of items for some property was not sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "No se envió el número mínimo de ítems para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "O número mínimo de itens para alguma propriedade não foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "maximum_items",
+                          "description": {
+                            "en": "A greater number of items were sent than allowed for some property. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió una cantidad mayor de ítems que la permitida para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Foi enviado um número de itens maior do que o permitido para alguma propriedade. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "property_value",
+                          "description": {
+                            "en": "An incorrect value for some property was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un valor inválido para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um valor inválido foi enviado para alguma propriedade. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "json_syntax_error",
+                          "description": {
+                            "en": "An incorrect JSON was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un JSON inválido. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um JSON inválido foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_properties",
+                          "description": {
+                            "en": "Incorrect information was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió información incorrecta. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Informações incorretas foram enviadas. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_total_amount",
+                          "description": {
+                            "en": "The value entered in \"total_amount\" is not equivalent to the sum of the \"transactions.payments.amount\" field of the total transactions. Please verify if the values ​​are correct.",
+                            "es": "El valor ingresado en \"total_amount\" no es equivalente a la suma del campo \"transactions.payments.amount\" del total de las transacciones. Por favor, verifica que los valores sean correctos.",
+                            "pt": "O valor informado em \"total_amount\" não equivale à soma do campo \"transactions.payments.amount\" do total de transações. Verifique se os valores estão corretos."
                           }
                         }
                       ]
@@ -891,11 +1007,11 @@
               }
             }
           },
-          "500": {
+          "409": {
             "description": {
-              "en": "Generic error .",
-              "pt": "Erro genérico.",
-              "es": "Error genérico."
+              "en": "Error. Idempotency header already used.",
+              "pt": "Erro. Header de idempotencia ya utilizado.",
+              "es": "Error. Header de idempotência já utilizado."
             },
             "content":{
               "application/json":{
@@ -905,6 +1021,43 @@
                     "errorKey": {
                       "type": "string",
                       "enum": [
+                        {
+                          "title": "idempotency_key_already_used",
+                          "description": {
+                            "en": "The value sent as the idempotency header has already been used. Please try the request again sending a new value.",
+                            "es": "El valor enviado como header de idempotencia ya fue utilizado. Por favor, vuelve a intentar realizar la requisición enviando un nuevo valor.",
+                            "pt": "O valor enviado como header de idempotência já foi utilizado. Por favor, tente a solicitação novamente enviando um novo valor."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
                         {
                           "title": "500",
                           "description": {
@@ -1023,6 +1176,42 @@
                     "site_id":{
                       "$ref": "#/components/schemas/site_id"
                     },
+                    "client_id":{
+                      "type":"string",
+                      "example":"1234",
+                      "description":{
+                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                        "en":"Identifier of the Mercado Pago application that created the order.",
+                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                      }
+                    },
+                    "collector_id":{
+                      "type":"string",
+                      "example":"12345",
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
                     "type":{
                       "type":"string",
                       "description":{
@@ -1124,7 +1313,7 @@
                       },
                       "properties":{
                         "payments":{
-                          "type":"object",
+                          "type":"array",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Contém informações sobre o pagamento associado à order.",
@@ -1559,7 +1748,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "400",
+                          "title": "invalid_path_param",
                           "description": {
                             "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
                             "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
@@ -1617,7 +1806,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "404",
+                          "title": "order_not_found",
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
@@ -1763,6 +1952,42 @@
                     "site_id":{
                       "$ref": "#/components/schemas/site_id"
                     },
+                    "client_id":{
+                      "type":"string",
+                      "example":"1234",
+                      "description":{
+                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                        "en":"Identifier of the Mercado Pago application that created the order.",
+                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                      }
+                    },
+                    "collector_id":{
+                      "type":"string",
+                      "example":"12345",
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
                     "type":{
                       "type":"string",
                       "description":{
@@ -1816,7 +2041,7 @@
                       },
                       "properties":{
                         "payments": {
-                          "type":"object",
+                          "type":"array",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Este objeto traz informações sobre o pagamento associado à order.",
@@ -2058,7 +2283,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "400",
+                          "title": "invalid_path_param",
                           "description": {
                             "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
                             "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
@@ -2116,11 +2341,40 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "404",
+                          "title": "order_not_found",
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
                             "pt": "Order não encontrada. Verifique se se o ID enviado está correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error. The selected order cannot be canceled.",
+              "pt": "Error. La order elegida no puede ser cancelada.",
+              "es": "Error. A order escolhida não pode ser cancelada."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "cannot_cancel_order",
+                          "description": {
+                            "en": "The status of the order does not allow its cancellation. Only orders with status 'action_required' can be cancelled.",
+                            "es": "El estado en el que se encuentra la order no permite su cancelación. Solo pueden ser canceladas orders con status 'action_required'.",
+                            "pt": "O status da order não permite o seu cancelamento. Apenas orders com status 'action_required' podem ser canceladas."
                           }
                         }
                       ]
@@ -2243,7 +2497,7 @@
                     },
                     "properties": {
                       "payments": {
-                        "type": "object",
+                        "type": "array",
                         "description": {
                           "en": "Payment transaction to be associated with the order. If you want to create an order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
                           "pt": "Transação de pagamento que deve ser associada à order. Caso deseje criar uma order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
@@ -2296,7 +2550,7 @@
                       },
                       "properties": {
                         "payments": {
-                          "type": "object",
+                          "type": "array",
                           "description": {
                             "en": "Payment transactions added to the order. If there is more than one transaction, this node will provide the information for all transactions.",
                             "pt": "Transações de pagamento adicionadas à order. Caso exista mais de uma transação, este nó trará as informaçÕes de todas as transações.",
@@ -2332,9 +2586,9 @@
           },
           "400": {
             "description": {
-              "en": "Error. Invalid value for property.",
-              "pt": "Erro. Valor inválido para a propriedade.",
-              "es": "Error. Valor no válido para la propiedad. "
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
             },
             "content":{
               "application/json":{
@@ -2345,11 +2599,91 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "400",
+                          "title": "empty_required_header",
                           "description": {
-                            "en": "The payload sent is invalid or contains an incorrect value for one of the properties. Check the returned error message to identify the issue and try again.",
-                            "es": "El payload enviado es inválido o contiene un valor incorrecto en alguna de las propiedades. Verifica el mensaje de error devuelto para identificar el problema e intenta nuevamente..",
-                            "pt": "O payload enviado é inválido ou contém um valor incorreto em uma das propriedades. Consulte a mensagem de erro retornada para identificar o problema e tente novamente."
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la requisición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "invalid_path_param",
+                          "description": {
+                            "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
+                            "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
+                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                          }
+                        },
+                        {
+                          "title": "required_properties",
+                          "description": {
+                            "en": "There are some required properties missing. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Ciertas propiedades requeridas están ausentes. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Certas propriedades obrigatórias estão ausentes. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "unsupported_properties",
+                          "description": {
+                            "en": "An unsupported property was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió una propiedad que no es soportada. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Foi enviada uma propriedade que não é suportada. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "minimum_properties",
+                          "description": {
+                            "en": "The minimum number of properties required to execute the request was not sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "No se envió el número mínimo de propiedades necesarias para ejecutar la solicitud. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "O número mínimo de propriedades necessárias para executar a solicitação não foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "property_type",
+                          "description": {
+                            "en": "The wrong property type was submitted. For example, an 'integer' value for a 'string' property. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un tipo de propiedad incorrecto. Por ejemplo, un valor 'integer' para una propiedad 'string'. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um tipo de propriedade incorreto foi enviado. Por exemplo, um valor 'integer' para uma propriedade 'string'. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "minimum_items",
+                          "description": {
+                            "en": "The minimum number of items for some property was not sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "No se envió el número mínimo de ítems para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "O número mínimo de itens para alguma propriedade não foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "maximum_items",
+                          "description": {
+                            "en": "A greater number of items were sent than allowed for some property. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió una cantidad mayor de ítems que la permitida para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Foi enviado um número de itens maior do que o permitido para alguma propriedade. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "property_value",
+                          "description": {
+                            "en": "An incorrect value for some property was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un valor inválido para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um valor inválido foi enviado para alguma propriedade. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "json_syntax_error",
+                          "description": {
+                            "en": "An incorrect JSON was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un JSON inválido. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um JSON inválido foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_properties",
+                          "description": {
+                            "en": "Incorrect information was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió información incorrecta. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Informações incorretas foram enviadas. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
                           }
                         }
                       ]
@@ -2403,7 +2737,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "404",
+                          "title": "order_not_found",
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
@@ -2419,9 +2753,9 @@
           },
           "500": {
             "description": {
-              "en": "Generic error .",
-              "pt": "Erro genérico.",
-              "es": "Error genérico."
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
             },
             "content":{
               "application/json":{
@@ -2432,11 +2766,19 @@
                       "type": "string",
                       "enum": [
                         {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
                           "title": "500",
                           "description": {
                             "en": "Generic error. Please try submitting the request again.",
                             "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
-                            "pt": "Erro genérico. Tente realizar uma nova requisição."
+                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
                           }
                         }
                       ]
@@ -2509,6 +2851,35 @@
               }
             }
           },
+          "400": {
+            "description": {
+              "en": "Error. Invalid ID supplied",
+              "pt": "Erro. ID inválido.",
+              "es": "Error. ID inválido."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid_path_param",
+                          "description": {
+                            "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
+                            "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
+                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
           "401": {
             "description": {
               "en": "Error. Access Token not authorized.",
@@ -2553,7 +2924,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "404",
+                          "title": "order_not_found",
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
@@ -2658,7 +3029,7 @@
                     },
                     "properties": {
                       "payments": {
-                        "type": "object",
+                        "type": "array",
                         "required": true,
                         "description": {
                           "en": "Information that can be updated in the payment transaction. All the fields below can be modified as needed.",
@@ -2705,7 +3076,7 @@
                       },
                       "properties": {
                         "payments": {
-                          "type": "object",
+                          "type": "array",
                           "description": {
                             "en": "Payment transactions added to the order. If there is more than one transaction, this node will provide the information for all transactions.",
                             "pt": "Transações de pagamento adicionadas à order. Caso exista mais de uma transação, este nó trará as informaçÕes de todas as transações.",
@@ -2754,7 +3125,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "400",
+                          "title": "invalid_path_param",
                           "description": {
                             "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
                             "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
@@ -2812,7 +3183,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "404",
+                          "title": "order_not_found",
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
@@ -2955,6 +3326,42 @@
                     "site_id": {
                       "$ref": "#/components/schemas/site_id"
                     },
+                    "client_id":{
+                      "type":"string",
+                      "example":"1234",
+                      "description":{
+                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                        "en":"Identifier of the Mercado Pago application that created the order.",
+                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                      }
+                    },
+                    "collector_id":{
+                      "type":"string",
+                      "example":"12345",
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
                     "status": {
                       "type":"string",
                       "example":"processed",
@@ -3007,7 +3414,7 @@
                       },
                       "properties":{
                         "payments": {
-                          "type":"object",
+                          "type":"array",
                           "description":{
                             "en":"Contains information about the payment associated with the order.",
                             "pt":"Este objeto traz informações sobre o pagamento associado à order.",
@@ -3422,9 +3829,9 @@
           },
           "400": {
             "description": {
-              "en": "Error. Invalid ID supplied",
-              "pt": "Erro. ID inválido.",
-              "es": "Error. ID inválido."
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
             },
             "content": {
               "application/json": {
@@ -3435,11 +3842,27 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "400",
+                          "title": "empty_required_header",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la requisición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "invalid_path_param",
                           "description": {
                             "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
                             "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
                             "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_total_amount",
+                          "description": {
+                            "en": "The value entered in \"total_amount\" is not equivalent to the sum of the \"transactions.payments.amount\" field of the total transactions. Please verify if the values ​​are correct.",
+                            "es": "El valor ingresado en \"total_amount\" no es equivalente a la suma del campo \"transactions.payments.amount\" del total de las transacciones. Por favor, verifica que los valores sean correctos.",
+                            "pt": "O valor informado em \"total_amount\" não equivale à soma do campo \"transactions.payments.amount\" do total de transações. Verifique se os valores estão corretos."
                           }
                         }
                       ]
@@ -3493,7 +3916,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "404",
+                          "title": "order_not_found",
                           "description": {
                             "en": "Order not found. Please check if you provided the correct order ID.",
                             "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
@@ -3507,26 +3930,63 @@
               }
             }
           },
-          "500": {
+          "409": {
             "description": {
-              "en": "Generic error .",
-              "pt": "Erro genérico.",
-              "es": "Error genérico."
+              "en": "Error. Idempotency header already used.",
+              "pt": "Erro. Header de idempotencia ya utilizado.",
+              "es": "Error. Header de idempotência já utilizado."
             },
-            "content": {
-              "application/json": {
-                "schema": {
+            "content":{
+              "application/json":{
+                "schema":{
                   "type": "object",
                   "properties": {
                     "errorKey": {
                       "type": "string",
                       "enum": [
                         {
+                          "title": "idempotency_key_already_used",
+                          "description": {
+                            "en": "The value sent as the idempotency header has already been used. Please try the request again sending a new value.",
+                            "es": "El valor enviado como header de idempotencia ya fue utilizado. Por favor, vuelve a intentar realizar la requisición enviando un nuevo valor.",
+                            "pt": "O valor enviado como header de idempotência já foi utilizado. Por favor, tente a solicitação novamente enviando um novo valor."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
                           "title": "500",
                           "description": {
                             "en": "Generic error. Please try submitting the request again.",
                             "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
-                            "pt": "Erro genérico. Tente realizar uma nova requisição."
+                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
                           }
                         }
                       ]
@@ -3560,9 +4020,9 @@
         "type": "string",
         "required": true,
         "description": {
-          "en": "Identifier of the currency used in the transaction/order. We currently have the following options.",
-          "pt": "Identificador da moeda utilizada na transação/order. Veja abaixo as opções disponíveis.",
-          "es": "Identificador de la moneda utilizada en la transacción/order. Actualmente tenemos las siguientes opciones."
+          "en": "Identifier of the currency used in the transaction/order. We currently have the options below. Make sure to send the value corresponding to the country to which the account that receives the money belongs.",
+          "pt": "Identificador da moeda utilizada na transação/order. Veja abaixo as opções disponíveis. Você deve enviar o valor correspondente ao país ao qual pertence a conta que recebe o dinheiro.",
+          "es": "Identificador de la moneda utilizada en la transacción/order. Actualmente tenemos las opciones descritas debajo. Debes enviar el valor correspondiente al país al que pertenece la cuenta que recibe el dinero."
         },
         "example": "BRL",
         "enum": [
@@ -3688,7 +4148,7 @@
           },
           "statement_descriptor": {
             "type": "string",
-            "example": "MERCADOPAGO",
+            "example": "approved",
             "description": {
               "en": "Description that the payment will appear with in the card statement.",
               "pt": "Descrição com a qual o pagamento aparecerá na fatura do cartão.",
@@ -3794,36 +4254,36 @@
           "address":{
             "type":"object",
             "description":{
-              "en":"Payer's address information",
-              "pt":"Informações de endereço do pagador",
-              "es":"Información relativa a la dirección del pagador"
+              "en":"Payer's address information.",
+              "pt":"Informações de endereço do pagador.",
+              "es":"Información relativa a la dirección del pagador."
             },
             "properties":{
               "zip_code":{
                 "type":"string",
                 "example":"12345678",
                 "description":{
-                  "en":"Payer's address zip code",
-                  "pt":"CEP do endereço do pagador",
-                  "es":"Código postal de la dirección del pagador"
+                  "en":"Payer's address zip code.",
+                  "pt":"CEP do endereço do pagador.",
+                  "es":"Código postal de la dirección del pagador."
                 }
               },
               "street_name":{
                 "type":"string",
                 "example":"Rua Teste",
                 "description":{
-                  "en":"Payer's address street name",
-                  "pt":"Nome da rua do endereço do pagador",
-                  "es":"Nombre de la calle de la dirección del pagador"
+                  "en":"Payer's address street name.",
+                  "pt":"Nome da rua do endereço do pagador.",
+                  "es":"Nombre de la calle de la dirección del pagador."
                 }
               },
               "street_number":{
                 "type":"string",
                 "example":"123",
                 "description":{
-                  "en":"Payer address street number",
-                  "pt":"Número da rua do endereço do pagador",
-                  "es":"Número de la calle de la dirección del pagador"
+                  "en":"Payer address street number.",
+                  "pt":"Número da rua do endereço do pagador.",
+                  "es":"Número de la calle de la dirección del pagador."
                 }
               }
             }
@@ -3981,7 +4441,7 @@
           },
           "callback_url":{
             "type":"string",
-            "example":"www.mercadopago.com",
+            "example":"https://www.mercadopago.com",
             "description":{
               "en":"URL where mercadopago does the final redirect (only for bank transfers).",
               "pt":"URL para a qual o Mercado Pago faz o redirecionamento final (apenas para transferência bancária).",
@@ -4278,6 +4738,7 @@
           },
           "width":{
             "type":"number",
+            "example": "1",
             "description":{
               "en":"Width of barcode.",
               "pt":"Largura do código de barras.",
@@ -4286,6 +4747,7 @@
           },
           "height":{
             "type":"number",
+            "example": "1",
             "description":{
               "en":"Height of barcode.",
               "pt":"Altura do código de barras.",
