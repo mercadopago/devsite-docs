@@ -203,7 +203,7 @@ Por último, envie a informação obtida no campo `device` ao criar o `card_toke
 
 Para otimizar a validação de segurança dos pagamentos e melhorar as aprovações, é importante fazer **o envio do máximo de dados sobre o comprador e o produto**.
 
-Se atente a todos os atributos disponíveis ao criar um pagamento usando o método [Criar pagamento](/developers/pt/reference/payments/_payments/post). Preste atenção especialmente aos atributos em `“adicional_inf”`, como:
+Se atente a todos os atributos disponíveis ao criar um pagamento usando o método [Criar pagamento](/developers/pt/reference/payments/_payments/post). Preste atenção especialmente aos atributos em `additional_info`, como:
  * Dados do comprador,
  * Dados do produto,
  * Dados do envio.
