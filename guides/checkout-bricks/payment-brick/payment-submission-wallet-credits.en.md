@@ -6,13 +6,19 @@
 
 Payments with **Mercado Pago Wallet and Installments without card**, the option to pay in installments without a credit card, do not need to be sent via the backend. 
 
-If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the Brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website. 
+If the user selects this option as a means of payment, the `preferenceId` sent at the initialization of the Brick is responsible for redirecting the buyer to the Mercado Pago website, where the payment will be made directly on our website.
+
+> WARNING
+> 
+> Important
+>
+> If a `preferenceId` has only one valid payment method, the logo images of other available payment methods will not be displayed.
 
 To redirect the buyer back to your site, you can configure the `back_urls` as described [in this article](/developers/en/docs/checkout-bricks/payment-brick/advanced-features/preferences#bookmark_redirect_the_buyer_to_your_site).
 
 # Marketplace
 
-_Marketplace_ is an e-commerce website/platform that connects sellers and buyers in a single sales environment, allowing the sale of products and services online with greater scope and potential for conversion.
+Marketplace is an e-commerce website/platform that connects sellers and buyers in a single sales environment, allowing the sale of products and services online with greater scope and potential for conversion.
 
 In addition to the necessary structure for conducting sales, some marketplaces take care of product arrangement, payment methods, and shipping, optimizing the sales process and facilitating business management.
 

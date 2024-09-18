@@ -298,7 +298,7 @@ future_product_avaible:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec
+available_payments: credit, debit, mercadopago, boleto, pix
 
 ---
 

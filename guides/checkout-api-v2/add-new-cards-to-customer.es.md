@@ -20,7 +20,6 @@ Si es necesario, es posible agregar nuevas tarjetas a un cliente específico. Pa
   
   $customer_card = $client->create($customer->id, [
     "token" => "your_card_token",
-    "issuer_id" => "2345",
     "payment_method_id" => "debit_card"
   ]);
 
@@ -38,7 +37,6 @@ const customer = customerClient.get({ customerId: '<CUSTOMER_ID>' })
 
   const body = {
        token : result.token,
-       issuer_id: '2345',
        payment_method: 'debit_card' 
   };
 
@@ -79,7 +77,6 @@ customer = customer_response[:response]
 
 card_request = {
   token: '9b2d63e00d66a8c721607214cedaecda',
-  issuer_id: '3245612',
   payment_method_id: 'debit_card'
 }
 card_response = sdk.card.create(customer['id'], card_request)
@@ -114,7 +111,6 @@ customer = customer_response["response"]
 
 card_data = {
   "token": "9b2d63e00d66a8c721607214cedaecda",
-  "issuer_id": "3245612",
   "payment_method_id": "debit_card"
 }
 card_response = sdk.card().create(customer["id"], card_data)

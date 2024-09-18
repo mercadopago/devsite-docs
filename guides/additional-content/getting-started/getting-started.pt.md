@@ -178,7 +178,7 @@ Existem dois tipos diferentes de credenciais: as **credenciais de teste** e as *
 
 Se você precisar compartilhar suas credenciais, você pode fazer isso com segurança. No site do Mercado Pago, acesse [Seu negócio > Configurações > Gerenciamento e administração > Credenciais](https://www.mercadopago[FAKER][URL][DOMAIN]/settings/account/credentials) e selecione a opção **Compartilhar credenciais**.
 
-Para saber mais, acesse a [documentação de credenciais](/developers/es/docs/your-integrations/credentials).
+Para saber mais, acesse a [documentação de credenciais](/developers/pt/docs/your-integrations/credentials).
 
 <br>
 
@@ -186,4 +186,4 @@ Para saber mais, acesse a [documentação de credenciais](/developers/es/docs/yo
 
 Escolha o produto que se adapte às suas necessidades e reveja sua documentação para começar a integrar as soluções do Mercado Pago.
 
-[**Voltar para a documentação**](/developers/es/docs)
+[**Voltar para a documentação**](/developers/pt/docs)
