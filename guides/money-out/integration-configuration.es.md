@@ -643,8 +643,8 @@ A continuación puedes ver todos los estados por los que puede pasar una transac
 |---|---|---|
 | `approved` | `approved` | El procesamiento de la transacción se realizó de manera exitosa. |
 | `approved` | `partially_refunded` | La transacción fue reembolsada parcialmente por el banco de destino. |
-| `in_process` | `pending_authorized` | La transacción está en proceso, pendiente de estado final, y aguarda autorización. |
-| `in_process` | `pending_bank` | El banco destino no dio respuesta, por lo que la transacción está pendiente de estado final. |
+| `transaction_in_process` | `pending_authorized` | La transacción está en proceso, pendiente de estado final, y aguarda autorización. |
+| `transaction_in_process` | `pending_bank` | El banco destino no dio respuesta, por lo que la transacción está pendiente de estado final. |
 | `refunded` | `refunded` | La transacción fue reembolsada por el banco de destino. |
 | `rejected` | `by_bank` | El banco de destino rechazó la transferencia. Realiza nuevamente el llamado. |
 | `rejected` | `by_provider` | El proveedor rechazó la transferencia. Realiza nuevamente el llamado. |
