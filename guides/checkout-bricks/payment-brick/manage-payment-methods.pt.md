@@ -36,7 +36,7 @@ A tabela abaixo mostra os métodos de pagamento disponíveis:
 | creditCard | string | Para obter os valores de cartões de crédito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | debitCard | string | Para obter os valores de cartões de débito disponíveis, consulte a API [Obter meios de pagamento](/developers/pt/reference/payment_methods/_payment_methods/get). |
 | mercadoPago |  string | ['onboarding_credits',  'wallet_purchase'] |
-| ticket |  string | ['bolbradesco', 'pec'] |
+| ticket |  string | ['bolbradesco'] |
 | bankTransfer |  string | ['pix'] |
 
 ------------

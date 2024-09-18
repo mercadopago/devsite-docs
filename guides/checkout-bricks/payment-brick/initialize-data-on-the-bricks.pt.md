@@ -69,7 +69,7 @@ const initialization = {
 
 ## Outros meios de pagamento
 
-No formulário exibido para pagamento com **boleto bancário** e **pagamento em lotérica**, é possível inicializar com as informações já preenchidas. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do Brick.
+No formulário exibido para pagamento com **boleto bancário**, é possível inicializar com as informações já preenchidas. Para isso, é necessário passar a seguinte configuração no objeto de inicialização do Brick.
 
 [[[
 ```Javascript

@@ -11,6 +11,6 @@ Você pode obter uma lista completa dos tipos e meios de pagamento disponíveis 
 | Crédito | Visa <br> Mastercard <br> American Express <br> Diners Club <br> Naranja <br> Cabal <br> Tarjeta Shopping <br> Cencosud <br> Argencard <br> CMR| Visa <br> Mastercard <br> American Express <br> Hipercard <br> Elo | Visa <br> Mastercard <br> American Express <br> Magna <br> Presto | Visa <br> Mastercard <br> American Express <br> Diners Club <br> Codensa | Visa <br> Mastercard <br> American Express | Visa <br> Diners Club <br> Mastercard <br> American Express | Visa <br> Mastercard <br> Oca <br> American Express <br> Creditel <br> Líder | 
 | Débito | Visa <br> Mastercard <br> Maestro <br> Cabal | Cartão de débito virtual CAIXA* <br> Elo* | Visa <br> Mastercard <br> RedCompra | Visa <br> Mastercard | Visa <br> Mastercard | Visa <br> Mastercard | Visa | 
 | Cartão Pré-pago | - | - | - | - | Mercado Pago | - | - | 
-| Boleto/PEC/Dinheiro | Rapipago* <br> Pago Facil* | Boleto <br> PEC* | - | Efecty | Oxxo <br> PayCash | - | Abitab <br> Red Pagos 
+| Boleto/Dinheiro | Rapipago* <br> Pago Facil* | Boleto | - | Efecty | Oxxo <br> PayCash | - | Abitab <br> Red Pagos 
 
 _*Meios de pagamento não disponíveis para Assinaturas._

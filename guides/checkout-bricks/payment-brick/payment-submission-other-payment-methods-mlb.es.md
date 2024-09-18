@@ -4,7 +4,7 @@
 >
 > Otros medios de pago
 
-Para configurar pagos con **boleto bancario** o pago en **agencia de lotería**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
+Para configurar pagos con **boleto bancario**, envía un POST con los siguientes parámetros al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de nuestros SDKs indicados a continuación.
 
 > NOTE
 >
@@ -17,7 +17,6 @@ Para configurar pagos con **boleto bancario** o pago en **agencia de lotería**,
 | Tipo de pago  | Parámetro  | Valor  |
 | --- | --- | --- |
 | Boleto  | `payment_method_id`  | `bolbradesco`  |
-| Pago en agencia de loteria  | `payment_method_id`  | `pec`  |
 
 [[[
 ```php

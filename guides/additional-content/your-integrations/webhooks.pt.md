@@ -34,7 +34,7 @@ Configure notificações para cada aplicação diretamente em [Suas integraçõe
 >
 > Importante
 >
-> Este método de configuração não está disponível para integrações com----[mla, mlb, mlc, mlu]----Código QR e nem------------Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
+> Este método de configuração não está disponível para integrações com----[mla, mlb, mlc, mlu]---- Código QR e nem------------ Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
 
 
 ### 1. Indicar URLs e configurar eventos

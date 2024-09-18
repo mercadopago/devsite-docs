@@ -4,7 +4,7 @@
 >
 > Other payment methods
 
-To configure payments with **boleto bancário** or **payment in lottery**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
+To configure payments with **boleto bancário**, send a **POST** with the following parameters to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and run the request or, if you prefer, use one of our SDKs below.
 
 > NOTE
 >
@@ -17,7 +17,6 @@ To configure payments with **boleto bancário** or **payment in lottery**, send 
 | Payment Type | Parameter | Value |
 | --- | --- | --- |
 | Boleto | `payment_method_id` | `bolbradesco` |
-| Lottery payment | `payment_method_id` | `pec` |
 
 [[[
 ```php

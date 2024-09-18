@@ -5,7 +5,7 @@ To choose which payment methods to offer through Mercado Pago in the store and c
 You can choose to configure these payment methods:
 
 ----[mlb]---- 
-* [Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkout-pro): payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (Mercado Pago account or boleto bancário) and bank transfer (Pix or PEC).
+* [Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkout-pro): payment is made on the Mercado Pago page (inside or outside your store) with cards (debit or credit), cash (Mercado Pago account or boleto bancário) and bank transfer (Pix).
 * [Checkout Transparente](/developers/en/docs/woocommerce/payments-configuration/checkout-api): payment is made without leaving your virtual store with cards (debit or credit), ticket checkout (Mercado Pago account balance or boleto bancário) and Pix.
 * [Installments without a card](/developers/en/docs/woocommerce/payments-configuration/mercado-credito): the customer can choose to pay in up to 12 fixed monthly installments, no card needed, and the payment is credited in full to the seller’s account.
 

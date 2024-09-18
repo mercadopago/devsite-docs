@@ -1,4 +1,4 @@
-# ----[mlb]---- Boleto e lotérica ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Efectivo------------
+# ----[mlb]---- Boleto bancário ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Efectivo------------
 
 This means of payment will add----[mlb]---- Checkout Transparente ------------ ----[mla, mlm, mpe, mco, mlu, mlc]---- Checkout API ------------and it will allow you to offer cash payments using offline payment methods through Mercado Pago.
 
