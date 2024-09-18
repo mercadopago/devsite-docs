@@ -1,13 +1,43 @@
+----[mlb, mla]----
 # Parcelamento sem cartão
 
-O **Mercado Crédito** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem a necessidade de um cartão.
+------------
+----[mlm]----
+O **Compra ahora, paga después** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem a necessidade de um cartão.
 
+------------
+----[mlb]----
+A **Linha de crédito** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem a necessidade de um cartão.
+
+------------
+----[mlm]----
+O **Pagos sin Tarjeta** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem a necessidade de um cartão.
+
+------------
+----[mla]----
+O **Pagos sin Tarjeta** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem a necessidade de um cartão.
+
+------------
+----[mlb]----
+Com a Linha de crédito Mercado Pago, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
+
+------------
+----[mla, mlm]----
 Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
 
-Atualmente o **Mercado Crédito** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing) e agora também é possível acessá-lo diretamente do checkout da loja. Caso ainda não tenha o Checkout Pro habilitado em sua loja, acesse a seção [Configurar os pagamentos com Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro) para configurá-lo.
+------------
+----[mlb]----
+Atualmente a **Linha de crédito** é oferecida em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing) e agora também é possível acessá-lo diretamente do checkout da loja. Caso ainda não tenha o Checkout Pro habilitado em sua loja, acesse a seção [Configurar os pagamentos com Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro) para configurá-lo.
 
-Para exibir o Mercado Crédito no checkout da sua loja, siga os passos abaixo.
+Para exibir a **Linha de crédito** no checkout da sua loja, siga os passos abaixo.
 
+------------
+----[mlm, mla]----
+Atualmente o **Pagos sin tarjeta** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing) e agora também é possível acessá-lo diretamente do checkout da loja. Caso ainda não tenha o Checkout Pro habilitado em sua loja, acesse a seção [Configurar os pagamentos com Checkout Pro](/developers/pt/docs/woocommerce/payments-configuration/checkout-pro) para configurá-lo.
+
+Para exibir o **Pagos sin tarjeta** no checkout da sua loja, siga os passos abaixo.
+
+------------
 ## Configurar o meio de pagamento no checkout da loja
 
 > WARNING
