@@ -7,25 +7,11 @@
           "checkout-api"
         ],
         "description": {
-          "en": "This endpoint allows to create orders in **One-shot** (processing the payment in a single stage) or **Builder** (processing payment in stages that can be configured and executed incrementally) mode for payment and cashout transactions.",
-          "pt": "Este endpoint permite a criação de uma order no modo **One-shot** (processando o pagamento em uma única etapa) ou **Builder** (processando o pagamento em etapas que podem ser configuradas e executadas de forma incremental) para transações de pagamento e cashout.",
-          "es": "Este endpoint permite crear una order"
+          "en": "This endpoint allows to create orders in \"automatic\" (processing the transaction in a single stage) mode for payment and cashout transactions. In case of success, the request will return a response with status 201",
+          "pt": "Este endpoint permite criar uma order no modo \"automático\" (processando a transação em uma única etapa) para transações de pagamento e cashout. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+          "es": "Este endpoint permite crear una order en modo \"automático\" (procesando la transacción en una sola etapa) para transacciones de pago y cashout. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
         },
         "parameters": [
-          {
-            "in":"header",
-            "name":"Authorization",
-            "required":true,
-            "schema":{
-              "type":"string",
-              "example":"Bearer {{ACCESS_TOKEN}}"
-            },
-            "description":{
-              "en":"The application's private key that should always be used on the backend to generate payments. It is essential to keep this information secure on your servers. You can find your Access Token by accessing your application Credentials.",
-              "pt":"Chave privada da aplicação que sempre deve ser usada no backend para gerar pagamentos. É essencial que essa informação seja mantida segura em seus servidores. Você pode encontrar ser Acces Token acessando as Credenciais da sua aplicação.",
-              "es":"CClave privada de la aplicación que siempre se debe utilizar para generar pagos. Es esencial mantener esta información segura en tus servidores. Puedes encontrar tu Acces Token accediendo a las credenciales de tu aplicación."
-            }
-          },
           {
             "in":"header",
             "name":"X-Idempotency-Key",
@@ -51,16 +37,16 @@
                     "type":"string",
                     "required":true,
                     "description":{
-                      "en":"Order type, associated with the Mercado Pago solution for which it is created. For online card payments, the only possible value is \"online\".",
-                      "pt":"Tipo de order, associada à solução do Mercado Pago para a qual foi criada. Para pagamentos online com cartões, o único valor possível é \"online\".",
-                      "es":"Tipo de order, asociado a la solución de Mercado Pago para la que se crea. Para pagos con point, tendríamos el valor \"point\"."
+                      "en":"Order type, associated with the Mercado Pago solution for which it is created. For Mercado Pago Point payments, the only possible value is \"point\".",
+                      "pt":"Tipo de order, associada à solução do Mercado Pago para a qual foi criada. Para pagamentos com Mercado Pago Point, o único valor possível é \"point\".",
+                      "es":"Tipo de order, asociado a la solución de Mercado Pago para la que se crea. Para pagos con Mercado Pago Point, tendríamos el valor \"point\"."
                     },
                     "enum": [
                       {
                         "title": "point",
                         "description": {
                           "en": "Value associated with the creation of orders for online payments.",
-                          "es": "Valor asociado a la creación de órdenes para pagos con point.",
+                          "es": "Valor asociado a la creación de orders para pagos con point.",
                           "pt": "Valor associado à criação de orders para pagamentos online."
                         }
                       }
