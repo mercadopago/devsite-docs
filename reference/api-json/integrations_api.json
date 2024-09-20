@@ -55,9 +55,9 @@
             "name": "limit",
             "in": "query",
             "description": {
-              "en": "Pagination limit.",
-              "pt": "Limite de paginação.",
-              "es": "Límite de paginación."
+              "en": "Pagination limit. This parameter specifies the maximum number of records you want to get in the response. It must be a numeric value, greater than or equal to 1 and less than or equal to 50. The default value is 50.",
+              "pt": "Limite de paginação. Especifica o número máximo de registros que você deseja obter na resposta. Deve ser um valor numérico maior ou igual a 1 e menor ou igual a 50. O valor padrão é 50.",
+              "es": "Límite de paginación. Especifica el número máximo de registros que deseas obtener en la respuesta. Debe ser un valor numérico, mayor o igual a 1 y menor o igual a 50. El valor por defecto es 50."
             },
             "schema": {
               "type": "integer",
@@ -68,9 +68,9 @@
             "name": "offset",
             "in": "query",
             "description": {
-              "en": "Pagination offset.",
-              "pt": "Offset de paginação.",
-              "es": "Offset de paginación."
+              "en": "Pagination offset. This parameter determines the starting point from which the records should be obtained. It must be a numerical value greater than or equal to zero (0). Its default value is zero (0).",
+              "pt": "Offset de paginação. Determina o ponto inicial a partir do qual os registros devem ser obtidos. Deve ser um valor numérico maior ou igual a zero (0). Seu valor padrão é zero (0).",
+              "es": "Offset de paginación. Determina el punto de inicio desde el cual se deben obtener los registros. Debe ser un valor numérico mayor o igual a cero (0). Su valor por defecto es cero (0)."
             },
             "schema": {
               "type": "integer",
@@ -172,17 +172,29 @@
                         "total": {
                           "type": "integer",
                           "example": 1,
-                          "description": null
+                          "description": {
+                            "en":"This parameter indicates the total number of elements available, beyond those selected to be displayed.",
+                            "es": "Este parámetro indica el total de elementos disponibles, más allá de los seleccionados para ser exhibidos.",
+                            "pt": "Este parâmetro indica o número total de elementos disponíveis, além daqueles selecionados para serem exibidos."
+                          }
                         },
                         "offset": {
                           "type": "integer",
                           "example": 0,
-                          "description": null
+                          "description": {
+                            "en": "Starting point from which records were obtained, selected when submitting the request.",
+                            "es": "Punto de inicio desde el cual se obtuvieron los registros, seleccionado al enviar la solicitud.",
+                            "pt": "Ponto de partida a partir do qual foram obtidos os registros, selecionado no momento do envio da solicitação."
+                          }
                         },
                         "limit": {
                           "type": "integer",
                           "example": 50,
-                          "description": null
+                          "description": {
+                            "en": "Specifies the maximum number of records obtained, selected when sending the request.",
+                            "es": "Especifica el número máximo de registros obtenidos, seleccionados al enviar la solicitud.",
+                            "pt": "Especifica o número máximo de registros obtidos, selecionado no momento do envio da solicitação."
+                          }
                         }
                       }
                     }
@@ -193,9 +205,9 @@
           },
           "400": {
             "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
+              "en": "Error. Query param incorrect format.",
+              "pt": "Erro. Formato incorreto para query params.",
+              "es": "Error. Formato incorrecto para query params."
             },
             "content": {
               "application/json": {
@@ -208,9 +220,9 @@
                         {
                           "title": "400",
                           "description": {
-                            "en": "Bad Request - query param incorrect format",
-                            "es": "Bad Request - query param incorrect format",
-                            "pt": "Bad Request - query param incorrect format"
+                            "en": "Bad Request. The query params sent were not in the correct format, or there was a mistake when sending the IDs. Please, check the validations and information and try again.",
+                            "es": "Los query params fueron enviados en un formato incorrecto, o hubo un error en la carga de los IDs. Verifica las validaciones para cada campo y la información requerida, y vuelve a intentarlo.",
+                            "pt": "Os query params foram enviados em formato incorreto ou ocorreu um erro ao carregar os IDs. Verifique as validações de cada campo e as informações necessárias e tente novamente."
                           }
                         }
                       ]
@@ -240,35 +252,6 @@
                             "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
                             "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
                             "pt": "O valor enviado como Access Token está incorreto. Verifique e faça uma nova requisição com o valor correto."
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "403",
-                          "description": {
-                            "en": "Forbidden Integrator isn't registered",
-                            "es": "Forbidden Integrator isn't registered",
-                            "pt": "Forbidden Integrator isn't registered"
                           }
                         }
                       ]
@@ -1794,16 +1777,16 @@
         "description": {
           "en": "This endpoint allows you to change a device operating mode. The options are: \"PDV\", that is when a device is used in integration with our API, and \"STANDALONE\", that is when you want to process payments in a device without our API. In case of success, the request will return a response with status 200",
           "pt": "Este endpoint permite alterar o modo de operação do dispositivo. As opções são: \"PDV\", que é quando o dispositivo é usado em modo integrado com nossa API, e \"STANDALONE\", que é usado quando você deseja processar pagamentos sem nossa API. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es": "Este endpoint te permite cambiar el modo de operación del dispositivo. Las opciones son: \"PDV\", que es cuando el dispositivo es usado en modo integrado con nuestra API, y \"STANDALONE\",  que se usa cuando deseas procesar pagos sin nuestra API. En caso de éxito, la solicitud devolverá una respuesta con estado 20o"
+          "es": "Este endpoint te permite cambiar el modo de operación del dispositivo. Las opciones son: \"PDV\", que es cuando el dispositivo es usado en modo integrado con nuestra API, y \"STANDALONE\",  que se usa cuando deseas procesar pagos sin nuestra API. En caso de éxito, la solicitud devolverá una respuesta con estado 200"
         },
         "parameters": [
           {
-            "name": "device-id",
+            "name": "deviceID",
             "in": "path",
             "description": {
-              "en": "Identifier of the device for which you want to change the operating mode.",
-              "es": "Identificador del dispositivo para el que se quiere cambiar el modo de operación.",
-              "pt": "Identificador do dispositivo cujo modo de operação deseja alterar."
+              "en": "Identifier of the device for which you want to change the operating mode. You must send it according to the following format: \"type of device + “__” + device serial\". ",
+              "es": "Identificador del dispositivo para el que se quiere cambiar el modo de operación. Debes enviarlo siguiendo el formato \"tipo de dispositivo + “__” +  serial del dispositivo\".",
+              "pt": "Identificador do dispositivo cujo modo de operação deseja alterar. Deve ser enviado seguindo o formato \"tipo de dispositivo + “__” + serial do dispositivo\"."
             },
             "required": true,
             "schema": {
@@ -1899,9 +1882,9 @@
           },
           "400": {
             "description": {
-              "en": "Error - device-id incorrect format.",
-              "pt": "Erro. Formato incorreto para o device-id.",
-              "es": "Error. Formato incorrecto para device-id."
+              "en": "Error. deviceID format unexpected.",
+              "pt": "Erro. Formato incorreto para o deviceID.",
+              "es": "Error. Formato incorrecto para deviceID."
             },
             "content": {
               "application/json": {
@@ -1912,40 +1895,11 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "Bad-Request",
+                          "title": "103",
                           "description": {
-                            "en": "Bad-Request - Device id incorrect format",
-                            "es": "Bad-Request - Device id incorrect format",
-                            "pt": "Bad-Request - Device id incorrect format"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": {
-              "en": "Error - User not logged into the device.",
-              "pt": "Erro - Dispositivo não vinculado ao usuário.",
-              "es": "Error - Dispositivo no vinculado al usuario."
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "Unauthorized",
-                          "description": {
-                            "en": "Unauthorized - User not logged into the device",
-                            "es": "Unauthorized - User not logged into the device",
-                            "pt": "Unauthorized - User not logged into the device"
+                            "en": "The value sent for the deviceID is not correct. Check the value corresponding to the desired device and try again.",
+                            "es": "El valor enviado para el deviceID no es correcto. Verifica el valor correspondiente al dispositivo deseado y vuelve a intentarlo.",
+                            "pt": "O valor enviado para o deviceID não está correto. Verifique o valor correspondente ao dispositivo desejado e tente novamente."
                           }
                         }
                       ]

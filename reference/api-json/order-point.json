@@ -976,11 +976,11 @@
                               },
                               "status_detail": {
                                 "type": "string",
-                                "example": "24.90",
+                                "example": "cancelled_by_api",
                                 "description": {
-                                  "en":"Details about payment status. It is returned exclusively when the creation of the order fails or when it is canceled.",
-                                  "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando a criação da order falha ou quando esta é cancelada.",
-                                  "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la creación de la order falla o cuando la misma es cancelada."
+                                  "en":"Details about payment status. It is returned exclusively when the cancellation of the order is made through this endpoint, with the value \"cancelled_by_api\".",
+                                  "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando o cancelamento da order é feito através deste endpoint, com o valor \"cancelled_by_api\".",
+                                  "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la cancelación de la order se realiza por medio de este endpoint, con el valor \"cancelled_by_api\"."
                                 }
                               }
                             }
@@ -1008,11 +1008,19 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "400",
+                          "title": "empty_required_header",
                           "description": {
-                            "en": "Descripción del error y workarround",
-                            "es": "Descripción del error y workarround",
-                            "pt": "Se esta consultando una order con formato invalido, revisa tu order-id o tu header x-idempotency-key"
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la requisición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "invalid_path_param",
+                          "description": {
+                            "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
+                            "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
+                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
                           }
                         }
                       ]
@@ -1053,24 +1061,24 @@
           },
           "404": {
             "description": {
-              "en": "Error. Access Token not authorized.",
-              "pt": "Erro. Access Token não autorizado.",
-              "es": "Order no encontrada."
+              "en": "Error. Order not found.",
+              "pt": "Erro. Order não encontrada.",
+              "es": "Error. Order no encontrada."
             },
-            "content":{
-              "application/json":{
-                "schema":{
+            "content": {
+              "application/json": {
+                "schema": {
                   "type": "object",
                   "properties": {
                     "errorKey": {
                       "type": "string",
                       "enum": [
                         {
-                          "title": "404",
+                          "title": "order_not_found",
                           "description": {
-                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
-                            "es": "La order que esta consultando no se encuentra en nuestro sistema.",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "en": "Order not found. Please check if you provided the correct order ID.",
+                            "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
                           }
                         }
                       ]
@@ -1082,9 +1090,9 @@
           },
           "409": {
             "description": {
-              "en": "Error. Forbidden, checking device owner.",
-              "pt": "Erro. Access Token não autorizado.",
-              "es": "Error. Hay un conflicto al cancelar una order."
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
             },
             "content":{
               "application/json":{
@@ -1095,11 +1103,19 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "409",
+                          "title": "idempotency_key_already_used",
                           "description": {
-                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
-                            "es": "Actualmente la order se encuentra con un estado diferente a created, por lo cual no se puede cancelar por API.",
-                            "pt": "El dispositivo tiene una order encolada, se recomienda finalizarla o cancelarla para encolar nuevas oreder."
+                            "en": "The value sent as the idempotency header has already been used. Please try the request again sending a new value.",
+                            "es": "El valor enviado como header de idempotencia ya fue utilizado. Por favor, vuelve a intentar realizar la requisición enviando un nuevo valor.",
+                            "pt": "O valor enviado como header de idempotência já foi utilizado. Por favor, tente a solicitação novamente enviando um novo valor."
+                          }
+                        },
+                        {
+                          "title": "cannot_cancel_order",
+                          "description": {
+                            "en": "There is a conflict when trying to cancel the order due to its current status. Remember that orders can only be canceled via API when \"status=created\". If you are trying to cancel an order with another status, you will need to do so from the device when \"status=on_terminal\".",
+                            "es": "Hay un conflicto al intentar cancelar la order por su estado actual. Recuerda que las orders solo pueden ser canceladas vía API cuando \"status=created\". Si estás intentando cancelar una order con otro estado, deberás hacerlo desde el dispositivo cuando \"status=on_terminal\".",
+                            "pt": "Há um conflito ao tentar cancelar a order devido ao seu status atual. Lembre-se que as orders só poderão ser canceladas via API quando \"status=created\". Se você estiver tentando cancelar uma order com outro status, precisará fazê-lo no dispositivo quando \"status=on_terminal\"."
                           }
                         }
                       ]
@@ -1124,11 +1140,19 @@
                       "type": "string",
                       "enum": [
                         {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
                           "title": "500",
                           "description": {
-                            "en": "Internal server error",
-                            "es": "Internal server error",
-                            "pt": "Internal server error"
+                            "en": "Internal server error. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro interno. Tente enviar a solicitação novamente."
                           }
                         }
                       ]
