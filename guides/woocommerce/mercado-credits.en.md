@@ -1,21 +1,52 @@
-# Installments without card
+----[mlb]----
+# Linha de crédito
 
-**Mercado Credits** is Mercado Pago’s financing method that allows paying in installments without the need for a card.
+------------
+----[mlm]----
+# Compra ahora, paga después
+
+------------
+----[mla]----
+# Pagos sin Tarjeta
+
+------------
+----[mla, mlm]----
+**Pagos sin Tarjeta** is Mercado Pago’s financing method that allows paying in installments without the need for a card.
 
 With this line of credit, administered by Mercado Pago, the payment is credited in full to the seller's account, while the customer can choose to pay in up to 12 fixed monthly installments, no card needed. The user just has to enter their Mercado Pago account (or create one), determine their available limit, and choose how many installments they want to pay in.
  
-**Mercado Credits** is currently offered in our [Checkout Pro](/developers/en/docs/checkout-pro/landing), and now it is also possible to access directly from the store checkout. If you haven't set up Checkout Pro yet, you must access the [Configure payments with Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkout-pro) section.
+**Pagos sin Tarjeta** is currently offered in our [Checkout Pro](/developers/en/docs/checkout-pro/landing), and now it is also possible to access directly from the store checkout. If you haven't set up Checkout Pro yet, you must access the [Configure payments with Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkout-pro) section.
 
-If you want to show Mercado Credits in your store's checkout, follow the steps below.
+If you want to show **Pagos sin Tarjeta** in your store's checkout, follow the steps below.
 
+------------
+----[mlb]----
+**Linha de crédito** is Mercado Pago’s financing method that allows paying in installments without the need for a card.
+
+With this line of credit, administered by Mercado Pago, the payment is credited in full to the seller's account, while the customer can choose to pay in up to 12 fixed monthly installments, no card needed. The user just has to enter their Mercado Pago account (or create one), determine their available limit, and choose how many installments they want to pay in.
+ 
+**Linha de crédito** is currently offered in our [Checkout Pro](/developers/en/docs/checkout-pro/landing), and now it is also possible to access directly from the store checkout. If you haven't set up Checkout Pro yet, you must access the [Configure payments with Checkout Pro](/developers/en/docs/woocommerce/payments-configuration/checkout-pro) section.
+
+If you want to show **Linha de crédito** in your store's checkout, follow the steps below.
+
+------------
 ## Configure the payment method in your store's checkout
-
+----[mla, mlm]----
 > WARNING
 >
 > Attention
 >
-> In order to offer **Installments without a card** as a payment method in your WooCommerce store, you must first **update the Mercado Pago plugin** to the most recent version available. To do so, in your store’s admin panel go to **Plugins > Installed plugins**, search for **Mercado Pago**, and click on **Update**.
+> In order to offer **Pagos sin Tarjeta** as a payment method in your WooCommerce store, you must first **update the Mercado Pago plugin** to the most recent version available. To do so, in your store’s admin panel go to **Plugins > Installed plugins**, search for **Mercado Pago**, and click on **Update**.
 
+------------
+----[mlb]----
+> WARNING
+>
+> Attention
+>
+> In order to offer **Linha de crédito** as a payment method in your WooCommerce store, you must first **update the Mercado Pago plugin** to the most recent version available. To do so, in your store’s admin panel go to **Plugins > Installed plugins**, search for **Mercado Pago**, and click on **Update**.
+
+------------
 1. In the option **Up to 12 installments without cards through Mercado Credito**, click on **Configure** to access the payment method configuration page.
 2. In **Activate the installments without cards in the checkout**, toggle the switch to enable this payment method. Ensure the status is **enabled**.
 3. In the option **Title in the checkout**, choose the name that will be displayed for this payment method in your store. We recommend using the default title **“Up to 12 installments without cards through Mercado Crédito”**.

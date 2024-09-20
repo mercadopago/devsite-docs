@@ -36,7 +36,7 @@ The table below shows the available payment methods:
 | creditCard | string | To obtain available debit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | debitCard | string | To obtain available credit card amounts, check out the API [Get payment methods](/developers/en/reference/payment_methods/_payment_methods/get). |
 | mercadoPago | string | ['onboarding_credits',  'wallet_purchase'] |
-| ticket | string | ['bolbradesco', 'pec'] |
+| ticket | string | ['bolbradesco'] |
 | bankTransfer | string | ['pix'] |
 
 ------------

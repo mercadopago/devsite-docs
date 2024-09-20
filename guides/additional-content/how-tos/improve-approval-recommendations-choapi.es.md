@@ -224,4 +224,4 @@ Si, en cambio, quieres garantizar una interfaz optimizada, puedes utilizar los *
 > 
 > Importante
 >
-> Recomendamos  evaluar la [calidad de tu integración](/developers/es/guides/additional-content/homologator/homologator) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos.
+> Recomendamos verificar los resultados de la [medición de la calidad de tu integración](/developers/es/guides/additional-content/homologator/homologator) antes de salir a producción, ya sea que haya sido realizada de manera manual o automática. La misma permitirá validar si está cumpliendo con los estándares de calidad y seguridad de Mercado Pago, y proporcionará accionables para mejorar tu tasa de aprobación de pagos.

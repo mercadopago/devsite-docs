@@ -25,7 +25,7 @@ Al instalar [Checkout Pro](/developers/es/docs/checkout-pro/landing), puede habe
 ----[mlb]----
     - **Tarjetas de débito y crédito**.
     - **Efectivo (saldo de cuenta de Mercado Pago o boleta bancaria)**.
-    - **Transferencia bancaria (Pix y PEC)**. La opción de pago Pix solo se mostrará si existe una Clave Pix registrada en Mercado Pago.
+    - **Transferencia bancaria (Pix)**. La opción de pago Pix solo se mostrará si existe una Clave Pix registrada en Mercado Pago.
     - **Financiación sin tarjeta**. Configurando Checkout Pro, puedes ofrecer la opción de pagar en hasta 12 veces sin tarjeta. Si, además, quieres mostrar esta opción en el checkout de tu tienda, accede a la [documentación](/developers/es/docs/woocommerce/payments-configuration/mercado-credito).
 
 ![Activate and configure](/images/woocomerce/cho-pro-convert-payments-methods-pt.png)

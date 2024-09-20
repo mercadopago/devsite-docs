@@ -130,9 +130,9 @@
                         "type": "string",
                         "example": "4561ads-das4das4-das4754-das456",
                         "description": {
-                          "en": "An alphanumeric value can be an identificator in your application. It will be returned in the Webhook notification",
-                          "pt": "Um valor alfanumérico pode ser um identificador em seu aplicativo. Ele será retornado na notificação do Webhook.",
-                          "es": "Un valor alfanumérico puede ser un identificador en tu aplicación. Se devolverá en la notificación de Webhook."
+                          "en": "An alphanumeric value can be an identificator in your application. It will be returned in the Webhook notification. Important: This field must be a maximum of 64 characters and may only contain numbers, letters, hyphens (-), and underscores (_). Special characters such as ([ ], (), '', @) are not allowed.",
+                          "pt": "Um valor alfanumérico pode ser um identificador em seu aplicativo. Ele será retornado na notificação do Webhook. Importante: Este campo deve ter no máximo 64 caracteres e deve conter apenas números, letras, hífens (-) e sublinhados (_). Caracteres especiais como ([ ], (), '', @) não são permitidos.",
+                          "es": "Un valor alfanumérico puede ser un identificador en tu aplicación. Se devolverá en la notificación de Webhook. Importante: Este campo debe tener un máximo de 64 caracteres y solo debe contener números, letras, guiones (-) y guiones bajos (_). No se permiten caracteres especiales como ([ ], (), '', @)."
                         }
                       },
                       "print_on_terminal": {

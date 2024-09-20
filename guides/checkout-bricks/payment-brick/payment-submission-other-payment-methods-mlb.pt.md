@@ -4,7 +4,7 @@
 >
 > Outros meios de pagamento
 
-Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagamentos com **boleto bancário**, envie um POST com os seguintes parâmetros ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 > NOTE
 >
@@ -17,7 +17,6 @@ Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica*
 | Tipo de pagamento  | Parâmetro  | Valor  |
 | --- | --- | --- |
 | Boleto  | `payment_method_id`  | `bolbradesco`  |
-| Pagamento em lotérica  | `payment_method_id`  | `pec`  |
 
 [[[
 ```php

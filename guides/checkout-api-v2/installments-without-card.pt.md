@@ -1,9 +1,30 @@
+----[mla, mlb]----
 # Parcelamento sem cartão
 
-O **Mercado Crédito** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem precisar de cartão.
+------------
+----[mlm]----
+# Compra ahora, paga después
+
+------------
+----[mlb]----
+A **Linha de Crédito** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem precisar de cartão.
+
+Com a Linha de Crédito Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
+
+------------
+----[mlm]----
+O **Meses sin Tarjeta** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem precisar de cartão.
 
 Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
 
+------------
+----[mla]----
+O **Cuotas sin Tarjeta** é a modalidade de financiamento do Mercado Pago que oferece a opção de parcelar sem precisar de cartão.
+
+Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão. O usuário terá apenas que entrar em sua conta no Mercado Pago (ou criar uma), saber o limite disponível e escolher em quantas parcelas deseja pagar.
+
+------------
+----[mlb]----
 > NOTE
 >
 > Importante
@@ -12,6 +33,27 @@ Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é credi
 
 Siga os passos abaixo para oferecer o parcelamento sem cartão em sua loja.
 
+------------
+----[mla]----
+> NOTE
+>
+> Importante
+>
+> Além das opções disponíveis nesta documentação, também é possível configurar o **Cuotas sin Tarjeta** utilizando o **Brick de Wallet**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para mais detalhes. 
+
+Siga os passos abaixo para oferecer o parcelamento sem cartão em sua loja.
+
+------------
+----[mlm]----
+> NOTE
+>
+> Importante
+>
+> Além das opções disponíveis nesta documentação, também é possível configurar o **parcelamento sem cartão** utilizando o **Brick de Wallet**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para mais detalhes. 
+
+Siga os passos abaixo para oferecer o Meses sin Tarjeta em sua loja.
+
+------------
 
 ## Configuração da integração
 
@@ -22,8 +64,18 @@ Siga os passos abaixo para oferecer o parcelamento sem cartão em sua loja.
 > Criar preferência
 
 Preferência é um conjunto de informações sobre um produto e/ou serviço que permitem definir o nome, meio de pagamento, além de outras configurações relacionadas ao fluxo de pagamento definido. 
+----[mlb]----
+A primeira etapa para configurar pagamentos com Linha de Crédito é a criação da preferência. Para isso, envie um POST com o parâmetro `purpose` e o valor `onboarding_credits` ao **endpoint** [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize o SDK abaixo.
 
-A primeira etapa para configurar pagamentos com Mercado Crédito é a criação da preferência. Para isso, envie um POST com o parâmetro `purpose` e o valor `onboarding_credits` ao **endpoint** [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize o SDK abaixo.
+------------
+----[mlm]----
+A primeira etapa para configurar pagamentos com Meses sin Tarjeta é a criação da preferência. Para isso, envie um POST com o parâmetro `purpose` e o valor `onboarding_credits` ao **endpoint** [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize o SDK abaixo.
+
+------------
+----[mla]----
+A primeira etapa para configurar pagamentos com Cuotas sin Tarjeta é a criação da preferência. Para isso, envie um POST com o parâmetro `purpose` e o valor `onboarding_credits` ao **endpoint** [/checkout/preferences](/developers/pt/reference/preferences/_checkout_preferences/post) e execute a requisição ou, se preferir, utilize o SDK abaixo.
+
+------------
 
 [[[
 ```php
@@ -236,8 +288,27 @@ mp.bricks().create("wallet", "wallet_container", {
 ```
 ]]]
 
-Pronto! Ao concluir os passos descritos acima, o botão para pagamento será exibido na tela e você terá finalizado a integração. Siga os passos abaixo para explicar aos  seus clientes como funciona Mercado Crédito.
+----[mlb]----
+Pronto! Ao concluir os passos descritos acima, o botão para pagamento será exibido na tela e você terá finalizado a integração. Siga os passos abaixo para explicar aos seus clientes a Linha de Crédito funciona.
 
 1. [Crie uma conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) ou entre com seu login e senha no Mercado Pago.
-2. Selecione **Mercado Crédito** e escolha em quantas vezes quer pagar 
+2. Selecione **Linha de Crédito** e escolha em quantas vezes quer pagar.
 3. Pague as parcelas todo mês como preferir, no **app do Mercado Pago**.
+
+------------
+----[mlm]----
+Pronto! Ao concluir os passos descritos acima, o botão para pagamento será exibido na tela e você terá finalizado a integração. Siga os passos abaixo para explicar aos seus clientes o Meses sin Tarjeta funciona.
+
+1. [Crie uma conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) ou entre com seu login e senha no Mercado Pago.
+2. Selecione **Meses sin Tarjeta** e escolha em quantas vezes quer pagar 
+3. Pague as parcelas todo mês como preferir, no **app do Mercado Pago**.
+
+------------
+----[mla]----
+Pronto! Ao concluir os passos descritos acima, o botão para pagamento será exibido na tela e você terá finalizado a integração. Siga os passos abaixo para explicar aos seus clientes o Cuotas sin Tarjeta funciona.
+
+1. [Crie uma conta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) ou entre com seu login e senha no Mercado Pago.
+2. Selecione **Cuotas sin Tarjeta** e escolha em quantas vezes quer pagar 
+3. Pague as parcelas todo mês como preferir, no **app do Mercado Pago**.
+
+------------
