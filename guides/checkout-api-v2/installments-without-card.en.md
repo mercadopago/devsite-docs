@@ -1,9 +1,30 @@
+----[mla, mlb]----
 # Installments without card
 
-**Mercado Credits** is Mercado Pago’s financing method that allows paying in installments without having a card.
+------------
+----[mlm]----
+# Compra ahora, paga después
+
+------------
+----[mlb]----
+**Linha de Crédito** is Mercado Pago’s financing method that allows paying in installments without having a card.
 
 With this line of credit, administered by Mercado Pago, the payment is credited in full to the seller's account, while the customer can choose to pay in up to 12 fixed monthly installments, no card needed. The user just has to enter their Mercado Pago account (or create one), determine their available limit, and choose how many installments they want to pay in.
 
+------------
+----[mlm]----
+**Meses sin Tarjeta** is Mercado Pago’s financing method that allows paying in installments without having a card.
+
+With this line of credit, administered by Mercado Pago, the payment is credited in full to the seller's account, while the customer can choose to pay in up to 12 fixed monthly installments, no card needed. The user just has to enter their Mercado Pago account (or create one), determine their available limit, and choose how many installments they want to pay in.
+
+------------
+----[mla]----
+**Cuotas sin Tarjeta** is Mercado Pago’s financing method that allows paying in installments without having a card.
+
+With this line of credit, administered by Mercado Pago, the payment is credited in full to the seller's account, while the customer can choose to pay in up to 12 fixed monthly installments, no card needed. The user just has to enter their Mercado Pago account (or create one), determine their available limit, and choose how many installments they want to pay in.
+
+------------
+----[mlb]----
 > NOTE
 >
 > Important
@@ -12,6 +33,27 @@ With this line of credit, administered by Mercado Pago, the payment is credited 
 
 Follow the steps below to offer installments without card in your store.
 
+------------
+----[mla]----
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to configure **Cuotas sin Tarjeta** using the **Wallet Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) documentation of Wallet for more details.
+
+Follow the steps below to offer installments without card in your store.
+
+------------
+----[mlm]----
+> NOTE
+>
+> Important
+>
+> In addition to the options available in this documentation, it is also possible to configure **installments without card** using the **Wallet Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) documentation of Wallet for more details.
+
+Follow the steps below to offer Meses sin Tarjeta in your store.
+
+------------
 ## Integration configuration
 
 > SERVER_SIDE
@@ -231,10 +273,27 @@ mp.bricks().create("wallet", "wallet_container", {
 ```
 ]]]
 
-
-
-Done! After completing the steps described above, the payment button will be displayed on the screen and you will have finished the integration. Follow the steps below to explain to your customers how Mercado Crédito works.
+----[mlb]----
+Done! After completing the steps described above, the payment button will be displayed on the screen and you will have finished the integration. Follow the steps below to explain to your customers how Linha de Crédito works.
 
 1. [Create an account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) or sign in to Mercado Pago. If you use **Mercado Livre**, you already have this account!
-2. Select **Mercado Crédito** and choose how many times you want to pay
+2. Select **Linha de Crédito** and choose how many times you want to pay
 3. Pay the installments every month as you prefer, in the **Mercado Pago app**.
+
+------------
+----[mlm]----
+Done! After completing the steps described above, the payment button will be displayed on the screen and you will have finished the integration. Follow the steps below to explain to your customers how Meses sin Tarjeta o works.
+
+1. [Create an account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) or sign in to Mercado Pago. If you use **Mercado Livre**, you already have this account!
+2. Select **Meses sin Tarjeta** and choose how many times you want to pay
+3. Pay the installments every month as you prefer, in the **Mercado Pago app**.
+
+------------
+----[mla]----
+Done! After completing the steps described above, the payment button will be displayed on the screen and you will have finished the integration. Follow the steps below to explain to your customers how Cuotas sin Tarjeta works.
+
+1. [Create an account](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) or sign in to Mercado Pago. If you use **Mercado Livre**, you already have this account!
+2. Select **Cuotas sin Tarjeta** and choose how many times you want to pay
+3. Pay the installments every month as you prefer, in the **Mercado Pago app**.
+
+------------
