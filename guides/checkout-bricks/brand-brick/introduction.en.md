@@ -28,4 +28,4 @@ Various [visual customizations](/developers/en/docs/checkout-bricks/brand-brick/
 >
 > When integrating the Brick, ensure that there are no elements that may interfere with the pop-up.
 
-![brand-brick-es](checkout-bricks/brand-brick-es.gif)
+![brand-brick-en](checkout-bricks/brick-brand-en.gif)
