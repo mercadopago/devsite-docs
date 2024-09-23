@@ -1,7 +1,7 @@
 ----[mlb]----
 # Parcelamento via Pix em até 12x
-Com o Checkout Transparente, é possível oferecer **Parcelamento via Pix em até 12x**. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão.
-Atualmente, o **Parcelamento via Pix em até 12x** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing), e agora também é possível acessá-lo diretamente do checkout da loja via Checkout Transparente.
+Com o Checkout Transparente, é possível oferecer **Parcelamento via Pix em até 12x**. Com a Linha de Crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão.
+Atualmente, o **Parcelamento via Pix em até 12x** é oferecida em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing), e agora também é possível acessá-lo diretamente do checkout da loja via Checkout Transparente.
 
 
 Para configurar o **Parcelamento via Pix em até 12x** no checkout da loja, siga os passos descritos abaixo.
@@ -11,7 +11,7 @@ Para configurar o **Parcelamento via Pix em até 12x** no checkout da loja, siga
     1. O campo **Ativado** define que o meio de pagamento estará disponível no checkout da loja. Escolha "Sim", ou deixe o valor definido pelo sistema se corresponder a esta opção.
     2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja. Recomendamos usar “Parcelamento via Pix em até 12x”.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
-    4. Quando o cliente não tiver linha de crédito ativa para utilizar Parcelamento via Pix em até 12x, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
+    4. Quando o cliente não tiver crédito ativo para utilizar o Parcelamento via Pix em até 12x, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
 
 ![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-config2-mlb-pt.png)
 
@@ -25,24 +25,22 @@ Nesta seção é possível definir algumas características gerais da plataforma
 ![Tela de definições comuns de meios de pagamento](/images/adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
 
 Clique em **Gravar Configuração** para salvar as alterações realizadas, e pronto, ja pode oferecer **Parcelamento via Pix em até 12x** como meio de pagamento no checkout da loja.
+
 ------------
-
-
 ----[mla]----
-# Parcelamento em até 12 meses sem cartão no Mercado Pago
-Com o Checkout API, é possível oferecer **Parcelamento em até 12 meses sem cartão no Mercado Pago**. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão.
-Atualmente, o **Parcelamento em até 12 meses sem cartão no Mercado Pago** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing), e agora também é possível acessá-lo diretamente do checkout da loja via Checkout API.
+# Hasta 12 cuotas sin tarjeta con Mercado Pago
+Com o Checkout API, é possível oferecer **Hasta 12 cuotas sin tarjeta con Mercado Pago**. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão.
+Atualmente, o **Hasta 12 cuotas sin tarjeta con Mercado Pago** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing), e agora também é possível acessá-lo diretamente do checkout da loja via Checkout API.
 
-
-Para configurar o **Parcelamento em até 12x sem cartão no Mercado Pago** no checkout da loja, siga os passos descritos abaixo.
+Para configurar o **Hasta 12 cuotas sin tarjeta con Mercado Pago** no checkout da loja, siga os passos descritos abaixo.
 1. No **Painel de Controle** da loja, acesse **Lojas > Configuração > Vendas > Forma de pagamento**.
 2. Em **Outros meios de pagamento**, clique em **Configurar** no plugin do Mercado Pago.
     ![Tela de configuração do plugin do Mercado Pago](/images/adobe-commerce/cho-api-credits-config-mla-es.png)
-3. Selecione a opção **Parcelamento em até 12 meses sem cartão no Mercado Pago** e configure os campos conforme indicado a seguir.
+3. Selecione a opção **Hasta 12 cuotas sin tarjeta con Mercado Pago** e configure os campos conforme indicado a seguir.
     1. O campo **Ativado** define que o meio de pagamento estará disponível no checkout da loja. Escolha "Sim", ou deixe o valor definido pelo sistema se corresponder a esta opção.
     2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja. Recomendamos usar “Hasta 12 cuotas sin tarjeta con Mercado Pago”.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
-    4. Quando o cliente não tiver linha de crédito ativa para utilizar Parcelamento em até 12x sem cartão no Mercado Pago, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
+    4. Quando o cliente não tiver linha de crédito ativa para utilizar o Hasta 12 cuotas sin tarjeta con Mercado Pago no Mercado Pago, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
 
 ![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-credits-config2-mla-es.png)
 
@@ -55,24 +53,22 @@ Nesta seção é possível definir algumas características gerais da plataforma
 
 ![Tela de definições comuns de meios de pagamento](/images/adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
 
-Clique em **Gravar Configuração** para salvar as alterações realizadas, e pronto, ja pode oferecer **Parcelamento em até 12 meses sem cartão no Mercado Pago** como meio de pagamento no checkout da loja.
+Clique em **Gravar Configuração** para salvar as alterações realizadas, e pronto, ja pode oferecer **Hasta 12 cuotas sin tarjeta con Mercado Pago** como meio de pagamento no checkout da loja.
+
 ------------
-
-
 ----[mlm]----
-# Até 12 meses sem cartão no Mercado Pago
-Com o Checkout API, é possível oferecer **Até 12 meses sem cartão no Mercado Pago**. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão.
-Atualmente, o **Até 12 meses sem cartão no Mercado Pago** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing), e agora também é possível acessá-lo diretamente do checkout da loja via Checkout API.
+# Meses sin Tarjeta con Mercado Pago
+Com o Checkout API, é possível oferecer **Hasta 12 meses sin tarjeta con Mercado Pago**. Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é creditado integralmente na conta do vendedor, podendo o cliente optar por pagar em até 12 parcelas fixas mensais e sem a necessidade de cartão.
+Atualmente, o **Meses sin Tarjeta con Mercado Pago** é oferecido em nosso [Checkout Pro](/developers/pt/docs/checkout-pro/landing), e agora também é possível acessá-lo diretamente do checkout da loja via Checkout API.
 
-
-Para configurar o **Até 12 meses sem cartão no Mercado Pago** no checkout da loja, siga os passos descritos abaixo.
+Para configurar o **Meses sin Tarjeta con Mercado Pago** no checkout da loja, siga os passos descritos abaixo.
 1. No **Painel de Controle** da loja, acesse **Lojas > Configuração > Vendas > Forma de pagamento**.
 2. Em **Outros meios de pagamento**, clique em **Configurar** no plugin do Mercado Pago.
-3. Selecione a opção **Até 12 meses sem cartão no Mercado Pago** e configure os campos conforme indicado a seguir.
+3. Selecione a opção **Meses sin Tarjeta con Mercado Pago** e configure os campos conforme indicado a seguir.
     1. O campo **Ativado** define que o meio de pagamento estará disponível no checkout da loja. Escolha "Sim", ou deixe o valor definido pelo sistema se corresponder a esta opção.
     2. Em **Título**, defina o título de como a forma de pagamento será exibida no checkout da loja. Recomendamos usar “Hasta 12 meses sin tarjeta con Mercado Pago”.
     3. Em **Prazo limite para pagamento**, escolha o tempo que o cliente tem para concluir o pagamento.
-    4. Quando o cliente não tiver linha de crédito ativa para utilizar Até 12 meses sem cartão no Mercado Pago, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
+    4. Quando o cliente não tiver linha de crédito ativa para utilizar o Hasta 12 meses sin tarjeta con Mercado Pago, iremos redirecioná-lo para o Mercado Pago. A opção **Meio de pagamento excluído** permite a remoção de meios de pagamento do Mercado Pago e, caso o cliente queira utilizar algum deles mesmo assim, deverá retornar ao checkout para finalizar o pagamento.
 
 ![Tela de configuração do meio de pagamento](/images/adobe-commerce/cho-api-credits-config2-mlm-es.png)
 
@@ -85,5 +81,6 @@ Nesta seção é possível definir algumas características gerais da plataforma
 
 ![Tela de definições comuns de meios de pagamento](/images/adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
 
-Clique em **Gravar Configuração** para salvar as alterações realizadas, e pronto, ja pode oferecer **Até 12 meses sem cartão no Mercado Pago** como meio de pagamento no checkout da loja.
+Clique em **Gravar Configuração** para salvar as alterações realizadas, e pronto, ja pode oferecer **Hasta 12 meses sin tarjeta con Mercado Pago** como meio de pagamento no checkout da loja.
+
 ------------

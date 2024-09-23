@@ -265,8 +265,12 @@ To activate this payment option, go to "[Business Options](https://www.mercadopa
 
 ## Accept payments from registered users only
 
-----[mla, mlb]----
-You can accept payments with the Mercado Pago wallet only from registered users, with a credit card, money in account, or Mercado Crédito.
+----[mla]----
+You can accept payments with the Mercado Pago wallet only from registered users, with a credit card, money in account, or Cuotas sin Tarjeta.
+
+------------
+----[mlb]----
+You can accept payments with the Mercado Pago wallet only from registered users, with a credit card, money in account, or Linha de Crédito.
 
 ------------
 ----[mlm, mlc, mco, mpe, mlu]----
