@@ -771,9 +771,9 @@
           "mp-point"
         ],
         "description":{
-          "en":"Cancel an order and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"created\" can be canceled. In case of success, the request will return a response with status 200",
-          "pt":"Cancela uma order e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es":"Cancela una order y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "en":"Cancel an order created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"created\" can be canceled. In case of success, the request will return a response with status 200",
+          "pt":"Cancela uma order criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Cancela una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters":[
           {
