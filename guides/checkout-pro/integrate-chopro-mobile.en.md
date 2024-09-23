@@ -6,7 +6,7 @@ If you wish to integrate Checkout Pro into a mobile application, we provide you 
 >
 > Deprecation Notice
 >
-> As of November 29th of 2023, the WebView integration model was deprecated. This refers to those integrations that include a login attempt from an embedded browser. Integrate Checkout Pro for mobile applications following one of the options detailed below.
+> The WebView integration model, by which certain integrations include a login attempt from an embedded browser, was deprecated for new integrations as of November 29th of 2023. **Starting December 10 of 2024**, it will also be deprecated for **older integrations**. Perform your integration of Checkout Pro for mobile applications, or migrate if necessary, following one of the options detailed below.
 
 ## Android
 
