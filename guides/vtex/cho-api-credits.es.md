@@ -1,5 +1,5 @@
 ----[mlb]----
-# Linha de Crédito
+# Parcelamento via Pix em até 12 vezes
 
 Linha de Crédito es el método de financiación de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta. 
 
@@ -8,7 +8,7 @@ Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredit
 Para configurar la Linha de Crédito en el checkout de la tienda, dirígete al panel de administración de tu plataforma VTEX, y accede a **Pagos> Configuración > Planes de pago**. Luego, sigue los pasos a continuación:
 
 1. Haz clic en el botón "+ (Agregar nuevo plan de pago para ...)”. 
-2. Dentro de la categoría **Otro**, busca por **Linha de crédito** y selecciona esa opción.
+2. Dentro de la categoría **Otro**, busca por **Linha de Crédito** y selecciona esa opción.
 3. Completa los campos que te mostrará la pantalla siguiente: 
     1. Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
     2. En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
@@ -18,7 +18,7 @@ Para configurar la Linha de Crédito en el checkout de la tienda, dirígete al p
 
 ------------
 ----[mla]----
-# Cuotas sin Tarjeta
+# Hasta 12 cuotas sin tarjeta con Mercado Pago
 
 Cuotas sin Tarjeta es el método de financiación de Mercado Pago que ofrece la opción de pagar financiado sin contar con una tarjeta. 
 
@@ -37,7 +37,7 @@ Para configurar Cuotas sin Tarjeta en el checkout de la tienda, dirígete al pan
 
 ------------
 ----[mlm]----
-# Meses sin Tarjeta
+# Hasta 12 cuotas sin tarjeta con Mercado Pago
 
 Meses sin Tarjeta es el método de financiación de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta. 
 

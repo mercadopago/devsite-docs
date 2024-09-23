@@ -60,7 +60,7 @@ If you want to **show Cuotas sin Tarjeta in your store's checkout**, follow the 
 8. Put your **production credentials** (`public key` and `access token`) in the fields that request it and click **Save**. Remember to keep your [credentials](/developers/en/docs/shopify/additional-content/your-integrations/credentials) handy.
 9. To finish the installation, select **Activate**.
 ----[mlm]----
-![shopify-mercado-credito](/images/shopify/mercado-credito-es.gif)
+![shopify-mercado-credito](/images/shopify/meses-sin-tarjeta-mlm.png)
 
 ------------
 ----[mlb]----

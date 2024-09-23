@@ -1,5 +1,5 @@
 ----[mlb]---- 
-# Linha de Crédito
+# Parcelamento via Pix em até 12 vezes
 
 Linha de Crédito is the financing method offered by Mercado Pago, which provides the option of payment in installments without the need for a card. With this credit line, managed by Mercado Pago, the payment is credited in full to the seller's account, and the customer can choose to pay in up to 12 fixed monthly installments without the need for a card. 
 
@@ -15,9 +15,9 @@ To configure the Linha de Crédito in the store's checkout, access the administr
 4. Click **Save** to activate the configuration
 ------------ 
 ----[mla]---- 
-# Cuotas sin Tarjeta
+# Hasta 12 cuotas sin tarjeta con Mercado Pago
 
-Cuotas sin Tarejta is the financing method offered by Mercado Pago, which provides the option of payment in installments without the need for a card. With this credit line, managed by Mercado Pago, the payment is credited in full to the seller's account, and the customer can choose to pay in up to 12 fixed monthly installments. 
+Cuotas sin Tarjeta is the financing method offered by Mercado Pago, which provides the option of payment in installments without the need for a card. With this credit line, managed by Mercado Pago, the payment is credited in full to the seller's account, and the customer can choose to pay in up to 12 fixed monthly installments. 
 
 To configure the Cuotas sin Tarjeta without a card in the store's checkout, access the administration panel of your VTEX platform, and then **Payments > Configuration > Payment plans**. Then, follow the steps below: 
 
@@ -31,7 +31,7 @@ To configure the Cuotas sin Tarjeta without a card in the store's checkout, acce
 4. Click **Save** to activate the configuration 
 ------------ 
 ----[mlm]---- 
-# Meses sin Tarjeta
+# Hasta 12 cuotas sin tarjeta con Mercado Pago
 
 Up to Meses sin Tarjeta is the financing method offered by Mercado Pago, which provides the option of payment in installments without the need for a card. With this credit line, managed by Mercado Pago, the payment is credited in full to the seller's account, and the customer can choose to pay in up to 12 fixed monthly installments. 
 

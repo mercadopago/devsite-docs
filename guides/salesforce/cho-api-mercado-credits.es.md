@@ -37,7 +37,7 @@ Para activar la Linha de Crédito como medio de pago en tu tienda, seguí estas 
 2. En el panel administrativo de Salesforce, ingresá a "Merchant Tools" y luego a "Ordering".
 3. Hacé clic en "Payment Methods" y buscá la opción "Linha de Crédito". Actívala seleccionando "Yes" en la columna "Enabled".
 
-![Ativar](/images/salesforce/credits-en.gif) 
+![Ativar](/images/salesforce/gif-sales-credito.gif) 
 
 Para más información, comunícate con tu asesor comercial para recibir atención personalizada.
 
@@ -57,7 +57,7 @@ Para activar Meses sin Tarjeta como medio de pago en tu tienda, seguí estas ins
 2. En el panel administrativo de Salesforce, ingresá a "Merchant Tools" y luego a "Ordering".
 3. Hacé clic en "Payment Methods" y buscá la opción "Meses sin Tarjeta". Actívala seleccionando "Yes" en la columna "Enabled".
 
-![Ativar](/images/salesforce/credits-en.gif) 
+![Ativar](/images/salesforce/gif-sales-credito.gif) 
 
 Para más información, comunícate con tu asesor comercial para recibir atención personalizada.
 
@@ -77,7 +77,7 @@ Para activar Cuotas sin Tarjeta como medio de pago en tu tienda, seguí estas in
 2. En el panel administrativo de Salesforce, ingresá a "Merchant Tools" y luego a "Ordering".
 3. Hacé clic en "Payment Methods" y buscá la opción "Cuotas sin Tarjeta". Actívala seleccionando "Yes" en la columna "Enabled".
 
-![Ativar](/images/salesforce/credits-en.gif) 
+![Ativar](/images/salesforce/gif-sales-credito.gif) 
 
 Para más información, comunícate con tu asesor comercial para recibir atención personalizada.
 

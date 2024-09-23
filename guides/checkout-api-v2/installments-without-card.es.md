@@ -29,7 +29,7 @@ Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredit
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible configurar **cuotas sin tarjeta** utilizando el **Brick de Wallet**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para obtener más detalles.
+> Además de las opciones disponibles en esta documentación, también es posible configurar **Cuotas sin Tarjeta** utilizando el **Brick de Wallet**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para obtener más detalles.
 
 En esta guía encontrarás los pasos necesarios para ofrecer cuotas sin tarjeta en tu tienda.
 

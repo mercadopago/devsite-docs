@@ -3,7 +3,7 @@
 
 ------------
 ----[mla, mlb]----
-# Financiación sin Tarjeta
+# Financiación sin tarjeta
 
 ------------
 ----[mlb]----
@@ -18,7 +18,7 @@ Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredit
 Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántos meses quiere pagar.
 
 ------------
-----[mlm]----
+----[mla]----
 **Cuotas sin Tarjeta** es el método de financiamiento de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta.
 
 Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántos meses quiere pagar.
@@ -44,7 +44,7 @@ Para **configurar o Cuotas sin Tarjeta en el checkout de tu tienda**, sigue los 
 ------------
 ## Configurar el medio de pago en el checkout de tu tienda
 
-1. Entra al panel de administrador de tu **Tiendanube >> Configuración (parte inferior izquierda)**. 
+1. Entra al panel de administrador de tu **Tiendanube > Configuración (parte inferior izquierda)**. 
 2. Al entrar a configuración, luego debes ir a **Métodos de Pago**.
 3. Localiza el plugin "Mercado Pago" y haz clic en **Editar**.
 4. Desplázate hasta la parte inferior de la página y haz clic en **Editar** en el sitio web de Mercado Pago.
