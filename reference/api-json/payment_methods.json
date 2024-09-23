@@ -112,9 +112,9 @@
                           {
                             "title": "digital_currency",
                             "description": {
-                              "en": "Purchases with Mercado Crédito.",
-                              "es": "Purchases with Mercado Crédito.",
-                              "pt": "Purchases with Mercado Crédito."
+                              "en": "Purchases with Installments without card.",
+                              "es": "Purchases with Pagos sin Tarjeta.",
+                              "pt": "Purchases with Linha de Crédito."
                             }
                           },
                           {

@@ -13,13 +13,13 @@ bullet_section_with_media:
  - type: normal
  - message: Con el módulo de Mercado Pago puedes configurar pagos mediante:
  - benefit_title: Checkout Pro
- - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjetas de débito, de crédito y otros medios de pago (Pix, boleto bancário, pago en lotería sin boleto, cuenta Mercado Pago y Mercado Crédito).
+ - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjetas de débito, de crédito y otros medios de pago (Pix, boleto bancário, pago en lotería sin boleto, cuenta Mercado Pago y Linha de Crédito).
  - benefit_title: Checkout Transparente
  - benefit_message: El pago se realiza sin salir de tu tienda virtual con Pix, tarjeta de crédito y boleto bancário.
  - image: /nuvemshop/nuvemshop-payment.png 
 ---
 ------------
-----[mla, mlm, mlu, mco, mlc, mpe]----
+----[mla]----
 
 ---
 bullet_section_with_media:
@@ -27,7 +27,35 @@ bullet_section_with_media:
  - type: normal
  - message: Con el módulo de Mercado Pago puedes configurar pagos mediante:
  - benefit_title: Checkout Pro
- - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjetas de débito, de crédito y otros medios de pago (redes de pago en efectivo y Mercado Crédito).
+ - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjetas de débito, de crédito y otros medios de pago (redes de pago en efectivo y Cuotas sin Tarjeta).
+ - benefit_title: Checkout API
+ - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjetas (crédito y debito) y redes de pago en efectivo.
+ - image: /nuvemshop/nuvemshop-payment.png 
+---
+------------
+----[mlm]----
+
+---
+bullet_section_with_media:
+ - title: Pago
+ - type: normal
+ - message: Con el módulo de Mercado Pago puedes configurar pagos mediante:
+ - benefit_title: Checkout Pro
+ - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjetas de débito, de crédito y otros medios de pago (redes de pago en efectivo y Meses sin Tarjeta).
+ - benefit_title: Checkout API
+ - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjetas (crédito y debito) y redes de pago en efectivo.
+ - image: /nuvemshop/nuvemshop-payment.png 
+---
+------------
+----[mlu, mco, mlc, mpe]----
+
+---
+bullet_section_with_media:
+ - title: Pago
+ - type: normal
+ - message: Con el módulo de Mercado Pago puedes configurar pagos mediante:
+ - benefit_title: Checkout Pro
+ - benefit_message: Los compradores podrán pagar con una cuenta de Mercado Pago y todo el proceso de compra se realizará en nuestro entorno, lo que facilita el pago con tarjetas de débito, de crédito y otros medios de pago (redes de pago en efectivo).
  - benefit_title: Checkout API
  - benefit_message: El pago se realiza sin salir de tu tienda virtual con tarjetas (crédito y debito) y redes de pago en efectivo.
  - image: /nuvemshop/nuvemshop-payment.png 

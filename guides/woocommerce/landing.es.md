@@ -62,9 +62,19 @@ bullet_section_with_media:
  - benefit_message: Con el 3DS, realizamos una verificación de identidad discreta desde un modal sin salir de la tienda, ofreciendo beneficios como una mayor probabilidad de aprobación y menor riesgo de fraude.
  - benefit_title: Compatible con WooCommerce Blocks
  - benefit_message: Nuestro plugin es compatible con WooCommerce Blocks, lo que le permite personalizar su comercio electrónico y hacer que sus productos sean aún más accesibles para sus clientes.
- ----[mlm, mlb, mla]----
+ ----[mlm]----
  - benefit_title: Financiación sin tarjeta
- - benefit_message: Al activar Mercado Crédito en el checkout, llega a más de 12 millones de personas con crédito activo, sin costos adicionales, además de obtener una tasa de aprobación de aproximadamente el 98% en las ventas.
+ - benefit_message: Al activar Meses sin Tarjeta en el checkout, llega a más de 12 millones de personas con crédito activo, sin costos adicionales, además de obtener una tasa de aprobación de aproximadamente el 98% en las ventas.
+
+ ------------
+ ----[mla]----
+ - benefit_title: Financiación sin tarjeta
+ - benefit_message: Al activar Cuotas sin Tarjeta en el checkout, llega a más de 12 millones de personas con crédito activo, sin costos adicionales, además de obtener una tasa de aprobación de aproximadamente el 98% en las ventas.
+
+ ------------
+ ----[mlb]----
+ - benefit_title: Financiación sin tarjeta
+ - benefit_message: Al activar Linha de Crédito en el checkout, llega a más de 12 millones de personas con crédito activo, sin costos adicionales, además de obtener una tasa de aprobación de aproximadamente el 98% en las ventas.
 
  ------------
  - image: /woocomerce/landing-woo-advantages.png

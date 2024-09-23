@@ -22,7 +22,7 @@ To update your plugin by installing the new version, simply follow the installat
 | Installments **with** interest              | ✅          | ✅          |
 | Secure Fields / PCI                        | ✅          | ✅          |
 | Installments **without** interest          | ✅          | ✅          |
-| Buy Now Pay Later - Mercado Crédito        | ✅          | ❌          |
+| Buy Now Pay Later - ----[mlb]---- Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------        | ✅          | ❌          |
 | Payments with 2 cards                      | ✅          | ❌          |
 | Refunds directly through the platform      | ✅          | ❌          |
 | Due date for offline payment methods       | ✅          | ❌          |

@@ -46,13 +46,13 @@ Para configurar la Linha de crédito en el checkout de tu tienda, sigue los paso
 
 1. En la configuración del panel de WooCommerce, haz clic en **Configurar** en la opción **Cuotas sin tarjeta con Mercado Pago** para acceder a la página de configuración de este medio de pago.
 2. En **Activar opción de pagos sin tarjeta en el checkout**, activa el botón deslizante para habilitar este medio de pago. Asegúrate de que el estado esté **activo**.
-3. En la opción **Título en el checkout**, elige el nombre con el que el medio de pago se mostrará en tu tienda. Recomendamos que utilices el título predeterminado **“Hasta 12 pagos sin tarjeta con Mercado Crédito”**.
+3. En la opción **Título en el checkout**, elige el nombre con el que el medio de pago se mostrará en tu tienda. Recomendamos que utilices el título predeterminado **“Hasta 12 pagos sin tarjeta con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------”**.
 4. En **Convertir moneda**, activa el botón deslizante para convertir el valor de la moneda configurada en WooCommerce a un valor compatible con la moneda que utilizas en Mercado Pago.
-5. En **Promociona el pago de tus productos con Mercado Crédito**, activa el banner promocional para divulgar la opción de pago en cuotas en la página de tu producto. En este campo, podrás elegir cómo promocionar Mercado Crédito en tu tienda seleccionando una de las siguientes alternativas:
+5. En **Promociona el pago de tus productos con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------**, activa el banner promocional para divulgar la opción de pago en cuotas en la página de tu producto. En este campo, podrás elegir cómo promocionar ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------ en tu tienda seleccionando una de las siguientes alternativas:
 
-    - "Hasta 12 pagos sin tarjeta con Mercado Crédito. Saber más."
-    - "Compra ahora, paga después con Mercado Crédito. Saber más."
-    - "Con Mercado Crédito, llévalo ahora y paga mes a mes. Saber más."
+    - "Hasta 12 pagos sin tarjeta con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------. Saber más."
+    - "Compra ahora, paga después con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------. Saber más."
+    - "Con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------, llévalo ahora y paga mes a mes. Saber más."
     - "Paga en hasta 12 meses sin tarjeta de crédito. Saber más."
 
 6. Haga clic en el botón **Guardar todos los cambios** para finalizar la configuración.
@@ -63,17 +63,17 @@ Para configurar la Linha de crédito en el checkout de tu tienda, sigue los paso
 >
 > Atención
 >
-> Para poder ofrecer la **Linha de crédito** como medio de pago en tu tienda WooCommerce, deberás **actualizar previamente el plugin de Mercado Pago** a la versión más reciente disponible. Para hacerlo, en el panel de administración de tu tienda ve a **Plugins > Plugins instalados**, busca por **Mercado Pago**, y haz clic en **Actualizar**.
+> Para poder ofrecer la **Linha de Crédito** como medio de pago en tu tienda WooCommerce, deberás **actualizar previamente el plugin de Mercado Pago** a la versión más reciente disponible. Para hacerlo, en el panel de administración de tu tienda ve a **Plugins > Plugins instalados**, busca por **Mercado Pago**, y haz clic en **Actualizar**.
 
 1. En la configuración del panel de WooCommerce, haz clic en **Configurar** en la opción **Cuotas sin tarjeta con Mercado Pago** para acceder a la página de configuración de este medio de pago.
 2. En **Activar opción de pagos sin tarjeta en el checkout**, activa el botón deslizante para habilitar este medio de pago. Asegúrate de que el estado esté **activo**.
-3. En la opción **Título en el checkout**, elige el nombre con el que el medio de pago se mostrará en tu tienda. Recomendamos que utilices el título predeterminado **“Hasta 12 pagos sin tarjeta con Mercado Crédito”**.
+3. En la opción **Título en el checkout**, elige el nombre con el que el medio de pago se mostrará en tu tienda. Recomendamos que utilices el título predeterminado **“Hasta 12 pagos sin tarjeta con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------”**.
 4. En **Convertir moneda**, activa el botón deslizante para convertir el valor de la moneda configurada en WooCommerce a un valor compatible con la moneda que utilizas en Mercado Pago.
-5. En **Promociona el pago de tus productos con Mercado Crédito**, activa el banner promocional para divulgar la opción de pago en cuotas en la página de tu producto. En este campo, podrás elegir cómo promocionar Mercado Crédito en tu tienda seleccionando una de las siguientes alternativas:
+5. En **Promociona el pago de tus productos con----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------**, activa el banner promocional para divulgar la opción de pago en cuotas en la página de tu producto. En este campo, podrás elegir cómo promocionar ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------ en tu tienda seleccionando una de las siguientes alternativas:
 
-    - "Hasta 12 pagos sin tarjeta con Mercado Crédito. Saber más."
-    - "Compra ahora, paga después con Mercado Crédito. Saber más."
-    - "Con Mercado Crédito, llévalo ahora y paga mes a mes. Saber más."
+    - "Hasta 12 pagos sin tarjeta con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------. Saber más."
+    - "Compra ahora, paga después con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------. Saber más."
+    - "Con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------, llévalo ahora y paga mes a mes. Saber más."
     - "Paga en hasta 12 meses sin tarjeta de crédito. Saber más."
 
 6. Haga clic en el botón **Guardar todos los cambios** para finalizar la configuración.
@@ -88,13 +88,13 @@ Para configurar la Linha de crédito en el checkout de tu tienda, sigue los paso
 
 1. En la configuración del panel de WooCommerce, haz clic en **Configurar** en la opción **Cuotas sin tarjeta con Mercado Pago** para acceder a la página de configuración de este medio de pago.
 2. En **Activar opción de pagos sin tarjeta en el checkout**, activa el botón deslizante para habilitar este medio de pago. Asegúrate de que el estado esté **activo**.
-3. En la opción **Título en el checkout**, elige el nombre con el que el medio de pago se mostrará en tu tienda. Recomendamos que utilices el título predeterminado **“Hasta 12 pagos sin tarjeta con Mercado Crédito”**.
+3. En la opción **Título en el checkout**, elige el nombre con el que el medio de pago se mostrará en tu tienda. Recomendamos que utilices el título predeterminado **“Hasta 12 pagos sin tarjeta con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------”**.
 4. En **Convertir moneda**, activa el botón deslizante para convertir el valor de la moneda configurada en WooCommerce a un valor compatible con la moneda que utilizas en Mercado Pago.
-5. En **Promociona el pago de sus productos con Mercado Crédito**, activa el banner promocional para divulgar la opción de pago en cuotas en la página de tu producto. En este campo, podrás elegir cómo promocionar Mercado Crédito en tu tienda seleccionando una de las siguientes alternativas:
+5. En **Promociona el pago de sus productos con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------**, activa el banner promocional para divulgar la opción de pago en cuotas en la página de tu producto. En este campo, podrás elegir cómo promocionar ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------ en tu tienda seleccionando una de las siguientes alternativas:
 
-    - "Hasta 12 pagos sin tarjeta con Mercado Crédito. Saber más."
-    - "Compra ahora, paga después con Mercado Crédito. Saber más."
-    - "Con Mercado Crédito, llévalo ahora y paga mes a mes. Saber más."
+    - "Hasta 12 pagos sin tarjeta con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------. Saber más."
+    - "Compra ahora, paga después con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------. Saber más."
+    - "Con ----[mlb]----Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------, llévalo ahora y paga mes a mes. Saber más."
     - "Paga en hasta 12 meses sin tarjeta de crédito. Saber más."
 
 6. Haz clic en el botón **Guardar todos los cambios** para finalizar la configuración.

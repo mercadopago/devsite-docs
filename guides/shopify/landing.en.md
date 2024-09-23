@@ -92,8 +92,8 @@ bullet_section_with_media:
   - benefit_title: Mercado Pago Sorts Checkouts
   - benefit_message: With the Ordena checkouts app, you can choose the position in which each of your installed providers will appear to your customers. By choosing to display our checkout first, you increase your store's reach and sales approval rate.
   ----[mlm]----
-  - benefit_title: Mercado Crédito
-  - benefit_message: By activating Mercado Crédito at checkout, you reach over 12 million people with active credit, at no extra cost, and achieve an approval rate of around 98% on sales.
+  - benefit_title: Meses sin Tarjeta
+  - benefit_message: By activating Meses sin Tarjeta at checkout, you reach over 12 million people with active credit, at no extra cost, and achieve an approval rate of around 98% on sales.
 
 ------------
   - image: /shopify/landing-shopify-advantages.png

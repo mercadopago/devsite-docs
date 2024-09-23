@@ -64,7 +64,7 @@ Follow the steps below to offer Meses sin Tarjeta in your store.
 
 Preference is a set of information about a product and/or service that allow you to define the name, payment method, as well as other settings related to the defined payment flow.
 
-The first step to configure payments with Mercado Crédito is to create the preference. To do so, send a POST with the `purpose` parameter and the `onboarding_credits` value to the **endpoint** [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use the SDK below.
+The first step to configure payments with ----[mlb]---- Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------ is to create the preference. To do so, send a POST with the `purpose` parameter and the `onboarding_credits` value to the **endpoint** [/checkout/preferences](/developers/en/reference/preferences/_checkout_preferences/post) and execute the request or, if you prefer, use the SDK below.
 
 [[[
 ```php
