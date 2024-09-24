@@ -12,7 +12,7 @@ If you want to show Parcelamento via Pix em até 12x in the store's checkout, fo
     3. In **Deadline for payment**, choose the time period in which the customer must complete the payment.
     4. When the customer does not have an active line of credit to use Parcelamento via Pix em até 12x, we will redirect them to Mercado Pago. The **Payment completion view** option allows you to remove payment methods from Mercado Pago and, if your customer still wants to use any of them, they must go back to checkout to finish the payment.
 
-![Configuration of the payment method screen](/images/adobe-commerce/cho-api-config2-mlb-pt.png)
+![Configuration of the payment method screen](/images/adobe-commerce/cho-api-credits-mlb-1.png)
 
 ## Common payment method definitions
 In this section, you can define some general characteristics of the platform for the use of Checkout Transparente. Fill in each of the requested fields according to the description below.
@@ -21,7 +21,7 @@ In this section, you can define some general characteristics of the platform for
 3. In **Payment From Specific Countries**, select the countries that can use this payment method. Only consumers whose payment address is from one of the countries you selected can see this payment method.
 4. In the **Sort Order** option, set an ascending order of display for this payment method on the checkout. For example, if the order is 1, any other payment method with a higher one will be displayed after it.
 
-![Common payment method definitions screen](/images/adobe-commerce/cho-api-credits-definitions-mlb-pt.png)
+![Common payment method definitions screen](/images/adobe-commerce/cho-api-credits-mlb-2.png)
 
 Click **Save Configuration** to save these changes. You can now offer **Parcelamento via Pix em até 12x** as a payment method in the store’s checkout.
 
@@ -42,7 +42,7 @@ If you want to show Hasta 12 cuotas sin tarjeta con Mercado Pago in the store's 
     3. In **Deadline for payment**, choose the time period in which the customer must complete the payment.
     4. When the customer does not have an active line of credit to use Hasta 12 cuotas sin tarjeta con Mercado Pago, we will redirect them to Mercado Pago. The **Payment completion view** option allows you to remove payment methods from Mercado Pago and, if your customer still wants to use any of them, they must go back to checkout to finish the payment.
 
-![Configuration of the payment method screen](/images/adobe-commerce/cho-api-credits-config2-mla-es.png)
+![Configuration of the payment method screen](/images/adobe-commerce/cho-api-credits-mla-1.png)
 
 ## Common payment method definitions
 In this section, you can define some general characteristics of the platform for the use of Checkout API. Fill in each of the requested fields according to the description below.
@@ -51,7 +51,7 @@ In this section, you can define some general characteristics of the platform for
 3. In **Payment From Specific Countries**, select the countries that can use this payment method. Only consumers whose payment address is from one of the countries you selected can see this payment method.
 4. In the **Sort Order** option, set an ascending order of display for this payment method on the checkout. For example, if the order is 1, any other payment method with a higher one will be displayed after it.
 
-![Common payment method definitions screen](/images/adobe-commerce/cho-api-credits-definitions-mla-es.png)
+![Common payment method definitions screen](/images/adobe-commerce/cho-api-credits-mla-2.png)
 
 Click **Save Configuration** to save these changes. You can now offer **Hasta 12 cuotas sin tarjeta con Mercado Pago** as a payment method in the store’s checkout.
 
@@ -70,7 +70,7 @@ If you want to show Meses sin Tarjeta com Mercado Pago in the store's checkout, 
     3. In **Deadline for payment**, choose the time period in which the customer must complete the payment.
     4. When the customer does not have an active line of credit to use Hasta 12 meses sin tarjeta con Mercado Pago, we will redirect them to Mercado Pago. The **Payment completion view** option allows you to remove payment methods from Mercado Pago and, if your customer still wants to use any of them, they must go back to checkout to finish the payment.
 
-![Configuration of the payment method screen](/images/adobe-commerce/cho-api-credits-config2-mlm-es.png)
+![Configuration of the payment method screen](/images/adobe-commerce/cho-api-credits-mlm-1.png)
 
 ## Common payment method definitions
 In this section, you can define some general characteristics of the platform for the use of Checkout API. Fill in each of the requested fields according to the description below.
@@ -79,7 +79,7 @@ In this section, you can define some general characteristics of the platform for
 3. In **Payment From Specific Countries**, select the countries that can use this payment method. Only consumers whose payment address is from one of the countries you selected can see this payment method.
 4. In the **Sort Order** option, set an ascending order of display for this payment method on the checkout. For example, if the order is 1, any other payment method with a higher one will be displayed after it.
 
-![Common payment method definitions screen](/images/adobe-commerce/cho-api-credits-definitions-mla-es.png)
+![Common payment method definitions screen](/images/adobe-commerce/cho-api-credits-mlm-2.png)
 
 Click **Save Configuration** to save these changes. You can now offer **Hasta 12 meses sin tarjeta con Mercado Pago** as a payment method in the store’s checkout.
 
