@@ -75,9 +75,9 @@
                       "payments": {
                         "type": "array",
                         "description": {
-                          "en": "Contains information about the payment order. if you want to create a payment with two cards, you can duplicate this node, dividing the total value of the transaction and indicating a different payment method for each one.",
-                          "pt": "Contém informações sobre a order do pagamento. Caso deseje criar um pagamento com dois cartões, você pode duplicar o nó, dividindo o valor total da transação e indicando uma forma de pagamento diferente em cada um.",
-                          "es": "Contiene información sobre la order de pago. En caso de querer crear un pago con dos tarjetas, puedes duplicar este nodo, dividiendo el monto del pago y señalando el medio de pago en cada uno."
+                          "en": "Contains information about the payment order.",
+                          "pt": "Contém informações sobre a order do pagamento.",
+                          "es": "Contiene información sobre la order de pago."
                         },
                         "properties": {
                           "amount": {
@@ -229,7 +229,7 @@
                             "pt":"Contém informações sobre o pagamento associado à order.",
                             "es":"Contiene información sobre el pago asociado a una order."
                           },
-                          "properties":{
+                          "items":{
                             "id":{
                               "type":"string",
                               "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
@@ -396,7 +396,7 @@
           "403": {
             "description": {
               "en": "Error. Forbidden, checking device owner.",
-              "pt": "Erro. Access Token não autorizado.",
+              "pt": "Erro. Verifique o proprietário do dispositivo.",
               "es": "Error. Verifica el propietario del dispositivo."
             },
             "content":{
@@ -408,11 +408,11 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "403",
+                          "title": "forbidden_checking_device_owner",
                           "description": {
-                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
-                            "es": "El device-id del dispositivo no pertence al usuario que esta ejecutando la accion, verifica si ese dispositivo pertence a ese usuario",
-                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                            "en": "The Point device does not belong to the user who submitted the request. Check if the value sent for \"device_id\" is correct or if the device is linked to your account.",
+                            "es": "El dispositivo Point no pertence al usuario que envió la solicitud. Verifica si el valor enviado para \"device_id\" es correcto o si el dispositivo está vinculado a tu cuenta.",
+                            "pt": "O dispositivo Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"device_id\" está correto ou se o dispositivo está vinculado à sua conta."
                           }
                         }
                       ]
@@ -669,6 +669,33 @@
                             },
                             "status":{
                               "$ref": "#/components/schemas/status"
+                            },
+                            "status_detail": {
+                              "type": "string",
+                              "example": "cancelled_by_api",
+                              "description": {
+                                "en":"Details about payment status. It is returned exclusively when the order is cancelled through the API, with the value \"cancelled_by_api\", or when a cancellation attempt fails.",
+                                "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando a order é cancelada através da API, com o valor \"cancelled_by_api\", ou quando uma tentativa de cancelamento falha.",
+                                "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la order se cancela por medio de la API, con el valor \"cancelled_by_api\", o cuando un intento de cancelación falla."
+                              }
+                            },
+                            "reference_id": {
+                              "type": "string",
+                              "example": "12345678",
+                              "description": {
+                                "pt": "Identificador do pagamento associado à order.",
+                                "en": "ID of the payment associated with the order.",
+                                "es": "Identificador del pago asociado a la order."
+                              }
+                            },
+                            "source": {
+                              "type": "string",
+                              "example": "payments",
+                              "description": {
+                                "pt": "Valor do pagamento.",
+                                "en": "Payment amount.",
+                                "es": "Origen del pago"
+                              }
                             },
                             "payment_method": {
                               "$ref": "#/components/schemas/payment_method"    
