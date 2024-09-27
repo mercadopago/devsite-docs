@@ -48,7 +48,7 @@ Si la devolución es mayor que el monto que te falta recibir, no te preocupes, e
 
 ## Contracargos
 
-Cuando un [contracargo](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/es/guides/additional-content/account/chargebacks) o una mediación se resuelve a favor del comprador puedes encontrar el detalle en el reporte. Aparecerá el listado con el detalle de todas las cuotas, o las que falten liberar, y el monto total por el contracargo del pago.
+Cuando un contracargo o una mediación se resuelve a favor del comprador puedes encontrar el detalle en el reporte. Aparecerá el listado con el detalle de todas las cuotas, o las que falten liberar, y el monto total por el contracargo del pago.
 
 Para identificar este caso, puedes ver en la columna de `DESCRIPTION` el valor `chargeback` que corresponde a los contracargos de las cuotas que ya habían sido cobradas.
 

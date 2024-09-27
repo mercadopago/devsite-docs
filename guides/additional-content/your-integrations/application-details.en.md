@@ -48,7 +48,7 @@ This way, the application will be successfully deleted.
 
 ## Application quality measurement
 
-The [quality measurement](/developers/en/guides/additional-content/homologator/homologator) is the final stage of the integration process, where you can validate whether it meets the necessary quality and security requirements to provide the best experience for both sellers and buyers.
+The [quality measurement](/developers/en/docs/integration-quality) is the final stage of the integration process, where you can validate whether it meets the necessary quality and security requirements to provide the best experience for both sellers and buyers.
 
 There are two ways to measure the quality of your integration:
  * **Manual:** you can conduct the measurement on your own whenever you prefer. You only need a `payment ID` from a payment made with production credentials and access **“Integration Quality"** in the side menu, where you can find the step-by-step instructions.
