@@ -392,63 +392,13 @@
                             "es": "Si se indica el campo URL, el campo FIXED_AMOUNT debe ser verdadero. No soportamos la modalidad de monto abierto en este caso.",
                             "pt": "Se o campo URL estiver indicado, o campo FIXED_AMOUNT deve ser verdadeiro. Não suportamos a modalidade de valor aberto nesse caso."
                           }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
+                        },
                         {
-                          "title": "1",
+                          "title": "non_existent_external_store_id",
                           "description": {
-                            "en": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.",
-                            "es": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor.",
-                            "pt": "If you are using the URL field, the host must be enabled by Mercado Pago. If it is not, you will receive this error. Please contact your assigned technical advisor."
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "404": {
-            "description": {
-              "en": "Error",
-              "pt": "Erro",
-              "es": "Error"
-            },
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "errorKey": {
-                      "type": "string",
-                      "enum": [
-                        {
-                          "title": "1",
-                          "description": {
-                            "en": "If the point of sale does not exist for an indicated ID or EXTERNAL_ID and user.",
-                            "pt": "Se o ponto de venda não existir para o ID ou EXTERNAL_ID indicado e para o usuário.",
-                            "es": "Si el punto de venta no existe para el ID o EXTERNAL_ID indicado y para el usuario."
+                            "en": "External Store ID does not refer any store.",
+                            "es": "El External Store ID no se refiere a ninguna tienda.",
+                            "pt": "O External Store ID não se refere a nenhuma loja."
                           }
                         }
                       ]
@@ -473,7 +423,7 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "1",
+                          "title": "point_of_sale_exists",
                           "description": {
                             "en": "A point of sale with the same EXTERNAL_ID already exists.",
                             "pt": "Já existe um ponto de venda com o mesmo EXTERNAL_ID.",

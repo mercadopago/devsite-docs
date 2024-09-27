@@ -641,7 +641,7 @@ A continuación puedes ver todos los estados por los que puede pasar una transac
 
 | `status` | `status_detail` | Descripción |
 |---|---|---|
-| `approved` | `approved` | El procesamiento de la transacción se realizó de manera exitosa. |
+| `processed` | `approved` | El procesamiento de la transacción se realizó de manera exitosa. |
 | `approved` | `partially_refunded` | La transacción fue reembolsada parcialmente por el banco de destino. |
 | `transaction_in_process` | `pending_authorized` | La transacción está en proceso, pendiente de estado final, y aguarda autorización. |
 | `transaction_in_process` | `pending_bank` | El banco destino no dio respuesta, por lo que la transacción está pendiente de estado final. |
