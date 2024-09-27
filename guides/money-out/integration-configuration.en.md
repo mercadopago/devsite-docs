@@ -639,7 +639,7 @@ Below, you can see all the possible status a transaction can go through during i
 
 | `status` | `status_detail` | Description |
 |---|---|---|
-| `approved` | `approved` | The transaction processing was successful. |
+| `processed` | `approved` | The transaction processing was successful. |
 | `approved` | `partially_refunded` | The transaction was partially refunded by the destination bank. |
 | `transaction_in_process` | `pending_authorized` | The transaction is in process, awaiting final status, and awaits authorization. |
 | `transaction_in_process` | `pending_bank` | The destination bank did not respond, so the transaction is pending final status. |

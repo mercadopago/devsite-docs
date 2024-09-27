@@ -65,7 +65,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 }'
 ```
 
-Ao finalizar essas etapas, a integração do checkout com o _marketplace_ estará concluída e pronta para processar os pagamentos.
+Ao finalizar essas etapas, a integração do checkout com o _marketplace_ estará concluída e pronta para processar os pagamentos. Tenha em mente que a solução Split de pagamentos permite a realização de pagamentos com saldo disponível entre contas Mercado Pago. Não são permitidas transferências de instituições financeiras externas.
 
 > WARNING
 >

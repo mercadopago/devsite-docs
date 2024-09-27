@@ -6,7 +6,7 @@ La activación de estos tópicos dependerá de la solución de Mercado Pago que 
 
 | Eventos | Nombre en Tus integraciones | Tópico | Productos asociados |
 |---|---|---|---|
-| Creación y actualización de pagos | Pagos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
+| Creación y actualización de pagos | Pagos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----Mercado Pago Point (solo para IPN)------------<br>Wallet Connect |
 | Pago recurrente de una suscripción (creación y actualización) | Planes y suscripciones | `subscription_authorized_payment` | Suscripciones |
 | Vinculación de una suscripción (creación y actualización) | Planes y suscripciones | `subscription_preapproval` | Suscripciones |
 | Vinculación de un plan de suscripción (creación y actualización) | Planes y suscripciones | `subscription_preapproval_plan` | Suscripciones |
