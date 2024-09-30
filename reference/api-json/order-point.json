@@ -697,9 +697,9 @@
                                 "type": "string",
                                 "example": "payments",
                                 "description": {
-                                  "pt": "Valor do pagamento.",
-                                  "en": "Payment amount.",
-                                  "es": "Origen del pago"
+                                  "pt": "Entidade que processou o pagamento. O único valor que será retornado neste campo é \"payments\".",
+                                  "en": "Entity that processed the payment. The only value that will be returned in this field is \"payments\".",
+                                  "es": "Entidad que procesó el pago. El único valor que será devuelto en este campo es \"payments\". "
                                 }
                               },
                               "payment_method": {
@@ -717,9 +717,9 @@
           },
           "400": {
             "description": {
-              "en": "Error. Invalid ID supplied",
+              "en": "Error. Invalid ID supplied.",
               "pt": "Erro. ID inválido.",
-              "es": "Parametros invalidos."
+              "es": "Error. ID inválido."
             },
             "content":{
               "application/json":{
