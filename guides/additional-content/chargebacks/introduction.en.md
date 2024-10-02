@@ -7,7 +7,7 @@ This documentation will provide all the necessary information for managing and p
 A chargeback is generated when a **customer does not recognize the charge on their debit or credit card.**
 
 When this happens, the amount paid is withheld until the problem is resolved with the card-issuing institution. 
-
+----[mlb]----
 [Click here](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/Como-protegemos-os-vendedores_500) for more details on how we protect our sellers.
 
 > NOTE
@@ -15,3 +15,15 @@ When this happens, the amount paid is withheld until the problem is resolved wit
 > Important
 >
 > For more information on what to do when you receive a chargeback, see [our help page](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/reclamacao-comprador_583).
+
+------------
+----[mla, mlu, mco, mpe, mlc, mlm]----
+[Click here](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Como-protegemos-a-los-vendedores_500) for more details on how we protect our sellers.
+
+> NOTE
+>
+> Important
+>
+> For more information on what to do when you receive a chargeback, see [our help page](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/reclamo-comprador_583).
+
+------------

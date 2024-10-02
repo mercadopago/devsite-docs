@@ -1110,9 +1110,9 @@
                                             "type": "string",
                                             "example": "Point Mini a maquininha que dá o dinheiro de suas vendas na hora.",
                                             "description": {
-                                                "en": "Description sent in the payment creation request. Ex. - In a pix payment, the description is “Payment of Credit Market installments”. In another cases, such as a purchase in a physical store where the customer uses the machine to pay, we can find the description “Sale in person”. In marketplace purchases, the purchase description usually corresponds to a purchased product - “Pendrive Multilaser Twist Pd590 64gb 2.0 Black And Silver + 1 product”.",
-                                                "pt": "Descrição enviada na solicitação de criação de pagamento. Por exemplo - Em um pagamento pix, há a descrição “Pagamento de parcelas de Mercado Crédito”. Em outro caso, uma compra em loja física onde o cliente utiliza a maquininha para pagar, podemos encontrar a descrição - “Venda presencial”. Já em compras do marketplace, a descrição da compra geralmente corresponde a um produto comprado - “  Pendrive Multilaser Twist Pd590 64gb 2.0 Preto E Prateado + 1 produto”.",
-                                                "es": "Descripción enviada en el request de creación de pago. Por ejemplo - En un pago con pix, se encuentra la descripción “Pago de cuotas Mercado Crédito”. En otro caso, una compra en una tienda física donde el cliente utiliza la máquina para pagar, podemos encontrar la descripción “Venta en persona”. En las compras en marketplace, la descripción de compra suele corresponder a un producto comprado - “Pendrive Multilaser Twist Pd590 64gb 2.0 Negro Y Plata + 1 producto”."
+                                                "en": "Description sent in the payment creation request. Ex. - In a pix payment, the description is “Payment of Installments without card”. In another cases, such as a purchase in a physical store where the customer uses the machine to pay, we can find the description “Sale in person”. In marketplace purchases, the purchase description usually corresponds to a purchased product - “Pendrive Multilaser Twist Pd590 64gb 2.0 Black And Silver + 1 product”.",
+                                                "pt": "Descrição enviada na solicitação de criação de pagamento. Por exemplo - Em um pagamento pix, há a descrição “Pagamento de parcelas de Linha de Crédito”. Em outro caso, uma compra em loja física onde o cliente utiliza a maquininha para pagar, podemos encontrar a descrição - “Venda presencial”. Já em compras do marketplace, a descrição da compra geralmente corresponde a um produto comprado - “  Pendrive Multilaser Twist Pd590 64gb 2.0 Preto E Prateado + 1 produto”.",
+                                                "es": "Descripción enviada en el request de creación de pago. Por ejemplo - En un pago con pix, se encuentra la descripción “Pagos sin Tarjeta”. En otro caso, una compra en una tienda física donde el cliente utiliza la máquina para pagar, podemos encontrar la descripción “Venta en persona”. En las compras en marketplace, la descripción de compra suele corresponder a un producto comprado - “Pendrive Multilaser Twist Pd590 64gb 2.0 Negro Y Plata + 1 producto”."
                                             }
                                         },
                                         "live_mode": {
@@ -3122,9 +3122,9 @@
                                             "type": "string",
                                             "example": "Pago Pizza",
                                             "description": {
-                                                "en": "Description sent in the payment creation request. Ex. - In a pix payment, the description is “Payment of Credit Market installments”. In another cases, such as a purchase in a physical store where the customer uses the machine to pay, we can find the description “Sale in person”. In marketplace purchases, the purchase description usually corresponds to a purchased product - “Pendrive Multilaser Twist Pd590 64gb 2.0 Black And Silver + 1 product”.",
-                                                "pt": "Descrição enviada na solicitação de criação de pagamento. Por exemplo - Em um pagamento pix, há a descrição “Pagamento de parcelas de Mercado Crédito”. Em outro caso, uma compra em loja física onde o cliente utiliza a maquininha para pagar, podemos encontrar a descrição - “Venda presencial”. Já em compras do marketplace, a descrição da compra geralmente corresponde a um produto comprado - “\tPendrive Multilaser Twist Pd590 64gb 2.0 Preto E Prateado + 1 produto”.",
-                                                "es": "Descripción enviada en el request de creación de pago. Por ejemplo - En un pago con pix, se encuentra la descripción “Pago de cuotas Mercado Crédito”. En otro caso, una compra en una tienda física donde el cliente utiliza la máquina para pagar, podemos encontrar la descripción “Venta en persona”. En las compras en marketplace, la descripción de compra suele corresponder a un producto comprado - “Pendrive Multilaser Twist Pd590 64gb 2.0 Negro Y Plata + 1 producto”."
+                                                "en": "Description sent in the payment creation request. Ex. - In a pix payment, the description is “Payment of Installments without card”. In another cases, such as a purchase in a physical store where the customer uses the machine to pay, we can find the description “Sale in person”. In marketplace purchases, the purchase description usually corresponds to a purchased product - “Pendrive Multilaser Twist Pd590 64gb 2.0 Black And Silver + 1 product”.",
+                                                "pt": "Descrição enviada na solicitação de criação de pagamento. Por exemplo - Em um pagamento pix, há a descrição “Pagamento de parcelas de Linha de Crédito”. Em outro caso, uma compra em loja física onde o cliente utiliza a maquininha para pagar, podemos encontrar a descrição - “Venda presencial”. Já em compras do marketplace, a descrição da compra geralmente corresponde a um produto comprado - “\tPendrive Multilaser Twist Pd590 64gb 2.0 Preto E Prateado + 1 produto”.",
+                                                "es": "Descripción enviada en el request de creación de pago. Por ejemplo - En un pago con pix, se encuentra la descripción “Pagos sin Tarjeta”. En otro caso, una compra en una tienda física donde el cliente utiliza la máquina para pagar, podemos encontrar la descripción “Venta en persona”. En las compras en marketplace, la descripción de compra suele corresponder a un producto comprado - “Pendrive Multilaser Twist Pd590 64gb 2.0 Negro Y Plata + 1 producto”."
                                             }
                                         },
                                         "live_mode": {
@@ -7318,9 +7318,9 @@
                     {
                         "title": "digital_currency",
                         "description": {
-                            "en": "Purchases with Mercado Crédito.",
-                            "es": "Purchases with Mercado Crédito.",
-                            "pt": "Purchases with Mercado Crédito."
+                            "en": "Purchases with Installments without card.",
+                            "es": "Purchases with Pagos sin Tarjeta.",
+                            "pt": "Purchases with Linha de Crédito."
                         }
                     },
                     {

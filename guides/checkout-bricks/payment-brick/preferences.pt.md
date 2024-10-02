@@ -267,8 +267,12 @@ Para ativar essa opção de pagamento, acesse "[Opcões de negócio](https://www
 
 ## Aceite pagamentos somente de usuários cadastrados
 
-----[mla, mlb]----
-Você pode aceitar pagamentos com a carteira do Mercado Pago apenas de usuários cadastrados, com cartão, saldo disponível e Mercado Crédito.
+----[mla]----
+Você pode aceitar pagamentos com a carteira do Mercado Pago apenas de usuários cadastrados, com cartão, saldo disponível e Cuotas sin Tarjeta.
+
+------------
+----[mlb]----
+Você pode aceitar pagamentos com a carteira do Mercado Pago apenas de usuários cadastrados, com cartão, saldo disponível e Linha de Crédito.
 
 ------------
 ----[mlm, mlc, mco, mpe, mlu]----

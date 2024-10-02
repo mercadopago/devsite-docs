@@ -34,7 +34,7 @@ Configure notificações para cada aplicação diretamente em [Suas integraçõe
 >
 > Importante
 >
-> Este método de configuração não está disponível para integrações com----[mla, mlb, mlc, mlu]----Código QR e nem------------Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
+> Este método de configuração não está disponível para integrações com----[mla, mlb, mlc, mlu]---- Código QR e nem------------ Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
 
 
 ### 1. Indicar URLs e configurar eventos
@@ -60,7 +60,7 @@ Para isso, siga as etapas descritas abaixo.
 
 | Eventos | Nome em Suas integrações | Tópico | Produtos associados |
 |---|---|---|---|
-| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
+| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
 | Pagamento recorrente de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_authorized_payment` | Assinaturas |
 | Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
 | Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |

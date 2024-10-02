@@ -436,9 +436,9 @@
                   "external_reference": {
                     "type": "string",
                     "description": {
-                      "es": "Custom order ID you can synchronize with your sale system.",
-                      "pt": "Custom order ID you can synchronize with your sale system.",
-                      "en": "Custom order ID you can synchronize with your sale system."
+                      "es": "ID de pedido personalizado que puedes sincronizar con tu sistema de ventas. Importante: Este campo debe tener un máximo de 64 caracteres y solo debe contener números, letras, guiones (-) y guiones bajos (_). No se permiten caracteres especiales como ([ ], (), '', @).",
+                      "pt": "ID de pedido personalizado que você pode sincronizar com seu sistema de vendas. Importante: Este campo deve ter no máximo 64 caracteres e deve conter apenas números, letras, hífens (-) e sublinhados (_). Caracteres especiais como ([ ], (), '', @) não são permitidos.",
+                      "en": "Custom order ID you can synchronize with your sale system. Important: This field must be a maximum of 64 characters and may only contain numbers, letters, hyphens (-), and underscores (_). Special characters such as ([ ], (), '', @) are not allowed."
                     },
                     "example": "12345"
                   },

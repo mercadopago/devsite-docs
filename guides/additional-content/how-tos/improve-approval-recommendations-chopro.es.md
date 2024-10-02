@@ -205,7 +205,7 @@ Por último, envía la información en el campo `device` al crear el `card_token
 ## Detalla toda la información sobre el pago
 
 Para optimizar la validación de la seguridad de los pagos y mejorar sus aprobaciones, es valioso enviar la mayor cantidad posible de **datos del comprador y del ítem**.
-Puedes ver todos los atributos disponibles al crear un pago usando el método [Crear pago](/developers/es/reference/payments/_payments/post). Presta especial atención a los atributos del nodo `adicional_inf`, particularmente a:
+Puedes ver todos los atributos disponibles al crear un pago usando el método [Crear pago](/developers/es/reference/payments/_payments/post). Presta especial atención a los atributos del nodo `additional_info`, particularmente a:
  * Datos del comprador,
  * Datos del producto,
  * Datos del envío.

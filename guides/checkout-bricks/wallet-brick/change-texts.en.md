@@ -41,11 +41,11 @@ See the texts related to each option:
 |actionComplement |brand | with Mercado Pago |
 |actionComplement |amount | Purchase amount obtained through preference, in the currency format of the payment.  |
 |valueProp |practicality | Use saved cards or your account balance |
-|valueProp |convenience_all | Installment with or without card |
+|valueProp |convenience_all | Installment with credit card or Installments without credit card of Mercado Pago |
 |valueProp |security_details | Protection for your data |
 |valueProp |security_safety | Pay securely |
 |valueProp |smart_option| The text will be chosen automatically by Wallet Brick to increase the chances of sale according to the characteristics of the purchase. |
-|valueProp |convenience_credits* | Up to 12 installments without card |
+|valueProp |convenience_credits* | Up to 12 Installments without Card |
 |valueProp |payment_methods_logos** | The logos of the available payment methods will be displayed. To configure the payment methods, use the preference. |
 
 ------------

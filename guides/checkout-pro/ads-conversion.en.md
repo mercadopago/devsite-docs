@@ -2,13 +2,21 @@
 
 The ads conversion analysis makes it possible to evaluate the relevance and return of the created ads. Therefore, Checkout Pro offers integration with Facebook Ads and Google Ads platforms, allowing you to associate payments with business campaigns.
 
-----[mla, mlb]----
+----[mla]----
 
 > NOTE
 >
 > Important
 >
-> Only payments approved instantly with credit and debit cards, cash in Mercado Pago or Mercado Créditos will be associated.
+> Only payments approved instantly with credit and debit cards, cash in Mercado Pago or Cuotas sin Tarjeta will be associated.
+------------
+----[mlb]----
+
+> NOTE
+>
+> Important
+>
+> Only payments approved instantly with credit and debit cards, cash in Mercado Pago or Linha de Crédito will be associated.
 ------------
 
 

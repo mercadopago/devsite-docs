@@ -22,7 +22,7 @@ Para atualizar seu plugin instalando a nova versão, basta seguir os passos de i
 | Parcelas **com** acréscim                   | ✅           | ✅             |
 | Secure Fields / PCI                         | ✅           | ✅             |
 | Parcelas **sem** acréscimos                 | ✅           | ✅             |
-| Buy Now Pay Later - Mercado Crédito         | ✅           | ❌             |
+| Buy Now Pay Later - ----[mlb]---- Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------         | ✅           | ❌             |
 | Pagamentos com 2 cartões                    | ✅           | ❌             |
 | Reembolsos diretamente através da plataforma| ✅           | ❌             |
 | Data de vencimento em meios offline         | ✅           | ❌             |

@@ -208,7 +208,7 @@ Finally, send the information in the `device` field when creating the `card_toke
 ## Detail all information about the payment
 
 To optimize payment security validation and improve approvals, it is important to **submit as much buyer and item data as possible**.
-You can check all the available attributes when creating a payment by using the [Create payment](/developers/en/reference/payments/_payments/post) method. Pay special attention to the attributes present in `adicional_inf`, such as:
+You can check all the available attributes when creating a payment by using the [Create payment](/developers/en/reference/payments/_payments/post) method. Pay special attention to the attributes present in `additional_info`, such as:
  * Buyer’s data,
  * Product data,
  * Shipping data.

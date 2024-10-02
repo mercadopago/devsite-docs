@@ -59,11 +59,21 @@ bullet_section_with_media:
  - benefit_message: Estamos em conformidade com o padrão global de proteção de informações confidenciais de cartões e contamos com Secure Fields para facilitar a obtenção da certificação para sua loja.
  - benefit_title: Garanta segurança em suas transações de alto risco com o 3DS (3-Domain Secure) 
  - benefit_message: Com o 3DS, fazemos uma verificação de identidade discreta, a partir de um modal sem sair da loja, oferecendo benefícios como maior chance de aprovação e menor risco de fraude.
-  - benefit_title: Compatível com o WooCommerce Blocks
+ - benefit_title: Compatível com o WooCommerce Blocks
  - benefit_message: Nosso plugin é compatível com o WooCommerce Blocks, que permite customizar o seu e-commerce e deixar seus produtos ainda mais acessíveis para seus clientes. 
- ----[mlm, mlb, mla]----
+ ----[mlm]----
  - benefit_title: Parcelamento sem cartão
- - benefit_message: Ao ativar o Mercado Crédito no checkout, você atinge mais de 12 milhões de pessoas com crédito ativo, sem custos extras, além de obter uma taxa de aprovação de cerca de 98% nas vendas.
+ - benefit_message: Ao ativar o Meses sin Tarjeta no checkout, você atinge mais de 12 milhões de pessoas com crédito ativo, sem custos extras, além de obter uma taxa de aprovação de cerca de 98% nas vendas.
+
+ ------------
+ ----[mlb]----
+ - benefit_title: Parcelamento sem cartão
+ - benefit_message: Ao ativar o Linha de Crédito no checkout, você atinge mais de 12 milhões de pessoas com crédito ativo, sem custos extras, além de obter uma taxa de aprovação de cerca de 98% nas vendas.
+
+ ------------
+  ----[mla]----
+ - benefit_title: Parcelamento sem cartão
+ - benefit_message: Ao ativar o Cuotas sin Tarjeta no checkout, você atinge mais de 12 milhões de pessoas com crédito ativo, sem custos extras, além de obter uma taxa de aprovação de cerca de 98% nas vendas.
 
  ------------
  - image: /woocomerce/landing-woo-advantages.png
@@ -76,7 +86,7 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, moneda, mercadocredito
+available_payments: credit, debit, mercadopago, boleto, pix, moneda, cuotas_sin_tarjeta
 
 ---
 ------------
@@ -84,7 +94,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, moneda, mercadocred
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm, mercadocredito
+available_payments: credit, debit, mercadopago, efectivo, atm, cuotas_sin_tarjeta
 
 ----
 ------------
@@ -92,7 +102,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm, mercadocredito
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm, moneda, mercadocredito
+available_payments: credit, debit, mercadopago, efectivo, atm, moneda, cuotas_sin_tarjeta_mlm
 
 ----
 ------------

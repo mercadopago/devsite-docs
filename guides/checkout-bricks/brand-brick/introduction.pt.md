@@ -26,4 +26,4 @@ Nele são permitidas diversas [customizações visuais](/developers/pt/docs/chec
 >
 > Ao integrar o Brick, certifique-se que não haja elementos que possam interferir com o pop-up.
 
-![brand-brick-pt](checkout-bricks/brand-brick-pt.gif)
+![brand-brick-en](checkout-bricks/brick-brand-pt.gif)
