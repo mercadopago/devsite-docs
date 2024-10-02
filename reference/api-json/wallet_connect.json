@@ -409,7 +409,7 @@
         "operationId": "cancelAgreement_DELETE",
         "parameters": [
           {
-            "name": "agreementId",
+            "name": "agreement_id",
             "in": "path",
             "description": {
               "en": "Unique ID that identifies an agreement.",
@@ -565,7 +565,7 @@
         "operationId": "getAgreement_GET",
         "parameters": [
           {
-            "name": "agreementId",
+            "name": "agreement_id",
             "in": "path",
             "description": {
               "en": "Unique ID that identifies an agreement.",

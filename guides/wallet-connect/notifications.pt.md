@@ -33,7 +33,7 @@ Existem três tipos diferentes de eventos que permitem o recebimento de notifica
 
 A partir deste evento, o integrador é notificado quando um usuário confirma a vinculação. 
 
-Para isso, envie um **GET** ao endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/pt/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) para obter o `agreement_code` e `external_flow_id`. Isso permitirá seguir com a criação do _token_ de pagamento para a criação dos pagamentos.
+Para isso, envie um **GET** ao endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/pt/reference/wallet_connect/_wallet_connect_agreements/get) para obter o `agreement_code` e `external_flow_id`. Isso permitirá seguir com a criação do _token_ de pagamento para a criação dos pagamentos.
 
 Veja abaixo um exemplo de código com as informações enviadas no momento da requisição.
 

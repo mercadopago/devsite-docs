@@ -33,7 +33,7 @@ There are three different types of events that allow you to receive notification
 
 From this event, the integrator is notified when a user confirms the agreement.
 
-For this, send a **GET** request to the endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/en/reference/wallet_connect/_wallet_connect_agreements_agreement_id/get) to obtain the `agreement_code` and `external_flow_id`. This will allow to proceed with the creation of the Payer token for payment creation.
+For this, send a **GET** request to the endpoint [/v2/wallet_connect/agreements/{agreement_id}](/developers/en/reference/wallet_connect/_wallet_connect_agreements/get) to obtain the `agreement_code` and `external_flow_id`. This will allow to proceed with the creation of the Payer token for payment creation.
 
 See below an example of the code with the information sent at the time of the request.
 
