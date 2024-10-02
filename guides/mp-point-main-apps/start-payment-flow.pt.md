@@ -97,7 +97,7 @@ paymentFlow.launchPaymentFlowActivity(paymentFlowData, context, callback);
 |**launchPaymentFlowActivity**| Esse método inicia o fluxo de pagamento usando o aplicativo SmartPOS.|
 |**paymentFlowData (PaymentFlowData)**| Modelo de dados necessário para a abertura do fluxo.|
 |**context (Context)**| Contexto de onde será iniciado o fluxo.|
-|**allback (MPResponse&lt;String&gt; -> Unit)**| Proporciona o resultado da abertura do fluxo de pagamento.|
+|**Callback (MPResponse&lt;String&gt; -> Unit)**| Proporciona o resultado da abertura do fluxo de pagamento.|
 
 ## Construir uma URI para abertura do fluxo de pagamento
 

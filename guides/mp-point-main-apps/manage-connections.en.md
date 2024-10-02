@@ -87,7 +87,7 @@ bluetoothDiscoverDevices.getPairedPrinterDevices(callback);
 |**id (String)**| Unique identifier of the bluetooth device.|
 |**boundState (Int)**| Pairing status of the device. It can have different values representing different status.|
 |**name (String)**| Name of the device provided by the operational system.|
-|**address (String)**| MAC address of the bluetooth device.|`
+|**address (String)**| MAC address of the bluetooth device.|
 |**isConnected (Boolean)**| Indicates if the device is connected. In a positive case, the answer is `true`; if disconnected, it appears as `false`.|
 
 ## Start search
@@ -158,5 +158,5 @@ bluetoothDiscoverDevices.startDiscovery(callback);
 |**id (String)**| Unique identifier of the bluetooth device.|
 |**boundState (Int)**| Pairing status of the device. It can have different values representing different status.|
 |**name (String)**| Name of the device provided by the operational system.|
-|**address (String)**| MAC address of the bluetooth device.|`
+|**address (String)**| MAC address of the bluetooth device.|
 |**isConnected (Boolean)**| Indicates if the device is connected. In a positive case, the answer is `true`; if disconnected, it appears as `false`.|

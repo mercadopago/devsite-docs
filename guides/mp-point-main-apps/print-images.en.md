@@ -35,4 +35,4 @@ bitmapPrinter.print(imageToPrint, callback);
 |Field|Description|
 |---|---|
 |**dataToPrint (Bitmap)**| The bitmap image that will be printed.|
-|**PaymentResponse**| Request response feature that provides the result of the printing operation. The `[MPResponse]` includes the status, the error (if any), and the details in case of success, which contain a String representing the ID or status of the printing.|
+|**callback ((MPResponse&lt;String&gt;) -> Unit)**| Request response feature that provides the result of the printing operation. The `[MPResponse]` includes the status, the error (if any), and the details in case of success, which contain a String representing the ID or status of the printing.|

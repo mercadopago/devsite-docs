@@ -4,7 +4,7 @@ En nuestro SDK, puedes buscar impresoras y otros dispositivos bluetooth, además
 
 ## Obtener dispositivos emparejados
 
-La obtención de la lista de dispositivos emparejados con el [Point Smart](/developers/es/docs/mp-point/landing) se hace usando la función `getPairedDevices`, de la clase `luetoothDiscoverDevices`. Consulta a continuación cómo acceder a ella a través del objeto `MPManager`.
+La obtención de la lista de dispositivos emparejados con el [Point Smart](/developers/es/docs/mp-point/landing) se hace usando la función `getPairedDevices`, de la clase `BluetoothDiscoverDevices`. Consulta a continuación cómo acceder a ella a través del objeto `MPManager`.
 
 [[[
 ```kotlin
@@ -87,7 +87,7 @@ bluetoothDiscoverDevices.getPairedPrinterDevices(callback);
 |**id (String)**| Identificador único del dispositivo bluetooth.|
 |**boundState (Int)**| Estado de emparejamiento del dispositivo. Puede tener diferentes valores representando estados distintos.|
 |**name (String)**| Nombre del dispositivo ofrecido por el sistema operacional.|
-|**address (String)**| Dirección MAC del dispositivo bluetooth.|`
+|**address (String)**| Dirección MAC del dispositivo bluetooth.|
 |**isConnected (Boolean)**| Indica si el dispositivo está conectado. En caso de ser positivo, la respuesta es `true`. Si está desconectado, aparece como `false`.|
 
 ## Iniciar búsqueda
@@ -158,5 +158,5 @@ bluetoothDiscoverDevices.startDiscovery(callback);
 |**id (String)**| Identificador único del dispositivo bluetooth.|
 |**boundState (Int)**| Estado de emparejamiento del dispositivo. Puede tener diferentes valores representando estados distintos.|
 |**name (String)**| Nombre del dispositivo ofrecido por el sistema operacional.|
-|**address (String)**| Dirección MAC del dispositivo bluetooth.|`
+|**address (String)**| Dirección MAC del dispositivo bluetooth.|
 |**isConnected (Boolean)**| Indica si el dispositivo está conectado. En caso de ser positivo, la respuesta es `true`. Si está desconectado, aparece como `false`.|

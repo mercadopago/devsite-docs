@@ -101,7 +101,7 @@ paymentFlow.launchPaymentFlowActivity(paymentFlowData, context, callback);
 
 ## Construir una URI para apertura del flujo de pago
 
-La función `buildCallbackUri` está diseñada para construir una URI válida que permita abrir una actividad específica, con base en la estrategia del _deeplink_. Para acceder a ella, usa la función PaymentFlow a través del objeto `MPManager`.
+La función `buildCallbackUri` está diseñada para construir una URI válida que permita abrir una actividad específica, con base en la estrategia del _deeplink_. Para acceder a ella, usa la función `PaymentFlow` a través del objeto `MPManager`.
 
 > WARNING
 >

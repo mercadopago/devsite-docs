@@ -4,7 +4,7 @@ Consulta cómo activar, desactivar y validar el estado actual del bluetooth usan
 
 ## Activar el bluetooth
 
-Para activar el bluetooth en el lector [Smart](/developers/es/docs/mp-point/landing), usa la función turnOn de la clase `BluetoothIgnitor` en nuestro SDK. Puedes acceder a esta función a través del objeto MPManager, como en el ejemplo a continuación.
+Para activar el bluetooth en el lector [Smart](/developers/es/docs/mp-point/landing), usa la función `turnOn` de la clase `BluetoothIgnitor` en nuestro SDK. Puedes acceder a esta función a través del objeto `MPManager`, como en el ejemplo a continuación.
 
 [[[
 ```kotlin

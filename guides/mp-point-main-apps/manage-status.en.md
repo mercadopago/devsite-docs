@@ -4,7 +4,7 @@ Check how to activate, deactivate and validate the current status of the bluetoo
 
 ## Activate bluetooth
 
-To activate the bluetooth on the [Smart POS](/developers/en/docs/mp-point/landing) machine, use the turnOn feature of the `BluetoothIgnitor` class on our SDK. You can access that feature through the MPManager object, as in the example below.
+To activate the bluetooth on the [Smart POS](/developers/en/docs/mp-point/landing) machine, use the `turnOn` feature of the `BluetoothIgnitor` class on our SDK. You can access that feature through the `MPManager` object, as in the example below.
 
 [[[
 ```kotlin

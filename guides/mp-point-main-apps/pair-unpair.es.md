@@ -4,7 +4,7 @@ En esta sección, comprenderás cómo emparejar y desemparejar dispositivos con 
 
 ## Emparejar un dispositivo
 
-Usa la función `pairDevice` de la clase `BluetoothDevicesPairing` para emparejar un dispositivo con el [Point Smart](/developers/es/docs/mp-point/landing) enviando solo la dirección (`(address)`). El acceso se hace a través del objeto `MPManager`, como se muestra a continuación.
+Usa la función `pairDevice` de la clase `BluetoothDevicesPairing` para emparejar un dispositivo con el [Point Smart](/developers/es/docs/mp-point/landing) enviando solo la dirección `(address)`. El acceso se hace a través del objeto `MPManager`, como se muestra a continuación.
 
 [[[
 ```kotlin
@@ -42,7 +42,7 @@ bluetoothPairing.pairDevice(address, callback);
 
 ## Desemparejar un dispositivo
 
-Para desemparejar un dispositivo, usa la función `unPairDevice` de la clase `BluetoothDevicesPairing` accediendo a través del objeto `MPManager`. Esta función usa como parámetro la dirección (`(address)`) del dispositivo seleccionado, como se muestra a continuación.
+Para desemparejar un dispositivo, usa la función `unPairDevice` de la clase `BluetoothDevicesPairing` accediendo a través del objeto `MPManager`. Esta función usa como parámetro la dirección `(address)` del dispositivo seleccionado, como se muestra a continuación.
 
 [[[
 ```kotlin
@@ -83,7 +83,7 @@ bluetoothPairing.unPairDevice(address, callback);
 |Campo|Descripción|
 |---|---|
 |**address (String)**| Ubicación del dispositivo seleccionado, obtenida a través de `[BluetoothDeviceModel]`.|
-|**callback ((MPResponse<Pair<BluetoothBondState, BluetoothDeviceModel>>) -> Unit)**| Función de devolución del llamado que ofrece el resultado del proceso de emparejamiento. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, que tiene un `(Pair)` compuesto por `[BluetoothBondState]` y `[BluetoothDeviceModel]`.|
+|**callback ((MPResponse&lt;Pair&lt;BluetoothBondState, BluetoothDeviceModel&gt;&gt;) -> Unit)**| Función de devolución del llamado que ofrece el resultado del proceso de emparejamiento. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, que tiene un `(Pair)` compuesto por `[BluetoothBondState]` y `[BluetoothDeviceModel]`.|
 |**NONE (BOND_NONE)**| Indica que el dispositivo no está emparejado.|
 |**BONDING (BOND_BONDING)**| Indica que el dispositivo está en proceso de emparejamiento.|
 |**BONDED (BOND_BONDED)**| Indica que o dispositivo está emparejado.|

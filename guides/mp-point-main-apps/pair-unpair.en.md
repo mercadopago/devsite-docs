@@ -4,7 +4,7 @@ In this section, you’ll learn how to pair and unpair devices with a [Point Sma
 
 ## Pair a device
 
-Use the `pairDevice` feature from the `BluetoothDevicesPairing` class to pair a device with Point Smart by sending only the (`(address)`). The access is through the  `MPManager` object, as shown below.
+Use the `pairDevice` feature from the `BluetoothDevicesPairing` class to pair a device with Point Smart by sending only the `(address)`. The access is through the  `MPManager` object, as shown below.
 
 [[[
 ```kotlin
@@ -83,7 +83,7 @@ bluetoothPairing.unPairDevice(address, callback);
 |Field|Description|
 |---|---|
 |**address (String)**| Location of the selected device, obtained through `[BluetoothDeviceModel]`.|
-|**callback ((MPResponse<Pair<BluetoothBondState, BluetoothDeviceModel>>) -> Unit)**| Request response feature that provides the result of the pairing process. The [MPResponse] includes the status, the error (if any), and the details in case of success, which contain a `(Pair)` that comprises `[BluetoothBondState]` and [BluetoothDeviceModel].|
+|**callback ((MPResponse&lt;Pair&lt;BluetoothBondState, BluetoothDeviceModel&gt;&gt;) -> Unit)**| Request response feature that provides the result of the pairing process. The [MPResponse] includes the status, the error (if any), and the details in case of success, which contain a `(Pair)` that comprises `[BluetoothBondState]` and [BluetoothDeviceModel].|
 |**NONE (BOND_NONE)**| Indicates that the device isn’t paired.|
 |**BONDING (BOND_BONDING)**| Indicates that the device is in pairing process. |
 |**BONDED (BOND_BONDED)**| Indicates that the device is paired.|

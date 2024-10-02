@@ -1,6 +1,6 @@
 # Imprimir imágenes
 
-To print bitmap images with the [Point Smart](/developers/es/docs/mp-point/landing) printer, use the print feature of the `BitmapPrinter` class. The access is through the `MPManager` object, as in the example below:
+Para imprimir imagens en bitmap con la impresora de [Point Smart](/developers/es/docs/mp-point/landing), usa la **función print** de la clase `BitmapPrinter`. El acceso se da a través del objeto `MPManager`, como en el ejemplo a continuación:
 
 [[[
 ```kotlin
@@ -35,4 +35,4 @@ bitmapPrinter.print(imageToPrint, callback);
 |Campo|Descripción|
 |---|---|
 |**dataToPrint (Bitmap)**| La imagen bitmap que se imprimirá.|
-|**PaymentResponse**| Función de devolución del llamado que ofrece la operación de impresión. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, que tiene un **String** representando el ID o estado de la impresión.|
+|**callback ((MPResponse&lt;String&gt;) -> Unit)**| Función de devolución del llamado que ofrece la operación de impresión. El `[MPResponse]` encapsula el estado, el error (si lo hay) y los datos en caso de éxito, que tiene un **String** representando el ID o estado de la impresión.|

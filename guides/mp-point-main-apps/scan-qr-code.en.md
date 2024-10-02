@@ -66,5 +66,5 @@ protected void onActivityResult(final int requestCode, final int resultCode,
 |**resultCode (Int)**| Value of the `resultCode` in `onActivityResult`.|
 |**resultData (Intent)**| Date result in `onActivityResult`.|
 |**MPResponse&lt;CameraScannerResponse&gt;**| Object [MPResponse] that includes the status, the error (if any), and the details in case of success, which contain an `CameraScannerResponse` object.|
-|**status (CameraScannerStatus)**| Defines the status of the response. It can be **Ok** (it read it successfully), **Error** (something went wrong and it was cancelled) or **Unknown** (something went wrong).|
-|**message (String)**| Defines the response message received by the scanner. If it’s  ”Ok”, it will have the result of the reading of the code|
+|**status (CameraScannerStatus)**| Defines the status of the response. It can be "Ok" (it read it successfully), **Error** (something went wrong and it was cancelled) or **Unknown** (something went wrong).|
+|**message (String)**| Defines the response message received by the scanner. If it’s  ”Ok”, it will have the result of the reading of the code.|
