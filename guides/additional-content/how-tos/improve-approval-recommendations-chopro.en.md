@@ -227,4 +227,4 @@ In case you wish to guarantee an optimized interface, you can use the **visual c
 >
 > Important
 >
-> We recommend checking the results of the [integration quality measurement](/developers/en/guides/additional-content/homologator/homologator) before going to production, whether it has been conducted manually or automatically. This will allow you to validate if you are meeting Mercado Pago's quality and security standards and will provide insights to improve your payment approval rate.
+> We recommend checking the results of the [integration quality measurement](/developers/en/docs/integration-quality) before going to production, whether it has been conducted manually or automatically. This will allow you to validate if you are meeting Mercado Pago's quality and security standards and will provide insights to improve your payment approval rate.

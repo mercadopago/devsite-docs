@@ -48,7 +48,7 @@ Dessa forma, a aplicação será excluída com sucesso.
 
 ## Medição de qualidade
 
-A [medição de qualidade](/developers/pt/guides/additional-content/homologator/homologator) é a última etapa do processo de integração, onde você poderá validar se cumpre com os requisitos de qualidade e segurança necessários para oferecer a melhor experiência tanto aos vendedores quanto aos compradores.
+A [medição de qualidade](/developers/pt/docs/integration-quality) é a última etapa do processo de integração, onde você poderá validar se cumpre com os requisitos de qualidade e segurança necessários para oferecer a melhor experiência tanto aos vendedores quanto aos compradores.
 
 Existem 2 formas de medir a qualidade da sua integração:
 

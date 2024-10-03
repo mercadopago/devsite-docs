@@ -12,9 +12,9 @@ Certified members of the Mercado Pago's partner program, the [&lt;dev>program](h
 
  Below you will find a list of plugins that allow adding the `integrator_id` at the moment of the integration.
 
- - [Woocommerce](/developers/en/docs/woocommerce/introduction)
+- [Woocommerce](/developers/en/docs/woocommerce/introduction)
 - [Prestashop](/developers/en/docs/prestashop/landing)
-- [Magento](/developers/en/docs/magento-two/landing)
+- [Adobe Commerce](/developers/en/docs/adobe-commerce/landing)
 - [VTEX](/developers/en/docs/vtex/introduction)
 
 For more details on how and why to use `integrator_id` in your integrations, access our [FAQ](https://www.mercadopago.com/developers/en/support/23937).
