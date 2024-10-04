@@ -35,21 +35,16 @@ Veja abaixo como testar a integração:
 ![Credenciais de produção](/images/prestashop/test-prod-credentials.png)
 
 7. Vá até as configurações do painel de PrestaShop (**Módulos > Gerenciador de Módulos**). Localize o módulo do Mercado Pago na seção "Pagamento", clique na seta para baixo e clique em **Configurar**.
-8. Insira as credenciais produtivas `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de produção**.
-9. Na aplicação criada no passo 5, clique em **Credenciais de teste** no menu à esquerda. Copie o `access_token` e a `public_key`.
-
-![Credenciais de teste](/images/prestashop/test-test-credentials.png)
-
-10. Insira também as credenciais de teste `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de teste**.
+8. Insira as credenciais produtivas `access_token` e a `public_key` da conta de teste do vendedor no campo **Credenciais de produção** e replique as mesmas informações no campo **Credenciais de teste**.
 
 ![Painel](/images/prestashop/test-prestashop-pt.png)
 
-11. Lembre-se de ativar o modo produção no campo "Production".
+9. Lembre-se de ativar o modo produção no campo "Production".
 
 ![Panel](/images/prestashop/test-prestashop-modeprod-pt.png)
 
-12. Clique em **Guardar**.
-13. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
+10. Clique em **Guardar**.
+11. Abra uma nova janela anônima e faça login no Mercado Pago usando a conta de teste do comprador criada no passo 3.
 
 > WARNING
 >
@@ -58,11 +53,11 @@ Veja abaixo como testar a integração:
 > Se, ao fazer login com uma conta de teste ou navegar pelas seções de Suas integrações, for solicitada a autenticação por e-mail, acesse nossa documentação para saber [como validar o login em contas teste](/developers/pt/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_login_com_usuarios_teste). 
 
 ----[mlb]----
-14. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como CPF, RG, telefone e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/prestashop/additional-content/your-integrations/test/cards) correspondente.
+12. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como CPF, RG, telefone e e-mail da conta de teste do comprador. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/prestashop/additional-content/your-integrations/test/cards) correspondente.
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-14. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/prestashop/additional-content/your-integrations/test/cards) correspondente.
+12. Na mesma janela logada como comprador, acesse sua loja e efetue uma compra fornecendo informações de teste, como telefone e e-mail da conta de teste do comprador. Em "Documento", selecione a opção **OTRO** e insira 9 dígitos. Utilize também os cartões de teste disponíveis na [documentação](/developers/pt/docs/prestashop/additional-content/your-integrations/test/cards) correspondente.
 
 ------------
 ----[mlb]----
