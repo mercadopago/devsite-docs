@@ -2,13 +2,19 @@
 ----[mla, mlb]---- 
 # Obtener lista de cuotas 
 
+Para obtener la lista de cuotas asociadas a un monto específico, usa la función `getInstallmentsAmount`. Puedes acceder a ella a través de la `PaymentInstallmentTools`, a través del objeto `MPManager`.
+
+La función `getInstallmentsAmount` simplifica el proceso de obtención de información detallada sobre las cuotas asociadas a un monto específico.
+
 ------------ 
 ----[mlm]---- 
 # Obtener lista de mensualidades 
 
-------------
-
 Para obtener la lista de cuotas asociadas a un monto específico, usa la función `getInstallmentsAmount`. Puedes acceder a ella a través de la `PaymentInstallmentTools`, a través del objeto `MPManager`.
+
+La función `getInstallmentsAmount` simplifica el proceso de obtención de información detallada sobre las mensualidades asociadas a un monto específico.
+
+------------
 
 > WARNING
 >
@@ -56,7 +62,7 @@ paymentInstallmentTools.getInstallmentsAmount(callback, amount);
 
 |Campo|Descripción|
 |---|---|
-|**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -> Unit)**|Función de respuesta con el resultado de la solicitud de la lista de cuotas.|
+|**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -> Unit)**|Función de respuesta con el resultado de la solicitud de la lista de cuotas. Asegúrate de manejar adecuadamente tanto el caso de éxito como el caso de error en la solicitud de la lista. |
 |**amount (String)**|Monto con el cual se determina la lista de cuotas.|
 |**installment (Int)**|Número de cuotas.|
 |**amount (Double)**|Monto de cada cuota.|
@@ -96,7 +102,7 @@ paymentInstallmentTools.getInstallmentsAmount(callback, amount);
 
 |Campo|Descripción|
 |---|---|
-|**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -> Unit)**|Función de respuesta con el resultado de la solicitud de la lista de mensualidades.|
+|**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -> Unit)**|Función de respuesta con el resultado de la solicitud de la lista de mensualidades. Asegúrate de manejar adecuadamente tanto el caso de éxito como el caso de error en la solicitud de la lista.|
 |**amount (String)**|Monto con el cual se determina la lista de mensualidades.|
 |**installment (Int)**|Número de mensualidades.|
 |**amount (Double)**|Monto de cada mensualidade.|

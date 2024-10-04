@@ -2,6 +2,8 @@
 
 Para obter a lista de parcelas associadas a um valor específico, utilize a função `getInstallmentsAmount`. Ela está acessível pela instância `PaymentInstallmentTools`, por meio do objeto `MPManager`.
 
+A função `getInstallmentsAmount` simplifica o processo de obtenção de informações detalhadas sobre as parcelas associadas a um valor específico.
+
 > WARNING
 >
 > Atenção
@@ -47,7 +49,7 @@ paymentInstallmentTools.getInstallmentsAmount(callback, amount);
 
 |Campo|Descrição|
 |---|---|
-|**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -> Unit)**|Função de resposta com o resultado da solicitação da lista de parcelas.|
+|**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -> Unit)**|Função de resposta com o resultado da solicitação da lista de parcelas. Assegure-se de lidar adequadamente tanto com o caso de sucesso quanto com o caso de erro na solicitação da lista.|
 |**amount (String)**|Valor com o qual se determina a lista de parcelas.|
 |**installment (Int)**|Número de parcelas.|
 |**amount (Double)**|Valor de cada parcela.|

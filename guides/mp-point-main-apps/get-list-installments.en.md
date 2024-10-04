@@ -2,6 +2,8 @@
 
 To get the list of installments linked to a specific amount, use the feature `getInstallmentsAmount`. Its accessible in the `PaymentInstallmentTools` instance, through the `MPManager` object.
 
+The function `getInstallmentsAmount` simplifies the process of obtaining detailed information about the installments associated with a specific amount.
+
 > WARNING
 >
 > Attention
@@ -47,7 +49,7 @@ paymentInstallmentTools.getInstallmentsAmount(callback, amount);
 
 |Field|Description|
 |---|---|
-|**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -> Unit)**|Response feature with the result of the request of the list of installments.|
+|**callback ((MPResponse&lt;List&lt;InstallmentAmount&gt;&gt;) -> Unit)**|Response feature with the result of the request of the list of installments. Make sure to properly handle both the success case and the error case when requesting the list.|
 |**amount (String)**|Amount with which the list of installments is determined.|
 |**installment (Int)**|Number of installments.|
 |**amount (Double)**|Amount of each installment.|
