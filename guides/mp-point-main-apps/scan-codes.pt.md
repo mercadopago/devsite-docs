@@ -1,4 +1,4 @@
-# Escanear códigos de barra e QR
+# Escanear códigos de barras e QR
 
 Abaixo você encontrará informações de como iniciar e gerenciar o escâner da [Point Smart](/developers/pt/docs/mp-point/landing) para a leitura de **códigos de barra e QR**.
 

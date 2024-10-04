@@ -17,52 +17,52 @@ dependencies {
 
 3. La configuración correcta de metadata en el archivo **AndroidManifest.xml** es crucial para garantizar el funcionamiento óptimo y la integración completa de nuestro SDK en tu aplicación. La metadata permite definir configuraciones esenciales y personalizadas que el SDK necesita para operar adecuadamente, adaptándose a las necesidades específicas de cada aplicación y su entorno de uso. Para ello, configure las siguientes información:
 
-  - **CLIENT_ID**: para identificar las transacciones de los integradores, indica la [credencial](/developers/es/docs/main-apps/additional-content/your-integrations/credentials) **Client ID** que fue asignada a la aplicación creada en el [Panel del desarrollador](/developers/es/docs/checkout-bricks/additional-content/your-integrations/dashboard).
+   - **CLIENT_ID**: para identificar las transacciones de los integradores, indica la [credencial](/developers/es/docs/main-apps/additional-content/your-integrations/credentials) **Client ID** que fue asignada a la aplicación creada en el [Panel del desarrollador](/developers/es/docs/checkout-bricks/additional-content/your-integrations/dashboard).
 
-  ```xml
-  <application
-      ...>
+   ```xml
+   <application
+       ...>
 
-      <meta-data
+       <meta-data
 
-          android:name="com.mercadolibre.android.sdk.CLIENT_ID"
-          android:value="123456789L" />
+           android:name="com.mercadolibre.android.sdk.CLIENT_ID"
+           android:value="123456789L" />
 
-      <!-- Otras configuraciones de la aplicación -->
-  </application>
-  ```
+       <!-- Otras configuraciones de la aplicación -->
+   </application>
+   ```
 
-  > WARNING
-  >
-  > Importante
-  >
-  > Es crucial que el nombre de la metadata sea exactamente `com.test.android.sdk.CLIENT_ID`. Cualquier variación en el nombre puede resultar en la falta de reconocimiento del campo por parte del SDK.
-  > <br><br>
-  > Además, asegúrate de que el valor del **Client ID** termine con la letra "L" para indicar que es un número del tipo _Long_. Esto es necesario para que el SDK procese correctamente el valor.
+   > WARNING
+   >
+   > Importante
+   >
+   > Es crucial que el nombre de la metadata sea exactamente `com.test.android.sdk.CLIENT_ID`. Cualquier variación en el nombre puede resultar en la falta de reconocimiento del campo por parte del SDK.
+   > <br><br>
+   > Además, asegúrate de que el valor del **Client ID** termine con la letra "L" para indicar que es un número del tipo _Long_. Esto es necesario para que el SDK procese correctamente el valor.
 
-  - **OAUTH_ENABLED**: utiliza el campo `OAUTH_ENABLED` para activar el protocolo de autorización [OAuth](/developers/es/docs/main-apps/additional-content/security/oauth/introduction), que es necesario cuando los dispositivos se utilizarán con cuentas diferentes a la del desarrollador de la aplicación. Este campo es opcional y, si no se agrega en la metadata, se considerará el valor predeterminado `false`.
+   - **OAUTH_ENABLED**: utiliza el campo `OAUTH_ENABLED` para activar el protocolo de autorización [OAuth](/developers/es/docs/main-apps/additional-content/security/oauth/introduction), que es necesario cuando los dispositivos se utilizarán con cuentas diferentes a la del desarrollador de la aplicación. Este campo es opcional y, si no se agrega en la metadata, se considerará el valor predeterminado `false`.
 
-  ```xml
-  <application
-      ...>
+   ```xml
+   <application
+       ...>
 
-      <meta-data
+       <meta-data
 
-          android:name="com.mercadolibre.android.sdk.OAUTH_ENABLED"
-          android:value="true" />
+           android:name="com.mercadolibre.android.sdk.OAUTH_ENABLED"
+           android:value="true" />
 
-      <!-- Otras configuraciones de la aplicación -->
+       <!-- Otras configuraciones de la aplicación -->
 
-  </application>
-  ```
+   </application>
+   ```
 
-  > WARNING
-  >
-  > Importante
-  >
-  > Es crucial que el nombre de la metadata sea exactamente `com.mercadolibre.android.sdk.OAUTH_ENABLED`. Cualquier variación en el nombre puede resultar en la falta de reconocimiento del campo por parte del SDK.
-  > <br><br>
-  > Asegúrate de definir correctamente el valor del campo solo con `true` o `false`, de acuerdo con la necesidad de habilitar o no el protocolo [OAuth](/developers/es/docs/main-apps/additional-content/security/oauth/introduction). Si no se especifica, el valor predeterminado será `false`.
+   > WARNING
+   >
+   > Importante
+   >
+   > Es crucial que el nombre de la metadata sea exactamente `com.mercadolibre.android.sdk.OAUTH_ENABLED`. Cualquier variación en el nombre puede resultar en la falta de reconocimiento del campo por parte del SDK.
+   > <br><br>
+   > Asegúrate de definir correctamente el valor del campo solo con `true` o `false`, de acuerdo con la necesidad de habilitar o no el protocolo [OAuth](/developers/es/docs/main-apps/additional-content/security/oauth/introduction). Si no se especifica, el valor predeterminado será `false`.
 
 4. Aún en el archivo **AndroidManifest.xml**, define la actividad principal que se establecerá como _launcher_ de la app. Agrega los siguientes `intent-filter`:
 

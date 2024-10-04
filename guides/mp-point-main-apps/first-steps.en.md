@@ -19,50 +19,50 @@ dependencies {
 
   - **CLIENT_ID**: to identify the transactions of the integrators, indicate the [credential](/developers/en/docs/main-apps/additional-content/your-integrations/credentials) **Client ID** that was assigned to the application created in the [Developer dashboard](/developers/en/docs/checkout-bricks/additional-content/your-integrations/dashboard).
 
-  ```xml
-  <application
-      ...>
+   ```xml
+   <application
+       ...>
 
       <meta-data
 
-          android:name="com.mercadolibre.android.sdk.CLIENT_ID"
-          android:value="123456789L" />
+           android:name="com.mercadolibre.android.sdk.CLIENT_ID"
+           android:value="123456789L" />
 
-      <!-- Other application settings -->
-  </application>
-  ```
+       <!-- Other application settings -->
+   </application>
+   ```
 
-  > WARNING
-  >
-  > Important
-  >
-  > It is crucial that the metadata name is exactly `com.test.android.sdk.CLIENT_ID`. Any variation in the name may result in the SDK not recognizing the field.
-  > <br><br>
-  > Additionally, make sure that the **Client ID** value ends with the letter "L" to indicate that it is a Long type number. This is necessary for the SDK to process the value correctly.
+   > WARNING
+   >
+   > Important
+   >
+   > It is crucial that the metadata name is exactly `com.test.android.sdk.CLIENT_ID`. Any variation in the name may result in the SDK not recognizing the field.
+   > <br><br>
+   > Additionally, make sure that the **Client ID** value ends with the letter "L" to indicate that it is a Long type number. This is necessary for the SDK to process the value correctly.
 
-  - **OAUTH_ENABLED**: use the `OAUTH_ENABLED` field to enable the [OAuth](/developers/en/docs/main-apps/additional-content/security/oauth/introduction) authorization protocol, which is necessary when devices will be used with accounts different from that of the application developer. This field is optional, and if it is not added to the metadata, it will be considered the default value `false`.
+   - **OAUTH_ENABLED**: use the `OAUTH_ENABLED` field to enable the [OAuth](/developers/en/docs/main-apps/additional-content/security/oauth/introduction) authorization protocol, which is necessary when devices will be used with accounts different from that of the application developer. This field is optional, and if it is not added to the metadata, it will be considered the default value `false`.
 
-  ```xml
-  <application
-      ...>
+   ```xml
+   <application
+       ...>
 
-      <meta-data
+       <meta-data
 
-          android:name="com.mercadolibre.android.sdk.OAUTH_ENABLED"
-          android:value="true" />
+           android:name="com.mercadolibre.android.sdk.OAUTH_ENABLED"
+           android:value="true" />
 
-      <!-- Other application settings  -->
+       <!-- Other application settings  -->
 
-  </application>
-  ```
+   </application>
+   ```
 
-  > WARNING
-  >
-  > Important
-  >
-  > It is crucial that the metadata name is exactly `com.mercadolibre.android.sdk.OAUTH_ENABLED`. Any variation in the name may result in the SDK not recognizing the field.
-  > <br><br>
-  > Make sure to correctly set the value of the field to only `true` or `false`, according to the need to enable or not the [OAuth](/developers/en/docs/main-apps/additional-content/security/oauth/introduction) protocol. If not specified, the default value will be `false`.
+   > WARNING
+   >
+   > Important
+   >
+   > It is crucial that the metadata name is exactly `com.mercadolibre.android.sdk.OAUTH_ENABLED`. Any variation in the name may result in the SDK not recognizing the field.
+   > <br><br>
+   > Make sure to correctly set the value of the field to only `true` or `false`, according to the need to enable or not the [OAuth](/developers/en/docs/main-apps/additional-content/security/oauth/introduction) protocol. If not specified, the default value will be `false`.
 
 4. Still in the **AndroidManifest.xml** file, define the main activity that will be set as the application launcher. Add the following `intent-filter`:
 
