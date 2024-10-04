@@ -24,45 +24,40 @@ A continuación, te mostramos cómo probar la integración:
 
 ![Inicio de sesión](/images/prestashop/test-login-esp.gif)
 
- > WARNING
- >
- > Importante
- >
- > Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
+> WARNING
+>
+> Importante
+>
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
 6. Accede a la aplicación creada en el paso 5 y haz clic en **Credenciales de producción** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
 
 ![Credenciales de producción](/images/prestashop/test-prod-credentials-es.png)
 
 7. Ve a la configuración del panel de PrestaShop (**Módulos > Gestor de Módulos**). Encuentra el módulo de Mercado Pago en la sección "Pago", haz clic en la flecha hacia abajo y selecciona **Configurar**.
-8. Ingresa las credenciales de producción `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de producción**.
-9. En la aplicación creada en el paso 5, haz clic en **Credenciales de prueba** en el menú de la izquierda. Copia el `access_token` y la `public_key`.
-
-![Credenciales de prueba](/images/prestashop/test-test-credentials-es.png)
-
-10. Ingresa también las credenciales de prueba `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de prueba**.
+8. Ingresa las credenciales de producción `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de Producción** y replique la misma información en el campo **Credenciales de Prueba**.
 
 ![Panel](/images/prestashop/test-prestashop-es.png)
 
-11. Recuerda activar el modo de producción en el campo "Producción".
+9. Recuerda activar el modo de producción en el campo "Producción".
 
 ![Panel](/images/prestashop/test-prestashop-modeprod-es.png)
 
-12. Haz clic en **Guardar**.
-13. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago con la cuenta de prueba del comprador creada en el paso 3.
+10. Haz clic en **Guardar**.
+11. Abre una nueva ventana de incógnito e inicia sesión en Mercado Pago con la cuenta de prueba del comprador creada en el paso 3.
 
- > WARNING
- >
- > Importante
- >
- > Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
+> WARNING
+>
+> Importante
+>
+> Si, al iniciar sesión con una cuenta de prueba o navegar por las secciones de Tus integraciones, te es solicitada una autenticación de la misma vía e-mail, accede a nuestra documentación para saber cómo [validar el inicio de sesión en cuentas de prueba](/developers/es/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validar_inicio_de_sesión_con_usuarios_de_prueba).
 
 ----[mlb]----
-14. En la misma ventana conectada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, teléfono y correo electrónico de la cuenta de prueba del comprador. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/prestashop/additional-content/your-integrations/test/cards) correspondiente.
+12. En la misma ventana conectada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como CPF, RG, teléfono y correo electrónico de la cuenta de prueba del comprador. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/prestashop/additional-content/your-integrations/test/cards) correspondiente.
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-14. En la misma ventana conectada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/prestashop/additional-content/your-integrations/test/cards) correspondiente.
+12. En la misma ventana conectada como comprador, accede a tu tienda y realiza una compra proporcionando información de prueba, como teléfono y correo electrónico de la cuenta de prueba del comprador. En "Documento", selecciona la opción **OTRO** e ingresa 9 dígitos. También utiliza las tarjetas de prueba disponibles en la [documentación](/developers/es/docs/prestashop/additional-content/your-integrations/test/cards) correspondiente.
 
 ------------
 ----[mlb]----
