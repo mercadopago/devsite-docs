@@ -35,7 +35,7 @@ Here's how to test the integration:
 ![Production credentials](/images/prestashop/test-prod-credentials-es.png)
 
 7. Go to the PrestaShop panel settings (**Modules > Module Manager**). Locate the Mercado Pago module in the "Payment" section, click on the downward arrow, and select **Configure**.
-8. Enter the production credentials `access_token` and `public_key` of the seller's test account in the **Production credentials** field and replicate the same information in the **Test Credentials** field.
+8. Enter the production credentials `access_token` and `public_key` of the seller's test account in the **Production Credentials** field and replicate the same information in the **Test Credentials** field.
 
 ![Panel](/images/prestashop/test-prestashop-es.png)
 

@@ -35,7 +35,7 @@ A continuación, te mostramos cómo probar la integración:
 ![Credenciales de producción](/images/prestashop/test-prod-credentials-es.png)
 
 7. Ve a la configuración del panel de PrestaShop (**Módulos > Gestor de Módulos**). Encuentra el módulo de Mercado Pago en la sección "Pago", haz clic en la flecha hacia abajo y selecciona **Configurar**.
-8. Ingresa las credenciales de producción `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de producción** y replique la misma información en el campo **Credenciales de prueba**.
+8. Ingresa las credenciales de producción `access_token` y `public_key` de la cuenta de prueba del vendedor en el campo **Credenciales de Producción** y replique la misma información en el campo **Credenciales de Prueba**.
 
 ![Panel](/images/prestashop/test-prestashop-es.png)
 
