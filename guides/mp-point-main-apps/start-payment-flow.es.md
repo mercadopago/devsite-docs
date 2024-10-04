@@ -149,14 +149,14 @@ final Uri uriResult = paymentFlow.buildCallbackUri(
 
 La función `parseResponse` de la clase `PaymentFlow` se usa para recibir el resultado del flujo de pago, que se entrega en forma de objeto `PaymentResponse` listo para su manipulación. En este proceso, la siguiente información se ofrece:
 
-- **Medio de pago usado.**
-- **Referencia de pago.**
-- **Fecha de creación.**
-- **Monto del pago.**
-- **Número de serie del lector.**
-- **Marca de la tarjeta.**
-- **Cantidad de cuotas.**
-- **Últimos cuatro números de la tarjeta.**
+- **Medio de pago usado;**
+- **Referencia de pago;**
+- **Fecha de creación;**
+- **Monto del pago;**
+- **Número de serie del lector;**
+- **Marca de la tarjeta;**
+- **Cantidad de cuotas;**
+- **Últimos cuatro números de la tarjeta;**
 - **Cualquier error asociado a la operación.**
 
 Consulta cómo implementar esta funcionalidad:
