@@ -13,25 +13,12 @@
         },
         "parameters": [
           {
-            "name": "x-test-scope",
-            "in": "header",
-            "description": {
-              "en": "This is a temporary header. It should be used only in the development stage with the value \"sandbox\". When going to production, it should be removed.",
-              "es": "Este es un header temporal, debe usarse solo para desarrollo con el valor \"sandbox\". Al momento de salir a producción, debe ser removido.",
-              "pt": "Este é um header temporário, deve ser usado apenas para desenvolvimento com o valor \"sandbox\". Na hora de entrar em produção, deve ser retirado."
-            },
-            "schema": {
-              "type": "string",
-              "example": "sandbox"
-            }
-          },
-          {
             "name": "store_id",
             "in": "query",
             "description": {
-              "en": "Optional. It's the store identifier, that you should send only if you want to filter the available devices by store.",
-              "es": "Opcional. Es el identificador de la tienda, que deberás enviar sólo si quieres filtrar los dispositivos disponibles por tienda.",
-              "pt": "Opcional. É o identificador da loja. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por loja."
+              "en": "It's the store identifier, that you should send only if you want to filter the available devices by store.",
+              "es": "Es el identificador de la sucursal, que deberás enviar sólo si quieres filtrar los dispositivos disponibles por sucursal.",
+              "pt": "É o identificador da loja. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por loja."
             },
             "schema": {
               "type": "string",
@@ -42,9 +29,9 @@
             "name": "pos_id",
             "in": "query",
             "description": {
-              "en": "Optional. It's the device Point of Sale identifier, that you should send only if you want to filter the available devices by Point of Sale.",
-              "es": "Opcional. Es el identificador de la caja, que deberás enviar sólo si quieres filtrar los dispositivos por caja.",
-              "pt": "Opcional. É o identificador da caixa. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por caixa."
+              "en": "It's the device Point of Sale identifier, that you should send only if you want to filter the available devices by Point of Sale.",
+              "es": "Es el identificador de la caja, que deberás enviar sólo si quieres filtrar los dispositivos por caja.",
+              "pt": "É o identificador da caixa. Você deve enviá-lo apenas se quiser filtrar os dispositivos disponíveis por caixa."
             },
             "schema": {
               "type": "integer",
@@ -123,7 +110,7 @@
                             "description": {
                               "en": "Identifier of the store to which the device is associated.",
                               "pt": "Identificador da loja à qual o dispositivo está associado.",
-                              "es": "Identificador de la tienda a la que está asociado el dispositivo."
+                              "es": "Identificador de la sucursal a la que está asociado el dispositivo."
                             },
                             "example": 47792478
                           },
@@ -131,7 +118,7 @@
                             "type": "string",
                             "description": {
                               "en": "External identifier of the store to which the POS belongs, defined by the integrator during its creation.",
-                              "es": "Identificador externo de la tienda a la que pertenece la caja, definido por el integrador durante su creación.",
+                              "es": "Identificador externo de la sucursal a la que pertenece la caja, definido por el integrador durante su creación.",
                               "pt": "Identificador externo da loja a qual pertence a caixa, definido pelo integrador durante sua criação."
                             },
                             "example": "SUC0101POS"
@@ -1769,7 +1756,7 @@
         }
       }
     },
-    "/point/integration-api/devices/{device-id}": {
+    "/point/integration-api/devices/{device_id}": {
       "patch": {
         "tags": [
           "mp-point"
@@ -1781,10 +1768,10 @@
         },
         "parameters": [
           {
-            "name": "deviceID",
+            "name": "device_id",
             "in": "path",
             "description": {
-              "en": "Identifier of the device for which you want to change the operating mode. You must send it according to the following format: \"type of device + “__” + device serial\". ",
+              "en": "Identifier of the device for which you want to change the operating mode. You must send it according to the following format: \"type of device + “__” + device serial\".",
               "es": "Identificador del dispositivo para el que se quiere cambiar el modo de operación. Debes enviarlo siguiendo el formato \"tipo de dispositivo + “__” +  serial del dispositivo\".",
               "pt": "Identificador do dispositivo cujo modo de operação deseja alterar. Deve ser enviado seguindo o formato \"tipo de dispositivo + “__” + serial do dispositivo\"."
             },
@@ -1882,9 +1869,9 @@
           },
           "400": {
             "description": {
-              "en": "Error. deviceID format unexpected.",
-              "pt": "Erro. Formato incorreto para o deviceID.",
-              "es": "Error. Formato incorrecto para deviceID."
+              "en": "Error. device_id format unexpected.",
+              "pt": "Erro. Formato incorreto para o device_id.",
+              "es": "Error. Formato incorrecto para device_id."
             },
             "content": {
               "application/json": {
@@ -1897,9 +1884,67 @@
                         {
                           "title": "103",
                           "description": {
-                            "en": "The value sent for the deviceID is not correct. Check the value corresponding to the desired device and try again.",
-                            "es": "El valor enviado para el deviceID no es correcto. Verifica el valor correspondiente al dispositivo deseado y vuelve a intentarlo.",
-                            "pt": "O valor enviado para o deviceID não está correto. Verifique o valor correspondente ao dispositivo desejado e tente novamente."
+                            "en": "The value sent for the device_id is not correct. Check the value corresponding to the desired device and try again.",
+                            "es": "El valor enviado para el device_id no es correcto. Verifica el valor correspondiente al dispositivo deseado y vuelve a intentarlo.",
+                            "pt": "O valor enviado para o device_id não está correto. Verifique o valor correspondente ao dispositivo desejado e tente novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error. Device is not allowed to perform this action.",
+              "pt": "Erro. O dispositivo não tem permissão para realizar esta ação.",
+              "es": "Error. El dispositivo no tiene permiso para realizar esta acción."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "113",
+                          "description": {
+                            "en": "The device type declared in the device_id is incorrect or invalid. Check the value of the device_id that declares the device type and try again, considering that the structure of the 'device_id' field is \"type of device + “__” + device serial\".",
+                            "es": "El tipo de dispositivo declarado en el device_id es incorrecto o inválido. Verifica el valor del device_id que declara el tipo de dispositivo y vuelve a intentarlo, teniendo en cuenta que la estructura del campo 'device_id' es \"tipo de dispositivo + “__” +  serial del dispositivo\".",
+                            "pt": "O tipo de dispositivo declarado no device_id é incorreto ou inválido. Verifique o valor do device_id que declara o tipo de dispositivo e tente novamente, considerando que a estrutura do campo 'device_id' é \"tipo de dispositivo + “__” + serial do dispositivo\"."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error. User device configuration, not found.",
+              "pt": "Erro. Configuração do dispositivo do usuário não encontrada.",
+              "es": "Error. Configuración del dispositivo del usuario no encontrada."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "not_found",
+                          "description": {
+                            "en": "The device serial number declared in the device_id is incorrect or invalid. Check the value of the device_id that declares the device serial number and try again, considering that the structure of the 'device_id' field is \"type of device + “__” + device serial\".",
+                            "es": "El serial del dispositivo declarado en el device_id es incorrecto o inválido. Verifica el valor del device_id que declara el número del serial del dispositivo y vuelve a intentarlo, teniendo en cuenta que la estructura del campo 'device_id' es \"tipo de dispositivo + “__” +  serial del dispositivo\".",
+                            "pt": "O número de série do dispositivo declarado no device_id está incorreto ou é inválido. Verifique o valor do device_id que declara o número de série do dispositivo e tente novamente, considerando que a estrutura do campo 'device_id' é \"tipo de dispositivo + “__” + serial do dispositivo\"."
                           }
                         }
                       ]
