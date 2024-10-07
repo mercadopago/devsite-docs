@@ -1,5 +1,3 @@
-----[mlb]----
-
 # Boleto bancário
 
 Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e  Pix, **pagamentos através de boleto bancário**. Além disso, você pode **criar boletos bancários com descontos, multas e acréscimos** para pagamentos antecipados ou fora do prazo estipulado na data de vencimento. 
@@ -185,7 +183,7 @@ Para configurar **pagamentos com boleto bancário**, envie um **POST** com os se
  $payment = new MercadoPago\Payment();
  $payment->transaction_amount = 100;
  $payment->description = "Título do produto";
- $payment->payment_method_id = "pec";
+ $payment->payment_method_id = "bolbradesco";
  $payment->payer = array(
      "email" => "test@test.com",
      "first_name" => "Test",
@@ -212,7 +210,7 @@ mercadopago.configurations.setAccessToken(config.access_token);
 var payment_data = {
   transaction_amount: 100,
   description: 'Título do produto',
-  payment_method_id: 'pec',
+  payment_method_id: 'bolbradesco',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
@@ -241,7 +239,7 @@ PaymentCreateRequest paymentCreateRequest =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
        .description("Título do produto")
-       .paymentMethodId("pec")
+       .paymentMethodId("bolbradesco")
        .dateOfExpiration(OffsetDateTime.of(2023, 1, 10, 10, 10, 10, 0, ZoneOffset.UTC))
        .payer(
            PaymentPayerRequest.builder()
@@ -260,7 +258,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 payment_request = {
   transaction_amount: 100,
   description: 'Título do produto',
-  payment_method_id: 'pec',
+  payment_method_id: 'bolbradesco',
   payer: {
     email: 'test@test.com',
     first_name: 'Test',
@@ -292,7 +290,7 @@ var request = new PaymentCreateRequest
 {
     TransactionAmount = 105,
     Description = "Título do produto",
-    PaymentMethodId = "pec",
+    PaymentMethodId = "bolbradesco",
     Payer = new PaymentPayerRequest
     {
         Email = "test@test.com",
@@ -314,7 +312,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 payment_data = {
     "transaction_amount": 100,
     "description": "Título do produto",
-    "payment_method_id": "pec",
+    "payment_method_id": "bolbradesco",
     "payer": {
         "email": "test@test.com",
         "first_name": "Test",
@@ -345,7 +343,7 @@ curl -X POST \
     -d '{
       "transaction_amount": 100,
       "description": "Título do produto",
-      "payment_method_id": "pec",
+      "payment_method_id": "bolbradesco",
       "payer": {
         "email": "test@test.com",
         "first_name": "Test",
@@ -893,5 +891,3 @@ O prazo de aprovação do boleto é de até 2h úteis. Por isso, configure a dat
 Para evitar problemas de cobrança, é importante cancelar os pagamentos vencidos. Além disso, tenha em conta que **é possível cancelar apenas os pagamentos que se encontram pendentes ou em processo**. Se o vencimento de um pagamento ocorre em 30 dias, o cancelamento é automático e o status final do mesmo será `cancelado` ou `expirado`.
 
 Para mais informações, veja a seção [Reembolsos e cancelamentos](/developers/pt/docs/checkout-api/payment-management/cancellations-and-refunds).
-
-------------

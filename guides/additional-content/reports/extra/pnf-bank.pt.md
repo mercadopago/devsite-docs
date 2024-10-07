@@ -48,7 +48,7 @@ Se a devolução for maior ao montante que você ainda deve receber, não se pre
 
 ## Estornos
 
-Você pode ver no seu relatório quando um [estorno](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/guides/additional-content/account/chargebacks) ou uma mediação é resolvido em favor do comprador. Você visualizará a lista com o detalhe de todas as parcelas, ou as que ainda não tenham sido liberadas, e o montante total pelo estorno do pagamento.
+Você pode ver no seu relatório quando um estorno ou uma mediação é resolvido em favor do comprador. Você visualizará a lista com o detalhe de todas as parcelas, ou as que ainda não tenham sido liberadas, e o montante total pelo estorno do pagamento.
 
 Para identificar este caso, você pode ver na coluna `DESCRIPTION` o valor `chargeback` que corresponde aos estornos das parcelas que já tenham sido cobradas.
 

@@ -1,7 +1,7 @@
 # Outros meios de pagamento
 
 ----[mlb]----
-Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e Pix, **pagamentos através de boleto bancário e pagamento em lotérica**.
+Com o Checkout Transparente do Mercado Pago, é possível oferecer, além de cartão e Pix, **pagamentos através de boleto bancário**.
 
 > NOTE
 >
@@ -128,7 +128,7 @@ curl -X GET \
 ]]]
 
 ----[mlb]----
-Para oferecer pagamentos com **boleto bancário** e/ou **pagamento em lotérica**, siga as etapas abaixo.
+Para oferecer pagamentos com **boleto bancário**, siga as etapas abaixo.
 
 ------------
 ----[mla]----
@@ -364,7 +364,7 @@ Incluindo o elemento do tipo `select` com o id: `id = docType` que está no form
 Ao finalizar a inclusão do formulário de pagamento e obter os tipos de documento, é necessário encaminhar o e-mail do comprador, tipo e número de documento, o meio de pagamento utilizado e o detalhe do valor a ser pago utilizando nossa API de Pagamentos ou um de nossos SDKs.
 
 ----[mlb]----
-Para configurar pagamentos com **boleto bancário** ou **pagamento em lotérica**, envie um POST com os parâmetros descritos nas tabelas abaixo ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
+Para configurar pagamentos com **boleto bancário**, envie um POST com os parâmetros descritos nas tabelas abaixo ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um de nossos SDKs abaixo.
 
 > WARNING
 >
@@ -665,12 +665,6 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 | `address.neighborhood` | string | Bairro onde está localizado o endereço do comprador. Exemplo: Copacabana. |
 | `address.city` | string | Cidade onde o comprador mora. Exemplo: Rio de Janeiro. |
 | `address.federal_unit` | string | Sigla do Estado onde o comprador mora. Apenas dois caracteres são aceitos. Por exemplo: RJ. |
-
-#### - Campos obrigatórios para pagamentos em lotéricas
-
-| Parâmetro | Tipo | Descrição, valores possíveis e exemplos |
-|---|---|---|
-| `payment_method_id` | string | Método de pagamento. Para lotéricas, é sempre `pec`. |
 
 > WARNING
 >

@@ -13,9 +13,9 @@ bullet_section_with_media:
  - type: normal
  - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito), dinheiro (saldo da conta do Mercado Pago ou boleto bancário) e transferência bancária (Pix ou PEC).
+ - benefit_message: O pagamento é realizado na página do Mercado Pago (dentro ou fora da sua loja) com cartões (débito ou crédito), dinheiro (saldo da conta do Mercado Pago ou boleto bancário) e transferência bancária (Pix).
  - benefit_title: Checkout Transparente
- - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito), ticket checkout (saldo da conta do Mercado Pago, boleto bancário ou pagamento em lotérica sem boleto) e Pix.
+ - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (débito ou crédito), ticket checkout (saldo da conta do Mercado Pago ou boleto bancário) e Pix.
  - image: /prestashop/prestashop-payment.png 
 ---
 ------------
@@ -58,7 +58,7 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda
+available_payments: credit, debit, mercadopago, boleto, pix, moneda
 
 ---
 ------------

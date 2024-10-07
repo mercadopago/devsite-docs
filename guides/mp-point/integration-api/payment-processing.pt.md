@@ -295,7 +295,7 @@ Se você deseja saber o status de uma intenção de pagamento específica, você
 > Tenha em mente que só é possível verificar o status de uma **intenção de pagamento que tenha sido criada há, no máximo, 3 meses**. Certifique-se de usar o identificador (`id`) correspondente à tentativa de pagamento que esteja dentro deste período. Se precisar de informações sobre intenções de pagamento mais antigas, recomendamos que entre em contato com nosso serviço de atendimento ao cliente para obter assistência adicional.
 ------------
 
-Lembre-se que o `id` e status da intenção de pagamento (por exemplo, _7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1_) são diferentes do `id` e status do pagamento (por ejemplo, _65412345_). Neste caso, trata-se de consultar os detalhes de uma tentativa. Você pode consultar todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
+Lembre-se que o `id` e status da intenção de pagamento (por exemplo, _7f25f9aa-eea6-4f9c-bf16-a341f71ba2f1_) são diferentes do `id` e status do pagamento (por exemplo, _65412345_). Neste caso, trata-se de consultar os detalhes de uma tentativa. Você pode consultar todas as informações correspondentes ao pagamento na seção [API de pagamento](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/reference/payments/_payments_id/get) de Referência da API.
 
 > WARNING
 >

@@ -6,7 +6,7 @@ The activation of these topics will depend on the Mercado Pago solution you have
 
 | Events | Name in Your Integrations | Topic | Associated products |
 |---|---|---|---|
-| Creation and update of payments | Payments | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
+| Creation and update of payments | Payments | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----Mercado Pago Point (only for IPN)------------<br>Wallet Connect |
 | Recurring payment of a subscription (creation - update) | Plans and Subscriptions | `subscription_authorized_payment` | Subscriptions |
 | Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
 | Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
@@ -26,5 +26,5 @@ There are two types of notifications available for configuration, as detailed in
 
 | Type | Description |
 | --- | --- |
-| **Webhooks** | **Recommended**. Uses HTTP REST to instantly notify updates and provides greater integration security through a secret signature, a validation method that ensures notifications received were sent by Mercado Pago.<br> To learn how to configure and simulate the sending of Webhooks notifications, read the [Webhooks documentation](/developers/en/guides/additional-content/your-integrations/webhooks). |
-| **IPN** | Allows your application to receive notifications from Mercado Pago about the status of a payment, chargeback, or *merchant order* via an HTTP POST call. Note that notifications may take a few moments to be sent and do not allow validation via the `x-Signature` header.<br> **Important:** IPN notifications will be discontinued soon. Therefore, we recommend using [Webhooks notifications](/developers/en/guides/additional-content/your-integrations/webhooks). |
+| **Webhooks** | **Recommended**. Uses HTTP REST to instantly notify updates and provides greater integration security through a secret signature, a validation method that ensures notifications received were sent by Mercado Pago.<br> To learn how to configure and simulate the sending of Webhooks notifications, read the [Webhooks documentation](/developers/en//docs/your-integrations/notifications/webhooks). |
+| **IPN** | Allows your application to receive notifications from Mercado Pago about the status of a payment, chargeback, or *merchant order* via an HTTP POST call. Note that notifications may take a few moments to be sent and do not allow validation via the `x-Signature` header.<br> **Important:** IPN notifications will be discontinued soon. Therefore, we recommend using [Webhooks notifications](/developers/en/docs/your-integrations/notifications/webhooks). |

@@ -91,8 +91,8 @@ bullet_section_with_media:
  - benefit_title: Orden de checkouts de Mercado Pago
  - benefit_message: Con la aplicación Ordena checkouts, puede elegir la posición en la que aparecerá cada uno de sus proveedores instalados para sus clientes. Al elegir mostrar nuestro checkout primero, aumenta el alcance de su tienda y la tasa de aprobación de sus ventas.
  ----[mlm]----
- - benefit_title: Mercado Crédito
- - benefit_message: Al activar Mercado Crédito en el checkout, alcanza a más de 12 millones de personas con crédito activo, sin costos adicionales, además de obtener una tasa de aprobación de aproximadamente el 98% en las ventas.
+ - benefit_title: Meses sin Tarjeta
+ - benefit_message: Al activar Meses sin Tarjeta en el checkout, alcanza a más de 12 millones de personas con crédito activo, sin costos adicionales, además de obtener una tasa de aprobación de aproximadamente el 98% en las ventas.
 
  ------------
  - image: /shopify/landing-shopify-advantages.png
@@ -106,7 +106,7 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda
+available_payments: credit, debit, mercadopago, boleto, pix, moneda
 
 ---
 ------------

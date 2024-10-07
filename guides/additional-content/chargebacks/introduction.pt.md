@@ -8,6 +8,7 @@ Uma contestação é gerada quando um comprador que fez um pagamento para você 
 
 Quando isso acontece, o valor pago é retido até que o problema seja resolvido junto à instituição emissora do cartão.
 
+----[mlb]----
 [Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/Como-protegemos-os-vendedores_500) para mais detalhes sobre como protegemos os vendedores
 
 > NOTE
@@ -15,3 +16,15 @@ Quando isso acontece, o valor pago é retido até que o problema seja resolvido 
 > Importante
 >
 > Para mais informações sobre o que fazer ao receber uma reclamação, [consulte nossa página de ajuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ajuda/reclamacao-comprador_583).
+
+------------
+----[mla, mlu, mco, mpe, mlc, mlm]----
+[Clique aqui](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/Como-protegemos-a-los-vendedores_500) para mais detalhes sobre como protegemos os vendedores
+
+> NOTE
+>
+> Importante
+>
+> Para mais informações sobre o que fazer ao receber uma reclamação, [consulte nossa página de ajuda](https://www.mercadopago[FAKER][URL][DOMAIN]/ayuda/reclamo-comprador_583).
+
+------------
