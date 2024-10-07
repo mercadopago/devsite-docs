@@ -7,9 +7,9 @@
           "mp-point"
         ],
         "description": {
-          "en": "This endpoint allows to create an order for Mercado Pago Point in \"automatic\" (processing the transaction in a single stage) mode for payment transactions. In case of success, the request will return a response with status 201",
-          "pt": "Este endpoint permite criar uma order para Mercado Pago Point no modo \"automático\" (processando a transação em uma única etapa) para transações de pagamento. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
-          "es": "Este endpoint permite crear una order para Mercado Pago Point en modo \"automático\" (procesando la transacción en una sola etapa) para transacciones de pago. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
+          "en": "This endpoint allows to create an order for Mercado Pago Point for payment transactions. In case of success, the request will return a response with status 201",
+          "pt": "Este endpoint permite criar uma order para Mercado Pago Point para transações de pagamento. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+          "es": "Este endpoint permite crear una order para Mercado Pago Point para transacciones de pago. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
         },
         "parameters": [
           {
@@ -1294,9 +1294,9 @@
           "device_id":{
             "type":"string",
             "description": {
-              "en": "Identifier of the device that will obtain the order. You must send it according to the following format: \"type of device + “__” + device serial\".",
-              "es": "Identificador del dispositivo Point que obtendrá la order. Debes enviarlo siguiendo el formato \"tipo de dispositivo + “__” +  serial del dispositivo\".",
-              "pt": "Identificador do dispositivo que obterá a order. Deve ser enviado seguindo o formato \"tipo de dispositivo + “__” + serial do dispositivo\"."
+              "en": "Identifier of the device that will obtain the order. You must send it according to the following format: \"type of device + “__” + device serial\", as in the following example: \"PAX_A910__SMARTPOS123456789\". The serial number can be found on the rear label of the device.",
+              "es": "Identificador del dispositivo Point que obtendrá la order. Debes enviarlo siguiendo el formato \"tipo de dispositivo + “__” +  serial del dispositivo\", como en el siguiente ejemplo: \"PAX_A910__SMARTPOS123456789\". El serial del dispositivo puede ser hallado en la etiqueta trasera del mismo.",
+              "pt": "Identificador do dispositivo que obterá a order. Deve ser enviado seguindo o formato \"tipo de dispositivo + “__” + serial do dispositivo\", como no exemplo a seguir: \"PAX_A910__SMARTPOS123456789\". O serial do dispositivo pode ser encontrado na etiqueta traseira."
             },
             "example":"PAX_A910__SMARTPOS1423",
             "required": true
