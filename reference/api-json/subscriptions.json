@@ -7688,9 +7688,9 @@
                         {
                           "title": "400",
                           "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
+                            "en": "Bad request",
+                            "es": "Bad request",
+                            "pt": "Bad request"
                           }
                         }
                       ]
