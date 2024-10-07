@@ -705,15 +705,6 @@
                                   "es": "Identificador del pago asociado a la order."
                                 }
                               },
-                              "source": {
-                                "type": "string",
-                                "example": "payments",
-                                "description": {
-                                  "pt": "Entidade que processou o pagamento. O único valor que será retornado neste campo é \"payments\".",
-                                  "en": "Entity that processed the payment. The only value that will be returned in this field is \"payments\".",
-                                  "es": "Entidad que procesó el pago. El único valor que será devuelto en este campo es \"payments\". "
-                                }
-                              },
                               "payment_method": {
                                 "$ref": "#/components/schemas/payment_method"    
                               }
