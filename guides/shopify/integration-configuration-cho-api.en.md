@@ -57,11 +57,24 @@ To install the **Mercado Pago Tarjetas** checkout on a Shopify store, we offer t
 
 Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 
+----[mlb]----
 > WARNING
 >
 > Important
 >
-> After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, installing the **Mercado Pago Antifraud Plus** app, which uses **3DS 2.0 (3-D Secure Authentication 2.0)** technology to **enhance the security of your store and increase payment approval rate**. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> With Mercado Pago Cards, the "House Number" and "Neighborhood" fields will not be automatically displayed in the order delivery information form. To have these fields displayed, you just need to contact the Shopify platform support team and make the request.
+
+------------
+----[mlm, mco]----
+> WARNING
+>
+> Important
+>
+> After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, installing the **Mercado Pago Antifraud Plus** app, which uses **3DS 2.0 (3-D Secure Authentication 2.0)** technology to **enhance the security of your store and increase payment approval rate**. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+
+------------
 
 ## Install via Marketplace
 
@@ -97,11 +110,24 @@ Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 
 Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 
+----[mlb]----
 > WARNING
 >
 > Important
 >
-> After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, installing the **Mercado Pago Antifraud Plus** app, which uses **3DS 2.0 (3-D Secure Authentication 2.0)** technology to **enhance the security of your store and increase payment approval rate**. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> <br><br>
+> With Mercado Pago Cards, the "House Number" and "Neighborhood" fields will not be automatically displayed in the order delivery information form. To have these fields displayed, you just need to contact the Shopify platform support team and make the request.
+
+------------
+----[mlm, mco]----
+> WARNING
+>
+> Important
+>
+> After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, installing the **Mercado Pago Antifraud Plus** app, which uses **3DS 2.0 (3-D Secure Authentication 2.0)** technology to **enhance the security of your store and increase payment approval rate**. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+
+------------
 
 ## Configure interest-free installments
 

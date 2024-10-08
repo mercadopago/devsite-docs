@@ -2,6 +2,8 @@
 
 **Mercado Pago Antifraude Plus** es un complemento para [Mercado Pago Tarjetas](/developers/es/docs/shopify/integration-configuration/checkout-cards) que optimiza la validación de seguridad y mantiene altos niveles de aprobación de pagos al identificar el ID del dispositivo de los compradores, pudiendo evitar así fraudes y contracargos.
 
+La app cuenta con la tecnología **3DS 2.0 (Autenticación 3-D Secure 2.0)** para autenticar las transacciones con tarjeta de crédito antes de finalizar el pago, validando si la persona que realiza la compra es realmente el titular de la tarjeta o tiene acceso a las cuentas de dicho titular. Consulte [3DS 2.0](/developers/es/docs/how-tos/improve-payment-approval/3ds) para más información sobre cómo funciona este tipo de autenticación.
+
 Para instalar Mercado Pago Antifraude Plus, sigue los pasos a continuación.
 
 1. Accede a la [página de la app **Mercado Pago Antifraude Plus**](https://apps.shopify.com/mercado-pago-antifraud-plus) en el "Marketplace", y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
