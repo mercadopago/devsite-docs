@@ -119,48 +119,48 @@
                           "title": "pending",
                           "description": {
                             "en": "No documentation has been received.",
-                            "es": "No documentation has been received.",
-                            "pt": "No documentation has been received."
+                            "es": "No se ha recibido documentación.",
+                            "pt": "Nenhuma documentação foi recebida."
                           }
                         },
                         {
                           "title": "review_pending",
                           "description": {
                             "en": "Documentation received, waiting for decision to be taken.",
-                            "es": "Documentation received, waiting for decision to be taken.",
-                            "pt": "Documentation received, waiting for decision to be taken."
+                            "es": "Documentación recibida, esperando que se tome una decisión.",
+                            "pt": "Documentação recebida, aguardando a decisão a ser tomada."
                           }
                         },
                         {
                           "title": "valid",
                           "description": {
                             "en": "The documentation received is valid.",
-                            "es": "The documentation received is valid.",
-                            "pt": "The documentation received is valid."
+                            "es": "La documentación recibida es válida.",
+                            "pt": "A documentação recebida é válida."
                           }
                         },
                         {
                           "title": "invalid",
                           "description": {
                             "en": "The documentation received is invalid.",
-                            "es": "The documentation received is invalid.",
-                            "pt": "The documentation received is invalid."
+                            "es": "La documentación recibida es inválida.",
+                            "pt": "A documentação recebida é invalida."
                           }
                         },
                         {
                           "title": "not_supplied",
                           "description": {
                             "en": "The documentation wasn't supplied on time.",
-                            "es": "The documentation wasn't supplied on time.",
-                            "pt": "The documentation wasn't supplied on time."
+                            "es": "La documentación no se suministró a tiempo.",
+                            "pt": "A documentação não foi fornecida a tempo."
                           }
                         },
                         {
                           "title": "not_applicable",
                           "description": {
                             "en": "Documentation wasn't needed for this chargeback.",
-                            "es": "Documentation wasn't needed for this chargeback.",
-                            "pt": "Documentation wasn't needed for this chargeback."
+                            "es": "No se necesitó documentación para este contracargo.",
+                            "pt": "A documentação não foi necessária para este estorno."
                           }
                         }
                       ]
@@ -405,67 +405,67 @@
                       "type": "string",
                       "example": "standard",
                       "description": {
-                        "en": "Type of refund",
-                        "pt": "Tipo de reembolso",
-                        "es": "Tipo de reembolso"
+                        "en": "Type of refund.",
+                        "pt": "Tipo de reembolso.",
+                        "es": "Tipo de reembolso."
                       }
                     },
                     "adjustment_amount": {
                       "type": "number",
                       "example": 0,
                       "description": {
-                        "en": "Refund adjustment",
-                        "pt": "Ajuste de reembolso",
-                        "es": "Ajuste de reembolso"
+                        "en": "Refund adjustment.",
+                        "pt": "Ajuste de reembolso.",
+                        "es": "Ajuste de reembolso."
                       }
                     },
                     "status": {
                       "type": "string",
                       "example": "approved",
                       "description": {
-                        "en": "Refund status",
-                        "pt": "Status de reembolso",
-                        "es": "Status de reembolso"
+                        "en": "Refund status.",
+                        "pt": "Status de reembolso.",
+                        "es": "Status de reembolso."
                       },
                       "enum": [
                         {
                           "title": "approved",
                           "description": {
                             "en": "The payment has been approved and accredited.",
-                            "es": "The payment has been approved and accredited.",
-                            "pt": "The payment has been approved and accredited."
+                            "es": "El pago ha sido aprobado y acreditado.",
+                            "pt": "O pagamento foi aprovado e creditado."
                           }
                         },
                         {
                           "title": "in_process",
                           "description": {
                             "en": "Payment is being reviewed.",
-                            "es": "Payment is being reviewed.",
-                            "pt": "Payment is being reviewed."
+                            "es": "El pago está siendo revisado.",
+                            "pt": "O pagamento está sendo revisado."
                           }
                         },
                         {
                           "title": "rejected",
                           "description": {
                             "en": "Payment was rejected. The user may retry payment.",
-                            "es": "Payment was rejected. The user may retry payment.",
-                            "pt": "Payment was rejected. The user may retry payment."
+                            "es": "El pago fue rechazado. El usuario puede intentar realizar el pago nuevamente.",
+                            "pt": "O pagamento foi recusado. O usuário pode tentar o pagamento novamente."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
                             "en": "Payment was cancelled by one of the parties or because time for payment has expired.",
-                            "es": "Payment was cancelled by one of the parties or because time for payment has expired.",
-                            "pt": "Payment was cancelled by one of the parties or because time for payment has expired."
+                            "es": "El pago fue cancelado por una de las partes o porque el tiempo para realizar el pago ha expirado.",
+                            "pt": "O pagamento foi cancelado por uma das partes ou porque o tempo para pagamento expirou."
                           }
                         },
                         {
                           "title": "authorized",
                           "description": {
                             "en": "The payment has been authorized but not captured yet.",
-                            "es": "The payment has been authorized but not captured yet.",
-                            "pt": "The payment has been authorized but not captured yet."
+                            "es": "El pago ha sido autorizado, pero aún no ha sido capturado.",
+                            "pt": "O pagamento foi autorizado, mas ainda não foi capturado."
                           }
                         }
                       ]
@@ -474,9 +474,9 @@
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Refund reason",
-                        "pt": "Motivo do reembolso",
-                        "es": "Motivo de reembolso"
+                        "en": "Refund reason.",
+                        "pt": "Motivo do reembolso.",
+                        "es": "Motivo de reembolso."
                       }
                     },
                     "label": {
@@ -621,9 +621,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Payment identifier",
-              "pt": "Identificador de pagamento",
-              "es": "Identificador de pago"
+              "en": "Payment identifier.",
+              "pt": "Identificador de pagamento.",
+              "es": "Identificador de pago."
             },
             "required": true,
             "schema": {
@@ -682,35 +682,35 @@
                       "type": "number",
                       "example": 1009042015,
                       "description": {
-                        "en": "Refund identifier",
-                        "pt": "Identificador do reembolso",
-                        "es": "Identificador de reembolso"
+                        "en": "Refund identifier.",
+                        "pt": "Identificador do reembolso.",
+                        "es": "Identificador de reembolso."
                       }
                     },
                     "payment_id": {
                       "type": "number",
                       "example": 18552260055,
                       "description": {
-                        "en": "Payment identifier",
-                        "pt": "Identificador de pagamento",
-                        "es": "Identificador de pago"
+                        "en": "Payment identifier.",
+                        "pt": "Identificador de pagamento.",
+                        "es": "Identificador de pago."
                       }
                     },
                     "amount": {
                       "type": "number",
                       "example": 10,
                       "description": {
-                        "en": "Refund amount",
-                        "pt": "Valor do reembolso",
-                        "es": "Monto de reembolso"
+                        "en": "Refund amount.",
+                        "pt": "Valor do reembolso.",
+                        "es": "Monto de reembolso."
                       }
                     },
                     "metadata": {
                       "type": "array",
                       "description": {
-                        "en": "Contains payment metadata that is sent to us in the payment post",
-                        "pt": "Contém metadados de pagamento que nos são enviados no post de payment",
-                        "es": "Contiene metadatos del pago que nos envían en el post del payment"
+                        "en": "Contains payment metadata that is sent to us in the payment post.",
+                        "pt": "Contém metadados de pagamento que nos são enviados no post de payment.",
+                        "es": "Contiene metadatos del pago que nos envían en el post del payment."
                       },
                       "items": {
                         "type": "object"
@@ -729,14 +729,14 @@
                           "name": {
                             "type": "string",
                             "example": {
-                              "en": "Firstname Lastname",
-                              "pt": "Nome e sobrenome",
-                              "es": "Nombre y apellido"
+                              "en": "Firstname Lastname.",
+                              "pt": "Nome e sobrenome.",
+                              "es": "Nombre y apellido."
                             },
                             "description": {
-                              "es": "The name of the user who submitted the refund request",
-                              "pt": "The name of the user who submitted the refund request",
-                              "en": "The name of the user who submitted the refund request"
+                              "es": "El nombre del usuario que presentó la solicitud de reembolso.",
+                              "pt": "O nome do usuário que apresentou a solicitação de reembolso.",
+                              "en": "The name of the user who submitted the refund request."
                             }
                           },
                           "id": {
@@ -765,9 +765,9 @@
                       "example": "2021-11-24T13:58:49.312-04:00",
                       "format": "date",
                       "description": {
-                        "en": "Refund creation date",
-                        "pt": "Data de criação do reembolso",
-                        "es": "Fecha de creación del reembolso"
+                        "en": "Refund creation date.",
+                        "pt": "Data de criação do reembolso.",
+                        "es": "Fecha de creación del reembolso."
                       }
                     },
                     "unique_sequence_number": {
@@ -783,67 +783,67 @@
                       "type": "string",
                       "example": "standard",
                       "description": {
-                        "en": "Type of Refund",
-                        "pt": "Tipo de reembolso",
-                        "es": "Tipo de reembolso"
+                        "en": "Type of refund.",
+                        "pt": "Tipo de reembolso.",
+                        "es": "Tipo de reembolso."
                       }
                     },
                     "adjustment_amount": {
                       "type": "number",
                       "example": 0,
                       "description": {
-                        "en": "Refund adjustment",
-                        "pt": "Ajuste de reembolso",
-                        "es": "Ajuste de reembolso"
+                        "en": "Refund adjustment.",
+                        "pt": "Ajuste de reembolso.",
+                        "es": "Ajuste de reembolso."
                       }
                     },
                     "status": {
                       "type": "string",
                       "example": "approved",
                       "description": {
-                        "en": "Refund status",
-                        "pt": "Status de reembolso",
-                        "es": "Status de reembolso"
+                        "en": "Refund status.",
+                        "pt": "Status de reembolso.",
+                        "es": "Status de reembolso."
                       },
                       "enum": [
                         {
                           "title": "approved",
                           "description": {
                             "en": "The payment has been approved and accredited.",
-                            "es": "The payment has been approved and accredited.",
-                            "pt": "The payment has been approved and accredited."
+                            "es": "El pago ha sido aprobado y acreditado.",
+                            "pt": "O pagamento foi aprovado e creditado."
                           }
                         },
                         {
                           "title": "in_process",
                           "description": {
                             "en": "Payment is being reviewed.",
-                            "es": "Payment is being reviewed.",
-                            "pt": "Payment is being reviewed."
+                            "es": "El pago está siendo revisado.",
+                            "pt": "O pagamento está sendo revisado."
                           }
                         },
                         {
                           "title": "rejected",
                           "description": {
                             "en": "Payment was rejected. The user may retry payment.",
-                            "es": "Payment was rejected. The user may retry payment.",
-                            "pt": "Payment was rejected. The user may retry payment."
+                            "es": "El pago fue rechazado. El usuario puede intentar realizar el pago nuevamente.",
+                            "pt": "O pagamento foi recusado. O usuário pode tentar o pagamento novamente."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
                             "en": "Payment was cancelled by one of the parties or because time for payment has expired.",
-                            "es": "Payment was cancelled by one of the parties or because time for payment has expired.",
-                            "pt": "Payment was cancelled by one of the parties or because time for payment has expired."
+                            "es": "El pago fue cancelado por una de las partes o porque el tiempo para realizar el pago ha expirado.",
+                            "pt": "O pagamento foi cancelado por uma das partes ou porque o tempo para pagamento expirou."
                           }
                         },
                         {
                           "title": "authorized",
                           "description": {
                             "en": "The payment has been authorized but not captured yet.",
-                            "es": "The payment has been authorized but not captured yet.",
-                            "pt": "The payment has been authorized but not captured yet."
+                            "es": "El pago ha sido autorizado, pero aún no ha sido capturado.",
+                            "pt": "O pagamento foi autorizado, mas ainda não foi capturado."
                           }
                         }
                       ]
@@ -852,9 +852,9 @@
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Refund reason",
-                        "pt": "Motivo do reembolso",
-                        "es": "Motivo de reembolso"
+                        "en": "Refund reason.",
+                        "pt": "Motivo do reembolso.",
+                        "es": "Motivo de reembolso."
                       }
                     },
                     "label": {
@@ -1126,18 +1126,18 @@
           "checkout-api"
         ],
         "description": {
-          "en": "Get a specific Refund from a specific payment",
-          "pt": "Consultar reembolso específico de determinado pagamento",
-          "es": "Consultar reembolso específico de un pago determinado"
+          "en": "Get a specific Refund from a specific payment.",
+          "pt": "Consultar reembolso específico de determinado pagamento.",
+          "es": "Consultar reembolso específico de un pago determinado."
         },
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Payment identifier",
-              "pt": "Identificador de pagamento",
-              "es": "Identificador de pago"
+              "en": "Payment identifier.",
+              "pt": "Identificador de pagamento.",
+              "es": "Identificador de pago."
             },
             "required": true,
             "schema": {
@@ -1149,9 +1149,9 @@
             "name": "refund_id",
             "in": "path",
             "description": {
-              "en": "Refund identifier",
-              "pt": "Identificador do reembolso",
-              "es": "Identificador de reembolso"
+              "en": "Refund identifier.",
+              "pt": "Identificador do reembolso.",
+              "es": "Identificador de reembolso."
             },
             "required": true,
             "schema": {
@@ -1176,27 +1176,27 @@
                       "type": "number",
                       "example": 1032332129,
                       "description": {
-                        "en": "Refund identifier",
-                        "pt": "Identificador do reembolso",
-                        "es": "Identificador de reembolso"
+                        "en": "Refund identifier.",
+                        "pt": "Identificador do reembolso.",
+                        "es": "Identificador de reembolso."
                       }
                     },
                     "payment_id": {
                       "type": "number",
                       "example": 18552260055,
                       "description": {
-                        "es": "Payment identifier from the payment",
-                        "pt": "Payment identifier from the payment",
-                        "en": "Payment identifier from the payment"
+                        "es": "Identificador del pago.",
+                        "pt": "Identificador do pagamento.",
+                        "en": "Payment identifier from the payment."
                       }
                     },
                     "amount": {
                       "type": "number",
                       "example": 10,
                       "description": {
-                        "en": "Refund amount",
-                        "pt": "Valor do reembolso",
-                        "es": "Monto de reembolso"
+                        "en": "Refund amount.",
+                        "pt": "Valor do reembolso.",
+                        "es": "Monto de reembolso."
                       }
                     },
                     "metadata": {
@@ -1259,9 +1259,9 @@
                       "example": "2021-11-24T13:58:49.312-04:00",
                       "format": "date",
                       "description": {
-                        "en": "Refund creation date",
-                        "pt": "Data de criação do reembolso",
-                        "es": "Fecha de creación del reembolso"
+                        "en": "Refund creation date.",
+                        "pt": "Data de criação do reembolso.",
+                        "es": "Fecha de creación del reembolso."
                       }
                     },
                     "unique_sequence_number": {
@@ -1277,67 +1277,67 @@
                       "type": "string",
                       "example": "standard",
                       "description": {
-                        "en": "Type of refund",
-                        "pt": "Tipo de reembolso",
-                        "es": "Tipo de reembolso"
+                        "en": "Type of refund.",
+                        "pt": "Tipo de reembolso.",
+                        "es": "Tipo de reembolso."
                       }
                     },
                     "adjustment_amount": {
                       "type": "number",
                       "example": 0,
                       "description": {
-                        "en": "Refund adjustment",
-                        "pt": "Ajuste de reembolso",
-                        "es": "Ajuste de reembolso"
+                        "en": "Refund adjustment.",
+                        "pt": "Ajuste de reembolso.",
+                        "es": "Ajuste de reembolso."
                       }
                     },
                     "status": {
                       "type": "string",
                       "example": "approved",
                       "description": {
-                        "en": "Refund status",
-                        "pt": "Status de reembolso",
-                        "es": "Status de reembolso"
+                        "en": "Refund status.",
+                        "pt": "Status de reembolso.",
+                        "es": "Status de reembolso."
                       },
                       "enum": [
                         {
                           "title": "approved",
                           "description": {
                             "en": "The payment has been approved and accredited.",
-                            "es": "The payment has been approved and accredited.",
-                            "pt": "The payment has been approved and accredited."
+                            "es": "El pago ha sido aprobado y acreditado.",
+                            "pt": "O pagamento foi aprovado e creditado."
                           }
                         },
                         {
                           "title": "in_process",
                           "description": {
                             "en": "Payment is being reviewed.",
-                            "es": "Payment is being reviewed.",
-                            "pt": "Payment is being reviewed."
+                            "es": "El pago está siendo revisado.",
+                            "pt": "O pagamento está sendo revisado."
                           }
                         },
                         {
                           "title": "rejected",
                           "description": {
                             "en": "Payment was rejected. The user may retry payment.",
-                            "es": "Payment was rejected. The user may retry payment.",
-                            "pt": "Payment was rejected. The user may retry payment."
+                            "es": "El pago fue rechazado. El usuario puede intentar realizar el pago nuevamente.",
+                            "pt": "O pagamento foi recusado. O usuário pode tentar o pagamento novamente."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
                             "en": "Payment was cancelled by one of the parties or because time for payment has expired.",
-                            "es": "Payment was cancelled by one of the parties or because time for payment has expired.",
-                            "pt": "Payment was cancelled by one of the parties or because time for payment has expired."
+                            "es": "El pago fue cancelado por una de las partes o porque el tiempo para realizar el pago ha expirado.",
+                            "pt": "O pagamento foi cancelado por uma das partes ou porque o tempo para pagamento expirou."
                           }
                         },
                         {
                           "title": "authorized",
                           "description": {
                             "en": "The payment has been authorized but not captured yet.",
-                            "es": "The payment has been authorized but not captured yet.",
-                            "pt": "The payment has been authorized but not captured yet."
+                            "es": "El pago ha sido autorizado, pero aún no ha sido capturado.",
+                            "pt": "O pagamento foi autorizado, mas ainda não foi capturado."
                           }
                         }
                       ]
@@ -1346,9 +1346,9 @@
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Refund reason",
-                        "pt": "Motivo do reembolso",
-                        "es": "Motivo de reembolso"
+                        "en": "Refund reason.",
+                        "pt": "Motivo do reembolso.",
+                        "es": "Motivo de reembolso."
                       }
                     },
                     "label": {
@@ -1853,9 +1853,9 @@
                           "identification": {
                             "type": "array",
                             "description": {
-                              "en": "List of identification",
-                              "pt": "Lista de identificação",
-                              "es": "Lista de identificación"
+                              "en": "List of identification.",
+                              "pt": "Lista de identificação.",
+                              "es": "Lista de identificación."
                             },
                             "items": {
                               "type": "object",
@@ -1865,8 +1865,8 @@
                                   "example": "32659430",
                                   "description": {
                                     "en": "Identification number.",
-                                    "pt": "Número de identificação",
-                                    "es": "Número de identificación"
+                                    "pt": "Número de identificação.",
+                                    "es": "Número de identificación."
                                   }
                                 },
                                 "type": {
@@ -1874,8 +1874,8 @@
                                   "example": "DNI",
                                   "description": {
                                     "en": "Identification type.",
-                                    "pt": "Tipo de identificação",
-                                    "es": "Tipo de identificación"
+                                    "pt": "Tipo de identificação.",
+                                    "es": "Tipo de identificación."
                                   }
                                 }
                               }
@@ -1884,9 +1884,9 @@
                           "phone": {
                             "type": "array",
                             "description": {
-                              "en": "List of phones",
-                              "pt": "Lista de telefones",
-                              "es": "Lista de teléfonos"
+                              "en": "List of phones.",
+                              "pt": "Lista de telefones.",
+                              "es": "Lista de teléfonos."
                             },
                             "items": {
                               "type": "object",
@@ -1895,9 +1895,9 @@
                                   "type": "string",
                                   "example": null,
                                   "description": {
-                                    "en": "Area code",
-                                    "pt": "Código de área",
-                                    "es": "Código de área"
+                                    "en": "Area code.",
+                                    "pt": "Código de área.",
+                                    "es": "Código de área."
                                   }
                                 },
                                 "number": {
@@ -1925,9 +1925,9 @@
                             "type": "string",
                             "example": null,
                             "description": {
-                              "en": "Entity type",
-                              "pt": "Tipo de entidade",
-                              "es": "Tipo de entidad"
+                              "en": "Entity type.",
+                              "pt": "Tipo de entidade.",
+                              "es": "Tipo de entidad."
                             }
                           },
                           "id": {
@@ -1943,9 +1943,9 @@
                             "type": "string",
                             "example": null,
                             "description": {
-                              "en": "Operator identifier",
-                              "pt": "Identificador do operador",
-                              "es": "Identificador del operador"
+                              "en": "Operator identifier.",
+                              "pt": "Identificador do operador.",
+                              "es": "Identificador del operador."
                             }
                           }
                         }
@@ -1955,9 +1955,9 @@
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Marketplace owner",
-                        "pt": "Proprietário do marketplace",
-                        "es": "Propietario del marketplace"
+                        "en": "Marketplace owner.",
+                        "pt": "Proprietário do marketplace.",
+                        "es": "Propietario del marketplace."
                       }
                     },
                     "metadata": {
@@ -1972,9 +1972,9 @@
                     "additional_info": {
                       "type": "array",
                       "description": {
-                        "en": "List of additional information",
-                        "pt": "Lista de informação adicional",
-                        "es": "Lista de información adicional"
+                        "en": "List of additional information.",
+                        "pt": "Lista de informação adicional.",
+                        "es": "Lista de información adicional."
                       },
                       "items": {
                         "type": "object",
@@ -1982,9 +1982,9 @@
                           "items": {
                             "type": "array",
                             "description": {
-                              "en": "List of items",
-                              "pt": "Lista de ítens",
-                              "es": "Lista de items"
+                              "en": "List of items.",
+                              "pt": "Lista de ítens.",
+                              "es": "Lista de items."
                             },
                             "items": {
                               "type": "object",
@@ -2001,22 +2001,22 @@
                                 "title": {
                                   "type": "string",
                                   "example": {
-                                    "en": "My product",
-                                    "pt": "Meu produto",
-                                    "es": "Mi producto"
+                                    "en": "My product.",
+                                    "pt": "Meu produto.",
+                                    "es": "Mi producto."
                                   },
                                   "description": {
                                     "en": "Item title.",
-                                    "pt": "Título do item",
-                                    "es": "Título del ítem"
+                                    "pt": "Título do item.",
+                                    "es": "Título del ítem."
                                   }
                                 },
                                 "description": {
                                   "type": "string",
                                   "example": {
-                                    "en": "E-commerce store cellphone",
-                                    "pt": "Celular da loja online",
-                                    "es": "Celular de la tienda online"
+                                    "en": "E-commerce store cellphone.",
+                                    "pt": "Celular da loja online.",
+                                    "es": "Celular de la tienda online."
                                   },
                                   "description": {
                                     "en": "Description",
@@ -2028,18 +2028,18 @@
                                   "type": "string",
                                   "example": "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif",
                                   "description": {
-                                    "en": "Picture URL",
-                                    "pt": "URL da imagem",
-                                    "es": "URL de la imagen"
+                                    "en": "Picture URL.",
+                                    "pt": "URL da imagem.",
+                                    "es": "URL de la imagen."
                                   }
                                 },
                                 "category_id": {
                                   "type": "string",
                                   "example": "art",
                                   "description": {
-                                    "en": "Category identifier",
-                                    "pt": "Identificador da categoria",
-                                    "es": "Identificador de la categoría"
+                                    "en": "Category identifier.",
+                                    "pt": "Identificador da categoria.",
+                                    "es": "Identificador de la categoría."
                                   }
                                 },
                                 "quantity": {
@@ -2055,9 +2055,9 @@
                                   "type": "string",
                                   "example": "75.76",
                                   "description": {
-                                    "en": "Unit price",
-                                    "pt": "Preço unitário",
-                                    "es": "Precio unitario"
+                                    "en": "Unit pric.",
+                                    "pt": "Preço unitário.",
+                                    "es": "Precio unitario."
                                   }
                                 }
                               }
@@ -2071,9 +2071,9 @@
                           "phone": {
                             "type": "array",
                             "description": {
-                              "en": "List of phone",
-                              "pt": "Lista de telefone",
-                              "es": "Lista de telefóno"
+                              "en": "List of phone.",
+                              "pt": "Lista de telefone.",
+                              "es": "Lista de telefóno."
                             },
                             "items": {
                               "type": "object",
@@ -2082,9 +2082,9 @@
                                   "type": "string",
                                   "example": "55",
                                   "description": {
-                                    "en": "Area code",
-                                    "pt": "Código de área",
-                                    "es": "Código de área"
+                                    "en": "Area code.",
+                                    "pt": "Código de área.",
+                                    "es": "Código de área."
                                   }
                                 },
                                 "number": {
@@ -2199,9 +2199,9 @@
                     "order": {
                       "type": "array",
                       "description": {
-                        "en": "List of orders",
-                        "pt": "Lista de pedidos",
-                        "es": "Lista de órdenes"
+                        "en": "List of orders.",
+                        "pt": "Lista de pedidos.",
+                        "es": "Lista de órdenes."
                       },
                       "items": {
                         "type": "object",
@@ -2210,18 +2210,18 @@
                             "type": "string",
                             "example": "mercadopago",
                             "description": {
-                              "en": "Type",
-                              "pt": "Tipo",
-                              "es": "Tipo"
+                              "en": "Order type",
+                              "pt": "Tipo de order.",
+                              "es": "Tipo de la order."
                             }
                           },
                           "id": {
                             "type": "string",
                             "example": "3754501423",
                             "description": {
-                              "en": "Order identifier",
-                              "pt": "Identificador do pedido",
-                              "es": "Identificador de la orden"
+                              "en": "Order identifier.",
+                              "pt": "Identificador do pedido.",
+                              "es": "Identificador de la orden."
                             }
                           }
                         }
@@ -2231,62 +2231,62 @@
                       "type": "string",
                       "example": "firstname@gmail.com",
                       "description": {
-                        "en": "External Reference",
-                        "pt": "Referência externa",
-                        "es": "Referencia externa"
+                        "en": "External reference.",
+                        "pt": "Referência externa.",
+                        "es": "Referencia externa."
                       }
                     },
                     "transaction_amount": {
                       "type": "number",
                       "example": 75.76,
                       "description": {
-                        "en": "Transaction amount",
-                        "pt": "Valor da transação",
-                        "es": "Monto de la transacción"
+                        "en": "Transaction amount.",
+                        "pt": "Valor da transação.",
+                        "es": "Monto de la transacción."
                       }
                     },
                     "transaction_amount_refunded": {
                       "type": "number",
                       "example": 0,
                       "description": {
-                        "en": "Transaction amount refunded",
-                        "pt": "Valor reembolsado da transação",
-                        "es": "Monto reembolsado de transacción"
+                        "en": "Transaction amount refunded.",
+                        "pt": "Valor reembolsado da transação.",
+                        "es": "Monto reembolsado de transacción."
                       }
                     },
                     "coupon_amount": {
                       "type": "number",
                       "example": 0,
                       "description": {
-                        "en": "Coupon amount",
-                        "pt": "Valor do cupom",
-                        "es": "Valor de cupón"
+                        "en": "Coupon amount.",
+                        "pt": "Valor do cupom.",
+                        "es": "Valor de cupón."
                       }
                     },
                     "differential_pricing_id": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Differential pricing identifier",
-                        "pt": "Identificador do diferencial de preço",
-                        "es": "Identificador de precio diferencial"
+                        "en": "Differential pricing identifier.",
+                        "pt": "Identificador do diferencial de preço.",
+                        "es": "Identificador de precio diferencial."
                       }
                     },
                     "deduction_schema": {
                       "type": "string",
                       "example": null,
                       "description": {
-                        "en": "Deduction schema",
-                        "pt": "Esquema de dedução",
-                        "es": "Esquema de deducción"
+                        "en": "Deduction schema.",
+                        "pt": "Esquema de dedução.",
+                        "es": "Esquema de deducción."
                       }
                     },
                     "barcode": {
                       "type": "array",
                       "description": {
-                        "en": "List of barcode",
-                        "pt": "Lista de códigos de barra",
-                        "es": "Lista de códigos de barra"
+                        "en": "List of barcode.",
+                        "pt": "Lista de códigos de barra.",
+                        "es": "Lista de códigos de barra."
                       },
                       "items": {
                         "type": "object",
@@ -2295,9 +2295,9 @@
                             "type": "string",
                             "example": "23791883300000075763380250600221946300633330",
                             "description": {
-                              "en": "Content",
-                              "pt": "Conteúdo",
-                              "es": "Contenido"
+                              "en": "Barcode numbering.",
+                              "pt": "Numeração do ódigo de barras.",
+                              "es": "Numeración de códigos de barras."
                             }
                           }
                         }
