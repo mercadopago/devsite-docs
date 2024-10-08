@@ -7,13 +7,17 @@
 >
 > Attention
 >
-> This new application is exclusive for card payments. To configure Pix payments, refer to the [corresponding documentation](/developers/en/docs/shopify/integration-configuration/pix). For boleto bancário payments, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro). 
+> This new application is exclusive for card payments. To configure Pix payments, refer to the [corresponding documentation](/developers/en/docs/shopify/integration-configuration/pix). For boleto bancário payments, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
+
+To integrate Mercado Pago Cartões, install the application through the [Shopify panel](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_shopify_admin_panel) or the [Marketplace](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_marketplace). After installation, you can [configure the expiration period](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_configure_interest-free_installments).
 
 ------------
 ----[mlm, mco]----
 # Tarjetas
 
 **Mercado Pago Tarjetas** ([Checkout API](/developers/en/docs/checkout-api/landing)) is an app that allows transparent payments with debit or credit cards, where the entire checkout process happens within the online store environment, without the need to redirect to an external page. In addition to providing greater control in the customization and integration process, it reduces cart abandonment and increases the possibility of conversion.
+
+To integrate Mercado Pago Tarjetas, install the application through the [Shopify panel](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_shopify_admin_panel) or the [Marketplace](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_marketplace). After installation, you can [configure the expiration period](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_configure_interest-free_installments).
 
 ------------
 ----[mco]----
