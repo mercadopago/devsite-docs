@@ -208,7 +208,7 @@ Finally, send the information in the `device` field when creating the `card_toke
 ## Detail all information about the payment
 
 To optimize payment security validation and improve approvals, it is important to **submit as much buyer and item data as possible**.
-You can check all the available attributes when creating a payment by using the [Create payment](/developers/en/reference/payments/_payments/post) method. Pay special attention to the attributes present in `adicional_inf`, such as:
+You can check all the available attributes when creating a payment by using the [Create payment](/developers/en/reference/payments/_payments/post) method. Pay special attention to the attributes present in `additional_info`, such as:
  * Buyer’s data,
  * Product data,
  * Shipping data.
@@ -224,7 +224,7 @@ In case you wish to **create your front-end from scratch**, you can find some ad
 In case you wish to guarantee an optimized interface, you can use the **visual components** of [Checkout Bricks](/developers/en/docs/checkout-bricks/landing), and also use a **predefined visual component** with the best messages with [Status Screen Brick](/developers/en/docs/checkout-bricks/status-screen-brick/introduction).
 
 > WARNING
-> 
+>
 > Important
 >
-> We recommend assessing your [integration’s quality](/developers/en/guides/additional-content/homologator/homologator) before going to production to check if you are meeting the Mercado Pago quality and security standards that would help you obtain a good payment approval rate.
+> We recommend checking the results of the [integration quality measurement](/developers/en/docs/integration-quality) before going to production, whether it has been conducted manually or automatically. This will allow you to validate if you are meeting Mercado Pago's quality and security standards and will provide insights to improve your payment approval rate.

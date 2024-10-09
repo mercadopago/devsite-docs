@@ -62,7 +62,7 @@ O Access Token é o código utilizado em diferentes _requests_ públicos para ac
 >
 > É recomendado realizar este procedimento por completo de uma única vez em conjunto com o usuário, visto que o código recebido pela "URL de redirecionamento" após a autorização tem validade de 10 minutos e o Access Token recebido através do endpoint tem validade de 180 dias (6 meses).
  
-1. Edite sua aplicação para conter suas URLs de redirecionamento. Veja [Editar aplicação](/developers/pt/guides/additional-content/your-integrations/application-details).
+1. Edite sua aplicação para conter suas URLs de redirecionamento. Veja [Editar aplicação](/developers/pt/docs/your-integrations/application-details).
 2. Envie a **URL de autenticação** para o vendedor cuja conta você deseja vincular à sua com os seguintes campos:
 
    ```Authentication_URL

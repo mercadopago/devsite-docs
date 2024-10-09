@@ -1,10 +1,12 @@
 # Default rendering
 
-> WARNING
+Before rendering the Status Screen Brick, first execute the [initialization steps](/developers/en/docs/checkout-bricks/common-initialization) shared among all Bricks. From there, see below the necessary information to configure and render the Status Screen Brick.
+
+> NOTE
 >
-> Important
+> Note
 >
-> To perform Status Screen Brick rendering, first perform the [initialization steps](/developers/en/docs/checkout-bricks/common-initialization) shared among all Bricks. 
+> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/status-screen.md).
 
 ## Configure the Brick
 
@@ -67,7 +69,7 @@ The `paymentId` that must be sent to Brick for its initialization is the ID retu
 
 Once the configurations are created, enter the code below to render the Brick. 
 
-> NOTE
+> WARNING
 >
 > Important
 >

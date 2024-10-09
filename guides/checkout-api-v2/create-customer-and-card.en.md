@@ -1,6 +1,6 @@
 # Create customer and card
 
-To create a customer and associate it with your card, you must send the email field, the type of payment method, the ID of the issuing bank and the generated token. Each customer will be saved with the value `customer` and each card with the value `card`.
+To create a customer and associate it with your card, you must send the email field, the type of payment method and the generated token. Each customer will be saved with the value `customer` and each card with the value `card`.
 
 In addition, by using our SDKs, and if a payment is successfully completed, the correct information can be stored securely in our servers for future purchases, which can streamline the payment process for the buyer. For more information, check our [API Reference](/developers/en/reference/cards/_customers_customer_id_cards/post).
 
@@ -75,7 +75,6 @@ customer = customer_response[:response]
 
 card_request = {
 token: '9b2d63e00d66a8c721607214cedaecda',
-issuer_id: '3245612',
 payment_method_id: 'visa'
 }
 card_response = sdk.card.create(customer['id'], card_request)
@@ -113,7 +112,6 @@ customer = customer_response["response"]
 
 card_data = {
 "token": "9b2d63e00d66a8c721607214cedaecda",
-"issuer_id": "3245612",
 "payment_method_id": "visa"
 }
 card_response = sdk.card().create(customer["id"], card_data)
@@ -168,7 +166,7 @@ curl -X POST \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 'https://api.mercadopago.com/v1/customers/CUSTOMER_ID/cards' \
--d '{"token": "9b2d63e00d66a8c721607214cedaecda", "issuer_id": "3245612", "payment_method_id": "visa"}'
+-d '{"token": "9b2d63e00d66a8c721607214cedaecda", "payment_method_id": "visa"}'
 
 ```
 ]]]
@@ -199,4 +197,4 @@ The response will bring the following result.
 >
 > Attention
 >
-> If the request response returns an error like `invalid parameter` with HTTP code 400, review the `payment_method_id` and `issuer_id` parameters to ensure that the values have been entered correctly. Also, when using test users, keep in mind the following format for customer email: `test_payer_[0-9]{1,10}@testuser.com` For example: `test_payer_12345@testuser.com`.
+> If the request response returns an error like `invalid parameter` with HTTP code 400, review the `payment_method_id` parameter to ensure that the value have been entered correctly. Also, when using test users, keep in mind the following format for customer email: `test_payer_[0-9]{1,10}@testuser.com` For example: `test_payer_12345@testuser.com`.

@@ -1,4 +1,4 @@
-# Modelo de pagamento Cartão de Crédito - Eventos/Tickets
+# Modelo de pagamento com cartão de crédito - Eventos/Tickets
 
 ```curl
 curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
@@ -8,63 +8,63 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 --data-raw '{
     "transaction_amount": 120.34,
     "installments": 1,
-    "statement_descriptor": "LOJA DO SELLER",
+    "statement_descriptor": "Loja do vendedor",
     "capture": true,
     "binary_mode": false,
-    "sponsor_id": {{ADICIONE O ID DE SUA CONTA MERCADO PAGO REFERENTE A SUA PLATAFORMA}},
+    "sponsor_id": {{ID da sua conta Mercado Pago referente à sua plataforma}},
     "payment_method_id": "{{payment_method_id}}",
     "token":  "{{card_token_id}}",
-    "external_reference": "IDENTIFICADOR DA PLATAFORMA",
+    "external_reference": "Identificador da plataforma",
     "notification_url": "{{notification_url}}",
-    "description": "DD/MM/AAAA | NOME DO EVENTO",
+    "description": "Data (no formato dd/mm/aaaa) | Nome do evento",
     "payer": {
-        "first_name": "Compra",
-        "last_name": "Teste",
-        "email": "test_user_1677281849@testuser.com",
+        "first_name": "Nome. Exemplo: João",
+        "last_name": "Sobrenome. Exemplo: Silva",
+        "email": "Exemplo: test_user_1677281849@testuser.com",
         "identification": {
-            "type": "CPF",
-            "number": "19119119100"
+            "type": "Tipo de documento. Exemplo: CPF",
+            "number": "Número do documento. Exemplo: 19119119100"
         },
         "address": {
-            "zip_code": "06233-200",
-            "street_name": "Av. das Nações Unidas",
-            "street_number": "3003",
-            "neighborhood": "Bonfim",
-            "city": "Osasco",
-            "federal_unit": "SP"
+            "zip_code": "CEP. Exemplo: 06233-200",
+            "street_name": "Nome da rua. Exemplo: Av. das Nações Unidas",
+            "street_number": "Número. Exemplo: 3003",
+            "neighborhood": "Bairro. Exemplo: Bonfim",
+            "city": "Cidade. Exemplo: Osasco",
+            "federal_unit": "UF. Exemplo: SP"
         }
     },
     "additional_info": {
-        "referral_url": "www.sellertest123.com",
+        "referral_url": "URL de referência. Exemplo: www.sellertest123.com",
         "drop_shipping": false,
         "delivery_promise": "2022-11-20",
         "contrated_plan": "premium",
         "items": [
             {
                 "id": "1941",
-                "title": "DD/MM/AAAA | NOME DO EVENTO",
-                "description": "DD/MM/AAAA | NOME DO EVENTO",
+                "title": "Data (no formato dd/mm/aaaa) | Nome do evento",
+                "description": "Data (no formato dd/mm/aaaa) | Nome do evento",
                 "picture_url": null,
-                "category_id": "tickets",
+                "category_id": "Categoria. Exemplo: tickets",
                 "quantity": 1,
                 "unit_price": 120.34,
                 "event_date": "2019-12-25T19:30:00.000-03:00"
             }
         ],
         "payer": {
-            "first_name": "Nome",
-            "last_name": "Sobrenome",
+            "first_name": "Nome. Exemplo: João",
+            "last_name": "Sobrenome. Exemplo: Silva",
             "is_prime_user": "1",
             "is_first_purchase_online": "1",
             "last_purchase": "2020-10-25T19:30:00.000-03:00",
             "phone": {
-                "area_code": "11",
-                "number": "987654321"
+                "area_code": "Código da área. Exemplo: 11",
+                "number": "Número. Exemplo: 987654321"
             },
             "address": {
-                "zip_code": "06233-200",
-                "street_name": "Av. das Nações Unidas",
-                "street_number": "3003"
+                "zip_code": "CEP. Exemplo: 06233-200",
+                "street_name": "Rua. Exemplo: Av. das Nações Unidas",
+                "street_number": "Número. Exemplo: 3003"
             },
             "registration_date": "2013-08-06T09:25:04.000-03:00"
         },
@@ -72,11 +72,11 @@ curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
             "express_shipment": "0",
             "pick_up_on_seller": "1",
             "receiver_address": {
-                "zip_code": "95630000",
-                "street_name": "são Luiz",
-                "street_number": "15",
-                "floor": "",
-                "apartment": ""
+                "zip_code": "Código de área. Exemplo: 95630000",
+                "street_name": "Nome da rua. Exemplo: São Luiz",
+                "street_number": "Número. Exemplo: 15",
+                "floor": "Andar (caso seja apartamento). Exemplo: Segundo",
+                "apartment": "Número do apartamento (caso seja apartamento). Exemplo: 93"
             }
         }
     }  

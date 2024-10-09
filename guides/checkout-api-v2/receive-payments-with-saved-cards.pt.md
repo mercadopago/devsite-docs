@@ -226,7 +226,6 @@ Uma vez obtido o token, é preciso criar o pagamento com o valor correspondente.
     "description" => "My product",
     "installments" => 1,
     "payment_method_id" => "visa",
-    "issuer_id" => "123",
     "payer" => [
       "type" => "customer",
       "id" => "1234"
@@ -250,7 +249,6 @@ customerClient.listCards({ customerId: '<CUSTOMER_ID>' })
     description: 'My product',
     installments: 1,
     payment_method_id: 'visa',
-    issuer_id: 123,
     payer: {
       type: 'customer',
       id: '123'

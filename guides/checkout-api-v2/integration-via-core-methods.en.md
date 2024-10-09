@@ -63,6 +63,14 @@ The capture of card data (card number, security code and expiration date) is don
 
 To obtain this data and process payments, insert the HTML below directly into the project.
 
+----[mlc]----
+> WARNING
+>
+> Attention
+>
+> The `unit_price` value must be an integer.
+
+------------
 ----[mla, mlu, mpe, mco, mlb, mlc]----
 [[[
 ```html

@@ -14,7 +14,7 @@ A continuación encontrará una lista de plugins que permiten agregar el `integr
 
 - [Woocommerce](/developers/es/docs/woocommerce/introduction)
 - [Prestashop](/developers/es/docs/prestashop/landing)
-- [Magento](/developers/es/docs/magento-two/landing)
+- [Adobe Commerce](/developers/es/docs/adobe-commerce/landing)
 - [VTEX](/developers/es/docs/vtex/introduction)
 
 Para más detalles sobre cómo y por qué usar `integrator_id` en tus integraciones, accede a nuestra [FAQ](https://www.mercadopago.com/developers/es/support/23937).

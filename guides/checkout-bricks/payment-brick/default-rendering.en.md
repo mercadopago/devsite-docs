@@ -1,10 +1,12 @@
 # Default rendering
 
-> WARNING
+Before rendering the Payment Brick, first execute the [initialization steps](/developers/en/docs/checkout-bricks/common-initialization) shared among all Bricks. From there, see below the necessary information to configure and render the Payment Brick.
+
+> NOTE
 >
-> Important
+> Note
 >
-> To perform Payment Brick rendering, first perform the [initialization steps](/developers/en/docs/checkout-bricks/common-initialization) shared among all Bricks. 
+> To consult the types and specifications of the parameters and responses of the Brick functions, refer to the [technical documentation](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/payment.md).
 
 ## Configure the Brick
 
@@ -246,7 +248,9 @@ const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
      /*
-      "amount" is the total amount to be paid by all means of payment with the exception of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId"
+      "amount" is the total amount to be paid by all means of payment with the exception 
+      of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId". 
+      It must be an integer.
      */
      amount: 100,
      preferenceId: "<PREFERENCE_ID>",
@@ -304,6 +308,11 @@ renderPaymentBrick(bricksBuilder);
 
 const initialization = {
  amount: 100,
+     /*
+      "amount" is the total amount to be paid by all means of payment with the exception 
+      of the Mercado Pago Account and Installment without a credit card, which have their processing value determined in the backend through the "preferenceId". 
+      It must be an integer.
+     */
  preferenceId: "<PREFERENCE_ID>",
 };
 const customization = {

@@ -60,7 +60,7 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec
+available_payments: credit, debit, mercadopago, boleto, pix
 
 ---
 
@@ -109,7 +109,7 @@ available_payments: mercadopago, credit, debit
 ----[mpe]---- 
 
 ---
-available_payments: mercadopago, atm, credit, debit
+available_payments: mercadopago, atm, credit, debit, yape
 
 ----
 ------------

@@ -64,6 +64,16 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 
 ![installation cards 7](/images/shopify/installation-cards-7-es.png)
 
+15. Aún en las "Configuraciones" del panel administrativo de la tienda, haz clic en **Checkout > Método de contacto del cliente** y asegúrate de que el campo **Correo electrónico** esté seleccionado como el método de contacto que los clientes deberán indicar para recibir notificaciones del pedido.
+
+> WARNING
+>
+> Atención
+>
+> El uso del **correo electrónico** como forma de contacto es obligatorio para el procesamiento de pagos con Mercado Pago.
+
+![installation cards 8](/images/shopify/installation-cards-8-es.png)
+
 ¡Listo! El checkout **Mercado Pago Cartões** está listo para recibir pagos.
 
 > WARNING
@@ -116,6 +126,16 @@ Para instalar el checkout **Mercado Pago Cartões** en una tienda Shopify, sigue
 10. En "Método de captura de pago", asegúrate de que el campo **De forma automática al pagar** esté habilitado para garantizar que los pagos se capturen cuando se realice el pedido.
 
 ![installation cards 7](/images/shopify/installation-cards-7-es.png)
+
+11. Aún en las "Configuraciones" del panel administrativo de la tienda, haz clic en **Checkout > Método de contacto del cliente** y asegúrate de que el campo **Correo electrónico** esté seleccionado como el método de contacto que los clientes deberán indicar para recibir notificaciones del pedido.
+
+> WARNING
+>
+> Atención
+>
+> El uso del **correo electrónico** como forma de contacto es obligatorio para el procesamiento de pagos con Mercado Pago.
+
+![installation cards 8](/images/shopify/installation-cards-8-es.png)
 
 ¡Listo! El checkout **Mercado Pago Cartões** está listo para recibir pagos.
 

@@ -63,7 +63,7 @@ Sigue los pasos a continuación para obtenerlo.
 >
 > Se recomienda realizar este procedimiento de una única vez junto con el usuario, ya que el código recibido por la "URL de redireccionamiento" después de la autorización tiene una validez de 10 minutos y el Access Token recibido a través del endpoint tiene una validez de 180 días (6 meses).
 
-1. Edita tu aplicación para que contenga tu URLs de redireccionamiento. Consulta [Editar aplicación](/developers/es/guides/additional-content/your-integrations/application-details).
+1. Edita tu aplicación para que contenga tu URLs de redireccionamiento. Consulta [Editar aplicación](/developers/es/docs/your-integrations/application-details).
 2. Envía la **URL de autenticación** con los siguientes campos al vendedor con cuya cuenta deseas vincular la tuya:
 
    ```Authentication_URL

@@ -8,9 +8,15 @@ Para continuar o processo de pagamento ao Mercado Pago, é necessário que seu b
 
 Já estando no seu backend com toda a informação coletada, é o momento de enviar a solicitação ao Mercado Pago através das nossas APIs.
 
+> NOTE
+>
+> Nota
+>
+> Para consultar tipagens e especificações que poderão ser enviados e recebidos pelo Brick no _callback_ de _onSubmit_, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/payment.md).
+
 Tenha em conta que para que esse passo funcione é necessário que configure sua [chave privada](/developers/pt/guides/additional-content/your-integrations/credentials) e que para interagir com nossas APIs, recomendamos utilizar o [SDK oficial do Mercado Pago](/developers/pt/docs/sdks-library/landing).
 
-> NOTE
+> WARNING
 > 
 > Importante
 >

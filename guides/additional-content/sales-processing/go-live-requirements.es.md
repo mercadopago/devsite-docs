@@ -30,13 +30,19 @@ La opción de pago por Pix solo se mostrará si existe una Clave Pix registrada 
 
 ## Consideraciones adicionales
 
-### Homologación
+### Medición de calidad
 
-Antes de salir a producción, y para poder ofrecer tanto al vendedor como al comprador la mejor experiencia, deberás evaluar la [calidad de tu integración](/developers/es/guides/additional-content/homologator/homologator) con nuestra herramienta de homologación. 
+Antes de salir a producción, y para poder ofrecer tanto al vendedor como al comprador la mejor experiencia, deberás evaluar la [calidad de tu integración](/developers/es/guides/additional-content/homologator/homologator) con nuestra herramienta de medición. Se trata de un proceso de certificación que te permitirá verificar si estás cumpliendo con los **estándares de calidad y seguridad de Mercado Pago** antes de comenzar a recibir pagos reales.
 
-Se trata de un proceso de certificación que te permitirá verificar si estás cumpliendo con los **estándares de calidad y seguridad de Mercado Pago** antes de comenzar a recibir pagos reales. Al ingresar el `payment ID` de un pago realizado con credenciales productivas, nuestra herramienta se encarga de realizar la medición considerando aspectos fundamentales para la eficacia de tu integración, como la mejora en la aprobación de pagos, la conciliación financiera o la seguridad, entre otros.
+La medición podrá ser realizada de 2 formas: 
+ * **Manual**, donde se requerirá que ingreses el `payment ID` de un pago realizado con credenciales productivas para poder hacer la medición cuando lo desees.
+ * **Automática**, directamente llevada adelante por nuestra herramienta una vez al mes, siempre y cuando cuentes también con un pago realizado con credenciales productivas.
 
-En caso de precisar ajustes, se te sugerirán acciones necesarias y buenas prácticas para mejorar estos aspectos evaluados y, de esa manera, garantizar que tu integración cumpla con los estándares necesarios.
+En ambos casos, la medición se realiza considerando aspectos fundamentales para la eficacia de tu integración, como la mejora en la aprobación de pagos, la conciliación financiera o la seguridad, entre otros.
+
+Si tu integración llegara a precisar ajustes, se te sugerirán acciones necesarias y buenas prácticas para mejorar estos aspectos evaluados y, de esa manera, garantizar que tu integración cumpla con los estándares necesarios.
+
+Una vez que los apliques, puedes volver a medir la calidad de tu integración o, si lo deseas, aguardar a recibir los resultados de la medición automática. 
 
 ### Aprobación de pagos
 

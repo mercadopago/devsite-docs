@@ -1,12 +1,12 @@
 # Renderização padrão
 
-Veja abaixo as informações necessárias para você configurar e renderizar o Payment Brick.
+Antes de realizar a renderização do Payment Brick, primeiro execute os [passos de inicialização](/developers/pt/docs/checkout-bricks/common-initialization) compartilhados entre todos os Bricks. A partir disso, veja abaixo as informações necessárias para você configurar e renderizar o Payment Brick.
 
-> WARNING
+> NOTE
 >
-> Importante
+> Nota
 >
-> Para realizar a renderização do Payment Brick, primeiro execute os [passos de inicialização](/developers/pt/docs/checkout-bricks/common-initialization) compartilhados entre todos os Brick. 
+> Para consultar tipagens e especificações dos parâmetros e respostas de funções do Brick, consulte a [documentação técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/payment.md).
 
 ## Configurar o Brick
 
@@ -250,8 +250,9 @@ const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
      /*
-      "amount" é o valor total a ser pago por todos os meios de pagamento
-    com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId"
+      "amount" é o valor total a ser pago por todos os meios de pagamento com exceção 
+      da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId". 
+      Deve ser um número inteiro.
      */
      amount: 100,
      preferenceId: "<PREFERENCE_ID>",
@@ -309,6 +310,11 @@ renderPaymentBrick(bricksBuilder);
 
 const initialization = {
  amount: 100,
+     /*
+      "amount" é o valor total a ser pago por todos os meios de pagamento com exceção 
+      da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId". 
+      Deve ser um número inteiro.
+     */
  preferenceId: "<PREFERENCE_ID>",
 };
 const customization = {

@@ -19,9 +19,9 @@ Both checkouts automatically split the amounts between the seller and the market
 
 To perform the integration, you will need to follow the usual integration flow of the chosen checkout, necessarily using an access token for each seller, obtained through OAuth. Below we list the steps required to integrate a checkout with the marketplace.
 
-1. Follow the steps described in the [OAuth documentation](/developers/en/guides/additional-content/security/oauth/introduction) to get each `access_token`. This information will be needed during the checkout integration process into the marketplace.
+1. Follow the steps described in the [OAuth documentation](/developers/en/guides/additional-content/security/oauth/introduction) to get each `access_token`. This information will be necessary during the checkout integration process with the _marketplace_.
 2. Choose the type of checkout you want ([Checkout Pro](/developers/en/guides/checkout-pro/landing) or ----[mla, mlu, mpe, mco, mlc, mlm]----[Checkout API](/developers/en/guides/checkout-api/introduction)----------------[mlb]----[Checkout Transparente](/developers/en/guides/checkout-api/introduction)------------) and follow the entire onboarding flow.
-3. In the checkout integration, use the `public_key` of your integrator account in the frontend and insert the seller's `access_token` (obtained in step 1) in the backend or in the request header.
+3. In the checkout integration, use the seller's `public_key` and `access_token` (obtained in step 1) in the _backend_ or in the _header_ of the request.
 4. To determine the marketplace commission percentage:
 
   - If it's Checkout Pro, fill the `marketplace_fee` parameter with the amount to be charged for each payment preference created in the **/checkout/preferences** API.
@@ -51,19 +51,22 @@ To perform the integration, you will need to follow the usual integration flow o
 
 #### Example
 
-```json
-    {
-    "description": "API TRANSPARENTE MARKETPLACE",
+```curl
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'accept: application/json' \
+--header 'content-type: application/json' \
+--header 'Authorization: Bearer {{oauth_access_token}}' \
+--data-raw '{
+    "description": "Test payment 3",
     "installments": 1,
     "token": "{{card_token}}",
     "payer": {
-        "id": "{{payer_id}}"
+        "email": "{{payer_email}}"
     },
-    "marketplace": "{{marketplace_id}}",
     "payment_method_id": "master",
-    "application_fee": 2,
-    "transaction_amount": 10
-    }
+    "transaction_amount": 25,
+    "application_fee": 10
+}'
 ```
 
 Upon completing these steps, the checkout will have been integrated into the marketplace and will be ready to process payments.

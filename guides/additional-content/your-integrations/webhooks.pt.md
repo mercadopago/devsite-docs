@@ -1,87 +1,147 @@
 # Webhooks
 
-O **Webhooks** (também conhecido como retorno de chamada web) é um método simples que facilita com que um app ou sistema forneça informações em tempo real sempre que um evento acontece, ou seja, é um modo de receber dados entre dois sistemas de forma passiva através de um `HTTP POST`.
+Webhooks (também conhecido como retorno de chamada web) são um método simples que permite a uma aplicação ou sistema fornecer informações em tempo real sempre que um evento ocorre. É uma forma passiva de receber dados entre dois sistemas por meio de uma solicitação `HTTP POST`.
 
-As notificações Webhooks poderão ser configuradas para uma ou mais aplicações criadas em seu [Painel do desenvolvedor](/developers/panel/app).
+As notificações Webhooks podem ser configuradas para cada uma das aplicações criadas em  [Suas integrações](/developers/panel/app). Você também poderá configurar uma URL de teste que, junto com suas credenciais de teste, permitirá testar o funcionamento correto das suas notificações antes de sair à produção.
 
-Uma vez configurado, o Webhook será enviado sempre que ocorrer um ou mais eventos cadastrados, evitando que haja um trabalho de pesquisa a cada minuto em busca de uma resposta e, por consequência, que ocorra uma sobrecarga do sistema e a perda de dados sempre que houver alguma situação. Após receber uma notificação na sua plataforma, o Mercado Pago aguardará uma resposta para validar se você a recebeu corretamente.
+Uma vez configuradas, as notificações Webhooks serão enviadas sempre que ocorrer um ou mais eventos cadastrados. Isso evita a necessidade de verificações constantes, prevenindo a sobrecarga do sistema e a perda de dados em situações críticas. 
 
-Nesta documentação, explicaremos as configurações necessárias para o recebimento das mensagens (através do Painel do desenvolvedor ou durante a criação de pagamentos), além de apresentar quais são as ações necessárias que você deverá ter para que o Mercado Pago valide que as notificações foram devidamente recebidas.
+Para configurar as notificações Webhooks, escolha entre uma das opções abaixo:
 
-## Configuração através do Painel do desenvolvedor
-
-Abaixo explicaremos como: indicar as URLs que serão notificadas, configurar os eventos dos quais se receberá a notificação, simular o recebimento de diversos tipos de notificações e validar que as notificações que recebe são enviadas pelo Mercado Pago.
-
-![webhooks](/images/dashboard/webhooks-pt.png)
-
-### Configurar URLs e Eventos
-
-1. Caso ainda não tenha, crie uma aplicação no [Painel do desenvolvedor](/developers/panel/app).
-2. Com a aplicação criada, navegue até a seção Webhooks na página de "Detalhes da aplicação" e configure as URLs de **produção** e **teste** da qual serão recebidas as notificações.
-3. Caso seja necessário identificar múltiplas contas, no final da URL indicada você poderá indicar o parâmetro `?cliente=(nomedovendedor) endpoint` para identificar os vendedores.
-4. Em seguida, selecione os **eventos** dos quais você receberá notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento é qualquer tipo de atualização no objeto relatado, incluindo alterações de status ou atributo. Veja na tabela abaixo os eventos que poderão ser configurados.
-
-| Tipo de notificação | Ação | Descrição |
-| :--- | :--- | :--- |
-| `payment` | `payment.created` | Criação de pagamento |
-| `payment` | `payment.updated` | Atualização de pagamento |
-| `mp-connect` | `application.deauthorized` | Desvinculação de conta |
-| `mp-connect` | `application.authorized` | Vinculação de conta |
-| `subscription_preapproval` | `created - updated` | Assinatura |
-| `subscription_preapproval_plan` | `created - updated` | Plano de assinatura |
-| `subscription_authorized_payment` | `created - updated` | Pagamento recorrente de uma assinatura |
-| `point_integration_wh` | `state_FINISHED`| Processo de pagamento concluído |
-| `point_integration_wh` | `state_CANCELED` | Processo de pagamento cancelado |
-| `point_integration_wh` | `state_ERROR`| Ocorreu um erro ao processar a tentativa de pagamento |
-| `topic_instore_integration_wh` | - | Notificações de integrações presenciais |
-| `shipments` | - | Notificações de envios |
-| `delivery` | `delivery.updated`| Dados de envio e atualização do pedido |
-| `delivery_cancellation` | `case_created`| Solicitação de cancelamento do envio |
-| `wallet_connect` | - | Notificações de transações com [Wallet Connect](/developers/pt/docs/wallet-connect/landing) |
-| `stop_delivery_op_wh` | - | Alertas de fraude |
-| `topic_claims_integration_wh` | `updated`| Reclamações feitas pelas vendas |
-| `topic_card_id_wh` | `card.updated`| O cartão de usuário comprador foi atualizado* |
-
-> *O _Card Updater_ recupera informações de cartões e atualiza essas informações dentro do Mercado Pago. Cartões recuperáveis com este recurso: cartões com alguma informação errada (como data de vencimento, número do cartão, CVV, nome, etc.) e cartões que tenham sido trocados pela instituição financeira (por motivo de validade, upgrade de cartão, etc.).
-
-5. Por fim, clique em **Salvar** para gerar uma **assinatura secreta** para a aplicação. A assinatura é um método de validação para garantir que as notificações recebidas foram enviadas pelo Mercado Pago, por isso, é importante conferir as informações de autenticidade para evitar fraudes.
+| Tipo de configuração | Descrição |
+|---|---|
+| [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes) | Permite configurar notificações para cada aplicação, identificar contas diferentes se necessário, e validar a origem da notificação utilizando uma assinatura secreta----[mla, mlb, mlu, mlc]---- (exceto para notificações de integrações com Código QR)------------. |
+| [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos) | Permite a configuração específica das notificações para cada pagamento, preferência ou pedidos comerciais. ----[mla]----Não é permitido configurar para integrações com Mercado Pago Point e nem para integrações com Mercado Pago Delivery----------------[mlb, mlm]----Não é permitido configurar para integrações com Mercado Pago Point------------.|
 
 > WARNING
 >
 > Importante
 >
-> O Mercado Pago sempre enviará essa assinatura nas notificações Webhooks. Sempre confira essa informação de autenticidade para evitar fraudes.
-> <br/>
-> A assinatura gerada não tem prazo de validade e, embora não seja obrigatório, recomendamos renovar periodicamente a **assinatura secreta**. Para isso, basta clicar no botão de redefinição ao lado da assinatura. 
+> As URLs configuradas durante a criação do pagamento terão prioridade sobre aquelas configuradas através de Suas integrações. 
 
-### Validar origem da notificação
+Uma vez que as notificações estiverem configuradas, consulte as [ações necessárias após receber uma notificação](/developers/pt/docs/your-integrations/notifications/webhooks#aesnecessriasapsreceberumanotificao) para validar se foram devidamente recebidas.
 
-No momento em que a URL cadastrada receber uma notificação, você poderá validar se o conteúdo enviado no _header_ `x-signature` foi enviado pelo Mercado Pago, a fim de obter mais segurança no recebimento das suas notificações.
+## Configuração via Suas integrações 
+
+Configure notificações para cada aplicação diretamente em [Suas integrações](/developers/panel/app) de forma eficiente e segura. Nesta documentação, explicaremos como:
+
+1. Indicar URLs e configurar eventos
+2. Validar origem da notificação
+3. Simular o recebimento da notificação
+
+
+> WARNING
+>
+> Importante
+>
+> Este método de configuração não está disponível para integrações com----[mla, mlb, mlc, mlu]---- Código QR e nem------------ Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
+
+
+### 1. Indicar URLs e configurar eventos
+
+Para configurar as notificações Webhooks via Suas integrações, é necessário indicar as URLs onde elas serão recebidas e especificar os eventos para os quais deseja receber notificações. 
+
+Para isso, siga as etapas descritas abaixo.
+
+1. Acesse [Suas integrações](/developers/panel/app) e selecione a aplicação para a qual deseja ativar as notificações. Caso ainda não tenha criado uma aplicação, acesse a [documentação Painel do Desenvolvedor](/developers/pt/docs/your-integrations/dashboard) e siga as instruções.
+2. No menu à esquerda, vá até **Webhooks > Configurar notificações** e configure as URLs que serão usadas para receber as notificações. Recomendamos utilizar uma URL diferente para o modo de teste e o modo produção:
+    * **URL modo teste:** fornece uma URL que permite testar o correto funcionamento das notificações dessa aplicação durante a fase de teste ou desenvolvimento. O teste dessas notificações deverá ser realizado exclusivamente com as **credenciais de teste de usuários produtivos**.
+    * **URL modo produção:** fornece uma URL para receber notificações com sua integração produtiva. Essas notificações deverão ser configuradas com **credenciais produtivas**.
+
+![webhooks](/images/dashboard/webhooks-pt.png)
 
 > NOTE
 >
-> Exemplo do conteúdo enviado no header x-signature
+> Nota
+> 
+> Caso seja necessário identificar múltiplas contas, adicione o parâmetro `?cliente=(nomedovendedor)` ao final da URL indicada para identificar os vendedores.
+
+3. Selecione os  **eventos** para os quais deseja receber notificações em formato `json` através de um `HTTP POST` para a URL especificada anteriormente. Um evento pode ser qualquer atualização no objeto relatado, incluindo alterações de status ou atributos. Consulte a tabela abaixo para ver os eventos configuráveis, considerando a solução do Mercado Pago integrada e suas necessidades de negócio.
+
+| Eventos | Nome em Suas integrações | Tópico | Produtos associados |
+|---|---|---|---|
+| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
+| Pagamento recorrente de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_authorized_payment` | Assinaturas |
+| Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
+| Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |
+| Vinculação e desvinculação de contas que se conectaram através de OAuth | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham  OAuth implementado |
+----[mla, mlm, mlb]----| Finalização, cancelamento ou erros ao processar intenções de pagamento de dispositivos Mercado Pago Point. | Integrações Point | `point_integration_wh` | Mercado Pago Point |------------
+| Transações com Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
+| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
+| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Código QR<br>Wallet Connect |
+| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Criação, fechamento ou expiração de ordens comerciais | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
+| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+----[mla]----| Criação, atualização ou cancelamento de pedidos. | Delivery (proximity marketplace) | `delivery` | Mercado Pago Delivery |------------
+
+
+> WARNING
 >
-> `ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
+> Importante
+>
+> Em caso de dúvidas sobre quais tópicos ativar ou quais eventos serão notificados, consulte a documentação [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info). 
 
-Veja abaixo o passo a passo de como configurar essa validação e, ao final, disponibilizamos alguns SDKs com um **exemplo de código completo** para facilitar o seu processo de configuração.
+5. Por fim, clique e **Salvar** para gerar uma **assinatura secreta** exclusiva para a sua aplicação, permitindo validar a autenticidade das notificações recebidas e garantir que tenham sido enviadas pelo Mercado Pago. A assinatura gerada não tem prazo de validade e sua renovação periódica não é obrigatória, embora seja altamente recomendável. Para renová-la, clique no botão de **redefinição** ao lado da assinatura.
 
-1. Extraia o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`. Para isso, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de elementos. O valor para o prefixo `ts` é o _timestamp_ (em milissegundos) da notificação e `v1` é a assinatura encriptada. Exemplo: `ts=1704908010` e `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
-2. Utilizando o _template_ abaixo, substitua os parâmetros pelos dados recebidos na sua notificação. 
+----[mla, mlb, mlu, mlc]----
+
+> WARNING
+> 
+> Importante
+> 
+> As notificações de Código QR não podem ser verificadas utilizando a assinatura secreta, por isso, prossiga diretamente com a etapa de simulação de recebimento de notificações. Para integrações com Código QR que necessitam verificar a origem das notificações, entre em contato com [Soporte do Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/pt/support/center).
+
+------------
+
+### 2. Validar origem da notificação
+
+As notificações enviadas pelo Mercado Pago serão semelhantes ao exemplo abaixo para um alerta do tópico `payment`:
+
+```json
+{
+ "id": 12345,
+ "live_mode": true,
+ "type": "payment",
+ "date_created": "2015-03-25T10:04:58.396-04:00",
+ "user_id": 44444,
+ "api_version": "v1",
+ "action": "payment.created",
+ "data": {
+     "id": "999999999"
+ }
+}
+```
+
+O Mercado Pago sempre incluirá a assinatura secreta nas notificações Webhooks recebidas na URL cadastrada. Isso permitirá validar a sua autenticidade, proporcionando maior segurança e prevenindo possíveis fraudes. 
+
+Esta assinatura será enviada no _header_ `x-signature`, conforme o exemplo abaixo.
+
+```x-signature
+`ts=1704908010,v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`
+
+```
+
+Para configurar essa validação, é necessário extrair a chave contida no _header_ e compará-la com a chave fornecida para sua aplicação em Suas integrações. Para isso, siga as etapas abaixo. No final, disponibilizamos alguns SDKs com um exemplo de código completo para facilitar o processo:
+
+1. Para extrair o _timestamp_ (`ts`) e a assinatura do _header_ `x-signature`, divida o conteúdo do _header_ pelo caractere `,`, o que resultará em uma lista de 2 elementos. O valor para o prefixo  `ts` é o _timestamp_ (em milissegundos) da notificação, e `v1` é a assinatura encriptada. Seguindo o exemplo apresentado acima, `ts=1704908010` e `v1=618c85345248dd820d5fd456117c2ab2ef8eda45a0282ff693eac24131a5e839`.
+2. Utilizando o _template_ e as descrições abaixo, substitua os parâmetros pelos dados recebidos na sua notificação.
 
 ```template
 id:[data.id_url];request-id:[x-request-id_header];ts:[ts_header];
 ```
 
-No _template_, os valores englobados por `[]` devem ser trocados pelos valores da notificação, como:
+ * Parâmetros com sufixo `_url` são provenientes de _query params_. Exemplo: `[data.id_url]`. Deve ser substituído pelo valor correspondente ao ID do evento (`data.id`). Esse `query param` poderá ser encontrado na notificação recebida.
+ * `[ts_header]` representa o valor `ts` extraído do _header_ `x-signature`.
+ * `[x-request-id_header]` deve ser substituído pelo valor recebido no _header_ `x-request-id`.
 
-- Parâmetros com sufixo `_url` são provenientes de _query params_. Exemplo: `[data.id_url]` será substituido pelo valor correspondente ao ID do evento (`data.id`).
-- `[ts_header]` será o valor `ts` extraído do _header_ `x-signature`.
+> WARNING
+>
+> Importante
+> 
+> Se algum dos valores mostrados no modelo acima não estiver presente na sua notificação, você deve removê-lo.
 
-> Caso algum dos valores apresentados no _template_ acima não esteja presente em sua notificação, você deverá removê-los do template.
-
-3. No [Painel do desenvolvedor](/developers/panel/app), selecione a aplicação integrada, navegue até a seção Webhooks e **revele a assinatura secreta** gerada.
-4. Gere a contra chave para validação. Para isso, calcule um [HMAC](https://pt.wikipedia.org/wiki/HMAC) com a função de `hash SHA256` em base hexadecimal, utilize a **assinatura secreta** como chave e o _template_ populado com os valores como mensagem. Exemplo:
+3. Em [Suas integrações](/developers/panel/app), selecione a aplicação integrada e navegue até a seção de Webhooks para visualizar a assinatura secreta gerada.
+4. Crie a contra chave para validação. Para isso, calcule um HMAC (Código de Autenticação de Mensagem Baseado em Hash) utilizando a função de `hash SHA256` em base hexadecimal. Utilize a **assinatura secreta** como chave e o template preenchido com os respectivos valores como mensagem.
 
 [[[
 ```php
@@ -104,9 +164,9 @@ cyphedSignature = binascii.hexlify(hmac_sha256(secret.encode(), signedTemplate.e
 ```
 ]]]
 
-5. Por fim, compare a chave gerada com a chave extraída do cabeçalho, considerando elas devem ter uma correspondência exata. Além disso, é possível usar o _timestamp_ extraído do _header_ para comparação com um _timestamp_ gerado na hora do recebimento da notificação, a fim de estipular uma tolerância de atraso no recebimento da mensagem.
+5. Por fim, compare a chave gerada com a chave extraída do _header_, assegurando que correspondam exatamente. Além disso, é possível usar o _timestamp_ extraído do _header_ para compará-lo com um _timestamp_ gerado no momento do recebimento da notificação. Isso permite estabelecer uma margem de tolerância para atrasos no recebimento da mensagem.
 
-- Exemplo de código completo:
+Veja exemplos de códigos completos abaixo:
 
 [[[
 ```php
@@ -333,18 +393,42 @@ if sha == hash {
 ```
 ]]]
 
-### Simular o recebimento da notificação 
+### 3. Simular o recebimento da notificação
 
-1. Após configurar as URLs e os Eventos, clique em **Simular** para experimentar e testar se a URL indicada está recebendo as notificações corretamente.
-2. Na tela em questão, selecione a URL a ser testada, podendo ser **de teste ou de produção**. 
-3. Em seguida, selecione o **tipo de evento** e insira a **identificação** que será enviada no corpo da notificação.
-4. Por fim, cique em **Enviar teste** para verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
+Para garantir que as notificações estejam configuradas corretamente, é necessário simular o recebimento delas. Para isso, siga os seguintes passos:
+
+1. Após configurar as URLs e os eventos desejados, clique em **Salvar** para salvar a configuração.
+2. Após isso, clique em **Simular** para testar se a URL indicada está recebendo as notificações corretamente.
+3. Na tela de simulação, selecione a URL a ser testada, podendo ser uma URL de **teste** ou de **produção**.
+4. Em seguida, selecione o **tipo de evento** desejado e insira a **identificação** que será enviada no corpo da notificação.
+5. Por fim, clique em **Enviar teste** para verificar a solicitação, a resposta dada pelo servidor e a descrição do evento.
+
 
 ## Configuração durante a criação de pagamentos
 
-É possível configurar a URL de notificação de modo mais específico, para cada pagamento utilizando o campo `notification_url`. Veja abaixo como fazer isso com uso dos SDKs.
+Durante o processo de criação de pagamentos, preferências ou ordens comerciais, é possível configurar a URL de notificação de maneira específica para cada pagamento, utilizando o campo `notification_url` e implementando o receptor de notificações necessário. 
+----[mla]----
+> WARNING
+>
+> Importante
+> 
+> Este método não permite configurar notificações para os tópicos `point_integration_wh` e `delivery` utilizando este método. Para ativá-los, utilize as [configurações via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes).
 
-1. No campo `notificaction_url`, indique a URL da qual serão recebidas as notificações como exemplificado abaixo.
+------------
+----[mlb, mlm]----
+
+> WARNING
+>
+> Importante
+> 
+> Este método não permite configurar notificações para o tópico de `point_integration_wh` utilizando este método. Para ativá-lo, utilize as [configurações de Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes).
+
+------------
+
+A seguir, explicamos como realizar esta configuração utilizando nossos SDKs.
+
+1. No campo `notification_url`, informe a URL que receberá as notificações, conforme o exemplo abaixo. Para receber notificações exclusivamente via Webhooks e não via IPN, adicione o parâmetro `source_news=webhooks` à `notification_url`. Por exemplo: `https://www.yourserver.com/notifications?source_news=webhooks`.
+
 
 [[[
 ```php
@@ -588,7 +672,7 @@ curl -X POST \
 ```
 ]]]
 
-2. Implemente o receptor de notificações usando o seguinte código como exemplo:
+2. Implemente o receptor de notificações utilizando o seguinte código como exemplo:
 
 ```php
 <?php
@@ -613,15 +697,13 @@ curl -X POST \
 ?>
 ```
 
-3. Feitas as devidas configurações, a notificação via Webhooks terá o seguinte formato:
+Após realizar as configurações necessárias, a notificação Webhooks será entregue com  formato `JSON`. Veja o exemplo de notificação do tópico de `payments` e as descrições das informações enviadas na tabela abaixo.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
-> Para o tipo de evento `point_integration_wh`, o formato da notificação muda. [Clique aqui](/developers/pt/docs/mp-point/landing) para consultar a documentação do **Mercado Pago Point**.</br></br>
-> </br></br>
-> No caso dos eventos de `delivery`, `topic_claims_integration_wh` e `topic_card_id_wh'`, também teremos alguns atributos diferentes na resposta. Veja na tabela abaixo quais são essas particularidades.
+> Os pagamentos de teste, criados com credenciais de teste, não enviarão notificações. A única maneira de testar o recebimento de notificações é por meio da [Configuração via Suas integrações](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoviasuasintegraes).
 
 ```json
 {
@@ -637,94 +719,118 @@ curl -X POST \
  }
 }
 ```
-Isso indica que foi criado o pagamento **999999999** para o usuário **44444** em modo de produção com a versão V1 da API e que esse evento ocorreu na data **2016-03-25T10:04:58.396-04:00**.
 
-| Atributo | Descrição |
-| --- | --- |
-| **id** | ID de notificação |
-| **live_mode** | Indica se a URL informada é valida |
-| **type** | Tipo de notificação recebida (payments, mp-connect, subscription, claim, automatic-payments, etc) |
-| **date_create** | Data de criação do recurso |
-| **user_id**| UserID de vendedor |
-| **api_version** | Indica se é uma notificação duplicada ou não |
-| **action** | Tipo de notificação recebida, indicando se se trata da atualização de um recurso ou da criação de um novo |
-| **data - id** | ID do payment, do merchant_order ou da reclamação |
-| **data - customer_id** (card updater)| ID do comprador que teve o cartão atualizado |
-| **data - new_card_id** (card updater)| Número atualizado do cartão |
-| **data - old_card_id** (card updater)| Número antigo do cartão |
-| **attempts** (delivery) | Número de vezes que uma notificação foi enviada |
-| **received** (delivery) | Data de criação do recurso |
-| **resource** (delivery) | Tipo de notificação recebida, indicando se trata-se da atualização de um recurso ou da criação de um novo |
-| **sent** (delivery) | Data de envio da notificação |
-| **topic** (delivery) | Tipo de notificação recebida  |
-| **resource** (claims) | Tipo de notificação recebida, indicando notificações relacionadas à reclamações feitas por vendas |
+| Atributo | Descrição | Exemplo no JSON |
+| --- | --- | --- |
+| **id** | ID de notificação | `12345` |
+| **live_mode** | Indica se a URL informada é válida| `true` |
+| **type** | Tipo de notificação recebida de acordo com o tópico previamente selecionado (payments, mp-connect, subscription, claim, automatic-payments, etc.) | `payment` |
+| **date_created** | Data de criação do recurso notificado | `2015-03-25T10:04:58.396-04:00` |
+| **user_id**| Identificador do vendedor | `44444` |
+| **api_version** | Valor que indica a versão da API que envia a notificação. | `v1` |
+| **action** | Evento notificado, indicando se é uma atualização de recurso ou a criação de um novo | `payment.created` |
+| **data.id**  | ID do pagamento, do `merchant_order` ou da reclamação | `999999999` |
 
-4. Caso deseje receber notificações apenas de Webhook e não de IPN, você pode adicionar na `notification_url` o parâmetro `source_news=webhooks`. Por exemplo: https://www.yourserver.com/notifications?source_news=webhooks
 
-## Ações necessárias após receber uma notificação
-
-[TXTSNIPPET][/guides/snippets/test-integration/notification-response]
-
-> NOTE
+----[mla]----
+> WARNING
 >
 > Importante
 >
-> No caso do tipo de evento `delivery`, para evitar que o tópico de notificações realize novas tentativas de envio será necessário confirmar o recebimento das mensagens retornando um `HTTP STATUS 200 (OK)` em até **500 ms**. Caso não seja enviada uma mensagem confirmando o recebimento da notificação, **novas tentativas serão feitas em um período de 12 horas**.
+> Para obter o formato de notificações para tópicos diferentes de `payment`, como `point_integration_wh`, `delivery`, `topic_claims_integration_wh` e `topic_card_id_wh`, consulte [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info).
+------------
+----[mlb, mlm]----
+> WARNING
+>
+> Importante
+>
+> Para obter o formato de notificações para tópicos diferentes de `payment`, como `point_integration_wh`, `topic_claims_integration_wh` e `topic_card_id_wh`, consulte [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info).
 
-Depois de dar um retorno à notificação e confirmar o seu recebimento, você obterá as informações completas do recurso notificado acessando o endpoint correspondente da API:
+------------
+----[mlu, mlc, mco, mpe]----
+> WARNING
+>
+> Importante
+>
+> Para obter o formato de notificações para tópicos diferentes de `payment`, como `topic_claims_integration_wh` e `topic_card_id_wh`, consulte [Informações adicionais sobre notificações](/developers/pt/docs/your-integrations/notifications/additional-info).
+
+------------
+
+
+## Ações necessárias após receber uma notificação
+
+Ao receber uma notificação em sua plataforma, o Mercado Pago aguarda uma resposta para validar se você a recebeu corretamente. Para isso, é necessário retornar um status `HTTP STATUS 200 (OK)` ou `201 (CREATED)`. 
+
+O **tempo de espera** para a confirmação da recepção das notificações será de **22 segundos**. Se essa confirmação não for enviada, o sistema entenderá que a notificação não foi recebida e realizará **novas tentativas de envio a cada 15 minutos**, até receber uma resposta. Após a terceira tentativa, o prazo será prorrogado, mas os envios continuarão acontecendo.
+
+Após responder à notificação e confirmar seu recebimento, é possível obter as informações completas do recurso notificado fazendo uma requisição ao endpoint correspondente da API. Para identificar qual endpoint utilizar, confira a tabela abaixo:
 
 ----[mpe, mco, mlu, mlc]---- 
 | Tipo | URL | Documentação |
 | --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](/developers/pt/reference/payments/_payments_id/get) |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentação](/developers/pt/reference/subscriptions/_preapproval/post) |
-| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/pt/reference/subscriptions/_preapproval_plan/post)  |
-| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
-| topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [ver documentação](/developers/pt/developers/pt/reference/claims/_data_resource/get) |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Obter pagamento](/developers/pt/reference/payments/_payments_id/get)  |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Obter assinatura](/developers/pt/reference/subscriptions/_preapproval_search/get) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Obter plano de assinatura](/developers/pt/reference/subscriptions/_preapproval_plan_search/get)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Obter dados de fatura](/developers/pt/reference/subscriptions/_authorized_payments_id/get)  |
+| topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Obter detalhes da reclamação](/developers/pt/reference/claims/get-claim-details/get) |
+| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obter pedido](/developers/pt/reference/merchant_orders/_merchant_orders_id/get) |
+| topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Obter estorno](/developers/pt/reference/chargebacks/_chargebacks_id/get) |
 
 ------------
 ----[mlm, mlb]---- 
 | Tipo | URL | Documentação |
 | --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](/developers/pt/reference/payments/_payments_id/get) |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentação](/developers/pt/reference/subscriptions/_preapproval/post) |
-| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/pt/reference/subscriptions/_preapproval_plan/post)  |
-| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
-| point_integration_wh | - | [ver documentação](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
-| topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [ver documentação](/developers/pt/developers/pt/reference/claims/_data_resource/get) |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Obter pagamento](/developers/pt/reference/payments/_payments_id/get)  |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Obter assinatura](/developers/pt/reference/subscriptions/_preapproval_search/get) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Obter plano de assinatura](/developers/pt/reference/subscriptions/_preapproval_plan_search/get)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Obter dados de fatura](/developers/pt/reference/subscriptions/_authorized_payments_id/get)  |
+| point_integration_wh| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Obter intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
+| topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Obter detalhes da reclamação](/developers/pt/reference/claims/get-claim-details/get) |
+| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obter pedido](/developers/pt/reference/merchant_orders/_merchant_orders_id/get) |
+| topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Obter estorno](/developers/pt/reference/chargebacks/_chargebacks_id/get) |
 
 ------------
 ----[mla]---- 
 | Tipo | URL | Documentação |
 | --- | --- | --- |
-| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [ver documentação](/developers/pt/reference/payments/_payments_id/get) |
-| subscription_preapproval | `https://api.mercadopago.com/preapproval` | [ver documentação](/developers/pt/reference/subscriptions/_preapproval/post) |
-| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan` | [ver documentación](/developers/pt/reference/subscriptions/_preapproval_plan/post)  |
-| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments` | [ver documentación](/developers/pt/reference/subscriptions/_authorized_payments_id/get) |
-| point_integration_wh | - | [ver documentação](/developers/pt/docs/mp-point/integration-configuration/integrate-with-pdv/notifications) |
-| delivery | - | [ver documentação](/developers/pt/reference/mp_delivery/_proximity-integration_shipments_shipment_id_accept/put) |
-| topic_claims_integration_wh | `https://api.mercadopago.com/claim_resource` | [ver documentação](/developers/pt/developers/pt/reference/claims/_data_resource/get) |
+| payment | `https://api.mercadopago.com/v1/payments/[ID]` | [Obter pagamento](/developers/pt/reference/payments/_payments_id/get)  |
+| subscription_preapproval | `https://api.mercadopago.com/preapproval/search` | [Obter assinatura](/developers/pt/reference/subscriptions/_preapproval_search/get) |
+| subscription_preapproval_plan | `https://api.mercadopago.com/preapproval_plan/search` | [Obter plano de assinatura](/developers/pt/reference/subscriptions/_preapproval_plan_search/get)  |
+| subscription_authorized_payment | `https://api.mercadopago.com/authorized_payments/[ID]` | [Obter dados de fatura](/developers/pt/reference/subscriptions/_authorized_payments_id/get)  |
+| point_integration_wh| `https://api.mercadopago.com/point/integration-api/payment-intents/{paymentintentid}` | [Obter intenção de pagamento](/developers/pt/reference/integrations_api/_point_integration-api_payment-intents_paymentintentid/get) |
+| delivery | `https://api.mercadopago.com/proximity-integration/v1/orders/{shipment_id}` | [Obter pedido](/developers/pt/reference/mp_delivery/_proximity-integrationorders_shipment_id/get) |
+| topic_claims_integration_wh | `https://api.mercadopago.com/post-purchase/v1/claims/[claim_id]` | [Obter detalhes da reclamação](/developers/pt/reference/claims/get-claim-details/get) |
+| topic_merchant_order_wh | `https://api.mercadopago.com/merchant_orders/[ID]` | [Obter pedido](/developers/pt/reference/merchant_orders/_merchant_orders_id/get) |
+| topic_chargebacks_wh | `https://api.mercadopago.com/v1/chargebacks/[ID]` | [Obter estorno](/developers/pt/reference/chargebacks/_chargebacks_id/get) |
 
 ------------
 
-Além disso, especificamente em alertas de fraude, o pedido não deve ser entregue e o cancelamento precisa ser realizado através da [API de cancelamentos](/developers/pt/reference/chargebacks/_payments_payment_id/put).
-
-Na notificação, você receberá um `JSON` com as seguintes informações contendo o id de pagamento para efetuar o cancelamento.
-
-```json
-
-
- "description": ".....",
- "merchant_order": 4945357007,
- "payment_id": 23064274473
-
-
-```
-
-> NOTE
->
-> Importante
->
-> É possível obter mais detalhes sobre o pedido utilizando a API [Obter pedido](/developers/pt/reference/merchant_orders/_merchant_orders_id/get).
-
 Com essas informações, você poderá realizar as atualizações necessárias na sua plataforma como, por exemplo, atualizar um pagamento aprovado.
+
+## Painel de notificações
+
+O painel de notificações permite ao usuário visualizar os eventos disparados sobre uma determinada integração, verificar o status e obter informações detalhadas desses eventos.
+
+Este painel será exibido assim que você configurar suas notificações **Webhooks**, e você pode acessá-lo a qualquer momento clicando em Webhooks dentro de Suas integrações.
+
+Entre as informações disponíveis estão a porcentagem de notificações entregues, bem como uma visão rápida das URLs e dos eventos configurados. 
+
+Além disso, você encontrará uma lista completa das últimas notificações enviadas e seus detalhes, como **status da entrega** (sucesso ou falha), **ação** (ação associada ao evento disparado), **evento** (tipo de evento disparado) e **data e hora**. Se desejar, é possível filtrar esses resultados exibidos por **status da entrega** e por período (**data e hora**).
+
+![paiel de notificações webhooks](/images/dashboard/notification-dashboard-pt.png)
+
+### Detalhes do evento
+
+Ao clicar em uma das notificações listadas, é possível acessar os detalhes do evento. Esta seção fornece mais informações e permite a recuperação de dados perdidos em caso de falha na entrega da notificação para manter o sistema sempre atualizado.
+
+ * **Status:** Status do evento junto com o código de sucesso ou erro correspondente.
+ * **Evento:** Tipo de evento disparado, conforme selecionado na configuração das notificações.
+ * **Tipo:** Tópico ao qual o evento disparado pertence, conforme a seleção feita durante a configuração.
+ * **Data e hora do disparo:** Data e hora em que o evento foi disparado.
+ * **Descrição:** Descrição detalhada do evento conforme documentada.
+ * **ID do disparo:** Identificador único da notificação enviada.
+ * **Requisição:** JSON da requisição correspondente à notificação disparada.
+
+![detalhes de notificações enviadas](/images/dashboard/notification-details-dashboard-pt.png)
+
+Em caso de falha na entrega da notificação, é possível visualizar os motivos e corrigir as informações necessárias para evitar problemas futuros.

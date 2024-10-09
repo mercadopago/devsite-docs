@@ -205,7 +205,7 @@ Por último, envía la información en el campo `device` al crear el `card_token
 ## Detalla toda la información sobre el pago
 
 Para optimizar la validación de la seguridad de los pagos y mejorar sus aprobaciones, es valioso enviar la mayor cantidad posible de **datos del comprador y del ítem**.
-Puedes ver todos los atributos disponibles al crear un pago usando el método [Crear pago](/developers/es/reference/payments/_payments/post). Presta especial atención a los atributos del nodo `adicional_inf`, particularmente a:
+Puedes ver todos los atributos disponibles al crear un pago usando el método [Crear pago](/developers/es/reference/payments/_payments/post). Presta especial atención a los atributos del nodo `additional_info`, particularmente a:
  * Datos del comprador,
  * Datos del producto,
  * Datos del envío.
@@ -223,4 +223,4 @@ Si, en cambio, quieres garantizar una interfaz optimizada, puedes utilizar los *
 > 
 > Importante
 >
-> Recomendamos  evaluar la [calidad de tu integración](/developers/es/guides/additional-content/homologator/homologator) antes de salir a producción para que puedas validar si estás cumpliendo con los estándares de calidad y seguridad de Mercado Pago que pueden mejorar tu tasa de aprobación de pagos.
+> Recomendamos verificar los resultados de la [medición de la calidad de tu integración](/developers/es/docs/integration-quality) antes de salir a producción, ya sea que haya sido realizada de manera manual o automática. La misma permitirá validar si está cumpliendo con los estándares de calidad y seguridad de Mercado Pago, y proporcionará accionables para mejorar tu tasa de aprobación de pagos.

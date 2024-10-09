@@ -74,7 +74,7 @@
                       "type": "number",
                       "example": "108.43",
                       "description": {
-                        "en": "Chergeback amount.",
+                        "en": "Chargeback amount.",
                         "pt": "Valor do estorno.",
                         "es": "Monto de la contracargo."
                       }

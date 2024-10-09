@@ -33,10 +33,9 @@ Mercado Pago's SDKs are available in several programming languages. For more det
 | Java 2.1.21   | Java 1.8 or higher                                        | [Maven](https://search.maven.org/artifact/com.mercadopago/sdk-java) | [GitHub](https://github.com/mercadopago/sdk-java) |
 | NodeJS 2.0.0  | Node.js 12 or higher                                      | [NPM](https://www.npmjs.com/package/mercadopago) | [GitHub](https://github.com/mercadopago/sdk-nodejs) |
 | Ruby 2.2.0    | Ruby 2.3+                                                 | [Gem](https://rubygems.org/gems/mercadopago-sdk) | [GitHub](https://github.com/mercadopago/sdk-ruby) |
-| .NET 2.3.3    | .NET Standard 2.0+ <br> .NET Core 2.0+ <br> .NET Framework 4.6.1+ | [NuGet](https://www.nuget.org/packages/mercadopago-sdk) | [GitHub](https://github.com/mercadopago/sdk-dotnet) |
+| .NET 2.4    | .NET Standard 2.1+ <br> .NET Core 2.0+  <br> .NET Framework 6.0+ | [NuGet](https://www.nuget.org/packages/mercadopago-sdk) | [GitHub](https://github.com/mercadopago/sdk-dotnet) |
 | Python 2.2.1 | Python 3+   | [PyPI](https://pypi.org/project/mercadopago/)   | [GitHub](https://github.com/mercadopago/sdk-python)     |
 | Go 1.0.0 | Go 1.18+  | [Go](https://pkg.go.dev/github.com/mercadopago/sdk-go)   | [GitHub](https://github.com/mercadopago/sdk-go)     |
-
 
 --- mini_landing_separator ---
 

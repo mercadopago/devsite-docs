@@ -4,7 +4,7 @@ The **Mercado Pago Antifraude Plus** is an add-on for [Mercado Pago Cards](/deve
 
 To install Mercado Pago Antifraude Plus, follow the steps below.
 
-1. From [this link](https://apps.shopify.com/mercado-pago-antifraud-plus?locale=pt-BR), access the **Mercado Pago Antifraude Plus** app page in the "Marketplace" and click on **Install**. If you haven't done so already, log in with your Shopify account.
+1. Access the [**Mercado Pago Antifraude Plus** app page](https://apps.shopify.com/mercado-pago-antifraud-plus) in the "Marketplace" and click on **Install**. If you haven't done so already, log in with your Shopify account.
 2. Carefully read the information about the requested permissions and click on **Install** again.
 3. If you have already installed the [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) app, you do not need to enter your credentials again, but you can change them if necessary.
 

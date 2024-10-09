@@ -18,12 +18,10 @@ To configure **payments with cash via ticket**, send a **POST** with the followi
 | --- | --- | --- | --- |
 | Paycash  | 7 Eleven | `payment_method_id`  | `paycash`  |
 | Paycash  | Santander | `payment_method_id`  | `paycash`  |
-| Paycash  | HSBC| `payment_method_id`  | `paycash`  |
 | BBVA  | BBVA | `payment_method_id`  | `bancomer`  |
 | Citibanamex  | Citibanamex | `payment_method_id`  | `banamex`  |
 | Citibanamex  | Telecomm | `payment_method_id`  | `banamex`  |
 | Paycash  | Farmacias Yza| `payment_method_id`  | `paycash`  |
-| BBVA  | Farmacias del ahorro | `payment_method_id`  | `bancomer`  |
 | OXXO  | OXXO | `payment_method_id`  | `oxxo`  |
 | Paycash  | Circle K | `payment_method_id`  | `paycash`  |
 | Paycash  | Extra | `payment_method_id`  | `paycash`  |

@@ -2,7 +2,7 @@
 
 Nesta documentação você encontrará toda a informação necessária para realizar a integração com 3DS com ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------. Para mais informações sobre como esse tipo de autenticação funciona, veja [3DS 2.0](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval/3ds).
 
-> NOTE
+> WARNING
 >
 > Importante
 >
@@ -25,11 +25,13 @@ Abaixo estão as etapas para realizar uma integração com 3DS.
     2. `optional`: 3DS pode ou não ser exigido, dependendo do perfil de risco da operação.
     3. `mandatory`: 3DS será requerido obrigatoriamente.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
 > Recomendamos utilizar o valor `optional` na implementação do 3DS, por equilibrar segurança e a aprovação de transações. O `mandatory` deve ser utilizado apenas para integrações que exijam que todas as transações aprovadas passem por 3DS.
+> <br><br>
+> Além disso, a captura do pagamento deve ser automática (`capture=true`) e a transação deve ser criada com o modo binário desativado (`binary mode= false`), visto que a transação poderá ficar pendente aguardando que o comprador complete o _Challenge_.
 
 [[[
 ```php
@@ -226,7 +228,7 @@ Caso não seja necessário utilizar o fluxo do _Challenge_, o campo de _status_ 
 
 Para os casos em que o _Challenge_ é necessário, o _status_ mostrará o valor `pending`, e o `status_detail` será `pending_challenge`.
 
-> NOTE
+> WARNING
 >
 > Importante
 >
@@ -376,7 +378,7 @@ async function init() {
 ```
 ]]]
 
-> NOTE
+> WARNING
 >
 > Importante
 >

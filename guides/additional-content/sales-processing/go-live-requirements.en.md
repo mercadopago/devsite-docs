@@ -30,13 +30,18 @@ The Pix payment option will only be displayed if there is a Pix Key registered i
 
 ## Additional considerations
 
-### Homologation
+### Quality measurement
 
-Before going to production, and to provide the best experience for both sellers and buyers,you must test your [integration’s quality](/developers/en/guides/additional-content/homologator/homologator) with our homologation tool. 
+Before going to production, and in order to offer the best experience to both the seller and the buyer, you must assess the [quality of your integration](/developers/en/guides/additional-content/homologator/homologator) with our measurement tool. This is a certification process that allows you to verify if you are meeting the **quality and security standards of Mercado Pago** before starting to receive real payments. 
 
-This is a certification process that will allow you to verify if you are complying with **Mercado Pago's quality and security standards** before you start receiving real payments. You only need to provide the `payment ID` of a payment made with productive credentials, and the tool will take care of carrying out the measurement, considering fundamental aspects for your integration, such as improving payment approval, financial reconciliation or security, among others.
+The measurement can be carried out in two ways:
+* **Manual**, where you will need to enter the `payment ID` of a payment made with production credentials to perform the measurement whenever you wish.
+* **Automatic**, directly conducted by our tool once a month, as long as you also have a payment made with production credentials.
 
-If adjustments are required, necessary actions and good practices will be suggested to improve these evaluated aspects and, by doing so, guarantee that your integration meets the necessary standards.
+In both cases, the measurement is performed considering  fundamental aspects for the effectiveness of your integration, such as payment approval improvement, financial reconciliation, security, among others.
+
+If adjustments are needed, necessary actions and best practices will be suggested to improve the evaluated aspects and ensure that your integration meets the necessary standards.
+
 
 ### Payment approval
 

@@ -47,19 +47,28 @@ Para realizar a integração você precisará seguir o fluxo de integração usu
 
 #### Exemplo
 
-```json
-    {
-    "description": "API TRANSPARENTE MARKETPLACE",
+```curl
+curl --location 'https://api.mercadopago.com/v1/payments' \
+--header 'accept: application/json' \
+--header 'content-type: application/json' \
+--header 'Authorization: Bearer {{oauth_access_token}}' \
+--data-raw '{
+    "description": "Pagamento de teste 3",
     "installments": 1,
     "token": "{{card_token}}",
     "payer": {
-        "id": "{{payer_id}}"
+        "email": "{{payer_email}}"
     },
-    "marketplace": "{{marketplace_id}}",
     "payment_method_id": "master",
-    "application_fee": 2,
-    "transaction_amount": 10
-    }
+    "transaction_amount": 25,
+    "application_fee": 10
+}'
 ```
 
-Ao finalizar essas etapas, a integração do checkout com o _marketplace_ estará concluída e pronta para processar os pagamentos.
+Ao finalizar essas etapas, a integração do checkout com o _marketplace_ estará concluída e pronta para processar os pagamentos. Tenha em mente que a solução Split de pagamentos permite a realização de pagamentos com saldo disponível entre contas Mercado Pago. Não são permitidas transferências de instituições financeiras externas.
+
+> WARNING
+>
+> Importante
+>
+> Em caso de reembolso, o valor devido ao cliente final será dividido e subtraído da conta do vendedor e da conta do Marketplace, sendo **proporcional** para as partes envolvidas. Além disso, em modelos 1:1, o Marketplace não poderá realizar o reembolso total se o vendedor não tiver dinheiro na conta. Nesse caso, cabe à conta do Marketplace reembolsar o equivalente à sua parte e decidir se devolverá o restante, que é responsabilidade do vendedor, por outro meio.

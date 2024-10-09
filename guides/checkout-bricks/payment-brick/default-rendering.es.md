@@ -1,10 +1,12 @@
 # Renderizado por defecto
 
-> WARNING
+Antes de realizar la renderización del Payment Brick, primero ejecute los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. A partir de esto, a continuación se presentan las informaciones necesarias para que configures y renderices el Payment Brick.
+
+> NOTE
 >
-> Importante
+> Nota
 >
-> Para realizar el renderizado de Payment Brick, primero realice los [pasos de inicialización](/developers/es/docs/checkout-bricks/common-initialization) compartidos entre todos los Bricks. 
+> Para consultar los tipos y especificaciones de los parámetros y respuestas de las funciones del Brick, consulte la [documentación técnica](https://github.com/mercadopago/sdk-js/blob/main/API/bricks/payment.md).
 
 ## Configurar el Brick
 
@@ -246,8 +248,8 @@ const renderPaymentBrick = async (bricksBuilder) => {
  const settings = {
    initialization: {
      /*
-      "amount" é o valor total a ser pago por todos os meios de pagamento
-    com exceção da Conta Mercado Pago e Parcelamento sem cartão de crédito, que tem seu valor de processamento determinado no backend através do "preferenceId"
+      "amount" es el monto total a pagar por todos los medios de pago con excepción 
+      de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId". Debe ser un número entero.
      */
      amount: 100,
      preferenceId: "<PREFERENCE_ID>",
@@ -262,12 +264,12 @@ const renderPaymentBrick = async (bricksBuilder) => {
    callbacks: {
      onReady: () => {
        /*
-        Callback chamado quando o Brick estiver pronto.
-        Aqui você pode ocultar loadings do seu site, por exemplo.
+        Callback llamado cuando el Brick está listo.
+        Aquí puede ocultar cargamentos de su sitio, por ejemplo.
        */
      },
      onSubmit: ({ selectedPaymentMethod, formData }) => {
-       // callback chamado ao clicar no botão de submissão dos dados
+       // callback llamado al hacer clic en el botón enviar datos
        return new Promise((resolve, reject) => {
          fetch("/process_payment", {
            method: "POST",
@@ -278,17 +280,17 @@ const renderPaymentBrick = async (bricksBuilder) => {
          })
            .then((response) => response.json())
            .then((response) => {
-             // receber o resultado do pagamento
+             // recibir el resultado del pago
              resolve();
            })
            .catch((error) => {
-             // lidar com a resposta de erro ao tentar criar o pagamento
+             // manejar la respuesta de error al intentar crear el pago
              reject();
            });
        });
      },
      onError: (error) => {
-       // callback chamado para todos os casos de erro do Brick
+       // callback llamado para todos los casos de error de Brick
        console.error(error);
      },
    },
@@ -305,6 +307,10 @@ renderPaymentBrick(bricksBuilder);
 
 const initialization = {
  amount: 100,
+     /*
+      "amount" es el monto total a pagar por todos los medios de pago con excepción 
+      de la Cuenta de Mercado Pago y Cuotas sin tarjeta de crédito, las cuales tienen su valor de procesamiento determinado en el backend a través del "preferenceId". Debe ser un número entero.
+     */
  preferenceId: "<PREFERENCE_ID>",
 };
 const customization = {

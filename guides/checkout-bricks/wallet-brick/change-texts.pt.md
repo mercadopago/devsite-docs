@@ -41,11 +41,11 @@ Veja quais são os textos relacionados a cada opção:
 |actionComplement |brand | com Mercado Pago |
 |actionComplement |amount | Valor da compra obtido através da preferência, no formato da moeda do pagamento. |
 |valueProp |practicality | Use cartões salvos ou seu saldo em conta |
-|valueProp |convenience_all | Parcelamento com ou sem cartão |
+|valueProp |convenience_all |  Parcelamento com cartão ou com Linha de Crédito Mercado Pago |
 |valueProp |security_details | Proteção para seus dados |
 |valueProp |security_safety | Pague com segurança |
 |valueProp |smart_option| O texto será escolhido automaticamente pelo Wallet Brick para aumentar as chances de venda de acordo com as características da compra. |
-|valueProp |convenience_credits* | Até 12x sem cartão |
+|valueProp |convenience_credits* | Até 12x com Linha de Crédito Mercado Pago |
 |valueProp |payment_methods_logos** | Serão exibidos os logos dos meios de pagamento disponíveis. Para configurar os meios de pagamento, utilize a _preference_. |
 
 ------------

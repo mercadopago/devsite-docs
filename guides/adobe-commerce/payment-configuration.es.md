@@ -5,14 +5,14 @@ La integración del módulo de Mercado Pago con la tienda Adobe Commerce permite
 ----[mlb]----
 
 * [Checkout Transparente](/developers/es/docs/adobe-commerce/payment-configuration/checkout-api): El pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito), pagos offline (boleto bancario y cajero automático) y Pix.
-* [Checkout Pro](/developers/es/docs/adobe-commerce/payment-configuration/checkout-pro): El pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), efectivo (boleto bancario), Pix y saldo en cuenta Mercado Pago.
+* [Checkout Pro](/developers/es/docs/adobe-commerce/payment-configuration/checkout-pro): El pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), Linha de crédito, efectivo (boleto bancario), Pix y saldo en cuenta Mercado Pago.
 
 ------------
 
 ----[mlm]----
 
 * [Checkout API](/developers/es/docs/adobe-commerce/payment-configuration/checkout-api): El pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito) y pagos offline en instituciones de pago como las listadas a continuación (que aceptan depósitos/pagos en efectivo).
-* [Checkout Pro](/developers/es/docs/adobe-commerce/payment-configuration/checkout-pro): El pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), Mercado Crédito, saldo en cuenta Mercado Pago, y a través de instituciones de pago como las listadas a continuación (que aceptan depósitos/pagos en efectivo).
+* [Checkout Pro](/developers/es/docs/adobe-commerce/payment-configuration/checkout-pro): El pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), Meses sin tarjeta, saldo en cuenta Mercado Pago, y a través de instituciones de pago como las listadas a continuación (que aceptan depósitos/pagos en efectivo).
 
 | Lista de instituciones |
 | --- |
@@ -38,7 +38,7 @@ La integración del módulo de Mercado Pago con la tienda Adobe Commerce permite
 ----[mla]----
 
 * [Checkout API](/developers/es/docs/adobe-commerce/payment-configuration/checkout-api): El pago se realiza sin salir de tu tienda virtual con tarjetas (débito o crédito).
-* [Checkout Pro](/developers/es/docs/adobe-commerce/payment-configuration/checkout-pro): El pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), Mercado Crédito, Rapipago, Provincia Net, Link y PagoFácil.
+* [Checkout Pro](/developers/es/docs/adobe-commerce/payment-configuration/checkout-pro): El pago se realiza en la página de Mercado Pago (dentro o fuera de tu tienda) con tarjetas (débito o crédito), Cuotas sin tarjeta, Rapipago, Provincia Net, Link y PagoFácil.
 
 ------------
 
