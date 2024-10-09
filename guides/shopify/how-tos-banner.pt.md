@@ -21,9 +21,9 @@ Uma vez instalada o app, os vendedores podem integrar facilmente um _banner_ per
 >
 > Antes de instalar o Mercado Pago Banner, é ncessário ter configurado a exibição da ----[mlb]----[Linha de Crédito](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Compra ahora, paga después](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ do Mercado Pago no checkout da sua loja.
 
-Para instalar o Mercado Pago Banners, siga os passos abaixo:
+Para instalar o Mercado Pago Banner, siga os passos abaixo:
 
-1. Acesse a [página do app **Mercado Pago Banner**](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR) no Marketplace e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
+1. Acesse a [página do app Mercado Pago Banner](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR) e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 2. Leia com atenção as informações sobre as permissões solicitadas e clique novamente em **Instalar**.
 3. Se você já instalou o app ----[mlb]----[Linha de Crédito](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Compra ahora, paga después](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta)------------, não precisará inserir suas credenciais novamente, mas poderá alterá-las se necessário. 
 

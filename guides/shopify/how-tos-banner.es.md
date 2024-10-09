@@ -28,7 +28,7 @@ Una vez instalada la app, los vendedores pueden integrar fácilmente un _banner_
 
 Para instalar Mercado Pago Banner, sigue los pasos a continuación:
 
-1. Accede a la [página de la app **Mercado Pago Banner**](https://apps.shopify.com/mercado-pago-antifraud-plus) en el "Marketplace", y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
+1. Accede a la [página de la app Mercado Pago Banner](https://apps.shopify.com/mercado-pago-antifraud-plus) y haz clic en **Instalar**. Si aún no lo has hecho, inicia sesión con tu cuenta de Shopify.
 
 ![banner shopify 1](/images/shopify/banner-1-es.png)
 
