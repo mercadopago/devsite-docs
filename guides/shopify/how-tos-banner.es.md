@@ -39,7 +39,7 @@ Para instalar Mercado Pago Banner, sigue los pasos a continuación:
 
 ![banner shopify 2](/images/shopify/banner-2-es.png)
 
-3. Si ya has instalado la app ----[mlb]----[Línea de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Compra ahora, paga después](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------, no necesitas ingresar tus credenciales nuevamente, pero podrás cambiarlas si es necesario.
+3. Si ya has instalado la app ----[mlb]----[Línea de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Compra ahora, paga después](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------, no necesitarás ingresar tus credenciales nuevamente, pero podrás cambiarlas si es necesario.
 
 > WARNING
 >
