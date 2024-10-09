@@ -2,7 +2,7 @@
 
 Puedes adaptar la integración de Checkout Pro a tu modelo de negocio **configurando atributos de preferencia**.
 
-La configuración de atributos de preferencia te permite **definir cuotas**, **excluir un medio de pago no deseado**, **cambiar la fecha de vencimiento de un determinado pago**, además de obtener información comercial y **medir la efectividad de tus anuncios** en plataformas como Facebook y Google.
+La configuración de atributos de preferencia te permite **definir cuotas** y **excluir un medio de pago no deseado**, además de obtener información comercial y **medir la efectividad de tus anuncios** en plataformas como Facebook y Google.
 
 Mira a continuación un ejemplo completo de preferencia.
 

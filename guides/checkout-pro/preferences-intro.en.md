@@ -2,7 +2,7 @@
 
 You can adapt the Checkout Pro integration to your business model by **configuring preferences attributes**.
 
-Preferences attribute settings allow you to **define installments**, **exclude an unwanted payment method**, **change the due date of a certain payment**, in addition to obtaining business information and **measuring the effectiveness of your ads** on platforms such as Facebook and Google.
+Preferences attribute settings allow you to **define installments** and **exclude an unwanted payment method**, in addition to obtaining business information and **measuring the effectiveness of your ads** on platforms such as Facebook and Google.
 
 See below for a complete example of preference.
 
