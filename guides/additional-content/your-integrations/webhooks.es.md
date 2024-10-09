@@ -71,13 +71,8 @@ Para hacerlo, sigue el paso a paso a continuación:
 | Recuperación y actualización información de tarjetas dentro de Mercado Pago. | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
 | Creación, actualización o cierre de órdenes comerciales |  Órdenes comerciales | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
 | Apertura de contracargos, cambios de status y modificaciones referentes a las liberaciones de dinero.   |   Contracargos | `topic_chargebacks_wh`  | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------ <br>Checkout Bricks |
-----[mla]----
-| Creación, actualización o cancelación de pedidos. | Delivery (proximity marketplace) | `delivery` | Mercado Pago Delivery |
-
-------------
-----[mla, mlm, mlb]----
-| Finalización, cancelación o errores al procesar intenciones de pago de dispositivos Mercado Pago Point. | Integraciones Point | `point_integration_wh` | Mercado Pago Point |
-------------
+----[mla]---- | Creación, actualización o cancelación de pedidos. | Delivery (proximity marketplace) | `delivery` | Mercado Pago Delivery | ------------
+----[mla, mlm, mlb]---- | Finalización, cancelación o errores al procesar intenciones de pago de dispositivos Mercado Pago Point. | Integraciones Point | `point_integration_wh` | Mercado Pago Point | ------------
 
 > WARNING
 >

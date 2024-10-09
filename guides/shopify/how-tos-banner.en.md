@@ -1,4 +1,18 @@
-# How to promote ----[mlb]----"Linha de Crédito"------------ ----[mlm]----"Compra ahora, paga después"------------ ----[mla]----"Cuotas sin Tarjeta"------------ in your store
+----[mlb]----
+
+# How to promote "Linha de Crédito" in your store
+
+------------
+----[mlm]----
+
+# How to promote "Compra ahora, paga después" in your store
+
+------------
+----[mla]----
+
+# How to promote "Cuotas sin Tarjeta" in your store
+
+------------
 
 **Mercado Pago Banner** is an app that allows you to promote the payment option of ----[mlb]----[Linha de Crédito](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Compra ahora, paga después](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ during the checkout process, which is Mercado Pago's financing option that offers the ability to pay in installments without needing a credit card.
 

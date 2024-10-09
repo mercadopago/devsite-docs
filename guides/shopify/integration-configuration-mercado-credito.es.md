@@ -18,28 +18,30 @@ Es la modalidad de financiación de Mercado Pago que ofrece la opción de pagar 
 Es la modalidad de financiamiento de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta de crédito.
 
 ------------
+
 Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántas cuotas quiere pagar.
+
 ----[mlb]----
 **Linha de Crédito** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) y ahora también es posible acceder directo desde el checkout de la tienda.
+
+Además, podrás complementar la integración con la habilitación de la app **Mercado Pago Banner**, una aplicación que permite promover durante el proceso de compra la opción de pago con [Linha de Crédito](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta). Para más información sobre cómo habilitar el banner, accede a la documentación [Cómo promover "Linha de Crédito" en tu tienda](/developers/pt/docs/shopify/shopify/how-tos/banner).
+
+Para **configurar a Linha de Crédito en el checkout de tu tienda**, sigue los pasos a continuación.
 
 ------------
 ----[mlm]----
 **Meses sin Tarjeta** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) y ahora también es posible acceder directo desde el checkout de la tienda.
 
-------------
-----[mla]----
-**Cuotas sin Tarjeta** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) y ahora también es posible acceder directo desde el checkout de la tienda.
+Además, podrás complementar la integración con la habilitación de la app **Mercado Pago Banner**, una aplicación que permite promover durante el proceso de compra la opción de pago con [Compra ahora, paga después](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta). Para más información sobre cómo habilitar el banner, accede a la documentación [Cómo promover "Compra ahora, paga después" en tu tienda](/developers/pt/docs/shopify/shopify/how-tos/banner).
 
-------------
-----[mlb]----
-Para **configurar a Linha de Crédito en el checkout de tu tienda**, sigue los pasos a continuación.
-
-------------
-----[mlm]----
 Para **configurar Meses sin Tarjeta en el checkout de tu tienda**, sigue los pasos a continuación.
 
 ------------
 ----[mla]----
+**Cuotas sin Tarjeta** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) y ahora también es posible acceder directo desde el checkout de la tienda.
+
+Además, podrás complementar la integración con la habilitación de la app **Mercado Pago Banner**, una aplicación que permite promover durante el proceso de compra la opción de pago con [Cuotas sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta). Para más información sobre cómo habilitar el banner, accede a la documentación [Cómo promover "Cuotas sin Tarjeta" en tu tienda](/developers/pt/docs/shopify/shopify/how-tos/banner).
+
 Para **configurar Cuotas sin Tarjeta en el checkout de tu tienda**, sigue los pasos a continuación.
 
 ------------
