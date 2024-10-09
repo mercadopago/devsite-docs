@@ -2,22 +2,19 @@
 ----[mlb]----
 # Cómo promover "Linha de Crédito" en tu tienda
 
+**Mercado Pago Banner** es una app que permite promocionar durante el proceso de compra la opción de pago con [Linha de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago, la modalidad de financiamiento que ofrece la opción de pagar en cuotas sin necesidad de una tarjeta de crédito.
+
 ------------
 ----[mlm]----
 # Cómo promover "Compra ahora, paga después" en tu tienda
+
+**Mercado Pago Banner** es una app que permite promocionar durante el proceso de compra la opción de pago con [Compra ahora, paga después](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago, la modalidad de financiamiento que ofrece la opción de pagar en mensualidades sin necesidad de una tarjeta de crédito.
 
 ------------
 ----[mla]----
 # Cómo promover "Cuotas sin Tarjeta" en tu tienda
 
-------------
-
-----[mlm]----
-**Mercado Pago Banner** es una app que permite promocionar durante el proceso de compra la opción de pago con [Compra ahora, paga después](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago, la modalidad de financiamiento que ofrece la opción de pagar en mensualidades sin necesidad de una tarjeta de crédito.
-
-------------
-----[mla, mlb]----
-**Mercado Pago Banner** es una app que permite promocionar durante el proceso de compra la opción de pago con ----[mlb]----[Linha de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ de Mercado Pago, la modalidad de financiamiento que ofrece la opción de pagar en cuotas sin necesidad de una tarjeta de crédito.
+**Mercado Pago Banner** es una app que permite promocionar durante el proceso de compra la opción de pago con [Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago, la modalidad de financiamiento que ofrece la opción de pagar en cuotas sin necesidad de una tarjeta de crédito.
 
 ------------
 
