@@ -409,7 +409,7 @@
                         "description": {
                           "en": "Maximum amount that can be processed with this payment method.",
                           "pt": "Máximo valor que pode ser processado com este meio de pagamento.",
-                          "es": "Máximo monto que se puede procesar con este medio de pago."
+                          "es": "Monto máximo que se puede procesar con este medio de pago."
                         }
                       },
                       "accreditation_time": {
