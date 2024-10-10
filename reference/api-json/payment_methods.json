@@ -400,7 +400,7 @@
                         "description": {
                           "en": "Minimum amount that can be processed with this payment method.",
                           "pt": "Mínimo valor que pode ser processado com este meio de pagamento.",
-                          "es": "Mínimo monto que se puede procesar con este medio de pago."
+                          "es": "Monto mínimo que se puede procesar con este medio de pago."
                         }
                       },
                       "max_allowed_amount": {
