@@ -452,7 +452,7 @@
                         "example": "aggregator",
                         "description": {
                           "en": "The processing mode of the means of payment. There are 2 types:",
-                          "pt": "Informações do código de segurança do cartão. Existem 2 tipos:",
+                          "pt": "Modo de processamento do meio de pagamento. Existem 2 tipos:",
                           "es": "Modo de procesamiento del medio de pago. Hay 2 tipos:"
                         },
                         "enum": [
