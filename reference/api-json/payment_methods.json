@@ -286,7 +286,7 @@
                                 "description": {
                                   "en": "Whether the security code is mandatory or not.",
                                   "pt": "Indica se o código de segurança é obrigatório ou não.",
-                                  "es": "Indica si el código de seguridad es mandatorio o no."
+                                  "es": "Indica si el código de seguridad es obligatorio o no."
                                 },
                                 "enum": [
                                   {
