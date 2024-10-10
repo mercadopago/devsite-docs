@@ -164,7 +164,7 @@
                             "title": "temporally_deactive",
                             "description": {
                               "en": "Unavailable for use, possible interruption of the service.",
-                              "es": "No disponible para uso, posible interrupción del servicio.",
+                              "es": "No disponible para utilizar, posible interrupción del servicio.",
                               "pt": "Indisponível para uso, possível interrupção do serviço."
                             }
                           }
