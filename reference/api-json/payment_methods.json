@@ -301,7 +301,7 @@
                                     "title": "optional",
                                     "description": {
                                       "en": "A payment could be issued without the security code.",
-                                      "es": "Un pago podría ser emitido sin el código de seguridad.",
+                                      "es": "Un pago puede ser emitido sin el código de seguridad.",
                                       "pt": "Um pagamento pode ser emitido sem o código de segurança."
                                     }
                                   }
