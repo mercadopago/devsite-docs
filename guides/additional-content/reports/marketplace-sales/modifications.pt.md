@@ -215,7 +215,7 @@ curl --location --request PUT 'https://api.mercadopago.com/v1/reports/marketplac
 
 ## PUT Notifier
 
-#### Email
+### Email
 
 > Ao realizar uma solicitação PUT a Notifier Email, lembre-se de incluir os parâmetros obrigatórios a seguir: `type`, `data` (`recipients`) e `description`.
 

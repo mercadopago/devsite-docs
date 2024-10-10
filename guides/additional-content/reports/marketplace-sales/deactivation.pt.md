@@ -17,12 +17,12 @@ curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/marketp
 
 ## DELETE Event
 ```curl
-	curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events/{{event_id}}' \
+curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/marketplace_sellers_sales/events/{{event_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' 
 ```
 
 ## DELETE Notifier
 ```curl
-	curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/{{notifier_id}}' \
+curl --location --request DELETE 'https://api.mercadopago.com/v1/reports/{{notifier_id}}' \
 --header 'Authorization: Bearer {{TOKEN}}' 
 ```
