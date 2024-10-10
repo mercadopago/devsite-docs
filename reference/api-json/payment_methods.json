@@ -444,7 +444,7 @@
                         "description": {
                           "en": "Finantial institution processing this payment method.",
                           "pt": "Instituição financeira processando o meio de pagamento.",
-                          "es": "Institución financiera procesando el medio de pago."
+                          "es": "Institución financiera que procesa el medio de pago."
                         }
                       },
                       "processing_modes": {
