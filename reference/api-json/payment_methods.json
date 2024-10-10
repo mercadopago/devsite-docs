@@ -380,7 +380,7 @@
                             "title": "cardholder_name",
                             "description": {
                               "en": "Name as seen in the card of the card owner.",
-                              "es": "Nombre tal como aparece en la tarjeta del titular.",
+                              "es": "Nombre, tal como aparece en la tarjeta del titular.",
                               "pt": "Nome conforme aparece no cartão do titular."
                             }
                           },
