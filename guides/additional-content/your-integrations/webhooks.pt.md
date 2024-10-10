@@ -59,52 +59,85 @@ Para isso, siga as etapas descritas abaixo.
 ----[mla]---- 
 | Eventos | Nome em Suas integrações | Tópico | Produtos associados |
 |---|---|---|---|
-| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
+| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
 | Pagamento recorrente de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_authorized_payment` | Assinaturas |
 | Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
 | Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |
 | Vinculação e desvinculação de contas que se conectaram através de OAuth | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham  OAuth implementado |
 | Transações com Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
-| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
-| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Código QR<br>Wallet Connect |
-| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout API<br>Checkout Pro |
+| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Mercado Pago Point<br>Código QR<br>Wallet Connect |
+| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
 | Criação, fechamento ou expiração de ordens comerciais | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
-| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
 | Criação, atualização ou cancelamento de pedidos. | Delivery (proximity marketplace) | `delivery` | Mercado Pago Delivery |
 | Finalização, cancelamento ou erros ao processar intenções de pagamento de dispositivos Mercado Pago Point. | Integrações Point | `point_integration_wh` | Mercado Pago Point | 
 
 ------------
-----[mlm, mlb]---- 
+----[mlb]---- 
 | Eventos | Nome em Suas integrações | Tópico | Produtos associados |
 |---|---|---|---|
-| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
+| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout Transparente<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
 | Pagamento recorrente de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_authorized_payment` | Assinaturas |
 | Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
 | Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |
 | Vinculação e desvinculação de contas que se conectaram através de OAuth | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham  OAuth implementado |
 | Transações com Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
-| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
-| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Código QR<br>Wallet Connect |
-| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout Transparente<br>Checkout Pro |
+| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout Transparente<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Mercado Pago Point<br>Código QR<br>Wallet Connect |
+| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout Transparente<br>Checkout Bricks |
 | Criação, fechamento ou expiração de ordens comerciais | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
-| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout Transparente<br>Checkout Bricks |
 | Finalização, cancelamento ou erros ao processar intenções de pagamento de dispositivos Mercado Pago Point. | Integrações Point | `point_integration_wh` | Mercado Pago Point | 
 
 ------------
-----[mlu, mlc, mco, mpe]----
+----[mlm]---- 
 | Eventos | Nome em Suas integrações | Tópico | Produtos associados |
 |---|---|---|---|
-| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
+| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
 | Pagamento recorrente de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_authorized_payment` | Assinaturas |
 | Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
 | Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |
 | Vinculação e desvinculação de contas que se conectaram através de OAuth | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham  OAuth implementado |
 | Transações com Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
-| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
-| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Código QR<br>Wallet Connect |
-| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout API<br>Checkout Pro |
+| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Mercado Pago Point<br>Wallet Connect |
+| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+| Criação, fechamento ou expiração de ordens comerciais | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro |
+| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+| Finalização, cancelamento ou erros ao processar intenções de pagamento de dispositivos Mercado Pago Point. | Integrações Point | `point_integration_wh` | Mercado Pago Point | 
+
+------------
+----[mlu]----
+| Eventos | Nome em Suas integrações | Tópico | Produtos associados |
+|---|---|---|---|
+| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
+| Pagamento recorrente de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_authorized_payment` | Assinaturas |
+| Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
+| Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |
+| Vinculação e desvinculação de contas que se conectaram através de OAuth | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham  OAuth implementado |
+| Transações com Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
+| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | CheckoutAPI<br>Checkout Pro |
+| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Código QR<br>Wallet Connect|
+| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
 | Criação, fechamento ou expiração de ordens comerciais | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
-| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+
+------------
+----[mlc, mco, mpe]----
+| Eventos | Nome em Suas integrações | Tópico | Produtos associados |
+|---|---|---|---|
+| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
+| Pagamento recorrente de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_authorized_payment` | Assinaturas |
+| Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
+| Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |
+| Vinculação e desvinculação de contas que se conectaram através de OAuth | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham  OAuth implementado |
+| Transações com Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
+| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | CheckoutAPI<br>Checkout Pro |
+| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>Wallet Connect |
+| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+| Criação, fechamento ou expiração de ordens comerciais | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro|
+| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
 
 ------------
 
