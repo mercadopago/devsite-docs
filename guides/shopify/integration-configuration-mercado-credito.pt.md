@@ -18,8 +18,6 @@ Com essa linha de crédito, administrada pelo Mercado Pago, o pagamento é credi
 ----[mlb]----
 Atualmente a **Linha de Crédito** é oferecido em nosso [Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) e agora também é possível acessá-lo diretamente do checkout da loja. 
 
-Além disso, você poderá complementar a integração com a habilitação do app **Mercado Pago Banner**, um app que permite promover durante o processo de compra, a opção de pagamento com [Linha de Crédito](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta). Para mais informações sobre o como habilitar o banner, acesse a documentação [Como promover "Linha de Crédito" em sua loja](/developers/pt/docs/shopify/shopify/how-tos/banner).
-
 Para **exibir a Linha de Crédito no checkout da sua loja**, siga os passos abaixo.
 
 ------------
@@ -33,8 +31,6 @@ Para **exibir o Meses sin Tarjeta no checkout da sua loja**, siga os passos abai
 ------------
 ----[mla]----
 Atualmente o **Cuotas sin Tarjeta** é oferecido em nosso [Checkout Pro](/developers/pt/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) e agora também é possível acessá-lo diretamente do checkout da loja. 
-
-Além disso, você poderá complementar a integração com a habilitação do app **Mercado Pago Banner**, um app que permite promover durante o processo de compra, a opção de pagamento com [Cuotas sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta). Para mais informações sobre o como habilitar o banner, acesse a documentação [Como promover "Cuotas sin Tarjeta" em sua loja](/developers/pt/docs/shopify/shopify/how-tos/banner).
 
 Para **exibir o Cuotas sin Tarjeta no checkout da sua loja**, siga os passos abaixo.
 
