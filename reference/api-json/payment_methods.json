@@ -321,7 +321,7 @@
                                 "example": "back",
                                 "description": {
                                   "en": "Whether the security code is located in the back or in the front of the card.",
-                                  "es": "Si el código de seguridad está ubicado en la parte trasera o en la parte delantera de la tarjeta.",
+                                  "es": "Indica si el código de seguridad está ubicado en la parte trasera o en la parte delantera de la tarjeta.",
                                   "pt": "Se o código de segurança está localizado na parte de trás ou na parte da frente do cartão."
                                 },
                                 "enum": [
