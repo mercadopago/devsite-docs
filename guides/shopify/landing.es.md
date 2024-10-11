@@ -84,7 +84,7 @@ bullet_section_with_media:
  - type: normal
  - benefit_title: Protección de datos con PCI-DSS (Payment Card Industry Data Security Standard)
  - benefit_message: Cumplimos con el estándar global de protección de información confidencial de tarjetas y contamos con Secure Fields para facilitar la obtención de la certificación para su tienda.
- - benefit_title: Garantice seguridad en sus transacciones de alto riesgo con el 3DS (3-Domain Secure)
+ - benefit_title: Garantiza la seguridad en transacciones de alto riesgo con el 3DS (3-Domain Secure)
  - benefit_message: Con el 3DS, realizamos una verificación de identidad discreta desde un modal sin salir de la tienda, ofreciendo beneficios como una mayor probabilidad de aprobación y menor riesgo de fraude.
  - benefit_title: Mayor aprobación de pagos con el Checkout Pro
  - benefit_message: Garantizamos una tasa de aprobación más alta y menor riesgo de fraude cuando el pago se realiza a través de la cuenta de Mercado Pago.
