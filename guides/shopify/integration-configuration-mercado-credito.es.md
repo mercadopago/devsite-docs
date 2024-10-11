@@ -30,7 +30,7 @@ Para **configurar Linha de Crédito en el checkout de la tienda**, sigue los pas
 ----[mlm]----
 **Meses sin Tarjeta** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) y ahora también es posible acceder directo desde el checkout de la tienda.
 
-Además, podrás complementar la integración con la habilitación de la app **Mercado Pago Banner**, una aplicación que permite promover durante el proceso de compra la opción de pago con [Compra ahora, paga después](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta). Para más información sobre cómo habilitar el banner, accede a la documentación [Cómo promover "Compra ahora, paga después" en tu tienda](/developers/pt/docs/shopify/shopify/how-tos/banner).
+Además, podrás complementar la integración con la habilitación de la app **Mercado Pago Banner**, una aplicación que permite promover durante el proceso de compra la opción de pago con [Meses sin Tarja](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta). Para más información sobre cómo habilitar el banner, accede a la documentación [Cómo promover "Meses sin Tarja" en tu tienda](/developers/pt/docs/shopify/shopify/how-tos/banner).
 
 Para **configurar Meses sin Tarjeta en el checkout de la tienda**, sigue los pasos a continuación.
 

@@ -2,13 +2,13 @@
 ----[mlb]----
 # Cómo promover "Linha de Crédito" en tu tienda
 
-**Mercado Pago Banner** es una app que permite promocionar  la opción de pago con [Linha de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en cuotas sin necesidad de una tarjeta de crédito.
+**Mercado Pago Banner** es una app que permite promocionar la opción de pago con [Linha de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en cuotas sin necesidad de una tarjeta de crédito.
 
 ------------
 ----[mlm]----
 # Cómo promover "Meses sin Tarjeta" en tu tienda
 
-**Mercado Pago Banner** es una app que permite promocionar  la opción de pago con [Meses sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en mensualidades sin necesidad de una tarjeta de crédito.
+**Mercado Pago Banner** es una app que permite promocionar la opción de pago con [Meses sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en mensualidades sin necesidad de una tarjeta de crédito.
 
 ------------
 ----[mla]----
@@ -44,21 +44,21 @@ Para instalar Mercado Pago Banner, sigue los pasos a continuación:
 >
 > Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar tus credenciales**. Para hacerlo, sigue las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en la cuenta de Shopify, haz clic en **Administrar cuenta** y llena los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
 
-4. Haz clic en la opción **Guardar banner** y ve a la sección de "Ir a temas" de Shopify.
+4. Haz clic en la opción **Guardar banner** y ve a la sección de "Ir a temas" de Shopify. El _banner_ se añadirá automáticamente en la página del producto.
 
 ![banner shopify 3](/images/shopify/banner-3-es.png)
 
-5. El banner se añadirá automáticamente en la página del producto, pero también **puedes añadirlo en cualquier sección de la tienda que permita insertar un bloque de información del producto**. Para ello, arrastra el bloque del Mercado Pago Banner hacia arriba o hacia abajo, moviéndolo a la posición que desees.
+5. Si deseas agregar el _banner_ a cualquier otra sección de la tienda que también permita insertar un bloque de información del producto, **arrastra el bloque del Mercado Pago Banner hacia arriba o hacia abajo, moviéndolo a la posición deseada**.
 
 ![banner shopify 4](/images/shopify/banner-4-es.png)
 
-6. Por último, haz clic en **Guardar** para finalizar la configuración del banner.
+6. Por último, haz clic en **Guardar** para finalizar la configuración del _banner_.
 
 ¡Listo! **Mercado Pago Banner**  ha sido habilitado con éxito!
 
 ## Personalización del banner
 
-Después de habilitar la exhibición del banner, podrás personalizarlo, cambiando su color y el mensaje que se mostrará. Para ello, sigue los pasos a continuación.
+Después de habilitar la exhibición del _banner_, podrás personalizarlo, cambiando su color y el mensaje que se mostrará. Para ello, sigue los pasos a continuación.
 
 1. Ve a tu tienda [Shopify](https://accounts.shopify.com/store-login).
 2. En el panel administrativo de la tienda, haz clic en **Aplicaciones** y selecciona la app "Mercado Pago Banner".
@@ -66,15 +66,15 @@ Después de habilitar la exhibición del banner, podrás personalizarlo, cambian
 
 ![banner shopify 3](/images/shopify/banner-3-es.png)
 
-4. Haz clic en el banner en cuestión para que puedas visualizar las opciones de personalización. También puedes moverlo y posicionarlo en la sección de la página que prefieras.
+4. Haz clic en el _banner_ en cuestión para que puedas visualizar las opciones de personalización. También puedes moverlo y posicionarlo en la sección de la página que prefieras.
 
 ![banner shopify 6](/images/shopify/banner-6-es.png)
 
-5. En el menú del lado izquierdo, elige el color de fondo del banner que mejor combine con tu tienda, que puede ser **transparente** o **blanco**.
-6. Si lo deseas, podrás cambiar la frase que se muestra en el banner. Hay 4 opciones distintas para elegir la que prefieras.
+5. En el menú del lado izquierdo, elige el color de fondo del _banner_ que mejor combine con tu tienda, que puede ser **transparente** o **blanco**.
+6. Si lo deseas, podrás cambiar la frase que se muestra en el _banner_. Hay 4 opciones distintas para elegir la que prefieras.
 
 ![banner shopify 7](/images/shopify/banner-7-es.png)
 
-7. Por último, haz clic en **Guardar** para que el banner comience a mostrarse en tu tienda con la personalización elegida.
+7. Por último, haz clic en **Guardar** para que el _banner_ comience a mostrarse en tu tienda con la personalización elegida.
 
 ![banner shopify 8](/images/shopify/banner-8-es.png)
