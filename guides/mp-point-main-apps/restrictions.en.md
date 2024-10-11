@@ -26,11 +26,7 @@ Libraries that interact directly with the device's hardware, such as those from 
 
 ## Issue with Build Tools
 
-> WARNING
->
-> Attention
->
-> If the message **"Installed Build Tools revision 32.0.0 is corrupted"** is displayed, delete the program and install it again using the **SDK Manager**.
+If the message **"Installed Build Tools revision 32.0.0 is corrupted"** is displayed, delete the program and install it again using the **SDK Manager**.
 
 Then run this command in the terminal:
 

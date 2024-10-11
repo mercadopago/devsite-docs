@@ -1,6 +1,6 @@
 # OAuth
 
-O OAuth é um protocolo de autorização que permite que aplicações tenham acesso limitado às informações privadas das contas do Mercado Pago. Ele utiliza o protocolo HTTP e introduz uma camada de autenticação e autorização. Por meio desse protocolo, é possível solicitar acesso a recursos protegidos dos vendedores, utilizando um **Access Token** limitado a uma determinada aplicação, sem precisar das credenciais dos vendedores por meio de **fluxos de acesso**.
+OAuth is an authorization protocol that allows applications to have limited access to private information from Mercado Pago accounts. It uses the HTTP protocol and introduces a layer of authentication and authorization. Through this protocol, it is possible to request access to protected resources of sellers using an **Access Token** that is limited to a specific application, without needing the sellers' credentials via **access flows**.
 
 > NOTE
 >
