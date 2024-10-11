@@ -38,7 +38,7 @@ Para **configurar Meses sin Tarjeta en el checkout de tu tienda**, sigue los pas
 ----[mla]----
 **Cuotas sin Tarjeta** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) y ahora también es posible acceder directo desde el checkout de la tienda.
 
-Para **configurar Cuotas sin Tarjeta en el checkout de tu tienda**, sigue los pasos a continuación.
+Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pasos a continuación.
 
 ------------
 
