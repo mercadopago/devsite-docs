@@ -5,7 +5,7 @@
 ------------
 ----[mlm]----
 
-# How to promote "Compra ahora, paga después" in your store
+# How to promote "Meses sin Tarjeta" in your store
 
 ------------
 ----[mla]----
@@ -14,7 +14,7 @@
 
 ------------
 
-**Mercado Pago Banner** is an app that allows you to promote ----[mlb]----[Linha de Crédito](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Compra ahora, paga después](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ as a payment option during the checkout process, which is Mercado Pago's financing option that offers the possibility to pay in installments without needing a credit card.
+**Mercado Pago Banner** is an app that allows you to promote ----[mlb]----[Linha de Crédito](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Meses sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ as a payment option during the checkout process, which is Mercado Pago's financing option that offers the possibility to pay in installments without needing a credit card.
 
 Once the app is installed, sellers can easily integrate a customized banner into their store, effectively communicating to buyers the option to pay in installments without a card, thus encouraging sales.
 
@@ -22,13 +22,13 @@ Once the app is installed, sellers can easily integrate a customized banner into
 >
 > Attention
 >
-> Before installing the Mercado Pago Banner, it is necessary to have configured the display of the ----[mlb]----[Linha de Crédito](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Compra ahora, paga después](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ from Mercado Pago in your store's checkout.
+> Before installing the Mercado Pago Banner, it is necessary to have configured the display of the ----[mlb]----[Linha de Crédito](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Meses sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ from Mercado Pago in your store's checkout.
 
 To install Mercado Pago Banner, follow the steps below:
 
 1. Access the [Mercado Pago Banner app page](https://apps.shopify.com/mercado-pago-antifraud-plus) and click on **Install**. If you haven't done so already, log in with your Shopify account.
 2. Carefully read the information about the requested permissions and click on **Install** again.
-3. If you have already installed the ----[mlb]----[Linha de Crédito](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Compra ahora, paga después](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ app, you do not need to enter your credentials again, but you can change them if necessary.
+3. If you have already installed the ----[mlb]----[Linha de Crédito](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Meses sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ app, you do not need to enter your credentials again, but you can change them if necessary.
 
 > WARNING
 >
