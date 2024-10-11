@@ -31,8 +31,8 @@
                         "example": "visa",
                         "description": {
                           "en": "Payment method identifier.",
-                          "pt": "Id do meio de pagamento",
-                          "es": "Identificador del medio de pago"
+                          "pt": "Id do meio de pagamento.",
+                          "es": "Identificador del medio de pago."
                         }
                       },
                       "name": {
@@ -57,56 +57,56 @@
                             "title": "account_money",
                             "description": {
                               "en": "Money in the Mercado Pago account.",
-                              "es": "Money in the Mercado Pago account.",
-                              "pt": "Money in the Mercado Pago account."
+                              "es": "Dinero en la cuenta de Mercado Pago.",
+                              "pt": "Dinheiro na conta do Mercado Pago."
                             }
                           },
                           {
                             "title": "ticket",
                             "description": {
-                              "en": "Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.",
-                              "es": "Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc.",
-                              "pt": "Boletos, Caixa Electronica Payment, PayCash, Efecty, Oxxo, etc."
+                              "en": "Boletos, PayCash, Efecty, Oxxo, etc.",
+                              "es": "Boletos, PayCash, Efecty, Oxxo, etc.",
+                              "pt": "Boletos, PayCash, Efecty, Oxxo, etc."
                             }
                           },
                           {
                             "title": "bank_transfer",
                             "description": {
                               "en": "Pix and PSE (Pagos Seguros en Línea).",
-                              "es": "Pix and PSE (Pagos Seguros en Línea).",
-                              "pt": "Pix and PSE (Pagos Seguros en Línea)."
+                              "es": "Pix y PSE (Pagos Seguros en Línea).",
+                              "pt": "Pix e PSE (Pagos Seguros en Línea)."
                             }
                           },
                           {
                             "title": "atm",
                             "description": {
                               "en": "ATM payment (widely used in Mexico through BBVA Bancomer).",
-                              "es": "ATM payment (widely used in Mexico through BBVA Bancomer).",
-                              "pt": "ATM payment (widely used in Mexico through BBVA Bancomer)."
+                              "es": "Pago en ATM (ampliamente utilizado en México a través de BBVA Bancomer).",
+                              "pt": "Pagamento em caixa eletrônico (amplamente utilizado no México através do BBVA Bancomer)."
                             }
                           },
                           {
                             "title": "credit_card",
                             "description": {
                               "en": "Payment by credit card.",
-                              "es": "Payment by credit card.",
-                              "pt": "Payment by credit card."
+                              "es": "Pago con tarjeta de crédito.",
+                              "pt": "Pagamento com cartão de crédito."
                             }
                           },
                           {
                             "title": "debit_card",
                             "description": {
                               "en": "Payment by debit card.",
-                              "es": "Payment by debit card.",
-                              "pt": "Payment by debit card."
+                              "es": "Pago con tarjeta de débito.",
+                              "pt": "Pagamento com cartão de débito."
                             }
                           },
                           {
                             "title": "prepaid_card",
                             "description": {
                               "en": "Payment by prepaid card.",
-                              "es": "Payment by prepaid card.",
-                              "pt": "Payment by prepaid card."
+                              "es": "Pago con tarjeta prepaga.",
+                              "pt": "Pagamento com cartão pré-pago."
                             }
                           },
                           {
@@ -120,17 +120,17 @@
                           {
                             "title": "voucher_card",
                             "description": {
-                              "en": "Alelo benefits, Sodexo.",
-                              "es": "Alelo benefits, Sodexo.",
-                              "pt": "Alelo benefits, Sodexo."
+                              "en": "Alelo benefits and Sodexo.",
+                              "es": "Alelo beneficios y Sodexo.",
+                              "pt": "Alelo benefícios e Sodexo."
                             }
                           },
                           {
                             "title": "crypto_transfer",
                             "description": {
                               "en": "Payment with cryptocurrencies such as Ethereum and Bitcoin.",
-                              "es": "Payment with cryptocurrencies such as Ethereum and Bitcoin.",
-                              "pt": "Payment with cryptocurrencies such as Ethereum and Bitcoin."
+                              "es": "Pago con criptomonedas como Ethereum y Bitcoin.",
+                              "pt": "Pagamento com criptomoedas como Ethereum e Bitcoin."
                             }
                           }
                         ]
@@ -140,32 +140,32 @@
                         "example": "active",
                         "description": {
                           "en": "Payment methods status.",
-                          "pt": "Estado do meio de pagamento",
-                          "es": "Estado del medio de pago"
+                          "pt": "Estado do meio de pagamento.",
+                          "es": "Estado del medio de pago."
                         },
                         "enum": [
                           {
                             "title": "active",
                             "description": {
                               "en": "Available for use.",
-                              "es": "Available for use.",
-                              "pt": "Available for use."
+                              "es": "Disponible para utilizar.",
+                              "pt": "Disponível para uso."
                             }
                           },
                           {
                             "title": "deactive",
                             "description": {
                               "en": "Decommissioned, we don't support it anymore.",
-                              "es": "Decommissioned, we don't support it anymore.",
-                              "pt": "Decommissioned, we don't support it anymore."
+                              "es": "Desactivado, ya no lo soportamos.",
+                              "pt": "Desativado, não oferecemos mais suporte."
                             }
                           },
                           {
                             "title": "temporally_deactive",
                             "description": {
                               "en": "Unavailable for use, possible interruption of the service.",
-                              "es": "Unavailable for use, possible interruption of the service.",
-                              "pt": "Unavailable for use, possible interruption of the service."
+                              "es": "No disponible para utilizar, posible interrupción del servicio.",
+                              "pt": "Indisponível para uso, possível interrupção do serviço."
                             }
                           }
                         ]
@@ -192,33 +192,33 @@
                         "type": "string",
                         "example": "supported",
                         "description": {
-                          "en": "Indicates whether the capture can be delayed or not. It has three possible values.",
-                          "pt": "Indica se a captura pode ser lenta ou não. Tem três valores possíveis.",
-                          "es": "Indica si la captura puede ser diferida o no. Tiene tres valores posibles."
+                          "en": "Indicates whether the capture can be delayed or not. It has three possible values:",
+                          "pt": "Indica se a captura pode ser deferida ou não. Tem três valores possíveis:",
+                          "es": "Indica si la captura puede ser diferida o no. Tiene tres valores posibles:"
                         },
                         "enum": [
                           {
                             "title": "supported",
                             "description": {
                               "en": "This payment method supports authorization and capture operations.",
-                              "es": "This payment method supports authorization and capture operations.",
-                              "pt": "This payment method supports authorization and capture operations."
+                              "es": "Este método de pago soporta operaciones de autorización y captura.",
+                              "pt": "Este método de pagamento suporta operações de autorização e captura."
                             }
                           },
                           {
                             "title": "unsupported",
                             "description": {
                               "en": "Deferred capture is not available for this payment method.",
-                              "es": "Deferred capture is not available for this payment method.",
-                              "pt": "Deferred capture is not available for this payment method."
+                              "es": "La captura diferida no está disponible para este método de pago.",
+                              "pt": "A captura deferida não está disponível para este método de pagamento."
                             }
                           },
                           {
                             "title": "does_not_apply",
                             "description": {
                               "en": "Cash payment methods don't allow deferred capture.",
-                              "es": "Cash payment methods don't allow deferred capture.",
-                              "pt": "Cash payment methods don't allow deferred capture."
+                              "es": "Los métodos de pago en efectivo no permiten la captura diferida.",
+                              "pt": "Os métodos de pagamento em dinheiro não permitem captura diferida."
                             }
                           }
                         ]
@@ -226,43 +226,6 @@
                       "settings": {
                         "type": "object",
                         "properties": {
-                          "bin": {
-                            "type": "object",
-                            "description": {
-                              "en": "Regular expression through which it will be verified if a bin corresponds to the means of payment.",
-                              "pt": "Expressão regular pela qual será verificado se um bin corresponde ao meio de pagamento.",
-                              "es": "Expresión regular por la cual se verificará si un bin corresponde al medio de pago."
-                            },
-                            "properties": {
-                              "pattern": {
-                                "type": "string",
-                                "example": "^(4)",
-                                "description": {
-                                  "en": "Regular expression representing the accepted bins.",
-                                  "pt": "A expressão regular, representando bines aceitos",
-                                  "es": "Expresión regular representando los bines aceptados"
-                                }
-                              },
-                              "exclusion_pattern": {
-                                "type": "string",
-                                "description": {
-                                  "en": "Regular expression representing the excluded bins.",
-                                  "pt": "A expressão regular, representando bines excluídos",
-                                  "es": "Expresión regular representando los bines excluídos"
-                                },
-                                "example": "^(400163|400176|400178|400185|400199|423808|439267|471233|473200|476332|482481|451416|438935|(40117[8-9])|(45763[1-2])|457393|431274)"
-                              },
-                              "installments_pattern": {
-                                "type": "string",
-                                "example": "^(?!(417401|453998|426398|462437|451212|456188))",
-                                "description": {
-                                  "en": "Regular expression representing bins allowed to pay with more than one installment.",
-                                  "pt": "A expressão regular, representando bines aceitos para pagar com mais de uma cota",
-                                  "es": "Expresión regular representando los bines aceptados para pagar con más de una cuota"
-                                }
-                              }
-                            }
-                          },
                           "card_number": {
                             "type": "object",
                             "description": {
@@ -284,25 +247,25 @@
                                 "type": "string",
                                 "example": "standard",
                                 "description": {
-                                  "es": "Whether the card number can be validated using a checksum algorithm (usually Luhn)",
-                                  "pt": "Whether the card number can be validated using a checksum algorithm (usually Luhn)",
-                                  "en": "Whether the card number can be validated using a checksum algorithm (usually Luhn)"
+                                  "en": "Whether the card number can be validated using a checksum algorithm (usually Luhn)",
+                                  "es": "Si el número de la tarjeta puede ser validado usando un algoritmo de suma de verificación (generalmente Luhn).",
+                                  "pt": "Se o número do cartão pode ser validado usando um algoritmo de soma de verificação (geralmente Luhn)."
                                 },
                                 "enum": [
                                   {
                                     "title": "standard",
                                     "description": {
                                       "en": "The card number should validate Luhn's algorithm.",
-                                      "es": "The card number should validate Luhn's algorithm.",
-                                      "pt": "The card number should validate Luhn's algorithm."
+                                      "es": "El número de la tarjeta debe validar el algoritmo de Luhn.",
+                                      "pt": "O número do cartão deve validar o algoritmo de Luhn."
                                     }
                                   },
                                   {
                                     "title": "none",
                                     "description": {
                                       "en": "There is no algorithm to validate the checksum.",
-                                      "es": "There is no algorithm to validate the checksum.",
-                                      "pt": "There is no algorithm to validate the checksum."
+                                      "es": "No hay un algoritmo para validar la suma de verificación.",
+                                      "pt": "Não há um algoritmo para validar a soma de verificação."
                                     }
                                   }
                                 ]
@@ -322,24 +285,24 @@
                                 "example": "mandatory",
                                 "description": {
                                   "en": "Whether the security code is mandatory or not.",
-                                  "pt": "Indica se o código de segurança é obrigatório ou não",
-                                  "es": "Indica si el código de seguridad es mandatorio o no"
+                                  "pt": "Indica se o código de segurança é obrigatório ou não.",
+                                  "es": "Indica si el código de seguridad es obligatorio o no."
                                 },
                                 "enum": [
                                   {
                                     "title": "mandatory",
                                     "description": {
                                       "en": "The security code should be given to process the payment.",
-                                      "es": "The security code should be given to process the payment.",
-                                      "pt": "The security code should be given to process the payment."
+                                      "es": "El código de seguridad debe ser proporcionado para procesar el pago.",
+                                      "pt": "O código de segurança deve ser fornecido para processar o pagamento."
                                     }
                                   },
                                   {
                                     "title": "optional",
                                     "description": {
                                       "en": "A payment could be issued without the security code.",
-                                      "es": "A payment could be issued without the security code.",
-                                      "pt": "A payment could be issued without the security code."
+                                      "es": "Un pago puede ser emitido sin el código de seguridad.",
+                                      "pt": "Um pagamento pode ser emitido sem o código de segurança."
                                     }
                                   }
                                 ]
@@ -348,8 +311,8 @@
                                 "type": "number",
                                 "description": {
                                   "en": "Security code length.",
-                                  "pt": "Comprimento do código de segurança",
-                                  "es": "Longitud del código de seguridad"
+                                  "es": "Longitud del código de seguridad.",
+                                  "pt": "Comprimento do código de segurança."
                                 },
                                 "example": 3
                               },
@@ -357,25 +320,25 @@
                                 "type": "string",
                                 "example": "back",
                                 "description": {
-                                  "es": "Whether the security code is located in the back or in the front of the card.",
-                                  "pt": "Whether the security code is located in the back or in the front of the card.",
-                                  "en": "Whether the security code is located in the back or in the front of the card."
+                                  "en": "Whether the security code is located in the back or in the front of the card.",
+                                  "es": "Indica si el código de seguridad está ubicado en la parte trasera o en la parte delantera de la tarjeta.",
+                                  "pt": "Se o código de segurança está localizado na parte de trás ou na parte da frente do cartão."
                                 },
                                 "enum": [
                                   {
                                     "title": "back",
                                     "description": {
                                       "en": "The security code is located in the back of the card.",
-                                      "es": "The security code is located in the back of the card.",
-                                      "pt": "The security code is located in the back of the card."
+                                      "es": "El código de seguridad está ubicado en la parte trasera de la tarjeta.",
+                                      "pt": "O código de segurança está localizado na parte traseira do cartão."
                                     }
                                   },
                                   {
                                     "title": "front",
                                     "description": {
                                       "en": "The security code is located in the front of the card.",
-                                      "es": "The security code is located in the front of the card.",
-                                      "pt": "The security code is located in the front of the card."
+                                      "es": "El código de seguridad está ubicado en la parte delantera de la tarjeta.",
+                                      "pt": "O código de segurança está localizado na parte da frente do cartão."
                                     }
                                   }
                                 ]
@@ -385,48 +348,48 @@
                         },
                         "description": {
                           "en": "Payment method settings.",
-                          "pt": "Configuração de métodos de pagamento",
-                          "es": "Configuración de métodos de pago"
+                          "pt": "Configuração de métodos de pagamento.",
+                          "es": "Configuración de métodos de pago."
                         }
                       },
                       "additional_info_needed": {
                         "type": "array",
                         "description": {
                           "en": "List of additional information that must be supplied by the payer.",
-                          "pt": "Lista de informações que devem ser fornecidas pelo pagador",
-                          "es": "Lista de información adicional que debe ser provista por el pagador"
+                          "pt": "Lista de informações que devem ser fornecidas pelo pagador.",
+                          "es": "Lista de información adicional que debe ser provista por el pagador."
                         },
                         "enum": [
                           {
                             "title": "cardholder_identification_number",
                             "description": {
                               "en": "Identification number of the card owner.",
-                              "es": "Identification number of the card owner.",
-                              "pt": "Identification number of the card owner."
+                              "es": "Número de identificación del titular de la tarjeta.",
+                              "pt": "Número de identificação do titular do cartão."
                             }
                           },
                           {
                             "title": "cardholder_identification_type",
                             "description": {
                               "en": "Identification type of the card owner.",
-                              "es": "Identification type of the card owner.",
-                              "pt": "Identification type of the card owner."
+                              "es": "Tipo de identificación del titular de la tarjeta.",
+                              "pt": "Tipo de identificação do titular do cartão."
                             }
                           },
                           {
                             "title": "cardholder_name",
                             "description": {
                               "en": "Name as seen in the card of the card owner.",
-                              "es": "Name as seen in the card of the card owner.",
-                              "pt": "Name as seen in the card of the card owner."
+                              "es": "Nombre, tal como aparece en la tarjeta del titular.",
+                              "pt": "Nome conforme aparece no cartão do titular."
                             }
                           },
                           {
                             "title": "issuer_id",
                             "description": {
                               "en": "ID of the card issuing entity.",
-                              "es": "ID of the card issuing entity.",
-                              "pt": "ID of the card issuing entity."
+                              "es": "ID de la entidad emisora de la tarjeta.",
+                              "pt": "ID da entidade emissora do cartão."
                             }
                           }
                         ]
@@ -436,8 +399,8 @@
                         "example": 0.5,
                         "description": {
                           "en": "Minimum amount that can be processed with this payment method.",
-                          "pt": "Mínimo valor que pode ser processado com este meio de pagamento",
-                          "es": "Mínimo monto que se puede procesar con este medio de pago"
+                          "pt": "Mínimo valor que pode ser processado com este meio de pagamento.",
+                          "es": "Monto mínimo que se puede procesar con este medio de pago."
                         }
                       },
                       "max_allowed_amount": {
@@ -445,8 +408,8 @@
                         "example": 60000,
                         "description": {
                           "en": "Maximum amount that can be processed with this payment method.",
-                          "pt": "Máximo valor que pode ser processado com este meio de pagamento",
-                          "es": "Máximo monto que se puede procesar con este medio de pago"
+                          "pt": "Máximo valor que pode ser processado com este meio de pagamento.",
+                          "es": "Monto máximo que se puede procesar con este medio de pago."
                         }
                       },
                       "accreditation_time": {
@@ -454,8 +417,8 @@
                         "example": 2880,
                         "description": {
                           "en": "How many time in minutes could happen until processing of the payment.",
-                          "pt": "Tempo de processamento do pagamento",
-                          "es": "Tiempo de procesamiento del pago"
+                          "pt": "Tempo de processamento do pagamento.",
+                          "es": "Tiempo de procesamiento del pago."
                         }
                       },
                       "financial_institutions": {
@@ -464,49 +427,49 @@
                           "id": {
                             "type": "number",
                             "description": {
-                              "es": "External financial institution identifier (e.g.: company id for atm)",
-                              "pt": "External financial institution identifier (e.g.: company id for atm)",
-                              "en": "External financial institution identifier (e.g.: company id for atm)"
+                              "en": "External financial institution identifier (e.g.: company id for ATM)",
+                              "es": "Identificador de institución financiera externa (por ejemplo: ID de la empresa para ATM).",
+                              "pt": "Identificador de instituição financeira externa (por exemplo: ID da empresa para caixa eletrônico)."
                             }
                           },
                           "description": {
                             "type": "string",
                             "description": {
                               "en": "Descriptive finantial institution name.",
-                              "pt": "Nome descritivo para a instituição financeira",
-                              "es": "Nombre descriptivo de la institución financiera"
+                              "pt": "Nome descritivo para a instituição financeira.",
+                              "es": "Nombre descriptivo de la institución financiera."
                             }
                           }
                         },
                         "description": {
                           "en": "Finantial institution processing this payment method.",
-                          "pt": "Instituição financeira processando o meio de pagamento",
-                          "es": "Institución financiera procesando el medio de pago"
+                          "pt": "Instituição financeira processando o meio de pagamento.",
+                          "es": "Institución financiera que procesa el medio de pago."
                         }
                       },
                       "processing_modes": {
                         "type": "string",
                         "example": "aggregator",
                         "description": {
-                          "en": "The processing mode of the means of payment. There are 2 types.",
-                          "pt": "Informações do código de segurança do cartão. Existem 2 tipos.",
-                          "es": "Modo de proceso del medio de pago. Hay 2 tipos."
+                          "en": "The processing mode of the means of payment. There are 2 types:",
+                          "pt": "Modo de processamento do meio de pagamento. Existem 2 tipos:",
+                          "es": "Modo de procesamiento del medio de pago. Hay 2 tipos:"
                         },
                         "enum": [
                           {
                             "title": "Aggegator",
                             "description": {
-                              "en": "aggregator mode. Receive payments using all the cards and promotions that Mercado Pago offers, in addition to bank transfers and offline payment methods and where the money is deposited and managed in a Mercado Pago bank accounts.",
-                              "es": "aggregator mode. Receive payments using all the cards and promotions that Mercado Pago offers, in addition to bank transfers and offline payment methods and where the money is deposited and managed in a Mercado Pago bank accounts.",
-                              "pt": "aggregator mode. Receive payments using all the cards and promotions that Mercado Pago offers, in addition to bank transfers and offline payment methods and where the money is deposited and managed in a Mercado Pago bank accounts."
+                              "en": "Aggregator mode. Receive payments using all the cards and promotions that Mercado Pago offers, in addition to bank transfers and offline payment methods and where the money is deposited and managed in a Mercado Pago bank accounts.",
+                              "es": "Modo aggregator. Recibe pagos utilizando todas las tarjetas y promociones que ofrece Mercado Pago, además de transferencias bancarias y métodos de pago fuera de línea, donde el dinero se deposita y se gestiona en cuentas bancarias de Mercado Pago.",
+                              "pt": "Modo aggregator. Receba pagamentos usando todos os cartões e promoções que o Mercado Pago oferece, além de transferências bancárias e métodos de pagamento offline, onde o dinheiro é depositado e gerenciado em contas bancárias do Mercado Pago."
                             }
                           },
                           {
                             "title": "Gateway",
                             "description": {
-                              "en": "gateway mode. Receive payments directly into the store codes (merchant account) of the seller using all the seller's own promotions. With this mode they can also negotiate with purchasers, both in terms of tariffs and interest-free installments and promotions.",
-                              "es": "gateway mode. Receive payments directly into the store codes (merchant account) of the seller using all the seller's own promotions. With this mode they can also negotiate with purchasers, both in terms of tariffs and interest-free installments and promotions.",
-                              "pt": "gateway mode. Receive payments directly into the store codes (merchant account) of the seller using all the seller's own promotions. With this mode they can also negotiate with purchasers, both in terms of tariffs and interest-free installments and promotions."
+                              "en": "Gateway mode. Receive payments directly into the store codes (merchant account) of the seller using all the seller's own promotions. With this mode they can also negotiate with purchasers, both in terms of tariffs and interest-free installments and promotions.",
+                              "es": "Modo gateway. Recibe pagos directamente en los códigos de la tienda (cuenta de comerciante) del vendedor, utilizando todas las promociones propias del vendedor. Con este modo, también pueden negociar con los compradores, tanto en términos de tarifas como de cuotas sin intereses y promociones.",
+                              "pt": "Modo gateway. Receba pagamentos diretamente nos códigos da loja (conta de comerciante) do vendedor, utilizando todas as promoções próprias do vendedor. Com esse modo, eles também podem negociar com os compradores, tanto em termos de tarifas quanto de parcelas sem juros e promoções."
                             }
                           }
                         ]
