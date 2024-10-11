@@ -86,7 +86,7 @@ bullet_section_with_media:
  - benefit_message: Cumplimos con el estándar global de protección de información confidencial de tarjetas y contamos con Secure Fields para facilitar la obtención de la certificación para su tienda.
  - benefit_title: Garantiza la seguridad en transacciones de alto riesgo con el 3DS (3-Domain Secure)
  - benefit_message: Con el 3DS, realizamos una verificación de identidad discreta desde un modal sin salir de la tienda, ofreciendo beneficios como una mayor probabilidad de aprobación y menor riesgo de fraude.
- - benefit_title: Mayor aprobación de pagos con el Checkout Pro
+ - benefit_title: Mayor aprobación de pagos con Checkout Pro
  - benefit_message: Garantizamos una tasa de aprobación más alta y menor riesgo de fraude cuando el pago se realiza a través de la cuenta de Mercado Pago.
  - benefit_title: Orden de checkouts de Mercado Pago
  - benefit_message: Con la aplicación Ordena checkouts, puede elegir la posición en la que aparecerá cada uno de sus proveedores instalados para sus clientes. Al elegir mostrar nuestro checkout primero, aumenta el alcance de su tienda y la tasa de aprobación de sus ventas.
