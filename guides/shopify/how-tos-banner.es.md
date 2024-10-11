@@ -18,7 +18,7 @@
 
 ------------
 
-Una vez instalada la app, los vendedores pueden integrar fácilmente un _banner_ personalizado en su tienda, comunicando de manera efectiva a los compradores la opción de pagar en cuotas sin tarjeta, incentivando así las ventas.
+Una vez instalada la app, los vendedores pueden integrar fácilmente un _banner_ personalizado en su tienda para comunicar de manera efectiva a los compradores la opción de pagar en cuotas sin tarjeta, e incentivar así las ventas.
 
 > WARNING
 >
