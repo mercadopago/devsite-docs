@@ -28,7 +28,7 @@ To install Mercado Pago Banner, follow the steps below:
 
 1. Access the [Mercado Pago Banner app page](https://apps.shopify.com/mercado-pago-antifraud-plus) and click on **Install**. If you haven't done so already, log in with your Shopify account.
 2. Carefully read the information about the requested permissions and click on **Install** again.
-3. If you have already installed the the ----[mlb]----[Linha de Crédito](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Compra ahora, paga después](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ app, you do not need to enter your credentials again, but you can change them if necessary.
+3. If you have already installed the ----[mlb]----[Linha de Crédito](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Compra ahora, paga después](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Cuotas sin Tarjeta](/developers/en/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ app, you do not need to enter your credentials again, but you can change them if necessary.
 
 > WARNING
 >
