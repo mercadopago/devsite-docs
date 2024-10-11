@@ -42,7 +42,7 @@ Para instalar Mercado Pago Banner, sigue los pasos a continuación:
 >
 > Importante
 >
-> Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar sus credenciales**. Para hacerlo, siga las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en su cuenta de Shopify, haga clic en **Administrar cuenta** y llene los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
+> Recuerde que, al cambiar la contraseña de Shopify, **es necesario renovar tus credenciales**. Para hacerlo, sigue las instrucciones en la documentación de [Buenas prácticas de seguridad para tus credenciales](/developers/es/docs/shopify/best-practices/credentials-best-practices/secure-credentials). Luego, para actualizarlas en la cuenta de Shopify, haz clic en **Administrar cuenta** y llena los campos correspondientes con tu `access_token` y `public_key`, **teniendo cuidado de no intercambiar los campos al copiar y pegar las credenciales**.
 
 4. Haz clic en la opción **Guardar banner** y ve a la sección de "Ir a temas" de Shopify.
 
