@@ -8,7 +8,7 @@
 ----[mlm]----
 # Cómo promover "Compra ahora, paga después" en tu tienda
 
-**Mercado Pago Banner** es una app que permite promocionar durante el proceso de compra la opción de pago con [Compra ahora, paga después](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago, la modalidad de financiamiento que ofrece la opción de pagar en mensualidades sin necesidad de una tarjeta de crédito.
+**Mercado Pago Banner** es una app que permite promocionar  la opción de pago con [Compra ahora, paga después](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en mensualidades sin necesidad de una tarjeta de crédito.
 
 ------------
 ----[mla]----
