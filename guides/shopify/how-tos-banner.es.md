@@ -70,7 +70,7 @@ Después de habilitar la exhibición del banner, podrás personalizarlo, cambian
 
 ![banner shopify 6](/images/shopify/banner-6-es.png)
 
-5. En el menú del lado izquierdo, elige el color de fondo del banner que mejor combine con tu tienda, pudiendo ser **transparente** o **blanco**.
+5. En el menú del lado izquierdo, elige el color de fondo del banner que mejor combine con tu tienda, que puede ser **transparente** o **blanco**.
 6. Si lo deseas, podrás cambiar la frase que se muestra en el banner. Hay 4 opciones distintas para elegir la que prefieras.
 
 ![banner shopify 7](/images/shopify/banner-7-es.png)
