@@ -14,7 +14,7 @@
 ----[mla]----
 # Cómo promover "Cuotas sin Tarjeta" en tu tienda
 
-**Mercado Pago Banner** es una app que permite promocionar durante el proceso de compra la opción de pago con [Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago, la modalidad de financiamiento que ofrece la opción de pagar en cuotas sin necesidad de una tarjeta de crédito.
+**Mercado Pago Banner** es una app que permite promocionar la opción de pago con [Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en cuotas sin necesidad de una tarjeta de crédito.
 
 ------------
 
