@@ -52,4 +52,4 @@ After enabling the banner display, you can customize it by changing its color an
 4. Click on the banner so you can view the customization options. You can also move it and position it in the section of the page you prefer.
 5. In the left sidebar menu, choose the background color of the banner that best matches your store, which can be **transparent** or **white**.
 6. If you wish, you can change the display phrase of the banner. There are 4 options to choose the one you prefer.
-7. Finally, click **Save** so that the banner begins to show in your store with the selected customization.
+7. Finally, click **Save** so that the banner starts to show in your store with the selected customization.
