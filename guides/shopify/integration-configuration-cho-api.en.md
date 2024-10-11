@@ -107,7 +107,7 @@ Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 >
 > Important
 >
-> After completing the installation of Mercado Pago Tarjetas, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, installing the **Mercado Pago Antifraud Plus** app, which uses **3DS 2.0 (3-D Secure)** technology to **enhance the security of your store and increase payment approval rate**. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> After completing the installation of Mercado Pago Tarjetas, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which uses **3DS 2.0 (3-D Secure)** technology to **enhance the security of your store and increase payment approval rate**. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
 
 ## Configure interest-free installments
 
