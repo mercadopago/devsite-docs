@@ -36,7 +36,7 @@ To install Mercado Pago Banner, follow the steps below:
 > 
 > Remember that, when changing the Shopify password, **it is necessary to renew your credentials**. To do so, follow the instructions in the [Best practices for credentials](/developers/en/docs/shopify/best-practices/credentials-best-practices/secure-credentials) documentation. Then, to update them on your Shopify account, click on **Manage account** and fill in the corresponding fields with your `access_token` and `public_key` **being careful not to swap the fields when copying and pasting the credentials**.
 
-4. Click on the **Save banner** option of Mercado Pago Banner, go to the "Go to themes" section of Shopify.
+4. Click on the **Save banner** option of Mercado Pago Banner and go to the "Go to themes" section of Shopify.
 5. The banner will be automatically added to the product page, but **you can also add it to any section of the store that allows inserting a product information block**. To do this, drag the Mercado Pago Banner block up or down, moving it to the desired position.
 6. Finally, click **Save** to complete the banner setup.
 
