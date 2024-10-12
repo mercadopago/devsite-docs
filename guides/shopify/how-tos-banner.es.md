@@ -67,15 +67,15 @@ Después de habilitar la exhibición del _banner_, podrás personalizarlo, cambi
 
 3. Selecciona el submenú "Temas", localiza el tema actual que está activo en la tienda y haz clic en **Personalizar**.
 
-![banner shopify 6](/images/shopify/banner6-es.png)
+![banner shopify 6](/images/shopify/banner-6-es.png)
 
 4. En la pantalla de personalización de los temas, haz clic en "Página de inicio > Productos > Producto predeterminado".
 
-![banner shopify 7](/images/shopify/banner7-es.png)
+![banner shopify 7](/images/shopify/banner-7-es.png)
 
 5. Haz clic en el _banner_ en cuestión para que puedas visualizar las opciones de personalización. También puedes moverlo y posicionarlo en la sección de la página que prefieras.
 
-![banner shopify 8](/images/shopify/banner8-es.png)
+![banner shopify 8](/images/shopify/banner-8-es.png)
 
 6. En el menú del lado izquierdo, elige el color de fondo del _banner_ que mejor combine con tu tienda, que puede ser **transparente** o **blanco**.
 
@@ -87,4 +87,4 @@ Después de habilitar la exhibición del _banner_, podrás personalizarlo, cambi
 
 8. Por último, haz clic en **Guardar** para que el _banner_ comience a mostrarse en tu tienda con la personalización elegida.
 
-![banner shopify 11](/images/shopify/banner-1-es.png)
+![banner shopify 11](/images/shopify/banner-11-es.png)
