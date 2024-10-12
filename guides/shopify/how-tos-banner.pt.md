@@ -44,9 +44,10 @@ Pronto! O **Mercado Pago Banner** foi habilitado com sucesso!
 Após habilitar a exibição do _banner_ você poderá personalizá-lo, alterando sua cor e mensagem que será exibida. Para isso, siga os passos abaixo.
 
 1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
-2. No painel administrativo da loja, clique em **Aplicativos** e selecione o app "Mercado Pago Banner".
-3. Clique na opção **Salvar banner** do Mercado Pago Banner e vá para a seção de "Ir para temas" da Shopify.
-3. Clique no _banner_ em questão para que você possa visualizar as opções de personalização. Você também pode movê-lo e posicioná-lo na seção da página que preferir.
-4. No menu ao lado esquerdo, escolha a cor de fundo do _banner_ que combine melhor com sua loja, podendo ser ser **transparente** ou **branca**.
-5. Caso deseje, você poderá alterar a frase de exibição do _banner_. Existem 4 opções distintas para escolher a que preferir.
-6. Por fim, clique em **Salvar** para que o _banner_ comece a ser exibido em sua loja com a personalização escolhida.
+2. No painel administrativo da loja, clique em **Canais de vendas** e selecione a opção "Loja online".
+3. Selecione o submenu "Temas", localize o tema atual que está ativo na loja e clique em **Personalizar**.
+4. Na tela de personalização dos temas, clique em "Página inicial > Produtos > Produto padrão" 
+5. Clique no _banner_ habilitado pelo Mercado Pago Banner para que você possa visualizar as opções de personalização. Você também pode movê-lo e posicioná-lo na seção da página que preferir.
+6. No menu ao lado esquerdo, escolha a cor de fundo do _banner_ que combine melhor com sua loja, podendo ser ser **transparente** ou **branca**.
+7. Caso deseje, você poderá alterar a frase de exibição do _banner_. Existem 4 opções distintas para escolher a que preferir.
+8. Por fim, clique em **Salvar** para que o _banner_ comece a ser exibido em sua loja com a personalização escolhida.

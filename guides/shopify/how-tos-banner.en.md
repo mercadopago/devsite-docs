@@ -47,9 +47,10 @@ Done! The **Mercado Pago Banner** has been successfully enabled!
 After enabling the banner display, you can customize it by changing its color and the message that will be displayed. To do this, follow the steps below.
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
-2. In the store's admin panel, click on **Apps** and select the "Mercado Pago Banner" app.
-3. Click on the **Save banner** option in the Mercado Pago Banner and go to the "Go to themes" section of Shopify.
-4. Click on the banner so you can view the customization options. You can also move it and position it in the section of the page you prefer.
-5. In the left sidebar menu, choose the background color of the banner that best matches your store, which can be **transparent** or **white**.
-6. If you wish, you can change the display phrase of the banner. There are 4 options to choose the one you prefer.
-7. Finally, click **Save** so that the banner starts to show in your store with the selected customization.
+2. In the store's admin panel, click on **Sales channels** and select the "Online Store" option.
+3. Select the "Themes" submenu, locate the current theme that is active in the store, and click on **Customize**.
+4. On the theme customization screen, click on "Home > Products > Default product."
+5. Click on the banner so you can view the customization options. You can also move it and position it in the section of the page you prefer.
+6. In the left sidebar menu, choose the background color of the banner that best matches your store, which can be **transparent** or **white**.
+7. If you wish, you can change the display phrase of the banner. There are 4 options to choose the one you prefer.
+8. Finally, click **Save** so that the banner starts to show in your store with the selected customization.
