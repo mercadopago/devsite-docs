@@ -67,7 +67,7 @@ Después de habilitar la exhibición del _banner_, podrás personalizarlo, cambi
 
 3. Selecciona el submenú "Temas", localiza el tema actual que está activo en la tienda y haz clic en **Personalizar**.
 
-![banner shopify 6](/images/shopify/banner_6-es.png)
+![banner shopify 6](/images/shopify/banner_6-es.png) 
 
 4. En la pantalla de personalización de los temas, haz clic en "Página de inicio > Productos > Producto predeterminado".
 
