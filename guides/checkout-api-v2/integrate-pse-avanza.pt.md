@@ -537,15 +537,10 @@ payment_response = sdk.payment.create(body, request_options)
 payment = payment_response[: response]
 ```
 ```csharp
-using System;
-using MercadoPago.Client.Common;
-using MercadoPago.Client.Payment;
-using MercadoPago.Config;
-using MercadoPago.Resource.Payment;
-
 MercadoPagoConfig.AccessToken = "ACCESS_TOKEN";
 
-var client = new PaymentClient();
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add(Headers.IDEMPOTENCY_KEY, "YOUR_IDEMPOTENCY_KEY");
 
 var identification = new IdentificationRequest() {
   Type = request.IdentificationType,
@@ -569,6 +564,8 @@ var phone = new PaymentPayerPhoneRequest() {
 var payer = new PaymentPayerRequest() {
     Email = request.Email,
     EntityType = "individual",
+    FirstName = firstName,
+    LastName = lastName,
     Identification = identification,
     Address = address,
     Phone = phone
@@ -589,11 +586,12 @@ var paymentCreateRequest = new PaymentCreateRequest() {
     AdditionalInfo = additionalInfo,
     TransactionDetails = transactionDetails,
     CallbackUrl = "https://your-site.com",
+    NotificationUrl = "https://your-site.com",
     Payer = payer
 };
 
-var payment = await client.CreateAsync(paymentCreateRequest);
-
+var client = new PaymentClient();
+var payment = await client.CreateAsync(paymentCreateRequest, requestOptions);
 ```
 ```python
  import mercadopago
@@ -644,7 +642,7 @@ payment_response = sdk.payment().create(body, request_options)
 payment = payment_response["response"]
 ```
 ```curl
- curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
+curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
 -H 'Content-Type: application/json' \
@@ -652,24 +650,28 @@ payment = payment_response["response"]
     "transaction_amount": 5000,
     "description": "Product description",
     "payment_method_id": "pse",
+    "callback_url": "http://www.your-site.com",
+    "notification_url": "http://www.your-site.com",
     "payer": {
         "email": "test_user_19549678@testuser.com",
         "entity_type": "individual",
+        "first_name": "first name",
+        "last_name": "last_name",
         "identification": {
-            "type": "CC",
-            "number": "76262349"
+            "type": "type",
+            "number": "number"
         }, 
         "address": {
           "zip_code": "111",
-          "street_name": "siempre viva",
-          "street_number": "111",
-          "neighborhood": "sarasa",
-          "city": "salto",
-          "federal_unit": "1"
+          "street_name": "street name",
+          "street_number": "street number",
+          "neighborhood": "neighborhood",
+          "city": "city",
+          "federal_unit": "federal unit"
         },
         "phone": {
-          "area_code": "011",
-          "number": "2134242412"
+          "area_code": "area code",
+          "number": "number"
         }
     },
     "additional_info": {
@@ -677,10 +679,8 @@ payment = payment_response["response"]
     },
     "transaction_details": {
         "financial_institution": "1009"
-    },
-    "callback_url": "http://www.your-site.com"
+    }
 }'
-
 ```
 ]]]
 
