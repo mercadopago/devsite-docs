@@ -4,7 +4,6 @@
 To enable payment via 2 credit and debit cards in Checkout Transparente, follow these steps:
 
 ------------
-
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
 To enable payment via 2 credit and debit cards in Checkout API, follow these steps:
 
@@ -24,7 +23,6 @@ To enable payment via 2 credit and debit cards in Checkout API, follow these ste
 
 After filling in these fields, payment via card will have been enabled in Checkout Transparent. Click **Save Configuration** to save the changes made or, if you prefer, proceed to the next step and configure installment and interest for cards.
 
-
 ## Common payment method definitions
 
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
@@ -35,7 +33,5 @@ The installment and interest setting is made directly in your Mercado Pago accou
 
 1. Click on the **Set up installments and interest** button and log in to your Mercado Pago seller account.
 2. Select the **QR Code and Online Payments** option, enable the installment and select the number of installments you want to offer at checkout. The options range from 1 to 12 times.
-
-![Installment and interest](/images/adobe-commerce/parcelamento.gif)
 
 Done! After completing these steps, installment at checkout will be configured and ready to process sales.
