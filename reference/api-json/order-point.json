@@ -1,0 +1,1501 @@
+{
+  "url": "https://api.mercadopago.com",
+  "paths": {
+    "/v1/orders": {
+      "post": {
+        "tags": [
+          "mp-point"
+        ],
+        "description": {
+          "en": "This endpoint allows to create an order for Mercado Pago Point for payment transactions. In case of success, the request will return a response with status 201",
+          "pt": "Este endpoint permite criar uma order para Mercado Pago Point para transações de pagamento. Em caso de sucesso, a requisição retornará uma resposta com o status 201",
+          "es": "Este endpoint permite crear una order para Mercado Pago Point para transacciones de pago. En caso de éxito, la solicitud devolverá una respuesta con el estado 201"
+        },
+        "parameters": [
+          {
+            "in":"header",
+            "name":"X-Idempotency-Key",
+            "required":true,
+            "schema":{
+              "type":"string",
+              "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
+            },
+            "description":{
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorios."
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "type":{
+                    "type":"string",
+                    "required":true,
+                    "description":{
+                      "en":"Order type, associated with the Mercado Pago solution for which it is created. For Mercado Pago Point payments, the only possible value is \"point\".",
+                      "pt":"Tipo de order, associada à solução do Mercado Pago para a qual foi criada. Para pagamentos com Mercado Pago Point, o único valor possível é \"point\".",
+                      "es":"Tipo de order, asociado a la solución de Mercado Pago para la que se crea. Para pagos con Mercado Pago Point, el único valor posible es \"point\"."
+                    },
+                    "enum": [
+                      {
+                        "title": "point",
+                        "description": {
+                          "en": "Value associated with the creation of orders for Mercado Pago Point payments.",
+                          "es": "Valor asociado a la creación de orders para pagos con Mercado Pago Point.",
+                          "pt": "Valor associado à criação de orders para pagamentos com Mercado Pago Point."
+                        }
+                      }
+                    ],
+                    "example": "point" 
+                  },
+                  "external_reference":{
+                    "type":"string",
+                    "required":true,
+                    "example":"ext_ref_1234",
+                    "description":{
+                      "en":"It is the external reference of the order, assigned when creating it. he maximum allowed limit is 64 characters, and the allowed characters are: uppercase and lowercase letters, numbers, and the symbols hyphen (-) and underscore (_).",
+                      "pt":"É a referência externa da order, atribuída no momento da criação. O limite máximo permitido é de 64 caracteres e os permitidos são: letras maiúsculas e minúsculas, números e os símbolos de hífen (-) e sublinhado (_).",
+                      "es":"Es una referencia externa de la order, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres y los permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
+                    }
+                  },
+                  "transactions":{
+                    "type":"object",
+                    "required": true,
+                    "description":{
+                      "en":"Contains information about the transaction associated with the order. When the \"type\" is \"point\", it is only possible to include 1 transaction per order.",
+                      "pt":"Contém informações sobre a transação associada à order. Quando o \"type\" é \"point\", Só é possível incluir 1 transação por order.",
+                      "es":"Contiene información sobre la transacción asociada a la order. Cuando el \"type\" es \"point\", solo es posible incluir 1 transacción por order." 
+                    },
+                    "properties": {
+                      "payments": {
+                        "type": "array",
+                        "required": true,
+                        "description": {
+                          "en": "Contains information about the payment order.",
+                          "pt": "Contém informações sobre a order do pagamento.",
+                          "es": "Contiene información sobre la order de pago."
+                        },
+                        "properties": {
+                          "amount": {
+                            "type": "string",
+                            "required": true,
+                            "description": {
+                              "en": "Payment total amount. ",
+                              "pt": "Valor total da order de pagamento.",
+                              "es": "Monto total de la order de pago."
+                            },
+                            "example": "24.90"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "type_config":{
+                    "$ref": "#/components/schemas/type_config"
+                  },
+                  "description":{
+                    "type":"string",
+                    "example":"Point Mini",
+                    "description":{
+                      "en":"Description of the purchased product or service, the reason for the payment order. The maximum limit is 150 characters.",
+                      "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento. O limite máximo é de 150 caracteres.",
+                      "es":"Descripción del producto o servicio comprado, el motivo de la order de pago. El límite máximo es de 150 caracteres."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": {
+              "es": "Éxito",
+              "pt": "Sucesso",
+              "en": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id":{
+                      "type":"string",
+                      "example":"123",
+                      "description":{
+                        "en":"Identifier of the order created in the request, automatically generated by Mercado Pago.",
+                        "pt":"Identificador da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                        "es":"Identificador de la order creada en la solicitud, generado automáticamente por Mercado Pago."
+                      }
+                    },
+                    "type":{
+                      "type":"string",
+                      "description":{
+                        "en":"Order type.",
+                        "pt":"Tipo de order.",
+                        "es":"Tipo de order."
+                      },
+                      "example": "point",
+                      "enum": [
+                        {
+                          "title": "point",
+                          "description": {
+                            "en": "Order created for Mercado Pago Point payments.",
+                            "es": "Order creada para pagos con Mercado Pago Point.",
+                            "pt": "Order criada para pagamentos com o Mercado Pago Point."
+                          }
+                        }
+                      ]
+                    },
+                    "external_reference":{
+                      "type":"string",
+                      "example":"ext_ref_1234",
+                      "description":{
+                        "en":"It is the external reference of the order, assigned when creating it. he maximum allowed limit is 64 characters, and the allowed characters are: uppercase and lowercase letters, numbers, and the symbols hyphen (-) and underscore (_).",
+                        "pt":"É a referência externa da order, atribuída no momento da criação. O limite máximo permitido é de 64 caracteres e os permitidos são: letras maiúsculas e minúsculas, números e os símbolos de hífen (-) e sublinhado (_).",
+                        "es":"Es una referencia externa de la order, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres y los permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
+                      }
+                    },
+                    "description":{
+                      "type":"string",
+                      "example":"Point Mini",
+                      "description":{
+                        "en":"Description of the product or service purchased, the reason for the payment order.",
+                        "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento.",
+                        "es":"Descripción del producto o servicio comprado, el motivo de la order de pago."
+                      }
+                    },
+                    "site_id":{
+                      "$ref": "#/components/schemas/site_id"
+                    },
+                    "integration_data":{
+                      "type":"object",
+                      "description":{
+                        "en":"Contains information about the Mercado Pago application that created the order.",
+                        "pt":"Contém informações sobre a aplicação do Mercado Pago que criou a order.",
+                        "es":"Contiene información sobre la aplicación de Mercado Pago que creó la order."
+                      },
+                      "properties":{
+                        "application_id":{
+                          "type":"number",
+                          "example":1234567890,
+                          "description":{
+                            "en":"Identifier of the Mercado Pago application that created the order.",
+                            "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                            "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                          }
+                        }
+                      }
+                    },
+                    "collector_id":{
+                      "type":"number",
+                      "example":448876418,
+                      "description":{
+                        "en":"It is the identification of the user who receives the money.",
+                        "pt":"É identificador do usuário que recebe o dinheiro.",
+                        "es":"Es el identificador del usuario que recibe el dinero."
+                      }
+                    },
+                    "status":{
+                      "$ref": "#/components/schemas/status"
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-09-10T14:26:42.109320977Z",
+                      "description":{
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-09-10T14:26:42.109320977Z",
+                      "description":{
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "type_config":{
+                      "$ref": "#/components/schemas/type_config"
+                    },
+                    "transactions":{
+                      "type":"object",
+                      "description":{
+                        "en":"Contains information about the transaction associated with the order.",
+                        "pt":"Contém informações sobre a transação associada a uma order.",
+                        "es":"Contiene información sobre la transacción asociada a una order."
+                      },
+                      "properties":{
+                        "payments":{
+                          "type":"array",
+                          "required": true,
+                          "description":{
+                            "en":"Contains information about the payment associated with the order.",
+                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "es":"Contiene información sobre el pago asociado a una order."
+                          },
+                          "items": {
+                            "type": "object",
+                            "properties": { 
+                              "id":{
+                                "type":"string",
+                                "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
+                                "description":{
+                                  "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                  "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                  "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                                }
+                              },
+                              "amount": {
+                                "type": "string",
+                                "example": "24.90",
+                                "description": {
+                                  "pt": "Valor do pagamento.",
+                                  "en": "Payment amount.",
+                                  "es": "Monto del pago."
+                                }
+                              },
+                              "status":{
+                                "$ref": "#/components/schemas/status"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "empty_required_header",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la requisición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "required_properties",
+                          "description": {
+                            "en": "There are some required properties missing. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Ciertas propiedades requeridas están ausentes. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Certas propriedades obrigatórias estão ausentes. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "unsupported_properties",
+                          "description": {
+                            "en": "An unsupported property was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió una propiedad que no es soportada. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Foi enviada uma propriedade que não é suportada. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "minimum_properties",
+                          "description": {
+                            "en": "The minimum number of properties required to execute the request was not sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "No se envió el número mínimo de propiedades necesarias para ejecutar la solicitud. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "O número mínimo de propriedades necessárias para executar a solicitação não foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "property_type",
+                          "description": {
+                            "en": "The wrong property type was submitted. For example, an 'integer' value for a 'string' property. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un tipo de propiedad incorrecto. Por ejemplo, un valor 'integer' para una propiedad 'string'. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um tipo de propriedade incorreto foi enviado. Por exemplo, um valor 'integer' para uma propriedade 'string'. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "minimum_items",
+                          "description": {
+                            "en": "The minimum number of items for some property was not sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "No se envió el número mínimo de ítems para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "O número mínimo de itens para alguma propriedade não foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "maximum_items",
+                          "description": {
+                            "en": "A greater number of items were sent than allowed for some property. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió una cantidad mayor de ítems que la permitida para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Foi enviado um número de itens maior do que o permitido para alguma propriedade. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "property_value",
+                          "description": {
+                            "en": "An incorrect value for some property was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un valor inválido para alguna propiedad. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um valor inválido foi enviado para alguma propriedade. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        },
+                        {
+                          "title": "json_syntax_error",
+                          "description": {
+                            "en": "An incorrect JSON was sent. Check the message returned in the error details to find out what the problem was and try again.",
+                            "es": "Se envió un JSON inválido. Chequea el mensaje devuelto en los detalles del error para saber cuál fue el problema y vuelve a intentarlo.",
+                            "pt": "Um JSON inválido foi enviado. Verifique a mensagem retornada nos detahles do erro para identificar o problema e tente novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error. Access Token not authorized.",
+              "pt": "Erro. Access Token não autorizado.",
+              "es": "Error. Access Token no autorizado."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error. Forbidden, checking device owner.",
+              "pt": "Erro. Verifique o proprietário do dispositivo.",
+              "es": "Error. Verifica el propietario del dispositivo."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "forbidden_checking_device_owner",
+                          "description": {
+                            "en": "The Point device does not belong to the user who submitted the request. Check if the value sent for \"device_id\" is correct or if the device is linked to your account.",
+                            "es": "El dispositivo Point no pertence al usuario que envió la solicitud. Verifica si el valor enviado para \"device_id\" es correcto o si el dispositivo está vinculado a tu cuenta.",
+                            "pt": "O dispositivo Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"device_id\" está correto ou se o dispositivo está vinculado à sua conta."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_key_already_used",
+                          "description": {
+                            "en": "The value sent as the idempotency header has already been used with a different request within the last 24 hours. Please try the request again sending a new value.",
+                            "es": "El valor enviado como header de idempotencia ya fue utilizado con una solicitud distinta en un tiempo menor a 24 horas. Por favor, vuelve a intentar realizar la requisición enviando un nuevo valor.",
+                            "pt": "O valor enviado como header de idempotência já foi utilizado em uma solicitação diferente em um período menor que 24 horas. Por favor, tente a solicitação novamente enviando um novo valor."
+                          }
+                        },
+                        {
+                          "title": "already_queued_order_for_device",
+                          "description": {
+                            "en": "The device already has an order waiting. It is necessary to finalize or cancel it to send new orders.",
+                            "es": "El dispositivo ya tiene una order en espera. Es necesario finalizarla o cancelarla para enviar nuevas orders.",
+                            "pt": "O dispositivo já tem uma order em espera. É necessário finalizar ou cancelar para enviar novas orders."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Generic error. Please try submitting the request again.",
+                            "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Create order",
+          "pt": "Criar order",
+          "es": "Crear order"
+        }
+      }
+    },
+    "/v1/orders/{id}": {
+      "get": {
+        "tags": [
+          "mp-point"
+        ],
+        "description": {
+          "en": "Consult all order information using the ID obtained in the response to its creation. In case of success, the request will return a response with status 200",
+          "pt": "Consulta todas as informações de uma order utilizando o ID obtido na resposta à sua criação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es": "Consulta toda la información sobre una order utilizando el ID obtenido en la respuesta a su creación. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": {
+              "en": "Order ID, returned in the response to the request made for its creation.",
+              "pt": "ID da order, retornado na resposta à requisição para sua criação.",
+              "es": "ID de la orden, devuelto en la respuesta a la requisición para su creación."
+            },
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "01J49MMW3SSBK5PSV3DFR32959"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es": "Éxito",
+              "pt": "Sucesso",
+              "en": "Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id":{
+                      "type":"string",
+                      "example":"123",
+                      "description":{
+                        "en":"Identifier of the order created in the request, automatically generated by Mercado Pago.",
+                        "pt":"Identificador da order criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                        "es":"Identificador de la order creada en la solicitud, generado automáticamente por Mercado Pago."
+                      }
+                    },
+                    "type":{
+                      "type":"string",
+                      "description":{
+                        "en":"Order type.",
+                        "pt":"Tipo de order.",
+                        "es":"Tipo de order."
+                      },
+                      "example": "point",
+                      "enum": [
+                        {
+                          "title": "point",
+                          "description": {
+                            "en": "Order created for Mercado Pago Point payments.",
+                            "es": "Order creada para pagos con Mercado Pago Point.",
+                            "pt": "Order criada para pagamentos com o Mercado Pago Point."
+                          }
+                        }
+                      ]
+                    },
+                    "external_reference":{
+                      "type":"string",
+                      "example":"ext_ref_1234",
+                      "description":{
+                        "en":"It is the external reference of the order, assigned when creating it. he maximum allowed limit is 64 characters, and the allowed characters are: uppercase and lowercase letters, numbers, and the symbols hyphen (-) and underscore (_).",
+                        "pt":"É a referência externa da order, atribuída no momento da criação. O limite máximo permitido é de 64 caracteres e os permitidos são: letras maiúsculas e minúsculas, números e os símbolos de hífen (-) e sublinhado (_).",
+                        "es":"Es una referencia externa de la order, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres y los permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
+                      }
+                    },
+                    "description":{
+                      "type":"string",
+                      "example":"Point Mini",
+                      "description":{
+                        "en":"Description of the product or service purchased, the reason for the payment order.",
+                        "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento.",
+                        "es":"Descripción del producto o servicio comprado, el motivo de la order de pago."
+                      }
+                    },
+                    "site_id":{
+                      "$ref": "#/components/schemas/site_id"
+                    },
+                    "integration_data":{
+                      "type":"object",
+                      "description":{
+                        "en":"Contains information about the Mercado Pago application that created the order.",
+                        "pt":"Contém informações sobre a aplicação do Mercado Pago que criou a order.",
+                        "es":"Contiene información sobre la aplicación de Mercado Pago que creó la order."
+                      },
+                      "properties":{
+                        "application_id":{
+                          "type":"number",
+                          "example":1234567890,
+                          "description":{
+                            "en":"Identifier of the Mercado Pago application that created the order.",
+                            "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                            "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                          }
+                        }
+                      }
+                    },
+                    "collector_id":{
+                      "type":"number",
+                      "example":448876418,
+                      "description":{
+                        "en":"It is the identification of the user who receives the money.",
+                        "pt":"É identificador do usuário que recebe o dinheiro.",
+                        "es":"Es el identificador del usuario que recibe el dinero."
+                      }
+                    },
+                    "status":{
+                      "$ref": "#/components/schemas/status"
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-09-10T14:26:42.109320977Z",
+                      "description":{
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-09-10T14:26:42.109320977Z",
+                      "description":{
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\".",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "type_config":{
+                      "$ref": "#/components/schemas/type_config"
+                    },
+                    "transactions":{
+                      "type":"object",
+                      "description":{
+                        "en":"Contains information about the transaction associated with the order.",
+                        "pt":"Contém informações sobre a transação associada a uma order.",
+                        "es":"Contiene información sobre la transacción asociada a una order."
+                      },
+                      "properties":{
+                        "payments":{
+                          "type":"array",
+                          "required": true,
+                          "description":{
+                            "en":"Contains information about the payment associated with the order.",
+                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "es":"Contiene información sobre el pago asociado a una order."
+                          },
+                          "items": {
+                            "type": "object",
+                            "properties": { 
+                              "id":{
+                                "type":"string",
+                                "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
+                                "description":{
+                                  "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                  "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                  "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                                }
+                              },
+                              "amount": {
+                                "type": "string",
+                                "example": "24.90",
+                                "description": {
+                                  "pt": "Valor do pagamento.",
+                                  "en": "Payment amount.",
+                                  "es": "Monto del pago."
+                                }
+                              },
+                              "status":{
+                                "$ref": "#/components/schemas/status"
+                              },
+                              "status_detail": {
+                                "type": "string",
+                                "example": "cancelled_by_api",
+                                "description": {
+                                  "en":"Details about payment status. It is returned exclusively when the order is cancelled through the API, with the value \"cancelled_by_api\".",
+                                  "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando a order é cancelada através da API, com o valor \"cancelled_by_api\".",
+                                  "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la order se cancela por medio de la API, con el valor \"cancelled_by_api\"."
+                                }
+                              },
+                              "reference_id": {
+                                "type": "string",
+                                "example": "12345678",
+                                "description": {
+                                  "pt": "Identificador do pagamento associado à order.",
+                                  "en": "ID of the payment associated with the order.",
+                                  "es": "Identificador del pago asociado a la order."
+                                }
+                              },
+                              "payment_method": {
+                                "$ref": "#/components/schemas/payment_method"    
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error. Invalid ID supplied.",
+              "pt": "Erro. ID inválido.",
+              "es": "Error. ID inválido."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "invalid_path_param",
+                          "description": {
+                            "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
+                            "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
+                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error. Access Token not authorized.",
+              "pt": "Erro. Access Token não autorizado.",
+              "es": "Error. Access Token no autorizado."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la peticion enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error. Order not found.",
+              "pt": "Erro. Order não encontrada.",
+              "es": "Error. Order no encontrada."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "order_not_found",
+                          "description": {
+                            "en": "Order not found. Please check if you provided the correct order ID.",
+                            "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Internal server error. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro interno. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Get order by ID",
+          "pt": "Obter order por ID",
+          "es": "Obtener order por ID"
+        }
+      }
+    },
+    "/v1/orders/{order_id}/cancel":{
+      "post":{
+        "tags":[
+          "mp-point"
+        ],
+        "description":{
+          "en":"Cancel an order created for Mercado Pago Point and its transactions using the reference ID obtained in the response to its creation. Only an order in status \"created\" can be canceled. In case of success, the request will return a response with status 200",
+          "pt":"Cancela uma order criada para Mercado Pago Point e suas transações utilizando o ID de referência obtido na resposta à sua criação. Apenas uma order com status \"created\" pode ser cancelada. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Cancela una order creada para Mercado Pago Point y sus transacciones utilizando el ID de referencia obtenido en la respuesta a su creación. Sólo puede ser cancelada una order en status \"created\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+        },
+        "parameters":[
+          {
+            "name":"order_id",
+            "in":"path",
+            "description":{
+              "en": "ID of the order that is being cancelled. This value is returned in the response to the Create order request.",
+              "pt": "ID da order a ser cancelada. Esse valor é retornado na resposta à requisição Criar order.",
+              "es": "ID de la orden a cancelar. Este valor es devuelto en la respuesta a la requisición Crear order."
+            },
+            "required":true,
+            "schema":{
+              "type":"string",
+              "example": "01J49MMW3SSBK5PSV3DFR32959"
+            }
+          },
+          {
+            "in":"header",
+            "name":"X-Idempotency-Key",
+            "required":true,
+            "schema":{
+              "type":"string",
+              "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
+            },
+            "description":{
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias."
+            }
+          }
+        ],
+        "responses":{
+          "200": {
+            "description": {
+              "en": "Success",
+              "es": "Éxito",
+              "pt": "Sucesso" 
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id":{
+                      "type":"string",
+                      "example":"123",
+                      "description":{
+                        "en":"Identifier of the order cancelled in the request.",
+                        "pt":"Identificador da order cancelada na requisição.",
+                        "es":"Identificador de la order cancelada en la solicitud."
+                      }
+                    },
+                    "type":{
+                      "type":"string",
+                      "description":{
+                        "en":"Order type.",
+                        "pt":"Tipo de order.",
+                        "es":"Tipo de order."
+                      },
+                      "example": "point",
+                      "enum": [
+                        {
+                          "title": "point",
+                          "description": {
+                            "en": "Order created for Mercado Pago Point payments.",
+                            "es": "Order creada para pagos con Mercado Pago Point.",
+                            "pt": "Order criada para pagamentos com o Mercado Pago Point."
+                          }
+                        }
+                      ]
+                    },
+                    "external_reference":{
+                      "type":"string",
+                      "example":"ext_ref_1234",
+                      "description":{
+                        "en":"It is the external reference of the order, assigned when creating it. he maximum allowed limit is 64 characters, and the allowed characters are: uppercase and lowercase letters, numbers, and the symbols hyphen (-) and underscore (_).",
+                        "pt":"É a referência externa da order, atribuída no momento da criação. O limite máximo permitido é de 64 caracteres e os permitidos são: letras maiúsculas e minúsculas, números e os símbolos de hífen (-) e sublinhado (_).",
+                        "es":"Es una referencia externa de la order, asignada al momento de su creación. El límite máximo permitido es de 64 caracteres y los permitidos son: letras mayúsculas y minúsculas, números y los símbolos de guion (-) y guion bajo (_)."
+                      }
+                    },
+                    "description":{
+                      "type":"string",
+                      "example":"Point Smart Mini",
+                      "description":{
+                        "en":"Description of the purchased product, the reason for the payment order.",
+                        "pt":"Descrição do produto comprado, a razão da order de pagamento.",
+                        "es":"Descripción del producto comprado, el motivo de la order de pago."
+                      }
+                    },
+                    "site_id":{
+                      "$ref": "#/components/schemas/site_id"
+                    },
+                    "integration_data":{
+                      "type":"object",
+                      "description":{
+                        "en":"Contains information about the Mercado Pago application that created the order.",
+                        "pt":"Contém informações sobre a aplicação do Mercado Pago que criou a order.",
+                        "es":"Contiene información sobre la aplicación de Mercado Pago que creó la order."
+                      },
+                      "properties":{
+                        "application_id":{
+                          "type":"number",
+                          "example":1234567890,
+                          "description":{
+                            "en":"Identifier of the Mercado Pago application that created the order.",
+                            "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                            "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                          }
+                        }
+                      }
+                    },
+                    "collector_id":{
+                      "type":"number",
+                      "example":448876418,
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "status":{
+                      "type":"string",
+                      "example":"cancelled",
+                      "description":{
+                        "en":"Current status of the order or the transaction.",
+                        "pt":"Status atual da order ou da transação.",
+                        "es":"Estado actual de la order o de la transacción."
+                      },
+                      "enum": [
+                        {
+                          "title": "created",
+                          "description": {
+                            "en": "The order has been succesfully created.",
+                            "es": "La order ha sido creada de manera exitosa.",
+                            "pt": "A order foi criada com sucesso."
+                          }
+                        },
+                        {
+                          "title": "on_terminal",
+                          "description": {
+                            "en": "The order was obtained by the device and is ready for process.",
+                            "es": "La order fue obtenida por el dispositivo y está lista para ser procesada.",
+                            "pt": "A order foi obtida no dispositivo e está pronta para ser processada."
+                          }
+                        },
+                        {
+                          "title": "cancelled",
+                          "description": {
+                            "en": "The order has been cancelled, either through the API or the device.",
+                            "es": "La order fue cancelada desde el API o desde el dispositivo.",
+                            "pt": "A order foi cancelada na API ou no dispositivo."
+                          }
+                        },
+                        {
+                          "title": "processed",
+                          "description": {
+                            "en": "All transactions have been succesfully processed.",
+                            "es": "La transacción asociada a la order fue procesada exitosamente.",
+                            "pt": "A transação associada à order foi processada com sucesso."
+                          }
+                        },
+                        {
+                          "title": "failed",
+                          "description": {
+                            "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                            "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                            "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                          }
+                        }
+                      ]
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-09-10T14:26:42.109320977Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-09-10T14:26:42.109320977Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "type_config":{
+                      "$ref": "#/components/schemas/type_config"
+                    },
+                    "transactions":{
+                      "type":"object",
+                      "description":{
+                        "en":"Contains information about the transaction associated with the order.",
+                        "pt":"Contém informações sobre a transação associada a uma order.",
+                        "es":"Contiene información sobre la transacción asociada a una order."
+                      },
+                      "properties":{
+                        "payments":{
+                          "type":"array",
+                          "required": true,
+                          "description":{
+                            "en":"Contains information about the payment associated with the order.",
+                            "pt":"Contém informações sobre o pagamento associado à order.",
+                            "es":"Contiene información sobre el pago asociado a una order."
+                          },
+                          "items": {
+                            "type": "object",
+                            "properties": { 
+                              "id":{
+                                "type":"string",
+                                "example":"pay_01J67CQQH5904WDBVZEM4JMEP3",
+                                "description":{
+                                  "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                  "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                  "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                                }
+                              },
+                              "amount": {
+                                "type": "string",
+                                "example": "24.90",
+                                "description": {
+                                  "pt": "Valor do pagamento.",
+                                  "en": "Payment amount.",
+                                  "es": "Monto del pago."
+                                }
+                              },
+                              "status":{
+                                "$ref": "#/components/schemas/status"
+                              },
+                              "status_detail": {
+                                "type": "string",
+                                "example": "cancelled_by_api",
+                                "description": {
+                                  "en":"Details about payment status. It is returned exclusively when the cancellation of the order is made through this endpoint, with the value \"cancelled_by_api\".",
+                                  "pt":"Detalhes sobre o status do pagamento. É devolvido exclusivamente quando o cancelamento da order é feito através deste endpoint, com o valor \"cancelled_by_api\".",
+                                  "es":"Detalles sobre el estado del pago. Es devuelto exclusivamente cuando la cancelación de la order se realiza por medio de este endpoint, con el valor \"cancelled_by_api\"."
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error. Invalid parameters sent.",
+              "pt": "Erro. Parâmetros inválidos enviados.",
+              "es": "Error. Parámetros inválidos enviados."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "empty_required_header",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la requisición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "invalid_path_param",
+                          "description": {
+                            "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
+                            "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
+                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error. Access Token not authorized.",
+              "pt": "Erro. Access Token não autorizado.",
+              "es": "Error. Access Token no autorizado."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unauthorized",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la peticion enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error. Order not found.",
+              "pt": "Erro. Order não encontrada.",
+              "es": "Error. Order no encontrada."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "order_not_found",
+                          "description": {
+                            "en": "Order not found. Please check if you provided the correct order ID.",
+                            "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_key_already_used",
+                          "description": {
+                            "en": "The value sent as the idempotency header has already been used. Please try the request again sending a new value.",
+                            "es": "El valor enviado como header de idempotencia ya fue utilizado. Por favor, vuelve a intentar realizar la requisición enviando un nuevo valor.",
+                            "pt": "O valor enviado como header de idempotência já foi utilizado. Por favor, tente a solicitação novamente enviando um novo valor."
+                          }
+                        },
+                        {
+                          "title": "cannot_cancel_order",
+                          "description": {
+                            "en": "Hay un conflicto al intentar cancelar la order por su estado actual. Recuerda que las orders solo pueden ser canceladas vía API cuando \"status=created\". Si estás intentando cancelar una order con estado \"status=on_terminal\", deberás hacerlo desde el dispositivo.",
+                            "es": "Há um conflito ao tentar cancelar o pedido devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar um pedido com o estado \"status=on_terminal\", deverá fazê-lo a partir do dispositivo.",
+                            "pt": "Há um conflito ao tentar cancelar o pedido devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar um pedido com o estado \"status=on_terminal\", deverá fazê-lo a partir do dispositivo."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Internal server error. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro interno. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Cancel order by ID",
+          "pt": "Cancelar order por ID",
+          "es": "Cancelar order por ID"
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "type_config":{
+        "type":"object",
+        "description":{
+          "en":"Order type configuration.",
+          "pt":"Configuração do tipo de order.",
+          "es":"Configuración del tipo de order."
+        },
+        "required": true,
+        "properties":{
+          "device_id":{
+            "type":"string",
+            "description": {
+              "en": "Identifier of the device that will obtain the order. You must send it according to the following format: \"type of device + “__” + device serial\", as in the following example: \"PAX_A910__SMARTPOS123456789\". The serial number can be found on the rear label of the device.",
+              "es": "Identificador del dispositivo Point que obtendrá la order. Debes enviarlo siguiendo el formato \"tipo de dispositivo + “__” +  serial del dispositivo\", como en el siguiente ejemplo: \"PAX_A910__SMARTPOS123456789\". El serial del dispositivo puede ser hallado en la etiqueta trasera del mismo.",
+              "pt": "Identificador do dispositivo que obterá a order. Deve ser enviado seguindo o formato \"tipo de dispositivo + “__” + serial do dispositivo\", como no exemplo a seguir: \"PAX_A910__SMARTPOS123456789\". O serial do dispositivo pode ser encontrado na etiqueta traseira."
+            },
+            "example":"PAX_A910__SMARTPOS1423",
+            "required": true
+          },
+          "print_on_terminal":{
+            "type":"string",
+            "description":{
+              "en":"Indicates whether the device should print the receipt of the transaction. Its default value will be \"seller_ticket\".",
+              "pt":"Indica se o dispositivo deve imprimir o comprovante da transação. Seu valor padrão será \"seller_ticket\".",
+              "es":"Indica si el dispositivo deberá imprimir el ticket comprobante de la transacción. Su valor por defecto será \"seller_ticket\"."
+            },
+            "enum": [
+              {
+                "title": "seller_ticket",
+                "description": {
+                  "en": "Value that determines the printing of the ticket for the seller.",
+                  "es": "Valor que define la impresión del ticket para el vendedor.",
+                  "pt": "Valor que define a impressão do comprovante para o vendedor."
+                }
+              },
+              {
+                "title": "no_ticket",
+                "description": {
+                  "en": "Value that determines that the ticket must not be printed.",
+                  "es": "Valor que define que el ticket no debe ser impreso.",
+                  "pt": "Valor que define que o comprovante não deve ser impresso."
+                }
+              }
+            ]
+          },
+          "ticket_number":{
+            "type":"string",
+            "example": "S0392JED",
+            "description": {
+              "en": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket, if its printing whas selected. This parameter only corresponds to transactions in Argentina (MLA).",
+              "pt": "Um valor alfanumérico para identificar o número da fatura ou do ticket. Ele será impresso no comprovante do dispositivo, no caso a impressão tenha sido selecionada. Este parâmetro corresponde apenas a transações na Argentina (MLA).",
+              "es": "Valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo, en caso de seleccionar su impresión. Este parâmetro corresponde apenas a transações na Argentina (MLA)."
+            }
+          },
+          "flow_process":{
+            "type":"string",
+            "example":"credit_card",
+            "description":{
+              "en":"Indicates the payment method that the device will accept. By default, it will accept all payment methods and will allow the customer to select the payment method they want. If not, the possible values ​​are the following:",
+              "pt":"Indica o meio de pagamento que o dispositivo aceitará. Por padrão, aceitará todos os meios de pagamento e permitirá que o cliente selecione o meio de pagamento que deseja. Caso contrário, os valores possíveis são os seguintes:",
+              "es":"Indica el medio de pago que aceptará el dispositivo. Por defecto, aceptará todos los medios de pago y permitirá al cliente seleccionar el medio de pago que desee. Si no, los valores posibles son los siguientes:" 
+            },
+            "enum": [
+              {
+                "title": "debit_card",
+                "description": {
+                  "en": "The device will only accept payments with debit card.",
+                  "es": "El dispositivo aceptará pagos exclusivamente con tarjeta de débito.",
+                  "pt": "O dispositivo aceitará exclusivamente pagamentos com cartão de débito."
+                }
+              },
+              {
+                "title": "credit_card",
+                "description": {
+                  "en": "The device will only accept payments with credit card.",
+                  "es": "El dispositivo aceptará pagos exclusivamente con tarjeta de crédito.",
+                  "pt": "O dispositivo aceitará exclusivamente pagamentos com cartão de crédito."
+                }
+              },
+              {
+                "title": "qr",
+                "description": {
+                  "en": "The device will only accept payments with a QR code.",
+                  "es": "El dispositivo aceptará pagos exclusivamente con un código QR.",
+                  "pt": "O dispositivo aceitará exclusivamente pagamentos com um código QR."
+                }
+              }
+            ]
+          }
+        }
+      },
+      "site_id":{
+        "type":"string",
+        "description":{
+          "en":"Site or location identifier from where the order was created, according to a predefined list.",
+          "pt":"Identificador do site ou local de onde a order foi criada, conforme lista pré-determinada.",
+          "es":"Identificador del sitio o ubicación desde donde se creó la order, según lista predeterminada."
+        },
+        "example": "MLB",
+        "enum": [
+          {
+            "title": "MLB",
+            "description": {
+              "en": "Order created in Brazil.",
+              "es": "Order creada en Brasil.",
+              "pt": "Order criada no Brasil."
+            }
+          },
+          {
+            "title": "MLA",
+            "description": {
+              "en": "Order created in Argentina.",
+              "es": "Order creada en Argentina.",
+              "pt": "Order criada na Argentina."
+            }
+          },
+          {
+            "title": "MLM",
+            "description": {
+              "en": "Order created in Mexico.",
+              "es": "Order creada en Mexico.",
+              "pt": "Order criada no Mexico."
+            }
+          },
+          {
+            "title": "MLC",
+            "description": {
+              "en": "Order created in Chile.",
+              "es": "Order creada en Chile.",
+              "pt": "Order criada no Chile."
+            }
+          }
+        ]
+      },
+      "payment_method": {
+        "type": "object",
+        "required": true,
+        "description": {
+          "en": "Information about the payment method selected for the transaction.",
+          "pt": "Informação sobre o meio de pagamento selecionado para efetuar a transação.",
+          "es": "Información sobre el medio de pago seleccionado para efectuar la transacción."
+        },
+        "properties": {
+          "type": {
+            "type": "string",
+            "example": "credit_card",
+            "description": {
+              "en": "Payment method selected when creaating the order.",
+              "pt": "Meio de pagamento selecionado ao realizar a criação da order.",
+              "es": "Medio de pago seleccionado al realizar la creación de la order."
+            }
+          },
+          "installments": {
+            "type": "integer",
+            "example": 1,
+            "description": {
+              "pt": "Número de parcelas selecionado.",
+              "en": "Number of installments selected.",
+              "es": "Cantidad de cuotas seleccionada."
+            }
+          }
+        }
+      },
+      "status":{
+        "type":"string",
+        "example":"created",
+        "description":{
+          "en":"Current status of the order or the transaction.",
+          "pt":"Status atual da order ou da transação.",
+          "es":"Estado actual de la order o de la transacción."
+        },
+        "enum": [
+          {
+            "title": "created",
+            "description": {
+              "en": "The order has been succesfully created.",
+              "es": "La order ha sido creada de manera exitosa.",
+              "pt": "A order foi criada com sucesso."
+            }
+          },
+          {
+            "title": "on_terminal",
+            "description": {
+              "en": "The order was obtained by the device and is ready for process.",
+              "es": "La order fue obtenida por el dispositivo y está lista para ser procesada.",
+              "pt": "A order foi obtida no dispositivo e está pronta para ser processada."
+            }
+          },
+          {
+            "title": "cancelled",
+            "description": {
+              "en": "The order has been cancelled, either through the API or the device.",
+              "es": "La order fue cancelada desde el API o desde el dispositivo.",
+              "pt": "A order foi cancelada na API ou no dispositivo."
+            }
+          },
+          {
+            "title": "processed",
+            "description": {
+              "en": "All transactions have been succesfully processed.",
+              "es": "La transacción asociada a la order fue procesada exitosamente.",
+              "pt": "A transação associada à order foi processada com sucesso."
+            }
+          },
+          {
+            "title": "failed",
+            "description": {
+              "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+              "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+              "pt": "Ocorreu um erro no processamento da order. Pode dever-se ao envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+            }
+          }
+        ]
+      }
+    }
+  }
+}
