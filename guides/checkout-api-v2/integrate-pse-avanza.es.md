@@ -9,7 +9,6 @@ Para ofrecer pagos con PSE, sigue los siguientes pasos.
 >
 > Recuerda configurar tus [Credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials) previo a iniciar tu integración.
 
-
 > SERVER_SIDE
 >
 > h2
@@ -128,7 +127,6 @@ Una vez obtenidos los medios de pago, podrás listar los bancos disponibles para
 
 Para que la lista de los medios de pago sea consumida por el frontend en los siguientes pasos, deberás crear un nuevo endpoint `GET /payment_methods` en tu aplicación. 
 
-
 > CLIENT_SIDE
 >
 > h2
@@ -244,7 +242,6 @@ function updateSelectOptions(selectedValue){
 }
 ```
 
-
 > CLIENT_SIDE
 >
 > h2
@@ -320,49 +317,57 @@ Para hacerlo, envía un **POST** con los parámetros requeridos al endpoint [/v1
 
 [[[
 ```php
-
 <?php
+use MercadoPago\Client\Common\RequestOptions;
 use MercadoPago\Client\Payment\PaymentClient;
 use MercadoPago\MercadoPagoConfig;
 
-
 MercadoPagoConfig::setAccessToken("YOUR_ACCESS_TOKEN");
+
 $client = new PaymentClient();
-$payment = $client->create([
+$request_options = new RequestOptions();
+$request_options->setCustomHeaders(["X-Idempotency-Key: <SOME_UNIQUE_VALUE>"]);
+
+$client = new PaymentClient();
+$createRequest = [
   "transaction_amount" => 5000,
   "description" => "Product description",
   "payment_method_id" => "pse",
+  "callback_url" => "http://www.your-site.com",
+  "notification_url" => "http://www.your-site.com",
   "additional_info" => [
     "ip_address" => "127.0.0.1"
   ],
   "transaction_details" => [
     "financial_institution" => $_POST['financialInstitution']
   ],
-  "callback_url" => "http://www.your-site.com",
-  "email" => $_POST['email'],
-  "identification" => [
-       "type" => $_POST['identificationType'],
-       "number" => $_POST['identificationNumber']
-  ],
-  "address" => [
+  "payer" => [
+    "email" => $_POST['email'],
+    "entity_type" => "individual",
+    "first_name" => $_POST['firstName'],
+    "last_name" => $_POST['lastName'],
+    "identification" => [
+        "type" => $_POST['identificationType'],
+        "number" => $_POST['identificationNumber']
+    ],
+    "address" => [
         "zip_code" => $_POST['zipCode'],
-        "street_name": $_POST['streetName'],
-        "street_number": $_POST['streetNumber'],
-        "neighborhood": $_POST['neighborhood'],
-        "city": $_POST['city'],
-        "federal_unit": $_POST['federalUnit']
+        "street_name" => $_POST['streetName'],
+        "street_number" => $_POST['streetNumber'],
+        "neighborhood" => $_POST['neighborhood'],
+        "city" => $_POST['city'],
+        "federal_unit" => $_POST['federalUnit']
+    ],
+    "phone" => [
+        "area_code" => $_POST['phoneAreaCode'],
+        "number" => $_POST['phoneNumber']
+    ],
   ],
+];
 
-  "phone" => [
-       "area_code" => $_POST['phoneAreaCode'],
-       "number" => $_POST['phoneNumber']
-  ],
-  "entity_type" => "individual";
-]);
-
-echo implode($payment);
+$payment = $client->create($createRequest, $request_options);
+print_r($payment);
 ?>
-
 ```
 ```node
 import { Payment, MercadoPagoConfig } from 'mercadopago';
@@ -370,138 +375,150 @@ import { Payment, MercadoPagoConfig } from 'mercadopago';
 const client = new MercadoPagoConfig({ accessToken: '<ACCESS_TOKEN>' });
 const payment = new Payment(client);
 
-payment.create({
-      body: {
- 	transaction_amount: 5000,
- 	description: 'Product description',
- 	payment_method_id: 'pse',
- 	payer: {
- 		entity_type: 'individual',
- 		email: req.body.email,
- 		identification: {
- 			type: req.body.identificationType,
- 			number: req.body.identificationNumber
- 		}
-            address: {
-                 zip_code: req.body.zipCode,
-                 street_name: req.body.streetName,
-                 street_number: req.body.streetNumber,
-                 neighborhood: req.body.neighborhood,
-                 city: req.body.city,
-                 Federal_unit: req.body.federalUnit
-           },
-           phone: {
-                 area_code: req.body.phoneAreaCode,
-                 number: req.body.phoneNumber
-           }
- 	},
- 	additional_info: {
- 		ip_address: '127.0.0.1'
- 	},
- 	transaction_details: {
- 		financial_institution: req.body.financialInstitution
- 	},
- 	callback_url: 'http://www.your-site.com'
-   }
-}).then(function(response) {
- 		res.status(response.status).json({
- 			status: response.body.status,
- 			status_detail: response.body.status_detail,
- 			id: response.body.id,
- 		});
- 	})
- 	.catch(function(error) {
- 		res.status(error.status).send(error);
- 	});
+const requestOptions = {
+	idempotencyKey: '<IDEMPOTENCY_KEY>',
+};
 
+const body = {
+  transaction_amount: 5000,
+  description: 'Product description',
+  payment_method_id: 'pse',
+  callback_url: 'http://www.your-site.com',
+  notification_url: 'http://www.your-site.com',
+  payer: {
+    entity_type: 'individual',
+    email: req.body.email,
+    first_name: req.body.firstName,
+    last_name: req.body.lastName,
+    identification: {
+      type: req.body.identificationType,
+      number: req.body.identificationNumber
+    },
+    address: {
+      zip_code: req.body.zipCode,
+      street_name: req.body.streetName,
+      street_number: req.body.streetNumber,
+      neighborhood: req.body.neighborhood,
+      city: req.body.city,
+      federal_unit: req.body.federalUnit
+    },
+    phone: {
+      area_code: req.body.phoneAreaCode,
+      number: req.body.phoneNumber
+    }
+  },
+  additional_info: {
+    ip_address: '127.0.0.1'
+  },
+  transaction_details: {
+    financial_institution: req.body.financialInstitution
+  }
+};
+
+payment.create({body, requestOptions})
+  .then(function (response) {
+    console.info(response)
+  })
+  .catch(function (error) {
+    console.error(error);
+  });
 ```
 ```java
 MercadoPagoConfig.setAccessToken("YOUR_ACCESS_TOKEN");
 
-  PaymentClient client = new PaymentClient();
+        Map<String, String> customHeaders = Map.of("X-Idempotency-Key", "...");
+        MPRequestOptions requestOptions = MPRequestOptions.builder().customHeaders(customHeaders).build();
 
-  IdentificationRequest identification =
-  	IdentificationRequest.builder()
-  	.type(request.getIdentificationType())
-  	.number(request.getIdentificationNumber())
-  	.build();
+        PaymentClient client = new PaymentClient();
 
-  PaymentPayerAddressRequest address =
-      PaymentPayerAddressRequest.builder()
-      .zipCode(request.getZipCode())
-      .streetName(request.getStreetName())
-      .streetNumber(request.getStretNumber())
-      .neighborhood(request.getNeighborhood())
-      .city(request.getCity())
-      .federalUnit(request.getFederalUnit())
-      .build();
+        IdentificationRequest identification = IdentificationRequest.builder()
+                .type(request.getIdentificationType())
+                .number(request.getIdentificationNumber())
+                .build();
 
-  PaymentPayerPhoneRequest phone =
-      PaymentPayerPhoneRequest.builder()
-      .areaCode(request.getPhoneAreaCode())
-      .number(request.getPhoneNumber())
-      .build();
+        PaymentPayerAddressRequest address = PaymentPayerAddressRequest.builder()
+                .zipCode(request.getZipCode())
+                .streetName(request.getStreetName())
+                .streetNumber(request.getStretNumber())
+                .neighborhood(request.getNeighborhood())
+                .city(request.getCity())
+                .federalUnit(request.getFederalUnit())
+                .build();
 
-  PaymentPayerRequest payer =
-  	PaymentPayerRequest.builder()
-  	.email(request.getEmail())
-  	.entityType("individual")
-  	.identification(identification)
-      .address(address)
-      .phone(phone)
-  	.build();
+        PaymentPayerPhoneRequest phone = PaymentPayerPhoneRequest.builder()
+                .areaCode(request.getPhoneAreaCode())
+                .number(request.getPhoneNumber())
+                .build();
 
-  PaymentAdditionalInfoRequest additionalInfo =
-  	PaymentAdditionalInfoRequest.builder()
-  	.ipAddress("127.0.0.1")
-  	.build();
+        PaymentPayerRequest payer = PaymentPayerRequest.builder()
+                .email(request.getEmail())
+                .entityType("individual")
+                .firstName("firstName")
+                .lastName("lastName")
+                .identification(identification)
+                .address(address)
+                .phone(phone)
+                .build();
 
-  PaymentTransactionDetailsRequest transactionDetails = PaymentTransactionDetailsRequest.builder()
-  	.financialInstitution(request.getFinancialInstitution())
-  	.build();
+        PaymentAdditionalInfoRequest additionalInfo = PaymentAdditionalInfoRequest.builder()
+                .ipAddress("127.0.0.1")
+                .build();
 
-  PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
-  	.transactionAmount(new BigDecimal(5000))
-  	.description("Product description")
-  	.paymentMethodId("pse")
-  	.additionalInfo(additionalInfo)
-  	.transactionDetails(transactionDetails)
-  	.notificationUrl("https://your-site.com")
-  	.payer(payer)
-  	.build();
+        PaymentTransactionDetailsRequest transactionDetails = PaymentTransactionDetailsRequest.builder()
+                .financialInstitution(request.getFinancialInstitution())
+                .build();
 
-  client.create(paymentCreateRequest);
+        PaymentCreateRequest paymentCreateRequest = PaymentCreateRequest.builder()
+                .transactionAmount(new BigDecimal(5000))
+                .description("Product description")
+                .paymentMethodId("pse")
+                .additionalInfo(additionalInfo)
+                .transactionDetails(transactionDetails)
+                .callbackUrl("https://your-site.com")
+                .notificationUrl("https://your-site.com")
+                .payer(payer)
+                .build();
+
+        client.create(paymentCreateRequest);
 ```
 ```ruby
 require 'mercadopago'
 sdk = Mercadopago::SDK.new('ACCESS_TOKEN')
 
-payment_data = {
+custom_headers = {
+ 'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+}
 
+request_options = Mercadopago::RequestOptions.new(custom_headers: custom_headers)
+
+body = {
   transaction_amount: 5000,
   description: "Product description",
   payment_method_id: "pse",
+  callback_url: "https://your-site.com",
+  notification_url: "https://your-site.com",
   additional_info: {
     ip_address: "127.0.0.1"
   },
   transaction_details: {
-    financial_institution: params[: financialInstitution]
+    financial_institution: params[:financialInstitution]
   },
-  callback_url: "https://your-site.com"
   payer: {
     email: params[:email],
     entity_type: "individual",
+    first_name: params[:firstName],
+    last_name: params[:lastName],
     identification: {
-      type: params[: identificationType],
-      number: params[: identificationNumber]
+      type: params[:identificationType],
+      number: params[:identificationNumber]
     }
     address: {
-      zip_code: params[: zipCode],
-      street_name: params[: streetName],
-      street_number: params[: streetNumber],
-      neighborhood: params[: neighborhood],
-      city: params[: city],
-      federal_unit: params[: federalUnit]
+      zip_code: params[:zipCode],
+      street_name: params[:streetName],
+      street_number: params[:streetNumber],
+      neighborhood: params[:neighborhood],
+      city: params[:city],
+      federal_unit: params[:federalUnit]
     }
     phone: {
       area_code: params[: phoneAreaCode],
@@ -510,21 +527,14 @@ payment_data = {
   }
 }
 
-payment_response = sdk.payment.create(payment_data)
+payment_response = sdk.payment.create(body, request_options)
 payment = payment_response[: response]
-
-
 ```
 ```csharp
-using System;
-using MercadoPago.Client.Common;
-using MercadoPago.Client.Payment;
-using MercadoPago.Config;
-using MercadoPago.Resource.Payment;
-
 MercadoPagoConfig.AccessToken = "ACCESS_TOKEN";
 
-var client = new PaymentClient();
+var requestOptions = new RequestOptions();
+requestOptions.CustomHeaders.Add(Headers.IDEMPOTENCY_KEY, "YOUR_IDEMPOTENCY_KEY");
 
 var identification = new IdentificationRequest() {
   Type = request.IdentificationType,
@@ -548,6 +558,8 @@ var phone = new PaymentPayerPhoneRequest() {
 var payer = new PaymentPayerRequest() {
     Email = request.Email,
     EntityType = "individual",
+    FirstName = firstName,
+    LastName = lastName,
     Identification = identification,
     Address = address,
     Phone = phone
@@ -568,54 +580,63 @@ var paymentCreateRequest = new PaymentCreateRequest() {
     AdditionalInfo = additionalInfo,
     TransactionDetails = transactionDetails,
     CallbackUrl = "https://your-site.com",
+    NotificationUrl = "https://your-site.com",
     Payer = payer
 };
 
-var payment = await client.CreateAsync(paymentCreateRequest);
-
+var client = new PaymentClient();
+var payment = await client.CreateAsync(paymentCreateRequest, requestOptions);
 ```
 ```python
  import mercadopago
 sdk = mercadopago.SDK("ACCESS_TOKEN")
- 
-payment_data = {
-   "transaction_amount": 5000,
-   "description": "Product description",
-   "payment_method_id": "pse",
-   "additional_info": {
-      "ip_address": "127.0.0.1"
-   },
-   "transaction_details": {
-      "financial_institution": request.POST.get("financialInstitution")
-   },
-   "callback_url": "https://your-site.com"
-   "payer": {
-       "email": request.POST.get("email"),
-       "entity_type": "individual",
-       "identification": {
-           "type": request.POST.get("identificationType"), 
-           "number": request.POST.get("identificationNumber")
-       }
-       "address": {
-                 "zip_code": request.POST.get("zipCode"),
-                 "street_name": request.POST.get("streetName"),
-                 "street_number": request.POST.get("streetNumber"),
-                 "neighborhood": request.POST.get("neighborhood"),
-                 "city": request.POST.get("city"),
-                 "federal_unit": request.POST.get("federalUnit")
-       },
-       "phone": {
-                 "area_code": request.POST.get("phoneAreaCode"),
-                 "number": request.POST.get("phoneNumber")
-       }
-   }
+
+request_options = mercadopago.config.RequestOptions()
+request_options.custom_headers = {
+    'X-Idempotency-Key': '<SOME_UNIQUE_VALUE>'
 }
  
-payment_response = sdk.payment().create(payment_data)
+body = {
+    "transaction_amount": 5000,
+    "description": "Product description",
+    "payment_method_id": "pse",
+    "callback_url": "https://your-site.com",
+    "notification_url": "https://your-site.com",
+    "additional_info": {
+        "ip_address": "127.0.0.1"
+    },
+    "transaction_details": {
+        "financial_institution": request.POST.get("financialInstitution")
+    },
+    "payer": {
+        "email": request.POST.get("email"),
+        "entity_type": "individual",
+        "first_name": request.POST.get("firstName"),
+        "last_name": request.POST.get("lastName"),
+        "identification": {
+            "type": request.POST.get("identificationType"), 
+            "number": request.POST.get("identificationNumber")
+        },
+        "address": {
+            "zip_code": request.POST.get("zipCode"),
+            "street_name": request.POST.get("streetName"),
+            "street_number": request.POST.get("streetNumber"),
+            "neighborhood": request.POST.get("neighborhood"),
+            "city": request.POST.get("city"),
+            "federal_unit": request.POST.get("federalUnit")
+        },
+        "phone": {
+            "area_code": request.POST.get("phoneAreaCode"),
+            "number": request.POST.get("phoneNumber")
+        }
+    }
+}
+ 
+payment_response = sdk.payment().create(body, request_options)
 payment = payment_response["response"]
 ```
 ```curl
- curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
+curl --location --request POST 'https://api.mercadopago.com/v1/payments' \
 -H 'Authorization: Bearer ENV_ACCESS_TOKEN' \
 -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
 -H 'Content-Type: application/json' \
@@ -623,24 +644,28 @@ payment = payment_response["response"]
     "transaction_amount": 5000,
     "description": "Product description",
     "payment_method_id": "pse",
+    "callback_url": "http://www.your-site.com",
+    "notification_url": "http://www.your-site.com",
     "payer": {
         "email": "test_user_19549678@testuser.com",
         "entity_type": "individual",
+        "first_name": "first name",
+        "last_name": "last_name",
         "identification": {
-            "type": "CC",
-            "number": "76262349"
+            "type": "type",
+            "number": "number"
         }, 
         "address": {
           "zip_code": "111",
-          "street_name": "siempre viva",
-          "street_number": "111",
-          "neighborhood": "sarasa",
-          "city": "salto",
-          "federal_unit": "1"
+          "street_name": "street name",
+          "street_number": "street number",
+          "neighborhood": "neighborhood",
+          "city": "city",
+          "federal_unit": "federal unit"
         },
         "phone": {
-          "area_code": "011",
-          "number": "2134242412"
+          "area_code": "area code",
+          "number": "number"
         }
     },
     "additional_info": {
@@ -648,10 +673,8 @@ payment = payment_response["response"]
     },
     "transaction_details": {
         "financial_institution": "1009"
-    },
-    "callback_url": "http://www.your-site.com"
+    }
 }'
-
 ```
 ]]]
 

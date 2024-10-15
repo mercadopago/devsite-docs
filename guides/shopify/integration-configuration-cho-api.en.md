@@ -1,5 +1,5 @@
 ----[mlb]----
-# Cards
+# Cartões
 
 **Mercado Pago Cartões** ([Checkout Transparente](/developers/en/docs/checkout-api/landing)) is an app that allows transparent payments with debit or credit cards, where the entire checkout process happens within the online store environment, without the need to redirect to an external page. In addition to providing greater control in the customization and integration process, it reduces cart abandonment and increases the possibility of conversion.
 
@@ -7,19 +7,23 @@
 >
 > Attention
 >
-> This new application is exclusive for card payments. To configure Pix payments, refer to the [corresponding documentation](/developers/en/docs/shopify/integration-configuration/pix). For boleto bancário payments, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro). 
+> This new application is exclusive for card payments. To configure Pix payments, refer to the [corresponding documentation](/developers/en/docs/shopify/integration-configuration/pix). For boleto bancário payments, use [Mercado Pago Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro).
+
+To integrate Mercado Pago Cartões, install the application through the [Shopify panel](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_shopify_admin_panel) or the [Marketplace](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_marketplace). After installation, you can [configure the expiration period](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_configure_interest-free_installments).
 
 ------------
 ----[mlm, mco]----
-# Cards
+# Tarjetas
 
 **Mercado Pago Tarjetas** ([Checkout API](/developers/en/docs/checkout-api/landing)) is an app that allows transparent payments with debit or credit cards, where the entire checkout process happens within the online store environment, without the need to redirect to an external page. In addition to providing greater control in the customization and integration process, it reduces cart abandonment and increases the possibility of conversion.
 
+To integrate Mercado Pago Tarjetas, install the application through the [Shopify panel](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_shopify_admin_panel) or the [Marketplace](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_install_via_marketplace). After installation, you can [configure the expiration period](/developers/en/docs/shopify/integration-configuration/checkout-cards#bookmark_configure_interest-free_installments).
+
 ------------
 ----[mco]----
-To install the **Mercado Pago Tarjetas** checkout on a Shopify store, we offer the two installation models below.
-
 ## Install via Shopify admin panel
+
+To install Mercado Pago Tarjetas through the Shopify admin panel, follow the steps below:
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
 2. In the store's administration panel, click on **Settings** in the bottom-left corner of the page.
@@ -61,9 +65,11 @@ Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 >
 > Important
 >
-> After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> After completing the installation of Mercado Pago Tarjetas, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which uses **3DS 2.0 (3-D Secure)** technology to **enhance the security of your store and increase payment approval rate**. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
 
 ## Install via Marketplace
+
+To install Mercado Pago Tarjetas via Marketplace, follow the steps below:
 
 1. Access the [**Mercado Pago Tarjetas** app page](https://apps.shopify.com/mercado-pago-tarjetas-co) in the Marketplace and click **Install**. If you haven't already, log in with your Shopify account.
 2. Read carefully the information about the requested permissions and click **Install** again.
@@ -101,7 +107,7 @@ Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 >
 > Important
 >
-> After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
+> After completing the installation of Mercado Pago Tarjetas, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which uses **3DS 2.0 (3-D Secure)** technology to **enhance the security of your store and increase payment approval rate**. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
 
 ## Configure interest-free installments
 
@@ -127,9 +133,9 @@ After installing and activating the **Mercado Pago Tarjetas** app, set up the op
 
 ------------
 ----[mlm]----
-To install the **Mercado Pago Tarjetas** checkout on a Shopify store, we offer the two installation models below.
-
 ## Install via Shopify admin panel
+
+To install Mercado Pago Tarjetas through the Shopify admin panel, follow the steps below:
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
 2. In the store's administration panel, click on **Settings** in the bottom-left corner of the page.
@@ -174,6 +180,8 @@ Done! The **Mercado Pago Tarjetas** checkout is ready to receive payments.
 > After completing the installation of Mercado Pago Cartões, we recommend complementing it by installing the **Mercado Pago Antifraude Plus** app, which will help enhance the security of your store and increase the payment approval rate. For more information, access the documentation on [How to prevent fraud in card payments](/developers/en/docs/shopify/how-tos/antifraude-plus).
 
 ## Install via Marketplace
+
+To install Mercado Pago Tarjetas via Marketplace, follow the steps below:
 
 1. Access the [**Mercado Pago Tarjetas** app page](https://apps.shopify.com/mercado-pago-tarjetas-mx) in the Marketplace and click **Install**. If you haven't already, log in with your Shopify account.
 2. Read carefully the information about the requested permissions and click **Install** again.
@@ -237,9 +245,9 @@ After installing and activating the **Mercado Pago Tarjetas** app, set up the op
 
 ------------
 ----[mlb]----
-To install the **Mercado Pago Cartões** checkout on a Shopify store, we offer the two installation models below.
-
 ## Install via Shopify admin panel
+
+To install Mercado Pago Cartões through the Shopify admin panel, follow the steps below:
 
 1. Go to your [Shopify](https://accounts.shopify.com/store-login) store.
 2. In the store's administration panel, click on **Settings** in the bottom-left corner of the page.
@@ -277,6 +285,8 @@ Done! The **Mercado Pago Cartões** checkout is ready to receive payments.
 > With Mercado Pago Cartões, the "Número da Casa" and "Bairro" fields will not be automatically displayed on the order delivery data form. To have these fields displayed, simply contact the support team of the Shopify platform and make the request.
 
 ## Install via Marketplace
+
+To install Mercado Pago Cartões via Marketplace, follow the steps below:
 
 1. Access the [**Mercado Pago Cartões** app page](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR) in the Marketplace and click **Install**. If you haven't already, log in with your Shopify account.
 2. Read carefully the information about the requested permissions and click **Install** again.

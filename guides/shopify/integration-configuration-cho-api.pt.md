@@ -3,6 +3,8 @@
 
 O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
 
+Para integrar o Mercado Pago Cartões, instale o aplicativo via [painel da Shopify](/developers/pt/docs/shopify/integration-configuration/checkout-cards#bookmark_instalar_via_painel_da_shopify) ou via [Marketplace](/developers/pt/docs/shopify/integration-configuration/checkout-cards#bookmark_instalar_via_marketplace). Após a instalação, você poderá [configurar parcelas sem acréscimo](/developers/pt/docs/shopify/integration-configuration/checkout-cards#configurarparcelassemacrscimo).
+
 > WARNING
 >
 > Atenção
@@ -11,15 +13,24 @@ O **Mercado Pago Cartões** ([Checkout Transparente](/developers/pt/docs/checkou
 
 ------------
 ----[mlm, mco]----
-# Cartões
+# Tarjetas
 
-O **Mercado Pago Cartões** ([Checkout API](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
+O **Mercado Pago Tarjetas** ([Checkout API](/developers/pt/docs/checkout-api/landing)) é um app que permite pagamentos transparentes com cartões de débito ou crédito em que todo o processo de finalização de compra acontecerá dentro do ambiente da loja online, sem a necessidade de redirecionamento para uma página externa. Além de permitir maior controle no processo de customização e integração, o Mercado Pago Cartões reduz o abandono do carrinho e aumenta a possibilidade de conversão.
+
+Para integrar o Mercado Pago Tarjetas, instale o aplicativo via [painel da Shopify](/developers/pt/docs/shopify/integration-configuration/checkout-cards#bookmark_instalar_via_painel_da_shopify) ou via [Marketplace](/developers/pt/docs/shopify/integration-configuration/checkout-cards#bookmark_instalar_via_marketplace). Após a instalação, você poderá [configurar parcelas sem acréscimo](/developers/pt/docs/shopify/integration-configuration/checkout-cards#configurarparcelassemacrscimo).
 
 ------------
 
-Para instalar o checkout **Mercado Pago Cartões** em uma loja Shopify, oferecemos os dois modelos de instalação abaixo.
-
 ## Instalar via painel da Shopify
+
+----[mlb]----
+Para instalar o Mercado Pago Cartões via painel administrativo da Shopify, siga os passos abaixo:
+
+------------
+----[mlm, mco]----
+Para instalar o Mercado Pago Tarjetas via painel administrativo da Shopify, siga os passos abaixo:
+
+------------
 
 1. Vá para a sua loja [Shopify](https://accounts.shopify.com/store-login).
 2. No painel administrativo da loja, clique em **Configurações** no canto inferior esquerdo da página.
@@ -86,32 +97,37 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 >
 > Importante
 >
-> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que conta com a tecnologia **3DS 2.0 (3-D Secure)** para **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 > <br><br>
 > Com o Mercado Pago Cartões, os campos de "Número da Casa" e "Bairro" não serão exibidos automaticamente no formulário dos dados de entrega do pedido. Para que esses campos sejam exibidos, basta entrar em contato com a equipe de suporte da plataforma Shopify e fazer a solicitação.
 
 ------------
-----[mlm]----
+----[mlm, mco]----
 > WARNING
 >
 > Importante
 >
-> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que conta com a tecnologia **3DS 2.0 (3-D Secure)** para **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 
 ------------
 
 ## Instalar via Marketplace
 
 ----[mlb]----
+Para instalar o Mercado Pago Cartões via Marketplace, siga os passos abaixo:
 
 1. Acesse a [página do app **Mercado Pago Cartões**](https://apps.shopify.com/mercado-pago-cartoes?locale=pt-BR) no Marketplace e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 
 ------------
 ----[mlm]----
+Para instalar o Mercado Pago Tarjetas via Marketplace, siga os passos abaixo:
+
 1. Acesse a [página do app **Mercado Pago Cartões**](https://apps.shopify.com/mercado-pago-tarjetas-mx) no Marketplace e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 
 ------------
 ----[mco]----
+Para instalar o Mercado Pago Tarjetas via Marketplace, siga os passos abaixo:
+
 1. Acesse a [página do app **Mercado Pago Cartões**](https://apps.shopify.com/mercado-pago-tarjetas-co) no Marketplace e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 
 ------------
@@ -171,17 +187,17 @@ Pronto! O checkout **Mercado Pago Cartões** está pronto para receber os pagame
 >
 > Importante
 >
-> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que conta com a tecnologia **3DS 2.0 (3-D Secure)** para **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 > <br><br>
 > Com o Mercado Pago Cartões, os campos de "Número da Casa" e "Bairro" não serão exibidos automaticamente no formulário dos dados de entrega do pedido. Para que esses campos sejam exibidos, basta entrar em contato com a equipe de suporte da plataforma Shopify e fazer a solicitação.
 
 ------------
-----[mlm]----
+----[mlm, mco]----
 > WARNING
 >
 > Importante
 >
-> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que permitirá **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
+> Após finalizar a instalação do Mercado Pago Cartões, recomendamos que complemente instalando o app **Mercado Pago Antifraude Plus**, que conta com a tecnologia **3DS 2.0 (3-D Secure)** para **reforçar a segurança da sua loja e aumentar a taxa de aprovação de pagamentos**. Para mais informações, acesse a documentação de [Como previnir fraudes nos pagamentos com cartão](/developers/pt/docs/shopify/how-tos/antifraude-plus).
 
 ------------
 

@@ -42,12 +42,11 @@ MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
 ```
 ```node
 ===
-Agrega los códigos de identificación y reemplaza por el valor necesario: <code>INTEGRATOR\_ID</code> y <code>PLATFORM_ID</code>.
+Agrega los códigos de identificación y reemplaza por el valor necesario: <code>INTEGRATOR\_ID</code>.
 ===
-mercadopago.configure({
-    platform_id: 'PLATFORM_ID',
-    integrator_id: 'INTEGRATOR_ID',
-});
+const  requestOptions = {
+'integratorId': 'INTEGRATOR_ID',
+};
 ```
 ```java
 ===
