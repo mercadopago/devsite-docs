@@ -2,7 +2,7 @@
 ----[mlb]----
 # Cómo promover "Linha de Crédito" en tu tienda
 
-**Mercado Pago Banner** es una app que permite promocionar la opción de pago [Linha de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en cuotas sin necesidad de una tarjeta de crédito.
+**Mercado Pago Banner** es una app que permite promocionar la opción de pago [Linha de Crédito](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en cuotas sin necesidad de una tarjeta de crédito.
 
 Una vez instalada la app, los vendedores pueden agregar fácilmente un _banner_ personalizado en su tienda para comunicar de manera efectiva a los compradores la opción de pagar en cuotas sin tarjeta, e incentivar así las ventas.
 
@@ -10,9 +10,9 @@ Una vez instalada la app, los vendedores pueden agregar fácilmente un _banner_ 
 ----[mlm]----
 # Cómo promover "Meses sin Tarjeta" en tu tienda
 
-**Mercado Pago Banner** es una app que permite promocionar la opción de pago [Meses sin Tarjeta](/developers/pt/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en mensualidades sin necesidad de una tarjeta de crédito.
+**Mercado Pago Banner** es una app que permite promocionar la opción de pago [Meses sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en mensualidades sin necesidad de una tarjeta de crédito.
 
-Una vez instalada la app, los vendedores pueden agregar fácilmente un _banner_ personalizado en su tienda para comunicar de manera efectiva a los compradores la opción de pagar en cuotas sin tarjeta, e incentivar así las ventas.
+Una vez instalada la app, los vendedores pueden agregar fácilmente un _banner_ personalizado en su tienda para comunicar de manera efectiva a los compradores la opción de pagar en meses sin tarjeta, e incentivar así las ventas.
 
 ------------
 ----[mla]----
@@ -20,7 +20,7 @@ Una vez instalada la app, los vendedores pueden agregar fácilmente un _banner_ 
 
 **Mercado Pago Banner** es una app que permite promocionar la opción de pago [Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta) de Mercado Pago durante el proceso de compra, la modalidad de financiamiento que ofrece la opción de pagar en cuotas sin necesidad de una tarjeta de crédito.
 
-Una vez instalada la app, los vendedores pueden agregar fácilmente un _banner_ personalizado en su tienda para comunicar de manera efectiva a los compradores la opción de pagar en meses sin tarjeta, e incentivar así las ventas.
+Una vez instalada la app, los vendedores pueden agregar fácilmente un _banner_ personalizado en su tienda para comunicar de manera efectiva a los compradores la opción de pagar en cuotas sin tarjeta, e incentivar así las ventas.
 
 ------------
 
@@ -28,7 +28,7 @@ Una vez instalada la app, los vendedores pueden agregar fácilmente un _banner_ 
 >
 > Atención
 >
-> Antes de instalar Mercado Pago Banner, es necesario haber instalado y activado la app ----[mlb]----[Mercado Pago Línea de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Mercado Pago Meses sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Mercado Pago Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ de Mercado Pago para exhibir este medio de pago en el checkout de tu tienda. 
+> Antes de instalar Mercado Pago Banner, es necesario haber instalado y activado la app ----[mlb]----[Mercado Pago Línea de Crédito](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mlm]----[Mercado Pago Meses sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ ----[mla]----[Mercado Pago Cuotas sin Tarjeta](/developers/es/docs/shopify/integration-configuration/meses-sin-tarjeta)------------ para exhibir este medio de pago en el checkout de tu tienda. 
 
 Para instalar Mercado Pago Banner, sigue los pasos a continuación:
 
