@@ -3,7 +3,7 @@
 
 ------------
 ----[mlm]----
-# Compra ahora, paga después
+# Meses sin Tarjeta
 
 ------------
 ----[mla]----
@@ -13,30 +13,31 @@
 ----[mla, mlb]----
 Es la modalidad de financiación de Mercado Pago que ofrece la opción de pagar en cuotas sin contar con una tarjeta de crédito.
 
+Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántas cuotas quiere pagar.
+
 ------------
 ----[mlm]----
 Es la modalidad de financiamiento de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta de crédito.
 
+Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 meses, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántas cuotas quiere pagar.
+
 ------------
-
-Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántas cuotas quiere pagar.
-
 ----[mlb]----
-**Linha de Crédito** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) y ahora también es posible acceder directo desde el checkout de la tienda.
+Actualmente puedes ofrecer **Linha de Crédito** a través de nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) o directamente desde el checkout de tu tienda con la app **Mercado Pago Linha de Crédito**.
 
 Para **configurar Linha de Crédito en el checkout de la tienda**, sigue los pasos a continuación.
 
 ------------
 ----[mlm]----
-**Meses sin Tarjeta** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) y ahora también es posible acceder directo desde el checkout de la tienda.
+Actualmente puedes ofrecer **Meses sin Tarjeta** a través de nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) o directamente desde el checkout de tu tienda con la app **Mercado Pago Meses sin Tarjeta**.
 
-Además, podrás complementar la integración con la habilitación de la app **Mercado Pago Banner**, una aplicación que permite promover durante el proceso de compra la opción de pago con Meses sin Tarjeta. Para más información sobre cómo habilitar el banner, accede a la documentación [Cómo promover "Meses sin Tarjeta" en tu tienda](/developers/pt/docs/shopify/shopify/how-tos/banner).
+Además, podrás complementar la integración con la habilitación de la app **Mercado Pago Banner**, una aplicación que permite promover durante el proceso de compra la opción de pago con **Mercado Pago Meses sin Tarjeta**. Para más información sobre cómo habilitar el banner, accede a la documentación [Cómo promover "Meses sin Tarjeta" en tu tienda](/developers/pt/docs/shopify/shopify/how-tos/banner).
 
 Para **configurar Meses sin Tarjeta en el checkout de la tienda**, sigue los pasos a continuación.
 
 ------------
 ----[mla]----
-**Cuotas sin Tarjeta** actualmente es ofrecido en nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**) y ahora también es posible acceder directo desde el checkout de la tienda.
+Actualmente puedes ofrecer **Cuotas sin Tarjeta** a través de nuestro [Checkout Pro](/developers/es/docs/shopify/integration-configuration/checkout-pro) o directamente desde el checkout de tu tienda con la app **Mercado Pago Cuotas sin Tarjeta**.
 
 Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pasos a continuación.
 
@@ -47,15 +48,15 @@ Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pa
 3. Una vez allí, selecciona la opción **Pagos**. 
 4. En "Formas de pago adicionales", haz clic en **Agregar formas de pago**.
 ----[mlb]----
-5. Dirígete a la pestaña **Buscar por proveedor** y busca la app con el nombre "Linha de Crédito". 
+5. Dirígete a la pestaña **Buscar por proveedor** y busca la app con el nombre "Mercado Pago Linha de Crédito". 
 
 ------------
 ----[mlm]----
-5. Dirígete a la pestaña **Buscar por proveedor** y busca la app con el nombre "Compra ahora, paga después". 
+5. Dirígete a la pestaña **Buscar por proveedor** y busca la app con el nombre "Mercado Pago Meses sin Tarjeta". 
 
 ------------
 ----[mla]----
-5. Dirígete a la pestaña **Buscar por proveedor** y busca la app con el nombre "Cuotas sin Tarjeta". 
+5. Dirígete a la pestaña **Buscar por proveedor** y busca la app con el nombre "Mercado Pago Cuotas sin Tarjeta". 
 
 ------------
 6. Una vez que la hayas encontrado, selecciónala y haz clic en **Instalar** y luego **Conectar**.
@@ -71,7 +72,7 @@ Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pa
 >
 > Atención
 >
-> Es importante señalar que en el plugin de Linha de Crédito **no existe flujo de prueba**, por lo que no es necesario seleccionar el _checkbox_ "habilitar modo de prueba".
+> Es importante señalar que en el plugin de "Mercado Pago Linha de Crédito" **no existe flujo de prueba**, por lo que no es necesario seleccionar el _checkbox_ "habilitar modo de prueba".
 > <br/><br/>
 > En caso de renovar sus credenciales, recuerde reemplazarlas en su integración.
 
@@ -81,7 +82,7 @@ Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pa
 >
 > Atención
 >
-> Es importante señalar que en el plugin de Meses sin Tarjeta **no existe flujo de prueba**, por lo que no es necesario seleccionar el _checkbox_ "habilitar modo de prueba".
+> Es importante señalar que en el plugin de "Mercado Pago Meses sin Tarjeta" **no existe flujo de prueba**, por lo que no es necesario seleccionar el _checkbox_ "habilitar modo de prueba".
 > <br/><br/>
 > En caso de renovar sus credenciales, recuerde reemplazarlas en su integración.
 
@@ -91,7 +92,7 @@ Para **configurar Cuotas sin Tarjeta en el checkout de la tienda**, sigue los pa
 >
 > Atención
 >
-> Es importante señalar que en el plugin de Cuotas sin Tarjeta **no existe flujo de prueba**, por lo que no es necesario seleccionar el _checkbox_ "habilitar modo de prueba".
+> Es importante señalar que en el plugin de "Mercado Pago Cuotas sin Tarjeta" **no existe flujo de prueba**, por lo que no es necesario seleccionar el _checkbox_ "habilitar modo de prueba".
 > <br/><br/>
 > En caso de renovar sus credenciales, recuerde reemplazarlas en su integración.
 

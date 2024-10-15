@@ -6,7 +6,7 @@ O app conta com a tecnologia **3DS 2.0 (3-D Secure)** para autenticar as transa�
 
 Para instalar o Mercado Pago Antifraude Plus, siga as etapas abaixo.
 
-1. Acesse a [página do app **Mercado Pago Antifraude Plus**](https://apps.shopify.com/mercado-pago-antifraud-plus) no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
+1. Acesse a página do app [Mercado Pago Antifraude Plus](https://apps.shopify.com/mercado-pago-antifraud-plus) no "Marketplace" e clique em **Instalar**. Se ainda não o fez, faça login com sua conta da Shopify.
 
 ![antifraude plus 0](/images/shopify/antifraude-plus-0-pt.png)
 

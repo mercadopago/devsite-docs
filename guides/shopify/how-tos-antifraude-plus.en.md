@@ -6,7 +6,7 @@ The app uses **3DS 2.0 (3-D Secure)** technology to authenticate credit card tra
 
 To install Mercado Pago Antifraude Plus, follow the steps below.
 
-1. Access the [**Mercado Pago Antifraude Plus** app page](https://apps.shopify.com/mercado-pago-antifraud-plus) in the "Marketplace" and click on **Install**. If you haven't done so already, log in with your Shopify account.
+1. Access the [Mercado Pago Antifraude Plus](https://apps.shopify.com/mercado-pago-antifraud-plus) app page in the "Marketplace" and click on **Install**. If you haven't done so already, log in with your Shopify account.
 2. Carefully read the information about the requested permissions and click on **Install** again.
 3. If you have already installed the [Mercado Pago Cards](/developers/en/docs/shopify/integration-configuration/checkout-cards) app, you do not need to enter your credentials again, but you can change them if necessary.
 

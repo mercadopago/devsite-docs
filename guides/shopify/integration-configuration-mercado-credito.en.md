@@ -3,7 +3,7 @@
 
 ------------
 ----[mlm]----
-# Compra ahora, paga después
+# Meses sin Tarjeta
 
 ------------
 ----[mla]----
@@ -24,7 +24,7 @@ If you want to **show Linha de Crédito in your store's checkout**, follow the s
 ----[mlm]----
 **Meses sin Tarjeta** is currently offered in our [Checkout Pro](/developers/en/docs/shopify/integration-configuration/checkout-pro) (**Mercado Pago Checkout Pro**), and now it is also possible to access directly from the store checkout. 
 
-In addition, you can enhance the integration by enabling the **Mercado Pago Banner** app, which allows you to promote the payment option with Meses sin Tarjeta during the checkout process. For more information on how to enable the banner, visit the documentation [How to promote "Meses sin Tarjeta" in your store](/developers/en/docs/shopify/shopify/how-tos/banner).
+In addition, you can enhance the integration by enabling the **Mercado Pago Banner** app, which allows you to promote the payment option with**Mercado Pago Meses sin Tarjeta** during the checkout process. For more information on how to enable the banner, visit the documentation [How to promote "Meses sin Tarjeta" in your store](/developers/en/docs/shopify/shopify/how-tos/banner).
 
 If you want to **show Meses sin Tarjeta in your store's checkout**, follow the steps below.
 
@@ -41,15 +41,15 @@ If you want to **show Cuotas sin Tarjeta in your store's checkout**, follow the 
 3. Once there, select the **Payments** option. 
 4. In "Additional payment methods", click on the **Add payment methods** option.
 ----[mlb]----
-5. Go to the **Search by provider** tab and look for the new app with the name "Linha de Crédito".
+5. Go to the **Search by provider** tab and look for the new app with the name "Mercado Pago Linha de Crédito".
 
 ------------
 ----[mlm]----
-5. Go to the **Search by provider** tab and look for the new app with the name "Compra ahora, paga después".
+5. Go to the **Search by provider** tab and look for the new app with the name "Mercado Pago Meses sin Tarjeta".
 
 ------------
 ----[mla]----
-5. Go to the **Search by provider** tab and look for the new app with the name "Cuotas sin Tarjeta".
+5. Go to the **Search by provider** tab and look for the new app with the name "Mercado Pago Cuotas sin Tarjeta".
 
 ------------
 6. Once you have found it, select it and click **Install** and then **Connect**.
@@ -65,7 +65,7 @@ If you want to **show Cuotas sin Tarjeta in your store's checkout**, follow the 
 >
 > Attention
 >
-> It is important to note that in the Linha de Crédito plugin **there is no test flow**, so it is not necessary to select the _checkbox_ "activate test mode".
+> It is important to note that in the "Mercado Pago Linha de Crédito" plugin **there is no test flow**, so it is not necessary to select the _checkbox_ "activate test mode".
 > <br/><br/>
 > In case you renew your credentials, remember to replace them in your integration.
 
@@ -77,7 +77,7 @@ Ready! The financing method is enabled in your store.
 >
 > Attention
 >
-> It is important to note that in the Meses sin Tarjeta plugin **there is no test flow**, so it is not necessary to select the _checkbox_ "activate test mode".
+> It is important to note that in the "Mercado Pago Meses sin Tarjeta" plugin **there is no test flow**, so it is not necessary to select the _checkbox_ "activate test mode".
 > <br/><br/>
 > In case you renew your credentials, remember to replace them in your integration.
 
@@ -89,7 +89,7 @@ Ready! The financing method is enabled in your store.
 >
 > Attention
 >
-> It is important to note that in the Cuotas sin Tarjeta plugin **there is no test flow**, so it is not necessary to select the _checkbox_ "activate test mode".
+> It is important to note that in the "Mercado Pago Cuotas sin Tarjeta" plugin **there is no test flow**, so it is not necessary to select the _checkbox_ "activate test mode".
 > <br/><br/>
 > In case you renew your credentials, remember to replace them in your integration.
 
