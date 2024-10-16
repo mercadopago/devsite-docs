@@ -10,7 +10,7 @@ Para configurar estos medios de pago, dirígete al panel de administración de t
     1. Escribe el **Nombre de la Regla**, que te permitirá identificar este medio de pago.
     2. En **Proceso con la afiliación**, selecciona **MercadoPagoV2**. 
     3. En el campo **Status**, activa la condición de pago utilizando el botón slider. 
-    4. Para activar el pago financiado, selecciona la opción **Automático**. Se ofrecerá la financiación previamente configurada en la cuenta de vendedor de Mercado Pago. Dirígete al subtítulo “Plazos e intereses” para saber más. 
+    4. Para activar el pago financiado, selecciona la opción **Cuotas** e ingresa manualmente la cantidad de cuotas aceptadas, que debe coincidir con las que tienes habilitadas en tu cuenta de Mercado Pago. Además, debes asignar manualmente el porcentaje de interés. **Importante**: actualmente, esta configuración solo permite pagos en cuotas sin interés.
 
 > NOTE
 >
