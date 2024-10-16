@@ -1,4 +1,4 @@
-# Credit and Debit Cards 
+# Credit and debit cards 
 
 When setting up ----[mla, mlu, mlc, mlm, mpe, mco]----Checkout API------------ ----[mlb]----Checkout Transparente------------ in VTEX stores, you can offer payments with debit and/or credit cards. 
 
@@ -10,7 +10,7 @@ To configure these payment methods, access the administration panel of your VTEX
     1. Enter the **Rule name**, which will allow you to identify this payment method. 
     2. In **Affiliation process**, select **MercadoPagoV2**. 
     3. In the **Status** field, activate the payment condition using the slider button. 
-    4. To enable installment payments, select the **Automatic** option. The financing option previously configured in the Mercado Pago seller's account will be offered. Refer to the "Installments and interest" section for more information. 
+    4. To activate installment payments, select the option **Installments** and manually enter the number of accepted installments, which must match those enabled in your Mercado Pago account. Additionally, manually assign the percentage of interest. **Important**: currently, this configuration only allows payments in installments without interest.
 
 > NOTE 
 >
