@@ -16,19 +16,14 @@ Here's how to test the integration:
 1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin and select the application you want to test.
 2. Click on **Test Accounts** in the left menu.
 3. Within the **Test Accounts** section, click on **Create test account** and create two different accounts: one for the seller and another for the buyer. It is not possible to use the same test account for both roles. Refer to the [Test accounts documentation](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts) for a step-by-step guide on creating test accounts.
-
-![Create Account](/images/adobe-commerce/test-create-account-es.gif)
-
 4. Open a new incognito window and log in to Mercado Pago using the seller's test account created in the previous step.
 5. In the same incognito window logged in as the seller, access the [Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app) and create a new application, following the detailed instructions in the [Developer dashboard documentation](/developers/en/docs/adobe-commerce/additional-content/your-integrations/dashboard).
 
-![Login](/images/adobe-commerce/test-login-esp.gif)
-
- > WARNING
- >
- > Important
- >
- > If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+> WARNING
+>
+> Important
+>
+> If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
 6. Access the application created in the previous step and click on **Production credentials** in the left menu. Copy the `access_token` and `public_key`.
 
@@ -43,11 +38,11 @@ Here's how to test the integration:
 11. Click on **Save Config**.
 12. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
 
- > WARNING
- >
- > Important
- >
- > If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
+> WARNING
+>
+> Important
+>
+> If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
 ----[mlb]----
 13. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [documentation](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/cards) corresponding.
@@ -84,9 +79,6 @@ Additionally, the orders will be recorded in the test seller's Mercado Pago acco
 
 1. Access **[Your integrations](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/panel/app)** in the Mercado Pago admin and select the application you want to test.
 2. Click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
-
-![Test credentials](/images/adobe-commerce/test-test-credentials-api-es.png)
-
 3. Go to the Adobe Commerce panel settings (**Stores > Configuration > Sales > Payment Methods > Other payments methods > Configure > Basic Settings > Mercado Pago Integration**).
 4. Select the **Sandbox** option in the "Checkout operation mode" field.
 5. Enter the test credentials `access_token` and `public_key` for your application.

@@ -1,10 +1,11 @@
 # Dos tarjetas de crédito y débito
 ----[mlb]----
 Para habilitar el pago vía dos tarjetas de crédito y débito en el Checkout Transparente, sigue los siguientes pasos:
-------------
 
+------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
 Para habilitar el pago vía dos tarjetas de crédito y débito en el Checkout API, sigue los siguientes pasos:
+
 ------------
 
 1. En el Panel de Control de la tienda, accede a **Stores > Configuration > Sales > Payment Methods**.
@@ -21,7 +22,6 @@ Para habilitar el pago vía dos tarjetas de crédito y débito en el Checkout AP
 
 Al finalizar el llenado de estos campos, el pago vía tarjeta habrá sido habilitado en el Checkout Transparente. Haz clic en **Save Configuration** para guardar los cambios realizados o, si lo prefieres, sigue al siguiente paso y configura el pago a plazos y los intereses para tarjetas.
 
-
 ## Definiciones comunes de medios de pago
 
 [TXTSNIPPET][/guides/snippets/test-integration/adobe-commerce-common-definitions]
@@ -32,7 +32,5 @@ La configuración de pago a plazos e intereses se realiza directamente en tu cue
 
 1. Haz clic en el botón **Set up installments and interest** e inicia sesión en tu cuenta de vendedor de Mercado Pago.
 2. Selecciona la opción **Código QR y pagos en línea**, habilita el pago a plazos y selecciona el número de cuotas que deseas ofrecer en el Checkout. Las opciones van de 1 a 12 veces.
-
-![Installment and interest](/images/adobe-commerce/parcelamento.gif)
 
 ¡Listo! Finalizadas estas etapas, el pago a plazos en el checkout estará configurado y listo para procesar ventas.

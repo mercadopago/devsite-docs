@@ -11,7 +11,6 @@
 
 ![](/images/adobe-commerce/credito_e_debito.png)
 
-
 ----[mlb]----
 ## Capture of customer details in the payment form
 
@@ -38,7 +37,5 @@ The installment and interest setting is made directly in your Mercado Pago accou
 
 1. Click on the **Set up installments and interest** button and log in to your Mercado Pago seller account.
 2. Select the **QR Code and Online Payments** option, enable the installment and select the number of installments you want to offer at checkout. The options range from 1 to 12 times.
-
-![Installment and interest](/images/adobe-commerce/parcelamento.gif)
 
 Done! After completing these steps, installment at checkout will be configured and ready to process sales.

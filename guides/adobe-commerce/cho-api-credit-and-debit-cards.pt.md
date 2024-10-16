@@ -11,14 +11,12 @@
 
 ![](/images/adobe-commerce/credito_e_debito.png)
 
-
 ----[mlb]----
 ## Captura de dados do cliente no formulário de pagamento
 
 Esta função permite capturar documentos de clientes a partir de um campo adicional no formulário de pagamento. Caso a loja ainda não capture esses dados, basta selecionar a opção **Habilitado** em **Capturar documento de identificação**. 
 
 A ativação desta funcionalidade proporciona a inserção automática do CPF do cliente no formulário de pagamento, otimizando a experiência de preenchimento dos dados.
-
 
 > WARNING
 >
@@ -38,7 +36,5 @@ A configuração de parcelamento e acréscimos é feita diretamente na sua conta
 
 1. Clique no botão **Definir parcelas e acréscimos** e faça o login na sua conta de pessoa vendedora Mercado Pago.
 2. Selecione a opção **Código QR e pagamentos online**, habilite o parcelamento e selecione o número de parcelas que deseja oferecer no checkout. As opções vão de 1 a 12 vezes.
-
-![Installment and interest](/images/adobe-commerce/contaptac.gif)
 
 Pronto! Finalizadas essas etapas, o parcelamento no checkout estará configurado e pronto para processar vendas.
