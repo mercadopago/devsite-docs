@@ -1,14 +1,14 @@
 # Opening mode 
 
-The opening scheme allows you to define how the checkout will open for the user. By default, Checkout Bricks is opened in a **redirect** way, that is, with user redirection within the same page. However, it is possible to customize the opening so that the opening is on an external page, for example, or define the **modal** model, in which Checkout Bricks is opened in a window within the site itself, without redirection.
+The opening scheme allows you to define how the checkout will open for the user. By default, Checkout Bricks is opened in a **redirect** way, that is, with user redirection within the same page. However, it is possible to customize the opening so that the opening is on an external page.
 
 > WARNING
 > 
 > Attention
 >
-> It is **extremely important** to pay attention, when creating the preference, to the `back_urls` configuration, as they will be responsible for guiding the return flow to your website when the checkout is completed. For more information, see the [Callback URLs.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web) section
+> It is **extremely important** to pay attention, when creating the preference, to the `back_urls` configuration, as they will be responsible for guiding the return flow to your website when the checkout is completed. For more information, see the [Callback URLs.](/developers/en/docs/checkout-bricks/wallet-brick/advanced-features/preferences#bookmark_redirigir_al_comprador_a_tu_sitio_web) section.
 
-# Redirection scheme to another page
+## Redirection scheme to another page
 
 Changing the redirection behavior is done by the `redirectMode` property, which can assume the values `self` or `blank`.
 
