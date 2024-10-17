@@ -48,7 +48,7 @@ If refund is higher than amount pending receipt, don't worry, the next report wi
 
 ## Chargebacks
 
-Your report shows when a [chargeback](https://www.mercadopago[FAKER][URL][DOMAIN]/developers/en/guides/additional-content/account/chargebacks) or mediation is resolved in favor of buyer. You will see a list of all installments, or those pending release, and the total amount for payment chargeback.
+Your report shows when a chargeback or mediation is resolved in favor of buyer. You will see a list of all installments, or those pending release, and the total amount for payment chargeback.
 
 To identify this case, column `DESCRIPTION` show `chargeback` value for chargebacks of already collected installments. 
 

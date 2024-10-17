@@ -13,13 +13,13 @@ bullet_section_with_media:
  - type: normal
  - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (Pix, boleto bancário, pagamento em lotérica sem boleto, saldo na conta Mercado Pago e Mercado Crédito).
+ - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (Pix, boleto bancário, saldo na conta Mercado Pago e Linha de Crédito).
  - benefit_title: Checkout Transparente
  - benefit_message: O pagamento é realizado sem sair da sua loja virtual com Pix, cartão de crédito e boleto.
  - image: /nuvemshop/nuvemshop-payment.png  
 ---
 ------------
-----[mla, mlm, mlu, mco, mlc, mpe]----
+----[mla]----
 
 ---
 bullet_section_with_media:
@@ -27,13 +27,40 @@ bullet_section_with_media:
  - type: normal
  - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
  - benefit_title: Checkout Pro
- - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (redes de pagamento em efectivo e Mercado Crédito)
+ - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (redes de pagamento em efectivo e Cuotas sin Tarjeta)
  - benefit_title: Checkout API
  - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (crédito e débito) e redes de pagamento em efectivo.
  - image: /nuvemshop/nuvemshop-payment.png  
 ---
 ------------
+----[mlm]----
 
+---
+bullet_section_with_media:
+ - title: Pagamento
+ - type: normal
+ - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
+ - benefit_title: Checkout Pro
+ - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (redes de pagamento em efectivo e Meses sin Tarjeta)
+ - benefit_title: Checkout API
+ - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (crédito e débito) e redes de pagamento em efectivo.
+ - image: /nuvemshop/nuvemshop-payment.png  
+---
+------------
+----[mlu, mco, mlc, mpe]----
+
+---
+bullet_section_with_media:
+ - title: Pagamento
+ - type: normal
+ - message: Com o módulo do Mercado Pago você pode configurar o pagamento utilizando:
+ - benefit_title: Checkout Pro
+ - benefit_message: Os compradores poderão pagar usando uma conta Mercado Pago e todo o processo de compra será realizado em nosso ambiente, facilitando o pagamento com cartão crédito, de débito e outros meios de pagamento (redes de pagamento em efectivo)
+ - benefit_title: Checkout API
+ - benefit_message: O pagamento é realizado sem sair da sua loja virtual com cartões (crédito e débito) e redes de pagamento em efectivo.
+ - image: /nuvemshop/nuvemshop-payment.png  
+---
+------------
 --- mini_landing_separator ---
  
 >>>> Disponibilidade por país <<<<
@@ -49,7 +76,7 @@ available_countries: mlb, mla, mlm, mlu, mco, mlc, mpe
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix
+available_payments: credit, debit, mercadopago, boleto, pix, cuotas_sin_tarjeta
 
 ---
 ------------
@@ -57,7 +84,7 @@ available_payments: credit, debit, mercadopago, boleto, pix
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm
+available_payments: credit, debit, mercadopago, efectivo, atm, cuotas_sin_tarjeta
 
 ----
 ------------
@@ -65,7 +92,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm
+available_payments: credit, debit, mercadopago, efectivo, atm, cuotas_sin_tarjeta_mlm
 
 ----
 ------------

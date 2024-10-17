@@ -38,6 +38,15 @@ Es importante recordar que no se debe simplemente llamar a la función de render
 
 El ejemplo de código a continuación ejemplifica el flujo utilizando la actualización de una preferencia en el [Payment Brick](/developers/es/docs/checkout-bricks/payment-brick/introduction), pero el flujo en sí es válido para la actualización necesaria en datos de inicialización de cualquier Brick.
 
+----[mlc]----
+> WARNING
+>
+> Atención
+>
+> El valor `amount` debe ser un número entero.
+
+------------
+
 ```Javascript
 //First render
 const renderPaymentBrick = async (bricksBuilder) => {

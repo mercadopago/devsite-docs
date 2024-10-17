@@ -409,7 +409,7 @@
         "operationId": "cancelAgreement_DELETE",
         "parameters": [
           {
-            "name": "agreementId",
+            "name": "agreement_id",
             "in": "path",
             "description": {
               "en": "Unique ID that identifies an agreement.",
@@ -558,14 +558,14 @@
           "wallet-connect"
         ],
         "description": {
-          "en": "Endpoint to get an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment.",
-          "pt": "Endpoint para obter uma vinculação por ID. Uma vinculação é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento.",
-          "es": "Endpoint para obtener una vinculación por ID. Una vinculación es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago."
+          "en": "Endpoint to get an agreement by id. An agreement is an authorization link that the buyer receives to allow the seller to access their Mercado Pago wallet to debit the payment",
+          "pt": "Endpoint para obter uma vinculação por ID. Uma vinculação é um link de autorização que o comprador recebe para permitir ao vendedor acessar a sua carteira do Mercado Pago a fim de debitar o pagamento",
+          "es": "Endpoint para obtener una vinculación por ID. Una vinculación es un link de autorización que el comprador recibe para permitir al vendedor acceder a su billetera de Mercado Pago a fin de debitar el pago"
         },
         "operationId": "getAgreement_GET",
         "parameters": [
           {
-            "name": "agreementId",
+            "name": "agreement_id",
             "in": "path",
             "description": {
               "en": "Unique ID that identifies an agreement.",
@@ -995,9 +995,9 @@
                         "required": false,
                         "type": "object",
                         "description": {
-                          "en": "Datos encaminados del atributo 'sub_merchant'. Information that payment facilitators must send mandatorily to identify the sub-merchants during the transaction.",
-                          "pt": "Dados encaminhados do atributo 'sub_merchant'. Informações que os facilitadores de pagamento devem enviar obrigatoriamente para identificar os subcomerciantes durante a transação.",
-                          "es": "Forwarded data from the 'sub_merchant' attribute. Información que los Facilitadores de pago deben enviar obligatoriamente para identificar a los subcomercios durante la transacción."
+                          "en": "Information that payment facilitators must send mandatorily to identify the sub-merchants during the transaction. The sending of this parameter and its attributes is only required for transactions carried out in Brazil (MLB).",
+                          "pt": "Informações que os facilitadores de pagamento devem enviar obrigatoriamente para identificar os subcomerciantes ('sub_merchant') durante a transação. O envio deste parâmetro e dos seus atributos só são necessários para transações realizadas no Brasil (MLB).",
+                          "es": "Información que los Facilitadores de pago deben enviar obligatoriamente para identificar a los subcomercios ('sub_merchant') durante la transacción. El envío de este parámetro y sus atributos solo es necesario para transacciones realizadas en Brasil (MLB)."
                         },
                         "properties": {
                           "sub_merchant": {

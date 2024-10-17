@@ -77,9 +77,19 @@ bullet_section_with_media:
  - benefit_message: With 3DS, we conduct discrete identity verification from a modal without leaving the store, offering benefits such as higher approval rates and lower fraud risk.
  - benefit_title: Compatible with WooCommerce Blocks
  - benefit_message: Our plugin is compatible with WooCommerce Blocks, which allows you to customize your e-commerce and make your products even more accessible to your customers.
- ----[mlm, mlb, mla]----
+ ----[mlm]----
  - benefit_title: Installment without a card
- - benefit_message: By activating Mercado Crédito at checkout, you reach over 12 million people with active credit, at no extra cost, in addition to obtaining an approval rate of about 98% in sales.
+ - benefit_message: By activating Meses sin Tarjeta at checkout, you reach over 12 million people with active credit, at no extra cost, in addition to obtaining an approval rate of about 98% in sales.
+
+ ------------
+ ----[mlb]----
+ - benefit_title: Installment without a card
+ - benefit_message: By activating Linha de Crédito at checkout, you reach over 12 million people with active credit, at no extra cost, in addition to obtaining an approval rate of about 98% in sales.
+
+ ------------
+  ----[mla]----
+ - benefit_title: Installment without a card
+ - benefit_message: By activating Cuotas sin Tarjeta at checkout, you reach over 12 million people with active credit, at no extra cost, in addition to obtaining an approval rate of about 98% in sales.
 
  ------------
  - image: /woocomerce/landing-woo-advantages.png
@@ -92,7 +102,7 @@ bullet_section_with_media:
 ----[mlb]----
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, mercadocredito
+available_payments: credit, debit, mercadopago, boleto, pix, moneda, cuotas_sin_tarjeta
 
 ---
 ------------
@@ -100,7 +110,7 @@ available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda, mercad
 ----[mla]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm, mercadocredito
+available_payments: credit, debit, mercadopago, efectivo, atm, cuotas_sin_tarjeta
 
 ----
 ------------
@@ -108,7 +118,7 @@ available_payments: credit, debit, mercadopago, efectivo, atm, mercadocredito
 ----[mlm]---- 
 
 ---
-available_payments: credit, debit, mercadopago, efectivo, atm, moneda, mercadocredito
+available_payments: credit, debit, mercadopago, efectivo, atm, moneda, cuotas_sin_tarjeta_mlm
 
 ----
 ------------

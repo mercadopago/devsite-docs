@@ -65,7 +65,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 }'
 ```
 
-Upon completing these steps, the checkout will have been integrated into the marketplace and will be ready to process payments.
+Upon completing these steps, the checkout will have been integrated into the marketplace and will be ready to process payments. Keep in mind that the Split payments solution allows for payments using available balance between Mercado Pago accounts. Transfers from external financial institutions are not permitted.
 
 > WARNING
 >

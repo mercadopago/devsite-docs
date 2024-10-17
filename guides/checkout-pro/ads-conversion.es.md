@@ -2,13 +2,21 @@
 
 El análisis de conversión de anuncios permite evaluar la relevancia y el retorno de los anuncios creados. Por ello, Checkout Pro ofrece integración con las plataformas Facebook Ads y Google Ads, permitiéndote asociar pagos a campañas comerciales.
 
-----[mla, mlb]----
+----[mla]----
 
 > NOTE
 >
 > Importante
 >
-> Solo se asociarán pagos aprobados al instante con tarjetas de crédito y débito, efectivo en Mercado Pago o Mercado Créditos.
+> Solo se asociarán pagos aprobados al instante con tarjetas de crédito y débito, efectivo en Mercado Pago o Cuotas sin Tarjeta.
+------------
+----[mlb]----
+
+> NOTE
+>
+> Importante
+>
+> Solo se asociarán pagos aprobados al instante con tarjetas de crédito y débito, efectivo en Mercado Pago o Linha de Crédito.
 ------------
 
 

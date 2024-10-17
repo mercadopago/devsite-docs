@@ -37,7 +37,6 @@ In the table below, you will find the nomenclature that each payment type and me
 |American Express|`amex`|`credit_card`|American Express, MercadoPagoPro and MercadoPagoWallet|
 |Elo|`elo`|`credit_card`|Elo, MercadoPagoPro y MercadoPagoWallet|
 |Hipercard|`hipercard`|`credit_card`|Hipercard, MercadoPagoPro y MercadoPagoWallet|
-|PEC|`pec`|`ticket`|MercadoPagoPro and MercadoPagoOff|
 |Boleto|`bolbradesco`|`ticket`|Boleto Bancário, MercadoPagoPro and MercadoPagoOff|
 |Pix|`pix`|`bank_transfer`|Pix and MercadoPagoPro|
 

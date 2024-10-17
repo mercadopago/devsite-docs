@@ -1,7 +1,13 @@
-----[mla, mlb, mlu, mco, mlc, mpe]----
+----[mla, mlb]----
 # Financiación sin tarjeta
 
-**Mercado Crédito** es el método de financiación de Mercado Pago que ofrece la opción de pagar en cuotas sin contar con una tarjeta.
+------------
+----[mlm]----
+# Compra ahora, paga después
+
+------------
+----[mlb]----
+**Linha de Crédito** es el método de financiación de Mercado Pago que ofrece la opción de pagar en cuotas sin contar con una tarjeta.
 
 Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántas cuotas quiere pagar.
 
@@ -9,15 +15,27 @@ Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredit
 >
 > Importante
 >
-> Además de las opciones disponibles en esta documentación, también es posible configurar **cuotas sin tarjeta** utilizando el **Brick de Wallet**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para obtener más detalles.
+> Además de las opciones disponibles en esta documentación, también es posible configurar a **Linha de Crédito** utilizando el **Brick de Wallet**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para obtener más detalles.
+
+En esta guía encontrarás los pasos necesarios para ofrecer la Linha de Crédito en tu tienda.
+
+------------
+----[mla]----
+**Cuotas sin Tarjeta** es el método de financiación de Mercado Pago que ofrece la opción de pagar en cuotas sin contar con una tarjeta.
+
+Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántas cuotas quiere pagar.
+
+> NOTE
+>
+> Importante
+>
+> Además de las opciones disponibles en esta documentación, también es posible configurar **Cuotas sin Tarjeta** utilizando el **Brick de Wallet**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/wallet-brick/default-rendering#editor_2) de Wallet para obtener más detalles.
 
 En esta guía encontrarás los pasos necesarios para ofrecer cuotas sin tarjeta en tu tienda.
 
 ------------
 ----[mlm]----
-# Financiamiento sin tarjeta
-
-**Mercado Crédito** es el método de financiación de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta.
+**Meses sin Tarjeta** es el método de financiación de Mercado Pago que ofrece la opción de pagar en mensualidades sin contar con una tarjeta.
 
 Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredita en su totalidad en la cuenta del vendedor, mientras que el cliente puede optar por pagar en hasta 12 pagos fijos mensuales, sin necesidad de contar con una tarjeta. El usuario solamente tendrá que ingresar a su cuenta de Mercado Pago (o crear una), conocer su límite disponible y elegir en cuántos meses quiere pagar.
 
@@ -27,7 +45,7 @@ Con esta línea de crédito, administrada por Mercado Pago, el dinero se acredit
 >
 > Además de las opciones disponibles en esta documentación, también es posible integrar pagos con tarjeta a través de la **SDK de React**. Consulte la documentación [SDK JS - React](/developers/es/docs/sdks-library/client-side/sdk-js-react-installation) para obtener más información.
 
-En esta guía encontrarás los pasos necesarios para ofrecer meses sin tarjeta en tu tienda.
+En esta guía encontrarás los pasos necesarios para ofrecer Meses sin Tarjeta en tu tienda.
 
 ------------
 
@@ -41,7 +59,18 @@ En esta guía encontrarás los pasos necesarios para ofrecer meses sin tarjeta e
 
 Preferencia es un conjunto de información sobre un producto y/o servicio que te permiten definir el nombre, el método de pago y otros atributos necesarios para obtener la URL para iniciar el flujo de pago al finalizar la compra.
 
-La primera etapa para configurar los pagos con Mercado Crédito es la creación de la preferencia. Para esto, envía un POST con el parámetro `purpose` y el valor `onboarding_credits` al **endpoint** [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de los SDKs indicados a continuación.
+----[mlb]----
+La primera etapa para configurar los pagos con Linha de Crédito es la creación de la preferencia. Para esto, envía un POST con el parámetro `purpose` y el valor `onboarding_credits` al **endpoint** [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de los SDKs indicados a continuación.
+
+------------
+----[mlm]----
+La primera etapa para configurar los pagos con Meses sin Tarjeta es la creación de la preferencia. Para esto, envía un POST con el parámetro `purpose` y el valor `onboarding_credits` al **endpoint** [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de los SDKs indicados a continuación.
+
+------------
+----[mla]----
+La primera etapa para configurar los pagos con Cuotas sin Tarjeta es la creación de la preferencia. Para esto, envía un POST con el parámetro `purpose` y el valor `onboarding_credits` al **endpoint** [/checkout/preferences](/developers/es/reference/preferences/_checkout_preferences/post) y ejecuta la solicitud o, si lo prefieres, utiliza uno de los SDKs indicados a continuación.
+
+------------
 
 [[[
 ```php
@@ -251,15 +280,27 @@ mp.bricks().create("wallet", "wallet_container", {
 
 ```
 ]]]
-
-¡Listo! Al completar los pasos descritos anteriormente, el botón de pago se mostrará en la pantalla y habrás completado la integración. Sigue los siguientes pasos para explicar a tus clientes cómo funciona Mercado Crédito.
+----[mlb]----
+¡Listo! Al completar los pasos descritos anteriormente, el botón de pago se mostrará en la pantalla y habrás completado la integración. Sigue los siguientes pasos para explicar a tus clientes cómo funciona la Linha de Crédito.
 
 1. [Crea una cuenta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) o ingresa en Mercado Pago. Si usas **Mercado Libre**, ¡ya tienes cuenta!
-----[mla, mlb]----
-2. Elige **Mercado Crédito** y la cantidad de cuotas en las que quieres pagar.
+2. Elige **Linha de Crédito** y la cantidad de cuotas en las que quieres pagar.
 3. Después paga mes a mes tus cuotas desde la **app de Mercado Pago**.
+
 ------------
 ----[mlm]----
-2. Elige Mercado Crédito y la cantidad de mensualidades en las que quieras pagar.
+¡Listo! Al completar los pasos descritos anteriormente, el botón de pago se mostrará en la pantalla y habrás completado la integración. Sigue los siguientes pasos para explicar a tus clientes cómo funciona Meses sin Tarjeta.
+
+1. [Crea una cuenta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) o ingresa en Mercado Pago. Si usas **Mercado Libre**, ¡ya tienes cuenta!
+2. Elige Meses sin Tarjeta y la cantidad de mensualidades en las que quieras pagar.
 3. Después paga tus mensualidades desde la app de Mercado Pago.
+
+------------
+----[mla]----
+¡Listo! Al completar los pasos descritos anteriormente, el botón de pago se mostrará en la pantalla y habrás completado la integración. Sigue los siguientes pasos para explicar a tus clientes cómo funciona Cuotas sin Tarjeta.
+
+1. [Crea una cuenta](https://www.mercadopago[FAKER][URL][DOMAIN]/hub/registration/landing) o ingresa en Mercado Pago. Si usas **Mercado Libre**, ¡ya tienes cuenta!
+2. Elige **Cuotas sin Tarjeta** y la cantidad de cuotas en las que quieres pagar.
+3. Después paga mes a mes tus cuotas desde la **app de Mercado Pago**.
+
 ------------

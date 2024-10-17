@@ -14,7 +14,7 @@ Abaixo você encontra uma lista com os plugins que permitem adicionar o `integra
 
 - [Woocommerce](/developers/pt/docs/woocommerce/introduction)
 - [Prestashop](/developers/pt/docs/prestashop/landing)
-- [Magento](/developers/pt/docs/magento-two/landing)
+- [Adobe Commerce](/developers/pt/docs/adobe-commerce/landing)
 - [VTEX](/developers/pt/docs/vtex/introduction)
 
 Para mais detalhes sobre como e por que utilizar o `integrator_id` nas suas integrações, acesse nossa [FAQ](https://www.mercadopago.com/developers/pt/support/23937).
@@ -40,12 +40,11 @@ MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
 ```
 ```node
 ===
-Adicione os códigos de identificação e substitua com o valor necessário: <code>INTEGRATOR\_ID</code> e <code>PLATFORM_ID</code>.
+Adicione os códigos de identificação e substitua com o valor necessário: <code>INTEGRATOR\_ID</code>.
 ===
-mercadopago.configure({
-    platform_id: 'PLATFORM_ID',
-    integrator_id: 'INTEGRATOR_ID',
-});
+const  requestOptions = {
+'integratorId': 'INTEGRATOR_ID',
+};
 ```
 ```java
 ===

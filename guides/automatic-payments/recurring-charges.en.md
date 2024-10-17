@@ -867,6 +867,16 @@ curl --location --request POST 'https://api.mercadopago.com/v1/card_tokens' \
 
 Use the previously generated token to register the payment, indicating the customer ID associated with the card.
 
+----[mlc]----
+
+> WARNING
+>
+> Important
+>
+> The charge value must be an integer. In other words, **decimal places cannot be used**.
+
+------------
+
 [[[
 ```php
 <?php

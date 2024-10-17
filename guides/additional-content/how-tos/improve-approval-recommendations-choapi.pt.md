@@ -203,7 +203,7 @@ Por último, envie a informação obtida no campo `device` ao criar o `card_toke
 
 Para otimizar a validação de segurança dos pagamentos e melhorar as aprovações, é importante fazer **o envio do máximo de dados sobre o comprador e o produto**.
 
-Se atente a todos os atributos disponíveis ao criar um pagamento usando o método [Criar pagamento](/developers/pt/reference/payments/_payments/post). Preste atenção especialmente aos atributos em `“adicional_inf”`, como:
+Se atente a todos os atributos disponíveis ao criar um pagamento usando o método [Criar pagamento](/developers/pt/reference/payments/_payments/post). Preste atenção especialmente aos atributos em `additional_info`, como:
  * Dados do comprador,
  * Dados do produto,
  * Dados do envio.
@@ -222,4 +222,4 @@ Se, em vez disso, você quiser garantir uma interface otimizada, pode utilizar o
 > 
 > Importante
 >
-> Recomendamos avaliar a [qualidade de sua integração](/developers/pt/guides/additional-content/homologator/homologator) antes de entrar em produção para verificar se você está cumprindo os padrões de qualidade e segurança do Mercado Pago que garantem uma boa taxa de aprovação de pagamentos.
+> Recomendamos verificar os resultados da [medição da qualidade da sua integração](/developers/pt/guides/additional-content/homologator/homologator) antes de entrar em produção, seja ela realizada de maneira manual ou automática. Isso permitirá validar o cumprimento dos padrões de qualidade e segurança do Mercado Pago, além de fornecer ações para melhorar sua taxa de aprovação de pagamentos.

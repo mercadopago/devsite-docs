@@ -22,7 +22,7 @@ Para actualizar tu plugin e instalar la nueva versión, simplemente sigue los pa
 | Cuotas **con** interés                          | ✅           | ✅              |
 | Secure Fields / PCI                             | ✅           | ✅              |
 | Cuotas **sin** interés                          | ✅           | ✅              |
-| Buy Now Pay Later - Mercado Crédito              | ✅           | ❌              |
+| Buy Now Pay Later - ----[mlb]---- Linha de Crédito------------ ----[mlm]----Meses sin Tarjeta------------ ----[mla]----Cuotas sin Tarjeta------------              | ✅           | ❌              |
 | Pagos con 2 tarjetas                            | ✅           | ❌              |
 | Refunds directamente a través de la plataforma   | ✅           | ❌              |
 | Fecha de vencimiento en medios offline           | ✅           | ❌              |

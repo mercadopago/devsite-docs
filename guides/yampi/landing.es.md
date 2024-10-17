@@ -30,7 +30,7 @@ bullet_section_with_media:
 >>>> Tipos de pago aceptados <<<<
 
 ---
-available_payments: credit, debit, mercadopago, boleto, pix, pec, moneda
+available_payments: credit, debit, mercadopago, boleto, pix, moneda
 
 ---
 

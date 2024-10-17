@@ -144,8 +144,8 @@
                         "type": "string",
                         "description": {
                           "en": "ID of the currency used in the payment.",
-                          "pt": "Identificador da moeda utilizada no pagamento",
-                          "es": "Identificador de la moneda utilizada en el pago"
+                          "pt": "Identificador da moeda utilizada no pagamento.",
+                          "es": "Identificador de la moneda utilizada en el pago."
                         },
                         "example": "ARS",
                         "enum": [
@@ -231,17 +231,17 @@
                       {
                         "title": "pending",
                         "description": {
-                          "en": "Subscription without a payment method",
-                          "es": "Subscription without a payment method",
-                          "pt": "Subscription without a payment method"
+                          "en": "Subscription without a payment method.",
+                          "es": "Suscripción sin método de pago.",
+                          "pt": "Assinatura sem método de pagamento."
                         }
                       },
                       {
                         "title": "authorized",
                         "description": {
-                          "en": "Subscription with a payment method",
-                          "es": "Subscription with a payment method",
-                          "pt": "Subscription with a payment method"
+                          "en": "Subscription with a payment method.",
+                          "es": "Suscripción con método de pago.",
+                          "pt": "Assinatura com método de pagamento."
                         }
                       }
                     ]
@@ -277,7 +277,7 @@
                       "example": 0,
                       "description": {
                         "en": "How many times the subscription was modified.",
-                        "pt": "Quantas vezes a assinatura foi modificada",
+                        "pt": "Quantas vezes a assinatura foi modificada.",
                         "es": "Cantidad de veces que esta suscripción fue modificada."
                       }
                     },
@@ -373,7 +373,7 @@
                             {
                               "title": "days",
                               "description": {
-                                "en": "Indicate a frequency in units of days",
+                                "en": "Indicate a frequency in units of days.",
                                 "es": "Indica una frecuencia en unidades de días.",
                                 "pt": "Indica uma frequência em unidades de dias."
                               }
@@ -412,8 +412,8 @@
                           "type": "string",
                           "description": {
                             "en": "ID of the currency used in the payment.",
-                            "pt": "Identificador da moeda utilizada no pagamento",
-                            "es": "Identificador de la moneda utilizada en el pago"
+                            "pt": "Identificador da moeda utilizada no pagamento.",
+                            "es": "Identificador de la moneda utilizada en el pago."
                           },
                           "example": "ARS",
                           "enum": [
@@ -513,7 +513,7 @@
                                 {
                                   "title": "days",
                                   "description": {
-                                    "en": "Indicate a frequency in units of days",
+                                    "en": "Indicate a frequency in units of days.",
                                     "es": "Indica una frecuencia en unidades de días.",
                                     "pt": "Indica uma frequência em unidades de dias."
                                   }
@@ -521,7 +521,7 @@
                                 {
                                   "title": "months",
                                   "description": {
-                                    "en": "Indicate a frequency in units of months",
+                                    "en": "Indicate a frequency in units of months.",
                                     "es": "Indica una frecuencia en unidades de meses.",
                                     "pt": "Indica uma frequência em unidades de meses."
                                   }
@@ -572,16 +572,16 @@
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "en": "Creation date",
-                        "pt": "Data de criação",
-                        "es": "Fecha de creación"
+                        "en": "Creation date.",
+                        "pt": "Data de criação.",
+                        "es": "Fecha de creación."
                       }
                     },
                     "last_modified": {
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "en": "Date of last modification",
+                        "en": "Date of last modification.",
                         "pt": "Data da última modificação.",
                         "es": "Fecha de última modificación."
                       }
@@ -599,16 +599,16 @@
                           "title": "pending",
                           "description": {
                             "en": "Subscription without a payment method",
-                            "es": "Subscription without a payment method",
-                            "pt": "Subscription without a payment method"
+                            "es": "Suscripción sin un método de pago.",
+                            "pt": "Assinatura sem um método de pagamento."
                           }
                         },
                         {
                           "title": "authorized",
                           "description": {
-                            "en": "Subscription with a payment method",
-                            "es": "Subscription with a payment method",
-                            "pt": "Subscription with a payment method"
+                            "en": "Subscription with a payment method.",
+                            "es": "Suscripción con método de pago.",
+                            "pt": "Assinatura com método de pagamento."
                           }
                         }
                       ]
@@ -845,16 +845,16 @@
                             "title": "true",
                             "description": {
                               "en": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                              "es": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                              "pt": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis."
+                              "es": "Cobrar un monto proporcional basado en los días restantes en el próximo ciclo de facturación. Los ciclos de facturación siempre se calculan sobre una base de 30 días.",
+                              "pt": "Cobrar um valor proporcional com base nos dias restantes no próximo ciclo de faturamento. Os ciclos de faturamento são sempre calculados com base em 30 dias."
                             }
                           },
                           {
                             "title": "false",
                             "description": {
                               "en": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
-                              "es": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
-                              "pt": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                              "es": "Cobrar el monto de la suscripción independientemente de cuándo el cliente se suscriba en el ciclo de facturación.",
+                              "pt": "Cobrar o valor da assinatura independentemente de quando o cliente se inscreve no ciclo de faturamento."
                             }
                           }
                         ]
@@ -863,7 +863,7 @@
                         "type": "object",
                         "description": {
                           "en": "Free trial data.",
-                          "pt": "Informação de teste grátis",
+                          "pt": "Informação de teste grátis.",
                           "es": "Información sobre prueba gratuita."
                         },
                         "properties": {
@@ -896,7 +896,7 @@
                               {
                                 "title": "months",
                                 "description": {
-                                  "en": "Indicate a frequency in units of months",
+                                  "en": "Indicate a frequency in units of months.",
                                   "es": "Indica una frecuencia en unidades de meses.",
                                   "pt": "Indica uma frequência em unidades de meses."
                                 }
@@ -1023,8 +1023,8 @@
                             "type": "string",
                             "description": {
                               "en": "Payment method identifier.",
-                              "pt": "Id do meio de pagamento",
-                              "es": "Identificador del medio de pago"
+                              "pt": "ID do meio de pagamento.",
+                              "es": "Identificador del medio de pago."
                             },
                             "example": "bolbradesco"
                           }
@@ -1064,7 +1064,7 @@
                       "example": "2c938084726fca480172750000000000",
                       "description": {
                         "en": "Unique subscription plan identifier.",
-                        "pt": "Identificador único do plano de assinatura",
+                        "pt": "Identificador único do plano de assinatura.",
                         "es": "Identificador único del plan de suscripción."
                       }
                     },
@@ -1170,16 +1170,16 @@
                               "title": "true",
                               "description": {
                                 "en": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                                "es": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                                "pt": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis."
+                                "es": "Cobrar un monto proporcional basado en los días restantes en el próximo ciclo de facturación. Los ciclos de facturación siempre se calculan sobre una base de 30 días.",
+                                "pt": "Cobrar um valor proporcional com base nos dias restantes no próximo ciclo de faturamento. Os ciclos de faturamento são sempre calculados com base em 30 dias."
                               }
                             },
                             {
                               "title": "false",
                               "description": {
                                 "en": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
-                                "es": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
-                                "pt": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                                "es": "Cobrar el monto de la suscripción independientemente de cuándo el cliente se suscriba en el ciclo de facturación.",
+                                "pt": "Cobrar o valor da assinatura independentemente de quando o cliente se inscreve no ciclo de faturamento."
                               }
                             }
                           ]
@@ -1188,7 +1188,7 @@
                           "type": "object",
                           "description": {
                             "en": "Free trial data.",
-                            "pt": "Informação de teste grátis",
+                            "pt": "Informação de teste grátis.",
                             "es": "Información sobre prueba gratuita."
                           },
                           "properties": {
@@ -1221,7 +1221,7 @@
                                 {
                                   "title": "months",
                                   "description": {
-                                    "en": "Indicate a frequency in units of months",
+                                    "en": "Indicate a frequency in units of months.",
                                     "es": "Indica una frecuencia en unidades de meses.",
                                     "pt": "Indica uma frequência em unidades de meses."
                                   }
@@ -1243,8 +1243,8 @@
                           "type": "string",
                           "description": {
                             "en": "ID of the currency used in the payment.",
-                            "pt": "Identificador da moeda utilizada no pagamento",
-                            "es": "Identificador de la moneda utilizada en el pago"
+                            "pt": "Identificador da moeda utilizada no pagamento.",
+                            "es": "Identificador de la moneda utilizada en el pago."
                           },
                           "enum": [
                             {
@@ -1347,8 +1347,8 @@
                               "type": "string",
                               "description": {
                                 "en": "Payment method identifier.",
-                                "pt": "Id do meio de pagamento",
-                                "es": "Identificador del medio de pago"
+                                "pt": "Id do meio de pagamento.",
+                                "es": "Identificador del medio de pago."
                               },
                               "example": "bolbradesco"
                             }
@@ -1387,25 +1387,25 @@
                       "type": "string",
                       "example": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000",
                       "description": {
-                        "en": "Url to checkout to add payment method",
-                        "pt": "URL de checkout para adicionar um meio de pagamento",
-                        "es": "URL al checkout para agregar el método de pago"
+                        "en": "Url to checkout to add payment method.",
+                        "pt": "URL de checkout para adicionar um meio de pagamento.",
+                        "es": "URL al checkout para agregar el método de pago."
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2022-01-01T15:12:25.892Z",
                       "description": {
-                        "en": "Creation date",
-                        "pt": "Data de criação",
-                        "es": "Fecha de creación"
+                        "en": "Creation date.",
+                        "pt": "Data de criação.",
+                        "es": "Fecha de creación."
                       }
                     },
                     "last_modified": {
                       "type": "string",
                       "example": "2022-01-01T15:12:25.892Z",
                       "description": {
-                        "en": "Date of last modification",
+                        "en": "Date of last modification.",
                         "pt": "Data da última modificação.",
                         "es": "Fecha de última modificación."
                       }
@@ -1422,7 +1422,7 @@
                         {
                           "title": "active",
                           "description": {
-                            "en": "Plan available to create subscriptions",
+                            "en": "Plan available to create subscriptions.",
                             "es": "Plan disponible para crear suscripciones.",
                             "pt": "Plano disponível para criar assinaturas."
                           }
@@ -1430,7 +1430,7 @@
                         {
                           "title": "cancelled",
                           "description": {
-                            "en": "Plan not available to create subscriptions",
+                            "en": "Plan not available to create subscriptions.",
                             "es": "Plan no disponible para crear suscripciones.",
                             "pt": "Plano indisponível para criar assinaturas."
                           }
@@ -1581,9 +1581,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Subscription identifier",
-              "pt": "Identificador de assinatura",
-              "es": "Identificador de suscripción"
+              "en": "Subscription identifier.",
+              "pt": "Identificador de assinatura.",
+              "es": "Identificador de suscripción."
             },
             "required": true,
             "schema": {
@@ -1609,7 +1609,7 @@
                       "example": "2c938084726fca480172750000000000",
                       "description": {
                         "en": "Unique subscription identifier.",
-                        "pt": "Identificador único de assinatura",
+                        "pt": "Identificador único de assinatura.",
                         "es": "Identificador único de suscripción."
                       }
                     },
@@ -1617,9 +1617,9 @@
                       "type": "number",
                       "example": 0,
                       "description": {
-                        "en": "Indicates how many times the subscription was modified",
-                        "pt": "Indica quantas vezes uma assinatura foi modificada",
-                        "es": "Indica cuántas veces se modificó la suscripción"
+                        "en": "Indicates how many times the subscription was modified.",
+                        "pt": "Indica quantas vezes uma assinatura foi modificada.",
+                        "es": "Indica cuántas veces se modificó la suscripción."
                       }
                     },
                     "application_id": {
@@ -1714,7 +1714,7 @@
                             {
                               "title": "days",
                               "description": {
-                                "en": "Indicate a frequency in units of days",
+                                "en": "Indicate a frequency in units of days.",
                                 "es": "Indica una frecuencia en unidades de días.",
                                 "pt": "Indica uma frequência em unidades de dias."
                               }
@@ -1722,7 +1722,7 @@
                             {
                               "title": "months",
                               "description": {
-                                "en": "Indicate a frequency in units of months",
+                                "en": "Indicate a frequency in units of months.",
                                 "es": "Indica una frecuencia en unidades de meses.",
                                 "pt": "Indica uma frequência em unidades de meses."
                               }
@@ -1753,8 +1753,8 @@
                           "type": "string",
                           "description": {
                             "en": "ID of the currency used in the payment.",
-                            "pt": "Identificador da moeda utilizada no pagamento",
-                            "es": "Identificador de la moneda utilizada en el pago"
+                            "pt": "Identificador da moeda utilizada no pagamento.",
+                            "es": "Identificador de la moneda utilizada en el pago."
                           },
                           "example": "ARS",
                           "enum": [
@@ -1829,7 +1829,7 @@
                           "type": "object",
                           "description": {
                             "en": "Free trial data.",
-                            "pt": "Informação de teste grátis",
+                            "pt": "Informação de teste grátis.",
                             "es": "Información sobre prueba gratuita."
                           },
                           "properties": {
@@ -1854,7 +1854,7 @@
                                 {
                                   "title": "days",
                                   "description": {
-                                    "en": "Indicate a frequency in units of days",
+                                    "en": "Indicate a frequency in units of days.",
                                     "es": "Indica una frecuencia en unidades de días.",
                                     "pt": "Indica uma frequência em unidades de dias."
                                   }
@@ -1862,7 +1862,7 @@
                                 {
                                   "title": "months",
                                   "description": {
-                                    "en": "Indicate a frequency in units of months",
+                                    "en": "Indicate a frequency in units of months.",
                                     "es": "Indica una frecuencia en unidades de meses.",
                                     "pt": "Indica uma frequência em unidades de meses."
                                   }
@@ -1876,9 +1876,9 @@
                     "first_invoice_offset": {
                       "type": "number",
                       "description": {
-                        "en": "Number of days to collect the first invoice",
-                        "pt": "Número de dias para cobrar a primeira fatura",
-                        "es": "Número de días para cobrar la primera factura"
+                        "en": "Number of days to collect the first invoice.",
+                        "pt": "Número de dias para cobrar a primeira fatura.",
+                        "es": "Número de días para cobrar la primera factura."
                       },
                       "example": 7
                     },
@@ -1922,26 +1922,26 @@
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "en": "Creation date",
-                        "pt": "Data de criação",
-                        "es": "Fecha de creación"
+                        "en": "Creation date.",
+                        "pt": "Data de criação.",
+                        "es": "Fecha de creación."
                       }
                     },
                     "last_modified": {
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "es": "Date of last modification.",
-                        "pt": "Date of last modification.",
+                        "es": "Fecha de la última modificación.",
+                        "pt": "Data da última modificação.",
                         "en": "Date of last modification."
                       }
                     },
                     "summarized": {
                       "type": "object",
                       "description": {
-                        "en": "Summary information on subscription invoices and charges",
-                        "pt": "Informações resumidas sobre faturas e cobranças de assinatura",
-                        "es": "Información resumida sobre facturas y cargos de suscripción"
+                        "en": "Summary information on subscription invoices and charges.",
+                        "pt": "Informações resumidas sobre faturas e cobranças de assinatura.",
+                        "es": "Información resumida sobre facturas y cargos de suscripción."
                       },
                       "properties": {
                         "quotas": {
@@ -1957,7 +1957,7 @@
                           "type": "number",
                           "description": {
                             "en": "Total charged of charged quotas.",
-                            "pt": "Total cobrado de parcelas",
+                            "pt": "Total cobrado de parcelas.",
                             "es": "Total cobrado de cuotas."
                           },
                           "example": 3
@@ -1984,7 +1984,7 @@
                           "type": "number",
                           "description": {
                             "en": "Amount pending collection.",
-                            "pt": "Valor pendente de cobrança",
+                            "pt": "Valor pendente de cobrança.",
                             "es": "Importe pendiente de cobro."
                           },
                           "example": 200
@@ -2064,7 +2064,7 @@
                         {
                           "title": "pending",
                           "description": {
-                            "en": "Preapproval without a payment method",
+                            "en": "Preapproval without a payment method.",
                             "es": "Suscripción sin un medio de pago.",
                             "pt": "Assinatura sem um meio de pagamento."
                           }
@@ -2072,7 +2072,7 @@
                         {
                           "title": "authorized",
                           "description": {
-                            "en": "Preapproval with a valid payment method",
+                            "en": "Preapproval with a valid payment method.",
                             "es": "Suscripción con un medio de pago válido.",
                             "pt": "Assinatura com um meio de pagamento válido."
                           }
@@ -2080,7 +2080,7 @@
                         {
                           "title": "paused",
                           "description": {
-                            "en": "Preapproval with temporally discontinued collection of payments",
+                            "en": "Preapproval with temporally discontinued collection of payments.",
                             "es": "Suscripción con cobro de pagos temporalmente descontinuado.",
                             "pt": "Assinatura com cobrança de pagamentos temporariamente descontinuada."
                           }
@@ -2088,7 +2088,7 @@
                         {
                           "title": "cancelled",
                           "description": {
-                            "en": "Preapproval terminated. This is an irreversible state",
+                            "en": "Preapproval terminated. This is an irreversible state.",
                             "es": "Suscripción terminada. Este es un estado irreversible.",
                             "pt": "Assinatura finalizada. Este status é irreversível."
                           }
@@ -2229,8 +2229,8 @@
         ],
         "description": {
           "en": "Renew the data of a subscription. Indicate the preapproval ID and send the body with the information you want to update. You can update reason, amount, payment method, status and other information that compose the subscription",
-          "pt": "Renove os dados de uma assinatura. Indique o ID da assinatura e envie o body com as informações que deseja atualizar. Você pode atualizar o motivo, valor, forma de pagamento, status e outras informações que compõem a assinatura.",
-          "es": "Renovar datos de suscripción. Ingrese el ID de suscripción y envíe el body con la información que desea actualizar. Podrás actualizar el motivo, monto, medio de pago, status y demás información que conforma la suscripción."
+          "pt": "Renove os dados de uma assinatura. Indique o ID da assinatura e envie o body com as informações que deseja atualizar. Você pode atualizar o motivo, valor, forma de pagamento, status e outras informações que compõem a assinatura",
+          "es": "Renovar datos de suscripción. Ingrese el ID de suscripción y envíe el body con la información que desea actualizar. Podrás actualizar el motivo, monto, medio de pago, status y demás información que conforma la suscripción"
         },
         "parameters": [
           {
@@ -2302,8 +2302,8 @@
                         "type": "string",
                         "description": {
                           "en": "ID of the currency used in the payment.",
-                          "pt": "Identificador da moeda utilizada no pagamento",
-                          "es": "Identificador de la moneda utilizada en el pago"
+                          "pt": "Identificador da moeda utilizada no pagamento.",
+                          "es": "Identificador de la moneda utilizada en el pago."
                         },
                         "example": "ARS",
                         "enum": [
@@ -2414,7 +2414,7 @@
                       {
                         "title": "authorized",
                         "description": {
-                          "en": "Preapproval with a valid payment method",
+                          "en": "Preapproval with a valid payment method.",
                           "es": "Suscripción con un medio de pago válido.",
                           "pt": "Assinatura com um meio de pagamento válido."
                         }
@@ -2422,7 +2422,7 @@
                       {
                         "title": "paused",
                         "description": {
-                          "en": "Preapproval with temporally discontinued collection of payments",
+                          "en": "Preapproval with temporally discontinued collection of payments.",
                           "es": "Suscripción con cobro de pagos temporalmente descontinuado.",
                           "pt": "Assinatura com cobrança de pagamentos temporariamente descontinuada."
                         }
@@ -2459,7 +2459,7 @@
                       "example": "2c938084726fca480172750000000000",
                       "description": {
                         "en": "Unique subscription identifier.",
-                        "pt": "Identificador único de assinatura",
+                        "pt": "Identificador único de assinatura.",
                         "es": "Identificador único de suscripción."
                       }
                     },
@@ -2564,7 +2564,7 @@
                             {
                               "title": "days",
                               "description": {
-                                "en": "Indicate a frequency in units of days",
+                                "en": "Indicate a frequency in units of days.",
                                 "es": "Indica una frecuencia en unidades de días.",
                                 "pt": "Indica uma frequência em unidades de dias."
                               }
@@ -2572,7 +2572,7 @@
                             {
                               "title": "months",
                               "description": {
-                                "en": "Indicate a frequency in units of months",
+                                "en": "Indicate a frequency in units of months.",
                                 "es": "Indica una frecuencia en unidades de meses.",
                                 "pt": "Indica uma frequência em unidades de meses."
                               }
@@ -2603,8 +2603,8 @@
                           "type": "string",
                           "description": {
                             "en": "ID of the currency used in the payment.",
-                            "pt": "Identificador da moeda utilizada no pagamento",
-                            "es": "Identificador de la moneda utilizada en el pago"
+                            "pt": "Identificador da moeda utilizada no pagamento.",
+                            "es": "Identificador de la moneda utilizada en el pago."
                           },
                           "example": "ARS",
                           "enum": [
@@ -2679,7 +2679,7 @@
                           "type": "object",
                           "description": {
                             "en": "Free trial data.",
-                            "pt": "Informação de teste grátis",
+                            "pt": "Informação de teste grátis.",
                             "es": "Información sobre prueba gratuita."
                           },
                           "properties": {
@@ -2704,7 +2704,7 @@
                                 {
                                   "title": "days",
                                   "description": {
-                                    "en": "Indicate a frequency in units of days",
+                                    "en": "Indicate a frequency in units of days.",
                                     "es": "Indica una frecuencia en unidades de días.",
                                     "pt": "Indica uma frequência em unidades de dias."
                                   }
@@ -2712,7 +2712,7 @@
                                 {
                                   "title": "months",
                                   "description": {
-                                    "en": "Indicate a frequency in units of months",
+                                    "en": "Indicate a frequency in units of months.",
                                     "es": "Indica una frecuencia en unidades de meses.",
                                     "pt": "Indica uma frequência em unidades de meses."
                                   }
@@ -2726,9 +2726,9 @@
                     "first_invoice_offset": {
                       "type": "number",
                       "description": {
-                        "en": "Number of days to collect the first invoice",
-                        "pt": "Número de dias para cobrar a primeira fatura",
-                        "es": "Número de días para cobrar la primera factura"
+                        "en": "Number of days to collect the first invoice.",
+                        "pt": "Número de dias para cobrar a primeira fatura.",
+                        "es": "Número de días para cobrar la primera factura."
                       },
                       "example": 7
                     },
@@ -2790,16 +2790,16 @@
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "en": "Creation date",
-                        "pt": "Data de criação",
-                        "es": "Fecha de creación"
+                        "en": "Creation date.",
+                        "pt": "Data de criação.",
+                        "es": "Fecha de creación."
                       }
                     },
                     "last_modified": {
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "en": "Date of last modification",
+                        "en": "Date of last modification.",
                         "pt": "Data da última modificação.",
                         "es": "Fecha de última modificación."
                       }
@@ -2807,9 +2807,9 @@
                     "summarized": {
                       "type": "object",
                       "description": {
-                        "en": "Summary information on subscription invoices and charges",
-                        "pt": "Informações resumidas sobre faturas e cobranças de assinatura",
-                        "es": "Información resumida sobre facturas y cargos de suscripción"
+                        "en": "Summary information on subscription invoices and charges.",
+                        "pt": "Informações resumidas sobre faturas e cobranças de assinatura.",
+                        "es": "Información resumida sobre facturas y cargos de suscripción."
                       },
                       "properties": {
                         "quotas": {
@@ -2825,7 +2825,7 @@
                           "type": "number",
                           "description": {
                             "en": "Total charged of charged quotas.",
-                            "pt": "Total cobrado de parcelas",
+                            "pt": "Total cobrado de parcelas.",
                             "es": "Total cobrado de cuotas."
                           },
                           "example": 3
@@ -2852,7 +2852,7 @@
                           "type": "number",
                           "description": {
                             "en": "Amount pending collection.",
-                            "pt": "Valor pendente de cobrança",
+                            "pt": "Valor pendente de cobrança.",
                             "es": "Importe pendiente de cobro."
                           },
                           "example": 200
@@ -3080,7 +3080,7 @@
             "required": true,
             "description": {
               "en": "ID of the collector requesting the subscriptions.",
-              "pt": "ID do collector solicitando a assinatura",
+              "pt": "ID do collector solicitando a assinatura.",
               "es": "ID del collector que solicita las suscripciones."
             },
             "schema": {
@@ -3202,7 +3202,7 @@
                       "example": "2c9380847cc2c422017cc489094f0001",
                       "description": {
                         "en": "Unique subscription identifier.",
-                        "pt": "Identificador único de assinatura",
+                        "pt": "Identificador único de assinatura.",
                         "es": "Identificador único de suscripción."
                       }
                     },
@@ -3263,7 +3263,7 @@
                           "title": "paused",
                           "description": {
                             "en": "Preapproval with temporally discontinued collection of payments.",
-                            "es": "Preaprobación con cobro de pagos temporalmente descontinuado",
+                            "es": "Preaprobación con cobro de pagos temporalmente descontinuado.",
                             "pt": "Assinatura com cobrança de pagamentos temporariamente descontinuada."
                           }
                         },
@@ -3309,7 +3309,7 @@
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "en": "Date of last modification",
+                        "en": "Date of last modification.",
                         "pt": "Data da última modificação.",
                         "es": "Fecha de última modificación."
                       }
@@ -3459,8 +3459,8 @@
                     "has_billing_day": {
                       "type": "boolean",
                       "description": {
-                        "es": "Indicates if the subscription has a billing day or not.",
-                        "pt": "Indicates if the subscription has a billing day or not.",
+                        "es": "Indica si la suscripción tiene un día de facturación o no.",
+                        "pt": "Indica se a assinatura tem um dia de cobrança ou não.",
                         "en": "Indicates if the subscription has a billing day or not."
                       },
                       "example": false
@@ -3487,16 +3487,16 @@
                           "title": "true",
                           "description": {
                             "en": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                            "es": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis.",
-                            "pt": "Charge a proportional amount based on the days remaining in the next billing cycle. Billing cycles are always calculated on a 30-day basis."
+                            "es": "Cobrar un monto proporcional basado en los días restantes en el próximo ciclo de facturación. Los ciclos de facturación siempre se calculan sobre una base de 30 días.",
+                            "pt": "Cobrar um valor proporcional com base nos dias restantes no próximo ciclo de faturamento. Os ciclos de faturamento são sempre calculados com base em 30 dias."
                           }
                         },
                         {
                           "title": "false",
                           "description": {
                             "en": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
-                            "es": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe.",
-                            "pt": "Charge the amount of the subscription regardless of when in the billing cycle customer subscribe."
+                            "es": "Cobrar el monto de la suscripción, independientemente de cuándo el cliente se suscriba en el ciclo de facturación.",
+                            "pt": "Cobrar o valor da assinatura, independentemente de quando o cliente se inscrever no ciclo de faturamento."
                           }
                         }
                       ]
@@ -3514,7 +3514,7 @@
                       "type": "number",
                       "description": {
                         "en": "Total charged of charged quotas.",
-                        "pt": "Total cobrado de parcelas",
+                        "pt": "Total cobrado de parcelas.",
                         "es": "Total cobrado de cuotas."
                       },
                       "example": 20
@@ -3541,7 +3541,7 @@
                       "type": "number",
                       "description": {
                         "en": "Amount pending collection.",
-                        "pt": "Valor pendente de cobrança",
+                        "pt": "Valor pendente de cobrança.",
                         "es": "Importe pendiente de cobro."
                       },
                       "example": 20
@@ -3747,9 +3747,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Authorized payment identifier",
-              "pt": "Identificador de pagamento autorizado",
-              "es": "Identificador de pago autorizado"
+              "en": "Authorized payment identifier.",
+              "pt": "Identificador de pagamento autorizado.",
+              "es": "Identificador de pago autorizado."
             },
             "required": true,
             "schema": {
@@ -3791,7 +3791,7 @@
                         {
                           "title": "scheduled",
                           "description": {
-                            "en": "Payment automatically generated and scheduled by the recurrence engine",
+                            "en": "Payment automatically generated and scheduled by the recurrence engine.",
                             "pt": "Pagamento gerado e agendado automaticamente pelo mecanismo de recorrência.",
                             "es": "Pago generado y programado automáticamente por el motor de recurrencia."
                           }
@@ -3847,8 +3847,8 @@
                       "type": "string",
                       "description": {
                         "en": "ID of the currency used in the payment.",
-                        "pt": "Identificador da moeda utilizada no pagamento",
-                        "es": "Identificador de la moneda utilizada en el pago"
+                        "pt": "Identificador da moeda utilizada no pagamento.",
+                        "es": "Identificador de la moneda utilizada en el pago."
                       },
                       "example": "ARS",
                       "enum": [
@@ -4028,8 +4028,8 @@
                           "type": "string",
                           "description": {
                             "en": "Payment status.",
-                            "pt": "Estado do pagamento",
-                            "es": "Estado del pago"
+                            "pt": "Estado do pagamento.",
+                            "es": "Estado del pago."
                           },
                           "example": "approved",
                           "enum": [
@@ -4375,7 +4375,7 @@
                             "type": "number",
                             "description": {
                               "en": "Unique invoice identifier.",
-                              "pt": "Identificador único de fatura",
+                              "pt": "Identificador único de fatura.",
                               "es": "Identificador único de factura."
                             },
                             "example": 6114264375
@@ -4392,7 +4392,7 @@
                               {
                                 "title": "scheduled",
                                 "description": {
-                                  "en": "Payment automatically generated and scheduled by the recurrence engine",
+                                  "en": "Payment automatically generated and scheduled by the recurrence engine.",
                                   "es": "Pagamento gerado e agendado automaticamente pelo mecanismo de recorrência.",
                                   "pt": "Pago automaticamente gerado e programado pelo mecanismo de recorrência."
                                 }
@@ -4448,8 +4448,8 @@
                             "type": "string",
                             "description": {
                               "en": "ID of the currency used in the payment.",
-                              "pt": "Identificador da moeda utilizada no pagamento",
-                              "es": "Identificador de la moneda utilizada en el pago"
+                              "pt": "Identificador da moeda utilizada no pagamento.",
+                              "es": "Identificador de la moneda utilizada en el pago."
                             },
                             "example": "ARS",
                             "enum": [
@@ -4550,7 +4550,7 @@
                               {
                                 "title": "scheduled",
                                 "description": {
-                                  "en": "Authorized payment scheduled to collect",
+                                  "en": "Authorized payment scheduled to collect.",
                                   "es": "Pago autorizado programado para cobrar.",
                                   "pt": "Agendada a cobrança para um pagamento autorizado."
                                 }
@@ -4558,7 +4558,7 @@
                               {
                                 "title": "processed",
                                 "description": {
-                                  "en": "Authorized payment collected or exceeded retries",
+                                  "en": "Authorized payment collected or exceeded retries.",
                                   "es": "Pago autorizado cobrado o que excedió los reintentos.",
                                   "pt": "Pagamento autorizado cobrado ou que excedeu as tentativas."
                                 }
@@ -4566,7 +4566,7 @@
                               {
                                 "title": "recycling",
                                 "description": {
-                                  "en": "Authorized payment in attempt to collect",
+                                  "en": "Authorized payment in attempt to collect.",
                                   "es": "Pago autorizado en proceso de cobro.",
                                   "pt": "Pagamento autorizado em tentativa de cobrança."
                                 }
@@ -4574,7 +4574,7 @@
                               {
                                 "title": "cancelled",
                                 "description": {
-                                  "en": "Authorized payment canceled",
+                                  "en": "Authorized payment canceled.",
                                   "es": "Pago autorizado cancelado.",
                                   "pt": "Pagamento autorizado foi cancelado."
                                 }
@@ -4585,7 +4585,7 @@
                             "type": "string",
                             "description": {
                               "en": "Summarization status of the invoice result in the subscription.",
-                              "pt": "Resumo do status da fatura na assinatura",
+                              "pt": "Resumo do status da fatura na assinatura.",
                               "es": "Estado de resumen del resultado de la factura en la suscripción."
                             },
                             "example": "pending",
@@ -4629,7 +4629,7 @@
                                 "type": "string",
                                 "description": {
                                   "en": "Payment status.",
-                                  "pt": "Estado do pagamento",
+                                  "pt": "Estado do pagamento.",
                                   "es": "Estado del pago"
                                 },
                                 "example": "approved",
@@ -4661,7 +4661,7 @@
                                   {
                                     "title": "in_process",
                                     "description": {
-                                      "en": "Payment is being reviewed",
+                                      "en": "Payment is being reviewed.",
                                       "es": "El pago está siendo revisado.",
                                       "pt": "O pagamento está sendo revisado."
                                     }
@@ -4837,9 +4837,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Subscription plan identifier",
-              "pt": "Identificador do plano de assinatura",
-              "es": "Identificador del plan de suscripción"
+              "en": "Subscription plan identifier.",
+              "pt": "Identificador do plano de assinatura.",
+              "es": "Identificador del plan de suscripción."
             },
             "required": true,
             "schema": {
@@ -4865,7 +4865,7 @@
                       "example": "2c938084726fca480172750000000000",
                       "description": {
                         "en": "Unique subscription plan identifier.",
-                        "pt": "Identificador único do plano de assinatura",
+                        "pt": "Identificador único do plano de assinatura.",
                         "es": "Identificador único del plan de suscripción."
                       }
                     },
@@ -5032,9 +5032,9 @@
                             "first_invoice_offset": {
                               "type": "number",
                               "description": {
-                                "en": "Number of days to collect the first invoice",
-                                "pt": "Número de dias para cobrar a primeira fatura",
-                                "es": "Número de días para cobrar la primera factura"
+                                "en": "Number of days to collect the first invoice.",
+                                "pt": "Número de dias para cobrar a primeira fatura.",
+                                "es": "Número de días para cobrar la primera factura."
                               },
                               "example": 7
                             }
@@ -5053,8 +5053,8 @@
                           "type": "string",
                           "description": {
                             "en": "ID of the currency used in the payment.",
-                            "pt": "Identificador da moeda utilizada no pagamento",
-                            "es": "Identificador de la moneda utilizada en el pago"
+                            "pt": "Identificador da moeda utilizada no pagamento.",
+                            "es": "Identificador de la moneda utilizada en el pago."
                           },
                           "example": "ARS",
                           "enum": [
@@ -5157,8 +5157,8 @@
                               "type": "string",
                               "description": {
                                 "en": "Payment method identifier.",
-                                "pt": "Id do meio de pagamento",
-                                "es": "Identificador del medio de pago"
+                                "pt": "ID do meio de pagamento.",
+                                "es": "Identificador del medio de pago."
                               },
                               "example": "bolbradesco"
                             }
@@ -5197,25 +5197,25 @@
                       "type": "string",
                       "example": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000",
                       "description": {
-                        "en": "URL to start the subscription flow",
-                        "pt": "URL para iniciar o fluxo de assinatura",
-                        "es": "URL para comenzar el flujo de suscripción"
+                        "en": "URL to start the subscription flow.",
+                        "pt": "URL para iniciar o fluxo de assinatura.",
+                        "es": "URL para comenzar el flujo de suscripción."
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "en": "Creation date",
-                        "pt": "Data de criação",
-                        "es": "Fecha de creación"
+                        "en": "Creation date.",
+                        "pt": "Data de criação.",
+                        "es": "Fecha de creación."
                       }
                     },
                     "last_modified": {
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "en": "Date of last modification",
+                        "en": "Date of last modification.",
                         "pt": "Data da última modificação.",
                         "es": "Fecha de última modificación."
                       }
@@ -5360,9 +5360,9 @@
             "name": "id",
             "in": "path",
             "description": {
-              "en": "Subscription plan identifier",
-              "pt": "Identificador do plano de assinatura",
-              "es": "Identificador del plan de suscripción"
+              "en": "Subscription plan identifier.",
+              "pt": "Identificador do plano de assinatura.",
+              "es": "Identificador del plan de suscripción."
             },
             "required": true,
             "schema": {
@@ -5480,7 +5480,7 @@
                         "type": "object",
                         "description": {
                           "en": "Free trial data.",
-                          "pt": "Informação de teste grátis",
+                          "pt": "Informação de teste grátis.",
                           "es": "Información sobre prueba gratuita."
                         },
                         "properties": {
@@ -5536,8 +5536,8 @@
                         "type": "string",
                         "description": {
                           "en": "ID of the currency used in the payment.",
-                          "pt": "Identificador da moeda utilizada no pagamento",
-                          "es": "Identificador de la moneda utilizada en el pago"
+                          "pt": "Identificador da moeda utilizada no pagamento.",
+                          "es": "Identificador de la moneda utilizada en el pago."
                         },
                         "example": "ARS",
                         "enum": [
@@ -5640,8 +5640,8 @@
                             "type": "string",
                             "description": {
                               "en": "Payment method identifier.",
-                              "pt": "Id do meio de pagamento",
-                              "es": "Identificador del medio de pago"
+                              "pt": "ID do meio de pagamento.",
+                              "es": "Identificador del medio de pago."
                             },
                             "example": "bolbradesco"
                           }
@@ -5680,7 +5680,7 @@
                       "example": "2c938084726fca480172750000000000",
                       "description": {
                         "en": "Unique subscription plan identifier.",
-                        "pt": "Identificador único do plano de assinatura",
+                        "pt": "Identificador único do plano de assinatura.",
                         "es": "Identificador único del plan de suscripción."
                       }
                     },
@@ -5829,7 +5829,7 @@
                                 {
                                   "title": "days",
                                   "description": {
-                                    "en": "Indicate a frequency in units of days",
+                                    "en": "Indicate a frequency in units of days.",
                                     "es": "Indica una frecuencia en unidades de días.",
                                     "pt": "Indica uma frequência em unidades de dias."
                                   }
@@ -5837,7 +5837,7 @@
                                 {
                                   "title": "months",
                                   "description": {
-                                    "en": "Indicate a frequency in units of months",
+                                    "en": "Indicate a frequency in units of months.",
                                     "es": "Indica una frecuencia en unidades de meses.",
                                     "pt": "Indica uma frequência em unidades de meses."
                                   }
@@ -5847,9 +5847,9 @@
                             "first_invoice_offset": {
                               "type": "number",
                               "description": {
-                                "en": "Number of days to collect the first invoice",
-                                "pt": "Número de dias para cobrar a primeira fatura",
-                                "es": "Número de días para cobrar la primera factura"
+                                "en": "Number of days to collect the first invoice.",
+                                "pt": "Número de dias para cobrar a primeira fatura.",
+                                "es": "Número de días para cobrar la primera factura."
                               },
                               "example": 7
                             }
@@ -5868,8 +5868,8 @@
                           "type": "string",
                           "description": {
                             "en": "ID of the currency used in the payment.",
-                            "pt": "Identificador da moeda utilizada no pagamento",
-                            "es": "Identificador de la moneda utilizada en el pago"
+                            "pt": "Identificador da moeda utilizada no pagamento.",
+                            "es": "Identificador de la moneda utilizada en el pago."
                           },
                           "example": "ARS",
                           "enum": [
@@ -5972,8 +5972,8 @@
                               "type": "string",
                               "description": {
                                 "en": "Payment method identifier.",
-                                "pt": "Id do meio de pagamento",
-                                "es": "Identificador del medio de pago"
+                                "pt": "ID do meio de pagamento.",
+                                "es": "Identificador del medio de pago."
                               },
                               "example": "bolbradesco"
                             }
@@ -6012,25 +6012,25 @@
                       "type": "string",
                       "example": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000",
                       "description": {
-                        "en": "URL to start the subscription flow",
-                        "pt": "URL para iniciar o fluxo de assinatura",
-                        "es": "URL para comenzar el flujo de suscripción"
+                        "en": "URL to start the subscription flow.",
+                        "pt": "URL para iniciar o fluxo de assinatura.",
+                        "es": "URL para comenzar el flujo de suscripción."
                       }
                     },
                     "date_created": {
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "en": "Creation date",
-                        "pt": "Data de criação",
-                        "es": "Fecha de creación"
+                        "en": "Creation date.",
+                        "pt": "Data de criação.",
+                        "es": "Fecha de creación."
                       }
                     },
                     "last_modified": {
                       "type": "string",
                       "example": "2022-01-01T11:12:25.892-04:00",
                       "description": {
-                        "en": "Date of last modification",
+                        "en": "Date of last modification.",
                         "pt": "Data da última modificação.",
                         "es": "Fecha de última modificación."
                       }
@@ -6039,15 +6039,15 @@
                       "type": "string",
                       "example": "active",
                       "description": {
-                        "es": "status",
-                        "pt": "status",
-                        "en": "status"
+                        "es": "Status",
+                        "pt": "Status",
+                        "en": "Status"
                       },
                       "enum": [
                         {
                           "title": "active",
                           "description": {
-                            "en": "Plan available to create subscriptions",
+                            "en": "Plan available to create subscriptions.",
                             "es": "Plan disponible para crear suscripciones.",
                             "pt": "Plano disponível para criar assinaturas."
                           }
@@ -6055,7 +6055,7 @@
                         {
                           "title": "cancelled",
                           "description": {
-                            "en": "Plan not available to create subscriptions",
+                            "en": "Plan not available to create subscriptions.",
                             "es": "Plan no disponible para crear suscripciones.",
                             "pt": "Plano indisponível para criar assinaturas."
                           }
@@ -6428,7 +6428,7 @@
                                   {
                                     "title": "days",
                                     "description": {
-                                      "en": "Indicate a frequency in units of days",
+                                      "en": "Indicate a frequency in units of days.",
                                       "es": "Indica una frecuencia en unidades de días.",
                                       "pt": "Indica uma frequência em unidades de dias."
                                     }
@@ -6436,7 +6436,7 @@
                                   {
                                     "title": "months",
                                     "description": {
-                                      "en": "Indicate a frequency in units of months",
+                                      "en": "Indicate a frequency in units of months.",
                                       "es": "Indica una frecuencia en unidades de meses.",
                                       "pt": "Indica uma frequência em unidades de meses."
                                     }
@@ -6517,7 +6517,7 @@
                                       {
                                         "title": "days",
                                         "description": {
-                                          "en": "Indicate a frequency in units of days",
+                                          "en": "Indicate a frequency in units of days.",
                                           "es": "Indica una frecuencia en unidades de días.",
                                           "pt": "Indica uma frequência em unidades de dias."
                                         }
@@ -6525,7 +6525,7 @@
                                       {
                                         "title": "months",
                                         "description": {
-                                          "en": "Indicate a frequency in units of months",
+                                          "en": "Indicate a frequency in units of months.",
                                           "es": "Indica una frecuencia en unidades de meses.",
                                           "pt": "Indica uma frequência em unidades de meses."
                                         }
@@ -6556,8 +6556,8 @@
                                 "type": "string",
                                 "description": {
                                   "en": "ID of the currency used in the payment.",
-                                  "pt": "Identificador da moeda utilizada no pagamento",
-                                  "es": "Identificador de la moneda utilizada en el pago"
+                                  "pt": "Identificador da moeda utilizada no pagamento.",
+                                  "es": "Identificador de la moneda utilizada en el pago."
                                 },
                                 "example": "ARS",
                                 "enum": [
@@ -6660,8 +6660,8 @@
                                     "type": "string",
                                     "description": {
                                       "en": "Payment method identifier.",
-                                      "pt": "Id do meio de pagamento",
-                                      "es": "Identificador del medio de pago"
+                                      "pt": "ID do meio de pagamento.",
+                                      "es": "Identificador del medio de pago."
                                     },
                                     "example": "bolbradesco"
                                   }
@@ -6700,25 +6700,25 @@
                             "type": "string",
                             "example": "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084726fca480172750000000000",
                             "description": {
-                              "en": "URL to start the subscription flow",
-                              "pt": "URL para iniciar o fluxo de assinatura",
-                              "es": "URL para comenzar el flujo de suscripción"
+                              "en": "URL to start the subscription flow.",
+                              "pt": "URL para iniciar o fluxo de assinatura.",
+                              "es": "URL para comenzar el flujo de suscripción."
                             }
                           },
                           "date_created": {
                             "type": "string",
                             "example": "2022-01-01T11:12:25.892-04:00",
                             "description": {
-                              "en": "Creation date",
-                              "pt": "Data de criação",
-                              "es": "Fecha de creación"
+                              "en": "Creation date.",
+                              "pt": "Data de criação.",
+                              "es": "Fecha de creación."
                             }
                           },
                           "last_modified": {
                             "type": "string",
                             "example": "2022-01-01T11:12:25.892-04:00",
                             "description": {
-                              "en": "Date of last modification",
+                              "en": "Date of last modification.",
                               "pt": "Data da última modificação.",
                               "es": "Fecha de última modificación."
                             }
@@ -6744,7 +6744,7 @@
                               {
                                 "title": "active",
                                 "description": {
-                                  "en": "Plan available to create subscriptions",
+                                  "en": "Plan available to create subscriptions.",
                                   "es": "Plan disponible para crear suscripciones.",
                                   "pt": "Plano disponível para criar assinaturas."
                                 }
@@ -6752,7 +6752,7 @@
                               {
                                 "title": "cancelled",
                                 "description": {
-                                  "en": "Plan not available to create subscriptions",
+                                  "en": "Plan not available to create subscriptions.",
                                   "es": "Plan no disponible para crear suscripciones.",
                                   "pt": "Plano indisponível para criar assinaturas."
                                 }
@@ -7047,17 +7047,17 @@
                 {
                   "title": "asc",
                   "description": {
-                    "en": "Ascending sort",
-                    "es": "Ascending sort",
-                    "pt": "Ascending sort"
+                    "en": "Ascending sort.",
+                    "es": "Ascending sort.",
+                    "pt": "Ascending sort."
                   }
                 },
                 {
                   "title": "desc",
                   "description": {
-                    "en": "Descending sort",
-                    "es": "Descending sort",
-                    "pt": "Descending sort"
+                    "en": "Descending sort.",
+                    "es": "Descending sort.",
+                    "pt": "Descending sort."
                   }
                 }
               ]
@@ -7159,7 +7159,7 @@
                             "example": "2c938084726fca480172750000000000",
                             "description": {
                               "en": "Unique subscription identifier.",
-                              "pt": "Identificador único de assinatura",
+                              "pt": "Identificador único de assinatura.",
                               "es": "Identificador único de suscripción."
                             }
                           },
@@ -7167,9 +7167,9 @@
                             "type": "number",
                             "example": 0,
                             "description": {
-                              "en": "Indicates how many times the subscription was modified",
-                              "pt": "Indica quantas vezes uma assinatura foi modificada",
-                              "es": "Indica cuántas veces se modificó la suscripción"
+                              "en": "Indicates how many times the subscription was modified.",
+                              "pt": "Indica quantas vezes uma assinatura foi modificada.",
+                              "es": "Indica cuántas veces se modificó la suscripción."
                             }
                           },
                           "application_id": {
@@ -7264,7 +7264,7 @@
                                   {
                                     "title": "days",
                                     "description": {
-                                      "en": "Indicate a frequency in units of days",
+                                      "en": "Indicate a frequency in units of days.",
                                       "es": "Indica una frecuencia en unidades de días.",
                                       "pt": "Indica uma frequência em unidades de dias."
                                     }
@@ -7272,7 +7272,7 @@
                                   {
                                     "title": "months",
                                     "description": {
-                                      "en": "Indicate a frequency in units of months",
+                                      "en": "Indicate a frequency in units of months.",
                                       "es": "Indica una frecuencia en unidades de meses.",
                                       "pt": "Indica uma frequência em unidades de meses."
                                     }
@@ -7303,8 +7303,8 @@
                                 "type": "string",
                                 "description": {
                                   "en": "ID of the currency used in the payment.",
-                                  "pt": "Identificador da moeda utilizada no pagamento",
-                                  "es": "Identificador de la moneda utilizada en el pago"
+                                  "pt": "Identificador da moeda utilizada no pagamento.",
+                                  "es": "Identificador de la moneda utilizada en el pago."
                                 },
                                 "example": "ARS",
                                 "enum": [
@@ -7379,7 +7379,7 @@
                                 "type": "object",
                                 "description": {
                                   "en": "Free trial data.",
-                                  "pt": "Informação de teste grátis",
+                                  "pt": "Informação de teste grátis.",
                                   "es": "Información sobre prueba gratuita."
                                 },
                                 "properties": {
@@ -7404,7 +7404,7 @@
                                       {
                                         "title": "days",
                                         "description": {
-                                          "en": "Indicate a frequency in units of days",
+                                          "en": "Indicate a frequency in units of days.",
                                           "es": "Indica una frecuencia en unidades de días.",
                                           "pt": "Indica uma frequência em unidades de dias."
                                         }
@@ -7412,7 +7412,7 @@
                                       {
                                         "title": "months",
                                         "description": {
-                                          "en": "Indicate a frequency in units of months",
+                                          "en": "Indicate a frequency in units of months.",
                                           "es": "Indica una frecuencia en unidades de meses.",
                                           "pt": "Indica uma frequência em unidades de meses."
                                         }
@@ -7426,9 +7426,9 @@
                           "first_invoice_offset": {
                             "type": "number",
                             "description": {
-                              "en": "Number of days to collect the first invoice",
-                              "pt": "Número de dias para cobrar a primeira fatura",
-                              "es": "Número de días para cobrar la primera factura"
+                              "en": "Number of days to collect the first invoice.",
+                              "pt": "Número de dias para cobrar a primeira fatura.",
+                              "es": "Número de días para cobrar la primera factura."
                             },
                             "example": 7
                           },
@@ -7454,7 +7454,7 @@
                             "type": "string",
                             "description": {
                               "en": "Customer lastname.",
-                              "pt": "Sobrenome do cliente",
+                              "pt": "Sobrenome do cliente.",
                               "es": "Apellido del cliente."
                             },
                             "example": "Smith"
@@ -7490,16 +7490,16 @@
                             "type": "string",
                             "example": "2022-01-01T11:12:25.892-04:00",
                             "description": {
-                              "en": "Creation date",
-                              "pt": "Data de criação",
-                              "es": "Fecha de creación"
+                              "en": "Creation date.",
+                              "pt": "Data de criação.",
+                              "es": "Fecha de creación."
                             }
                           },
                           "last_modified": {
                             "type": "string",
                             "example": "2022-01-01T11:12:25.892-04:00",
                             "description": {
-                              "en": "Date of last modification",
+                              "en": "Date of last modification.",
                               "pt": "Data da última modificação.",
                               "es": "Fecha de última modificación."
                             }
@@ -7507,9 +7507,9 @@
                           "summarized": {
                             "type": "object",
                             "description": {
-                              "en": "Summary information on subscription invoices and charges",
-                              "pt": "Informações resumidas sobre faturas e cobranças de assinatura",
-                              "es": "Información resumida sobre facturas y cargos de suscripción"
+                              "en": "Summary information on subscription invoices and charges.",
+                              "pt": "Informações resumidas sobre faturas e cobranças de assinatura.",
+                              "es": "Información resumida sobre facturas y cargos de suscripción."
                             },
                             "properties": {
                               "quotas": {
@@ -7525,7 +7525,7 @@
                                 "type": "number",
                                 "description": {
                                   "en": "Total charged of charged quotas.",
-                                  "pt": "Total cobrado de parcelas",
+                                  "pt": "Total cobrado de parcelas.",
                                   "es": "Total cobrado de cuotas."
                                 },
                                 "example": 3
@@ -7552,7 +7552,7 @@
                                 "type": "number",
                                 "description": {
                                   "en": "Amount pending collection.",
-                                  "pt": "Valor pendente de cobrança",
+                                  "pt": "Valor pendente de cobrança.",
                                   "es": "Importe pendiente de cobro."
                                 },
                                 "example": 200
@@ -7688,9 +7688,9 @@
                         {
                           "title": "400",
                           "description": {
-                            "en": "Bad-request",
-                            "es": "Bad-request",
-                            "pt": "Bad-request"
+                            "en": "Bad request",
+                            "es": "Bad request",
+                            "pt": "Bad request"
                           }
                         }
                       ]

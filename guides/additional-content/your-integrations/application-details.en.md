@@ -46,42 +46,24 @@ This way, the application will be successfully deleted.
 >
 > When deleting an application, please note that your store will lose the ability to receive payments through the integration associated with that application. Additionally, all settings, including associated credentials, will be lost. **Once an application is deleted, it cannot be recovered**.
 
-## Application quality
+## Application quality measurement
 
-In this section, we will ensure that your application meets the quality and security requirements necessary to provide the best experience for both sellers and buyers with Mercado Pago. [Click here](/developers/en/guides/additional-content/homologator/homologator) and learn all the necessary information to know how to properly homologate your integration.
+The [quality measurement](/developers/en/docs/integration-quality) is the final stage of the integration process, where you can validate whether it meets the necessary quality and security requirements to provide the best experience for both sellers and buyers.
 
-----[mla, mlm, mlu, mco, mlc, mpe]----
+There are two ways to measure the quality of your integration:
+ * **Manual:** you can conduct the measurement on your own whenever you prefer. You only need a `payment ID` from a payment made with production credentials and access **“Integration Quality"** in the side menu, where you can find the step-by-step instructions.
 
-> WARNING
->
-> Importante
->
-> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.
-> <br><br>
-> It is necessary that the application is registered with an integration of a product from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout API,](/developers/en/docs/checkout-api/landing) [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point.](/developers/en/docs/mp-point/landing)
-
-------------
-----[mlb]----
+ * **Automatic:** From the 1st to the 7th of each month, Mercado Pago conducts a periodic quality measurement for all integrations with **Checkout Pro, Checkout ----[mla, mlm, mlu, mco, mlc, mpe]----API------------ ----[mlb]----Transparente------------, Checkout Bricks, and Mercado Pago Point** that have a payment made with production credentials.
 
 > WARNING
 >
-> Importante
+> Important
 >
-> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment.
-> <br><br>
-> It is necessary that the application is registered with an integration of a product from those where the measuring tool is available. For now, the integration quality measuring tool is only available for integrations with [Checkout Pro,](/developers/en/docs/checkout-pro/landing) [Checkout Transparente,](/developers/en/docs/checkout-api/landing) [Checkout Bricks](/developers/en/docs/checkout-bricks/landing) and [Mercado Pago Point.](/developers/en/docs/mp-point/landing)
+> The only way to evaluate the quality of an integration with **QR Code** is by performing a manual measurement. Integrations with **Plugins and Platforms** cannot be evaluated.
 
-------------
+As a result of this measurement, you will receive a score indicating how secure and aligned your application's configuration is with Mercado Pago's best integration practices, along with necessary recommendations for adjustments if needed.
 
-### Evaluate quality
-
-The score indicates how secure and aligned with Mercado Pago's integration best practices your application's configuration is.
-
-By clicking on **Evaluate quality**, you will initiate the review process of your integration. During this assessment, our measurement tool will identify areas for improvement and guide you to make the necessary changes to your integration. This process involves reviewing a series of associated fields.
-
-Access [Integration quality](/developers/en/docs/integration-quality) and learn all the necessary information to know how to measure the quality of your application.
-
-> Before starting the evaluation, make sure that the application has been approved in the production environment, including the completion of at least one productive payment. 
+For more details, refer to the documentation on [integration quality](/developers/en/guides/additional-content/homologator/homologator).
 
 ## Integration test
 

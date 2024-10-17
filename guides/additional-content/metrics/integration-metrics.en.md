@@ -12,9 +12,9 @@ Certified members of the Mercado Pago's partner program, the [&lt;dev>program](h
 
  Below you will find a list of plugins that allow adding the `integrator_id` at the moment of the integration.
 
- - [Woocommerce](/developers/en/docs/woocommerce/introduction)
+- [Woocommerce](/developers/en/docs/woocommerce/introduction)
 - [Prestashop](/developers/en/docs/prestashop/landing)
-- [Magento](/developers/en/docs/magento-two/landing)
+- [Adobe Commerce](/developers/en/docs/adobe-commerce/landing)
 - [VTEX](/developers/en/docs/vtex/introduction)
 
 For more details on how and why to use `integrator_id` in your integrations, access our [FAQ](https://www.mercadopago.com/developers/en/support/23937).
@@ -40,12 +40,11 @@ MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
 ```
 ```node
 ===
-Add the identification codes and replace with the necessary value: <code>INTEGRATOR\_ID</code> and <code>PLATFORM_ID</code>.
+Add the identification codes and replace with the necessary value: <code>INTEGRATOR\_ID</code>.
 ===
-Mercadopago.configure({
-platform_id: 'PLATFORM_ID',
-integrator_id: 'INTEGRATOR_ID',
-});
+const  requestOptions = {
+'integratorId': 'INTEGRATOR_ID',
+};
 ```
 ```java
 ===

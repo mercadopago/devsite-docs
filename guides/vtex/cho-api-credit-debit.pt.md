@@ -10,7 +10,7 @@ Para configurar esses meios de pagamento, acesse o painel de administração da 
     1. Digite o **Nome da regra**, que permitirá identificar esse meio de pagamento. 
     2. Em **Processo com a afiliação**, selecione **MercadoPagoV2**. 
     3. No campo **Status**, ative a condição de pagamento usando o botão deslizante. 
-    4. Para ativar o pagamento parcelado, selecione a opção **Automático**. Será oferecida a opção de financiamento previamente configurada na conta do vendedor do Mercado Pago. Consulte a seção "Parcelamento e acréscimos" para obter mais informações.
+    4. Para ativar o pagamento parcelado, selecione a opção **Parcelas** e insira manualmente a quantidade de parcelas aceitas, que deve corresponder às habilitadas na sua conta do Mercado Pago. Além disso, atribua manualmente a porcentagem de acréscimos. **Importante**: atualmente, essa configuração só permite pagamentos em parcelas sem acréscimos.
 
 > NOTE
 >

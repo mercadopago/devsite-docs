@@ -24,8 +24,8 @@ Ao instalar o [Checkout Pro](/developers/pt/docs/checkout-pro/landing), é poss�
 7. Na seção **Escolha os meios de pagamento aceitos na loja**, escolha quais tipos e meios de pagamento serão aceitos na loja através do Checkout Pro, podendo ser:
 ----[mlb]----
     - **Cartões de débito e crédito**: Marque a caixa de seleção nas bandeiras dos cartões que serão aceitos em sua loja.
-    - **Dinheiro (saldo da conta Mercado Pago, boleto bancário e lotérica)**.
-    - **Transferência bancária (Pix e PEC)**: A opção de pagamento Pix só será exibida se houver uma Chave Pix cadastrada no Mercado Pago.
+    - **Dinheiro (saldo da conta Mercado Pago e boleto bancário)**.
+    - **Transferência bancária (Pix)**: A opção de pagamento Pix só será exibida se houver uma Chave Pix cadastrada no Mercado Pago.
     - **Parcelamento sem cartão**: Ao configurar o Checkout Pro, você pode oferecer a opção de pagar em até 12 parcelas sem cartão. Caso queira exibir esta opção no checkout da sua loja, acesse a [documentação](/developers/pt/docs/woocommerce/payments-configuration/mercado-credito). 
 
 ![Activate and configure](/images/woocomerce/cho-pro-convert-payments-methods-pt.png)

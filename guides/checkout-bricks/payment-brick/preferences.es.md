@@ -330,8 +330,12 @@ Para activar esta opción de pago, ve a tus "[opciones de negocio](https://www.m
 
 ## Acepta pagos únicamente de usuarios registrados
 
-----[mla, mlb]----
-Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas, dinero disponible y Mercado Crédito.
+----[mla]----
+Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas, dinero disponible y Cuotas sin Tarjeta.
+
+------------
+----[mlb]----
+Puedes aceptar pagos con la billetera de Mercado Pago exclusivamente de usuarios registrados, con tarjetas, dinero disponible y Linha de Crédito.
 
 ------------
 ----[mlm, mlc, mco, mpe, mlu]----

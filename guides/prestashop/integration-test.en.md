@@ -35,21 +35,16 @@ Here's how to test the integration:
 ![Production credentials](/images/prestashop/test-prod-credentials-es.png)
 
 7. Go to the PrestaShop panel settings (**Modules > Module Manager**). Locate the Mercado Pago module in the "Payment" section, click on the downward arrow, and select **Configure**.
-8. Enter the production credentials `access_token` and `public_key` of the seller's test account in the **Production credentials** field.
-9. In the application created in step 5, click on **Test credentials** in the left menu. Copy the `access_token` and `public_key`.
-
-![Test credentials](/images/prestashop/test-test-credentials-es.png)
-
-10. Also, enter the test credentials `access_token` and `public_key` of the seller's test account in the **Test credentials** field.
+8. Enter the production credentials `access_token` and `public_key` of the seller's test account in the **Production Credentials** field and replicate the same information in the **Test Credentials** field.
 
 ![Panel](/images/prestashop/test-prestashop-es.png)
 
-11. Remember to keep the production mode enabled in the "Production" field.
+9. Remember to keep the production mode enabled in the "Production" field.
 
 ![Panel](/images/prestashop/test-prestashop-modeprod-es.png)
 
-12. Click on **Save**.
-13. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
+10. Click on **Save**.
+11. Open a new incognito window and log in to Mercado Pago using the buyer's test account created in step 3.
 
 > WARNING
 >
@@ -58,11 +53,11 @@ Here's how to test the integration:
 >  If you are required to authenticate with a code sent via email while logging into a test account or trying to access some sections in Your integrations, access our documentation to learn [how to validate your login with test users](/developers/en/docs/adobe-commerce/additional-content/your-integrations/test/accounts#bookmark_validate_login_with_test_users).
 
 ----[mlb]----
-14. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
+12. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as CPF, RG, phone, and email from the buyer's test account. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
 
 ------------
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
-14. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as phone and email from the buyer's test account. In "Documento," select the option **OTRO** and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
+12. In the same window logged in as a buyer, access your store and make a purchase by providing test information such as phone and email from the buyer's test account. In "Documento," select the option **OTRO** and enter 9 digits. Also, use the test cards available in the [documentation](/developers/en/docs/prestashop/additional-content/your-integrations/test/cards) corresponding.
 
 ------------
 ----[mlb]----

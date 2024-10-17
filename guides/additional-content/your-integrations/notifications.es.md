@@ -6,7 +6,7 @@ La activación de estos tópicos dependerá de la solución de Mercado Pago que 
 
 | Eventos | Nombre en Tus integraciones | Tópico | Productos asociados |
 |---|---|---|---|
-| Creación y actualización de pagos | Pagos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
+| Creación y actualización de pagos | Pagos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Suscripciones<br>----[mla, mlm, mlb]----Mercado Pago Point (solo para IPN)------------<br>Wallet Connect |
 | Pago recurrente de una suscripción (creación y actualización) | Planes y suscripciones | `subscription_authorized_payment` | Suscripciones |
 | Vinculación de una suscripción (creación y actualización) | Planes y suscripciones | `subscription_preapproval` | Suscripciones |
 | Vinculación de un plan de suscripción (creación y actualización) | Planes y suscripciones | `subscription_preapproval_plan` | Suscripciones |
@@ -28,5 +28,5 @@ Existen dos tipos de notificaciones para su configuración, como se muestra en l
 
 | Tipo | Descripción |
 | --- | --- |
-| **Webhooks** | **Recomendadas**. Utilizan HTTP REST para notificar instantáneamente las actualizaciones y ofrecen mayor seguridad en la integración mediante la clave secreta, un método de validación para garantizar que las notificaciones recibidas fueron enviadas por Mercado Pago.<br> Para aprender a configurar y simular el envío de estas notificaciones, accede a la [documentación de Webhooks](/developers/es/guides/additional-content/your-integrations/webhooks). |
-| **IPN** | Permite que la aplicación reciba notificaciones de Mercado Pago sobre el estado de un pago, contracargo o *merchant order* por medio de una llamada HTTP POST. La notificación puede tardar unos minutos en enviarse, y no permite realizar la validación de origen mediante el *header* `x-Signature`.<br> **Importante:** Las notificaciones IPN serán descontinuadas pronto. Por esto, recomendamos la utilización de las [notificaciones Webhooks](/developers/es/guides/additional-content/your-integrations/webhooks). |
+| **Webhooks** | **Recomendadas**. Utilizan HTTP REST para notificar instantáneamente las actualizaciones y ofrecen mayor seguridad en la integración mediante la clave secreta, un método de validación para garantizar que las notificaciones recibidas fueron enviadas por Mercado Pago.<br> Para aprender a configurar y simular el envío de estas notificaciones, accede a la [documentación de Webhooks](/developers/es/docs/your-integrations/notifications/webhooks). |
+| **IPN** | Permite que la aplicación reciba notificaciones de Mercado Pago sobre el estado de un pago, contracargo o *merchant order* por medio de una llamada HTTP POST. La notificación puede tardar unos minutos en enviarse, y no permite realizar la validación de origen mediante el *header* `x-Signature`.<br> **Importante:** Las notificaciones IPN serán descontinuadas pronto. Por esto, recomendamos la utilización de las [notificaciones Webhooks](/developers/es/docs/your-integrations/notifications/webhooks). |
