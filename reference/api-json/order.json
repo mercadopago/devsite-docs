@@ -75,7 +75,7 @@
                       "payments": {
                         "type": "array",
                         "description": {
-                          "en": "Contains information about the payment order. if you want to create an order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
+                          "en": "Contains information about the payment order. If you want to create an order with two cards, you can add an item to the array, dividing the total value of the transaction and indicating a different payment method for each one.",
                           "pt": "Contém informações sobre a order do pagamento. Caso deseje criar uma order com dois cartões, você pode adicionar um item ao array, dividindo o valor total da transação e indicando um meio de pagamento diferente em cada item.",
                           "es": "Contiene información sobre la order de pago. En caso de querer crear una order con dos tarjetas, puedes agregar un ítem al array, dividiendo el monto de la transacción y señalando un medio de pago diferente en cada uno. "
                         },
@@ -151,7 +151,7 @@
                     "type":"string",
                     "example":"Point Mini",
                     "description":{
-                      "en":"Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
+                      "en":"Description of the purchased product or service, the reason for the payment order, or the description of a product in the marketplace.",
                       "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
                       "es":"Descripción del producto o servicio comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
                     }
@@ -671,7 +671,7 @@
                                   }
                                 },
                                 {
-                                  "title": "invalid_installments",
+                                  "title": "processing_error",
                                   "description": {
                                     "en": "There was an error during processing.",
                                     "es": "Ocurrió un error durante el procesamiento.",
@@ -679,7 +679,7 @@
                                   }
                                 },
                                 {
-                                  "title": "processing_error",
+                                  "title": "invalid_installments",
                                   "description": {
                                     "en": "The installments amount selected when creating the transaction is invalid.",
                                     "es": "La cantidad de cuotas/meses seleccionada al crear la transacción es inválida.",
@@ -1511,7 +1511,7 @@
                                   }
                                 },
                                 {
-                                  "title": "invalid_installments",
+                                  "title": "processing_error",
                                   "description": {
                                     "en": "There was an error during processing.",
                                     "es": "Ocurrió un error durante el procesamiento.",
@@ -1519,7 +1519,7 @@
                                   }
                                 },
                                 {
-                                  "title": "processing_error",
+                                  "title": "invalid_installments",
                                   "description": {
                                     "en": "The installments amount selected when creating the transaction is invalid.",
                                     "es": "La cantidad de cuotas/meses seleccionada al crear la transacción es inválida.",
@@ -2427,9 +2427,9 @@
           "checkout-api"
         ],
         "description":{
-          "en":"This endpoint performs the full refund of all transactions associated with an order",
-          "pt":"Este endpoint executa a devolução total das transações associadas a uma order",
-          "es":"Este endpoint realiza la devolución completa de las transacciones asociadas a una order"
+          "en":"This endpoint performs the full refund of all transactions associated with an order. In case of success, the request will return a response with status 200",
+          "pt":"Este endpoint executa a devolução total das transações associadas a uma order. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Este endpoint realiza la devolución completa de las transacciones asociadas a una order. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters":[
           {
@@ -2444,6 +2444,20 @@
             "schema": {
               "type":"string",
               "example":"01J49MMW3SSBK5PSV3DFR32959"
+            }
+          },
+          {
+            "in":"header",
+            "name":"X-Idempotency-Key",
+            "required":true,
+            "schema":{
+              "type":"string",
+              "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
+            },
+            "description":{
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias."
             }
           }
         ],
@@ -4330,7 +4344,7 @@
                                   }
                                 },
                                 {
-                                  "title": "invalid_installments",
+                                  "title": "processing_error",
                                   "description": {
                                     "en": "There was an error during processing.",
                                     "es": "Ocurrió un error durante el procesamiento.",
@@ -4338,7 +4352,7 @@
                                   }
                                 },
                                 {
-                                  "title": "processing_error",
+                                  "title": "invalid_installments",
                                   "description": {
                                     "en": "The installments amount selected when creating the transaction is invalid.",
                                     "es": "La cantidad de cuotas/meses seleccionada al crear la transacción es inválida.",
@@ -4761,9 +4775,9 @@
           "checkout-api"
         ],
         "description":{
-          "en":"This endpoint allows to capture an order totally. Every payment will be captured in total",
-          "pt":"Este endpoint permite capturar a order totalmente. Cada payment será capturado totalmente",
-          "es":"Este endpoint permite capturar una order en su totalidad. Cada payment se capturará en su totalidad"
+          "en":"This endpoint allows to capture an order totally. Every payment will be captured in total. In case of success, the request will return a response with status 200",
+          "pt":"Este endpoint permite capturar a order totalmente. Cada payment será capturado totalmente. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Este endpoint permite capturar una order en su totalidad. Cada payment se capturará en su totalidad. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters":[
           {
@@ -4778,6 +4792,20 @@
             "schema": {
               "type":"string",
               "example":"01J49MMW3SSBK5PSV3DFR32959"
+            }
+          },
+          {
+            "in":"header",
+            "name":"X-Idempotency-Key",
+            "required":true,
+            "schema":{
+              "type":"string",
+              "example":"0d5020ed-1af6-469c-ae06-c3bec19954bb"
+            },
+            "description":{
+              "en":"This feature allows you to safely retry requests without the risk of accidentally performing the same action more than once. This is useful for avoiding errors, such as creating two identical payments. To ensure that each request is unique, it's important to use an exclusive value in the header of your request. We suggest using a UUID V4 or random strings.",
+              "pt":"Esta função permite repetir solicitações de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Isso é útil para evitar erros, como a criação de dois pagamentos idênticos. Para garantir que cada solicitação seja única, é importante usar um valor exclusivo no header da sua solicitação. Sugerimos o uso de um UUID V4 ou strings randômicas.",
+              "es":"Esta función permite repetir solicitudes de manera segura, sin el riesgo de realizar la misma acción más de una vez por error. Esto es útil para evitar errores, como la creación de dos pagos idénticos. Para garantizar que cada solicitud sea única, es importante utilizar un valor exclusivo en el encabezado de su solicitud. Sugerimos el uso de un UUID V4 o strings aleatorias."
             }
           }
         ],
