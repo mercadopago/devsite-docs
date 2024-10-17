@@ -101,7 +101,7 @@ available_payments: mercadopago, pse, credit, debit, efectivo
 ----[mlc]---- 
 
 ---
-available_payments: mercadopago, credit, debit
+available_payments: mercadopago, credit, debit, fintoc
 
 ----
 ------------
