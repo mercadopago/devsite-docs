@@ -34,7 +34,6 @@ Set up notifications for each application directly in [Your integrations](/devel
 >
 > This configuration method is not available for ----[mla, mlb, mlu, mlc]----QR Code or------------ Subscriptions integrations. To set up notifications for either of these integrations, use the [Configuration during payment creation](/developers/en/docs/your-integrations/notifications/webhooks#bookmark_configuration_during_payment_creation) method.
 
-
 ### 1. Specify URLs and configure events
 
 To configure Webhooks notifications via Your integrations, it is necessary to specify the URLs where they will be received and the events for which you wish to receive notifications.
@@ -56,22 +55,92 @@ To do this, follow these steps:
 
 3. Select the **events** from which you want to receive notifications in `JSON` format via an `HTTP POST` to the URL specified earlier. An event can be any type of update on the reported object, including status changes or attributes. Refer to the table below to see the events that can be configured, considering the integrated Mercado Pago solution and its business specifics.
 
+----[mla]---- 
 | Events | Name in Your Integrations | Topic | Associated products |
 |---|---|---|---|
-| Creation and update of payments | Payments | `payment` | Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
+| Creation and update of payments | Payments | `payment` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>Wallet Connect |
 | Creation and update of payments | Order (Mercado Pago) | `order` | Order - Onlin payments<br>Order - In-store payments |
 | Recurring payment of a subscription (creation - update) | Plans and Subscriptions | `subscription_authorized_payment` | Subscriptions |
 | Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
 | Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
 | Linking and unlinking of accounts connected via OAuth | Application linking | `mp-connect` | All products that have implemented OAuth |
-----[mla, mlm, mlb]----| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` | Mercado Pago Point |------------
 | Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
-| Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` | Checkout Pro |
-| Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>QR Code<br>Wallet Connect |
-| Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout Bricks |
+| Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` | Checkout API<br>Checkout Pro |
+| Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>Mercado Pago Point<br>QR Code<br>Wallet Connect |
+| Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
 | Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` | Checkout Pro<br>QR Code  |
-| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout Bricks |
-----[mla]----| Creation, update, or cancellation of orders. | Delivery (proximity marketplace) | `delivery` | MP Delivery |------------
+| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+| Creation, update, or cancellation of orders. | Delivery (proximity marketplace) | `delivery` | MP Delivery |
+| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` | Mercado Pago Point |
+
+------------
+----[mlm, mlb]---- 
+| Events | Name in Your Integrations | Topic | Associated products |
+|---|---|---|---|
+| Creation and update of payments | Payments | `payment` | Checkout Transparente<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>Wallet Connect |
+| Creation and update of payments | Order (Mercado Pago) | `order` | Order - Onlin payments<br>Order - In-store payments |
+| Recurring payment of a subscription (creation - update) | Plans and Subscriptions | `subscription_authorized_payment` | Subscriptions |
+| Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
+| Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
+| Linking and unlinking of accounts connected via OAuth | Application linking | `mp-connect` | All products that have implemented OAuth |
+| Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
+| Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` | Checkout Transparente<br>Checkout Pro |
+| Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout Transparente<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>Mercado Pago Point<br>QR Code<br>Wallet Connect |
+| Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout Transparente<br>Checkout Bricks |
+| Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` | Checkout Pro<br>QR Code  |
+| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout Transparente<br>Checkout Bricks |
+| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` | Mercado Pago Point |
+
+------------
+----[mlm]---- 
+| Events | Name in Your Integrations | Topic | Associated products |
+|---|---|---|---|
+| Creation and update of payments | Payments | `payment` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>Wallet Connect |
+| Recurring payment of a subscription (creation - update) | Plans and Subscriptions | `subscription_authorized_payment` | Subscriptions |
+| Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
+| Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
+| Linking and unlinking of accounts connected via OAuth | Application linking | `mp-connect` | All products that have implemented OAuth |
+| Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
+| Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` | Checkout API<br>Checkout Pro |
+| Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>Mercado Pago Point<br>Wallet Connect |
+| Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+| Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` | Checkout Pro |
+| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+| Completion and cancellation of payment attempt, or error processing payment attempt from Mercado Pago Point devices. | Point Integrations | `point_integration_wh` | Mercado Pago Point |
+
+------------
+----[mlu]---- 
+| Events | Name in Your Integrations | Topic | Associated products |
+|---|---|---|---|
+| Creation and update of payments | Payments | `payment` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>Wallet Connect |
+| Recurring payment of a subscription (creation - update) | Plans and Subscriptions | `subscription_authorized_payment` | Subscriptions |
+| Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
+| Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
+| Linking and unlinking of accounts connected via OAuth | Application linking | `mp-connect` | All products that have implemented OAuth |
+| Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
+| Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` | Checkout API<br>Checkout Pro |
+| Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>QR Code<br>Wallet Connect |
+| Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+| Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` | Checkout Pro<br>QR Code  |
+| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+
+------------
+----[mlu, mlc, mco, mpe]---- 
+| Events | Name in Your Integrations | Topic | Associated products |
+|---|---|---|---|
+| Creation and update of payments | Payments | `payment` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>Wallet Connect |
+| Recurring payment of a subscription (creation - update) | Plans and Subscriptions | `subscription_authorized_payment` | Subscriptions |
+| Subscription linking (creation - update) | Plans and Subscriptions | `subscription_preapproval` | Subscriptions |
+| Subscription plan linking (creation - update) | Plans and Subscriptions | `subscription_preapproval_plan` | Subscriptions |
+| Linking and unlinking of accounts connected via OAuth | Application linking | `mp-connect` | All products that have implemented OAuth |
+| Wallet Connect transactions | Wallet Connect | `wallet_connect` | Wallet Connect |
+| Fraud alerts after order processing | Fraud alerts | `stop_delivery_op_wh` | Checkout API<br>Checkout Pro |
+| Creation of refunds and claims | Claims | `topic_claims_integration_wh` | Checkout API<br>Checkout Pro<br>Checkout Bricks<br>Subscriptions<br>Wallet Connect |
+| Retrieval of card information and update within Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+| Creation, closure, or expiration of commercial orders | Commercial orders | `topic_merchant_order_wh` | Checkout Pro |
+| Opening of chargebacks, status changes, and modifications related to the release of funds | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout API<br>Checkout Bricks |
+
+------------
 
 > WARNING
 >
