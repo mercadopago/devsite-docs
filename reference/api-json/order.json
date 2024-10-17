@@ -2421,6 +2421,757 @@
         }
       }
     },
+    "/v1/orders/{order_id}/refund": {
+      "post": {
+        "tags":[
+          "checkout-api"
+        ],
+        "description":{
+          "en":"This endpoint performs the full refund of all transactions associated with an order",
+          "pt":"Este endpoint executa a devolução total das transações associadas a uma order",
+          "es":"Este endpoint realiza la devolución completa de las transacciones asociadas a una order"
+        },
+        "parameters":[
+          {
+            "name":"order_id",
+            "in":"path",
+            "description": {
+              "en": "Identifier of the order that is being refunded. This value is returned in the response to the \"Create order\" request, under the parameter \"id\".",
+              "pt": "Identificador da order que deve ser reembolsada. Esse valor é retornado na resposta à requisição \"Criar order\", sob o parâmetro \"id\".",
+              "es": "Identificador de la order a reembolsar. Este valor es devuelto en la respuesta a la requisición \"Crear order\", bajo el parámetro \"id\"."
+            },
+            "required":true,
+            "schema": {
+              "type":"string",
+              "example":"01J49MMW3SSBK5PSV3DFR32959"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es":"Éxito",
+              "pt":"Sucesso",
+              "en":"Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type":"object",
+                  "properties": {
+                    "id": {
+                      "type":"string",
+                      "example":"123",
+                      "description": {
+                        "en":"Identifier of the order being processed in the refund request.",
+                        "pt":"Identificador da order processada na requisição de reembolso.",
+                        "es":"Identificador de la order procesada en la solicitud de devolución."
+                      }
+                    },
+                    "type": {
+                      "type":"string",
+                      "description": {
+                        "en":"Order type.",
+                        "pt":"Tipo de order.",
+                        "es":"Tipo de order."
+                      },
+                      "example": "online",
+                      "enum": [
+                        {
+                          "title": "online",
+                          "description": {
+                            "en": "Order created for online payments.",
+                            "es": "Order creada para pagos online.",
+                            "pt": "Order criada para pagamentos online."
+                          }
+                        }
+                      ]
+                    },
+                    "external_reference": {
+                      "type":"string",
+                      "example":"ext_ref_1234",
+                      "description": {
+                        "en":"It is the external reference of the order, assigned when creating it.",
+                        "pt":"Referência externa da order, atribuída no momento da criação.",
+                        "es":"Es una referencia externa de la order, asignada al momento de su creación."
+                      }
+                    },
+                    "site_id": {
+                      "$ref": "#/components/schemas/site_id"
+                    },
+                    "client_id":{
+                      "type":"string",
+                      "example":"1234",
+                      "description":{
+                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                        "en":"Identifier of the Mercado Pago application that created the order.",
+                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                      }
+                    },
+                    "collector_id":{
+                      "type":"string",
+                      "example":"12345",
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "status": {
+                      "type":"string",
+                      "example":"processed",
+                      "description": {
+                        "en":"Current status of the order.",
+                        "pt":"Status atual da order.",
+                        "es":"Estado actual de la order."
+                      },
+                      "enum": [
+                        {
+                          "title": "processed",
+                          "description": {
+                            "en": "All transactions have been succesfully processed.",
+                            "es": "Todas las transacciones fueron procesadas exitosamente.",
+                            "pt": "Todas as transações foram processadas com sucesso."
+                          }
+                        },
+                        {
+                          "title": "action_required",
+                          "description": {
+                            "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                            "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                            "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                          }
+                        },
+                        {
+                          "title": "failed",
+                          "description": {
+                            "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                            "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                            "pt": "Ocorreu um erro no processamento da order, possivelmente causado pelo envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                          }
+                        },
+                        {
+                          "title": "processing",
+                          "description": {
+                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "pt": "A order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                          }
+                        }
+                      ]
+                    },
+                    "transactions": {
+                      "type":"object",
+                      "description": {
+                        "en":"Contains information about the transactions associated with the order.",
+                        "pt":"Este objeto traz informações sobre as transações associadas a uma order.",
+                        "es":"Contiene información sobre las transaccións asociadas a una order."
+                      },
+                      "properties":{
+                        "payments": {
+                          "type":"array",
+                          "description":{
+                            "en":"Contains information about the payment associated with the order.",
+                            "pt":"Este objeto traz informações sobre o pagamento associado à order.",
+                            "es":"Contiene información sobre el pago asociado a una order."
+                          },
+                          "properties":{
+                            "id":{
+                              "type":"string",
+                              "example":"pay_01J49MMW3SSBK5PSV3DFR32959",
+                              "description":{
+                                "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                              }
+                            },
+                            "status":{
+                              "type":"string",
+                              "example":"processed",
+                              "description":{
+                                "pt":"Status do pagamento.",
+                                "en":"Payment status.",
+                                "es":"Estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "processed",
+                                  "description": {
+                                    "en": "All transactions have been succesfully processed.",
+                                    "es": "Todas las transacciones fueron procesadas exitosamente.",
+                                    "pt": "Todas as transações foram processadas com sucesso."
+                                  }
+                                },
+                                {
+                                  "title": "action_required",
+                                  "description": {
+                                    "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                                    "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                                    "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "failed",
+                                  "description": {
+                                    "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                                    "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                                    "pt": "Ocorreu um erro no processamento da order, possivelmente causado pelo envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                  }
+                                },
+                                {
+                                  "title": "processing",
+                                  "description": {
+                                    "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                                    "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                                    "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                                  }
+                                }
+                              ]
+                            },
+                            "status_detail":{
+                              "type":"string",
+                              "example":"accredited",
+                              "description":{
+                                "en":"Details about payment status.",
+                                "pt":"Detalhes sobre o status do pagamento.",
+                                "es":"Detalles sobre el estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "accredited",
+                                  "description": {
+                                    "en": "Payment accredited.",
+                                    "es": "Pago acreditado.",
+                                    "pt": "Pagamento creditado."
+                                  }
+                                },
+                                {
+                                  "title": "partially_refunded",
+                                  "description": {
+                                    "en": "The payment has been partially refunded.",
+                                    "es": "El pago fue parcialmente devuelto.",
+                                    "pt": "Pagamento parcialmente devolvido."
+                                  }
+                                },
+                                {
+                                  "title": "waiting_capture",
+                                  "description": {
+                                    "en": "In cases of status=action_required, integrator action is required to complete processing. This status_detail indicates that the capture of an authorized payment is needed.",
+                                    "es": "En los casos de status=action_required, es necesaria una acción del integrador para completar el procesamiento. Este status_detail indica que se aguarda la captura de un pago autorizado.",
+                                    "pt": "Em casos de status=action_required, a ação do integrador é necessária para concluir o processamento. Este status_detail indica que está aguardando a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "bad_filled_card_data",
+                                  "description": {
+                                    "en": "An error occurred in the processing due to sending incorrect card data.",
+                                    "es": "Se produjo un fallo en el procesamiento por haber enviado datos erróneos de la tarjeta.",
+                                    "pt": "Ocorreu um erro no processamento devido ao envio de dados incorretos do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "invalid_card_token",
+                                  "description": {
+                                    "en": "An error occurred in the processing due to sending an incorrect card token.",
+                                    "es": "Se produjo un fallo en el procesamiento por haber enviado un token de tarjeta inválido.",
+                                    "pt": "Ocorreu um erro no processamento devido ao envio de um token de cartão incorreto."
+                                  }
+                                },
+                                {
+                                  "title": "high_risk",
+                                  "description": {
+                                    "en": "The transaction was rejected due to fraud prevention.",
+                                    "es": "La transacción fue rechazada por prevención de fraude.",
+                                    "pt": "A transação foi rejeitada devido à prevenção de fraude."
+                                  }
+                                },
+                                {
+                                  "title": "rejected_by_issuer",
+                                  "description": {
+                                    "en": "The transaction failed because authorization was required.",
+                                    "es": "La transacción falló por ser necesaria una autorización.",
+                                    "pt": "A transação falhou porque é necessária uma autorização."
+                                  }
+                                },
+                                {
+                                  "title": "required_call_for_authorize",
+                                  "description": {
+                                    "en": "The transaction was rejected by the card issuer.",
+                                    "es": "La transacción fue rechazada por la entidad emisora de la tarjeta.",
+                                    "pt": "A transação foi rejeitada pela entidade emissora do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "max_attempts_exceeded",
+                                  "description": {
+                                    "en": "The transaction was rejected for exceeding the maximum number of attempts to complete it.",
+                                    "es": "La transacción fue rechazada por exceder el número máximo de intentos para realizarla.",
+                                    "pt": "A transação foi rejeitada por exceder o número máximo de tentativas para processá-la."
+                                  }
+                                },
+                                {
+                                  "title": "card_disabled",
+                                  "description": {
+                                    "en": "The card chosen for the transaction is disabled.",
+                                    "es": "La tarjeta elegida para la transacción está inhabilitada.",
+                                    "pt": "O cartão escolhido para a transação está desabilitado."
+                                  }
+                                },
+                                {
+                                  "title": "card_insufficient_amount",
+                                  "description": {
+                                    "en": "The card chosen for the transaction does not have enough founds.",
+                                    "es": "La tarjeta elegida para la transacción no dispone de fondo suficiente.",
+                                    "pt": "O cartão escolhido para a transação não tem fundos suficientes."
+                                  }
+                                },
+                                {
+                                  "title": "amount_limit_exceeded",
+                                  "description": {
+                                    "en": "The transaction amount exceeds the card limit.",
+                                    "es": "El monto de la transacción excede el límite de la tarjeta.",
+                                    "pt": "O valor da transação excede o limite do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "invalid_installments",
+                                  "description": {
+                                    "en": "The installments amount selected when creating the transaction is invalid.",
+                                    "es": "La cantidad de cuotas/meses seleccionada al crear la transacción es inválida.",
+                                    "pt": "O número de parcelas selecionado na criação da transação é inválido."
+                                  }
+ 
+                                },
+                                {
+                                  "title": "processing_error",
+                                  "description": {
+                                    "en": "There was an error during processing.",
+                                    "es": "Ocurrió un error durante el procesamiento.",
+                                    "pt": "Ocorreu um erro durante o processamento. "
+                                  }
+                                },
+                                {
+                                  "title": "pending_review_manual",
+                                  "description": {
+                                    "en": "The payment is pending manual review.",
+                                    "es": "El pago está está pendiente de revisión manual.",
+                                    "pt": "O pagamento está pendente de revisão manual."
+                                  }
+                                },
+                                {
+                                  "title": "in_process",
+                                  "description": {
+                                    "en": "When the \"status=processing\", the payment is being processed.",
+                                    "es": "Si \"status=processing\", el pago está está siendo procesado.",
+                                    "pt": "Se \"status=processing\", o pagamento está sendo processado."
+                                  }
+                                }
+                              ]
+                            },
+                            "amount":{
+                              "$ref": "#/components/schemas/amount"
+                            },
+                            "payment_method":{
+                              "$ref": "#/components/schemas/payment_method"
+                            },
+                            "currency": {
+                              "$ref": "#/components/schemas/currency"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "payer": {
+                      "$ref": "#/components/schemas/payer"
+                    },
+                    "type_config": {
+                      "$ref": "#/components/schemas/type_config"
+                    },
+                    "total_amount": {
+                      "type":"string",
+                      "example":"24.90",
+                      "description": {
+                        "pt":"Valor total a ser pago.",
+                        "en":"Total amount to be paid.",
+                        "es":"Monto total a pagar."
+                      }
+                    },
+                    "currency": {
+                      "$ref": "#/components/schemas/currency"
+                    },
+                    "processing_mode": {
+                      "type":"string",
+                      "description": {
+                        "en":"Order processing mode",
+                        "pt":"Modo de processamento da order",
+                        "es":"Modo de procesamiento de la order"
+                      },
+                      "example": "automatic",
+                      "enum": [
+                        {
+                          "title": "manual",
+                          "description": {
+                            "en": "Order's processing will be made manually. It is the processing mode used for the \"manual\" option, as it sets the processing to be made afterwards, by using the \"Process order by ID\" endpoint.",
+                            "es": "El procesamiento de la order se hará de manera manual. Es el modo de procesamiento utilizado para la opción \"manual\", en tanto configura que el procesamiento sea hecho posteriormente, utilizando el endpoint \"Procesar order por ID\".",
+                            "pt": "O processamento da order será realizado manualmente. É o modo de processamento utilizado para a opção \"manual\", enquanto configura o processamento para ser feito posteriormente, utilizando o endpoint \"Processar order por ID\"."
+                          }
+                        },
+                        {
+                          "title": "automatic",
+                          "description": {
+                            "en": "Order's processing will be made instantly. It is the capture mode used for the \"automatic\" option.",
+                            "es": "El procesamiento de la order se hará instantáneamente. Es el modo de procesamiento utilizado para la opción \"automático\".",
+                            "pt": "O processamento da order será feito imediatamente. É o modo de processamento utilizado para a opção \"automático\"."
+                          }
+                        }
+                      ]
+                    },
+                    "description": {
+                      "type":"string",
+                      "example":"Point Mini",
+                      "description": {
+                        "en":"Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
+                        "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
+                        "es":"Descripción del producto o servicio comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
+                      }
+                    },
+                    "marketplace": {
+                      "type":"string",
+                      "example":"MERCADOLIVRE",
+                      "description": {
+                        "en":"Name of the marketplace where the order was made.",
+                        "pt":"Nome do marketplace onde a order foi realizada.",
+                        "es":"Nombre del marketplace donde se realizó la order."
+                      }
+                    },
+                    "marketplace_fee": {
+                      "type":"string",
+                      "example":"2.00",
+                      "description": {
+                        "en":"Marketplace fee, expressed as a percentage of the value inserted in \"total_amount\". This field only allows values with two decimals, for example: 10.00 (10%). ",
+                        "pt":"Comissão (taxa) correspondente ao marketplace, expresso como uma porcentagem do valor inserido em \"total_amount\". Este campo só permite valores com duas casas decimais, por exemplo 10.00 (10%).",
+                        "es":"Comisión (fee) que corresponde al marketplace, expresado como porcentaje del valor ingresado en \"total_amount\". Este campo sólo permite valores con dos decimales, por ejemplo 10.00 (10%)."
+                      }
+                    },
+                    "campaign_id": {
+                      "type":"string",
+                      "example":"123",
+                      "description": {
+                        "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
+                        "pt":"Identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
+                        "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
+                      }
+                    },
+                    "items": {
+                      "$ref": "#/components/schemas/items"
+                    },
+                    "coupon": {
+                      "type":"object",
+                      "description": {
+                        "en":"Discount campaign.",
+                        "pt":"Campanha de desconto.",
+                        "es":"Campaña de descuento."
+                      },
+                      "properties": {
+                        "code": {
+                          "type":"string",
+                          "description": {
+                            "en":"Specific code of the coupon participating in the discount campaign.",
+                            "pt":"Código específico do cupom pertencente à campanha de desconto.",
+                            "es":"Código específico del cupón perteneciente a la campaña de descuento."
+                          },
+                          "example": "123"
+                        },
+                        "amount": {
+                          "type":"string",
+                          "example":"4.90",
+                          "description": {
+                            "en":"Value of the discount coupon.",
+                            "pt":"Valor do cupom de desconto.",
+                            "es":"Es el valor del cupón de descuento."
+                          }
+                        }
+                      }
+                    },
+                    "splits":{
+                      "type":"array",
+                      "description":{
+                        "en":"List of payment splits to be made from the total amount.",
+                        "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
+                        "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties":{
+                          "id":{
+                            "type":"string",
+                            "example":"123",
+                            "description":{
+                              "en":"Split identification.",
+                              "pt":"Identificador do split.",
+                              "es":"Identificador del split."
+                            }
+                          },
+                          "collector_id":{
+                            "type":"number",
+                            "example":448876418,
+                            "description":{
+                              "en":"It is the identification of the user who receives the money.",
+                              "pt":"Identificador do usuário que recebe o dinheiro.",
+                              "es":"Es el identificador del usuario que recibe el dinero."
+                            }
+                          },
+                          "type":{
+                            "type":"string",
+                            "description":{
+                              "pt":"Tipo de split realizado",
+                              "en":"Type of split made",
+                              "es":"Tipo de split realizado"
+                            },
+                            "enum": [
+                              {
+                                "title": "amount",
+                                "description": {
+                                  "en": "The split will be performed by amount.",
+                                  "es": "El criterio para el split será el valor.",
+                                  "pt": "O critério para o split será o valor."
+                                }
+                              },
+                              {
+                                "title": "percentage",
+                                "description": {
+                                  "en": "The split will be performed by percentage.",
+                                  "es": "El criterio para el split será el porcentaje.",
+                                  "pt": "O critério para o split será a porcentagem."
+                                }
+                              }
+                            ],
+                            "example": "amount"
+                          },
+                          "value":{
+                            "type":"string",
+                            "example":"50",
+                            "description":{
+                              "pt":"Valor do split.",
+                              "en":"Split value.",
+                              "es":"Valor del split."
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "shipment":{
+                      "$ref": "#/components/schemas/shipment"
+                    },
+                    "expiration_time":{
+                      "type":"string",
+                      "description": {
+                        "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
+                        "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
+                        "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
+                      },
+                      "example": "P3Y6M4DT12H30M5S"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "empty_required_header",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la requisición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "invalid_path_param",
+                          "description": {
+                            "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
+                            "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
+                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_total_amount",
+                          "description": {
+                            "en": "The value entered in \"total_amount\" is not equivalent to the sum of the \"transactions.payments.amount\" field of the total transactions. Please verify if the values ​​are correct.",
+                            "es": "El valor ingresado en \"total_amount\" no es equivalente a la suma del campo \"transactions.payments.amount\" del total de las transacciones. Por favor, verifica que los valores sean correctos.",
+                            "pt": "O valor informado em \"total_amount\" não equivale à soma do campo \"transactions.payments.amount\" do total de transações. Verifique se os valores estão corretos."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error. Access Token not authorized.",
+              "pt": "Erro. Access Token não autorizado.",
+              "es": "Error. Access Token no autorizado."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "401",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e faça uma nova requisição com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error. Order not found.",
+              "pt": "Error. Order não encontrada.",
+              "es": "Error. Order no encontrada."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "order_not_found",
+                          "description": {
+                            "en": "Order not found. Please check if you provided the correct order ID.",
+                            "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error. Idempotency header already used.",
+              "pt": "Erro. Header de idempotencia ya utilizado.",
+              "es": "Error. Header de idempotência já utilizado."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_key_already_used",
+                          "description": {
+                            "en": "The value sent as the idempotency header has already been used. Please try the request again sending a new value.",
+                            "es": "El valor enviado como header de idempotencia ya fue utilizado. Por favor, vuelve a intentar realizar la requisición enviando un nuevo valor.",
+                            "pt": "O valor enviado como header de idempotência já foi utilizado. Por favor, tente a solicitação novamente enviando um novo valor."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Generic error. Please try submitting the request again.",
+                            "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Full refund of an order",
+          "pt": "Devolução total da Order",
+          "es": "Reembolso completo de una order"
+        }
+      }
+    },
     "/v1/orders/{order_id}/transactions": {
       "post": {
         "tags": [
@@ -4003,6 +4754,757 @@
           "es": "Procesar order por ID"
         }
       }
+    },
+    "/v1/orders/{order_id}/capture": {
+      "post": {
+        "tags":[
+          "checkout-api"
+        ],
+        "description":{
+          "en":"This endpoint allows to capture an order totally. Every payment will be captured in total",
+          "pt":"Este endpoint permite capturar a order totalmente. Cada payment será capturado totalmente",
+          "es":"Este endpoint permite capturar una order en su totalidad. Cada payment se capturará en su totalidad"
+        },
+        "parameters":[
+          {
+            "name":"order_id",
+            "in":"path",
+            "description": {
+              "en": "Identifier of the order that  ​​will be captured. This value is returned in the response to the \"Create order\" request, under the parameter \"id\".",
+              "pt": "Identificador da order que será capturada. Esse valor é retornado na resposta à requisição \"Criar order\", sob o parâmetro \"id\".",
+              "es": "Identificador de la order que se capturará. Este valor es devuelto en la respuesta a la solicitud \"Crear order\", bajo el parámetro \"id\"."
+            },
+            "required":true,
+            "schema": {
+              "type":"string",
+              "example":"01J49MMW3SSBK5PSV3DFR32959"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": {
+              "es":"Éxito",
+              "pt":"Sucesso",
+              "en":"Success"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type":"object",
+                  "properties": {
+                    "id": {
+                      "type":"string",
+                      "example":"123",
+                      "description": {
+                        "en":"Identifier of the order being processed in the request.",
+                        "pt":"Identificador da order processada na requisição.",
+                        "es":"Identificador de la order procesada en la solicitud."
+                      }
+                    },
+                    "type": {
+                      "type":"string",
+                      "description": {
+                        "en":"Order type.",
+                        "pt":"Tipo de order.",
+                        "es":"Tipo de order."
+                      },
+                      "example": "online",
+                      "enum": [
+                        {
+                          "title": "online",
+                          "description": {
+                            "en": "Order created for online payments.",
+                            "es": "Order creada para pagos online.",
+                            "pt": "Order criada para pagamentos online."
+                          }
+                        }
+                      ]
+                    },
+                    "external_reference": {
+                      "type":"string",
+                      "example":"ext_ref_1234",
+                      "description": {
+                        "en":"It is the external reference of the order, assigned when creating it.",
+                        "pt":"Referência externa da order, atribuída no momento da criação.",
+                        "es":"Es una referencia externa de la order, asignada al momento de su creación."
+                      }
+                    },
+                    "site_id": {
+                      "$ref": "#/components/schemas/site_id"
+                    },
+                    "client_id":{
+                      "type":"string",
+                      "example":"1234",
+                      "description":{
+                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
+                        "en":"Identifier of the Mercado Pago application that created the order.",
+                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
+                      }
+                    },
+                    "collector_id":{
+                      "type":"string",
+                      "example":"12345",
+                      "description":{
+                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
+                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
+                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
+                      }
+                    },
+                    "created_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "last_updated_date":{
+                      "type":"string",
+                      "example":"2024-08-26T13:06:51.045317772Z",
+                      "description":{
+                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
+                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
+                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
+                      }
+                    },
+                    "status": {
+                      "type":"string",
+                      "example":"processed",
+                      "description": {
+                        "en":"Current status of the order.",
+                        "pt":"Status atual da order.",
+                        "es":"Estado actual de la order."
+                      },
+                      "enum": [
+                        {
+                          "title": "processed",
+                          "description": {
+                            "en": "All transactions have been succesfully processed.",
+                            "es": "Todas las transacciones fueron procesadas exitosamente.",
+                            "pt": "Todas as transações foram processadas com sucesso."
+                          }
+                        },
+                        {
+                          "title": "action_required",
+                          "description": {
+                            "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                            "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                            "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                          }
+                        },
+                        {
+                          "title": "failed",
+                          "description": {
+                            "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                            "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                            "pt": "Ocorreu um erro no processamento da order, possivelmente causado pelo envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                          }
+                        },
+                        {
+                          "title": "processing",
+                          "description": {
+                            "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                            "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                            "pt": "A order está em processamento e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                          }
+                        }
+                      ]
+                    },
+                    "transactions": {
+                      "type":"object",
+                      "description": {
+                        "en":"Contains information about the transactions associated with the order.",
+                        "pt":"Contém informações sobre as transações associadas a uma order.",
+                        "es":"Contiene información sobre las transacciones asociadas a una order."
+                      },
+                      "properties":{
+                        "payments": {
+                          "type":"array",
+                          "description":{
+                            "en":"Contains information about the payment associated with the order.",
+                            "pt":"Este objeto traz informações sobre o pagamento associado à order.",
+                            "es":"Contiene información sobre el pago asociado a la order."
+                          },
+                          "properties":{
+                            "id":{
+                              "type":"string",
+                              "example":"pay_01J49MMW3SSBK5PSV3DFR32959",
+                              "description":{
+                                "en":"Identifier of the payment transaction created in the request, automatically generated by Mercado Pago.",
+                                "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
+                                "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
+                              }
+                            },
+                            "status":{
+                              "type":"string",
+                              "example":"processed",
+                              "description":{
+                                "pt":"Status do pagamento.",
+                                "en":"Payment status.",
+                                "es":"Estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "processed",
+                                  "description": {
+                                    "en": "The transaction have been succesfully processed.",
+                                    "es": "La transacción fue procesada exitosamente.",
+                                    "pt": "A transação foi processada com sucesso."
+                                  }
+                                },
+                                {
+                                  "title": "action_required",
+                                  "description": {
+                                    "en": "Integrator action is required to complete processing. For example, the capture of an authorized payment.",
+                                    "es": "Es necesaria una acción del integrador para completar el procesamiento. Por ejemplo, realizar la captura de un pago autorizado.",
+                                    "pt": "A ação do integrador é necessária para concluir o processamento. Por exemplo, a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "failed",
+                                  "description": {
+                                    "en": "An error occurred in the processing of the order. It may be due to sending incorrect data, risk of fraud, or rejections by the issuing entity of the payment method.",
+                                    "es": "Se produjo un fallo en el procesamiento de la order. Puede deberse a un envío de datos incorrectos, riesgo de fraude, o rechazos de la entidad emisora del medio de pago.",
+                                    "pt": "Ocorreu um erro no processamento da order, possivelmente causado pelo envio de dados incorretos, risco de fraude ou rejeições por parte da entidade emissora do meio de pagamento."
+                                  }
+                                },
+                                {
+                                  "title": "processing",
+                                  "description": {
+                                    "en": "The order is being processed and does not require any action from the integrator. For example, the payment may be pending manual review.",
+                                    "es": "La order está siendo procesada y no necesita ninguna acción del integrador. Por ejemplo, es posible que el pago esté pendiente de revisión manual.",
+                                    "pt": "A order está sendo processada e não requer nenhuma ação do integrador. Por exemplo, o pagamento pode estar pendente de revisão manual."
+                                  }
+                                }
+                              ]
+                            },
+                            "status_detail":{
+                              "type":"string",
+                              "example":"accredited",
+                              "description":{
+                                "en":"Details about payment status.",
+                                "pt":"Detalhes sobre o status do pagamento.",
+                                "es":"Detalles sobre el estado del pago."
+                              },
+                              "enum": [
+                                {
+                                  "title": "accredited",
+                                  "description": {
+                                    "en": "Payment accredited.",
+                                    "es": "Pago acreditado.",
+                                    "pt": "Pagamento creditado."
+                                  }
+                                },
+                                {
+                                  "title": "partially_refunded",
+                                  "description": {
+                                    "en": "The payment has been partially refunded.",
+                                    "es": "El pago fue parcialmente reembolsado.",
+                                    "pt": "Pagamento parcialmente devolvido."
+                                  }
+                                },
+                                {
+                                  "title": "waiting_capture",
+                                  "description": {
+                                    "en": "In cases of status=action_required, integrator action is required to complete processing. This status_detail indicates that the capture of an authorized payment is needed.",
+                                    "es": "En los casos de status=action_required, es necesaria una acción del integrador para completar el procesamiento. Este status_detail indica que se aguarda la captura de un pago autorizado.",
+                                    "pt": "Em casos de status=action_required, a ação do integrador é necessária para concluir o processamento. Este status_detail indica que está aguardando a captura de um pagamento autorizado."
+                                  }
+                                },
+                                {
+                                  "title": "bad_filled_card_data",
+                                  "description": {
+                                    "en": "An error occurred in the processing due to sending incorrect card data.",
+                                    "es": "Se produjo un fallo en el procesamiento por haber enviado datos erróneos de la tarjeta.",
+                                    "pt": "Ocorreu um erro no processamento devido ao envio de dados incorretos do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "invalid_card_token",
+                                  "description": {
+                                    "en": "An error occurred in the processing due to sending an incorrect card token.",
+                                    "es": "Se produjo un fallo en el procesamiento por haber enviado un token de tarjeta inválido.",
+                                    "pt": "Ocorreu um erro no processamento devido ao envio de um token de cartão incorreto."
+                                  }
+                                },
+                                {
+                                  "title": "high_risk",
+                                  "description": {
+                                    "en": "The transaction was rejected due to fraud prevention.",
+                                    "es": "La transacción fue rechazada por prevención de fraude.",
+                                    "pt": "A transação foi rejeitada devido à prevenção de fraude."
+                                  }
+                                },
+                                {
+                                  "title": "rejected_by_issuer",
+                                  "description": {
+                                    "en": "The transaction failed because authorization was required.",
+                                    "es": "La transacción falló por ser necesaria una autorización.",
+                                    "pt": "A transação falhou porque é necessária uma autorização."
+                                  }
+                                },
+                                {
+                                  "title": "required_call_for_authorize",
+                                  "description": {
+                                    "en": "The transaction was rejected by the card issuer.",
+                                    "es": "La transacción fue rechazada por la entidad emisora de la tarjeta.",
+                                    "pt": "A transação foi rejeitada pela entidade emissora do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "max_attempts_exceeded",
+                                  "description": {
+                                    "en": "The transaction was rejected for exceeding the maximum number of attempts to complete it.",
+                                    "es": "La transacción fue rechazada por exceder el número máximo de intentos para realizarla.",
+                                    "pt": "A transação foi rejeitada por exceder o número máximo de tentativas para processá-la."
+                                  }
+                                },
+                                {
+                                  "title": "card_disabled",
+                                  "description": {
+                                    "en": "The card chosen for the transaction is disabled.",
+                                    "es": "La tarjeta elegida para la transacción está inhabilitada.",
+                                    "pt": "O cartão escolhido para a transação está desabilitado."
+                                  }
+                                },
+                                {
+                                  "title": "card_insufficient_amount",
+                                  "description": {
+                                    "en": "The card chosen for the transaction does not have enough founds.",
+                                    "es": "La tarjeta elegida para la transacción no dispone de fondos suficientes.",
+                                    "pt": "O cartão escolhido para a transação não tem fundos suficientes."
+                                  }
+                                },
+                                {
+                                  "title": "amount_limit_exceeded",
+                                  "description": {
+                                    "en": "The transaction amount exceeds the card limit.",
+                                    "es": "El monto de la transacción excede el límite de la tarjeta.",
+                                    "pt": "O valor da transação excede o limite do cartão."
+                                  }
+                                },
+                                {
+                                  "title": "invalid_installments",
+                                  "description": {
+                                    "en": "The installments amount selected when creating the transaction is invalid.",
+                                    "es": "La cantidad de cuotas/meses seleccionada al crear la transacción es inválida.",
+                                    "pt": "O número de parcelas selecionado na criação da transação é inválido."
+                                  }
+ 
+                                },
+                                {
+                                  "title": "processing_error",
+                                  "description": {
+                                    "en": "There was an error during processing.",
+                                    "es": "Ocurrió un error durante el procesamiento.",
+                                    "pt": "Ocorreu um erro durante o processamento. "
+                                  }
+                                },
+                                {
+                                  "title": "pending_review_manual",
+                                  "description": {
+                                    "en": "The payment is pending manual review.",
+                                    "es": "El pago está está pendiente de revisión manual.",
+                                    "pt": "O pagamento está pendente de revisão manual."
+                                  }
+                                },
+                                {
+                                  "title": "in_process",
+                                  "description": {
+                                    "en": "When the \"status=processing\", the payment is being processed.",
+                                    "es": "Si \"status=processing\", el pago está está siendo procesado.",
+                                    "pt": "Se \"status=processing\", o pagamento está sendo processado."
+                                  }
+                                }
+                              ]
+                            },
+                            "amount":{
+                              "$ref": "#/components/schemas/amount"
+                            },
+                            "payment_method":{
+                              "$ref": "#/components/schemas/payment_method"
+                            },
+                            "currency": {
+                              "$ref": "#/components/schemas/currency"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "payer": {
+                      "$ref": "#/components/schemas/payer"
+                    },
+                    "type_config": {
+                      "$ref": "#/components/schemas/type_config"
+                    },
+                    "total_amount": {
+                      "type":"string",
+                      "example":"24.90",
+                      "description": {
+                        "pt":"Valor total a ser pago.",
+                        "en":"Total amount to be paid.",
+                        "es":"Monto total a pagar."
+                      }
+                    },
+                    "currency": {
+                      "$ref": "#/components/schemas/currency"
+                    },
+                    "processing_mode": {
+                      "type":"string",
+                      "description": {
+                        "en":"Order processing mode.",
+                        "pt":"Modo de processamento da order.",
+                        "es":"Modo de procesamiento de la order."
+                      },
+                      "example": "manual",
+                      "enum": [
+                        {
+                          "title": "manual",
+                          "description": {
+                            "en": "Order's processing will be made manually. It is the processing mode used for the \"manual\" option, as it sets the processing to be made afterwards, by using the \"Process order by ID\" endpoint.",
+                            "es": "El procesamiento de la order se hará de manera manual. Es el modo de procesamiento utilizado para la opción \"manual\", en tanto configura que el procesamiento sea hecho posteriormente, utilizando el endpoint \"Procesar order por ID\".",
+                            "pt": "O processamento da order será realizado manualmente. É o modo de processamento utilizado para a opção \"manual\", enquanto configura o processamento para ser feito posteriormente, utilizando o endpoint \"Processar order por ID\"."
+                          }
+                        },
+                        {
+                          "title": "automatic",
+                          "description": {
+                            "en": "Order's processing will be made instantly. It is the capture mode used for the \"automatic\" option.",
+                            "es": "El procesamiento de la order se hará instantáneamente. Es el modo de procesamiento utilizado para la opción \"automático\".",
+                            "pt": "O processamento da order será feito imediatamente. É o modo de processamento utilizado para a opção \"automático\"."
+                          }
+                        }
+                      ]
+                    },
+                    "description": {
+                      "type":"string",
+                      "example":"Point Mini",
+                      "description": {
+                        "en":"Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
+                        "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
+                        "es":"Descripción del producto o servicio comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
+                      }
+                    },
+                    "marketplace": {
+                      "type":"string",
+                      "example":"MERCADOLIVRE",
+                      "description": {
+                        "en":"Name of the marketplace where the order was made.",
+                        "pt":"Nome do marketplace onde a order foi realizada.",
+                        "es":"Nombre del marketplace donde se realizó la order."
+                      }
+                    },
+                    "marketplace_fee": {
+                      "type":"string",
+                      "example":"2.00",
+                      "description": {
+                        "en":"Marketplace fee, expressed as a percentage of the value inserted in \"total_amount\". This field only allows values with two decimals, for example: 10.00 (10%). ",
+                        "pt":"Comissão (taxa) correspondente ao marketplace, expresso como uma porcentagem do valor inserido em \"total_amount\". Este campo só permite valores com duas casas decimais, por exemplo 10.00 (10%).",
+                        "es":"Comisión (fee) que corresponde al marketplace, expresado como porcentaje del valor ingresado en \"total_amount\". Este campo sólo permite valores con dos decimales, por ejemplo 10.00 (10%)."
+                      }
+                    },
+                    "campaign_id": {
+                      "type":"string",
+                      "example":"123",
+                      "description": {
+                        "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
+                        "pt":"Identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
+                        "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
+                      }
+                    },
+                    "items": {
+                      "$ref": "#/components/schemas/items"
+                    },
+                    "coupon": {
+                      "type":"object",
+                      "description": {
+                        "en":"Discount campaign.",
+                        "pt":"Campanha de desconto.",
+                        "es":"Campaña de descuento."
+                      },
+                      "properties": {
+                        "code": {
+                          "type":"string",
+                          "description": {
+                            "en":"Specific code of the coupon participating in the discount campaign.",
+                            "pt":"Código específico do cupom pertencente à campanha de desconto.",
+                            "es":"Código específico del cupón perteneciente a la campaña de descuento."
+                          },
+                          "example": "123"
+                        },
+                        "amount": {
+                          "type":"string",
+                          "example":"4.90",
+                          "description": {
+                            "en":"Value of the discount coupon.",
+                            "pt":"Valor do cupom de desconto.",
+                            "es":"Es el valor del cupón de descuento."
+                          }
+                        }
+                      }
+                    },
+                    "splits":{
+                      "type":"array",
+                      "description":{
+                        "en":"List of payment splits to be made from the total amount.",
+                        "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
+                        "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties":{
+                          "id":{
+                            "type":"string",
+                            "example":"123",
+                            "description":{
+                              "en":"Split identification.",
+                              "pt":"Identificador do split.",
+                              "es":"Identificador del split."
+                            }
+                          },
+                          "collector_id":{
+                            "type":"number",
+                            "example":448876418,
+                            "description":{
+                              "en":"It is the identification of the user who receives the money.",
+                              "pt":"Identificador do usuário que recebe o dinheiro.",
+                              "es":"Es el identificador del usuario que recibe el dinero."
+                            }
+                          },
+                          "type":{
+                            "type":"string",
+                            "description":{
+                              "pt":"Tipo de split realizado.",
+                              "en":"Type of split made.",
+                              "es":"Tipo de split realizado."
+                            },
+                            "enum": [
+                              {
+                                "title": "amount",
+                                "description": {
+                                  "en": "The split will be performed by amount.",
+                                  "es": "El criterio para el split será el valor.",
+                                  "pt": "O critério para o split será o valor."
+                                }
+                              },
+                              {
+                                "title": "percentage",
+                                "description": {
+                                  "en": "The split will be performed by percentage.",
+                                  "es": "El criterio para el split será el porcentaje.",
+                                  "pt": "O critério para o split será a porcentagem."
+                                }
+                              }
+                            ],
+                            "example": "amount"
+                          },
+                          "value":{
+                            "type":"string",
+                            "example":"50",
+                            "description":{
+                              "pt":"Valor do split.",
+                              "en":"Split value.",
+                              "es":"Valor del split."
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "shipment":{
+                      "$ref": "#/components/schemas/shipment"
+                    },
+                    "expiration_time":{
+                      "type":"string",
+                      "description": {
+                        "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
+                        "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
+                        "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
+                      },
+                      "example": "P3Y6M4DT12H30M5S"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "empty_required_header",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "El header 'X-Idempotency-Key' es requerido y no fue enviado. Vuelve a realizar la requisición incluyéndolo.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "invalid_path_param",
+                          "description": {
+                            "en": "The order_id provided in the request path is not correct. Please confirm it and provide a valid ID to try again.",
+                            "es": "El order_id proporcionado en el path de la requisición no es correcto. Compruébalo y proporciona un ID válido para volver a intentarlo.",
+                            "pt": "O order_id fornecido no path da requisição não está correto. Verifique e forneça um ID válido para tentar novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_total_amount",
+                          "description": {
+                            "en": "The value entered in \"total_amount\" is not equivalent to the sum of the \"transactions.payments.amount\" field of the total transactions. Please verify if the values ​​are correct.",
+                            "es": "El valor ingresado en \"total_amount\" no es equivalente a la suma del campo \"transactions.payments.amount\" del total de las transacciones. Por favor, verifica que los valores sean correctos.",
+                            "pt": "O valor informado em \"total_amount\" não equivale à soma do campo \"transactions.payments.amount\" do total de transações. Verifique se os valores estão corretos."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": {
+              "en": "Error. Access Token not authorized.",
+              "pt": "Erro. Access Token não autorizado.",
+              "es": "Error. Access Token no autorizado."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "401",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "El valor enviado como Access Token es incorrecto. Por favor, verifícalo y vuelve a intentar realizar la requisición enviando el valor correcto.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e faça uma nova requisição com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": {
+              "en": "Error. Order not found.",
+              "pt": "Error. Order não encontrada.",
+              "es": "Error. Order no encontrada."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "order_not_found",
+                          "description": {
+                            "en": "Order not found. Please check if you provided the correct order ID.",
+                            "es": "Order no encontrada. Comprueba si enviaste el ID correcto.",
+                            "pt": "Order não encontrada. Verifique se o ID enviado está correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "409": {
+            "description": {
+              "en": "Error. Idempotency header already used.",
+              "pt": "Erro. Header de idempotencia ya utilizado.",
+              "es": "Error. Header de idempotência já utilizado."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_key_already_used",
+                          "description": {
+                            "en": "The value sent as the idempotency header has already been used. Please try the request again sending a new value.",
+                            "es": "El valor enviado como header de idempotencia ya fue utilizado. Por favor, vuelve a intentar realizar la requisición enviando un nuevo valor.",
+                            "pt": "O valor enviado como header de idempotência já foi utilizado. Por favor, tente a solicitação novamente enviando um novo valor."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "idempotency_validation_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Falla en la validación de idempotencia. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
+                          "title": "500",
+                          "description": {
+                            "en": "Generic error. Please try submitting the request again.",
+                            "es": "Error genérico. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro genérico. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Capture order totally",
+          "pt": "Capturar order totalmente",
+          "es": "Capturar order totalmente"
+        }
+      }
     }
   },
   "components": {
@@ -4020,9 +5522,9 @@
         "type": "string",
         "required": true,
         "description": {
-          "en": "Identifier of the currency used in the transaction/order. We currently have the options below. Make sure to send the value corresponding to the country to which the account that receives the money belongs.",
-          "pt": "Identificador da moeda utilizada na transação/order. Veja abaixo as opções disponíveis. Você deve enviar o valor correspondente ao país ao qual pertence a conta que recebe o dinheiro.",
-          "es": "Identificador de la moneda utilizada en la transacción/order. Actualmente tenemos las opciones descritas debajo. Debes enviar el valor correspondiente al país al que pertenece la cuenta que recibe el dinero."
+          "en": "Identifier of the currency used in the transaction/order. Make sure to send the value corresponding to the country to which the account that receives the money belongs. We currently have the options below.",
+          "pt": "Identificador da moeda utilizada na transação/order. Você deve enviar o valor correspondente ao país ao qual pertence a conta que recebe o dinheiro. Veja abaixo as opções disponíveis.",
+          "es": "Identificador de la moneda utilizada en la transacción/order. Debes enviar el valor correspondiente al país al que pertenece la cuenta que recibe el dinero. Actualmente tenemos las opciones descritas debajo." 
         },
         "example": "BRL",
         "enum": [
@@ -4134,7 +5636,7 @@
             "description": {
               "pt": "Número de parcelas selecionado.",
               "en": "Number of installments selected.",
-              "es": "Cantidad de cuotas seleccionada."
+              "es": "Cantidad de cuotas/meses seleccionada."
             }
           },
           "issuer_id": {
