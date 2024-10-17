@@ -29,13 +29,11 @@ Configure notificações para cada aplicação diretamente em [Suas integraçõe
 2. Validar origem da notificação
 3. Simular o recebimento da notificação
 
-
 > WARNING
 >
 > Importante
 >
 > Este método de configuração não está disponível para integrações com----[mla, mlb, mlc, mlu]----Código QR e nem------------Assinaturas. Para configurar notificações com alguma dessas duas integrações, utilize o método [Configuração durante a criação de pagamentos](/developers/pt/docs/your-integrations/notifications/webhooks#configuraoduranteacriaodepagamentos).
-
 
 ### 1. Indicar URLs e configurar eventos
 
@@ -60,18 +58,19 @@ Para isso, siga as etapas descritas abaixo.
 
 | Eventos | Nome em Suas integrações | Tópico | Produtos associados |
 |---|---|---|---|
-| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
+| Criação e atualização de pagamentos | Pagamentos | `payment` | Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Wallet Connect |
+| Criação e atualização de pagamentos | Order (Mercado Pago) | `order` | Order - Pagamentos online<br>Order - Pagamentos presenciais |
 | Pagamento recorrente de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_authorized_payment` | Assinaturas |
 | Vinculação de uma assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval` | Assinaturas |
 | Vinculação de um plano de assinatura (criação - atualização) | Planos e assinaturas | `subscription_preapproval_plan` | Assinaturas |
 | Vinculação e desvinculação de contas que se conectaram através de OAuth | Vinculação de aplicações | `mp-connect` | Todos os produtos que tenham  OAuth implementado |
 ----[mla, mlm, mlb]----| Finalização, cancelamento ou erros ao processar intenções de pagamento de dispositivos Mercado Pago Point. | Integrações Point | `point_integration_wh` | Mercado Pago Point |------------
 | Transações com Wallet Connect | Wallet Connect | `wallet_connect` | Wallet Connect |
-| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro |
-| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Código QR<br>Wallet Connect |
-| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Alertas de fraude após o processamento de um pedido | Alertas de fraude | `stop_delivery_op_wh` | Checkout Pro |
+| Criação de estornos e reclamações | Reclamações | `topic_claims_integration_wh` | Checkout Pro<br>Checkout Bricks<br>Assinaturas<br>----[mla, mlm, mlb]----Mercado Pago Point------------<br>Código QR<br>Wallet Connect |
+| Recuperação e atualização de informações de cartões no Mercado Pago | Card Updater | `topic_card_id_wh` | Checkout Bricks |
 | Criação, fechamento ou expiração de ordens comerciais | Ordens comerciais | `topic_merchant_order_wh` | Checkout Pro<br>Código QR  |
-| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout ----[mlb]----Transparente ----------------[mla, mlu, mlc, mlm, mco, mpe]----API------------<br>Checkout Bricks |
+| Abertura de _chargebacks_, mudanças de status e modificações referentes às liberações de dinheiro | Chargebacks | `topic_chargebacks_wh` | Checkout Pro<br>Checkout Checkout Bricks |
 ----[mla]----| Criação, atualização ou cancelamento de pedidos. | Delivery (proximity marketplace) | `delivery` | Mercado Pago Delivery |------------
 
 
