@@ -1,24 +1,9 @@
-----[mla, mlm, mlu, mpe, mco, mlc]----
-
 ---
 content_section_with_media: 
  - title: WooCommerce
  - message: WooCommerce is a plugin that allows you to enable your WordPress website to function as a virtual store with the peace of mind of offering buyers the possibility of making payments using Mercado Pago.
- - media_video: https://www.youtube.com/embed/GvlMgBLu5wE
+ - media_image: /landings-docs/media-image-landing.png
 ---
-
-------------
-
-----[mlb]----
-
----
-content_section_with_media: 
- - title: WooCommerce
- - message: WooCommerce is a plugin that allows you to enable your WordPress website to function as a virtual store with the peace of mind of offering buyers the possibility of making payments using Mercado Pago.
- - media_video: https://www.youtube.com/embed/fsMK4EWlnHQ
----
-
-------------
 
 --- mini_landing_separator ---
 

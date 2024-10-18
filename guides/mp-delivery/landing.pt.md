@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Introdução
  - message: O Mercado Pago Delivery é uma solução de entrega de refeições sob demanda na qual o cliente entra em uma lista de restaurantes cadastrados, seleciona seu pedido e realiza o pagamento diretamente do aplicativo Mercado Pago.
- - media_video: https://www.youtube.com/embed/npvBT3qsbhU
+ - media_image: /mpdelivery/mp-delivery-enlanding.png
 ---
 
 --- mini_landing_separator ---

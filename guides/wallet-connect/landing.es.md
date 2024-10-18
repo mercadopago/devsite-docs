@@ -2,7 +2,7 @@
 content_section_with_media: 
  - title: Wallet Connect
  - message: Wallet Connect es un producto que permite el procesamiento automático de pagos a través de la billetera digital de Mercado Pago. Con la aprobación del comprador, es posible realizar pagos utilizando el saldo disponible en la tarjeta o cuenta de Mercado Pago. Si tienes interés en el producto, contacta a tu ejecutivo comercial.
- - media_video: https://www.youtube.com/embed/6XiQlkcA1Pw
+ - media_image: /landings-docs/media-image-landing.png
 ---
 
 --- mini_landing_separator ---

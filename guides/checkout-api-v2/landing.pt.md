@@ -4,7 +4,7 @@
 content_section_with_media: 
  - title: Checkout Transparente
  - message: O Checkout Transparente do Mercado Pago permite que todo o processo de finalização de compra, desde o preenchimento de dados do usuário até a realização do pagamento aconteça em um único ambiente, sem a necessidade de redirecionamento para uma página externa à sua loja.
- - media_video: https://www.youtube.com/embed/yQZ5KjnUfbM
+ - media_image: /landings-docs/media-image-landing.png
 ---
 
 ------------
@@ -15,7 +15,7 @@ content_section_with_media:
 content_section_with_media: 
  - title: Checkout API
  - message: Checkout API do Mercado Pago permite que todo o processo de finalização de compra, desde o preenchimento de dados do usuário até a realização do pagamento aconteça em um único ambiente, sem a necessidade de redirecionamento para uma página externa à sua loja.
- - media_video: https://www.youtube.com/embed/yQZ5KjnUfbM
+ - media_image: /landings-docs/media-image-landing.png
 ---
 
 ------------
