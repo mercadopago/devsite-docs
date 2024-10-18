@@ -129,6 +129,13 @@
       "externalDocs": {
         "url": "/docs/checkout-pro/additional-content/reports/released-money/introduction"
       }
+    },
+    "order": {
+      "description": {
+        "pt": "Ordem unificada",
+        "en": "Order unificada",
+        "es": "Orden unificada"
+      }
     }
   }
 }
