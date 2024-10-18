@@ -1,28 +1,28 @@
 # Pagos online
 
-O Checkout Transparente do Mercado Pago permite que todo o processo de finalização de compra, desde o preenchimento de dados do usuário até a realização do pagamento aconteça em um único ambiente, sem a necessidade de redirecionamento para uma página externa à sua loja.
+----[mlb]----
+The **Checkout Transparente** from Mercado Pago allows the entire checkout process, from filling in user information to completing the payment, to take place in a single environment without the need to redirect to an external page outside your store.
 
-Uma Order de Pagos Online pode ser criada para ser processada de duas formas: Modo Automático e Modo Manual. 
+------------
+----[mla, mlm]----
+The **Checkout API** from Mercado Pago allows the entire checkout process, from filling in user information to completing the payment, to take place in a single environment without the need to redirect to an external page outside your store.
 
-O Modo Automático, como o nome propõe, é o modo padrão da aplicação. Por esse modo, a transação é completada em uma única etapa e as modificações são limitadas. 
+------------
 
-O Modo Manual é onde podemos dividir o processamento da transação em etapas que podem ser configuradas e executadas de maneira incremental. Permite a personalização de cada etapa do processo de pagamento, adaptando-se a diferentes necessidades e cenários. As operações permitidas são:
+Differences between the new **API Order** and the old **Payments API**:
 
-Criar Order, sem transações ou com transações
-Alterar Order
-Adicionar transações
-Alterar transação
-Remover transação
-Processar transações
-
-Principais diferenças da nova API Order para Pagos Online
-
-| X  | X  | X |
+| Functionality | Payments API | Order API |
 | --- | --- |--- |
-| X  | X  | X |
-| X  | X  | X |
-| X  | X  | X |
-| X  | X  | X |
-| X  | X  | X |
-| X  | X  | X |
-| X  | X  | X |
+| Mode | Automatic | Automatic and manual |
+| Operations | Payments | Payments and [In-store](/developers/pt/docs/order/online-payments/introduction) (QR and Point)|
+| Multiple transactions | Does not support | Supports |
+| Sending metadata | Allows | Does not allow |
+| Sending Notification URL | Allows in the payload | Does not allow in the payload and must be configured in [Developer panel > Application details](/developers/en/docs/order/additional-content/your-integrations/application-details). |
+| Validations with complete error responses | Validates one error at a time | Returns a list of all errors |
+| Return of PII data | Returns in some scenarios (e.g., approved) | Does not return in any scenario |
+
+An Online payment Order can be created to be processed in two ways: **Automatic mode** and **Manual mode**.
+
+## Automatic mode
+
+## Manual mode
