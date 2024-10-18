@@ -1,25 +1,9 @@
-----[mla, mlm, mlu, mpe, mco, mlc]----
-
 ---
 content_section_with_media: 
  - title: Shopify
  - message: Shopify is an e-commerce platform that offers all the features you need to sell online.
  - media_image: /landings-docs/media-image-landing.png
 ---
-
-------------
-
-----[mlb]----
-
----
-content_section_with_media: 
- - title: Shopify
- - message: Shopify is an e-commerce platform that offers all the features you need to sell online.
- - media_video: https://www.youtube.com/embed/ZWcc534ixaM
----
-
-------------
-
 
 --- mini_landing_separator ---
 
