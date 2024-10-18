@@ -1,48 +1,20 @@
-# Web Integration
+# Simplified Integration
 
-The web integration of Fintoc will allow you to offer this payment method in online store checkouts accessed through web browsers.
+The simplified integration of Fintoc will allow you to offer this payment method in online store checkouts accessed through web browsers or in its mobile version.
 
-In this documentation, we will guide you through the necessary steps to carry out this integration, and we will also provide a testing flow so you can verify that it was successful.
+In two simple steps, you can redirect buyers to Mercado Pago, where they can complete the payment using a pre-configured Fintoc widget, without extra integration efforts.
 
-## Import MercadoPago.js
-
-To integrate Fintoc and subsequently initialize the *widget*, it is first necessary to capture the data needed to process the payment by including the MercadoPago.js library in your project. Use the following code to do so via `html` or `bash`.
-
-[[[
-```html
-<body>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
-</body>
-
-```
-```bash
-npm install @mercadopago/sdk-js
-
-```
-]]]
-
-## Configure Credentials
-
-[Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials) are unique keys that we use to identify an integration within your account. They are used to securely capture payments in online stores and other applications.
-
-Use the code below to configure the credentials in your integration, replacing `"YOUR_PUBLIC_KEY"` with the production Public Key assigned to your application.
-
-```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-
-```
+This documentation will guide you step by step through the necessary integration process and will also provide you with a test flow so you can verify that it was successful.
 
 ## Create Payment
 
-To start the Fintoc implementation process, it is necessary to create a payment. This will return, within the `data` node and among other parameters, the `external_reference_id` field. Its value represents a token that you must store to use in the initialization of Fintoc's widget in your frontend.
-
-To do this, send a **POST** with the **required mandatory attributes** to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request, or if you prefer, send the information using our SDKs.
+To initiate the Fintoc implementation process, it is necessary to create a payment. Send a **POST** request with the **required mandatory attributes, described in the table below**, to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request, or if you prefer, send the information using our SDKs.
 
 > WARNING
 >
 > Important
 >
-> For this stage, when making the request via API or SDKs, it is necessary that you send your production Access Token. For more information, see [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
+> For this stage, when making the request via API or SDKs, it is necessary to send your production Access Token. For more information, check [Credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials).
 
 [[[
 ```php
@@ -187,21 +159,21 @@ sdk = mercadopago.SDK("YOUR_ACCESS_TOKEN")
 
 request_options = mercadopago.config.RequestOptions()
 request_options.custom_headers = {
-\t'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
 }
 
 payment_data = {
-\t"description": "Product title",
-\t"payer": {
-\t\t"email": "test_user_123@testuser.com",
-\t},
-\t"payment_method_id": "fintoc",
-\t"transaction_amount": 5000,
-\t "callback_url": "https://www.your-site.com",
-\t "point_of_interaction": {
-\t   "type": "CHECKOUT",
-\t   "sub_type": "INTER_PSP"
-\t  },
+    "description": "Titulo del producto",
+    "payer": {
+        "email": "test_user_123@testuser.com",
+    },
+    "payment_method_id": "fintoc",
+    "transaction_amount": 5000,
+    "callback_url": "https://www.your-site.com",
+    "point_of_interaction": {
+        "type": "CHECKOUT",
+        "sub_type": "INTER_PSP"
+    },
 }
 
 payment_response = sdk.payment().create(payment_data, request_options)
@@ -279,130 +251,94 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 | `transaction_amount` | number | Transaction amount. | 2000 |
 | `payment_method_id` | string | Payment method identifier. **It must always be `fintoc`**. | fintoc |
 | `description` | string | Description of the payment reason. | Product1 |
-| `callback_url` | string | URL to which Mercado Pago makes the final redirection. | https://www.your-site.com |
+| `callback_url` | string | URL to which Mercado Pago makes the final redirection in case of success or error. | https://www.your-site.com |
 | `point_of_interaction.type` | string | Information of the application processing the payment. For the `type` attribute, it must always be `CHECKOUT`. | CHECKOUT |
 | `point_of_interaction.sub_type` | string | Secondary identifier of the payment type. For the `sub_type` attribute, it must always be `INTER_PSP`. | INTER_PSP |
 
-Below, you can see an example of a response to this request, where information has been omitted to show the most relevant fields.
-
 > WARNING
 >
-> Important
+> Attention
 >
-> Remember to store the value of the `external_reference_id` field to use it in the initialization of the widget. Note that **it is valid only for 10 minutes**. After this time, it will expire, and you will need to create another payment.
+> The payment created with Fintoc is **valid for only 10 minutes**. After that time, it will expire, and you will need to create another.
 
-```javascript
+In the response to the payment creation, within the `data` node and among other parameters, you will find the `external_resource_url` field, which will contain the necessary URL to redirect the buyer to the Mercado Pago site in order to complete the transaction.
+
+Below, you can see an example response to this request, where information has been omitted to show the most relevant fields.
+
+```json
 {
-  ...
-    "id":"<PAYMENT_ID>",
-  "payment_method_id": "fintoc",
-  "payment_method": {
-    "data": {
-      "external_reference_id": "<WIDGET_TOKEN>",
-    }
-   ...
-  }
+    "id": 82512912106,
+    ...
+    "payment_method_id": "fintoc",
+    "payment_type_id": "bank_transfer",
+    "payment_method": {
+        "id": "fintoc",
+        "type": "bank_transfer",
+        "data": {
+            "reference_id": "82512912106",
+            "external_reference_id": "pi_2nGAKKSDoWG8ALR8_sec_Vfwt2rhBdjxYLhVpWupimnnp",
+            "external_resource_url": "https://mercadopago.cl/banktransfer..."
+        }
+    },
+    "status": "pending",
+    ...
 }
+
 ```
 
 > NOTE
 >
 > Note
 >
-> In case you encounter any errors when creating the payment, check the list of possible errors in our [API Reference](/developers/en/reference/payments/_payments/post).
+> If you receive any errors when creating the payment, check the list of possible errors in our [API Reference](/developers/en/reference/payments/_payments/post).
 
-## Initialize Fintoc
+## Redirect to Mercado Pago
 
-To finalize the payment, it is necessary to initialize the iframe and implement Fintoc's widget in the frontend. For this, use the `mp.fintoc()` method, which we provide within our SDKs, and it will allow you to initialize the existing resources.
+Once the payment is created, it is necessary to redirect the buyer to Mercado Pago, a screen that will already be prepared with the necessary Fintoc widget to complete the payment.
 
-```javascript
- const fintoc = mp.fintoc();
+To do this, redirect to the URL stored in the `external_resource_url` field, which was returned in the response to the payment creation. 
 
-```
-
-Then, open Fintoc's payment widget using the `mp.fintoc.open()` method and sending the necessary parameters, as indicated below.
-
-```javascript
-               async function openFintoc() {
-                  try {
-                    await fintoc.open({
-                      institutionId: document.querySelector('#fintoc-institutionId').value,
-                      username: document.querySelector('#fintoc-username').value,
-                      widgetToken: <EXTERNAL_REFERENCE_ID>
-                      onSuccess,
-                      onExit,
-                      onEvent,
-                    })
-                  } catch(e) {
-                    console.error(e)
-                  }
-                }
+```json
+{
+   …
+        "data": {
+            "reference_id": "82512912106",
+            "external_reference_id": "pi_2nGAKKSDoWG8ALR8_sec_Vfwt2rhBdjxYLhVpWupimnnp",
+            "external_resource_url": "https://mercadopago.cl/banktransfer..."
+        }
+   …
+}
 
 ```
 
-| Attribute | Type | Description | Required/Optional |
-|---|---|---|---|
-| `institutionId` | string | Identifier of the [financial institution](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). When included, it pre-selects the institution that will appear when the widget is opened. For example, the value `cl_banco_de_chile` will make the widget open with Banco de Chile. | Optional |
-| `username` | string | Identifies the user's account. If completed, it ensures that when selecting the bank for the transaction, the user is already identified and only needs to provide their password. | Optional |
-| `widgetToken` | string | Token created in the backend when creating a payment. It is the value received for the `external_reference_id` parameter, which initializes and configures the widget. | Required |
-| `onSuccess` | function | Callback that will be called after a successful creation of the link. | Required |
-| `onExit` | function | Callback that will be called if the user closes the link prematurely. | Required |
-| `onEvent` | function | Callback that will be called each time the user executes an action in the widget. | Required |
+> WARNING
+>
+> Attention
+>
+> Mercado Pago only carries out the buyer's payment experience and does not handle the success or error processing of it. Once the payment is finalized, it will redirect to the URL registered as `callback_url` by the integrator, who must handle that processing.
+
+If you want, it is possible to **pre-select the financial institution and the buyer's name**, so that, upon opening, the *widget* already contains these details and they do not have to be filled in manually. To do this, add the following query parameters to the `external_resource_url`:
+
+```external_resource_url
+
+https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?caller_id=[…]b96-ab4bcf820559&username=JohnDoe&instutuion_id=banco_estado
+
+```
+
+| Query param | Description | Example |
+|---|---|---|
+| `username` | Parameter used to pre-fill the buyer's name. | `JohnDoe` |
+| `institution_id` | Parameter used to pre-fill the financial institution for payment. Check which institutions are available by accessing the [Fintoc documentation](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). | `banco_estado` |
 
 > WARNING
 >
 > Important
->
-> **Refunds** for payments made through Fintoc can be requested in the **"Activities"** section within the seller's [Mercado Pago Dashboard](https://www.mercadopago[FAKER][URL][DOMAIN]/home). They can take **up to 72 hours to process**. Note that if requested after 2:00 PM, the processing time will be counted from the next day.
+> 
+> **Refunds** for payments made through Fintoc can be requested through the **"Activities"** section within the [Mercado Pago Panel](https://www.mercadopago[FAKER][URL][DOMAIN]/home) of the seller. They can take **up to 72 hours to be processed**. Keep in mind that if you request them after 2:00 PM, the processing time will start from the following day. 
 
-## Close and Remove Fintoc
+## Test Simplified Integration
 
-If necessary, you can close and remove the previously initialized Fintoc iframe using these two methods.
-
-### - Close Fintoc
-Use the `mp.fintoc.close()` method to close the iframe without destroying the widget, hiding it from the user.
-
-```javascript
-function closeFintoc() {
-      fintoc.close()
-}
-```
-
-### - Eliminate Fintoc
-Use the `mp.fintoc.destroy()`method when in need to directly eliminate the instance from your application.
-
-```javascript
-function destroyFintoc() {
-      fintoc.destroy()
-}
-
-```
-
-In case you need to reinitialize it, you can do so by calling the `mp.fintoc.open()` method again.
-
-## Integration test
-
-Test your integration and payment processing with Fintoc using a pre-established sandbox environment and your **Mercado Pago test credentials**.
-
-To initialize this environment, instantiate the Fintoc widget by adding the parameter `sandbox: true` to the `mp.fintoc` method:
-
-```javascript
- const fintoc = mp.fintoc({sandbox: true});
-```
-
-Once the test scope of Fintoc is instantiated, continue with the opening of the widget, as described in the [Initialize Fintoc]() stage.
-
-
-```javascript
-async function openFintoc() {
-                  try {
-                    await fintoc.open({...})
-                  } catch(e) {
-                    console.error(e)
-                  }
-
-
-```
+To test the functioning of your integration and the payment processing with Fintoc, you need to [Create a payment]() using your [Mercado Pago test credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials#bookmark_obtener_credenciales:~:text=sistema%20o%20intruso.-,Test%20credentials,-The%20test%20credentials%20for). 
 
 You can test different payment scenarios based on the **last two digits sent in the `amount` field**, which will allow you to define success or error cases. Follow the instructions in the table below for each case:
 

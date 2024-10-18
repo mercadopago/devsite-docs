@@ -2,8 +2,12 @@
 
 Fintoc es una aplicación que permite recibir pagos y realizar cobros recurrentes con cualquier banco en Chile, cuya conciliación sucede de manera automática. 
 
-Con Checkout ----[mla, mlm, mlu, mco, mlc, mpe]----API----------------[mlb]---- Transparente------------ es posible ofrecer esta opción de pago con integraciones web o mobile, dependiendo de las características de tu sistema. Selecciona aquella más adecuada a tus necesidades y sigue el paso a paso de la documentación correspondiente: 
+Con Checkout ----[mla, mlm, mlu, mco, mlc, mpe]----API----------------[mlb]---- Transparente------------ es posible ofrecer esta opción de pago realizando dos tipos de integración distintos:  
 
- * [Integración web]()
- * [Integración mobile]()
+ * [Integración simplificada](): es una manera sencilla de configurar tu integración, basada en la redirección a Mercado Pago, donde el cliente podrá pagar mediante un *widget* ya preparado. Esta integración puede ser utilizada tanto para web, sea en modelo *desktop* o responsivo, como para *mobile*, a través del modelo *WebView*.
+
+ * [Integración avanzada](): permite controlar de manera completa y transparente el flujo de la experiencia dentro de la tienda, gracias a la disponibilización de métodos específicos en nuestros SDKs. Esta integración solo puede ser utilizada en navegadores web.
+
+Selecciona el tipo de integración más adecuado a tus necesidades y sigue el paso a paso para ofrecer Fintoc como medio de pago en Checkout  ----[mla, mlm, mlu, mco, mlc, mpe]----API----------------[mlb]---- Transparente------------.
+
 

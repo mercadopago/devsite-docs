@@ -1,8 +1,10 @@
-# Integração web
+# Integração avançada
 
 A integração web do Fintoc permitirá que você ofereça este meio de pagamento em checkouts de lojas online que são acessadas através de navegadores web.
 
-Nesta documentação, oferecemos o passo a passo detalhado para a integração, além de um fluxo de teste para garantir que a implementação foi bem-sucedida.
+Por meio de nossos SDKs, é possível utilizar diferentes métodos que permitirão controlar a experiência de pagamento dos usuários dentro da própria loja, de maneira transparente e adaptável às suas necessidades.
+
+Nesta documentação, você contará com o passo a passo necessário para realizar essa integração e, além disso, oferecemos um fluxo de teste para que possa verificar se a integração foi bem-sucedida.
 
 
 ## Importar MercadoPago.js
@@ -188,21 +190,21 @@ sdk = mercadopago.SDK("YOUR_ACCESS_TOKEN")
 
 request_options = mercadopago.config.RequestOptions()
 request_options.custom_headers = {
-\t'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
 }
 
 payment_data = {
-\t"description": "Titulo do produto",
-\t"payer": {
-\t\t"email": "test_user_123@testuser.com",
-\t},
-\t"payment_method_id": "fintoc",
-\t"transaction_amount": 5000,
-\t "callback_url": "https://www.your-site.com",
-\t "point_of_interaction": {
-\t   "type": "CHECKOUT",
-\t   "sub_type": "INTER_PSP"
-\t  },
+    "description": "Titulo del producto",
+    "payer": {
+        "email": "test_user_123@testuser.com",
+    },
+    "payment_method_id": "fintoc",
+    "transaction_amount": 5000,
+    "callback_url": "https://www.your-site.com",
+    "point_of_interaction": {
+        "type": "CHECKOUT",
+        "sub_type": "INTER_PSP"
+    },
 }
 
 payment_response = sdk.payment().create(payment_data, request_options)
@@ -383,7 +385,7 @@ function destroyFintoc() {
 Caso precise reinicializar a instância, você pode chamar novamente o método `mp.fintoc.open()`.
 
 
-## Teste de integração
+## Teste de integração avançada
 
 É possível testar o funcionamento da sua integração e do processamento de pagamentos com Fintoc. Para isso, você deve inicializar o *widget* em um ambiente de testes, utilizando credenciais de teste do Mercado Pago.
 

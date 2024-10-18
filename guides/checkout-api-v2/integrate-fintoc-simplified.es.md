@@ -1,42 +1,14 @@
-# Integración web
+# Integración simplificada
 
-La integración web de Fintoc te permitirá ofrecer este medio de pago en checkouts de tiendas online a las que se accede por medio de navegadores web. 
+La integración simplificada de Fintoc te permitirá ofrecer este medio de pago en checkouts de tiendas online accedidos a través de navegadores web, o en su versión *mobile*. 
+
+En dos simples pasos, podrás redirigir a los compradores a Mercado Pago, donde podrán realizar el pago mediante un *widget* de Fintoc ya configurado, sin esfuerzos de integración extra.
 
 En esta documentación te guiaremos en el paso a paso necesario para realizar esta integración y, además, te ofreceremos un flujo de prueba para que puedas comprobar que la misma fue exitosa.
 
-## Importar MercadoPago.js
-
-Para integrar Fintoc e inicializar posteriormente el *widget*, primero es necesario capturar los datos necesarios para procesar el pago incluyendo la biblioteca MercadoPago.js en tu proyecto. Utiliza el siguiente código para hacerlo vía `html` o `bash`.
-
-[[[
-```html
-<body>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
-</body>
-
-```
-```bash
-npm install @mercadopago/sdk-js
-
-```
-]]]
-
-## Configurar credenciales
-
-Las [credenciales](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials) son claves únicas con las que identificamos una integración en tu cuenta. Se utilizan para capturar pagos en tiendas online y otras aplicaciones de forma segura.
-
-Utiliza el código debajo para configurar las credenciales en tu integración, sustituyendo `"YOUR_PUBLIC_KEY"` por la clave pública (*Public Key*) de producción asignada a tu aplicación.
-
-```javascript
-const mp = new MercadoPago('YOUR_PUBLIC_KEY');
-
-```
-
 ## Crear pago
 
-Para iniciar el proceso de implementación de Fintoc, es necesario crear un pago. El mismo devolverá, dentro del nodo `data` y entre otros parámetros, el campo `external_reference_id`, cuyo valor representa un token que debes almacenar para utilizarlo en la inicialización del *widget* de Fintoc en tu frontend.
-
-Para esto, envía un **POST** con los **atributos obligatorios requeridos** al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
+Para iniciar el proceso de implementación de Fintoc, es necesario crear un pago. Envía un **POST** con los **atributos obligatorios requeridos, descritos en la tabla debajo**, al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
 
 > WARNING
 >
@@ -187,21 +159,21 @@ sdk = mercadopago.SDK("YOUR_ACCESS_TOKEN")
 
 request_options = mercadopago.config.RequestOptions()
 request_options.custom_headers = {
-\t'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
+'x-idempotency-key': '<SOME_UNIQUE_VALUE>'
 }
 
 payment_data = {
-\t"description": "Titulo del producto",
-\t"payer": {
-\t\t"email": "test_user_123@testuser.com",
-\t},
-\t"payment_method_id": "fintoc",
-\t"transaction_amount": 5000,
-\t "callback_url": "https://www.your-site.com",
-\t "point_of_interaction": {
-\t   "type": "CHECKOUT",
-\t   "sub_type": "INTER_PSP"
-\t  },
+    "description": "Titulo del producto",
+    "payer": {
+        "email": "test_user_123@testuser.com",
+    },
+    "payment_method_id": "fintoc",
+    "transaction_amount": 5000,
+    "callback_url": "https://www.your-site.com",
+    "point_of_interaction": {
+        "type": "CHECKOUT",
+        "sub_type": "INTER_PSP"
+    },
 }
 
 payment_response = sdk.payment().create(payment_data, request_options)
@@ -279,30 +251,39 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 | `transaction_amount` | number | Monto de la transacción. | 2000 |
 | `payment_method_id` | string | Identificador del medio de pago. **Siempre debe ser `fintoc`**. | fintoc |
 | `description` | string | Descripción del motivo del pago.  | Producto1 |
-| `callback_url` | string | URL a la cual Mercado Pago hace la redirección final. | https://www.your-site.com |
+| `callback_url` | string | URL a la cual Mercado Pago hace la redirección final en caso de éxito o error. | https://www.your-site.com |
 | `point_of_interaction.type` | string | Información de la aplicación que procesa el pago. Para el atributo `type`, debe ser siempre `CHECKOUT` | CHECKOUT |
 | `point_of_interaction.sub_type` | string | Identificador secundario del tipo de pago. Para el atributo `sub_type`, debe ser siempre `INTER_PSP` | INTER_PSP |
 
-A continuación, puedes ver un ejemplo de respuesta a esta solicitud, en la que se omitió información para mostrar los campos más relevantes.
-
 > WARNING
 >
-> Importante
+> Atención
 >
-> Recuerda almacenar el valor del campo `external_reference_id` para utilizarlo en la inicialización del *widget*. Ten en cuenta que **es válido sólo por 10 minutos**. Pasado ese tiempo, caducará y deberás crear otro pago.
+> El pago con Fintoc creado es **válido sólo por 10 minutos**. Pasado ese tiempo, caducará y deberás crear otro.
 
-```javascript
+En la respuesta a la creación del pago, dentro del nodo `data` y entre otros parámetros, encontrarás el campo `external_resource_url`, que contendrá la URL necesaria para redireccionar al comprador al sitio de Mercado Pago, para así finalizar la transacción.
+
+A continuación, puedes ver un ejemplo de respuesta a esta solicitud, en la que se omitió información para mostrar los campos más relevantes.
+
+```json
 {
-  ...
-    "id":"<PAYMENT_ID>",
-  "payment_method_id": "fintoc",
-  "payment_method": {
-    "data": {
-      "external_reference_id": "<WIDGET_TOKEN>",
-    }
-   ...
-  }
+    "id": 82512912106,
+    ...
+    "payment_method_id": "fintoc",
+    "payment_type_id": "bank_transfer",
+    "payment_method": {
+        "id": "fintoc",
+        "type": "bank_transfer",
+        "data": {
+            "reference_id": "82512912106",
+            "external_reference_id": "pi_2nGAKKSDoWG8ALR8_sec_Vfwt2rhBdjxYLhVpWupimnnp",
+            "external_resource_url": "https://mercadopago.cl/banktransfer..."
+        }
+    },
+    "status": "pending",
+    ...
 }
+
 ```
 
 > NOTE
@@ -311,44 +292,42 @@ A continuación, puedes ver un ejemplo de respuesta a esta solicitud, en la que 
 >
 > En caso de recibir algún error al crear el pago, consulta la lista de errores posibles en nuestra [Referencia de API](/developers/es/reference/payments/_payments/post).
 
+## Realizar la redirección a Mercado Pago
 
-## Inicializar Fintoc
+Una vez creado el pago, es necesario redirigir al comprador a Mercado Pago, pantalla que ya estará preparada con el *widget* de Fintoc necesario para realizar el pago. 
 
-Para finalizar el pago, es necesario inicializar el *iframe* e implementar el *widget* de Fintoc en el frontend. Para eso, utiliza el método `mp.fintoc()`, que disponibilizamos dentro de nuestros SDKs, y que te permitirá inicializar los recursos existentes.
+Para esto, haz la redirección a la URL almacenada en el campo `external_resource_url`, que fue devuelta en la respuesta a la creación del pago. 
 
-```javascript
- const fintoc = mp.fintoc();
+```json
+{
+   …
+        "data": {
+            "reference_id": "82512912106",
+            "external_reference_id": "pi_2nGAKKSDoWG8ALR8_sec_Vfwt2rhBdjxYLhVpWupimnnp",
+            "external_resource_url": "https://mercadopago.cl/banktransfer..."
+        }
+   …
+}
+```
+
+> WARNING
+>
+> Atención
+>
+> Mercado Pago sólo lleva adelante la experiencia de pago del comprador, y no el tratamiento de éxito o error en su procesamiento. Una vez este se haya finalizado, se hará la redirección a la URL registrada como `callback_url` por el integrador, quien debe hacer ese tratamiento.
+
+Si lo deseas, es posible **pre-seleccionar la institución financiera y el nombre del comprador**, para que, en su apertura, el *widget* ya cuente con estos datos y no deban ser completados manualmente. Para ello, agrega a la `external_resource_url` los *query params* indicados en el siguiente ejemplo:
+
+```external_resource_url
+
+https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?caller_id=[…]b96-ab4bcf820559&username=JohnDoe&instutuion_id=banco_estado
 
 ```
 
-Luego, abre el *widget* de pago de Fintoc utilizando el metodo `mp.fintoc.open()` y enviando los parámetros necesarios, como se indica a continuación.
-
-```javascript
-               async function openFintoc() {
-                  try {
-                    await fintoc.open({
-                      institutionId: document.querySelector('#fintoc-institutionId').value,
-                      username: document.querySelector('#fintoc-username').value,
-                      widgetToken: <EXTERNAL_REFERENCE_ID>
-                      onSuccess,
-                      onExit,
-                      onEvent,
-                    })
-                  } catch(e) {
-                    console.error(e)
-                  }
-                }
-
-```
-
-| Atributo | Tipo | Descripción | Requerido/opcional |
-|---|---|---|---|
-| `institutionId` | string | Identificador de la [institución financiera](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). Cuando es incluido, se preselecciona la institución que aparecerá en la apertura del *widget*. Por ejemplo,  el valor `cl_banco_de_chile` indicará que el *widget* se abra con Banco de Chile. | Opcional |
-| `username` | string | Identifica la cuenta del usuario. Si es completado, asegura que al momento de seleccionar el banco con el que se realizará la transacción, el usuario ya esté identificado y sólo tenga que proporcionar su contraseña. | Opcional |
-| `widgetToken` | string | Token creado en el backend al momento de crear un pago. Es el valor recibido para el parámetro `external_reference_id`, que inicializa y configura el *widget*. | Requerido  |
-| `onSuccess` | function | *Callback* que será llamado luego de una creación exitosa del enlace. | Requerido |
-| `onExit` | function | *Callback* que será llamado cuando de que el usuario cierre el enlace antes de tiempo. | Requerido |
-| `onEvent` | function | *Callback* que será llamado cada vez que el usuario ejecute alguna acción en el *widget*.  | Requerido |
+| Query param | Descripción | Ejemplo |
+|---|---|---|
+| `username` | Parámetro utilizado para completar predeterminadamente el nombre del comprador. | `JohnDoe` |
+| `institution_id` | Parámetro utilizado para completar predeterminadamente la institución financiera para realizar el pago. Consulta cuáles son las instituciones disponibles accediendo a la [documentación de Fintoc](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). | `banco_estado` |
 
 > WARNING
 >
@@ -356,56 +335,12 @@ Luego, abre el *widget* de pago de Fintoc utilizando el metodo `mp.fintoc.open()
 > 
 > Los **reembolsos** de pagos efectuados por medio de Fintoc podrán solicitarse a través de la sección **"Actividades"** dentro del [Panel de Mercado Pago](https://www.mercadopago[FAKER][URL][DOMAIN]/home) del vendedor. Pueden tomar **hasta 72 horas en ser procesados**. Ten en cuenta que, en caso de solicitarlos después de las 14:00 hs., el plazo del procesamiento se contará partir del día siguiente. 
 
-## Cerrar y eliminar Fintoc
 
-Si fuera necesario, es posible cerrar y eliminar el *iframe* de Fintoc previamente inicializado utilizando estos dos métodos. 
+## Probar integración simplificada
 
-### - Cerrar Fintoc
-Utiliza el método `mp.fintoc.close()` para cerrar el iframe sin destruir el 
-*widget*, ocultándolo para el usuario.
+Para probar el funcionamiento de tu integración y del procesamiento de pagos con Fintoc, debes [Crear un pago]() utilizando tus [credenciales de prueba de Mercado Pago](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials#bookmark_obtener_credenciales:~:text=sistema%20o%20intruso.-,Credenciales%20de%20prueba,-Las%20credenciales%20de). 
 
-```javascript
-function closeFintoc() {
-      fintoc.close()
-}
-```
-
-### - Eliminar Fintoc
-Utiliza el método `mp.fintoc.destroy()` cuando necesites eliminar directamente la instancia de tu aplicación.
-
-```javascript
-function destroyFintoc() {
-      fintoc.destroy()
-}
-
-```
-
-En caso de requerir volver a inicializarla, puedes hacerlo llamando nuevamente al método `mp.fintoc.open()`.
-
-## Probar integración
-
-Prueba el funcionamiento de tu integración y del procesamiento de pagos con Fintoc utilizando un ambiente sandbox preestablecido y tus **credenciales de prueba de Mercado Pago**. 
-
-Para inicializar este ambiente, instancia el *widget* de Fintoc agregando el parámetro `sandbox: true` al método `mp.fintoc`:
-
-```javascript
- const fintoc = mp.fintoc({sandbox: true});
-```
-
-Una vez instanciado el *scope* de pruebas de Fintoc, continúa con la apertura del *widget*, como es descrito en la etapa [Inicializar Fintoc](). 
-
-```javascript
-async function openFintoc() {
-                  try {
-                    await fintoc.open({...})
-                  } catch(e) {
-                    console.error(e)
-                  }
-
-
-```
-
-Puedes probar  distintos escenarios de pago a partir de los **últimos dos dígitos enviados en el campo `amount`**, que te permitirán definir casos de éxito o error. Sigue las indicaciones de la tabla a continuación para cada caso:
+Puedes probar distintos escenarios de pago a partir de los **últimos dos dígitos enviados en el campo `amount`**, que te permitirán definir casos de éxito o error. Sigue las indicaciones de la tabla a continuación para cada caso:
 
 | Escenario | Últimos dígitos del campo `amount` | Ejemplo |
 |---|---|---|
