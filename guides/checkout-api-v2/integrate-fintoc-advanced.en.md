@@ -392,7 +392,7 @@ To initialize this environment, instantiate the Fintoc widget by adding the para
  const fintoc = mp.fintoc({sandbox: true});
 ```
 
-Once the test scope of Fintoc is instantiated, continue with the opening of the widget, as described in the [Initialize Fintoc]() stage.
+Once the test scope of Fintoc is instantiated, continue with the opening of the widget, as described in the [Initialize Fintoc](/developers/en/docs/checkout-api/integration-configuration/fintoc/advanced-integration#bookmark_initialize_fintoc) stage.
 
 
 ```javascript

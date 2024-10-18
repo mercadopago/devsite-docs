@@ -338,7 +338,7 @@ https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?call
 
 ## Test Simplified Integration
 
-To test the functioning of your integration and the payment processing with Fintoc, you need to [Create a payment]() using your [Mercado Pago test credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials#bookmark_obtener_credenciales:~:text=sistema%20o%20intruso.-,Test%20credentials,-The%20test%20credentials%20for). 
+To test the functioning of your integration and the payment processing with Fintoc, you need to [Create a payment](/developers/en/docs/checkout-api/integration-configuration/fintoc/simplified-integration#bookmark_create_payment) using your [Mercado Pago test credentials](/developers/en/docs/checkout-api/additional-content/your-integrations/credentials#bookmark_obtener_credenciales:~:text=sistema%20o%20intruso.-,Test%20credentials,-The%20test%20credentials%20for). 
 
 You can test different payment scenarios based on the **last two digits sent in the `amount` field**, which will allow you to define success or error cases. Follow the instructions in the table below for each case:
 

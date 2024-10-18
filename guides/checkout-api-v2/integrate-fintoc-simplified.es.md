@@ -338,7 +338,7 @@ https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?call
 
 ## Probar integración simplificada
 
-Para probar el funcionamiento de tu integración y del procesamiento de pagos con Fintoc, debes [Crear un pago]() utilizando tus [credenciales de prueba de Mercado Pago](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials#bookmark_obtener_credenciales:~:text=sistema%20o%20intruso.-,Credenciales%20de%20prueba,-Las%20credenciales%20de). 
+Para probar el funcionamiento de tu integración y del procesamiento de pagos con Fintoc, debes [Crear un pago](/developers/es/docs/checkout-api/integration-configuration/fintoc/simplified-integration#bookmark_crear_pago) utilizando tus [credenciales de prueba de Mercado Pago](/developers/es/docs/checkout-api/additional-content/your-integrations/credentials#bookmark_obtener_credenciales:~:text=sistema%20o%20intruso.-,Credenciales%20de%20prueba,-Las%20credenciales%20de). 
 
 Puedes probar distintos escenarios de pago a partir de los **últimos dos dígitos enviados en el campo `amount`**, que te permitirán definir casos de éxito o error. Sigue las indicaciones de la tabla a continuación para cada caso:
 

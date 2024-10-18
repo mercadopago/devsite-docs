@@ -394,7 +394,7 @@ Para inicializar este ambiente, instancia el *widget* de Fintoc agregando el par
  const fintoc = mp.fintoc({sandbox: true});
 ```
 
-Una vez instanciado el *scope* de pruebas de Fintoc, continúa con la apertura del *widget*, como es descrito en la etapa [Inicializar Fintoc](). 
+Una vez instanciado el *scope* de pruebas de Fintoc, continúa con la apertura del *widget*, como es descrito en la etapa [Inicializar Fintoc](/developers/es/docs/checkout-api/integration-configuration/fintoc/advanced-integration#bookmark_inicializar_fintoc). 
 
 ```javascript
 async function openFintoc() {
