@@ -26,11 +26,7 @@ Las que interactuan directo con el hardware del dispositivo, como las de los fab
 
 ## Problema con Build Tools
 
-> WARNING
->
-> Atención
->
-> Si el mensaje **"El Build Tools instalado revisión 32.0.0 está dañado"** aparece, elimina el programa y vuelve a instalarlo usando el **SDK Manager**.
+Si el mensaje **"El Build Tools instalado revisión 32.0.0 está dañado"** aparece, elimina el programa y vuelve a instalarlo usando el **SDK Manager**.
 
 Luego, ejecuta este comando en la terminal:
 

@@ -9,24 +9,3 @@ A [Point Smart](/developers/pt/docs/mp-point/landing) é um dispositivo de pagam
 Main apps são aplicativos de gestão de negócio que podem ser integrados à [Point Smart](/developers/pt/docs/mp-point/landing). Eles se transformam na interface principal, e a pessoa vendedora utiliza as funcionalidades da maquininha com o Mercado Pago processando os pagamentos.  
 
 O aplicativo é privado, com [modelo fechado de distribuição](/developers/pt/docs/main-apps/distribution) de uso exclusivo da empresa.
-
-## Funcionalidades
-
-Uma vez integrado, o aplicativo pode usar as funções da maquininha que completam a experiência. São elas:
-
-### Disponíveis
-
-- Login no main app a partir da Point Smart.
-- Pagamentos em débito, crédito e NFC (pagamento por aproximação) com cartão ou celular.
-- Pagamentos por Pix ou código QR.
-- Acesso à câmera para leitura do código QR.
-- Impressão customizada de comprovantes e arquivos de imagem bitmap.
-- Conexão via bluetooth a impressoras, teclados e leitores de código de barras.
-
-### Em breve
-
-- Acesso à câmera para leitura de códigos de barra.
-- Reembolso e devolução de pagamento pela maquininha.
-- Painel de controle com informações do aplicativo.
-- Ambiente de testes.
-- Atualizações remotas do aplicativo controlada por dispositivo.

@@ -4,15 +4,17 @@ Antes de começar a desenvolver sua solução, veja as condições que devem ser
 
 | Requisitos | Descrição |
 |---|---|
+| Aplicação  | As aplicações são as diferentes integrações contidas em uma ou mais lojas. Você pode criar uma aplicação para cada solução que implementar, a fim de ter tudo organizado e manter um controle que facilite a gestão. Veja [Suas integrações](/developers/pt/docs/checkout-bricks/additional-content/your-integrations/introduction) para mais informações sobre como criar uma aplicação. |
+| Credenciais | Senhas únicas com as quais identificamos uma integração na sua conta. Para realizar as integrações, será necessário o **Client ID**. [Clique aqui](/developers/pt/docs/main-apps/additional-content/your-integrations/credentials) para mais informações. |
+| Point Smart do Mercado Pago | [Mercado Pago Point](/developers/pt/docs/mp-point/landing) é a maquininha de cartão do Mercado Pago que permite aos compradores realizarem pagamentos presenciais de maneira rápida e segura utilizando cartões de crédito ou débito. |
 | Pré-configuração de dispositivos | Para que as maquininhas operem em **Modo integrado** e a pré-configuração seja feita, compartilhe com o Mercado Pago a conta que será utilizada para a integração, bem como as configurações de caixas, lojas e números de série dos aparelhos. |
 |Kit de Desenvolvimento| Para iniciar o desenvolvimento, baixe o [Kit de Desenvolvimento](https://github.com/mercadolibre/point-mainapp-demo-android) fornecido pelo Mercado Pago. |
 |Android Studio| Instale o [ambiente de desenvolvimento Android](https://developer.android.com/studio) para construir e depurar os main apps.|
-|App no Painel de Desenvolvedores | Crie um app no [painel de desenvolvedores](/developers/panel/app) com a conta do integrador. Em seguida, gere o `ClientId` que servirá como identificador da integração. Veja mais informações sobre como criar uma aplicação em [Detalhes da aplicação](/developers/pt/docs/main-apps/additional-content/your-integrations/application-details).|
-|Fluxo de OAuth| Se for obter informações da conta da pessoa vendedora, faça o [fluxo de OAuth](/developers/pt/docs/main-apps/additional-content/security/oauth/introduction). |
+|OAuth| O OAuth é um protocolo de autorização que permite que aplicações tenham acesso limitado às informações privadas das contas do Mercado Pago. Se for obter informações da conta da pessoa vendedora, faça o [fluxo de OAuth](/developers/pt/docs/main-apps/additional-content/security/oauth/introduction). |
 
 ## Especificações técnicas da Point Smart
 
-Para garantir que a integração seja exitosa, considere as características da maquininha e como o aplicativo se adaptará a elas.
+Para garantir que a integração seja exitosa, considere as características da maquininha [Point Smart](/developers/pt/docs/mp-point/landing) e como o aplicativo se adaptará a elas.
 
 ![prerequisites](/main-apps/prerequisites-all.png)
 
