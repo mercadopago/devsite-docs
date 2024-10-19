@@ -9,21 +9,33 @@ O **Checkout API** do Mercado Pago permite que todo o processo de finalização 
 
 ------------
 
-Principais diferenças da nova **API Order** para a antiga **API de Payments**:
-
-| Funcionalidade  | Payments API  | Order API |
-| --- | --- |--- |
-| Modo  | Automático  | Automático e manual |
-| Operações  | Payments  | Payments e [In-store](/developers/pt/docs/order/online-payments/introduction) (QR e Point)|
-| Múltiplas transações  | Não possui | Possui |
-| Envio de metadados  | Permite  | Não permite |
-| Envio de Notification Url  | Permite no _payload_  | Não permite no _payload_ e
-deve ser configurado no [Painel do desenvolvedor > Detalhes da aplicação](/developers/pt/docs/order/additional-content/your-integrations/application-details). |
-| Validações com respostas de erros completas  | Valida um erro por vez  | Retorna uma lista com todos os erros |
-| Retorno de dados PII | Retorna em alguns cenários (ex: aprovado)  | Não retorna em nenhum cenário |
-
 Uma Order de Pagamentos online pode ser criada para ser processada de dois modos: **Modo automático** e **Modo manual**. 
 
 ## Modo automático
 
+O Modo automático, como o nome propõe, é o modo padrão da aplicação. Por esse modo, a transação é completada em uma única etapa e as modificações são limitadas. Para criar a Order no modo automático, é necessário certificar-se que o campo `processing_mode` esteja como `automatic` e que todas as informações estão sendo enviadas nessa única solicitação. O campo `processing_mode` é responsável por definir o formato de criação e processamento da transação. 
+
+As operações permitidas são: 
+
+- [**Criar e processar Order**](/development/pt/reference/order/online-payments/create/post): responsável pela criação da Order já com o processamento da transação simultâneo.
+- [**Buscar transação**](/development/pt/reference/order/online-payments/get-order/get): permite localizar uma intenção de Order existente.
+- [**Capturar transação**](/development/pt/reference/order/online-payments/capture/delete): possibilita a captura do valor autorizado de uma Order. Essa opção só é válida para cartões de crédito.
+- [**Cancelar transação**](/development/pt/reference/order/online-payments/cancel-order/post): responsável pelo cancelamento de uma Order já existente, mas que ainda não foi processado/finalizado. 
+- [**Reembolsar**](/development/pt/reference/order/online-payments/refund/post): no caso do modo automático, o estorno sempre será total. 
+
 ## Modo manual
+
+O Modo manual é onde podemos dividir o processamento da transação em etapas que podem ser configuradas e executadas de maneira incremental. Permite a personalização de cada etapa do processo de pagamento, adaptando-se a diferentes necessidades e cenários. Para criar a Order no modo manual, é necessário certificar-se que o campo `processing_mode` esteja como `manual`. Esse campo é responsável por definir o formato de criação e processamento da transação. 
+
+As operações permitidas são:
+
+- [**Criar Order (sem transações ou com transações)**](/development/pt/reference/order/online-payments/create/post): responsável pela criação e autorização da Order, mas sem o processamento simultâneo
+- [**Adicionar transação**](/development/pt/reference/order/online-payments/add-transaction/post): essa operação de adição de transações só pode ser feita no modo manual e é responsável por adicionar mais de uma transação em um mesmo _payload_. 
+- **[Alterar](/development/pts/reference/order/online-payments/update-transaction/patch) e/ou [remover](/development/es/reference/order/online-payments/delete-transaction/delete) transação**: essa operação de alteração e remoção de transações só pode ser feita no modo manual e é responsável por mudar informações de pagamento que já tinham sido adicionadas anteriormente à Order. É uma operação que modifica um item dentro de qualquer campo do parâmetro `transactions`.
+- [**Capturar transação**](/development/pt/reference/order/online-payments/capture/delete): responsável por capturar o valor autorizado de um order. Essa opção só é válida para cartões de crédito.
+- [**Processar transação**](/development/pt/reference/order/online/process-order/post): possibilitada a execução das transações criadas e/ou alteradas no modo manual. 
+- [**Buscar transação**](/development/pt/reference/order/online-payments/get-order/get): permite localizar uma intenção de Order existente.
+- [**Cancelar transação**](/development/pt/reference/order/online-payments/cancel-order/post): responsável pelo cancelamento de um order já existente, mas não que ainda não foi processado/finalizado. 
+- [**Reembolsar transação**](/development/pt/reference/order/online-payments/refund/post): no modo manual podem ser criados estornos totais ou parciais de um pagamento. O pedido será reembolsado totalmente se todas as transações forem estornadas por completo. 
+  - **Reembolso total**: não deverá ser indicado um valor a ser reembolsado no `body` da requisição.
+  - **Reembolso parcial**: deverá ser especificada a quantia a ser reembolsada no `body` da requisição. Todas as outras transações permanecerão como estão e somente a transação alterada será reembolsada. 

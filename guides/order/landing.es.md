@@ -1,9 +1,19 @@
 ---
 content_section_with_media: 
  - title: Order
- - message: Order es una API diseñada para simplificar la integración de los productos de pago de Mercado Pago, permitiendo que los desarrolladores accedan a diversas soluciones de pago mediante una única integración. Esta API unificada abarca todos los métodos de pago ofrecidos por la plataforma, incluyendo pagos con código QR, dispositivos Point y Pagos online.
+ - message: Order es una API diseñada para simplificar la integración de los productos de pago de Mercado Pago, permitiendo que los desarrolladores accedan a diversas soluciones de pago mediante una única integración. Esta API unificada abarca todos los métodos de pago ofrecidos por la plataforma, incluyendo pagos con código QR, dispositivos Point y Pagos online. Ve en la tabla a continuación las principales diferencias entre la nueva **API de Orden** y la antigua **API de Pagos**.
  - media_image: /order/landing-1.png
 ---
+
+| Funcionalidad | API de Payments | API de Order |
+| --- | --- |--- |
+| Modo | Automático | Automático y manual |
+| Operaciones | Payments | Payments y [In-store](/developers/pt/docs/order/online-payments/introduction) (QR y Point)|
+| Múltiples transacciones | No tiene | Tiene |
+| Envío de metadatos | Permite | No permite |
+| Envío de Notification Url | Permite en el _payload_ | No permite en el _payload_ y debe ser configurado en [Panel del desarrollador > Detalles de la aplicación](/developers/es/docs/order/additional-content/your-integrations/application-details). |
+| Validaciones con respuestas de errores completas | Valida un error a la vez | Retorna una lista con todos los errores |
+| Retorno de datos PII | Retorna en algunos escenarios (ej: aprobado) | No retorna en ningún escenario | <<<<
 
 --- mini_landing_separator ---
 
