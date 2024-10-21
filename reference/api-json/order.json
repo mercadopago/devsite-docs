@@ -2427,9 +2427,9 @@
           "checkout-api"
         ],
         "description":{
-          "en":"This endpoint performs the full refund of all transactions associated with an order. In case of success, the request will return a response with status 200",
-          "pt":"Este endpoint executa a devolução total das transações associadas a uma order. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es":"Este endpoint realiza la devolución completa de las transacciones asociadas a una order. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "en":"This endpoint allows to perform refunds, whether of a complete order, a complete transaction, or a partial transaction, as long as their \"status\" is \"processed\". The complete refund of an order can be performed in both \"manual\" and \"automatic\" modes, and requires only sending the \"id\" of the order in the request path. The refund of a transaction can only be carried out in the \"manual\" mode, and it can be partially or totally refunded depending on the value sent in the \"amount\" field. In case of success, the request will return a response with status 200",
+          "pt":"Este endpoint permite executar devoluções, seja de uma order completa, de uma transação completa ou de uma transação parcial, desde que o \"status\" seja \"processed\". A devolução completa de uma order pode ser realizada tanto no modo \"manual\" quanto no modo \"automático\", sendo necessário apenas o envio do \"id\" da order no path da requisição. O reembolso de uma transação somente poderá ser realizado na modalidade \"manual\", podendo ser reembolsada parcial ou totalmente a partir do valor enviado no campo \"amount\". Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Este endpoint permite realizar devoluciones, sea de una order completa, de una transacción completa, o de una transacción parical, siempre que el \"status\" sea \"processed\". La devolución completa de una order puede ser realizada tanto en el modo \"manual\" como \"automático\", y requiere solamente el envío del \"id\" de la order en el path de la requisición. La devolución de una transacción sólo puede ser realizada en el modo \"manual\", y la misma puede ser reembolsada parcial o totalmente a partir de la suma enviada en el campo \"amount\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters":[
           {
@@ -2461,6 +2461,45 @@
             }
           }
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "transactions": {
+                    "type":"object",
+                    "description": {
+                      "en":"Contains information about the transaction to be refunded. This object is required only when trying to refund a transaction, partially or totally.",
+                      "pt":"Contém informações sobre a transação a ser reembolsada. Este objeto é requerido apenas quando se deseja reembolsar uma transação, seja parcial ou totalmente.",
+                      "es":"Contiene información sobre la transacción a reembolsar. Este objeto es requerido sólo cuando se quiera reembolsar una transacción, sea parcial o totalmente."
+                    },
+                    "properties":{
+                      "id":{
+                        "type":"string",
+                        "example":"pay_01J49MMW3SSBK5PSV3DFR32959",
+                        "description":{
+                          "en":"Identifier of the payment transaction that will be refunded partially or totally.",
+                          "pt":"Identificador da transação a ser reembolsada, seja parcial ou totalmente.",
+                          "es":"Identificador de la transacción a ser reembolsada, sea parcial o totalmente."
+                        }
+                      },
+                      "amount":{
+                        "type": "string",
+                        "example": "20.00",
+                        "description":{
+                          "en":"Amount to be refunded. When performing a partial refund of a transaction, you must send the value you want to refund to de payer. If a full refund is being made, the value must be the same as the one sent when creating the transaction, or it may not be sent. If the field is sent, it must always be with two decimals.",
+                          "es": "Monto a ser reembolsado. Al realizar una devolución parcial de una transacción, debe enviarse el valor que se quiere devolver. Si se quiere realizar una devolución total, el valor debe ser el mismo que el enviado al crear la transacción, o puede no enviarse. Si el campo es enviado, siempre debe ser con dos decimales.",
+                          "pt":"Valor a ser reembolsado. Ao realizar a devolução parcial de uma transação, você deverá enviar o valor que deseja devolver. Caso queira fazer o reembolso total, o valor deverá ser igual ao enviado no momento da criação da transação, ou poderá não ser enviado. Caso o campo seja enviado, deverá estar sempre com duas casas decimais."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },  
         "responses": {
           "200": {
             "description": {
@@ -4775,9 +4814,9 @@
           "checkout-api"
         ],
         "description":{
-          "en":"This endpoint allows to capture an order totally. Every payment will be captured in total. In case of success, the request will return a response with status 200",
-          "pt":"Este endpoint permite capturar a order totalmente. Cada payment será capturado totalmente. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es":"Este endpoint permite capturar una order en su totalidad. Cada payment se capturará en su totalidad. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "en":"This endpoint allows you to capture an order and the associated payments in its entirety, as long as the order's \"status\" is \"action_required\". It can be used for orders created in \"manual\" and \"automatic\" mode. In case of success, the request will return a response with status 200",
+          "pt":"Este endpoint permite capturar uma order e os pagamentos associados na sua totalidade, desde que o \"status\" da order seja \"action_required\". Pode ser utilizado para pedidos criados em modo \"manual\" e \"automático\". Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Este endpoint permite capturar una order y los pagos asociados en su totalidad, siempre que el \"status\" de la order sea \"action_required\". Puede ser utilizado para orders creadas en modo \"manual\" y \"automático\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters":[
           {
@@ -4828,73 +4867,6 @@
                         "en":"Identifier of the order being processed in the request.",
                         "pt":"Identificador da order processada na requisição.",
                         "es":"Identificador de la order procesada en la solicitud."
-                      }
-                    },
-                    "type": {
-                      "type":"string",
-                      "description": {
-                        "en":"Order type.",
-                        "pt":"Tipo de order.",
-                        "es":"Tipo de order."
-                      },
-                      "example": "online",
-                      "enum": [
-                        {
-                          "title": "online",
-                          "description": {
-                            "en": "Order created for online payments.",
-                            "es": "Order creada para pagos online.",
-                            "pt": "Order criada para pagamentos online."
-                          }
-                        }
-                      ]
-                    },
-                    "external_reference": {
-                      "type":"string",
-                      "example":"ext_ref_1234",
-                      "description": {
-                        "en":"It is the external reference of the order, assigned when creating it.",
-                        "pt":"Referência externa da order, atribuída no momento da criação.",
-                        "es":"Es una referencia externa de la order, asignada al momento de su creación."
-                      }
-                    },
-                    "site_id": {
-                      "$ref": "#/components/schemas/site_id"
-                    },
-                    "client_id":{
-                      "type":"string",
-                      "example":"1234",
-                      "description":{
-                        "pt":"Identificador da aplicação do Mercado Pago que criou a order.",
-                        "en":"Identifier of the Mercado Pago application that created the order.",
-                        "es":"Identificador de la aplicación de Mercado Pago que creó la order."
-                      }
-                    },
-                    "collector_id":{
-                      "type":"string",
-                      "example":"12345",
-                      "description":{
-                        "pt":"Identificador do usuário ao qual pertenece a aplicação do Mercado Pago que criou a order. É a pessoa que receberá o pagamento.",
-                        "en":"Identifier of the user to which the Mercado Pago application that created the order belongs. It is the person that will receive the payment.",
-                        "es":"Identificador del usuario al que pertenece la aplicación de Mercado Pago que creó la order. Es la persona que recibirá el pago."
-                      }
-                    },
-                    "created_date":{
-                      "type":"string",
-                      "example":"2024-08-26T13:06:51.045317772Z",
-                      "description":{
-                        "pt":"Data de criação da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
-                        "en":"Order's creation date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
-                        "es":"Fecha de creación de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
-                      }
-                    },
-                    "last_updated_date":{
-                      "type":"string",
-                      "example":"2024-08-26T13:06:51.045317772Z",
-                      "description":{
-                        "pt":"Data da última atualização da order, no formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"",
-                        "en":"Order's las update date, in \"yyyy-MM-ddTHH:mm:ss.sssZ\" format.",
-                        "es":"Fecha de la última actualización de la order, en formato \"yyyy-MM-ddTHH:mm:ss.sssZ\"."
                       }
                     },
                     "status": {
@@ -4964,6 +4936,9 @@
                                 "pt":"Identificador da transação de pagamento criada na requisição, gerado automaticamente pelo Mercado Pago.",
                                 "es":"Identificador de la transacción de pago creada en la solicitud, generado automáticamente por Mercado Pago."
                               }
+                            },
+                            "amount":{
+                              "$ref": "#/components/schemas/amount"
                             },
                             "status":{
                               "type":"string",
@@ -5147,210 +5122,10 @@
                                   }
                                 }
                               ]
-                            },
-                            "amount":{
-                              "$ref": "#/components/schemas/amount"
-                            },
-                            "payment_method":{
-                              "$ref": "#/components/schemas/payment_method"
-                            },
-                            "currency": {
-                              "$ref": "#/components/schemas/currency"
-                            }
+                            } 
                           }
                         }
                       }
-                    },
-                    "payer": {
-                      "$ref": "#/components/schemas/payer"
-                    },
-                    "type_config": {
-                      "$ref": "#/components/schemas/type_config"
-                    },
-                    "total_amount": {
-                      "type":"string",
-                      "example":"24.90",
-                      "description": {
-                        "pt":"Valor total a ser pago.",
-                        "en":"Total amount to be paid.",
-                        "es":"Monto total a pagar."
-                      }
-                    },
-                    "currency": {
-                      "$ref": "#/components/schemas/currency"
-                    },
-                    "processing_mode": {
-                      "type":"string",
-                      "description": {
-                        "en":"Order processing mode.",
-                        "pt":"Modo de processamento da order.",
-                        "es":"Modo de procesamiento de la order."
-                      },
-                      "example": "manual",
-                      "enum": [
-                        {
-                          "title": "manual",
-                          "description": {
-                            "en": "Order's processing will be made manually. It is the processing mode used for the \"manual\" option, as it sets the processing to be made afterwards, by using the \"Process order by ID\" endpoint.",
-                            "es": "El procesamiento de la order se hará de manera manual. Es el modo de procesamiento utilizado para la opción \"manual\", en tanto configura que el procesamiento sea hecho posteriormente, utilizando el endpoint \"Procesar order por ID\".",
-                            "pt": "O processamento da order será realizado manualmente. É o modo de processamento utilizado para a opção \"manual\", enquanto configura o processamento para ser feito posteriormente, utilizando o endpoint \"Processar order por ID\"."
-                          }
-                        },
-                        {
-                          "title": "automatic",
-                          "description": {
-                            "en": "Order's processing will be made instantly. It is the capture mode used for the \"automatic\" option.",
-                            "es": "El procesamiento de la order se hará instantáneamente. Es el modo de procesamiento utilizado para la opción \"automático\".",
-                            "pt": "O processamento da order será feito imediatamente. É o modo de processamento utilizado para a opção \"automático\"."
-                          }
-                        }
-                      ]
-                    },
-                    "description": {
-                      "type":"string",
-                      "example":"Point Mini",
-                      "description": {
-                        "en":"Description of the purchased product or service , the reason for the payment order, or the description of a product in the marketplace.",
-                        "pt":"Descrição do produto ou serviço comprado, a razão da order de pagamento, ou a descrição de um produto no marketplace.",
-                        "es":"Descripción del producto o servicio comprado, el motivo de la order de pago, o la descripción de un producto en el marketplace."
-                      }
-                    },
-                    "marketplace": {
-                      "type":"string",
-                      "example":"MERCADOLIVRE",
-                      "description": {
-                        "en":"Name of the marketplace where the order was made.",
-                        "pt":"Nome do marketplace onde a order foi realizada.",
-                        "es":"Nombre del marketplace donde se realizó la order."
-                      }
-                    },
-                    "marketplace_fee": {
-                      "type":"string",
-                      "example":"2.00",
-                      "description": {
-                        "en":"Marketplace fee, expressed as a percentage of the value inserted in \"total_amount\". This field only allows values with two decimals, for example: 10.00 (10%). ",
-                        "pt":"Comissão (taxa) correspondente ao marketplace, expresso como uma porcentagem do valor inserido em \"total_amount\". Este campo só permite valores com duas casas decimais, por exemplo 10.00 (10%).",
-                        "es":"Comisión (fee) que corresponde al marketplace, expresado como porcentaje del valor ingresado en \"total_amount\". Este campo sólo permite valores con dos decimales, por ejemplo 10.00 (10%)."
-                      }
-                    },
-                    "campaign_id": {
-                      "type":"string",
-                      "example":"123",
-                      "description": {
-                        "en":"It is the identifier of  the entity that models the nature of discounts. All coupons come from a single campaign. The campaign configures, among other things, the available budget balance, dates between which coupons can be used, rules for coupon application. It's the discount promise.",
-                        "pt":"Identificador da entidade que modela a natureza dos descontos. Todos os cupons vêm de uma única campanha. A campanha configura, entre outras coisas, o saldo orçamentário disponível, datas entre as quais os cupons podem ser utilizados, regras para aplicação de cupom, entre outros. É a promessa de desconto.",
-                        "es":"Es el identificador de la entidad que modela la fuente de los descuentos. Todos los cupones provienen de una sola campaña. La campaña configura, entre otras cosas, el saldo presupuestario disponible, fechas entre las cuales se pueden utilizar los cupones, reglas para la aplicación de los mismos, etc. Es la promesa de descuento."
-                      }
-                    },
-                    "items": {
-                      "$ref": "#/components/schemas/items"
-                    },
-                    "coupon": {
-                      "type":"object",
-                      "description": {
-                        "en":"Discount campaign.",
-                        "pt":"Campanha de desconto.",
-                        "es":"Campaña de descuento."
-                      },
-                      "properties": {
-                        "code": {
-                          "type":"string",
-                          "description": {
-                            "en":"Specific code of the coupon participating in the discount campaign.",
-                            "pt":"Código específico do cupom pertencente à campanha de desconto.",
-                            "es":"Código específico del cupón perteneciente a la campaña de descuento."
-                          },
-                          "example": "123"
-                        },
-                        "amount": {
-                          "type":"string",
-                          "example":"4.90",
-                          "description": {
-                            "en":"Value of the discount coupon.",
-                            "pt":"Valor do cupom de desconto.",
-                            "es":"Es el valor del cupón de descuento."
-                          }
-                        }
-                      }
-                    },
-                    "splits":{
-                      "type":"array",
-                      "description":{
-                        "en":"List of payment splits to be made from the total amount.",
-                        "pt":"Lista de divisão de pagamentos (split) a serem realizados sobre o valor total da transação.",
-                        "es":"Lista de división de pagos (split) a realizarse sobre el total de la transacción."
-                      },
-                      "items": {
-                        "type": "object",
-                        "properties":{
-                          "id":{
-                            "type":"string",
-                            "example":"123",
-                            "description":{
-                              "en":"Split identification.",
-                              "pt":"Identificador do split.",
-                              "es":"Identificador del split."
-                            }
-                          },
-                          "collector_id":{
-                            "type":"number",
-                            "example":448876418,
-                            "description":{
-                              "en":"It is the identification of the user who receives the money.",
-                              "pt":"Identificador do usuário que recebe o dinheiro.",
-                              "es":"Es el identificador del usuario que recibe el dinero."
-                            }
-                          },
-                          "type":{
-                            "type":"string",
-                            "description":{
-                              "pt":"Tipo de split realizado.",
-                              "en":"Type of split made.",
-                              "es":"Tipo de split realizado."
-                            },
-                            "enum": [
-                              {
-                                "title": "amount",
-                                "description": {
-                                  "en": "The split will be performed by amount.",
-                                  "es": "El criterio para el split será el valor.",
-                                  "pt": "O critério para o split será o valor."
-                                }
-                              },
-                              {
-                                "title": "percentage",
-                                "description": {
-                                  "en": "The split will be performed by percentage.",
-                                  "es": "El criterio para el split será el porcentaje.",
-                                  "pt": "O critério para o split será a porcentagem."
-                                }
-                              }
-                            ],
-                            "example": "amount"
-                          },
-                          "value":{
-                            "type":"string",
-                            "example":"50",
-                            "description":{
-                              "pt":"Valor do split.",
-                              "en":"Split value.",
-                              "es":"Valor del split."
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "shipment":{
-                      "$ref": "#/components/schemas/shipment"
-                    },
-                    "expiration_time":{
-                      "type":"string",
-                      "description": {
-                        "en": "Payment’s expiration date. The valid format of the attribute is ISO 8601 duration format, for example: \"P3Y6M4DT12H30M5S\" represents a duration of 3 years, 6 months, 4 days, 12 hours, 30 minutes, and 5 seconds. ",
-                        "pt": "Data de expiração do pagamento. O formato válido do atributo é ISO 8601, formato de duração. Por exemplo, \"P3Y6M4DT12H30M5S\" representa uma duração de 3 anos, 6 meses, 4 dias, 12 horas, 30 minutos e 5 segundos.",
-                        "es": "Fecha de vencimiento del pago. El formato válido del atributo es ISO 8601, formato de duración. Por ejemplo, \"P3Y6M4DT12H30M5S\" representa una duración de 3 años, 6 meses, 4 días, 12 horas, 30 minutos y 5 segundos."
-                      },
-                      "example": "P3Y6M4DT12H30M5S"
                     }
                   }
                 }
