@@ -2,7 +2,7 @@
 content_section_with_media:
  - title: PrestaShop
  - message: PrestaShop es una plataforma de comercio electrónico con software de código abierto que permite a cualquier usuario crear y desarrollar un sitio web comercial. Como socios oficiales de PrestaShop, brindamos mayor seguridad y eficiencia a tu tienda.
- - media_video: https://www.youtube.com/embed/OQ0vdvKvy3o
+ - media_image: /prestashop/prestashop-landing.png
 ---
  
 ----[mlb]---- 
