@@ -42,13 +42,11 @@ available_countries: mla, mlb, mlm
 
 ---
 
---- mini_landing_separator ---
-
 ---
 bullet_section_with_media: 
  - title: Vantagens
  - type: normal
- - message: Ao centralizar essas opções em um único ponto de acesso, a implementação para os integradores se torna mais fácil, permitindo que eles ofereçam múltiplas experiências de pagamento sem a necessidade de trabalhar com várias APIs separadas. Veja na tabela abaixo as principais diferenças entre a nova **API de Order** e a antiga **API de Payments**.
+ - message: Ao centralizar essas opções em um único ponto de acesso, a implementação para os integradores se torna mais fácil, permitindo que eles ofereçam múltiplas experiências de pagamento sem a necessidade de trabalhar com várias APIs separadas. Veja na tabela abaixo as principais diferenças entre a nova API de Order e a antiga API de Payments.
  - image: /order/landing-2.png
 ---
 
@@ -84,34 +82,6 @@ available_payments: credit, debit
 
 ---
 available_payments: credit, debit
-
-----
-------------
-----[mlu]---- 
-
----
-available_payments: credit, debit
-
-----
-------------
-----[mco]---- 
-
----
-available_payments: mercadopago
-
-----
-------------
-----[mlc]---- 
-
----
-available_payments: mercadopago
-
-----
-------------
-----[mpe]---- 
-
----
-available_payments: mercadopago
 
 ----
 ------------
