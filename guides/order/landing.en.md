@@ -56,9 +56,9 @@ bullet_section_with_media:
 | Operations | Payments | Payments and [In-store](/developers/en/docs/order/online-payments/introduction) (QR and Point)|
 | Multiple transactions | Does not support | Supports |
 | Sending metadata | Allows | Does not allow |
-| Sending Notification URL | Allows in the payload | Does not allow in the payload and must be configured in [Developer panel > Application details](/developers/en/docs/order/additional-content/your-integrations/application-details). |
-| Validations with complete error responses | Validates one error at a time | Returns a list of all errors |
-| Return of PII data | Returns in some scenarios (e.g., approved) | Does not return in any scenario |
+| Sending Notification URL | Allows in the payload. | Does not allow in the payload and must be configured in [Developer panel > Application details](/developers/en/docs/order/additional-content/your-integrations/application-details). |
+| Validations with complete error responses | Validates one error at a time. | Returns a list of all errors. |
+| Return of PII data | Returns in some scenarios (e.g., approved). | Does not return in any scenario. |
 
 --- mini_landing_separator ---
 

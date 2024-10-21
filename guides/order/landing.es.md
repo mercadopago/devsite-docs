@@ -57,8 +57,8 @@ bullet_section_with_media:
 | Múltiples transacciones | No tiene | Tiene |
 | Envío de metadatos | Permite | No permite |
 | Envío de Notification Url | Permite en el _payload_ | No permite en el _payload_ y debe ser configurado en [Panel del desarrollador > Detalles de la aplicación](/developers/es/docs/order/additional-content/your-integrations/application-details). |
-| Validaciones con respuestas de errores completas | Valida un error a la vez | Retorna una lista con todos los errores |
-| Retorno de datos PII | Retorna en algunos escenarios (ej: aprobado) | No retorna en ningún escenario | <<<<
+| Validaciones con respuestas de errores completas | Valida un error a la vez. | Retorna una lista con todos los errores. |
+| Retorno de datos PII | Retorna en algunos escenarios (ej: aprobado). | No retorna en ningún escenario. | <<<<
 
 --- mini_landing_separator ---
 
