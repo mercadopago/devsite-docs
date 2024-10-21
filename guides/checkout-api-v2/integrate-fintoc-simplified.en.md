@@ -257,7 +257,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 
 > WARNING
 >
-> Attention
+> Important
 >
 > The payment created with Fintoc is **valid for only 10 minutes**. After that time, it will expire, and you will need to create another.
 
@@ -313,7 +313,7 @@ To do this, redirect to the URL stored in the `external_resource_url` field, whi
 
 > WARNING
 >
-> Attention
+> Important
 >
 > Mercado Pago only carries out the buyer's payment experience and does not handle the success or error processing of it. Once the payment is finalized, it will redirect to the URL registered as `callback_url` by the integrator, who must handle that processing.
 
