@@ -46,14 +46,14 @@ available_countries: mla, mlb, mlm
 bullet_section_with_media: 
  - title: Vantagens
  - type: normal
- - message: Ao centralizar essas opções em um único ponto de acesso, a implementação para os integradores se torna mais fácil, permitindo que eles ofereçam múltiplas experiências de pagamento sem a necessidade de trabalhar com várias APIs separadas. Veja na tabela abaixo as principais diferenças entre a nova API de Order e a antiga API de Payments.
+ - message: Ao centralizar essas opções em um único ponto de acesso, a implementação para os integradores se torna mais fácil, permitindo que eles ofereçam múltiplas experiências de pagamento sem a necessidade de trabalhar com várias APIs separadas. Veja na tabela abaixo as principais diferenças entre a nova API de Order e a antiga API de Pagamentos.
  - image: /order/landing-2.png
 ---
 
-| Funcionalidade  |  API de Payments  | API de Order |
+| Funcionalidade  |  API de Pagamentos  | API de Order |
 | --- | --- |--- |
 | Modo  | Automático  | Automático e manua |
-| Operações  | Payments  | Payments e [In-store](/developers/pt/docs/order/online-payments/introduction) (QR e Point).|
+| Operações  | Payments  | [Payments](/developers/pt/docs/order/online-payments/introduction) e [In-store](/developers/pt/docs/order/in-store-payments/introduction) (QR e Point).|
 | Múltiplas transações  | Não possui | Possui. |
 | Envio de metadados  | Permite  | Não permite |
 | Envio de Notification Url  | Permite no _payload_.  | Não permite no _payload_ e deve ser configurado no [Painel do desenvolvedor > Detalhes da aplicação](/developers/pt/docs/order/additional-content/your-integrations/application-details). |

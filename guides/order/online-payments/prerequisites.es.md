@@ -1,6 +1,6 @@
 # Requisitos previos
 
-Para integrar Order es importante cumplir con los requisitos que se muestran a continuación.
+Para integrar Order, debes cumplir con los requisitos que se muestran a continuación.
 
 | Requisito  | Descripción  |
 | --- | --- |

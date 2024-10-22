@@ -1,6 +1,6 @@
 # Prerequisites
 
-To integrate Order it is important to meet the requirements shown below.
+To integrate Order, you must meet the requirements shown below.
 
 | Requirement | Description |
 | --- | --- |

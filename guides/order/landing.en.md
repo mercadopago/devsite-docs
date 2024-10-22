@@ -1,7 +1,7 @@
 ---
 content_section_with_media: 
  - title: Order
- - message: Order is an API designed to simplify the integration of Mercado Pago's payment products, allowing developers to access various payment solutions through a single integration. This unified API encompasses all payment methods offered by the platform, including QR code payments, Point devices, and online payments.
+ - message: Order is an API designed to simplify the integration of Mercado Pago's payment products, allowing developers to access various payment solutions through a single integration. This unified API encompasses all payment methods offered by the platform, including QR Code payments, Point devices, and online payments.
  - media_image: /order/landing-1.png
 ---
 
@@ -36,7 +36,7 @@ future_product_avaible:
 
 --- mini_landing_separator ---
 
->>>> Disponibilidade por país <<<<
+>>>> Availability by country <<<<
 ---
 available_countries: mla, mlb, mlm
 
@@ -46,23 +46,23 @@ available_countries: mla, mlb, mlm
 bullet_section_with_media: 
  - title: Advantages
  - type: normal
- - message: By centralizing these options into a single access point, implementation for integrators is made easier, enabling them to offer multiple payment experiences without the need to work with several separate APIs. Check the table below for the main differences between the new Order API and the old Payments API.
+ - message: By centralizing these options into a single access point, implementation for integrators is easier, enabling them to offer multiple payment experiences without the need to work with several separate APIs. Check the table below for the main differences between the new Order API and the old Payments API.
  - image: /order/landing-2.png
 ---
 
 | Functionality | Payments API | Order API |
 | --- | --- |--- |
 | Mode | Automatic | Automatic and manual |
-| Operations | Payments | Payments and [In-store](/developers/en/docs/order/online-payments/introduction) (QR and Point)|
-| Multiple transactions | Does not support | Supports |
-| Sending metadata | Allows | Does not allow |
-| Sending Notification URL | Allows in the payload. | Does not allow in the payload and must be configured in [Developer panel > Application details](/developers/en/docs/order/additional-content/your-integrations/application-details). |
+| Operations | Payments | [Payments](/developers/en/docs/order/online-payments/introduction) and [In-store][In-store](/developers/en/docs/order/in-store-payments/introduction) (QR and Point)|
+| Multiple transactions | Not supported | Supported |
+| Sending metadata | Allowed | Not allowed |
+| Sending Notification URL | Allows in the payload. | Does not allow in the payload and must be configured in the [Developer panel > Application details](/developers/en/docs/order/additional-content/your-integrations/application-details). |
 | Validations with complete error responses | Validates one error at a time. | Returns a list of all errors. |
 | Return of PII data | Returns in some scenarios (e.g., approved). | Does not return in any scenario. |
 
 --- mini_landing_separator ---
 
->>>> Tipos de pagamento aceitos <<<<
+>>>> Accepted payment types <<<<
 
 ----[mlb]----
 
@@ -84,3 +84,5 @@ available_payments: credit, debit
 available_payments: credit, debit
 
 ----
+
+------------
