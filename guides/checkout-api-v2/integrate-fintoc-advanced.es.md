@@ -156,7 +156,7 @@ payment_response[:response]
 
 ```
 ```csharp
-MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN"
 
 var paymentPayerRequest = new PaymentPayerRequest
 {
@@ -345,7 +345,7 @@ Luego, abre el *widget* de pago de Fintoc utilizando el metodo `mp.fintoc.open()
 
 | Atributo | Tipo | Descripción | Requerido/opcional |
 |---|---|---|---|
-| `institutionId` | string | Identificador de la [institución financiera](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). Cuando es incluido, se preselecciona la institución que aparecerá en la apertura del *widget*. Por ejemplo,  el valor `cl_banco_de_chile` indicará que el *widget* se abra con Banco de Chile. | Opcional |
+| `institutionId` | string | Identificador de la [institución financiera](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). Cuando es incluido, se preselecciona la institución que aparecerá en la apertura del *widget*. Por ejemplo,  el valor `cl_banco_de_chile` indicará que el *widget* se abra con Banco Estado. | Opcional |
 | `username` | string | Identifica la cuenta del usuario. Si es completado, asegura que al momento de seleccionar el banco con el que se realizará la transacción, el usuario ya esté identificado y sólo tenga que proporcionar su contraseña. | Opcional |
 | `widgetToken` | string | Token creado en el backend al momento de crear un pago. Es el valor recibido para el parámetro `external_reference_id`, que inicializa y configura el *widget*. | Requerido  |
 | `onSuccess` | function | *Callback* que será llamado luego de una creación exitosa del enlace. | Requerido |

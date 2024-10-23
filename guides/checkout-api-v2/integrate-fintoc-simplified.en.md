@@ -126,7 +126,7 @@ payment_response[:response]
 
 ```
 ```csharp
-MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN"
 
 var paymentPayerRequest = new PaymentPayerRequest
 {
@@ -321,14 +321,14 @@ If you want, it is possible to **pre-select the financial institution and the bu
 
 ```external_resource_url
 
-https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?caller_id=[…]b96-ab4bcf820559&username=JohnDoe&instutuion_id=banco_estado
+https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?caller_id=[…]b96-ab4bcf820559&username=JohnDoe&instutuion_id=cl_banco_estado
 
 ```
 
 | Query param | Description | Example |
 |---|---|---|
 | `username` | Parameter used to pre-fill the buyer's name. | `JohnDoe` |
-| `institution_id` | Parameter used to pre-fill the financial institution for payment. Check which institutions are available by accessing the [Fintoc documentation](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). | `banco_estado` |
+| `institution_id` | Parameter used to pre-fill the financial institution for payment. Check which institutions are available by accessing the [Fintoc documentation](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). | `cl_banco_estado` |
 
 > WARNING
 >

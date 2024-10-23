@@ -157,7 +157,7 @@ payment_response[:response]
 
 ```
 ```csharp
-MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN"
 
 var paymentPayerRequest = new PaymentPayerRequest
 {
@@ -286,7 +286,7 @@ curl --location 'https://api.mercadopago.com/v1/payments' \
 | `point_of_interaction.type` | string | Informação da aplicação que processa o pagamento. Para o atributo `type`, sempre deve ser `CHECKOUT` | CHECKOUT |
 | `point_of_interaction.sub_type` | string | Identificador secundário do tipo de pagamento. Para o atributo `sub_type`, sempre deve ser `INTER_PSP` | INTER_PSP |
 
-A seguir, você veráum exemplo de resposta a essa solicitação, no qual informações foram omitidas para destacar os campos mais relevantes:
+A seguir, você verá um exemplo de resposta a essa solicitação, no qual informações foram omitidas para destacar os campos mais relevantes:
 
 
 > WARNING
@@ -346,7 +346,7 @@ Em seguida, abra o *widget* de pagamento do Fintoc utilizando o método `mp.fint
 
 | Atributo | Tipo | Descrição | Requerido/opcional |
 |---|---|---|---|
-| `institutionId` | string | Identificador da [instituição financeira](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). Quando é incluído, pré-seleciona a instituição que aparecerá na abertura do widget. Por exemplo, o valor `cl_banco_de_chile` indicará que o *widget* será aberto com o | Opcional |
+| `institutionId` | string | Identificador da [instituição financeira](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). Quando é incluído, pré-seleciona a instituição que aparecerá na abertura do widget. Por exemplo, o valor `cl_banco_de_chile` indicará que o *widget* será aberto com o Banco Estado | Opcional |
 | `username` | string | Se preenchido, ao selecionar o banco para a transação, o usuário já estará identificado e precisará apenas fornecer sua senha. | Opcional |
 | `widgetToken` | string | Token criado no backend ao momento da criação de um pagamento. É o valor recebido para o parâmetro `external_reference_id`, que inicializa e configura o *widget*. | Requerido  |
 | `onSuccess` | function | *Callback* que será chamado após uma criação bem-sucedida do link. | Requerido |

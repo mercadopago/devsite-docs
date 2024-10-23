@@ -292,7 +292,7 @@ A seguir, você verá um exemplo de resposta a essa solicitação, no qual infor
 >
 > Caso ocorra algum erro ao gerar um pagamento, consulte a lista de possíveis erros na seção [Referência de API](/developers/pt/reference/payments/_payments/post).
 
-## Realizar a redireção para o Mercado Pago
+## Fazer o redirecionamento para o Mercado Pago
 
 Uma vez criado o pagamento, é necessário redirecionar o comprador para o Mercado Pago, onde encontrará uma tela já preparada com o *widget* do Fintoc necessário para realizar o pagamento.
 
@@ -318,14 +318,14 @@ Para isso, faça a redireção para a URL armazenada no campo `external_resource
 
 ```external_resource_url
 
-https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?caller_id=[…]b96-ab4bcf820559&username=JohnDoe&instutuion_id=banco_estado
+https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?caller_id=[…]b96-ab4bcf820559&username=JohnDoe&instutuion_id=cl_banco_estado
 
 ```
 
 | Query param | Descrição | Exemplo |
 |---|---|---|
 | `username` | Parâmetro utilizado para preencher previamente o nome do comprador. | `JohnDoe` |
-| `institution_id` | Parâmetro utilizado para preencher previamente a instituição financeira para realizar o pagamento. Verifique as instituições disponíveis acessando a [documentação do Fintoc](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). | `banco_estado` |
+| `institution_id` | Parâmetro utilizado para preencher previamente a instituição financeira para realizar o pagamento. Verifique as instituições disponíveis acessando a [documentação do Fintoc](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). | `cl_banco_estado` |
 
 > WARNING
 >

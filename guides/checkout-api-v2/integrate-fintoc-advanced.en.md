@@ -156,7 +156,7 @@ payment_response[:response]
 
 ```
 ```csharp
-MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN"
 
 var paymentPayerRequest = new PaymentPayerRequest
 {
@@ -344,7 +344,7 @@ Then, open Fintoc's payment widget using the `mp.fintoc.open()` method and sendi
 
 | Attribute | Type | Description | Required/Optional |
 |---|---|---|---|
-| `institutionId` | string | Identifier of the [financial institution](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). When included, it pre-selects the institution that will appear when the widget is opened. For example, the value `cl_banco_de_chile` will make the widget open with Banco de Chile. | Optional |
+| `institutionId` | string | Identifier of the [financial institution](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). When included, it pre-selects the institution that will appear when the widget is opened. For example, the value `cl_banco_de_chile` will make the widget open with Banco Estado. | Optional |
 | `username` | string | Identifies the user's account. If completed, it ensures that when selecting the bank for the transaction, the user is already identified and only needs to provide their password. | Optional |
 | `widgetToken` | string | Token created in the backend when creating a payment. It is the value received for the `external_reference_id` parameter, which initializes and configures the widget. | Required |
 | `onSuccess` | function | Callback that will be called after a successful creation of the link. | Required |

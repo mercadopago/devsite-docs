@@ -126,7 +126,7 @@ payment_response[:response]
 
 ```
 ```csharp
-MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN
+MercadoPagoConfig.AccessToken = "YOUR_ACCESS_TOKEN"
 
 var paymentPayerRequest = new PaymentPayerRequest
 {
@@ -320,14 +320,14 @@ Si lo deseas, es posible **pre-seleccionar la institución financiera y el nombr
 
 ```external_resource_url
 
-https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?caller_id=[…]b96-ab4bcf820559&username=JohnDoe&instutuion_id=banco_estado
+https://www.mercadopago.cl/sandbox/payments/1319503224/bank_transfer/fintoc?caller_id=[…]b96-ab4bcf820559&username=JohnDoe&instutuion_id=cl_banco_estado
 
 ```
 
 | Query param | Descripción | Ejemplo |
 |---|---|---|
 | `username` | Parámetro utilizado para completar predeterminadamente el nombre del comprador. | `JohnDoe` |
-| `institution_id` | Parámetro utilizado para completar predeterminadamente la institución financiera para realizar el pago. Consulta cuáles son las instituciones disponibles accediendo a la [documentación de Fintoc](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). | `banco_estado` |
+| `institution_id` | Parámetro utilizado para completar predeterminadamente la institución financiera para realizar el pago. Consulta cuáles son las instituciones disponibles accediendo a la [documentación de Fintoc](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). | `cl_banco_estado` |
 
 > WARNING
 >
