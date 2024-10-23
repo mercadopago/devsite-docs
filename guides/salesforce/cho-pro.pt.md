@@ -6,6 +6,6 @@ O Checkout Pro é uma solução que permite aos seus clientes realizar compras p
 2. Para ativar a forma de pagamento, posicione o cursor na opção **Mercado Pago** e, em seguida, na coluna "Ativado" e selecione a opção **Sim** para habilitá-lo.
 
 ----[mlb]----
-![chopro-br](/images/salesforce/chopro-br.png)
+![chopro-br](/images/salesforce/chopro-br-rebranding.gif)
 
 ------------

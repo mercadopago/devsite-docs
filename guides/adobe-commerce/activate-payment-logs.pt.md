@@ -16,11 +16,11 @@ Siga as etapas abaixo para ativar os _logs_ de pagamento.
 
 3. Em **Outros meios de pagamento**, localize o plugin do Mercado Pago e clique no botão **Configurar** para abrir as configurações:
 
-![Configure](/images/adobe-commerce/logs-configure-pt.png)
+![Configure](/images/adobe-commerce/logs-configure-pt-rebranding.png)
 
 4. Na tela de configurações do plugin, selecione a opção **Configurações básicas > Suporte para desenvolvedores**. 
 
-![Suporte](/images/adobe-commerce/logs-support-pt.png)
+![Suporte](/images/adobe-commerce/logs-support-pt-rebranding.png)
 
 5. Caso esteja marcada, desmarque a caixa de seleção **Utilizar o valor do sistema** e habilite o campo **Depurar** clicando em **Sim**.
 
