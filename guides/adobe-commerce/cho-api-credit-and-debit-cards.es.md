@@ -11,14 +11,12 @@
 
 ![](/images/adobe-commerce/credito_e_debito.png)
 
-
 ----[mlb]----
 ## Captura de datos del cliente en el formulario de pago
 
 Esta función permite capturar documentos de clientes a partir de un campo adicional en el formulario de pago. Si la tienda aún no captura estos datos, simplemente seleccione la opción **Enable** en **Capture document identification**. 
 
 La activación de esta funcionalidad proporciona la inserción automática del CPF del cliente en el formulario de pago, optimizando la experiencia de llenado de datos.
-
 
 > WARNING
 >
@@ -38,7 +36,5 @@ La configuración de financiación e intereses se realiza directamente en tu cue
 
 1. Haz clic en el botón **Set up installments and interest** e inicia sesión en tu cuenta de vendedor de Mercado Pago.
 2. Selecciona la opción **QR y pagos online**, habilita el pago en veces y selecciona la cantidad que deseas ofrecer en el checkout. Las opciones van desde 1 hasta 12 veces.
-
-![Installment and interest](/images/adobe-commerce/parcelamento.gif)
 
 ¡Listo! Finalizadas estas etapas, la financiación en el checkout estará configurada y lista para procesar ventas. 

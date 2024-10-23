@@ -4,7 +4,6 @@
 Para habilitar o pagamento via 2 cartões de crédito e débito no Checkout Transparente, siga os seguintes passos:
 
 ------------
-
 ----[mla, mpe, mco, mlm, mco, mlu, mlc]----
 Para habilitar o pagamento via 2 cartões de crédito e débito no Checkout API, siga os seguintes passos:
 
@@ -35,7 +34,5 @@ A configuração de parcelamento e acréscimos é feita diretamente na sua conta
 
 1. Clique no botão **Definir parcelas e acréscimos** e faça o login na sua conta de pessoa vendedora Mercado Pago.
 2. Selecione a opção **Código QR e pagamentos online**, habilite o parcelamento e selecione o número de parcelas que deseja oferecer no Checkout. As opções vão de 1 a 12 vezes.
-
-![Installment and interest](/images/adobe-commerce/contaptac.gif)
 
 Pronto! Finalizadas essas etapas, o parcelamento no checkout estará configurado e pronto para processar vendas.
