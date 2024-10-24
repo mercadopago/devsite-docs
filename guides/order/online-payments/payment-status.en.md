@@ -1,4 +1,4 @@
-# Payment creation results
+# Payment status
 
 | Status | `status_detail` | Description |
 | --- | --- | --- |

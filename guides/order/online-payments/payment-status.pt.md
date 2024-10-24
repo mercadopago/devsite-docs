@@ -1,4 +1,4 @@
-#  Resultados da criação de um pagamento
+#  Status pagamento
 
 | Status | `status_detail` | Descrição |
 | --- | --- | --- |

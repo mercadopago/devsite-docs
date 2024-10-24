@@ -1,4 +1,4 @@
-# Consulta sobre o status de um pagamento
+# Status pedido
 
 | Status | `status_detail` | Descrição |
 | --- | --- | --- |

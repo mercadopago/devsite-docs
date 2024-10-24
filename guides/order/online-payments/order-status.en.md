@@ -1,4 +1,4 @@
-# Get payment status
+# Order status
 
 | Status | `status_detail` | Description |
 | --- | --- | --- |
