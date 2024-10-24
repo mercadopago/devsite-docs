@@ -4,36 +4,9 @@ A integração de pagamentos via cartão é feita via cardform. Neste modo de in
 
 À medida que os dados do cartão são inseridos, ocorre uma busca automática das informações de emissor e parcelas disponíveis para aquele meio de pagamento. Com isso, a implementação do fluxo é transparente para quem realiza a integração.
 
-----[mlb]----
-> NOTE
->
-> Importante
->
-> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com cartão** utilizando o **Brick de Card Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) do Card Payment para mais detalhes. Também recomendamos a adoção do protocolo 3DS 2.0 para aumentar a probabilidade de aprovação dos seus pagamentos. Para obter mais informações, consulte a documentação sobre [Como integrar 3DS com Checkout Transparente.](/developers/pt/docs/checkout-api/how-tos/integrate-3ds)
-
-------------
-----[mla, mlm, mpe, mlc]----
-> NOTE
->
-> Importante
->
-> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com cartão** utilizando o **Brick de Card Payment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) do Card Payment para mais detalhes. Também recomendamos a adoção do protocolo 3DS 2.0 para aumentar a probabilidade de aprovação dos seus pagamentos. Para obter mais informações, consulte a documentação sobre [Como integrar 3DS com Checkout API.](/developers/pt/docs/checkout-api/how-tos/integrate-3ds)
-
-------------
-----[mlu, mco]----
-> NOTE
->
-> Importante
->
-> Além das opções disponíveis nesta documentação, também é possível integrar **pagamentos com cartão** utilizando o **Brick de CardPayment**. Veja a documentação [Renderização padrão](/developers/pt/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) do CardPayment para mais detalhes.
-
-------------
-
 Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utilizando o Card Form.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-pt.png)
-
-Para integrar pagamentos com cartão no Checkout Transparente siga as etapas abaixo.
 
 ## Importar MercadoPago.js
 
@@ -367,7 +340,7 @@ Após adicionar o formulário de pagamento, é preciso inicializá-lo. Esta etap
 >
 > Caso necessite adicionar ou modificar alguma lógica no fluxo dos métodos do Javascript consulte a documentação [Integração via Métodos Core](/developers/pt/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
-## Enviar pagamento
+## Criar pagamento
 
 Para continuar o processo de integração de pagamento via cartão, é necessário que o backend receba a informação do formulário com o token gerado e os dados completos conforme indicado nas etapas anteriores.
 
@@ -375,13 +348,7 @@ No exemplo da seção anterior, enviamos todos os dados necessários para criar 
 
 Com todas as informações coletadas no backend, envie um POST com os atributos necessários, atentando-se aos parâmetros `token`, `transaction_amount`, `installments`, `payment_method_id` e o `payer.email` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando nossos SDKs.
 
-> NOTE
->
-> Importante
->
-> Para aumentar as chances de aprovação do pagamento e evitar que a análise antifraude não autorize a transação, recomendamos inserir o máximo de informação sobre o comprador ao realizar a requisição. Para mais detalhes sobre como aumentar as chances de aprovação, veja [Como melhorar a aprovação dos pagamentos.](/developers/pt/docs/checkout-api/how-tos/improve-payment-approval)
-> <br><br>
-> Além disso, você deverá enviar obrigatoriamente o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Para isso, atualize [nossa biblioteca de SDK](/developers/pt/docs/sdks-library/landing) ou gere um UUID V4 e envie-o no _header_ de suas chamadas.
+Você deverá enviar obrigatoriamente o atributo `X-Idempotency-Key`. Seu preenchimento é importante para garantir a execução e reexecução de requisições de forma segura, sem o risco de realizar a mesma ação mais de uma vez por engano. Para isso, atualize [nossa biblioteca de SDK](/developers/pt/docs/sdks-library/landing) ou gere um UUID V4 e envie-o no _header_ de suas chamadas.
 
 [[[
 ```php
@@ -619,28 +586,33 @@ if err != nil {
 fmt.Println(resource)
 ```
 ```curl
-===
-Encontre o status do pagamento no campo _status_.
-===
- 
 curl -X POST \
-   -H 'accept: application/json' \
-   -H 'content-type: application/json' \
-   -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-   -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
-   'https://api.mercadopago.com/v1/payments' \
-   -d '{
-         "transaction_amount": 100,
-         "token": "ff8080814c11e237014c1ff593b57b4d",
-         "description": "Blue shirt",
-         "installments": 1,
-         "payment_method_id": "visa",
-         "issuer_id": 310,
-         "payer": {
-           "email": "PAYER_EMAIL"
-         }
-   }'
- 
+    'https://api.mercadopago.com/v1/orders'\
+    -H 'Content-Type: application/json' \
+       -H 'X-Idempotency-Key: {{SOME_UNIQUE_VALUE}}' \
+       -H 'Authorization: Bearer {{YOUR_ACCESS_TOKEN}}' \
+    -d '{
+    "type": "online",
+    "processing_mode": "automatic",
+    "total_amount": "200.00",
+    "external_reference": "ext_ref_1234",
+    "payer": {
+        "email": "{{EMAIL}}"
+    },
+    "transactions": {
+        "payments": [
+            {
+                "amount": "200.00",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "1223123",
+                    "installments": 1
+                }
+            }
+        ]
+    }
+}'
 ```
 ]]]
 
@@ -648,24 +620,51 @@ A resposta trará o seguinte resultado
 
 ```json
 {
-   "status": "approved",
-   "status_detail": "accredited",
-   "id": 3055677,
-   "date_approved": "2019-02-23T00:01:10.000-04:00",
-   "payer": {
-       ...
-   },
-   "payment_method_id": "visa",
-   "payment_type_id": "credit_card",
-   "refunds": [],
-   ...
+    "id": "01JAQD7X1BXGY2Q59VYKRV90W8",
+    "type": "online",
+    "processing_mode": "automatic",
+    "external_reference": "ext_ref_1234",
+    "total_amount": "200.00",
+    "site_id": "MLB",
+    "status": "processed",
+    "created_date": "2024-10-21T11:26:19.17922368Z",
+    "last_updated_date": "2024-10-21T11:26:20.923603158Z",
+    "integration_data": {
+        "application_id": "874202490252970"
+    },
+    "payer": {
+        "email": "{{EMAIL}}"
+    },
+    "transactions": {
+        "payments": [
+            {
+                "id": "pay_01JAQD7X1BXGY2Q59VYP036JDN",
+                "amount": "200.00",
+                "status": "processed",
+                "reference_id": "0001hyhhbz",
+                "status_detail": "accredited",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "e607133fe7acf46ff35cd5f7810f7eb2",
+                    "installments": 1
+                }
+            }
+        ]
+    },
+    "type_config": {
+        "capture_mode": "automatic"
+    }
 }
 ```
 > WARNING
 >
 > Atenção
 >
-> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/your-integrations/notifications) para mais detalhes.
+> Os pagamentos criados possuem os seguintes status: "Pendente", "Rejeitado" e "Aprovado". Consulte a lista completa dos estados do pagamento e da ordem criada na seção [Status](). <br>
+> <br>
+> Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/your-integrations/notifications) para mais detalhes.
+
 
 ## Exemplo de código
 

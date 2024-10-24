@@ -4,38 +4,9 @@ The integration of card payments is done via cardform. In this integration mode,
 
 As the card data is entered, an automatic search takes place for the issuer information and available installments for that payment method. As a result, the implementation of the flow is transparent for those who perform the integration.
 
-----[mla, mlm, mpe, mlc]----
-> NOTE
->
-> Important
->
-> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **Card Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of Card Payment for more details. We also recommend adopting the 3DS 2.0 protocol to increase the likelihood of your payments being approved. For more information, please refer to the documentation on [How to integrate 3DS with Checkout API.](/developers/en/docs/checkout-api/how-tos/integrate-3ds)
-
-------------
-
-----[mlb]----
-> NOTE
->
-> Important
->
-> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **Card Payment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of Card Payment for more details. We also recommend adopting the 3DS 2.0 protocol to increase the likelihood of your payments being approved. For more information, please refer to the documentation on [How to integrate 3DS with Checkout Transparente.](/developers/en/docs/checkout-api/how-tos/integrate-3ds)
-
-------------
-
-----[mlu, mco]----
-> NOTE
->
-> Important
->
-> In addition to the options available in this documentation, it is also possible to integrate **card payments** using the **CardPayment Brick**. Check [Default rendering](/developers/en/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) documentation of CardPayment for more details.
-
-------------
-
 Check below the diagram that illustrates the card payment process using the Card Form.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-en.png)
-
-To integrate card payments into ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------, follow the steps below.
 
 ## Import MercadoPago.js
 
@@ -369,7 +340,7 @@ progressBar.setAttribute("value", "0");
 >
 > If you need to add or modify some logic in the flow of Javascript methods, consult the documentation [Integration via Core Methods](/developers/en/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
-## Send payment
+## Create payment
 
 To continue the card payment integration process, it is necessary for the backend to receive the form information with the generated token and the complete data as indicated in the previous steps.
 
@@ -377,13 +348,7 @@ In the example from the previous section, we sent all the necessary data to crea
 
 With all the information collected in the backend, send a POST with the necessary attributes, paying attention to the parameters `token`, `transaction_amount`, `installments`, `payment_method_id` and the `payer.email` to the endpoint [/v1/payments ](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, send the information using our SDKs.
 
-> NOTE
->
-> Important
->
-> To increase the chances of payment approval and prevent the anti-fraud analysis from authorizing the transaction, we recommend entering as much information about the buyer when making the request. For more details on how to increase approval chances, see [How to improve payment approval.](/developers/en/docs/checkout-api/how-tos/improve-payment-approval)
-> <br><br>
-> Also, it is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
+It is mandatory to send the attribute `X-Idempotency-Key` to ensure the execution and reexecution of requests without the risk of accidentally performing the same action more than once. To do so, update our [SDKs Library](/developers/en/docs/sdks-library/landing), or generate a UUID V4 and send it in the _header_ of your requests.
 
 [[[
 ```php
@@ -621,28 +586,33 @@ if err != nil {
 fmt.Println(resource)
 ```
 ```curl
-===
-Find the payment status in the _status_ field.
-===
- 
 curl -X POST \
--H 'accept: application/json' \
--H 'content-type: application/json' \
--H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
--H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
-'https://api.mercadopago.com/v1/payments' \
--d '{
-"transaction_amount": 100,
-"token": "ff8080814c11e237014c1ff593b57b4d",
-"description": "Blue shirt",
-"installations": 1,
-"payment_method_id": "visa",
-"issuer_id": 310,
-"payer": {
-"email": "PAYER_EMAIL"
-}
+    'https://api.mercadopago.com/v1/orders'\
+    -H 'Content-Type: application/json' \
+       -H 'X-Idempotency-Key: {{SOME_UNIQUE_VALUE}}' \
+       -H 'Authorization: Bearer {{YOUR_ACCESS_TOKEN}}' \
+    -d '{
+    "type": "online",
+    "processing_mode": "automatic",
+    "total_amount": "200.00",
+    "external_reference": "ext_ref_1234",
+    "payer": {
+        "email": "{{EMAIL}}"
+    },
+    "transactions": {
+        "payments": [
+            {
+                "amount": "200.00",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "1223123",
+                    "installments": 1
+                }
+            }
+        ]
+    }
 }'
- 
 ```
 ]]]
 
@@ -650,17 +620,41 @@ The response will show the following result
 
 ```json
 {
-"status": "approved",
-"status_detail": "accredited",
-"id": 3055677,
-"date_approved": "2019-02-23T00:01:10.000-04:00",
-"payer": {
-...
-},
-"payment_method_id": "visa",
-"payment_type_id": "credit_card",
-"refunds": [],
-...
+    "id": "01JAQD7X1BXGY2Q59VYKRV90W8",
+    "type": "online",
+    "processing_mode": "automatic",
+    "external_reference": "ext_ref_1234",
+    "total_amount": "200.00",
+    "site_id": "MLB",
+    "status": "processed",
+    "created_date": "2024-10-21T11:26:19.17922368Z",
+    "last_updated_date": "2024-10-21T11:26:20.923603158Z",
+    "integration_data": {
+        "application_id": "874202490252970"
+    },
+    "payer": {
+        "email": "{{EMAIL}}"
+    },
+    "transactions": {
+        "payments": [
+            {
+                "id": "pay_01JAQD7X1BXGY2Q59VYP036JDN",
+                "amount": "200.00",
+                "status": "processed",
+                "reference_id": "0001hyhhbz",
+                "status_detail": "accredited",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "e607133fe7acf46ff35cd5f7810f7eb2",
+                    "installments": 1
+                }
+            }
+        ]
+    },
+    "type_config": {
+        "capture_mode": "automatic"
+    }
 }
 ```
 
@@ -668,7 +662,9 @@ The response will show the following result
 >
 > Attention
 >
-> When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/your-integrations/notifications) for more details.
+> When creating a payment it is possible to receive 3 different statuses: "Pending", "Rejected" and "Approved". Refer to the complete list of payment statuses and the order created in the [Status]() section. <br>
+> <br>
+> To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/your-integrations/notifications) for more details.
 
 ## Code example
 

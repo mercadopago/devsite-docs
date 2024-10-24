@@ -16,10 +16,10 @@ The Automatic Mode is the default mode of the application. Here, the transaction
 
 The allowed operations are:
 
-- [**Create and process Order**](/development/en/reference/order/online-payments/create/post): responsible for creating the order and simultaneously processing the transaction.
+- [**Create and process order**](/development/en/reference/order/online-payments/create/post): responsible for creating the order and simultaneously processing the transaction.
 - [**Retrieve transaction**](/development/en/reference/order/online-payments/get-order/get): allows you to locate an existing order intent.
 - [**Capture transaction**](/development/en/reference/order/online-payments/capture/post): enables the capture of the authorized amount of an order. This option is only valid for credit cards.
-- [**Cancel transaction**](/development/en/reference/order/online-payments/cancel-order/post): responsible for canceling an existing Order that has not yet been processed/ finalized.
+- [**Cancel transaction**](/development/en/reference/order/online-payments/cancel-order/post): responsible for canceling an existing order that has not yet been processed/ finalized.
 - [**Refund transaction**](/development/en/reference/order/online-payments/refund/post): in automatic mode, the refund will always be total.
 
 ## Manual Mode
@@ -28,7 +28,7 @@ The Manual Mode is where it is possible to divide the processing of the transact
 
 The allowed operations are:
 
-- [**Create Order (with or without transactions)**](/development/en/reference/order/online-payments/create/post): responsible for creating and authorizing the order without simultaneous processing.
+- [**Create order (with or without transactions)**](/development/en/reference/order/online-payments/create/post): responsible for creating and authorizing the order without simultaneous processing.
 - [**Add transaction**](/development/en/reference/order/online-payments/add-transaction/post): this operation can only be performed in manual mode and is responsible for adding more than one transaction in the same _payload_.
 - **[Modify](/development/en/reference/order/online-payments/update-transaction/patch) and/or [remove](/development/en/reference/order/online-payments/delete-transaction/delete) transaction**: modifying and removing transactions can only be done in manual mode, and allow to change payment information that had been previously added to the order. These are operations that modifies an item within any field of the `transactions` parameter.
 - [**Capture transaction**](/development/en/reference/order/online-payments/capture/post): responsible for capturing the authorized amount of an order. This option is only valid for credit cards.

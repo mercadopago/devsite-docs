@@ -4,39 +4,11 @@ La integración de los pagos con tarjeta se realiza a través de cardform. En es
 
 A medida que se introducen los datos de la tarjeta, se realiza una búsqueda automática de la información del emisor y las cuotas disponibles para ese método de pago. Con esto, la implementación del flujo es transparente para quien realiza la integración.
 
-----[mlb]----
-> NOTE
->
-> Importante
->
-> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con Checkout Transparente.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
-
-------------
-
-----[mla, mlm, mpe, mlc]----
-> NOTE
->
-> Importante
->
-> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de Card Payment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de Card Payment para obtener más detalles. También recomendamos adoptar el protocolo 3DS 2.0 para aumentar la probabilidad de que se aprueben sus pagos. Para obtener más información, consulte la documentación sobre [Cómo integrar 3DS con Checkout API.](/developers/es/docs/checkout-api/how-tos/integrate-3ds)
-------------
-
-----[mlu, mco]----
-> NOTE
->
-> Importante
->
-> Además de las opciones disponibles en esta documentación, también es posible integrar **pagos con tarjeta** utilizando el **Brick de CardPayment**. Consulta la documentación [Renderizado por defecto](/developers/es/docs/checkout-bricks/card-payment-brick/default-rendering#editor_2) de CardPayment para obtener más detalles.
-
-------------
-
 Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utilizando Card Form.
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-es.png)
 
-Para integrar los pagos con tarjeta en ----[mlb]---- Checkout Transparente------------ ----[mla, mlm, mlu, mco, mlc, mpe]---- Checkout API ------------ sigue las siguientes etapas.
-
-##  Importar MercadoPago.js
+## Importar MercadoPago.js
 
 La primera etapa del proceso de integración de pagos con tarjeta es la captura de los datos de la tarjeta. Esta captura se realiza a través de la inclusión de la biblioteca MercadoPago.js en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca antes de añadir el formulario de pago.
 
@@ -368,7 +340,7 @@ Después de añadir el formulario de pago, es necesario inicializarlo. Esta etap
 >
 > Si necesitas añadir o modificar alguna lógica en el flujo de los métodos de Javascript consulta la documentación [Integración vía Métodos Core](/developers/es/docs/checkout-api/integration-configuration/card/integrate-via-core-methods)
 
-## Enviar pago
+## Crear pago
 
 Para continuar con el proceso de integración de pagos con tarjeta, es necesario que el backend reciba la información del formulario con el token generado y los datos completos como se indicó en las anteriores etapas.
 
@@ -376,13 +348,7 @@ En el ejemplo de la sección previa, enviamos todos los datos necesarios para la
 
 Con toda la información recopilada en el backend, envía un **POST** con los atributos requeridos, prestando atención a los parámetros `token`, `transaction_amount`, `installments`, `payment_method_id` y `payer.email` al endpoint [/v1/payments](/developers/es/reference/payments/_payments/post) y ejecuta la solicitud o, si lo prefieres, envía la información utilizando nuestros SDKs.
 
-> NOTE
->
-> Importante
->
-> Para aumentar las posibilidades de aprobación del pago y evitar que el análisis antifraude no autorice la transacción, recomendamos introducir toda la información posible sobre el comprador al realizar la solicitud. Para más detalles sobre cómo aumentar las posibilidades de aprobación, consulta [Cómo mejorar la aprobación de los pagos.](/developers/es/docs/checkout-api/how-tos/improve-payment-approval)
-> <br><br>
-> Además, deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus llamados.
+Deberás enviar obligatoriamente el atributo `X-Idempotency-Key` para asegurar la ejecución y reejecución de las solicitudes sin el riesgo de realizar la misma acción más de una vez por error. Para hacerlo, actualiza [nuestra biblioteca de SDKs](/developers/es/docs/sdks-library/landing), o bien genera un UUID V4 y envíalo en los _header_ de tus llamados.
 
 [[[
 ```php
@@ -620,47 +586,75 @@ if err != nil {
 fmt.Println(resource)
 ```
 ```curl
-===
-Encuentra el estado del pago en el campo _status_.
-===
- 
 curl -X POST \
-   -H 'accept: application/json' \
-   -H 'content-type: application/json' \
-   -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
-   -H 'X-Idempotency-Key: SOME_UNIQUE_VALUE' \
-   'https://api.mercadopago.com/v1/payments' \
-   -d '{
-         "transaction_amount": 100,
-         "token": "ff8080814c11e237014c1ff593b57b4d",
-         "description": "Blue shirt",
-         "installments": 1,
-         "payment_method_id": "visa",
-         "issuer_id": 310,
-         "payer": {
-           "email": "PAYER_EMAIL"
-         }
-   }'
- 
+    'https://api.mercadopago.com/v1/orders'\
+    -H 'Content-Type: application/json' \
+       -H 'X-Idempotency-Key: {{SOME_UNIQUE_VALUE}}' \
+       -H 'Authorization: Bearer {{YOUR_ACCESS_TOKEN}}' \
+    -d '{
+    "type": "online",
+    "processing_mode": "automatic",
+    "total_amount": "200.00",
+    "external_reference": "ext_ref_1234",
+    "payer": {
+        "email": "{{EMAIL}}"
+    },
+    "transactions": {
+        "payments": [
+            {
+                "amount": "200.00",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "1223123",
+                    "installments": 1
+                }
+            }
+        ]
+    }
+}'
 ```
 ]]]
-
 
 La respuesta devolverá el siguiente resultado
 
 ```json
 {
-   "status": "approved",
-   "status_detail": "accredited",
-   "id": 3055677,
-   "date_approved": "2019-02-23T00:01:10.000-04:00",
-   "payer": {
-       ...
-   },
-   "payment_method_id": "visa",
-   "payment_type_id": "credit_card",
-   "refunds": [],
-   ...
+    "id": "01JAQD7X1BXGY2Q59VYKRV90W8",
+    "type": "online",
+    "processing_mode": "automatic",
+    "external_reference": "ext_ref_1234",
+    "total_amount": "200.00",
+    "site_id": "MLB",
+    "status": "processed",
+    "created_date": "2024-10-21T11:26:19.17922368Z",
+    "last_updated_date": "2024-10-21T11:26:20.923603158Z",
+    "integration_data": {
+        "application_id": "874202490252970"
+    },
+    "payer": {
+        "email": "{{EMAIL}}"
+    },
+    "transactions": {
+        "payments": [
+            {
+                "id": "pay_01JAQD7X1BXGY2Q59VYP036JDN",
+                "amount": "200.00",
+                "status": "processed",
+                "reference_id": "0001hyhhbz",
+                "status_detail": "accredited",
+                "payment_method": {
+                    "id": "master",
+                    "type": "credit_card",
+                    "token": "e607133fe7acf46ff35cd5f7810f7eb2",
+                    "installments": 1
+                }
+            }
+        ]
+    },
+    "type_config": {
+        "capture_mode": "automatic"
+    }
 }
 ```
 
@@ -668,7 +662,9 @@ La respuesta devolverá el siguiente resultado
 >
 > Atención
 >
-> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications) para obtener más detalles.
+> Al crear un pago es posible recibir 3 estados diferentes: "Pendiente", "Rechazado" y "Aprobado". Consulte la lista completa de los estados del pago y de la orden creada en la sección [Status]() <br>
+> <br>
+> Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications) para obtener más detalles.
 
 ## Ejemplo de código
 
