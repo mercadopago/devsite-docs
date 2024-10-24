@@ -1,8 +1,8 @@
 ---
 content_section_with_media:
-    - title: QR Code
-    - message: The QR is a code linked to your Mercado Pago account that allows you to receive payments in a simple, fast and secure way. To receive payments with QR in your business, you can print the code and showcase it in a visible spot or display it on your mobile device, and charge from Mercado Pago App.
-    - media_video: https://www.youtube.com/embed/2DQMc5ErWqA
+ - title: QR Code
+ - message: The QR is a code linked to your Mercado Pago account that allows you to receive payments in a simple, fast and secure way. To receive payments with QR in your business, you can print the code and showcase it in a visible spot or display it on your mobile device, and charge from Mercado Pago App.
+ - media_image: /landings-docs/media-image-landing.png
 ---
 
 --- mini_landing_separator ---
