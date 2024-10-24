@@ -3,6 +3,6 @@ repos:
     rev: v1.1.0
     hooks:
       - id: pre_commit_hook
-        stages: [commit]
+        stages: [pre-commit]
       - id: post_commit_hook
         stages: [post-commit]

@@ -399,9 +399,9 @@
           },
           "403": {
             "description": {
-              "en": "Error. Forbidden, checking device owner.",
+              "en": "Error. Forbidden, checking terminal owner.",
               "pt": "Erro. Verifique o proprietário do dispositivo.",
-              "es": "Error. Verifica el propietario del dispositivo."
+              "es": "Error. Verifica el propietario de la terminal."
             },
             "content":{
               "application/json":{
@@ -412,11 +412,11 @@
                       "type": "string",
                       "enum": [
                         {
-                          "title": "forbidden_checking_device_owner",
+                          "title": "forbidden_checking_terminal_owner",
                           "description": {
-                            "en": "The Point device does not belong to the user who submitted the request. Check if the value sent for \"device_id\" is correct or if the device is linked to your account.",
-                            "es": "El dispositivo Point no pertence al usuario que envió la solicitud. Verifica si el valor enviado para \"device_id\" es correcto o si el dispositivo está vinculado a tu cuenta.",
-                            "pt": "O dispositivo Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"device_id\" está correto ou se o dispositivo está vinculado à sua conta."
+                            "en": "The Point terminal does not belong to the user who submitted the request. Check if the value sent for \"terminal_id\" is correct or if the terminal is linked to your account.",
+                            "es": "La terminal Point no pertence al usuario que envió la solicitud. Verifica si el valor enviado para \"terminal_id\" es correcto o si la terminal está vinculado a tu cuenta.",
+                            "pt": "O dispositivo Point não pertence ao usuário que enviou a solicitação. Verifique se o valor enviado para \"terminal_id\" está correto ou se o dispositivo está vinculado à sua conta."
                           }
                         }
                       ]
@@ -449,10 +449,10 @@
                           }
                         },
                         {
-                          "title": "already_queued_order_for_device",
+                          "title": "already_queued_order_for_terminal",
                           "description": {
-                            "en": "The device already has an order waiting. It is necessary to finalize or cancel it to send new orders.",
-                            "es": "El dispositivo ya tiene una order en espera. Es necesario finalizarla o cancelarla para enviar nuevas orders.",
+                            "en": "The terminal already has an order waiting. It is necessary to finalize or cancel it to send new orders.",
+                            "es": "La terminal ya tiene una order en espera. Es necesario finalizarla o cancelarla para enviar nuevas orders.",
                             "pt": "O dispositivo já tem uma order em espera. É necessário finalizar ou cancelar para enviar novas orders."
                           }
                         }
@@ -991,16 +991,16 @@
                         {
                           "title": "on_terminal",
                           "description": {
-                            "en": "The order was obtained by the device and is ready for process.",
-                            "es": "La order fue obtenida por el dispositivo y está lista para ser procesada.",
+                            "en": "The order was obtained by the terminal and is ready for process.",
+                            "es": "La order fue obtenida por la terminal y está lista para ser procesada.",
                             "pt": "A order foi obtida no dispositivo e está pronta para ser processada."
                           }
                         },
                         {
                           "title": "cancelled",
                           "description": {
-                            "en": "The order has been cancelled, either through the API or the device.",
-                            "es": "La order fue cancelada desde el API o desde el dispositivo.",
+                            "en": "The order has been cancelled, either through the API or the terminal.",
+                            "es": "La order fue cancelada desde el API o desde la terminal.",
                             "pt": "A order foi cancelada na API ou no dispositivo."
                           }
                         },
@@ -1222,8 +1222,8 @@
                         {
                           "title": "cannot_cancel_order",
                           "description": {
-                            "en": "Hay un conflicto al intentar cancelar la order por su estado actual. Recuerda que las orders solo pueden ser canceladas vía API cuando \"status=created\". Si estás intentando cancelar una order con estado \"status=on_terminal\", deberás hacerlo desde el dispositivo.",
-                            "es": "Há um conflito ao tentar cancelar o pedido devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar um pedido com o estado \"status=on_terminal\", deverá fazê-lo a partir do dispositivo.",
+                            "en": "",
+                            "es": "Hay un conflicto al intentar cancelar la order por su estado actual. Recuerda que las orders solo pueden ser canceladas vía API cuando \"status=created\". Si estás intentando cancelar una order con estado \"status=on_terminal\", deberás hacerlo desde la terminal.",
                             "pt": "Há um conflito ao tentar cancelar o pedido devido ao seu estado atual. Lembre-se de que os pedidos só podem ser cancelados via API quando \"status=created\". Se você estiver tentando cancelar um pedido com o estado \"status=on_terminal\", deverá fazê-lo a partir do dispositivo."
                           }
                         }
@@ -1278,6 +1278,649 @@
           "es": "Cancelar order por ID"
         }
       }
+    },
+    "terminals/v1/list":{
+      "get":{
+        "tags":[
+          "mp-point"
+        ],
+        "description":{
+          "en":"This endpoint allows you to obtain a list of the terminals associated with their respective cash register, branch, and operating mode. In case of success, the request will return a response with status 200",
+          "pt":"Este endpoint permite que você obtenha uma lista das terminais associadas à sua respectiva caixa, filial e modo de operação. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Este endpoint te permite obtener una listado de las terminales asociadas a su respectiva caja, sucursal y modo de operacion. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+        },
+        "parameters":[
+          {
+            "name": "limit",
+            "in": "query",
+            "description": {
+              "en": "Pagination limit",
+              "pt": "Limite de paginação",
+              "es": "Límite de paginación"
+            },
+            "schema": {
+              "type": "integer",
+              "example": 50
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": {
+              "en": "Pagination offset",
+              "pt": "Offset de paginação",
+              "es": "Offset de paginación"
+            },
+            "schema": {
+              "type": "integer",
+              "example": 0
+            }
+          }
+        ],
+        "responses":{
+          "200": {
+            "description": {
+              "en": "Success",
+              "es": "Éxito - lista de las terminales paginados",
+              "pt": "Sucesso" 
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data":{
+                      "type":"object",
+                      "description":{
+                        "en":"Identifier of the order cancelled in the request.",
+                        "pt":"Identificador da order cancelada na requisição.",
+                        "es":"Este nodo te permite obtener un listado de los terminales Point disponibles asociados a tu cuenta de Mercado Pago."
+                      },
+                      "properties":{
+                        "terminals":{
+                          "type":"array",
+                          "description":{
+                            "es":"Este nodo contendra la informacion que relaciona cada terminal a su caja, sucursal y modo de operacion"
+                          },
+                          "items": {
+                            "type": "object",
+                            "properties": { 
+                              "id": {
+                                "type": "string",
+                                "example": "PAX_A910__SMARTPOS1234345545",
+                                "description": {
+                                  "en": "terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the terminal.",
+                                  "es": "Identificador único del terminal. Podrás identificar el Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera del terminal físico.",
+                                  "pt": "Identificador exclusivo do dispositivo. Você pode identificar o dispositivo Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do dispositivo físico."
+                                }
+                              },
+                              "pos_id": {
+                                "type": "integer",
+                                "description": {
+                                  "en": "Identifier of the Point of Sale to which the terminal is associated.",
+                                  "es": "Identificador de la caja a la que está asociado la terminal.",
+                                  "pt": "Identificador da caixa à qual o dispositivo está associado."
+                                },
+                                "example": 47792476
+                              },
+                              "store_id": {
+                                "type": "string",
+                                "description": {
+                                  "en": "Identifier of the store to which the terminal is associated.",
+                                  "pt": "Identificador da loja à qual o dispositivo está associado.",
+                                  "es": "Identificador de la sucursal a la que está asociado la terminal."
+                                },
+                                "example": 47792478
+                              },
+                              "external_pos_id": {
+                                "type": "string",
+                                "description": {
+                                  "en": "External identifier of the store to which the POS belongs, defined by the integrator during its creation.",
+                                  "es": "Identificador externo de la sucursal a la que pertenece la caja, definido por el integrador durante su creación.",
+                                  "pt": "Identificador externo da loja a qual pertence a caixa, definido pelo integrador durante sua criação."
+                                },
+                                "example": "SUC0101POS"
+                              },
+                              "operating_mode": {
+                                "type": "string",
+                                "description":{
+                                  "en": "Operating mode defined currently for the terminal.",
+                                  "es": "Modo de operación en el que está funcionando la terminal actualmente.",
+                                  "pt": "Modo de operação em que o dispositivo está funcionando atualmente"
+                                },
+                                "example": "“PDV” | “STANDALONE”",
+                                "enum": [
+                                  {
+                                    "title": "PDV",
+                                    "description": {
+                                      "en": "Point of Sale operating mode. It's when the terminal is integrated with the API",
+                                      "es": "Modo operativo Punto de Venta. Es el modo en el que opera la terminal cuando está integrado vía API.",
+                                      "pt": "Modo operacional Ponto de Venda. É o forma como o dispositivo funciona quando integrado via API. "
+                                    }
+                                  },
+                                  {
+                                    "title": "STANDALONE",
+                                    "description": {
+                                      "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
+                                      "es": "Configuración de la dispositivo por defecto. Es el modo en el que opera la temrinal cuando no está integrado vía API.",
+                                      "pt": "Configuração padrão do dispositivo. É a forma como o dispositivo opera quando não está integrado via API."
+                                    }
+                                  },
+                                  {
+                                    "title": "SELFSERVICE",
+                                    "description": {
+                                      "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
+                                      "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrado en modo desatendido de rompefilas.",
+                                      "pt": "Configuração padrão do dispositivo. É a forma como o dispositivo opera quando não está integrado via API."
+                                    }
+                                  },
+                                  {
+                                    "title": "UNDEFINED",
+                                    "description": {
+                                      "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
+                                      "es": "La configuración que tiene la terminal no es reconocida",
+                                      "pt": "Configuração padrão do dispositivo. É a forma como o dispositivo opera quando não está integrado via API."
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "paging": {
+                      "type": "object",
+                      "properties": {
+                        "total": {
+                          "type": "integer",
+                          "example": 1,
+                          "description": {
+                            "en":"This parameter indicates the total number of elements available, beyond those selected to be displayed.",
+                            "es": "Este parámetro indica el total de elementos disponibles, más allá de los seleccionados para ser exhibidos.",
+                            "pt": "Este parâmetro indica o número total de elementos disponíveis, além daqueles selecionados para serem exibidos."
+                          }
+                        },
+                        "offset": {
+                          "type": "integer",
+                          "example": 0,
+                          "description": {
+                            "en": "Starting point from which records were obtained, selected when submitting the request.",
+                            "es": "Punto de inicio desde el cual se obtuvieron los registros, seleccionado al enviar la solicitud.",
+                            "pt": "Ponto de partida a partir do qual foram obtidos os registros, selecionado no momento do envio da solicitação."
+                          }
+                        },
+                        "limit": {
+                          "type": "integer",
+                          "example": 50,
+                          "description": {
+                            "en": "Specifies the maximum number of records obtained, selected when sending the request.",
+                            "es": "Especifica el número máximo de registros obtenidos, seleccionados al enviar la solicitud.",
+                            "pt": "Especifica o número máximo de registros obtidos, selecionado no momento do envio da solicitação."
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error. Invalid parameters sent.",
+              "pt": "Erro. Parâmetros inválidos enviados.",
+              "es": "Error. Parámetros inválidos."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "client_id_required",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "Clien ID invalido, revisa que envies el Access Token e intenta nuevamente.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "424": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "communication_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "502": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "internal_error",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_response",
+                          "description": {
+                            "en": "Internal server error. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro interno. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "504": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "timeout",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Cancel order by ID",
+          "pt": "Cancelar order por ID",
+          "es": "Obtener lista de terminales"
+        }
+      }
+    },
+    "terminals/v1/setup":{
+      "patch":{
+        "tags":[
+          "mp-point"
+        ],
+        "description":{
+          "en":"This endpoint allows you to change the terminal operating mode. In case of success, the request will return a response with status 200",
+          "pt":"Este endpoint permite que você altere o modo de operação da terminal. Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Este endpoint te permite cambiar el modo de operación de la terminal. En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "terminals":{
+                  "type":"array",
+                  "description":{
+                    "en": "xxx",
+                    "es":"Este nodo contendra una lista de terminales que se deseara modificar su modo de operacion -- NOTA: Consultar como redactar que solo se puede enviar un valor en la lista en la version1",
+                    "pt": "xxx"
+                  },
+                  "items": {
+                    "type": "object",
+                    "properties": { 
+                      "id": {
+                        "type": "string",
+                        "example": "PAX_A910__SMARTPOS1234345545",
+                        "description": {
+                          "en": "terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the terminal.",
+                          "es": "Identificador único del terminal. Podrás identificar el Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera del terminal físico.",
+                          "pt": "Identificador exclusivo do dispositivo. Você pode identificar o dispositivo Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do dispositivo físico."
+                        }
+                      },
+                      "operating_mode": {
+                        "type": "string",
+                        "description":{
+                          "en": "Operating mode defined currently for the terminal.",
+                          "es": "Modo en el que se desea que opere la terminal. Debe ser una de las siguientes opciones.",
+                          "pt": "Modo de operação em que o dispositivo está funcionando atualmente"
+                        },
+                        "example": "“PDV” | “STANDALONE” | SELFSERVICE",
+                        "enum": [
+                          {
+                            "title": "PDV",
+                            "description": {
+                              "en": "Point of Sale operating mode. It's when the terminal is integrated with the API",
+                              "es": "Modo operativo Punto de Venta. Es el modo en el que opera la terminal cuando está integrado vía API.",
+                              "pt": "Modo operacional Ponto de Venda. É o forma como o dispositivo funciona quando integrado via API. "
+                            }
+                          },
+                          {
+                            "title": "STANDALONE",
+                            "description": {
+                              "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
+                              "es": "Configuración de la dispositivo por defecto. Es el modo en el que opera la temrinal cuando no está integrado vía API.",
+                              "pt": "Configuração padrão do dispositivo. É a forma como o dispositivo opera quando não está integrado via API."
+                            }
+                          },
+                          {
+                            "title": "SELFSERVICE",
+                            "description": {
+                              "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
+                              "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrado en modo desatendido de rompefilas.",
+                              "pt": "Configuração padrão do dispositivo. É a forma como o dispositivo opera quando não está integrado via API."
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses":{
+          "200": {
+            "description": {
+              "en": "Success - Operating mode successfully changed.",
+              "pt": "Sucesso - Modo de operação alterado com sucesso.",
+              "es": "Éxito - El modo de operación se cambió correctamente."
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "terminals":{
+                      "type":"array",
+                      "description":{
+                        "es":"Este nodo contendra la respuesta del terminal con su nuevo modo de operacion"
+                      },
+                      "items": {
+                        "type": "object",
+                        "properties": { 
+                          "id": {
+                            "type": "string",
+                            "example": "PAX_A910__SMARTPOS1234345545",
+                            "description": {
+                              "en": "terminal unique identifier. You can identify the desired Point terminal by the last characters of this field, which should match the serial number displayed on the back label of the terminal.",
+                              "es": "Identificador único del terminal. Podrás identificar el Point que deseas por medio de los últimos caracteres de este campo, que deberán coincidir con el serial que aparece en la etiqueta trasera del terminal físico.",
+                              "pt": "Identificador exclusivo do dispositivo. Você pode identificar o dispositivo Point desejado pelos últimos caracteres deste campo, que devem corresponder ao número de série exibido na etiqueta traseira do dispositivo físico."
+                            }
+                          },
+                          "operating_mode": {
+                            "type": "string",
+                            "description":{
+                              "en": "Operating mode defined currently for the terminal.",
+                              "es": "Modo en el que se desea que opere la terminal. Debe ser una de las siguientes opciones.",
+                              "pt": "Modo de operação em que o dispositivo está funcionando atualmente"
+                            },
+                            "example": "“PDV” | “STANDALONE” | SELFSERVICE",
+                            "enum": [
+                              {
+                                "title": "PDV",
+                                "description": {
+                                  "en": "Point of Sale operating mode. It's when the terminal is integrated with the API",
+                                  "es": "Modo operativo Punto de Venta. Es el modo en el que opera la terminal cuando está integrado vía API.",
+                                  "pt": "Modo operacional Ponto de Venda. É o forma como o dispositivo funciona quando integrado via API. "
+                                }
+                              },
+                              {
+                                "title": "STANDALONE",
+                                "description": {
+                                  "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
+                                  "es": "Configuración de la dispositivo por defecto. Es el modo en el que opera la temrinal cuando no está integrado vía API.",
+                                  "pt": "Configuração padrão do dispositivo. É a forma como o dispositivo opera quando não está integrado via API."
+                                }
+                              },
+                              {
+                                "title": "SELFSERVICE",
+                                "description": {
+                                  "en": "Default terminal configuration. It's when the terminal is not integrated with the API.",
+                                  "es": "Configuración de la terminal en modo kiosco. Es el modo en el que opera la terminal cuando esta integrado en modo desatendido de rompefilas.",
+                                  "pt": "Configuração padrão do dispositivo. É a forma como o dispositivo opera quando não está integrado via API."
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": {
+              "en": "Error. Invalid parameters sent.",
+              "pt": "Erro. Parâmetros inválidos enviados.",
+              "es": "Error. Parámetros inválidos."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "unsupported_site",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "Site no valido para hacer la request, revisa si el token que estes usando e intenta ejecutar la peticion nuevamente.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "invalid_payload",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "Payload invalido, revisa el payload enviado y envie la request nuevamente.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        },
+                        {
+                          "title": "client_id_required",
+                          "description": {
+                            "en": "The 'X-Idempotency-Key' header is required and was not sent. Make the requisition again including it.",
+                            "es": "Clien ID invalido, revisa que envies el Access Token correcto e intenta nuevamente.",
+                            "pt": "O header 'X-Idempotency-Key' é requerido e não foi enviado. Faça a requisição novamente incluindo-o."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": {
+              "en": "Error.",
+              "pt": "Erro.",
+              "es": "Error."
+            },
+            "content":{
+              "application/json":{
+                "schema":{
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "terminal_not_allowed_action",
+                          "description": {
+                            "en": "The value sent as Access Token is incorrect. Please check and try again with the correct value.",
+                            "es": "La terminal usada no es valida para hacer esta accion.",
+                            "pt": "O valor enviado como Access Token está incorreto. Verifique e tente a enviar requisição novamente com o valor correto."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "424": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "communication_failed",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "502": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "internal_error",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        },
+                        {
+                          "title": "invalid_response",
+                          "description": {
+                            "en": "Internal server error. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Erro interno. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "504": {
+            "description": {
+              "en": "Error",
+              "pt": "Erro",
+              "es": "Error"
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errorKey": {
+                      "type": "string",
+                      "enum": [
+                        {
+                          "title": "timeout",
+                          "description": {
+                            "en": "Validation fail. Please try submitting the request again.",
+                            "es": "Error interno. Intenta enviar la solicitud nuevamente.",
+                            "pt": "Falha na validação. Tente enviar a solicitação novamente."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "en": "Update terminal operating mode",
+          "pt": "Atualizar modo de operação da terminal",
+          "es": "Actualizar modo de operacion de la terminal"
+        }
+      }
     }
   },
   "components": {
@@ -1291,11 +1934,11 @@
         },
         "required": true,
         "properties":{
-          "device_id":{
+          "terminal_id":{
             "type":"string",
             "description": {
-              "en": "Identifier of the device that will obtain the order. You must send it according to the following format: \"type of device + “__” + device serial\", as in the following example: \"PAX_A910__SMARTPOS123456789\". The serial number can be found on the rear label of the device.",
-              "es": "Identificador del dispositivo Point que obtendrá la order. Debes enviarlo siguiendo el formato \"tipo de dispositivo + “__” +  serial del dispositivo\", como en el siguiente ejemplo: \"PAX_A910__SMARTPOS123456789\". El serial del dispositivo puede ser hallado en la etiqueta trasera del mismo.",
+              "en": "Identifier of the terminal that will obtain the order. You must send it according to the following format: \"type of terminal + “__” + terminal serial\", as in the following example: \"PAX_A910__SMARTPOS123456789\". The serial number can be found on the rear label of the terminal.",
+              "es": "Identificador de la terminal Point que obtendrá la order. Debes enviarlo siguiendo el formato \"tipo de terminal + “__” +  serial de la terminal\", como en el siguiente ejemplo: \"PAX_A910__SMARTPOS123456789\". El serial de la temrinal puede ser hallado en la etiqueta trasera del mismo.",
               "pt": "Identificador do dispositivo que obterá a order. Deve ser enviado seguindo o formato \"tipo de dispositivo + “__” + serial do dispositivo\", como no exemplo a seguir: \"PAX_A910__SMARTPOS123456789\". O serial do dispositivo pode ser encontrado na etiqueta traseira."
             },
             "example":"PAX_A910__SMARTPOS1423",
@@ -1304,9 +1947,9 @@
           "print_on_terminal":{
             "type":"string",
             "description":{
-              "en":"Indicates whether the device should print the receipt of the transaction. Its default value will be \"seller_ticket\".",
+              "en":"Indicates whether the terminal should print the receipt of the transaction. Its default value will be \"seller_ticket\".",
               "pt":"Indica se o dispositivo deve imprimir o comprovante da transação. Seu valor padrão será \"seller_ticket\".",
-              "es":"Indica si el dispositivo deberá imprimir el ticket comprobante de la transacción. Su valor por defecto será \"seller_ticket\"."
+              "es":"Indica si la terminal deberá imprimir el ticket comprobante de la transacción. Su valor por defecto será \"seller_ticket\"."
             },
             "enum": [
               {
@@ -1331,41 +1974,41 @@
             "type":"string",
             "example": "S0392JED",
             "description": {
-              "en": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the device ticket, if its printing whas selected. This parameter only corresponds to transactions in Argentina (MLA).",
+              "en": "An alphanumeric value to identify the invoice or ticket number. It will be printed on the terminal ticket, if its printing whas selected. This parameter only corresponds to transactions in Argentina (MLA).",
               "pt": "Um valor alfanumérico para identificar o número da fatura ou do ticket. Ele será impresso no comprovante do dispositivo, no caso a impressão tenha sido selecionada. Este parâmetro corresponde apenas a transações na Argentina (MLA).",
-              "es": "Valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket del dispositivo, en caso de seleccionar su impresión. Este parâmetro corresponde apenas a transações na Argentina (MLA)."
+              "es": "Valor alfanumérico para identificar el número de factura o ticket. Se imprimirá en el ticket de la temrinal, en caso de seleccionar su impresión. Este parametro corresponde a transacciones en Argentina (MLA)."
             }
           },
           "flow_process":{
             "type":"string",
             "example":"credit_card",
             "description":{
-              "en":"Indicates the payment method that the device will accept. By default, it will accept all payment methods and will allow the customer to select the payment method they want. If not, the possible values ​​are the following:",
+              "en":"Indicates the payment method that the terminal will accept. By default, it will accept all payment methods and will allow the customer to select the payment method they want. If not, the possible values ​​are the following:",
               "pt":"Indica o meio de pagamento que o dispositivo aceitará. Por padrão, aceitará todos os meios de pagamento e permitirá que o cliente selecione o meio de pagamento que deseja. Caso contrário, os valores possíveis são os seguintes:",
-              "es":"Indica el medio de pago que aceptará el dispositivo. Por defecto, aceptará todos los medios de pago y permitirá al cliente seleccionar el medio de pago que desee. Si no, los valores posibles son los siguientes:" 
+              "es":"Indica el medio de pago que aceptará la terminal. Por defecto, aceptará todos los medios de pago y permitirá al cliente seleccionar el medio de pago que desee. Si no, los valores posibles son los siguientes:" 
             },
             "enum": [
               {
                 "title": "debit_card",
                 "description": {
-                  "en": "The device will only accept payments with debit card.",
-                  "es": "El dispositivo aceptará pagos exclusivamente con tarjeta de débito.",
+                  "en": "The terminal will only accept payments with debit card.",
+                  "es": "La temrinal aceptará pagos exclusivamente con tarjeta de débito.",
                   "pt": "O dispositivo aceitará exclusivamente pagamentos com cartão de débito."
                 }
               },
               {
                 "title": "credit_card",
                 "description": {
-                  "en": "The device will only accept payments with credit card.",
-                  "es": "El dispositivo aceptará pagos exclusivamente con tarjeta de crédito.",
+                  "en": "The terminal will only accept payments with credit card.",
+                  "es": "La temrinal aceptará pagos exclusivamente con tarjeta de crédito.",
                   "pt": "O dispositivo aceitará exclusivamente pagamentos com cartão de crédito."
                 }
               },
               {
                 "title": "qr",
                 "description": {
-                  "en": "The device will only accept payments with a QR code.",
-                  "es": "El dispositivo aceptará pagos exclusivamente con un código QR.",
+                  "en": "The terminal will only accept payments with a QR code.",
+                  "es": "La terminal aceptará pagos exclusivamente con un código QR.",
                   "pt": "O dispositivo aceitará exclusivamente pagamentos com um código QR."
                 }
               }
@@ -1465,7 +2108,7 @@
           {
             "title": "on_terminal",
             "description": {
-              "en": "The order was obtained by the device and is ready for process.",
+              "en": "The order was obtained by the terminal and is ready for process.",
               "es": "La order fue obtenida por el dispositivo y está lista para ser procesada.",
               "pt": "A order foi obtida no dispositivo e está pronta para ser processada."
             }
@@ -1473,8 +2116,8 @@
           {
             "title": "cancelled",
             "description": {
-              "en": "The order has been cancelled, either through the API or the device.",
-              "es": "La order fue cancelada desde el API o desde el dispositivo.",
+              "en": "The order has been cancelled, either through the API or the terminal.",
+              "es": "La order fue cancelada desde el API o desde la temrinal.",
               "pt": "A order foi cancelada na API ou no dispositivo."
             }
           },
