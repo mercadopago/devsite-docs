@@ -54,7 +54,7 @@ bullet_section_with_media:
 | --- | --- |--- |
 | Modo  | Automático  | Automático e manua |
 | Operações  | Payments  | [Payments](/developers/pt/docs/order/online-payments/introduction) e [In-store](/developers/pt/docs/order/in-store-payments/introduction) (QR e Point).|
-| Múltiplas transações  | Não possui | Possui. |
+| Múltiplas transações  | Não possui | Possui |
 | Envio de metadados  | Permite  | Não permite |
 | Envio de Notification Url  | Permite no _payload_.  | Não permite no _payload_ e deve ser configurado no [Painel do desenvolvedor > Detalhes da aplicação](/developers/pt/docs/order/additional-content/your-integrations/application-details). |
 | Validações com respostas de erros completas  | Valida um erro por vez.  | Retorna uma lista com todos os erros. |
