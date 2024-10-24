@@ -1,4 +1,4 @@
-# Cartão
+# Pagamento com cartão
 
 A integração de pagamentos via cartão é feita via cardform. Neste modo de integração, o **MercadoPago.js** é responsável pelos fluxos necessários para obtenção das informações obrigatórias para a criação de um pagamento. Quando inicializado, uma busca é realizada para recolher os tipos de documentos disponíveis para o país em questão.
 
@@ -8,9 +8,9 @@ Confira abaixo o diagrama que ilustra o processo de pagamento via cartão utiliz
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-pt.png)
 
-## Importar MercadoPago.js
+## Criptografar cartão - SDK JS
 
-A primeira etapa do processo de integração de pagamentos com cartões é a captura de dados do cartão. Esta captura é feita a partir da inclusão da biblioteca MercadoPago.js em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca MercadoPago.js antes de adicionar o formulário de pagamento.
+A primeira etapa do processo de integração de pagamentos com cartões é a captura de dados do cartão. Esta captura é feita a partir da inclusão da biblioteca `MercadoPago.js` em seu projeto, seguida do formulário de pagamento. Utilize o código abaixo para importar a biblioteca antes de adicionar o formulário de pagamento.
 
 [[[
 ```html
@@ -666,21 +666,3 @@ A resposta trará o seguinte resultado
 > Para acompanhar as atualizações é necessário configurar seu sistema para receber as notificações de pagamentos e outras atualizações de status. Veja [Notificações](/developers/pt/docs/checkout-api/additional-content/your-integrations/notifications) para mais detalhes.
 
 
-## Exemplo de código
-
-----[mlb]----
-> GIT
->
-> Checkout Transparente
->
-> Para exemplos completos de código, confira os [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
-
-------------
-----[mla, mlm, mpe, mco, mlu, mlc]----
-> GIT
->
-> Checkout API
->
-> Para exemplos completos de código, confira os [exemplos completos de integração](https://github.com/mercadopago/card-payment-sample) disponíveis no GitHub.
-
-------------

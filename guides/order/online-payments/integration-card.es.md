@@ -1,4 +1,4 @@
-# Tarjeta
+# Pago con tarjeta
 
 La integración de los pagos con tarjeta se realiza a través de cardform. En este modo de integración, **MercadoPago.js** se encarga de los flujos necesarios para obtener la información requerida para la generación de un pago. Al inicializarlo, se realiza una búsqueda para recabar los tipos de documentos disponibles para el país correspondiente.
 
@@ -8,9 +8,9 @@ Consulta el siguiente diagrama que ilustra el proceso de pago con tarjeta utiliz
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-es.png)
 
-## Importar MercadoPago.js
+## Cifrar tarjeta - SDK JS
 
-La primera etapa del proceso de integración de pagos con tarjeta es la captura de los datos de la tarjeta. Esta captura se realiza a través de la inclusión de la biblioteca MercadoPago.js en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca antes de añadir el formulario de pago.
+La primera etapa del proceso de integración de pagos con tarjeta es la captura de los datos de la tarjeta. Esta captura se realiza a través de la inclusión de la biblioteca `MercadoPago.js` en tu proyecto, seguida del formulario de pago. Utiliza el siguiente código para importar la biblioteca antes de añadir el formulario de pago.
 
 [[[
 ```html
@@ -666,7 +666,7 @@ La respuesta devolverá el siguiente resultado
 > <br>
 > Para mantenerse al día con las actualizaciones, debe configurar su sistema para recibir notificaciones de pago y otras actualizaciones de estado. Consulte [Notificaciones](/developers/es/docs/checkout-api/additional-content/your-integrations/notifications) para obtener más detalles.
 
-## Ejemplo de código
+
 
 ----[mlb]----
 > GIT

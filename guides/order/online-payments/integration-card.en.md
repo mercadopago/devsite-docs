@@ -1,4 +1,4 @@
-# Integration via Cardform
+# Payment with card
 
 The integration of card payments is done via cardform. In this integration mode, **MercadoPago.js** is responsible for the necessary flow to obtain the required information to create a payment. When initialized, a search is performed to collect the types of documents available for the country in question.
 
@@ -8,9 +8,9 @@ Check below the diagram that illustrates the card payment process using the Card
 
 ![API-integration-flowchart](/images/api/api-integration-flowchart-cardform-2-en.png)
 
-## Import MercadoPago.js
+## Encrypt card - JS SDK
 
-The first step in the card payment integration process is capturing card data. This capture is made by including the MercadoPago.js library in your project, followed by the payment form. Use the code below to import the library before adding the payment form.
+The first step in the card payment integration process is capturing card data. This capture is made by including the `MercadoPago.js` library in your project, followed by the payment form. Use the code below to import the library before adding the payment form.
 
 [[[
 ```html
@@ -666,7 +666,6 @@ The response will show the following result
 > <br>
 > To keep up with updates, you need to configure your system to receive payment notifications and other status updates. See [Notifications](/developers/en/docs/checkout-api/additional-content/your-integrations/notifications) for more details.
 
-## Code example
 
 ----[mlb]----
 > GIT
