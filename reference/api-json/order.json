@@ -2428,8 +2428,8 @@
         ],
         "description":{
           "en":"This endpoint allows to perform refunds, whether of a complete order, a complete transaction, or a partial transaction, as long as their \"status\" is \"processed\". The complete refund of an order can be performed in both \"manual\" and \"automatic\" modes, and requires only sending the \"id\" of the order in the request path. The refund of a transaction can only be carried out in the \"manual\" mode, and it can be partially or totally refunded depending on the value sent in the \"amount\" field. In case of success, the request will return a response with status 200",
-          "pt":"Este endpoint permite executar devoluções, seja de uma order completa, de uma transação completa ou de uma transação parcial, desde que o \"status\" seja \"processed\". A devolução completa de uma order pode ser realizada tanto no modo \"manual\" quanto no modo \"automático\", sendo necessário apenas o envio do \"id\" da order no path da requisição. O reembolso de uma transação somente poderá ser realizado na modalidade \"manual\", podendo ser reembolsada parcial ou totalmente a partir do valor enviado no campo \"amount\". Em caso de sucesso, a requisição retornará uma resposta com o status 200",
-          "es":"Este endpoint permite realizar devoluciones, sea de una order completa, de una transacción completa, o de una transacción parical, siempre que el \"status\" sea \"processed\". La devolución completa de una order puede ser realizada tanto en el modo \"manual\" como \"automático\", y requiere solamente el envío del \"id\" de la order en el path de la requisición. La devolución de una transacción sólo puede ser realizada en el modo \"manual\", y la misma puede ser reembolsada parcial o totalmente a partir de la suma enviada en el campo \"amount\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
+          "pt":"Este endpoint permite executar reembolsos, seja de uma order completa, de uma transação completa ou de uma transação parcial, desde que o \"status\" seja \"processed\". A devolução completa de uma order pode ser realizada tanto no modo \"manual\" quanto no modo \"automático\", sendo necessário apenas o envio do \"id\" da order no path da requisição. O reembolso de uma transação somente poderá ser realizado na modalidade \"manual\", podendo ser reembolsada parcial ou totalmente a partir do valor enviado no campo \"amount\". Em caso de sucesso, a requisição retornará uma resposta com o status 200",
+          "es":"Este endpoint permite realizar reembolsos, sea de una order completa, de una transacción completa, o de una transacción parical, siempre que el \"status\" sea \"processed\". La devolución completa de una order puede ser realizada tanto en el modo \"manual\" como \"automático\", y requiere solamente el envío del \"id\" de la order en el path de la requisición. La devolución de una transacción sólo puede ser realizada en el modo \"manual\", y la misma puede ser reembolsada parcial o totalmente a partir de la suma enviada en el campo \"amount\". En caso de éxito, la solicitud devolverá una respuesta con el estado 200"
         },
         "parameters":[
           {
@@ -3220,7 +3220,7 @@
         },
         "title": {
           "en": "Full refund of an order",
-          "pt": "Devolução total da Order",
+          "pt": "Reembolso total da Order",
           "es": "Reembolso completo de una order"
         }
       }
