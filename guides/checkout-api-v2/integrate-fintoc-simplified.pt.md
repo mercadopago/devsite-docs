@@ -210,10 +210,10 @@ func main() {
 			Email: "test_user_123@testuser.com",
 		},
 		CallbackURL: "https://www.your-site.com",
-               PointOfInteraction: &payment.PointOfInteraction{
-                Type: "CHECKOUT",
-                SubType: "INTER_PSP",
-         }
+    PointOfInteraction: &payment.PointOfInteraction{
+    Type: "CHECKOUT",
+    SubType: "INTER_PSP",
+    }
 	}
 
 	resource, err := client.Create(context.Background(), request)

@@ -240,10 +240,10 @@ func main() {
 			Email: "test_user_123@testuser.com",
 		},
 		CallbackURL: "https://www.your-site.com",
-               PointOfInteraction: &payment.PointOfInteraction{
-                Type: "CHECKOUT",
-                SubType: "INTER_PSP",
-         }
+    PointOfInteraction: &payment.PointOfInteraction{
+    Type: "CHECKOUT",
+    SubType: "INTER_PSP",
+    }
 	}
 
 	resource, err := client.Create(context.Background(), request)
@@ -293,7 +293,7 @@ A continuación, puedes ver un ejemplo de respuesta a esta solicitud, en la que 
 >
 > Recuerda almacenar el valor del campo `external_reference_id` para utilizarlo en la inicialización del *widget*. Ten en cuenta que **es válido sólo por 10 minutos**. Pasado ese tiempo, caducará y deberás crear otro pago.
 
-```javascript
+```json
 {
   ...
     "id":"<PAYMENT_ID>",

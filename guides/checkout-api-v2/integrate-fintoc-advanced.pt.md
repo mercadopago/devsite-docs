@@ -39,7 +39,7 @@ const mp = new MercadoPago('YOUR_PUBLIC_KEY');
 
 O processo de implementação inicia-se a partir da criação de um pagamento, o qual retornará, dentro do nó `data` e entre outros parâmetros, o campo `external_reference_id`, cujo valor representa um token que você deve armazenar para utilizá-lo na inicialização do *widget* do Fintoc no seu frontend.
 
-Para isso,  envie um **POST** com os ***atributos obrigatórios requeridos** ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando nossos SDKs.
+Para isso,  envie um **POST** com os **atributos obrigatórios requeridos** ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, faça o envio das informações utilizando nossos SDKs.
 
 > WARNING
 >
@@ -241,10 +241,10 @@ func main() {
 			Email: "test_user_123@testuser.com",
 		},
 		CallbackURL: "https://www.your-site.com",
-               PointOfInteraction: &payment.PointOfInteraction{
-                Type: "CHECKOUT",
-                SubType: "INTER_PSP",
-         }
+    PointOfInteraction: &payment.PointOfInteraction{
+    Type: "CHECKOUT",
+    SubType: "INTER_PSP",
+    }
 	}
 
 	resource, err := client.Create(context.Background(), request)
@@ -295,7 +295,7 @@ A seguir, você verá um exemplo de resposta a essa solicitação, no qual infor
 >
 > Lembre-se de armazenar o valor do campo `external_reference_id`  para utilizá-lo na inicialização do *widget*. Tenha em mente que ele **é válido apenas por 10 minutos**. Após esse tempo, ele expirará e você precisará criar outro pagamento.
 
-```javascript
+```json
 {
   ...
     "id":"<PAYMENT_ID>",
@@ -346,7 +346,7 @@ Em seguida, abra o *widget* de pagamento do Fintoc utilizando o método `mp.fint
 
 | Atributo | Tipo | Descrição | Requerido/opcional |
 |---|---|---|---|
-| `institutionId` | string | Identificador da [instituição financeira](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). Quando é incluído, pré-seleciona a instituição que aparecerá na abertura do widget. Por exemplo, o valor `cl_banco_de_chile` indicará que o *widget* será aberto com o Banco Estado | Opcional |
+| `institutionId` | string | Identificador da [instituição financeira](https://docs.fintoc.com/docs/payment-initiation-countries-and-institutions). Quando é incluído, pré-seleciona a instituição que aparecerá na abertura do widget. Por exemplo, o valor `cl_banco_de_chile` indicará que o *widget* será aberto com o Banco Estado. | Opcional |
 | `username` | string | Se preenchido, ao selecionar o banco para a transação, o usuário já estará identificado e precisará apenas fornecer sua senha. | Opcional |
 | `widgetToken` | string | Token criado no backend ao momento da criação de um pagamento. É o valor recebido para o parâmetro `external_reference_id`, que inicializa e configura o *widget*. | Requerido  |
 | `onSuccess` | function | *Callback* que será chamado após uma criação bem-sucedida do link. | Requerido |
