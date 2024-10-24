@@ -38,6 +38,23 @@ bullet_section_with_media:
 
 --- mini_landing_separator ---
 
+---
+horizontal_cards_section:
+ - title: Vantagens/Benefícios - #1 check
+ - type: reversed
+ - message: Breve descrição de uma linha. Descripción imagen texto lorem ipsum dolor sit amet.
+ - benefit_icon: https://placehold.co/40x40
+ - benefit_title: Title bullet1
+ - benefit_message: 1Descripción bullet lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam
+ - benefit_image: https://placehold.co/267x129
+ - benefit_title: Title bullet2
+ - benefit_message: 2Descripción bullet lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam
+ - benefit_title: Title bullet3
+ - benefit_message: 3Descripción bullet lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam
+---
+
+--- mini_landing_separator ---
+
 
 >>>> Tipos de pagamento aceitos <<<<
 
