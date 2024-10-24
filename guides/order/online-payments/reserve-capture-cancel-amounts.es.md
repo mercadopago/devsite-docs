@@ -1,8 +1,12 @@
-# Reservar valores
+# Reservar, capturar y cancelar valores
 
-Uma reserva de valores acontece quando uma compra é realizada e seu montante é reservado do limite total do cartão, garantindo que o valor fique guardado até a conclusão do processamento.
+Ve a continuación cómo gestionar las transacciones realizadas para procesar los pagos de su tienda.
 
-Para realizar uma autorização de reserva de valores, envie um **POST** com com todos os atributos necessários e adicione o atributo `capture=false` ao endpoint [/v1/payments](/developers/pt/reference/payments/_payments/post) e execute a requisição ou, se preferir, utilize um dos SDKs abaixo.
+## Reserva de fondos
+
+Una reserva de fondos ocurre cuando se realiza una compra y se reserva su monto del límite total de la tarjeta, asegurando que el valor se mantenga hasta la finalización del procesamiento.
+
+Para realizar una autorización de reserva, envíe un **POST** con todos los atributos necesarios, incluyendo `type_config.capture_mode` definido como `manual` al endpoint [/v1/orders](/developers/es/reference/order/online-payments/create/post). Visite nuestra [Referencia de API](/developers/es/reference/order/online-payments/create/post) para más información.
 
 [[[
 ```php
@@ -40,7 +44,7 @@ PaymentCreateRequest request =
    PaymentCreateRequest.builder()
        .transactionAmount(new BigDecimal("100"))
        .token("ff8080814c11e237014c1ff593b57b4d")
-       .description("Título do produto")
+       .description("Título del producto")
        .installments(1)
        .paymentMethodId("visa")
        .payer(PaymentPayerRequest.builder().email("test_user_19653727@testuser.com").build())
@@ -79,7 +83,7 @@ sdk = Mercadopago::SDK.new('ENV_ACCESS_TOKEN')
 payment_request = {
   transaction_amount: 100,
   token: 'ff8080814c11e237014c1ff593b57b4d',
-  description: 'Título do produto',
+  description: 'Título del producto',
   installments: 1,
   payment_method_id: 'visa',
   payer: {
@@ -124,7 +128,7 @@ sdk = mercadopago.SDK("ENV_ACCESS_TOKEN")
 payment_data = {
     "transaction_amount": 100,
     "token": 'ff8080814c11e237014c1ff593b57b4d',
-    "description": "Title of what you are paying for",
+    "description": "Título de lo que estás pagando",
     "installments": 1,
     "payment_method_id": "visa",
     "payer": {
@@ -198,9 +202,7 @@ curl -X POST \
 ```
 ]]]
 
-
-A resposta indica que o pagamento se encontra autorizado e pendente de captura.
-
+La respuesta indica que el pago se encuentra autorizado y pendiente de captura.
 
 [[[
 ```json
@@ -216,30 +218,40 @@ A resposta indica que o pagamento se encontra autorizado e pendente de captura.
 ```
 ]]]
 
-Além disso, também é possível retornar como `rejeitado` ou `pendente`. Caso retorne como 'pendente', você deverá ficar atento às notificações para saber qual o status final do pagamento.
 
-Tenha em conta que os valores autorizados não poderão ser utilizados pelo seu cliente até que não sejam capturados. Recomendamos realizar a captura o quanto antes.
+Además, también es posible que retorne como `rechazado` o `pendiente`. En caso de que retorne como `pendiente`, deberás prestar atención a las notificaciones para saber cuál es el estado final del pago.
 
-----[mla, mlm]----
+Ten en cuenta que tu cliente no podrá utilizar los valores autorizados hasta que se capturen. Recomendamos realizar la captura lo antes posible.
+
 > WARNING
 >
 > Importante
 >
-> A reserva terá validade de 7 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
-------------
+> La reserva tendrá una validez de ----[mla, mlm, mlc]----7 días------------ ----[mlb]---- 5 días------------. Si no la capturas hasta ese momento, será cancelada. Además, debes guardar el ID del pago para poder finalizar el proceso.
 
-----[mpe]----
+## Captura de pago autorizado
+
+La finalización de un pago sucede después de la captura del pago autorizado, lo que significa que se puede debitar de la tarjeta el importe reservado para la compra.
+
+Por ahora, tenemos una posibilidad de **captura posterior**, donde se captura el monto total del pago reservado.
+
 > WARNING
 >
 > Importante
 >
-> A reserva terá validade de 22 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
-------------
+> El tiempo límite para realizar la captura del pago autorizado es de ----[mla, mlm, mlc]----7 días------------ ----[mlb]---- 5 días------------ desde su creación.
 
-----[mlb]----
-> WARNING
+Para realizar la captura del monto total de una reserva, es necesario enviar una solicitud al endpoint [/v1/orders/{order_id}/capture](/developers/es/reference/order/online-payments/capture/post), donde debe reemplazar `{order_id}` por el ID del pedido cuya captura total desea realizar. Visite nuestra [Referencia de API](/developers/es/reference/order/online-payments/capture/post) para más información.
+
+## Cancelación de reserva
+
+La cancelación de una reserva se produce cuando, por algún motivo, no se aprueba el pago de una compra y se debe devolver el valor de la reserva al límite de la tarjeta del cliente, o cuando un comprador desiste de la compra. 
+
+Para cancelar una reserva, debe enviar una solicitud al endpoint [/v1/orders/{order_id}/cancel](/developers/es/reference/order/online-payments/cancel-order/post). Asegúrese de reemplazar `{order_id}` por el ID del pedido que desea cancelar. Visite nuestra [Referencia de API](/developers/es/reference/order/online-payments/capture/post) para más información.
+
+> NOTE
 >
-> Importante
+> Nota
 >
-> A reserva terá validade de 5 dias. Se não capturá-la nesse período, será cancelada. Além disso, é necessário guardar o ID do pagamento para poder finalizar o processo.
-------------
+> Para más información sobre reembolsos y cancelaciones de pagos, consulta la sección [Reembolsos y cancelaciones](/developers/es/docs/order/online-payments/payment-management/cancellations-and-refunds).
+

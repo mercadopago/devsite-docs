@@ -1,8 +1,12 @@
-# Reserve values
+# Reserve, capture, and cancel amounts
 
-A reserve of values happens when a purchase is made and its amount is reserved from the total limit of the card, ensuring that the value is kept until the completion of processing.
+See below how to manage the transactions made to process the payments for your store.
 
-To carry out a reserve authorization, send a **POST** with all the necessary attributes and add the attribute `capture=false` to the endpoint [/v1/payments](/developers/en/reference/payments/_payments/post) and execute the request or, if you prefer, use one of the SDKs below.
+## Reservation of amounts
+
+A reserve of amounts happens when a purchase is made and its amount is reserved from the total limit of the card, ensuring that the value is kept until the completion of processing.
+
+To carry out an authorization of amount reservation, send a **POST** request with all the necessary attributes, including `type_config.capture_mode` set to `manual` to the endpoint [/v1/orders](/developers/en/reference/order/online-payments/create/post). Visit our [API Reference](/developers/en/reference/order/online-payments/create/post) for more information.
 
 [[[
 ```php
@@ -220,27 +224,34 @@ In addition, it is also possible to return as `rejected` or `pending`. In case i
 
 Please note that authorized values cannot be used by your client until they are captured. We recommend capturing as soon as possible.
 
-
-----[mla, mlm]----
 > WARNING
 >
 > Important
 >
-> The reserve will be valid for 7 days. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
-------------
+> The reservation will be valid for ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
 
-----[mpe]----
+## Capture of authorized payment
+
+The completion of a payment takes place after the authorized payment has been captured, which means that the amount reserved for the purchase can be debited from the card.
+
+For now, we have a possibility for **subsequent capture**, where the full amount of the reserved payment is captured.
+
 > WARNING
 >
 > Important
 >
-> The reserve will be valid for 22 days. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
-------------
+> The time limit to capture the authorized payment is ----[mla, mlm, mlc]----7 days------------ ----[mlb]---- 5 days------------ from its creation.
 
-----[mlb]----
-> WARNING
+To capture the total amount of a reservation, you need to send a request to the endpoint [/v1/orders/{order_id}/capture](/developers/en/reference/order/online-payments/capture/post), where you should replace `{order_id}` with the ID of the order you want to capture in full. Visit our [API Reference](/developers/en/reference/order/online-payments/capture/post) for more information.
+
+## Cancellation of reservation
+
+Cancellation of a reserve occurs when, for some reason, the payment for a purchase is not approved and the reservation amount needs to return to the customer's card limit or when a buyer withdraws from the purchase. 
+
+To cancel a reservation, you must send a request to the endpoint [/v1/orders/{order_id}/cancel](/developers/en/reference/order/online-payments/cancel-order/post). Be sure to replace `{order_id}` with the ID of the order you wish to cancel. Visit our [API Reference](/developers/en/reference/order/online-payments/capture/post) for more information.
+
+> NOTE
 >
-> Important
+> Note
 >
-> The reservation will be valid for 5 days. If you do not capture it within this period, it will be canceled. In addition, it is necessary to save the payment ID in order to complete the process.
-------------
+> For more information about refunds and cancellations of payments, see the section [Refunds and Cancellations](/developers/en/docs/order/online-payments/payment-management/cancellations-and-refunds).
